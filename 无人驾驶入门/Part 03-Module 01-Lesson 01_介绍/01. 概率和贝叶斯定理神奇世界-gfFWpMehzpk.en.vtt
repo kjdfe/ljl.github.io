@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.495
+Welcome to the amazing world of bayesian thinking.
+
+00:00:04.495 --> 00:00:07.570
+Reverend Thomas Bayes, a long time ago,
+
+00:00:07.570 --> 00:00:11.234
+invented Bayes' rule to prove the existence of God.
+
+00:00:11.234 --> 00:00:16.350
+I actually got my tenure at Stanford by applying Bayes' rule to robotics.
+
+00:00:16.350 --> 00:00:19.200
+Bayes' rule is one of the most fascinating technologies
+
+00:00:19.199 --> 00:00:21.574
+as we transform the field of robotics.
+
+00:00:21.574 --> 00:00:24.364
+Let me explain to you why. Normal AI
+
+00:00:24.364 --> 00:00:27.744
+people used to assume everyone knows everything about the world.
+
+00:00:27.745 --> 00:00:29.380
+When the world was wrong,
+
+00:00:29.379 --> 00:00:31.730
+it would make fatal mistakes.
+
+00:00:31.730 --> 00:00:35.814
+Bayes' rule permits for the possibility that it was might be uncertain,
+
+00:00:35.814 --> 00:00:40.445
+they might not know, and they might have to explore the world to gain information.
+
+00:00:40.445 --> 00:00:44.679
+The mathematical framework to gather information is called statistics,
+
+00:00:44.679 --> 00:00:47.549
+and Bayes' rule was at the core of statistics.
+
+00:00:47.549 --> 00:00:50.149
+It sounds cryptic? Well that's okay.
+
+00:00:50.149 --> 00:00:54.795
+That sounds let it sound cryptic because the session is about finding out the details.
+
+00:00:54.795 --> 00:00:56.020
+I have to warn you,
+
+00:00:56.020 --> 00:00:58.180
+there are some very basic math involved,
+
+00:00:58.179 --> 00:01:00.630
+things like linear algebra and probabilities.
+
+00:01:00.630 --> 00:01:02.410
+If you feel uncomfortable with those,
+
+00:01:02.409 --> 00:01:04.810
+please go back and refresh those.
+
+00:01:04.810 --> 00:01:07.810
+The underlying concepts should be extremely intuitive,
+
+00:01:07.810 --> 00:01:09.625
+as intuitive as counting.
+
+00:01:09.625 --> 00:01:14.000
+So welcome to the wonderland of Bayes' law.
+

@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.875
+&gt;&gt; Before we jump into the course,
+
+00:00:01.875 --> 00:00:04.089
+let's discuss what this course will cover.
+
+00:00:04.089 --> 00:00:06.449
+&gt;&gt; First, you're going to dive right into something that we're
+
+00:00:06.450 --> 00:00:09.769
+calling Project Zero and you'll learn more about that shortly.
+
+00:00:09.769 --> 00:00:11.115
+&gt;&gt; Next, you'll learn about,
+
+00:00:11.115 --> 00:00:12.564
+or it might be a review,
+
+00:00:12.564 --> 00:00:15.089
+basic probability and conditional probability.
+
+00:00:15.089 --> 00:00:19.699
+&gt;&gt; Then you'll go through the first of what will be many programming practice lessons.
+
+00:00:19.699 --> 00:00:24.405
+&gt;&gt; After that, you'll learn the most important mathematical law for self-driving cars,
+
+00:00:24.405 --> 00:00:27.920
+Bayes' rule, followed by more programming practice.
+
+00:00:27.920 --> 00:00:31.005
+&gt;&gt; After that, you'll learn about probability distributions,
+
+00:00:31.004 --> 00:00:36.164
+which together with Bayes' rule is crucial to solving the problem of robot localization,
+
+00:00:36.164 --> 00:00:40.554
+which is just how a robot figures out where in the world it is.
+
+00:00:40.554 --> 00:00:44.384
+&gt;&gt; Finally, you'll actually build a robot localizer in Project One.
+
+00:00:44.384 --> 00:00:49.000
+Where you'll implement something called a two-dimensional histogram filter. Enjoy.
+
