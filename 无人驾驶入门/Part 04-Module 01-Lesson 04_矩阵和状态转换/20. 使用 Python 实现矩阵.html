@@ -1,0 +1,888 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   使用 Python 实现矩阵
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      矩阵和状态转换
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 连接到卡尔曼滤波器.html">
+       01. 连接到卡尔曼滤波器
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 卡尔曼预测.html">
+       02. 卡尔曼预测
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 卡尔曼滤波器王国.html">
+       03. 卡尔曼滤波器王国
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 卡尔曼滤波器预测.html">
+       04. 卡尔曼滤波器预测
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 另一个预测.html">
+       05. 另一个预测
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 卡尔曼滤波器的更多解释.html">
+       06. 卡尔曼滤波器的更多解释
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 关于符号.html">
+       07. 关于符号
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 卡尔曼滤波器设计.html">
+       08. 卡尔曼滤波器设计
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 知识点回顾.html">
+       09. 知识点回顾
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 卡尔曼滤波器方程.html">
+       10. 卡尔曼滤波器方程
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 简化卡尔曼滤波器方程.html">
+       11. 简化卡尔曼滤波器方程
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 课程其余内容.html">
+       12. 课程其余内容
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 使用矩阵表示状态.html">
+       13. 使用矩阵表示状态
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 卡尔曼方程参考.html">
+       14. 卡尔曼方程参考
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 什么是向量？.html">
+       15. 什么是向量？
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Python 中的向量.html">
+       16. Python 中的向量
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 向量编程.html">
+       17. 向量编程
+      </a>
+     </li>
+     <li class="">
+      <a href="18. 向量编程（参考答案）.html">
+       18. 向量编程（参考答案）
+      </a>
+     </li>
+     <li class="">
+      <a href="19. 数学符号指南.html">
+       19. 数学符号指南
+      </a>
+     </li>
+     <li class="">
+      <a href="20. 使用 Python 实现矩阵.html">
+       20. 使用 Python 实现矩阵
+      </a>
+     </li>
+     <li class="">
+      <a href="21. 矩阵代码.html">
+       21. 矩阵代码
+      </a>
+     </li>
+     <li class="">
+      <a href="22. 矩阵代码（参考答案）.html">
+       22. 矩阵代码（参考答案）
+      </a>
+     </li>
+     <li class="">
+      <a href="23. 矩阵加法.html">
+       23. 矩阵加法
+      </a>
+     </li>
+     <li class="">
+      <a href="24. 矩阵加法代码.html">
+       24. 矩阵加法代码
+      </a>
+     </li>
+     <li class="">
+      <a href="25. 矩阵乘法.html">
+       25. 矩阵乘法
+      </a>
+     </li>
+     <li class="">
+      <a href="26. 矩阵乘法代码.html">
+       26. 矩阵乘法代码
+      </a>
+     </li>
+     <li class="">
+      <a href="27. 矩阵转置.html">
+       27. 矩阵转置
+      </a>
+     </li>
+     <li class="">
+      <a href="28. 矩阵转置代码.html">
+       28. 矩阵转置代码
+      </a>
+     </li>
+     <li class="">
+      <a href="29. 单位矩阵.html">
+       29. 单位矩阵
+      </a>
+     </li>
+     <li class="">
+      <a href="30. 单位矩阵代码.html">
+       30. 单位矩阵代码
+      </a>
+     </li>
+     <li class="">
+      <a href="31. 矩阵求逆.html">
+       31. 矩阵求逆
+      </a>
+     </li>
+     <li class="">
+      <a href="32. 矩阵的逆代码.html">
+       32. 矩阵的逆代码
+      </a>
+     </li>
+     <li class="">
+      <a href="33. 这一课你学到了什么.html">
+       33. 这一课你学到了什么
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          20. 使用 Python 实现矩阵
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="向量-vs-矩阵">
+          向量 vs. 矩阵
+         </h3>
+         <p>
+          向量是卡尔曼滤波器方程的一部分。但是你还需要学会使用矩阵。
+         </p>
+         <p>
+          你已经看过了 Python 如何在列表中代表向量。一个向量可以被视作简单的网格，其中每个分量都有一行和一列。如果你将向量视作网格，向量
+          <span class="mathquill ud-math">
+           \begin{bmatrix}17, 25, 6, 2\end{bmatrix}
+          </span>
+          将被这样表示：
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/vector-example.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          不过你也可以将这个向量称为矩阵。这四个向量分量是一个一行四列的矩阵，或者 1x4，其中 1 代表行的数量，4 代表列的数量。
+         </p>
+         <p>
+          但如果你将这个向量旋转一下，让它看起来像这样呢？
+          <br/>
+          <span class="mathquill ud-math">
+           \begin{bmatrix}17 \\ 25 \\ 6 \\ 2 \end{bmatrix}
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/vector-column.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          旋转向量
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             你怎么看？你认为旋转后的版本还是一个向量吗？
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1505171944021" name="437868" type="radio" value="a1505171944021"/>
+           <label for="a1505171944021">
+            <p>
+             是
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1505171960567" name="437868" type="radio" value="a1505171960567"/>
+           <label for="a1505171960567">
+            <p>
+             不是
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          是
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          作为矩阵的向量
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             任何一个向量也可以被视为矩阵。在上面的图里，这个垂直版本的向量中有几行几列？
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1505172127429" name="437869" type="radio" value="a1505172127429"/>
+           <label for="a1505172127429">
+            <p>
+             4 行，4 列
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1505172197430" name="437869" type="radio" value="a1505172197430"/>
+           <label for="a1505172197430">
+            <p>
+             1 行，4 列
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1505172197911" name="437869" type="radio" value="a1505172197911"/>
+           <label for="a1505172197911">
+            <p>
+             4 行，1 列
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1505172198407" name="437869" type="radio" value="a1505172198407"/>
+           <label for="a1505172198407">
+            <p>
+             1 行，1 列
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          4 行，1 列
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="两个向量">
+          两个向量
+         </h3>
+         <p>
+          如果你将一个向量像下面这样进行复制会发生什么？
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <span class="mathquill ud-math">
+           \begin{bmatrix}17 &amp;17 \\ 25 &amp; 25 \\ 6 &amp; 6 \\ 2 &amp; 2\end{bmatrix}
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/2vector-columns.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          现在你有了一个四行二列的 4x2 矩阵。将这个向量进行水平复制怎么样？
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/copy-of-vector-example.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          矩阵尺寸
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             这个矩阵的尺寸是什么？
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1505172606742" name="437875" type="radio" value="a1505172606742"/>
+           <label for="a1505172606742">
+            <p>
+             4x2
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1505172622321" name="437875" type="radio" value="a1505172622321"/>
+           <label for="a1505172622321">
+            <p>
+             2x2
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1505172622881" name="437875" type="radio" value="a1505172622881"/>
+           <label for="a1505172622881">
+            <p>
+             2x4
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1505172623777" name="437875" type="radio" value="a1505172623777"/>
+           <label for="a1505172623777">
+            <p>
+             4x4
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          2x4
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="在-python-中表示矩阵">
+          在 Python 中表示矩阵
+         </h3>
+         <p>
+          因此，矩阵是一个 m 行 n 列的二维网格。看看下面这个矩阵，它的尺寸比之前例子中出现的矩阵都要大一些。
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \begin{bmatrix}17 &amp; 25 &amp; 6 &amp; 2 &amp; 16 \\ 6 &amp; 1 &amp; 8 &amp; 4 &amp; 22 \\17 &amp; 8 &amp; 54 &amp; 15 &amp; 65 \\11 &amp; 25 &amp; 68 &amp; 9 &amp; 2\end{bmatrix}
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/full-matrix.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          这个矩阵是 4x5，它有 4 行 5 列。
+         </p>
+         <p>
+          你如何在 Python 中表示一个这样的矩阵？从最上面一行
+          <span class="mathquill ud-math">
+           \begin{bmatrix}17, 25, 6, 2, 16\end{bmatrix}
+          </span>
+          开始。当单独看最上面这行时，它看上去像一个向量。而在 Python 中，你使用列表来表示向量。
+         </p>
+         <p>
+          在 Python 中表示矩阵时，你可以将每一行视作
+          <em>
+           一个向量
+          </em>
+          ：
+         </p>
+         <pre><code class="python language-python">first_row = [17, 25, 6, 2, 16]</code></pre>
+         <p>
+          那么第二行呢？
+         </p>
+         <pre><code class="python language-python">second_row = [6, 1, 8, 4, 22]</code></pre>
+         <p>
+          继续：
+         </p>
+         <pre><code class="python language-python">third_row = [17, 8, 54, 15, 65]
+fourth_row = [11, 25, 68, 9, 2]</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          矩阵访问
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             你觉得下面这段代码会输出什么？
+            </p>
+            <pre><code>matrix = [
+[17, 25, 6, 2, 16], 
+[6, 1, 45, 4, 22],
+[17, 8, 54, 15, 65],
+[11, 25, 68, 9, 2]
+]
+
+print(matrix[3][2])</code></pre>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1505177678651" name="437880" type="radio" value="a1505177678651"/>
+           <label for="a1505177678651">
+            <p>
+             什么也没有，会得到一个 error
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1505177778274" name="437880" type="radio" value="a1505177778274"/>
+           <label for="a1505177778274">
+            <p>
+             45
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1505177779003" name="437880" type="radio" value="a1505177779003"/>
+           <label for="a1505177779003">
+            <p>
+             8
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1505177779563" name="437880" type="radio" value="a1505177779563"/>
+           <label for="a1505177779563">
+            <p>
+             68
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1505177821593" name="437880" type="radio" value="a1505177821593"/>
+           <label for="a1505177821593">
+            <p>
+             15
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          68
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4 id="使用一个变量来表示所有行">
+          使用一个变量来表示所有行
+         </h4>
+         <p>
+          在之前，矩阵的每一行你都使用单独的变量来表示。接下来，我们将使用一个变量来表示整个矩阵。
+         </p>
+         <p>
+          如果你将每一行排列开来，你会得到一个列表组成的列表：
+         </p>
+         <pre><code class="python language-python">matrix = [first_row, second_row, third_row, fourth_row]</code></pre>
+         <p>
+          如果你这样编写，矩阵的特点将会更加明显：
+         </p>
+         <pre><code class="python language-python">matrix = [
+    first_row,
+    second_row, 
+    third_row, 
+    fourth_row
+]</code></pre>
+         <p>
+          使用向量来代替这些变量，你将得到一长串列表组成的列表：
+         </p>
+         <pre><code>matrix = [[17, 25, 6, 2, 16], 
+[6, 1, 8, 4, 22],
+[17, 8, 54, 15, 65],
+[11, 25, 68, 9, 2]]</code></pre>
+         <p>
+          或者，我们稍微简洁一点：
+         </p>
+         <pre><code>matrix = [
+    [17, 25, 6, 2, 16], 
+    [6, 1, 8, 4, 22],
+    [17, 8, 54, 15, 65], 
+    [11, 25, 68, 9, 2]
+]</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          像矩阵那样编写向量
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             你刚刚学习了向量也可以被视作矩阵。如果你将向量 [1, 5, 9, 3, 1] 存储为 Python 矩阵，你将用到那个句法？
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1506054417236" name="437881" type="radio" value="a1506054417236"/>
+           <label for="a1506054417236">
+            <p>
+             x = [1, 5, 9, 3, 1]
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1506054498724" name="437881" type="radio" value="a1506054498724"/>
+           <label for="a1506054498724">
+            <p>
+             x = 1, 5, 9, 3, 1
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1506054507027" name="437881" type="radio" value="a1506054507027"/>
+           <label for="a1506054507027">
+            <p>
+             x = [1 5 9 3 1]
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1506054514659" name="437881" type="radio" value="a1506054514659"/>
+           <label for="a1506054514659">
+            <p>
+             x = [[1, 5, 9, 3, 1]]
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1506054521619" name="437881" type="radio" value="a1506054521619"/>
+           <label for="a1506054521619">
+            <p>
+             x = [[1 5 9 3 1]]
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          x = [[1, 5, 9, 3, 1]]
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="练习编写矩阵代码">
+          练习编写矩阵代码
+         </h3>
+         <p>
+          在本节课的下一部分，你将会练习在 Python 中编写矩阵代码。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="21. 矩阵代码.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('20. 使用 Python 实现矩阵')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

@@ -1,0 +1,151 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.049
+These are the common filter equations in all their beautiful complexity.
+
+00:00:05.049 --> 00:00:06.915
+But what do they all mean.?
+
+00:00:06.915 --> 00:00:10.199
+Before we jump into all the matrix math behind these equations,
+
+00:00:10.199 --> 00:00:12.570
+I'd like to just do some basic visual cleanup.
+
+00:00:12.570 --> 00:00:17.094
+And to do that, I want to make three modifications to these equations.
+
+00:00:17.094 --> 00:00:19.349
+Let's just focus on this first equation
+
+00:00:19.350 --> 00:00:23.737
+here so I can explain what those modifications are.
+
+00:00:23.737 --> 00:00:26.324
+The first thing I'm going to do to all these equations,
+
+00:00:26.324 --> 00:00:28.439
+is just get rid of these hats,
+
+00:00:28.440 --> 00:00:30.865
+like hats you saw at the x.
+
+00:00:30.864 --> 00:00:33.405
+While the hat does have physical significance
+
+00:00:33.405 --> 00:00:36.015
+it indicates that this variable is an estimate.
+
+00:00:36.015 --> 00:00:39.984
+It's not for sure. It doesn't have any mathematical significance.
+
+00:00:39.984 --> 00:00:43.329
+It's not telling us to do anything mathematically with these equations,
+
+00:00:43.329 --> 00:00:45.659
+so just get rid of those for now.
+
+00:00:45.659 --> 00:00:49.139
+Next, we're going to take all these x_k giving
+
+00:00:49.140 --> 00:00:53.700
+k - 1 and we're going replace that with x'.
+
+00:00:53.700 --> 00:00:55.250
+Not only is this easier to look at.
+
+00:00:55.250 --> 00:00:58.950
+It's also consistent with the notation you've been using with Sebastian.
+
+00:00:58.950 --> 00:01:01.950
+Finally we're just going to get rid of these lone k's,
+
+00:01:01.950 --> 00:01:07.395
+they're cluttering things up and I'd rather just look at an equation like this.
+
+00:01:07.394 --> 00:01:10.236
+Now we have this simplified equation.
+
+00:01:10.236 --> 00:01:13.589
+Remember it's some math here just looks simpler.
+
+00:01:13.590 --> 00:01:15.329
+Let's take a look what happens to all of
+
+00:01:15.329 --> 00:01:19.209
+the call filter equations when we apply these same three cleaning steps.
+
+00:01:19.209 --> 00:01:22.049
+We take equations which looked like these and we
+
+00:01:22.049 --> 00:01:26.087
+convert them to equations that look like these.
+
+00:01:26.087 --> 00:01:28.409
+This representation really let's us focus on
+
+00:01:28.409 --> 00:01:30.629
+the mathematical tools we're going to need in
+
+00:01:30.629 --> 00:01:33.714
+order to make Wikipedia articles useful to us.
+
+00:01:33.715 --> 00:01:36.600
+In fact, we can actually use certain aspects of these equations
+
+00:01:36.599 --> 00:01:40.324
+right now to highlight what we're going to cover in the rest lesson.
+
+00:01:40.325 --> 00:01:42.540
+First, let's focus on the difference
+
+00:01:42.540 --> 00:01:46.605
+between lower case and upper case, there's actually meaning there.
+
+00:01:46.605 --> 00:01:49.710
+Generally, lower case variables indicate
+
+00:01:49.709 --> 00:01:53.289
+vectors while uppercase variables indicate matrices.
+
+00:01:53.290 --> 00:01:55.455
+We'll talk more about this distinction in a minute.
+
+00:01:55.454 --> 00:02:01.064
+We'll also talk about addition and multiplication of vectors and matrices.
+
+00:02:01.064 --> 00:02:04.585
+We'll discuss one particularly special matrix called the identity
+
+00:02:04.585 --> 00:02:10.469
+matrix and we'll talk about two additional important operations called the transpose,
+
+00:02:10.469 --> 00:02:14.835
+given by this little T superscript and the Matrix inverse,
+
+00:02:14.835 --> 00:02:18.330
+given by this little -1 superscript.
+
+00:02:18.330 --> 00:02:22.548
+If this seems like an overwhelming amount of stuff to learn in a very short time,
+
+00:02:22.548 --> 00:02:26.574
+remember the goal here is not to memorize any of this.
+
+00:02:26.574 --> 00:02:28.139
+The goal isn't even really to get
+
+00:02:28.139 --> 00:02:32.844
+a conceptual understanding of linear algebra that will come with time.
+
+00:02:32.844 --> 00:02:34.349
+The goal now is to acquire
+
+00:02:34.349 --> 00:02:38.909
+a basic functional familiarity with the tool that is matrix math,
+
+00:02:38.909 --> 00:02:43.000
+so that when you encounter it in future Google searches you'll know where to begin.
+

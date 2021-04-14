@@ -1,0 +1,584 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   单位矩阵
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      矩阵和状态转换
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 连接到卡尔曼滤波器.html">
+       01. 连接到卡尔曼滤波器
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 卡尔曼预测.html">
+       02. 卡尔曼预测
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 卡尔曼滤波器王国.html">
+       03. 卡尔曼滤波器王国
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 卡尔曼滤波器预测.html">
+       04. 卡尔曼滤波器预测
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 另一个预测.html">
+       05. 另一个预测
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 卡尔曼滤波器的更多解释.html">
+       06. 卡尔曼滤波器的更多解释
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 关于符号.html">
+       07. 关于符号
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 卡尔曼滤波器设计.html">
+       08. 卡尔曼滤波器设计
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 知识点回顾.html">
+       09. 知识点回顾
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 卡尔曼滤波器方程.html">
+       10. 卡尔曼滤波器方程
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 简化卡尔曼滤波器方程.html">
+       11. 简化卡尔曼滤波器方程
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 课程其余内容.html">
+       12. 课程其余内容
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 使用矩阵表示状态.html">
+       13. 使用矩阵表示状态
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 卡尔曼方程参考.html">
+       14. 卡尔曼方程参考
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 什么是向量？.html">
+       15. 什么是向量？
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Python 中的向量.html">
+       16. Python 中的向量
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 向量编程.html">
+       17. 向量编程
+      </a>
+     </li>
+     <li class="">
+      <a href="18. 向量编程（参考答案）.html">
+       18. 向量编程（参考答案）
+      </a>
+     </li>
+     <li class="">
+      <a href="19. 数学符号指南.html">
+       19. 数学符号指南
+      </a>
+     </li>
+     <li class="">
+      <a href="20. 使用 Python 实现矩阵.html">
+       20. 使用 Python 实现矩阵
+      </a>
+     </li>
+     <li class="">
+      <a href="21. 矩阵代码.html">
+       21. 矩阵代码
+      </a>
+     </li>
+     <li class="">
+      <a href="22. 矩阵代码（参考答案）.html">
+       22. 矩阵代码（参考答案）
+      </a>
+     </li>
+     <li class="">
+      <a href="23. 矩阵加法.html">
+       23. 矩阵加法
+      </a>
+     </li>
+     <li class="">
+      <a href="24. 矩阵加法代码.html">
+       24. 矩阵加法代码
+      </a>
+     </li>
+     <li class="">
+      <a href="25. 矩阵乘法.html">
+       25. 矩阵乘法
+      </a>
+     </li>
+     <li class="">
+      <a href="26. 矩阵乘法代码.html">
+       26. 矩阵乘法代码
+      </a>
+     </li>
+     <li class="">
+      <a href="27. 矩阵转置.html">
+       27. 矩阵转置
+      </a>
+     </li>
+     <li class="">
+      <a href="28. 矩阵转置代码.html">
+       28. 矩阵转置代码
+      </a>
+     </li>
+     <li class="">
+      <a href="29. 单位矩阵.html">
+       29. 单位矩阵
+      </a>
+     </li>
+     <li class="">
+      <a href="30. 单位矩阵代码.html">
+       30. 单位矩阵代码
+      </a>
+     </li>
+     <li class="">
+      <a href="31. 矩阵求逆.html">
+       31. 矩阵求逆
+      </a>
+     </li>
+     <li class="">
+      <a href="32. 矩阵的逆代码.html">
+       32. 矩阵的逆代码
+      </a>
+     </li>
+     <li class="">
+      <a href="33. 这一课你学到了什么.html">
+       33. 这一课你学到了什么
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          29. 单位矩阵
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="单位矩阵">
+          单位矩阵
+         </h1>
+         <p>
+          单位矩阵是线性代数中的一种特殊矩阵，在很多应用中都会出现。在本课中，深入了解单位矩阵将有助于理解矩阵求逆。单位矩阵用
+          <span class="mathquill ud-math">
+           \mathbf{I}
+          </span>
+          符号表示。
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \mathbf{I}
+          </span>
+          是一个n×n方阵，主对角线上的值为 1，其他所有元素都是 0。
+         </p>
+         <p>
+          对于 1x1 矩阵，单位矩阵如下：
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \begin{bmatrix}1\end{bmatrix}
+          </span>
+         </p>
+         <p>
+          对于 2x2 矩阵，单位矩阵如下：
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \begin{bmatrix}1 &amp; 0 \\ 0 &amp; 1\end{bmatrix}
+          </span>
+         </p>
+         <p>
+          对于 3x3 矩阵，单位矩阵如下：
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \begin{bmatrix}1 &amp; 0 &amp; 0 \\0 &amp; 1 &amp; 0 \\0 &amp; 0 &amp; 1\end{bmatrix}
+          </span>
+         </p>
+         <p>
+          对于 4x4 矩阵，单位矩阵如下：
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \begin{bmatrix}1 &amp; 0 &amp; 0 &amp; 0 \\0 &amp; 1 &amp; 0  &amp; 0 \\0 &amp; 0 &amp; 1 &amp; 0 \\0 &amp; 0 &amp; 0 &amp; 1\end{bmatrix}
+          </span>
+         </p>
+         <p>
+          依次类推。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="单位矩阵就像数字-1">
+          单位矩阵就像数字 1
+         </h1>
+         <p>
+          在标量乘法中，数字 1 有一个特殊的性质：
+          <br/>
+          <span class="mathquill ud-math">
+           1\times a = a
+          </span>
+          。
+         </p>
+         <p>
+          同样地，
+          <br/>
+          <span class="mathquill ud-math">
+           a\times 1 = a
+          </span>
+          。
+         </p>
+         <p>
+          单位矩阵具有同样的性质：
+          <br/>
+          <span class="mathquill ud-math">
+           \mathbf{AI} = \mathbf{IA} = \mathbf{A}
+          </span>
+          。虽然单位矩阵总是方阵，但矩
+          <span class="mathquill ud-math">
+           \mathbf{A}
+          </span>
+          不一定是方阵。
+         </p>
+         <p>
+          下面是一个乘法的例子：
+          <br/>
+          <span class="mathquill ud-math">
+           \mathbf{AI}
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/matrix-multiplication-identity-1.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          乘以
+          <span class="mathquill ud-math">
+           \mathbf{IA}
+          </span>
+          的另一种情况呢？你需要考虑 I 和 A 矩阵的维数，才能进行乘法运算。
+         </p>
+         <p>
+          如何计算
+          <span class="mathquill ud-math">
+           \mathbf{I}
+          </span>
+          的大小？
+         </p>
+         <p>
+          输出矩阵必须是 3x4，就像
+          <span class="mathquill ud-math">
+           \mathbf{A}
+          </span>
+          一样。所以，一个 3×3 的矩阵乘以一个 3×4 的矩阵，会得到一个 3×4 的矩阵。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/matrix-multiplication-identity-reverse.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Size of I
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             如果 A 是一个 5x7 的矩阵，当乘以 IA 时，I 为多大？乘以AI时，I 为多大？
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1506117990354" name="437931" type="radio" value="a1506117990354"/>
+           <label for="a1506117990354">
+            <p>
+             两种情况下，I 大小都是 7x5
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1506118034745" name="437931" type="radio" value="a1506118034745"/>
+           <label for="a1506118034745">
+            <p>
+             7x7 与 5x5
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1506118035241" name="437931" type="radio" value="a1506118035241"/>
+           <label for="a1506118035241">
+            <p>
+             5x5 与 7x7
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1506118035690" name="437931" type="radio" value="a1506118035690"/>
+           <label for="a1506118035690">
+            <p>
+             两种情况下，I 大小都是 5x7
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          5x5 与 7x7
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="编程实现单位矩阵初始化">
+          编程实现单位矩阵初始化
+         </h1>
+         <p>
+          在编程练习中，你需要编写一个函数，该函数会接收一个大小，然后输出该大小的单位矩阵。
+         </p>
+         <p>
+          考虑一下，如何使用空的 Python 列表开始编程。1 将永远处于指数位置
+         </p>
+         <ul>
+          <li>
+           [0][0]
+          </li>
+          <li>
+           [1][1]
+          </li>
+          <li>
+           [2][2]
+          </li>
+          <li>
+           [3][3]
+          </li>
+          <li>
+           等等.
+          </li>
+         </ul>
+         <p>
+          矩阵中的其他地方都是 0。所以，你不仅需要使用嵌套 for 循环，还需要使用 if else 语句。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="30. 单位矩阵代码.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('29. 单位矩阵')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

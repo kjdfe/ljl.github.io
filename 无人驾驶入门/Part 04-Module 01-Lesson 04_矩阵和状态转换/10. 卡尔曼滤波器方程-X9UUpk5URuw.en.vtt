@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.605
+For the rest of this course,
+
+00:00:01.605 --> 00:00:05.084
+we are going to focus on building a working knowledge of matrix math,
+
+00:00:05.084 --> 00:00:07.525
+which is also known as linear algebra.
+
+00:00:07.525 --> 00:00:09.990
+But what do I mean by working knowledge?
+
+00:00:09.990 --> 00:00:11.955
+As Sebastian has repeatedly said,
+
+00:00:11.955 --> 00:00:14.865
+it is not important to memorize equations,
+
+00:00:14.865 --> 00:00:17.385
+but as a self-driving car engineer,
+
+00:00:17.385 --> 00:00:19.890
+it will be important for you to be able to find and
+
+00:00:19.890 --> 00:00:23.245
+use the equations you need when you need to use them.
+
+00:00:23.245 --> 00:00:25.605
+So imagine that at some point in the future,
+
+00:00:25.605 --> 00:00:29.609
+you're working on the traffic protection team for some self-driving car company,
+
+00:00:29.609 --> 00:00:33.045
+and you're trying to build a prototype of some object tracking code.
+
+00:00:33.045 --> 00:00:34.910
+You might create a file called,
+
+00:00:34.909 --> 00:00:37.107
+I don't know, Kalman filter dot pi,
+
+00:00:37.107 --> 00:00:40.042
+and then, well, if you're like most people,
+
+00:00:40.042 --> 00:00:42.756
+you probably have to go to Google.
+
+00:00:42.756 --> 00:00:44.159
+And once you're there,
+
+00:00:44.159 --> 00:00:47.219
+you'd start typing in Kalman filter,
+
+00:00:47.219 --> 00:00:49.089
+and you'd see a list of results.
+
+00:00:49.090 --> 00:00:51.863
+And, as you can tell, I personally like Wikipedia.
+
+00:00:51.862 --> 00:00:54.829
+And what you'd see would look something like this.
+
+00:00:54.829 --> 00:00:57.384
+And since you wouldn't be looking to look through all the theory,
+
+00:00:57.384 --> 00:01:02.039
+you'd probably scroll right down to the common filter equations,
+
+00:01:02.039 --> 00:01:04.359
+which looks something like this.
+
+00:01:04.359 --> 00:01:08.789
+And, unsurprisingly, there is separated entry predict and an update step.
+
+00:01:08.790 --> 00:01:12.160
+And you probably have an understanding of what those mean conceptually.
+
+00:01:12.159 --> 00:01:16.504
+But that doesn't necessarily mean you could do anything with all these equations,
+
+00:01:16.504 --> 00:01:18.390
+and that's kind of a shame.
+
+00:01:18.390 --> 00:01:21.570
+So the goal for this course and the project that falls is
+
+00:01:21.569 --> 00:01:24.839
+to make sure that when you see equations that look like these,
+
+00:01:24.840 --> 00:01:28.240
+you'll be able to put them to use in the future.
+
+00:01:28.239 --> 00:01:30.179
+What that means is you can translate
+
+00:01:30.180 --> 00:01:34.750
+the matrix math that you see in a page like Wikipedia into real code.
+
+00:01:34.750 --> 00:01:36.000
+So let's begin.
+

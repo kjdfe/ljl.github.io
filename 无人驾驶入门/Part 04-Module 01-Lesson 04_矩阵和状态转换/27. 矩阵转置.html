@@ -1,0 +1,601 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   矩阵转置
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      矩阵和状态转换
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 连接到卡尔曼滤波器.html">
+       01. 连接到卡尔曼滤波器
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 卡尔曼预测.html">
+       02. 卡尔曼预测
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 卡尔曼滤波器王国.html">
+       03. 卡尔曼滤波器王国
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 卡尔曼滤波器预测.html">
+       04. 卡尔曼滤波器预测
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 另一个预测.html">
+       05. 另一个预测
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 卡尔曼滤波器的更多解释.html">
+       06. 卡尔曼滤波器的更多解释
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 关于符号.html">
+       07. 关于符号
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 卡尔曼滤波器设计.html">
+       08. 卡尔曼滤波器设计
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 知识点回顾.html">
+       09. 知识点回顾
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 卡尔曼滤波器方程.html">
+       10. 卡尔曼滤波器方程
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 简化卡尔曼滤波器方程.html">
+       11. 简化卡尔曼滤波器方程
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 课程其余内容.html">
+       12. 课程其余内容
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 使用矩阵表示状态.html">
+       13. 使用矩阵表示状态
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 卡尔曼方程参考.html">
+       14. 卡尔曼方程参考
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 什么是向量？.html">
+       15. 什么是向量？
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Python 中的向量.html">
+       16. Python 中的向量
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 向量编程.html">
+       17. 向量编程
+      </a>
+     </li>
+     <li class="">
+      <a href="18. 向量编程（参考答案）.html">
+       18. 向量编程（参考答案）
+      </a>
+     </li>
+     <li class="">
+      <a href="19. 数学符号指南.html">
+       19. 数学符号指南
+      </a>
+     </li>
+     <li class="">
+      <a href="20. 使用 Python 实现矩阵.html">
+       20. 使用 Python 实现矩阵
+      </a>
+     </li>
+     <li class="">
+      <a href="21. 矩阵代码.html">
+       21. 矩阵代码
+      </a>
+     </li>
+     <li class="">
+      <a href="22. 矩阵代码（参考答案）.html">
+       22. 矩阵代码（参考答案）
+      </a>
+     </li>
+     <li class="">
+      <a href="23. 矩阵加法.html">
+       23. 矩阵加法
+      </a>
+     </li>
+     <li class="">
+      <a href="24. 矩阵加法代码.html">
+       24. 矩阵加法代码
+      </a>
+     </li>
+     <li class="">
+      <a href="25. 矩阵乘法.html">
+       25. 矩阵乘法
+      </a>
+     </li>
+     <li class="">
+      <a href="26. 矩阵乘法代码.html">
+       26. 矩阵乘法代码
+      </a>
+     </li>
+     <li class="">
+      <a href="27. 矩阵转置.html">
+       27. 矩阵转置
+      </a>
+     </li>
+     <li class="">
+      <a href="28. 矩阵转置代码.html">
+       28. 矩阵转置代码
+      </a>
+     </li>
+     <li class="">
+      <a href="29. 单位矩阵.html">
+       29. 单位矩阵
+      </a>
+     </li>
+     <li class="">
+      <a href="30. 单位矩阵代码.html">
+       30. 单位矩阵代码
+      </a>
+     </li>
+     <li class="">
+      <a href="31. 矩阵求逆.html">
+       31. 矩阵求逆
+      </a>
+     </li>
+     <li class="">
+      <a href="32. 矩阵的逆代码.html">
+       32. 矩阵的逆代码
+      </a>
+     </li>
+     <li class="">
+      <a href="33. 这一课你学到了什么.html">
+       33. 这一课你学到了什么
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          27. 矩阵转置
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="矩阵转置">
+          矩阵转置
+         </h1>
+         <p>
+          有几个卡尔曼滤波器方程需要矩阵转置。这些矩阵很好识别，因为它们都有T上标。例如，矩阵
+          <span class="mathquill ud-math">
+           \mathbf{A}
+          </span>
+          的转置为
+          <span class="mathquill ud-math">
+           \mathbf{A^T}
+          </span>
+         </p>
+         <p>
+          下面是三个包含矩阵转置的方程：
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \mathbf{P_{k|k-1}} = \mathbf{F_{k}} \mathbf{P_{k-1|k-1}} \mathbf{F_{k}^T}  + \mathbf{Q_{k}}
+          </span>
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \mathbf{S_{k}} = \mathbf{H_{k}} \mathbf{P_{k|k-1}} \mathbf{H_{k}^T} + \mathbf{R_{k}}
+          </span>
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \mathbf{K_{k}} = \mathbf{P_{k|k-1}} \mathbf{H_{k}^T} \mathbf{S_{k}}^{-1}
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="转置究竟是什么？">
+          转置究竟是什么？
+         </h3>
+         <p>
+          你可以将转置视为切换行和列，从而把矩阵行变成列，或者列编程行。
+         </p>
+         <p>
+          下面是一个例子。对这个矩阵，
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \begin{bmatrix}3 &amp; 25 &amp; 9 &amp; 2 &amp; 4 \\ 7  &amp; 15 &amp; 6 &amp; 92 &amp; 17 \\31 &amp; 18 &amp; 0 &amp; 11 &amp; 8\end{bmatrix}
+          </span>
+         </p>
+         <p>
+          转置结果为
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \begin{bmatrix}3 &amp; 7 &amp; 31 \\ 25  &amp; 15 &amp; 18  \\ 9 &amp; 6 &amp; 0 \\ 2 &amp; 92 &amp; 11 \\ 4 &amp; 17 &amp; 8\end{bmatrix}
+          </span>
+         </p>
+         <p>
+          原始矩阵大小为 3x5。转置后为 5x3。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          下面，我们讲解一下具体步骤。这个图像的颜色编码可以匹配原始矩阵的值和转置矩阵的值。把行转换为列之后，矩阵操作如下：
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/transpose-1.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          你也可以把转置看成将列转为行：
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/transpose-2.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          在数学上，你正在转换矩阵中每个元素的 i 和 j 值。例如，第三行第四列的元素是 11。矩阵转置后，11 现在位于第四行第三列。矩阵转置的正式数学定义是
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           [\mathbf{A^T}]_{ij} = [\mathbf{A}]_{ji}
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="转置计算的用途">
+          转置计算的用途
+         </h3>
+         <p>
+          要使用卡尔曼滤波器方程，你需要计算
+          <span class="mathquill ud-math">
+           \mathbf{F} \text{ and } \mathbf{H}
+          </span>
+          矩阵的转置。
+         </p>
+         <p>
+          矩阵转置还有另外一个用途：矩阵乘法。在以前的矩阵乘法练习中，你编写过一个返回矩阵列的函数。矩阵列可以帮助我们找到矩阵
+          <span class="mathquill ud-math">
+           \mathbf{A}
+          </span>
+          中的一行和矩阵
+          <span class="mathquill ud-math">
+           \mathbf{B}
+          </span>
+          中一列的点积。
+         </p>
+         <p>
+          结果应该是这样的：
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/matrix-multiplication-step1.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          如果取矩阵
+          <span class="mathquill ud-math">
+           \mathbf{B}
+          </span>
+          的转置，结果如何？
+          <span class="mathquill ud-math">
+           \mathbf{B}
+          </span>
+          中所有列变为行。然后，矩阵乘法函数需要计算
+          <span class="mathquill ud-math">
+           \mathbf{A}
+          </span>
+          的行和
+          <span class="mathquill ud-math">
+           \mathbf{B^T}
+          </span>
+          的行的卷积：
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="Dot product between rows of A and transpose of matrix B" class="img img-fluid" src="img/matrix-multiplication-transpose-1.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            Dot product between rows of A and transpose of matrix B
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          你计算的不是
+          <span class="mathquill ud-math">
+           AB^T
+          </span>
+          的乘积。你正在利用矩阵转置来让矩阵乘法的编程更容易。
+         </p>
+         <p>
+          在前面的编码练习中，将矩阵列转换为水平向量的get_column 函数本质上是一个转置。
+         </p>
+         <p>
+          在这部分课程的编码练习中，你不仅要编写转置函数，还要编写一个利用矩阵转置的新乘法函数。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="矩阵转置编程">
+          矩阵转置编程
+         </h3>
+         <p>
+          这个问题和前面碰到的类似。你需要使用嵌套循环。但这个嵌套循环应该是什么样的呢？
+         </p>
+         <p>
+          你可以遍历整个矩阵，就像遍历外循环中的行和内循环中的列一样：
+         </p>
+         <pre><code class="python language-python">for i in range(len(matrixA)):
+for j in range(len(matrixA[0])):
+print(matrixA[i][j])</code></pre>
+         <p>
+          矩阵的转置将需要将每个 i、j 元素存储在新矩阵的 j、i 位置上。但如何填充这个新的矩阵？首先，你需要在列表中创建一个 n x m 的列表，并用空值填充此嵌套列表。这听起来有点复杂。
+         </p>
+         <p>
+          有没有更有效的方法来进行矩阵转置编程？你可以考虑一下，如先遍历外部 for 循环中的列和内部 for 循环中的行。
+         </p>
+         <p>
+          在本课的下一部分有代码编写练习。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="28. 矩阵转置代码.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('27. 矩阵转置')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

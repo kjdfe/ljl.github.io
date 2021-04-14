@@ -1,0 +1,621 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   矩阵求逆
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      矩阵和状态转换
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 连接到卡尔曼滤波器.html">
+       01. 连接到卡尔曼滤波器
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 卡尔曼预测.html">
+       02. 卡尔曼预测
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 卡尔曼滤波器王国.html">
+       03. 卡尔曼滤波器王国
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 卡尔曼滤波器预测.html">
+       04. 卡尔曼滤波器预测
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 另一个预测.html">
+       05. 另一个预测
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 卡尔曼滤波器的更多解释.html">
+       06. 卡尔曼滤波器的更多解释
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 关于符号.html">
+       07. 关于符号
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 卡尔曼滤波器设计.html">
+       08. 卡尔曼滤波器设计
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 知识点回顾.html">
+       09. 知识点回顾
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 卡尔曼滤波器方程.html">
+       10. 卡尔曼滤波器方程
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 简化卡尔曼滤波器方程.html">
+       11. 简化卡尔曼滤波器方程
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 课程其余内容.html">
+       12. 课程其余内容
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 使用矩阵表示状态.html">
+       13. 使用矩阵表示状态
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 卡尔曼方程参考.html">
+       14. 卡尔曼方程参考
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 什么是向量？.html">
+       15. 什么是向量？
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Python 中的向量.html">
+       16. Python 中的向量
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 向量编程.html">
+       17. 向量编程
+      </a>
+     </li>
+     <li class="">
+      <a href="18. 向量编程（参考答案）.html">
+       18. 向量编程（参考答案）
+      </a>
+     </li>
+     <li class="">
+      <a href="19. 数学符号指南.html">
+       19. 数学符号指南
+      </a>
+     </li>
+     <li class="">
+      <a href="20. 使用 Python 实现矩阵.html">
+       20. 使用 Python 实现矩阵
+      </a>
+     </li>
+     <li class="">
+      <a href="21. 矩阵代码.html">
+       21. 矩阵代码
+      </a>
+     </li>
+     <li class="">
+      <a href="22. 矩阵代码（参考答案）.html">
+       22. 矩阵代码（参考答案）
+      </a>
+     </li>
+     <li class="">
+      <a href="23. 矩阵加法.html">
+       23. 矩阵加法
+      </a>
+     </li>
+     <li class="">
+      <a href="24. 矩阵加法代码.html">
+       24. 矩阵加法代码
+      </a>
+     </li>
+     <li class="">
+      <a href="25. 矩阵乘法.html">
+       25. 矩阵乘法
+      </a>
+     </li>
+     <li class="">
+      <a href="26. 矩阵乘法代码.html">
+       26. 矩阵乘法代码
+      </a>
+     </li>
+     <li class="">
+      <a href="27. 矩阵转置.html">
+       27. 矩阵转置
+      </a>
+     </li>
+     <li class="">
+      <a href="28. 矩阵转置代码.html">
+       28. 矩阵转置代码
+      </a>
+     </li>
+     <li class="">
+      <a href="29. 单位矩阵.html">
+       29. 单位矩阵
+      </a>
+     </li>
+     <li class="">
+      <a href="30. 单位矩阵代码.html">
+       30. 单位矩阵代码
+      </a>
+     </li>
+     <li class="">
+      <a href="31. 矩阵求逆.html">
+       31. 矩阵求逆
+      </a>
+     </li>
+     <li class="">
+      <a href="32. 矩阵的逆代码.html">
+       32. 矩阵的逆代码
+      </a>
+     </li>
+     <li class="">
+      <a href="33. 这一课你学到了什么.html">
+       33. 这一课你学到了什么
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          31. 矩阵求逆
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="矩阵求逆">
+          矩阵求逆
+         </h1>
+         <p>
+          在使用卡尔曼滤波器方程的过程中，你还需要学习一种矩阵运算：逆矩阵。
+         </p>
+         <p>
+          特别是在计算卡尔曼滤波器增益矩阵
+          <span class="mathquill ud-math">
+           \mathbf{K}
+          </span>
+          时，你需要对
+          <span class="mathquill ud-math">
+           \mathbf{S}
+          </span>
+          矩阵进行求逆运算。上标符号
+          <span class="mathquill ud-math">
+           ^{-1}
+          </span>
+          表示逆矩阵。下面是卡尔曼滤波器增益方程的一个小提示，其中你可以看到 对 S 求逆的必要性。
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \mathbf{S_{k}} = \mathbf{H_{k}} \mathbf{P_{k|k-1}} \mathbf{H_{k}^T} + \mathbf{R_{k}}
+          </span>
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \mathbf{K_{k}} = \mathbf{P_{k|k-1}} \mathbf{H_{k}^T} \mathbf{S_{k}}^{-1}
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="逆矩阵的正式定义">
+          逆矩阵的正式定义
+         </h3>
+         <p>
+          如上所述，矩阵
+          <span class="mathquill ud-math">
+           \mathbf{A}
+          </span>
+          的逆矩阵可以表示为
+          <span class="mathquill ud-math">
+           \mathbf{A^{-1}}
+          </span>
+          。
+         </p>
+         <p>
+          形式上，如果矩阵
+          <span class="mathquill ud-math">
+           \mathbf{A}
+          </span>
+          有逆矩阵，那么
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \mathbf{A} \times \mathbf{A^{-1}}
+          </span>
+          =
+          <span class="mathquill ud-math">
+           \mathbf{A^{-1}} \times \mathbf{A}
+          </span>
+          =
+          <span class="mathquill ud-math">
+           \mathbf{I}
+          </span>
+         </p>
+         <p>
+          其中
+          <span class="mathquill ud-math">
+           \mathbf{I}
+          </span>
+          是一个单位矩阵。
+         </p>
+         <p>
+          只有方矩阵，即行数等于列数的矩阵，才具有逆矩阵。你可以看到，根据逆矩阵和单位矩阵的定义，这肯定是正确的。单位矩阵始终为方矩阵，因此
+         </p>
+         <p>
+          如果
+          <span class="mathquill ud-math">
+           \mathbf{A}
+          </span>
+          大小为 m x n，那么
+          <span class="mathquill ud-math">
+           \mathbf{A^{-1}}
+          </span>
+          大小必须为 n x m 才能得到 m x m 的方标识矩阵。
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \mathbf{A^{-1}} \mathbf{A}
+          </span>
+          相乘得出  (n x m)(n x m) = n x m，只有 n = m，它才是一个方矩阵。
+         </p>
+         <p>
+          矩阵要具备逆矩阵，必须为方矩阵。同时，并非所有方矩阵都有逆矩阵。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="标量倒数和逆矩阵的关系">
+          标量倒数和逆矩阵的关系
+         </h3>
+         <p>
+          在标量数学中，数字
+          <span class="mathquill ud-math">
+           x
+          </span>
+          的倒数是
+          <span class="mathquill ud-math">
+           1/x
+          </span>
+          。
+         </p>
+         <p>
+          标量乘以一个标量的倒数，结果为 1：
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           x \times \frac{1}{x} = 1
+          </span>
+         </p>
+         <p>
+          在线性代数中，逆矩阵与标量倒数相似：
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \mathbf{A} \times \mathbf{A^{-1}} = \mathbf{I}
+          </span>
+         </p>
+         <p>
+          在本课前一部分，你已经学过，标识矩阵的功能和数字 1 类似。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="计算逆矩阵">
+          计算逆矩阵
+         </h3>
+         <p>
+          在本堂课上，你需要学习计算 1x1 矩阵和 2x2 矩阵的逆矩阵。
+         </p>
+         <p>
+          矩阵越大，
+          <a href="https://en.wikipedia.org/wiki/Invertible_matrix" target="_blank">
+           计算越复杂
+          </a>
+          。Python 和 C ++ 都有能够计算矩阵的逆矩阵的库，例如
+          <a href="http://www.numpy.org/" target="_blank">
+           NumPy 库
+          </a>
+          和
+          <a href="http://eigen.tuxfamily.org/index.php?title=Main_Page" target="_blank">
+           Eigen 库
+          </a>
+          。
+         </p>
+         <h4 id="1-x-1-矩阵的逆矩阵">
+          1 x 1 矩阵的逆矩阵
+         </h4>
+         <p>
+          对于带有值为
+          <span class="mathquill ud-math">
+           a
+          </span>
+          的单个元素的
+          <span class="mathquill ud-math">
+           1 \times 1
+          </span>
+          矩阵，逆矩阵为
+          <span class="mathquill ud-math">
+           \frac{1}{a}
+          </span>
+          。
+         </p>
+         <p>
+          因此，
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \begin{bmatrix}25\end{bmatrix}
+          </span>
+          的逆矩阵为
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \begin{bmatrix}\frac{1}{25}\end{bmatrix}
+          </span>
+          。
+         </p>
+         <h4 id="2-x-2-矩阵的逆矩阵">
+          2 x 2 矩阵的逆矩阵
+         </h4>
+         <p>
+          假设有矩阵
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \begin{bmatrix}a &amp; b \\\ c &amp; d\end{bmatrix}
+          </span>
+         </p>
+         <p>
+          这个 2 x 2 矩阵的逆矩阵为
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \frac{1}{ad - bc}\begin{bmatrix}d &amp; -b \\\ -c &amp; a\end{bmatrix}
+          </span>
+         </p>
+         <p>
+          你可以看到，如果
+          <span class="mathquill ud-math">
+           ad = bc
+          </span>
+          ，则该矩阵没有逆矩阵。
+         </p>
+         <h4 id="2x2-矩阵逆矩阵的另一个公式">
+          2x2 矩阵逆矩阵的另一个公式
+         </h4>
+         <p>
+          下面是 2x2 矩阵逆矩阵的另一个更为正式的公式：
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \mathbf{A}^{-1} = \frac{1}{\text{det }\mathbf{A}} \left[\left(\text{tr } \mathbf{A}\right) \mathbf{I} - \mathbf{A}\right]
+          </span>
+         </p>
+         <p>
+          其中
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \text{det }\mathbf{A}
+          </span>
+          被称为矩阵的行列式。对于 2x2 矩阵，行列式为ad - bc。
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \text{tr } \mathbf{A}
+          </span>
+          叫做矩阵轨迹。轨迹是跨主对角线的和，在本例中是 a + d。
+         </p>
+         <p>
+          如果把所有的元素相乘，最终会得出同样的方程，即：
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \mathbf{A^{-1}} =\frac{1}{ad - bc}\begin{bmatrix}d &amp; -b \\\ -c &amp; a\end{bmatrix}
+          </span>
+         </p>
+         <h4 id="3-x-3-或更大矩阵的逆矩阵">
+          3 x 3 或更大矩阵的逆矩阵
+         </h4>
+         <p>
+          计算更大矩阵的逆矩阵需要相对复杂的矩阵代数理论。在本课中，你只需要计算 2×2 矩阵的逆矩阵。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="逆矩阵编程">
+          逆矩阵编程
+         </h3>
+         <p>
+          你需要写一个函数来计算矩阵的逆矩阵。请记住，你需要检查矩阵的大小，因为 1x1 矩阵和 2x2 的公式不同。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="32. 矩阵的逆代码.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('31. 矩阵求逆')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

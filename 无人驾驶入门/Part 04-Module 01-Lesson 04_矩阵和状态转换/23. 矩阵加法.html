@@ -1,0 +1,556 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   矩阵加法
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      矩阵和状态转换
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 连接到卡尔曼滤波器.html">
+       01. 连接到卡尔曼滤波器
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 卡尔曼预测.html">
+       02. 卡尔曼预测
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 卡尔曼滤波器王国.html">
+       03. 卡尔曼滤波器王国
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 卡尔曼滤波器预测.html">
+       04. 卡尔曼滤波器预测
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 另一个预测.html">
+       05. 另一个预测
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 卡尔曼滤波器的更多解释.html">
+       06. 卡尔曼滤波器的更多解释
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 关于符号.html">
+       07. 关于符号
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 卡尔曼滤波器设计.html">
+       08. 卡尔曼滤波器设计
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 知识点回顾.html">
+       09. 知识点回顾
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 卡尔曼滤波器方程.html">
+       10. 卡尔曼滤波器方程
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 简化卡尔曼滤波器方程.html">
+       11. 简化卡尔曼滤波器方程
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 课程其余内容.html">
+       12. 课程其余内容
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 使用矩阵表示状态.html">
+       13. 使用矩阵表示状态
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 卡尔曼方程参考.html">
+       14. 卡尔曼方程参考
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 什么是向量？.html">
+       15. 什么是向量？
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Python 中的向量.html">
+       16. Python 中的向量
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 向量编程.html">
+       17. 向量编程
+      </a>
+     </li>
+     <li class="">
+      <a href="18. 向量编程（参考答案）.html">
+       18. 向量编程（参考答案）
+      </a>
+     </li>
+     <li class="">
+      <a href="19. 数学符号指南.html">
+       19. 数学符号指南
+      </a>
+     </li>
+     <li class="">
+      <a href="20. 使用 Python 实现矩阵.html">
+       20. 使用 Python 实现矩阵
+      </a>
+     </li>
+     <li class="">
+      <a href="21. 矩阵代码.html">
+       21. 矩阵代码
+      </a>
+     </li>
+     <li class="">
+      <a href="22. 矩阵代码（参考答案）.html">
+       22. 矩阵代码（参考答案）
+      </a>
+     </li>
+     <li class="">
+      <a href="23. 矩阵加法.html">
+       23. 矩阵加法
+      </a>
+     </li>
+     <li class="">
+      <a href="24. 矩阵加法代码.html">
+       24. 矩阵加法代码
+      </a>
+     </li>
+     <li class="">
+      <a href="25. 矩阵乘法.html">
+       25. 矩阵乘法
+      </a>
+     </li>
+     <li class="">
+      <a href="26. 矩阵乘法代码.html">
+       26. 矩阵乘法代码
+      </a>
+     </li>
+     <li class="">
+      <a href="27. 矩阵转置.html">
+       27. 矩阵转置
+      </a>
+     </li>
+     <li class="">
+      <a href="28. 矩阵转置代码.html">
+       28. 矩阵转置代码
+      </a>
+     </li>
+     <li class="">
+      <a href="29. 单位矩阵.html">
+       29. 单位矩阵
+      </a>
+     </li>
+     <li class="">
+      <a href="30. 单位矩阵代码.html">
+       30. 单位矩阵代码
+      </a>
+     </li>
+     <li class="">
+      <a href="31. 矩阵求逆.html">
+       31. 矩阵求逆
+      </a>
+     </li>
+     <li class="">
+      <a href="32. 矩阵的逆代码.html">
+       32. 矩阵的逆代码
+      </a>
+     </li>
+     <li class="">
+      <a href="33. 这一课你学到了什么.html">
+       33. 这一课你学到了什么
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          23. 矩阵加法
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="矩阵加法">
+          矩阵加法
+         </h1>
+         <p>
+          要使用卡尔曼滤波器方程，你需要学习矩阵加法。
+         </p>
+         <p>
+          例如，用于计算预测步骤之后的误差协方差矩阵的方程就需要矩阵加法：
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \mathbf{P_{k|k-1}} = \mathbf{F_{k}} \mathbf{P_{k-1|k-1}} \mathbf{F_{k}^T}  + \mathbf{Q_{k}}
+          </span>
+         </p>
+         <p>
+          或者，使用简单符号：
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \mathbf{P}' = \mathbf{F} \mathbf{P} \mathbf{F^T}  + \mathbf{Q}
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="矩阵加法通式">
+          矩阵加法通式
+         </h3>
+         <p>
+          作为提示，下面是进行矩阵加法的通式：
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \mathbf{A} + \mathbf{B} = \begin{bmatrix}a_{11} &amp; a_{12}  &amp; \ldots  &amp; a_{1n}\\ a_{21} &amp; a_{22}  &amp; \ldots &amp;a_{2n} \\\vdots &amp; \vdots &amp; \ddots  &amp; \vdots \\a_{m1} &amp; a_{m2}  &amp; \ldots  &amp; a_{mn}\end{bmatrix} + \begin{bmatrix}b_{11} &amp; b_{12}  &amp; \ldots  &amp; b_{1n}\\ b_{21} &amp; b_{22}  &amp; \ldots &amp;b_{2n} \\ \vdots &amp; \vdots  &amp; \ddots  &amp; \vdots \\ b_{m1} &amp; b_{m2}  &amp;  \ldots &amp; b_{mn}\end{bmatrix}
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <span class="mathquill ud-math">
+           = \begin{bmatrix}a_{11}+b_{11} &amp; a_{12}+b_{12}  &amp; \ldots  &amp; a_{1n}+b_{1n} \\ a_{21}+b_{21} &amp; a_{22}+b_{22}  &amp; \ldots &amp; a_{2n}+b_{2n} \\ \vdots &amp; \vdots  &amp; \ddots  &amp; \vdots \\ a_{m1}+b_{m1} &amp; a_{m2}+b_{m2}  &amp;  \ldots &amp; a_{mn}+b_{mn}\end{bmatrix}
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          矩阵 A 中的第一个分量同矩阵 B 中的第一个分量相加。第二个分量同第二个分量相加，以此类推。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="矩阵加法的具体例子">
+          矩阵加法的具体例子
+         </h3>
+         <p>
+          下面是矩阵加法的一个具体例子：
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \mathbf{A} + \mathbf{B} =\begin{bmatrix}17&amp;25&amp;6&amp;2&amp;16\\6&amp;1&amp;97&amp;4&amp;22\\80&amp;8&amp;54&amp;15&amp;65\\11&amp;25&amp;68&amp;9&amp;2\end{bmatrix}+\begin{bmatrix}3&amp;14&amp;1&amp;7&amp;42\\32&amp;11&amp;2&amp;4&amp;18\\19&amp;81&amp;4&amp;8&amp;5\\27&amp;2&amp;3&amp;6&amp;7\end{bmatrix} = \begin{bmatrix}20&amp;39&amp;7&amp;9&amp;58\\38&amp;12&amp;99&amp;8&amp;40\\99&amp;89&amp;58&amp;23&amp;70\\38&amp;27&amp;71&amp;15&amp;9\end{bmatrix}
+          </span>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          下图表示了如何计算总和。你将矩阵 A 中的一个分量同矩阵 B 中对应位置的分量相加。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/matrix-addition.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          矩阵 A 中左上方的第一个分量为 17，矩阵 B 中左上方的第一个分量为 3。两者之和为 20，因此最终得到的矩阵中左上方的第一个分量为 20。
+         </p>
+         <p>
+          这里还有一个例子：矩阵 A 第二行第三列的分量为 97。矩阵 B 第二行第三列的分量为 2。两者之和为 99，因此最终得到的矩阵中第二行第三列的分量为99。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="矩阵加法的特征">
+          矩阵加法的特征
+         </h3>
+         <p>
+          你会注意到，矩阵相加有一个重要特征：矩阵 A 和矩阵 B 的大小必须相同。换句话说，它们的行数和列数必须相同。我们回顾一下本页顶部的卡尔曼滤波器预测方程，
+          <span class="mathquill ud-math">
+           \mathbf{P_{k|k-1}} = \mathbf{F_{k}} \mathbf{P_{k-1|k-1}} \mathbf{F_{k}^T}  + \mathbf{Q_{k}}
+          </span>
+         </p>
+         <p>
+          这表示矩阵
+          <span class="mathquill ud-math">
+           \mathbf{Q_{k}}
+          </span>
+          的大小必须等于
+          <span class="mathquill ud-math">
+           \mathbf{F_{k}} \mathbf{P_{k-1|k-1}} \mathbf{F_{k}^T}
+          </span>
+          相乘所得的矩阵大小。
+         </p>
+         <p>
+          此外，两个矩阵的总和大小也应该相同。因此，
+          <span class="mathquill ud-math">
+           \mathbf{P_{k|k-1}} \text{ 与 } \mathbf{Q_{k}}
+          </span>
+          的行数和列数也必须相同。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="矩阵的减法">
+          矩阵的减法
+         </h3>
+         <p>
+          两个矩阵的减法也采用同样的方法计算。为了得到
+          <span class="mathquill ud-math">
+           \mathbf{A} - \mathbf{B}
+          </span>
+          ，你需要将矩阵 A 中的分量减去矩阵 B 中的对应分量。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="编写矩阵加法">
+          编写矩阵加法
+         </h3>
+         <p>
+          矩阵加法指对应位置的分量相加。因此对于 S = 矩阵 A + 矩阵 B，你需要这样操作：
+         </p>
+         <pre><code class="python language-python">S[0][0] = A[0][0] + B[0][0]
+S[0][1] = A[0][1] + B[0][1]
+S[0][2] = A[0][2] + B[0][2]
+S[0][3] = A[0][3] + B[0][3]
+.... etc
+
+S[1][0] = A[1][0] + B[1][0]
+S[1][1] = A[1][1] + B[1][1]
+...etc.</code></pre>
+         <p>
+          然而，出于许多原因，这段代码并不十分高效。你需要为矩阵中的每一个分量编写一行代码。如果一个矩阵有 5 行 4 列，你需要编写 20 行代码。另一个问题是你并不能总是预先知道这个矩阵的尺寸有多大。你的代码也许需要容纳一个总和为 5x4 的矩阵。但接着你或许还需要计算一个 10x2 矩阵和其他数据配置的矩阵之和。
+         </p>
+         <p>
+          在这里，使用嵌套 for 循环语句再适合不过了。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="使用-for-循环语句编写矩阵加法">
+          使用 For 循环语句编写矩阵加法
+         </h3>
+         <p>
+          在之前的练习中，你编写了代码来进行纯量乘法。你也编写了一个函数来输出矩阵。
+         </p>
+         <p>
+          矩阵加法的代码也非常相似。因此，试着在下一页的 IPython notebook 中自行练习。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="24. 矩阵加法代码.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('23. 矩阵加法')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

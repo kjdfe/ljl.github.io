@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.229
+Right now we've got a few threads in our hands.
+
+00:00:03.229 --> 00:00:04.706
+We've got Kalman filters,
+
+00:00:04.706 --> 00:00:07.939
+matrices and vectors, and object-oriented programming.
+
+00:00:07.940 --> 00:00:12.510
+And you might be starting to see how these threads all intertwine. But maybe not.
+
+00:00:12.509 --> 00:00:14.310
+At the end of this course,
+
+00:00:14.310 --> 00:00:17.280
+you're going to implement a matrix class which will be
+
+00:00:17.280 --> 00:00:20.700
+used to make a multidimensional Kalman filter actually work.
+
+00:00:20.699 --> 00:00:21.839
+And once you do that,
+
+00:00:21.839 --> 00:00:24.940
+it should be crystal clear how these threads all intertwine.
+
+00:00:24.940 --> 00:00:28.400
+But for now, you've got a bit more work to do with Kalman filters.
+
+00:00:28.399 --> 00:00:29.910
+So we're going to pick up where
+
+00:00:29.910 --> 00:00:32.585
+the Kalman filter lesson you were watching earlier left off.
+
+00:00:32.585 --> 00:00:35.310
+And just to remind you of where you were when you left off,
+
+00:00:35.310 --> 00:00:39.039
+we're going to show you the very last video you saw from that lesson again. Enjoy.
+

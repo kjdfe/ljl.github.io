@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.094
+At this point, it makes sense to recap everything we've been discussing recently.
+
+00:00:04.094 --> 00:00:05.835
+So far, in this course,
+
+00:00:05.835 --> 00:00:09.074
+you have first learned about and implemented
+
+00:00:09.074 --> 00:00:13.559
+a one-dimensional Kalman Filter which could actually be used to track a vehicle like,
+
+00:00:13.560 --> 00:00:17.094
+for example, a train that's moving in one dimension.
+
+00:00:17.094 --> 00:00:18.539
+And it would do that by using
+
+00:00:18.539 --> 00:00:24.059
+a Gaussian probability distribution to represent some belief about where the vehicle is.
+
+00:00:24.059 --> 00:00:27.299
+Then you learned a bit about what we mean when we talk about
+
+00:00:27.300 --> 00:00:32.490
+a vehicle state and how we can think of motion as a state transition.
+
+00:00:32.490 --> 00:00:36.990
+Then you saw how object-oriented programming gives us a nice way to represent
+
+00:00:36.990 --> 00:00:42.484
+state in objects and to use methods to change or transition that state.
+
+00:00:42.484 --> 00:00:48.060
+This led to a more purely mathematical representation of state as lists of numbers,
+
+00:00:48.060 --> 00:00:49.929
+also known as vectors.
+
+00:00:49.929 --> 00:00:52.695
+And then you saw how, mathematically,
+
+00:00:52.695 --> 00:00:57.344
+matrix multiplication can perform state transitions on these states.
+
+00:00:57.344 --> 00:01:00.899
+And just now, Sebastian brought up the idea of
+
+00:01:00.899 --> 00:01:03.449
+the "Many-D" Kalman Filter equations
+
+00:01:03.450 --> 00:01:06.644
+which are actually useful for real driving situations.
+
+00:01:06.644 --> 00:01:11.030
+But he suggested that we not worry about the matrix math that underlies these equations.
+
+00:01:11.030 --> 00:01:14.265
+But since this nanodegree is your first step towards
+
+00:01:14.265 --> 00:01:17.965
+a career where you're actually going to have to work with these equations in code,
+
+00:01:17.965 --> 00:01:20.799
+we actually are going to worry about them.
+
