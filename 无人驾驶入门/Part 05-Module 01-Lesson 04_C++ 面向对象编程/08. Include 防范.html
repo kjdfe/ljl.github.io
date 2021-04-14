@@ -1,0 +1,910 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Include 防范
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      C++ 面向对象编程
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 介绍.html">
+       01. 介绍
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Python vs. C++ 高斯分布例子.html">
+       02. Python vs. C++ 高斯分布例子
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 为什么使用面向对象编程？.html">
+       03. 为什么使用面向对象编程？
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Python vs. C++：类的使用.html">
+       04. Python vs. C++：类的使用
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 类的剖析.html">
+       05. 类的剖析
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 类文件结构.html">
+       06. 类文件结构
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 练习类的使用.html">
+       07. 练习类的使用
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Include 防范.html">
+       08. Include 防范
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 私有和公开.html">
+       09. 私有和公开
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 类变量.html">
+       10. 类变量
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 类函数声明.html">
+       11. 类函数声明
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 构造函数.html">
+       12. 构造函数
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Set 和 Get 函数.html">
+       13. Set 和 Get 函数
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 矩阵函数.html">
+       14. 矩阵函数
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 使用 Include 防范.html">
+       15. 使用 Include 防范
+      </a>
+     </li>
+     <li class="">
+      <a href="16. 实例化一个对象.html">
+       16. 实例化一个对象
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 在本地运行你的程序.html">
+       17. 在本地运行你的程序
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          08. Include 防范
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="这段代码有什么问题？">
+          这段代码有什么问题？
+         </h1>
+         <p>
+          看看这个 main.cpp 文件，然后点击
+          <code>
+           测试运行
+          </code>
+          按钮。为什么这段代码不能编译呢？
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="438244-main-cpp" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#438244-main-cpp" id="tab-438244-main-cpp" role="tab">
+            main.cpp
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-438244-main-cpp" class="tab-pane active show" id="438244-main-cpp" role="tabpanel">
+            <pre><code></code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+using namespace std;
+
+int main()
+{
+    
+    string color;
+    int doors;
+    
+    color = "blue";
+    doors = 4;
+    
+    string color;
+    color = "red";
+    
+    cout &lt;&lt; "This " &lt;&lt; color &lt;&lt; " car has " &lt;&lt; doors &lt;&lt; " doors";
+    
+    return 0;
+    
+}</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          双重声明
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             为什么代码没有编译？
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1506443201407" name="438245" type="radio" value="a1506443201407"/>
+           <label for="a1506443201407">
+            <p>
+             命名空间声明错误。
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1506443339204" name="438245" type="radio" value="a1506443339204"/>
+           <label for="a1506443339204">
+            <p>
+             颜色变量被多次声明。
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1506443339770" name="438245" type="radio" value="a1506443339770"/>
+           <label for="a1506443339770">
+            <p>
+             字符串变量类型在 C++ 中不存在。
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1506443340291" name="438245" type="radio" value="a1506443340291"/>
+           <label for="a1506443340291">
+            <p>
+             颜色变量中的值从蓝色变为红色。
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          颜色变量被多次声明。
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="多次声明变量、函数或类">
+          多次声明变量、函数或类
+         </h1>
+         <p>
+          如果变量、函数或类被声明多次，C++ 程序将不会编译。当代码量小时，这似乎很容易避免。但想象一下，如果你有一个很大的代码库，其中包含许多不同的类和 .cpp 文件，还有很多程序员负责不同代码部分。这时候会发生什么？
+         </p>
+         <p>
+          看一下这段代码。在两个单独的文件中有两个不同的类。一个类表示一个引擎，它拥有一个存储引擎大小的变量。另一类表示一辆汽车，它有一个颜色变量和一个表示门数的变量。
+         </p>
+         <p>
+          但有一个问题。为了存储汽车的引擎属性，汽车类同时也会使用引擎类。因此，car.h 头文件中使用以下代码包含引擎头文件：
+         </p>
+         <pre><code class="c++ language-c++"># include "engine.h"</code></pre>
+         <p>
+          但是，这段代码在当前状态下不会被编译。考虑一下，为什么按下“测试运行”按钮时它不能正确编译？
+         </p>
+         <p>
+          提示：看一下 main.cpp 顶部的 include 语句。Include 语句实际上将文件复制了到另一个文件中。请记住，多次定义某个类的程序将不能编译。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="438247-main-cpp" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#438247-main-cpp" id="tab-438247-main-cpp" role="tab">
+            main.cpp
+           </a>
+           <a aria-controls="438247-engine-h" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#438247-engine-h" id="tab-438247-engine-h" role="tab">
+            engine.h
+           </a>
+           <a aria-controls="438247-engine-cpp" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#438247-engine-cpp" id="tab-438247-engine-cpp" role="tab">
+            engine.cpp
+           </a>
+           <a aria-controls="438247-car-h" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#438247-car-h" id="tab-438247-car-h" role="tab">
+            car.h
+           </a>
+           <a aria-controls="438247-car-cpp" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#438247-car-cpp" id="tab-438247-car-cpp" role="tab">
+            car.cpp
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-438247-main-cpp" class="tab-pane active show" id="438247-main-cpp" role="tabpanel">
+            <pre><code></code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include "engine.h"
+#include "car.h"
+
+using namespace std;
+
+int main() {
+
+	Engine enginelarge("4L");
+	Engine enginesmall("2.5L");
+
+	Car carone("red", 5);
+	Car cartwo("green", 4);
+
+
+	cout &lt;&lt; "Small engine size "  &lt;&lt; enginesmall.getSize() &lt;&lt; endl;
+	cout &lt;&lt; "Large engine size " &lt;&lt; enginelarge.getSize() &lt;&lt; endl;
+	cout &lt;&lt; "Car one doors " &lt;&lt; carone.getDoors() &lt;&lt; endl;
+	cout &lt;&lt; "Car two doors " &lt;&lt; cartwo.getDoors() &lt;&lt; endl;
+
+	cout &lt;&lt; "Car one engine size " &lt;&lt; carone.getEngine() &lt;&lt; endl;
+	carone.setEngine(enginelarge.getSize());
+	cout &lt;&lt; "Car one engine size new " &lt;&lt; carone.getEngine() &lt;&lt; endl;
+
+	return 0;
+}</pre>
+           </div>
+           <div aria-labelledby="tab-438247-engine-h" class="tab-pane" id="438247-engine-h" role="tabpanel">
+            <pre><code></code>#include &lt;string&gt;
+
+class Engine
+{
+	private:
+		std::string enginesize;
+
+	public:
+
+		Engine ();
+
+		Engine (std::string);
+
+		void setSize(std::string);
+
+		std::string getSize();
+
+};</pre>
+           </div>
+           <div aria-labelledby="tab-438247-engine-cpp" class="tab-pane" id="438247-engine-cpp" role="tabpanel">
+            <pre><code></code>#include "engine.h"
+
+using namespace std;
+
+Engine::Engine () {
+	enginesize = "4L";
+}
+
+Engine::Engine (string engine) {
+	enginesize = engine;
+}
+
+void Engine::setSize(string newsize) {
+	enginesize = newsize;
+}
+
+string Engine::getSize() {
+	return enginesize;
+}
+
+</pre>
+           </div>
+           <div aria-labelledby="tab-438247-car-h" class="tab-pane" id="438247-car-h" role="tabpanel">
+            <pre><code></code>#include &lt;string&gt;
+#include "engine.h"
+
+class Car
+{
+	private:
+		std::string color;
+		int doors;
+		Engine enginetype;
+
+	public:
+		Car (std::string, int);
+
+		void setColor(std::string);
+		void setDoors(int);
+		void setEngine(std::string);
+
+		std::string getColor();
+		int getDoors();
+		std::string getEngine();
+
+};</pre>
+           </div>
+           <div aria-labelledby="tab-438247-car-cpp" class="tab-pane" id="438247-car-cpp" role="tabpanel">
+            <pre><code></code>#include "car.h"
+
+using namespace std;
+
+Car::Car (string newcolor, int newdoors) {
+	color = newcolor;
+	doors = newdoors;
+	enginetype.setSize("2.5L");
+}
+
+string Car::getColor() {
+	return color;
+}
+
+int Car::getDoors() {
+	return doors;
+}
+
+string Car::getEngine() {
+	return enginetype.getSize();
+}
+
+void Car::setColor(string newcolor) {
+	color = newcolor;
+}
+
+void Car::setDoors(int newdoors) {
+	doors = newdoors;
+}
+
+void Car::setEngine(string newengine) {
+	enginetype.setSize(newengine);
+}</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Compiling
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             为什么代码没有编译？
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1506458557526" name="438248" type="radio" value="a1506458557526"/>
+           <label for="a1506458557526">
+            <p>
+             car 类在 main.cpp 中声明了两次
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1506458593721" name="438248" type="radio" value="a1506458593721"/>
+           <label for="a1506458593721">
+            <p>
+             engine 类在 main.cpp 中声明了两次
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1506458594184" name="438248" type="radio" value="a1506458594184"/>
+           <label for="a1506458594184">
+            <p>
+             car 类包含 engine.h 头文件，这是不允许的。
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1506458594704" name="438248" type="radio" value="a1506458594704"/>
+           <label for="a1506458594704">
+            <p>
+             标准命名空间未被正确使用。
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          engine 类在 main.cpp 中声明了两次
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          由于以下语句，代码将不会被编译：
+         </p>
+         <pre><code># include "engine.h"
+# include "car.h"</code></pre>
+         <p>
+          第一个 include 语句会将引擎头文件的内容复制到 main.cpp 中。这样 main.cpp 将拥有 Engine 类的定义。
+         </p>
+         <p>
+          但是，main.cpp 也会复制 “car.h” 的内容。但 “car.h” 文件同样包含 engine.h：
+         </p>
+         <pre><code class="c++ language-c++"># include "engine.h"</code></pre>
+         <p>
+          “engine.h”文件最终被包含了两次，所 以 Engine 类被声明了两次。Car 使用了引擎类，main.cpp 也使用了引擎类。
+         </p>
+         <p>
+          .cpp 文件和 .h 文件的模块化是 C++ 的一大优点。但是，我们如何才能避免多重声明？
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="ifndef">
+          ifndef
+         </h1>
+         <p>
+          解决方法是使用
+          <code>
+           #  ifndef
+          </code>
+          语句，它允许你实现一种名为包含警卫的技术。
+         </p>
+         <p>
+          ifndef 语句表示“如果未定义”。当用 # ifndef 语句包装头文件时，如果文件尚未定义，编译器将只包含一个头文件。在当前的 main.cpp 例子中，“engine.h” 文件将首先被包含。然后编译器会包含 “car.h”。但 “car.h” 会再次尝试包含 “engine.h”；然而，“engine.h” 文件中的包含警卫将确保 “engine.h” 不会再次包含在内。
+         </p>
+         <p>
+          下面是使用 ifndef 语句包含 “engine.h” 文件的样子：
+         </p>
+         <pre><code class="c++ language-c++"># ifndef ENGINE_H
+# define ENGINE_H
+
+# include &lt;string&gt;
+
+class Engine
+{
+    private:
+        std::string enginesize;
+
+    public:
+
+        Engine ();
+
+        Engine (std::string);
+
+        void setSize(std::string);
+
+        std::string getSize();
+
+};
+
+# endif /* ENGINE_H */</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <pre><code># ifndef FILENAME_H
+# define FILENAME_H
+
+header code ...
+
+# endif /* FILENAME_H */</code></pre>
+         <p>
+          _H 使用全部大写是命名约定。在 # endif 语句之后加上注释也是惯例。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          最好使用 # ifndef 语句来包装所有的头文件。这样，其他程序在使用你的代码时，就不必跟踪已经包含了哪些文件。
+         </p>
+         <p>
+          以下是在引擎和汽车头文件中包含 # ifndef 语句的结果。点击“测试运行”，即可看到现在编译的代码。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="438253-main-cpp" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#438253-main-cpp" id="tab-438253-main-cpp" role="tab">
+            main.cpp
+           </a>
+           <a aria-controls="438253-engine-h" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#438253-engine-h" id="tab-438253-engine-h" role="tab">
+            engine.h
+           </a>
+           <a aria-controls="438253-engine-cpp" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#438253-engine-cpp" id="tab-438253-engine-cpp" role="tab">
+            engine.cpp
+           </a>
+           <a aria-controls="438253-car-h" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#438253-car-h" id="tab-438253-car-h" role="tab">
+            car.h
+           </a>
+           <a aria-controls="438253-car-cpp" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#438253-car-cpp" id="tab-438253-car-cpp" role="tab">
+            car.cpp
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-438253-main-cpp" class="tab-pane active show" id="438253-main-cpp" role="tabpanel">
+            <pre><code></code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include "engine.h"
+#include "car.h"
+
+using namespace std;
+
+int main() {
+
+	Engine enginelarge("4L");
+	Engine enginesmall("2.5L");
+
+	Car carone("red", 5);
+	Car cartwo("green", 4);
+
+
+	cout &lt;&lt; "Small engine size "  &lt;&lt; enginesmall.getSize() &lt;&lt; endl;
+	cout &lt;&lt; "Large engine size " &lt;&lt; enginelarge.getSize() &lt;&lt; endl;
+	cout &lt;&lt; "Car one doors " &lt;&lt; carone.getDoors() &lt;&lt; endl;
+	cout &lt;&lt; "Car two doors " &lt;&lt; cartwo.getDoors() &lt;&lt; endl;
+
+	cout &lt;&lt; "Car one engine size " &lt;&lt; carone.getEngine() &lt;&lt; endl;
+	carone.setEngine(enginelarge.getSize());
+	cout &lt;&lt; "Car one engine size new " &lt;&lt; carone.getEngine() &lt;&lt; endl;
+
+	return 0;
+}</pre>
+           </div>
+           <div aria-labelledby="tab-438253-engine-h" class="tab-pane" id="438253-engine-h" role="tabpanel">
+            <pre><code></code>#ifndef ENGINE_H
+#define ENGINE_H
+
+#include &lt;string&gt;
+
+class Engine
+{
+	private:
+		std::string enginesize;
+
+	public:
+
+		Engine ();
+
+		Engine (std::string);
+
+		void setSize(std::string);
+
+		std::string getSize();
+
+};
+
+#endif /* ENGINE_H */</pre>
+           </div>
+           <div aria-labelledby="tab-438253-engine-cpp" class="tab-pane" id="438253-engine-cpp" role="tabpanel">
+            <pre><code></code>#include "engine.h"
+
+using namespace std;
+
+Engine::Engine () {
+	enginesize = "4L";
+}
+
+Engine::Engine (string engine) {
+	enginesize = engine;
+}
+
+void Engine::setSize(string newsize) {
+	enginesize = newsize;
+}
+
+string Engine::getSize() {
+	return enginesize;
+}
+
+</pre>
+           </div>
+           <div aria-labelledby="tab-438253-car-h" class="tab-pane" id="438253-car-h" role="tabpanel">
+            <pre><code></code>#ifndef CAR_H
+#define CAR_H
+
+#include &lt;string&gt;
+#include "engine.h"
+
+class Car
+{
+	private:
+		std::string color;
+		int doors;
+		Engine enginetype;
+
+	public:
+		Car (std::string, int);
+
+		void setColor(std::string);
+		void setDoors(int);
+		void setEngine(std::string);
+
+		std::string getColor();
+		int getDoors();
+		std::string getEngine();
+
+};
+
+#endif  /* CAR_H */</pre>
+           </div>
+           <div aria-labelledby="tab-438253-car-cpp" class="tab-pane" id="438253-car-cpp" role="tabpanel">
+            <pre><code></code>#include "car.h"
+
+using namespace std;
+
+Car::Car (string newcolor, int newdoors) {
+	color = newcolor;
+	doors = newdoors;
+	enginetype.setSize("2.5L");
+}
+
+string Car::getColor() {
+	return color;
+}
+
+int Car::getDoors() {
+	return doors;
+}
+
+string Car::getEngine() {
+	return enginetype.getSize();
+}
+
+void Car::setColor(string newcolor) {
+	color = newcolor;
+}
+
+void Car::setDoors(int newdoors) {
+	doors = newdoors;
+}
+
+void Car::setEngine(string newengine) {
+	enginetype.setSize(newengine);
+}</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="头文件中的命名空间">
+          头文件中的命名空间
+         </h1>
+         <p>
+          另外，你会注意到，头文件没有使用标准的命名空间。通常建议避免在头文件中使用命名空间。这有助于避免后期函数和类在代码库的不同部分被重用时发生命名冲突。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="09. 私有和公开.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('08. Include 防范')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

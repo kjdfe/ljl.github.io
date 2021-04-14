@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.879
+Yes, I would love to talk more about object oriented programming.
+
+00:00:03.879 --> 00:00:05.695
+Often I want to solve things with functions,
+
+00:00:05.695 --> 00:00:07.110
+I think I'm inclined to think that way.
+
+00:00:07.110 --> 00:00:11.185
+But I know there is value in thinking object orintendly.
+
+00:00:11.185 --> 00:00:13.080
+Why when designing a self-driving car,
+
+00:00:13.080 --> 00:00:15.330
+for example, why do we want to use object oriented programming?
+
+00:00:15.330 --> 00:00:22.065
+Object oriented programming has the advantage of being modular and testable,
+
+00:00:22.065 --> 00:00:24.375
+and that is important.
+
+00:00:24.375 --> 00:00:31.350
+But also with self-driving cars you can see the objects, they're physical things.
+
+00:00:31.350 --> 00:00:33.920
+The more you can work with an object that's
+
+00:00:33.920 --> 00:00:37.015
+really something you feel like you could touch,
+
+00:00:37.015 --> 00:00:40.664
+that helps define your code.
+
+00:00:40.664 --> 00:00:46.320
+And then it goes back to making good separation between one piece of code or another.
+
+00:00:46.320 --> 00:00:50.625
+Because if you have a wheel class which maybe not where we're going here,
+
+00:00:50.625 --> 00:00:52.109
+but a wheel class,
+
+00:00:52.109 --> 00:00:54.964
+it turns, it has tread,
+
+00:00:54.965 --> 00:00:56.760
+it has all of these things.
+
+00:00:56.759 --> 00:00:58.244
+And you can have four of them,
+
+00:00:58.244 --> 00:01:01.195
+and they can be similar but not the same.
+
+00:01:01.195 --> 00:01:05.310
+And then you have a sensor class for seeing where the lanes are,
+
+00:01:05.310 --> 00:01:07.240
+which might include a camera,
+
+00:01:07.239 --> 00:01:10.439
+but that camera class might be used from other people.
+
+00:01:10.439 --> 00:01:13.004
+You can end up with a hugely complicated system,
+
+00:01:13.004 --> 00:01:16.289
+but if everything is self-contained and very object-y,
+
+00:01:16.290 --> 00:01:21.600
+very individual and encapsulated into its own separate thing,
+
+00:01:21.599 --> 00:01:28.319
+then as you change the wheels to different wheels or you go to a flying car,
+
+00:01:28.319 --> 00:01:30.079
+you can just swap that out.
+

@@ -1,0 +1,608 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   构造函数
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      C++ 面向对象编程
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 介绍.html">
+       01. 介绍
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Python vs. C++ 高斯分布例子.html">
+       02. Python vs. C++ 高斯分布例子
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 为什么使用面向对象编程？.html">
+       03. 为什么使用面向对象编程？
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Python vs. C++：类的使用.html">
+       04. Python vs. C++：类的使用
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 类的剖析.html">
+       05. 类的剖析
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 类文件结构.html">
+       06. 类文件结构
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 练习类的使用.html">
+       07. 练习类的使用
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Include 防范.html">
+       08. Include 防范
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 私有和公开.html">
+       09. 私有和公开
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 类变量.html">
+       10. 类变量
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 类函数声明.html">
+       11. 类函数声明
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 构造函数.html">
+       12. 构造函数
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Set 和 Get 函数.html">
+       13. Set 和 Get 函数
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 矩阵函数.html">
+       14. 矩阵函数
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 使用 Include 防范.html">
+       15. 使用 Include 防范
+      </a>
+     </li>
+     <li class="">
+      <a href="16. 实例化一个对象.html">
+       16. 实例化一个对象
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 在本地运行你的程序.html">
+       17. 在本地运行你的程序
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          12. 构造函数
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="声明构造函数">
+          声明构造函数
+         </h1>
+         <p>
+          Python 和 C++ 都有构造函数。构造函数定义了对象实例化时会发生什么。
+         </p>
+         <h4 id="python-构造函数">
+          Python 构造函数
+         </h4>
+         <p>
+          它们定义了对象实例化时会发生什么。在 Python 中，语法是：
+         </p>
+         <pre><code class="python language-python">def __init__(self, variable1, variable2, ..., variablen):
+    self.variable1 = variable1
+    self.variable2 = variable2
+    self.variablen = variablen</code></pre>
+         <h4 id="c-构造函数声明">
+          C++ 构造函数声明
+         </h4>
+         <p>
+          在 C++ 中，构造函数声明如下：
+         </p>
+         <pre><code class="c++ language-c++">Classname (datatype for variable1, datatype for variable2, …, datatype for variablen);</code></pre>
+         <p>
+          你也可以同时声明一个默认的构造函数。
+         </p>
+         <pre><code class="c++ language-c++">Classname ();</code></pre>
+         <p>
+          实例化一个对象而不提供变量的值时，使用这个默认的构造函数。说得更具体一点，你将用一个二维向量来初始化一个矩阵变量。如果不提供二维向量，也可以使用默认向量来初始化矩阵变量。第二种情况中，可以使用空构造函数。
+         </p>
+         <p>
+          Gaussian 构造函数声明如下：
+         </p>
+         <pre><code class="c++ language-c++">class Gaussian
+{
+    private:
+        ...
+
+    public:
+        ...
+        Gaussian ();
+        Gaussian (float, float);
+
+   ....
+};</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="定义构造函数">
+          定义构造函数
+         </h1>
+         <p>
+          声明了构造函数后，你需要在 .cpp 文件中实际定义它们。
+         </p>
+         <p>
+          构造函数定义的语法如下：
+         </p>
+         <pre><code class="c++ language-c++">//空构造函数的语法
+Classname::ClassName() {
+
+    constructor function definition
+}
+
+// constructor function syntax
+Classname::ClassName(datatype variable1, datatype variable2, …, datatype variablen) {
+
+    constructor function definition
+
+}</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          你可以看到这在 Gaussian 类中是如何实现的：
+         </p>
+         <pre><code class="c++ language-c++">Gaussian::Gaussian() {
+    mu = 0;
+    sigma2 = 1; 
+}
+
+Gaussian::Gaussian (float average, float sigma) {
+    mu = average;
+    sigma2 = sigma;
+}</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          请注意，构造函数不返回任何内容。它们只会初始化类变量。你可能还想知道，如果 mu 和 sigma2 是私有变量，函数定义如何能访问这两个变量。请记住，私有变量可以从类代码内部访问，但不能从类外部访问。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="使用默认值初始化">
+          使用默认值初始化
+         </h1>
+         <p>
+          在 Python 和 C++ 中，都可以在构造函数中使用默认值。在 Python 中，语法是：
+         </p>
+         <pre><code class="python language-python">def __init__(self, variable1 = default1, variable2 = default2, ..., variablen = defaultn):
+    self.variable1 = variable1
+    self.variable2 = variable2
+    self.variablen = variablen</code></pre>
+         <p>
+          C++ 也有相同功能，但语法可能和所期望的不一样。默认值的定义实际上在 .h 文件函数定义中。下面一个加法类的简单例子，它包含两个整数并输出它们的总和。
+         </p>
+         <p>
+          以下为头文件 add.h：
+         </p>
+         <pre><code class="c++ language-c++">class Add
+{
+    public:
+        int a;
+        int b;
+
+        Add(int, int second = 17);
+
+        int addition();
+};</code></pre>
+         <p>
+          这里是 add.cpp 中的定义：
+         </p>
+         <pre><code class="c++ language-c++"># include  "add.h"
+
+Add::Add(int first, int second) {
+
+    a = first;
+    b = second;
+}
+
+int Add::addition() {
+    return a + b;
+}</code></pre>
+         <p>
+          请注意，默认值是在头文件中声明的。现在，如果在实例化 add 对象时只指定了一个值，则变量 b 将具有默认值 17：
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <pre><code class="c++ language-c++"># include &lt;iostream&gt;
+
+# include  "add.h"
+
+int main() {
+
+    Add adder(5);
+    std::cout &lt;&lt; adder.addition() &lt;&lt; std::endl;
+    return 0;
+
+}</code></pre>
+         <p>
+          上述代码输出值 22。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="声明并定义矩阵类构造函数">
+          声明并定义矩阵类构造函数
+         </h1>
+         <p>
+          现在轮到你了。填充 matrix.h 文件和 matrix.cpp 文件中的 TODO 部分。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="438281-main-cpp" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#438281-main-cpp" id="tab-438281-main-cpp" role="tab">
+            main.cpp
+           </a>
+           <a aria-controls="438281-matrix-cpp" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#438281-matrix-cpp" id="tab-438281-matrix-cpp" role="tab">
+            matrix.cpp
+           </a>
+           <a aria-controls="438281-matrix-h" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#438281-matrix-h" id="tab-438281-matrix-h" role="tab">
+            matrix.h
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-438281-main-cpp" class="tab-pane active show" id="438281-main-cpp" role="tabpanel">
+            <pre><code></code>#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include "matrix.h"
+
+int main () {
+    
+    // TODO: Nothing to do here
+    
+    return 0;
+}</pre>
+           </div>
+           <div aria-labelledby="tab-438281-matrix-cpp" class="tab-pane" id="438281-matrix-cpp" role="tabpanel">
+            <pre><code></code>#include "matrix.h"
+
+/* TODO: Define the default constructor. Remember the syntax is
+**      Classname::ClassName() {
+**    
+**          initialize variables
+**    
+**       }
+**
+**
+**      You need to initialize the grid variable to a default value such as
+**      a 4x4 matrix with all zeros.
+**
+**      Then initialize the rows variable, and the cols variable using the
+**      vector size method. For example myvector.size() will give the size of
+**      a vector. For a 2-dimensional vector, myvector.size() would be the
+**      number of rows in a matrix.
+**
+*/
+
+/* TODO: Define a constructor that receives a 2-Dimensional vector
+**       and assigns the vector to the grid variable. 
+**       
+**      Remember the syntax is
+**      Classname::ClassName(datatype inputvariablename) {
+**    
+**          classvariable = inputvariablename
+**    
+**       }
+**
+**      Then initialize the rows variable, and the cols variable exactly
+**      as you did for the default constructor.
+**
+*/
+</pre>
+           </div>
+           <div aria-labelledby="tab-438281-matrix-h" class="tab-pane" id="438281-matrix-h" role="tabpanel">
+            <pre><code></code>#include &lt;vector&gt;
+
+class Matrix 
+{
+
+        private:
+
+            std::vector&lt; std::vector&lt;float&gt; &gt; grid;
+            std::vector&lt;float&gt;::size_type rows;
+            std::vector&lt;float&gt;::size_type cols;
+            
+        public:
+        
+        /* 
+        ** TODO: Declare  constructor functions
+        ** For the matrix class, you will need two constructor functions.
+        ** 1. An empty constructor function
+        ** 2. A constructor function that accepts a 2-dimensional vector
+        */
+        
+};
+</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="matrixh-参考答案">
+          matrix.h 参考答案
+         </h1>
+         <pre><code class="c++ language-c++"># include &lt;vector&gt;
+
+class Matrix 
+{
+
+        private:
+
+            std::vector&lt; std::vector&lt;float&gt; &gt; grid;
+            std::vector&lt;int&gt;::size_type rows;
+            std::vector&lt;int&gt;::size_type cols;
+
+        public:
+
+            // 构造函数声明
+            Matrix ();
+            Matrix (std::vector&lt; std::vector&lt;float&gt; &gt;);
+};</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="matrixcpp-参考答案">
+          matrix.cpp 参考答案
+         </h1>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <pre><code class="c++ language-c++"># include "matrix.h"
+
+Matrix::Matrix() {
+    std::vector &lt;std:: vector &lt;float&gt; &gt; initial_grid (10, std::vector &lt;float&gt;(5, 0.5));
+    grid = initial_grid;
+    rows = initial_grid.size();
+    cols = initial_grid[0].size();
+
+}
+
+Matrix::Matrix(std::vector &lt;std:: vector &lt;float&gt; &gt; initial_grid) {
+    grid = initial_grid;
+    rows = initial_grid.size();
+    cols = initial_grid[0].size();
+}</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="13. Set 和 Get 函数.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('12. 构造函数')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

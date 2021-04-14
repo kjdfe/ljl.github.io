@@ -1,0 +1,651 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   矩阵函数
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      C++ 面向对象编程
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 介绍.html">
+       01. 介绍
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Python vs. C++ 高斯分布例子.html">
+       02. Python vs. C++ 高斯分布例子
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 为什么使用面向对象编程？.html">
+       03. 为什么使用面向对象编程？
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Python vs. C++：类的使用.html">
+       04. Python vs. C++：类的使用
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 类的剖析.html">
+       05. 类的剖析
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 类文件结构.html">
+       06. 类文件结构
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 练习类的使用.html">
+       07. 练习类的使用
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Include 防范.html">
+       08. Include 防范
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 私有和公开.html">
+       09. 私有和公开
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 类变量.html">
+       10. 类变量
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 类函数声明.html">
+       11. 类函数声明
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 构造函数.html">
+       12. 构造函数
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Set 和 Get 函数.html">
+       13. Set 和 Get 函数
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 矩阵函数.html">
+       14. 矩阵函数
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 使用 Include 防范.html">
+       15. 使用 Include 防范
+      </a>
+     </li>
+     <li class="">
+      <a href="16. 实例化一个对象.html">
+       16. 实例化一个对象
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 在本地运行你的程序.html">
+       17. 在本地运行你的程序
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          14. 矩阵函数
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="矩阵函数">
+          矩阵函数
+         </h1>
+         <p>
+          Matrix 类的最后一部分涉及到矩阵函数的实现。你需要尽可能多地练习矩阵运算编程，包括加法、乘法、转置、求逆等。
+         </p>
+         <p>
+          我们建议，你至少需要实现一个矩阵加法，以及一个名为 matrix_print 的函数，它使用 cout 将矩阵输出到终端。在本页最后给出的参考答案中，我们还提供了matrix_transpose 函数的代码。
+         </p>
+         <p>
+          实现这些类的函数与实现本课前面的 get 和 set 函数是一样的。你将需要在 matrix.h 中声明函数，并在 matrix.cpp 中定义函数。一般语法也是一样的：
+         </p>
+         <h3 id="类函数声明语法">
+          类函数声明语法
+         </h3>
+         <pre><code class="c++ language-c++">return datatype functionname(datatype for variable1, 
+datatype for variable2, ..., datatype for variablen)</code></pre>
+         <h4 id="类函数定义语法">
+          类函数定义语法
+         </h4>
+         <pre><code class="c++ language-c++">return datatype Classname::functionname(datatype variable1, 
+datatype variable2, ..., datatype variablen) {
+
+    code defining the function;
+}</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="编写矩阵函数">
+          编写矩阵函数
+         </h1>
+         <p>
+          在本练习中，你将声明并定义将两个矩阵相加的矩阵类函数。以下是矩阵加法函数的输入和输出：
+         </p>
+         <p>
+          输入：
+         </p>
+         <ul>
+          <li>
+           一个矩阵，它将被添加到 grid 变量中
+          </li>
+         </ul>
+         <p>
+          输出：
+         </p>
+         <ul>
+          <li>
+           包含 grid 变量矩阵和输入矩阵之和的一个矩阵
+          </li>
+         </ul>
+         <p>
+          由于 matrix_addition 函数的输入是矩阵，因此需要使用 Matrix 类作为数据类型来声明并定义函数。这似乎有点混乱，但和本课前面介绍的 Gaussian 类中的 mul 和 add 函数完全相同。你可以使用这些作为编写 matrix_addition 函数的指南。
+         </p>
+         <p>
+          以下是 gaussian.h 中的 mul 和 add 函数的函数声明，供参考：
+         </p>
+         <pre><code class="c++ language-c++">        Gaussian mul (Gaussian);
+        Gaussian add (Gaussian);</code></pre>
+         <p>
+          这两个函数都接收高斯值并输出高斯值。以下是 gaussian.cpp 的函数定义：
+         </p>
+         <pre><code class="c++ language-c++">Gaussian Gaussian::mul(Gaussian other) {
+    float denominator;
+    float numerator;
+    float new_mu;
+    float new_var;
+
+    denominator = sigma2 + other.getSigma2();
+    numerator = mu * other.getSigma2() + other.getMu() * sigma2;
+    new_mu = numerator / denominator;
+
+    new_var = 1.0 / ( (1.0 / sigma2) + (1.0 / other.sigma2) );
+
+    return Gaussian(new_mu, new_var);
+}
+
+Gaussian Gaussian::add(Gaussian other) {
+
+    float new_mu;
+    float new_sigma2;
+
+    new_mu = mu + other.getMu();
+    new_sigma2 = sigma2 + other.getSigma2();
+
+    return Gaussian(new_mu, new_sigma2);
+}</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          虽然 matrix_addition 函数的实现有所不同，但一般结构与 Gaussian 示例中的 mul 和 add 函数相同。
+         </p>
+         <p>
+          你还需要编写一个 matrix_print 函数，该函数使用 cout 向终端输出一个矩阵。matrix_print 函数没有输入，也没有输出。
+         </p>
+         <p>
+          在 matrix.cpp 和 matrix.h 代码中填充 TODO 部分。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="438293-main-cpp" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#438293-main-cpp" id="tab-438293-main-cpp" role="tab">
+            main.cpp
+           </a>
+           <a aria-controls="438293-matrix-cpp" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#438293-matrix-cpp" id="tab-438293-matrix-cpp" role="tab">
+            matrix.cpp
+           </a>
+           <a aria-controls="438293-matrix-h" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#438293-matrix-h" id="tab-438293-matrix-h" role="tab">
+            matrix.h
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-438293-main-cpp" class="tab-pane active show" id="438293-main-cpp" role="tabpanel">
+            <pre><code></code>#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include "matrix.h"
+
+int main () {
+    
+    // TODO: Nothing to do here
+    
+    return 0;
+}</pre>
+           </div>
+           <div aria-labelledby="tab-438293-matrix-cpp" class="tab-pane" id="438293-matrix-cpp" role="tabpanel">
+            <pre><code></code>#include "matrix.h"
+
+Matrix::Matrix() {
+    std::vector &lt;std:: vector &lt;float&gt; &gt; initial_grid (10, std::vector &lt;float&gt;(5, 0.5));
+    grid = initial_grid;
+    rows = initial_grid.size();
+    cols = initial_grid[0].size();
+
+}
+
+Matrix::Matrix(std::vector &lt;std:: vector &lt;float&gt; &gt; initial_grid) {
+    grid = initial_grid;
+    rows = initial_grid.size();
+    cols = initial_grid[0].size();
+}
+
+
+void Matrix::setGrid(std::vector&lt; std::vector&lt;float&gt; &gt; new_grid) {
+    grid = new_grid;
+    rows = new_grid.size();
+    cols = new_grid[0].size();
+}
+
+std::vector&lt; std::vector&lt;float&gt; &gt; Matrix::getGrid() {
+    return grid;
+}
+
+std::vector&lt;int&gt;::size_type Matrix::getRows() {
+    return rows;
+}
+
+std::vector&lt;int&gt;::size_type Matrix::getCols() {
+    return cols;
+}
+
+/* TODO: Define a matrix_addition function
+**   INPUT: a matrix
+**   OUPUT: the sum of the grid variable and the input matrix
+**
+** STEPS:
+**  1. check that the matrix in the grid variable
+**     and the input matrix have the same size
+**
+**     if not, throw an error like
+**         throw std::invalid_argument("matrices are not the same size");
+**
+** 2. add the matrices together and return
+**       the result as a Matrix. You can do this part
+**       with nested for loops. If you use an intermediate
+**       vector to store a row, the vector.clear() 
+**       method might be useful.
+**
+*/
+
+/* TODO: Define a matrix_print function
+** This function has no inputs and no outputs
+** The purpose of the function is to display the matrix in
+** the terminal using std::cout. 
+**
+**
+** The output should look something like:
+** 4    9   1   10
+** 5    11  6   17
+** 8    4   15  2
+*/</pre>
+           </div>
+           <div aria-labelledby="tab-438293-matrix-h" class="tab-pane" id="438293-matrix-h" role="tabpanel">
+            <pre><code></code>#include &lt;vector&gt;
+#include &lt;stdexcept&gt; //library for the invalid_argument method
+#include &lt;iostream&gt;
+
+class Matrix
+{
+    private:
+
+        std::vector&lt; std::vector&lt;float&gt; &gt; grid;
+        std::vector&lt;float&gt;::size_type rows;
+        std::vector&lt;float&gt;::size_type cols;
+
+    public:
+
+        // constructor functions
+        Matrix ();
+        Matrix (std::vector&lt; std::vector&lt;float&gt; &gt;);
+
+        // set functions
+        void setGrid(std::vector&lt; std::vector&lt;float&gt; &gt;);
+
+        // get functions
+        std::vector&lt; std::vector&lt;float&gt; &gt; getGrid();
+        std::vector&lt;float&gt;::size_type getRows();
+        std::vector&lt;float&gt;::size_type getCols();
+
+        /* TODO: Declare the matrix_addition function
+        ** INPUTS: a Matrix
+        ** OUTPUTS: a Matrix
+        **
+        ** TODO: Declare the matrix_print function
+        ** INPUTS: none
+        ** OUTPUTS: none
+        */
+};</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="matrixh-参考答案">
+          matrix.h 参考答案
+         </h1>
+         <pre><code class="c++ language-c++"># include &lt;vector&gt;
+# include &lt;iostream&gt;
+# include &lt;stdexcept&gt;
+
+# include &lt;vector&gt;
+
+class Matrix
+{
+    private:
+
+        std::vector&lt; std::vector&lt;float&gt; &gt; grid;
+        std::vector&lt;int&gt;::size_type rows;
+        std::vector&lt;int&gt;::size_type cols;
+
+    public:
+
+        // 构造函数
+        Matrix ();
+        Matrix (std::vector&lt; std::vector&lt;float&gt; &gt;);
+
+        // set 函数
+        void setGrid(std::vector&lt; std::vector&lt;float&gt; &gt;);
+
+        // get 函数
+        std::vector&lt; std::vector&lt;float&gt; &gt; getGrid();
+        std::vector&lt;int&gt;::size_type getRows();
+        std::vector&lt;int&gt;::size_type getCols();
+
+        // 矩阵函数
+        Matrix matrix_transpose();
+        Matrix matrix_addition(Matrix);
+
+        //矩阵打印
+        void matrix_print();
+
+};</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="matrixcpp-参考答案">
+          matrix.cpp 参考答案
+         </h1>
+         <pre><code class="c++ language-c++"># include "matrix.h"
+
+Matrix::Matrix() {
+    std::vector &lt;std:: vector &lt;float&gt; &gt; initial_grid (10, std::vector &lt;float&gt;(5, 0.5));
+    grid = initial_grid;
+    rows = initial_grid.size();
+    cols = initial_grid[0].size();
+
+}
+
+Matrix::Matrix(std::vector &lt;std:: vector &lt;float&gt; &gt; initial_grid) {
+    grid = initial_grid;
+    rows = initial_grid.size();
+    cols = initial_grid[0].size();
+}
+
+void Matrix::setGrid(std::vector&lt; std::vector&lt;float&gt; &gt; new_grid) {
+    grid = new_grid;
+    rows = new_grid.size();
+    cols = new_grid[0].size();
+
+}
+
+std::vector&lt; std::vector&lt;float&gt; &gt; Matrix::getGrid() {
+    return grid;
+}
+
+std::vector&lt;int&gt;::size_type Matrix::getRows() {
+    return rows;
+}
+
+std::vector&lt;int&gt;::size_type Matrix::getCols() {
+    return cols;
+}
+
+Matrix Matrix::matrix_transpose() {
+    std::vector&lt; std::vector&lt;float&gt; &gt; new_grid;
+    std::vector&lt;float&gt; row;
+
+    for (int i = 0; i &lt; cols; i++) {
+        row.clear();
+
+        for (int j = 0; j &lt; rows; j++) {
+            row.push_back(grid[j][i]); 
+        }
+        new_grid.push_back(row);
+    }
+
+    return Matrix(new_grid);
+}
+
+Matrix Matrix::matrix_addition(Matrix other) {
+
+    if ((rows != other.getRows()) || (cols != other.getCols())) {
+        throw std::invalid_argument( "matrices are not the same size" );
+    }
+
+    std::vector&lt; std::vector&lt;float&gt; &gt; othergrid = other.getGrid();
+
+    std::vector&lt; std::vector&lt;float&gt; &gt; result;
+
+    std::vector&lt;float&gt; new_row;
+
+    for (int i = 0; i &lt; rows; i++) {
+        new_row.clear();
+        for (int j = 0; j &lt; cols; j++) {
+            new_row.push_back(grid[i][j] + othergrid[i][j]);
+        }
+        result.push_back(new_row);
+    }
+
+    return Matrix(result);
+}
+
+void Matrix::matrix_print() {
+
+    std::cout &lt;&lt; std::endl;
+
+    for (int i = 0; i &lt; rows; i++)
+    {
+        for (int j = 0; j &lt; cols; j++)
+        {
+            std::cout &lt;&lt; grid[i][j] &lt;&lt; " ";
+        }
+        std::cout &lt;&lt; std::endl;
+    }
+    std::cout &lt;&lt; std::endl;
+}</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="15. 使用 Include 防范.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('14. 矩阵函数')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

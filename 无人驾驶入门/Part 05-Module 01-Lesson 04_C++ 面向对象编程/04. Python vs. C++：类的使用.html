@@ -1,0 +1,547 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Python vs. C++：类的使用
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      C++ 面向对象编程
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 介绍.html">
+       01. 介绍
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Python vs. C++ 高斯分布例子.html">
+       02. Python vs. C++ 高斯分布例子
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 为什么使用面向对象编程？.html">
+       03. 为什么使用面向对象编程？
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Python vs. C++：类的使用.html">
+       04. Python vs. C++：类的使用
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 类的剖析.html">
+       05. 类的剖析
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 类文件结构.html">
+       06. 类文件结构
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 练习类的使用.html">
+       07. 练习类的使用
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Include 防范.html">
+       08. Include 防范
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 私有和公开.html">
+       09. 私有和公开
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 类变量.html">
+       10. 类变量
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 类函数声明.html">
+       11. 类函数声明
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 构造函数.html">
+       12. 构造函数
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Set 和 Get 函数.html">
+       13. Set 和 Get 函数
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 矩阵函数.html">
+       14. 矩阵函数
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 使用 Include 防范.html">
+       15. 使用 Include 防范
+      </a>
+     </li>
+     <li class="">
+      <a href="16. 实例化一个对象.html">
+       16. 实例化一个对象
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 在本地运行你的程序.html">
+       17. 在本地运行你的程序
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          04. Python vs. C++：类的使用
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="在程序中使用类">
+          在程序中使用类
+         </h1>
+         <p>
+          在深入了解如何编写 C++ 类的细节之前，首先要了解如何在 main.cpp 程序中使用类。在处理大项目时，你可能需要使用一个类，而实际上并不负责实施该类。
+         </p>
+         <p>
+          下面是一个使用 Gaussian 类的 main.cpp 文件。
+         </p>
+         <p>
+          首先，你的 main.cpp 文件需要在文件的顶部声明所有的变量和函数。然后，main() 函数需要有权访问该类，并可以使用该类的方法：
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <pre><code class="c++ language-c++"># include &lt;iostream&gt;
+
+//声明类
+class Gaussian
+{
+    private:
+        float mu, sigma2;
+
+    public:
+
+        //构造函数
+        Gaussian ();
+        Gaussian (float, float);
+
+        //改变均差和标准偏差值 
+        void setMu(float);
+        void setSigma2(float);
+
+        //输出均差和标准偏差值
+        float getMu();
+        float getSigma2();
+
+        //待评估函数 
+        float evaluate (float);
+        Gaussian mul (Gaussian);
+        Gaussian add (Gaussian);
+};
+
+int main ()
+{
+
+    Gaussian mygaussian(30.0,20.0);
+    Gaussian othergaussian(10.0,30.0);
+
+    std::cout &lt;&lt; "average " &lt;&lt; mygaussian.getMu() &lt;&lt; std::endl;
+    std::cout &lt;&lt; "evaluation " &lt;&lt; mygaussian.evaluate(15.0) &lt;&lt; std::endl;
+
+    std::cout &lt;&lt; "mul results sigma " &lt;&lt; mygaussian.mul(othergaussian).getSigma2() &lt;&lt; std::endl;
+    std::cout &lt;&lt; "mul results average " &lt;&lt; mygaussian.mul(othergaussian).getMu() &lt;&lt; std::endl;
+
+    std::cout &lt;&lt; "add results sigma " &lt;&lt; mygaussian.add(othergaussian).getSigma2() &lt;&lt; std::endl;
+    std::cout &lt;&lt; "add results average " &lt;&lt; mygaussian.add(othergaussian).getMu() &lt;&lt; std::endl;
+
+    return 0;
+}</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          接下来，我们学习类的编程步骤。
+         </p>
+         <h3 id="对象实例化">
+          对象实例化
+         </h3>
+         <p>
+          首先，你需要在程序的顶部声明该类。然后，在 main 函数内部，你可以实例化对象：
+         </p>
+         <pre><code class="c++ language-c++">    Gaussian mygaussian(30.0,20.0);
+    Gaussian othergaussian(10.0,30.0);</code></pre>
+         <p>
+          第一个对象叫做 mygaussian，平均值为 30，方差为 20。第二个对象叫做 othergaussian，平均值为 10，方差为 30。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="使用对象方法">
+          使用对象方法
+         </h3>
+         <p>
+          然后，你可以通过以下代码使用对象方法：
+         </p>
+         <pre><code class="c++ language-c++">mygaussian.getMu()</code></pre>
+         <p>
+          它可以输出 mygaussian 对象内的平均值。
+         </p>
+         <p>
+          另一个例子：
+         </p>
+         <pre><code class="c++ language-c++">mygaussian.add(othergaussian)</code></pre>
+         <p>
+          它可以把 mygaussian 和 othergaussian 相加。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          下面是在这个代码中使用的所有文件，方便你观察 main.cpp 和 gaussian.cpp 之间的关系
+         </p>
+         <p>
+          这个程序首先通过以下命令被编译，但你在后端看不到：
+         </p>
+         <pre><code>g++ main.cpp gaussian.cpp</code></pre>
+         <p>
+          点击“测试运行”按钮，然后查看结果。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="438228-main-cpp" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#438228-main-cpp" id="tab-438228-main-cpp" role="tab">
+            main.cpp
+           </a>
+           <a aria-controls="438228-gaussian-cpp" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#438228-gaussian-cpp" id="tab-438228-gaussian-cpp" role="tab">
+            gaussian.cpp
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-438228-main-cpp" class="tab-pane active show" id="438228-main-cpp" role="tabpanel">
+            <pre><code></code>#include &lt;iostream&gt;
+
+// class declaration
+class Gaussian
+{
+	private:
+		float mu, sigma2;
+
+	public:
+		
+		// constructor functions
+		Gaussian ();
+		Gaussian (float, float);
+
+		// change value of average and standard deviation 
+		void setMu(float);
+		void setSigma2(float);
+
+		// output value of average and standard deviation
+		float getMu();
+		float getSigma2();
+
+		// functions to evaluate 
+		float evaluate (float);
+		Gaussian mul (Gaussian);
+		Gaussian add (Gaussian);
+};
+
+int main ()
+{
+
+	Gaussian mygaussian(30.0,100.0);
+	Gaussian othergaussian(10.0,25.0);
+	
+	std::cout &lt;&lt; "average " &lt;&lt; mygaussian.getMu() &lt;&lt; std::endl;
+	std::cout &lt;&lt; "evaluation " &lt;&lt; mygaussian.evaluate(15.0) &lt;&lt; std::endl;
+
+	std::cout &lt;&lt; "mul results variance " &lt;&lt; mygaussian.mul(othergaussian).getSigma2() &lt;&lt; std::endl;
+	std::cout &lt;&lt; "mul results average " &lt;&lt; mygaussian.mul(othergaussian).getMu() &lt;&lt; std::endl;
+
+	std::cout &lt;&lt; "add results variance " &lt;&lt; mygaussian.add(othergaussian).getSigma2() &lt;&lt; std::endl;
+	std::cout &lt;&lt; "add results average " &lt;&lt; mygaussian.add(othergaussian).getMu() &lt;&lt; std::endl;
+
+	return 0;
+}</pre>
+           </div>
+           <div aria-labelledby="tab-438228-gaussian-cpp" class="tab-pane" id="438228-gaussian-cpp" role="tabpanel">
+            <pre><code></code>#include &lt;math.h&gt;       /* sqrt, exp */
+
+// class declaration
+class Gaussian
+{
+	private:
+		float mu, sigma2;
+
+	public:
+		
+		// constructor functions
+		Gaussian ();
+		Gaussian (float, float);
+
+		// change value of average and standard deviation 
+		void setMu(float);
+		void setSigma2(float);
+
+		// output value of average and standard deviation
+		float getMu();
+		float getSigma2();
+
+		// functions to evaluate 
+		float evaluate (float);
+		Gaussian mul (Gaussian);
+		Gaussian add (Gaussian);
+};
+
+
+Gaussian::Gaussian() {
+	mu = 0;
+	sigma2 = 1;	
+}
+
+Gaussian::Gaussian (float average, float sigma) {
+	mu = average;
+	sigma2 = sigma;
+}
+
+void Gaussian::setMu (float average) {
+	mu = average;
+}
+
+void Gaussian::setSigma2 (float sigma) {
+	sigma2 = sigma;
+}
+
+
+float Gaussian::getMu () {
+	return mu;
+}
+
+float Gaussian::getSigma2() {
+	return sigma2;
+}
+
+float Gaussian::evaluate(float x) {
+	float coefficient;
+	float exponential;
+
+	coefficient = 1.0 / sqrt (2.0 * M_PI * sigma2);
+	exponential = exp ( pow (-0.5 * (x - mu), 2) / sigma2 );
+	return coefficient * exponential;
+}
+
+Gaussian Gaussian::mul(Gaussian other) {
+	float denominator;
+	float numerator;
+	float new_mu;
+	float new_var;
+
+	denominator = sigma2 + other.getSigma2();
+	numerator = mu * other.getSigma2() + other.getMu() * sigma2;
+	new_mu = numerator / denominator;
+
+	new_var = 1.0 / ( (1.0 / sigma2) + (1.0 / other.sigma2) );
+
+	return Gaussian(new_mu, new_var);
+}
+
+Gaussian Gaussian::add(Gaussian other) {
+
+	float new_mu;
+	float new_sigma2;
+
+	new_mu = mu + other.getMu();
+	new_sigma2 = sigma2 + other.getSigma2();
+
+	return Gaussian(new_mu, new_sigma2);
+}</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="05. 类的剖析.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('04. Python vs. C++：类的使用')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>
