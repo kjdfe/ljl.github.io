@@ -1,0 +1,318 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Python 中的移动
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Python 和 C++ 的速度
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 简介.html">
+       01. 简介
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 执行移动函数.html">
+       02. 执行移动函数
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Python 中的移动.html">
+       03. Python 中的移动
+      </a>
+     </li>
+     <li class="">
+      <a href="04. C++ 中的移动.html">
+       04. C++ 中的移动
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 速度对比.html">
+       05. 速度对比
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          03. Python 中的移动
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="python-中的速度">
+          Python 中的速度
+         </h1>
+         <p>
+          完整阅读下面全部代码，了解移动函数的功能。然后多次按下
+          <code>
+           测试运行
+          </code>
+          按钮，估算这段代码运行 1000 次需要多久。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="438308-move-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#438308-move-py" id="tab-438308-move-py" role="tab">
+            move.py
+           </a>
+           <a aria-controls="438308-helpers-py" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#438308-helpers-py" id="tab-438308-helpers-py" role="tab">
+            helpers.py
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-438308-move-py" class="tab-pane active show" id="438308-move-py" role="tabpanel">
+            <pre><code></code>import time
+from helpers import blur
+
+# The 2D move function
+def move(dy, dx, beliefs, blurring):
+    height = len(beliefs)
+    width = len(beliefs[0])
+    new_G = [[0.0 for i in range(width)] for j in range(height)]
+    for i, row in enumerate(beliefs):
+        for j, cell in enumerate(row):
+            new_i = (i + dy ) % width
+            new_j = (j + dx ) % height
+            new_G[int(new_i)][int(new_j)] = cell
+    return blur(new_G, blurring)
+
+# Initialize a world grid of beliefs
+grid = [ [0.05, 0.2, 0.2, 0.05, 0.05],
+         [0.05, 0.1, 0.2, 0.05, 0.05] ]
+
+# Record the time it takes to execute the move function
+# Start the timer and record the start time
+start_time = time.time()
+
+# Time the move function for 1000 iterations
+# move 2 to the right each iteration
+
+### TODO: Change the number of iterations and see how this performs - try 10000x !
+### TODO: Run multiple times and notice the slight change in recorded time
+iterations = 1000
+
+for i in range(0, iterations):
+    move(0, 2, grid, 1.0)
+
+# Record the end time and print the result!
+stop_time = time.time()
+
+millisec_time = 1000*(stop_time - start_time)
+print("Time to move " +str(iterations) + " iterations in milliseconds: " + str(millisec_time))
+</pre>
+           </div>
+           <div aria-labelledby="tab-438308-helpers-py" class="tab-pane" id="438308-helpers-py" role="tabpanel">
+            <pre><code></code># Helper functions
+
+def normalize(grid):
+    """
+    Given a grid of unnormalized probabilities, computes the
+    correspond normalized version of that grid. 
+    """
+    total = 0.0
+    for row in grid:
+        for cell in row:
+            total += cell
+    for i,row in enumerate(grid):
+        for j,cell in enumerate(row):
+            grid[i][j] = float(cell) / total
+    return grid
+
+
+def blur(grid, blurring):
+    """
+    Spreads probability out on a grid using a 3x3 blurring window.
+    The blurring parameter controls how much of a belief spills out
+    into adjacent cells. If blurring is 0 this function will have 
+    no effect. 
+    """
+    height = len(grid)
+    width  = len(grid[0])
+
+    center_prob = 1.0-blurring
+    corner_prob = blurring / 12.0
+    adjacent_prob = blurring / 6.0
+
+    window = [
+            [corner_prob,  adjacent_prob,  corner_prob],
+            [adjacent_prob, center_prob,  adjacent_prob],
+            [corner_prob,  adjacent_prob,  corner_prob]
+        ]
+    new = [[0.0 for i in range(width)] for j in range(height)]
+    for i in range(height):
+        for j in range(width):
+            grid_val = grid[i][j]
+            for dx in range(-1,2):
+                for dy in range(-1,2):
+                    mult = window[dx+1][dy+1]
+                    new_i = (i + dy) % height
+                    new_j = (j + dx) % width
+                    new[new_i][new_j] += mult * grid_val
+    return normalize(new)</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="04. C++ 中的移动.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('03. Python 中的移动')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>
