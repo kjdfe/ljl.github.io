@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.839
+If you have no idea where a car is located in the world
+
+00:00:03.839 --> 00:00:08.464
+the probability distribution for its location will look completely flat.
+
+00:00:08.464 --> 00:00:10.980
+The probability of it being anywhere say in
+
+00:00:10.980 --> 00:00:14.845
+San Francisco or in Tokyo will be the exact same.
+
+00:00:14.845 --> 00:00:18.060
+The probability that the car will be at any particular location will
+
+00:00:18.059 --> 00:00:21.839
+be a constant value that's the same at every location.
+
+00:00:21.839 --> 00:00:24.359
+So the probability distribution can be represented
+
+00:00:24.359 --> 00:00:27.059
+by a constant horizontal line on a graph,
+
+00:00:27.059 --> 00:00:30.250
+that shows the probability of all of these outcomes.
+
+00:00:30.250 --> 00:00:32.009
+But as we gather more information,
+
+00:00:32.009 --> 00:00:34.009
+this distribution will change.
+
+00:00:34.009 --> 00:00:36.989
+Say we get a GPS sensor reading that tells
+
+00:00:36.990 --> 00:00:40.690
+us that we're a lot closer to San Francisco than to Tokyo.
+
+00:00:40.689 --> 00:00:43.019
+The location probability goes up near
+
+00:00:43.020 --> 00:00:45.390
+the GPS measurement and the probability
+
+00:00:45.390 --> 00:00:48.785
+goes down in regions far from the GPS measurement.
+
+00:00:48.784 --> 00:00:51.569
+And even though the GPS signal isn't perfect you
+
+00:00:51.570 --> 00:00:55.100
+have more information about the likely location of your car.
+
+00:00:55.100 --> 00:00:58.439
+The vehicle is never 100 percent sure of its location,
+
+00:00:58.439 --> 00:01:01.954
+yet through sensing the vehicle increases its certainty.
+
+00:01:01.954 --> 00:01:04.739
+The shape of the probability distribution tells you
+
+00:01:04.739 --> 00:01:09.375
+the most likely locations and the least likely locations of the vehicle.
+
+00:01:09.375 --> 00:01:14.819
+Probability distributions are really useful ways to visualize and represent uncertainty,
+
+00:01:14.819 --> 00:01:17.609
+not just in single vehicle localization
+
+00:01:17.609 --> 00:01:20.655
+but also in tracking the locations of pedestrians,
+
+00:01:20.655 --> 00:01:24.019
+bicycles and other moving vehicles around a car.
+
+00:01:24.019 --> 00:01:29.304
+These distributions are also used in representing uncertainty in sensor measurements.
+
+00:01:29.305 --> 00:01:32.940
+Remember that autonomous vehicles are robots on wheels.
+
+00:01:32.939 --> 00:01:34.649
+So everything from sensing,
+
+00:01:34.650 --> 00:01:37.840
+measuring and moving will involve some uncertainty.
+
+00:01:37.840 --> 00:01:39.930
+So, in this lesson you're going to learn how to
+
+00:01:39.930 --> 00:01:43.165
+draw and interpret probability distributions.
+
+00:01:43.165 --> 00:01:46.030
+This will prepare you for vehicle localization and object-.
+

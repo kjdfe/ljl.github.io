@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.252 --> 00:00:02.723
+Y esta es realmente una pregunta capciosa, así que
+
+00:00:02.723 --> 00:00:05.545
+Claramente, las densidades no necesitan ser positivas
+
+00:00:05.545 --> 00:00:07.694
+En cualquier lugar. Esto es suficiente con el ser no negativas
+
+00:00:07.694 --> 00:00:09.754
+y te voy a dar ejemplo donde afuera de
+
+00:00:09.754 --> 00:00:12.970
+Un cierto intervalo la densidad era cero. Cero es no
+
+00:00:12.970 --> 00:00:14.920
+Positivo, cero es no negativo. Ahora
+
+00:00:14.920 --> 00:00:17.130
+las densidades no tienen que ser continuas, acabo
+
+00:00:17.130 --> 00:00:20.021
+De darte un ejemplo de una densidad como éste y
+
+00:00:20.021 --> 00:00:22.223
+Aquí la densidad tiene que brincar, ya que tienes
+
+00:00:22.223 --> 00:00:24.941
+Un punto de discontinuidad y lo continuo es
+
+00:00:24.941 --> 00:00:26.892
+no correcto y si obtuviste esto mal
+
+00:00:26.892 --> 00:00:28.359
+No hay gran problema, la palabra continuo no
+
+00:00:28.359 --> 00:00:30.057
+Significa mucho para ti, pero es una de esas
+
+00:00:30.057 --> 00:00:33.001
+Cosas que debes saber acerca de las densidad. [br]Ahora menor
+
+00:00:33.001 --> 00:00:35.576
+o igual a 1 y esto es realmente capcioso. [br]Ahora voy
+
+00:00:35.576 --> 00:00:37.825
+A enviar que esto no es correcto y aquí es porque
+
+00:00:37.825 --> 00:00:41.825
+Supón que tienes una densidad que asignas
+
+00:00:41.825 --> 00:00:44.625
+Una probabilidad uniforme es sólo a los valores entre 0
+
+00:00:44.625 --> 00:00:49.674
+Y 0.1, entonces la altura de esta densidad puede
+
+00:00:49.674 --> 00:00:53.743
+Ser 10; esto es 1 sobre 0.1 y el resultado es
+
+00:00:53.743 --> 00:00:56.856
+Posible que la densidad exceda de 1 y
+
+00:00:56.856 --> 00:00:58.393
+Este es un punto clave que lo hace diferente
+
+00:00:58.393 --> 00:01:00.445
+de las probabilidades. Las probabilidades siempre son
+
+00:01:00.445 --> 00:01:04.000
+Menores o iguales a 1, las densidades puede ser mayores a 1.
+

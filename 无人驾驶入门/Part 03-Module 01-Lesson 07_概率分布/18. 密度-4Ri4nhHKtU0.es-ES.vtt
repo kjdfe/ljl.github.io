@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.146 --> 00:00:02.395
+Ahora voy a enseñarte un concepto que
+
+00:00:02.395 --> 00:00:05.831
+Es muy profundo al que llamamos densidad de una probabilidad
+
+00:00:05.831 --> 00:00:08.647
+Y es el tipo de probabilidad de espacios
+
+00:00:08.647 --> 00:00:12.178
+Continuos pero no exactos, es sólo un buen motivador
+
+00:00:12.178 --> 00:00:13.938
+Para pensar en una densidad como una probabilidad para
+
+00:00:13.938 --> 00:00:16.011
+Espacios continuos. Vamos a hablar de la botella
+
+00:00:16.011 --> 00:00:18.933
+De nuestro ejemplo y sabemos que el resultado de girar
+
+00:00:18.933 --> 00:00:23.363
+Las botellas caen entre 0 a 360 grados
+
+00:00:23.363 --> 00:00:25.636
+Así dado lo que acabamos de aprender, quiero que asignes
+
+00:00:25.636 --> 00:00:27.915
+0 a cualquiera fuera del rango pero
+
+00:00:27.915 --> 00:00:32.900
+Dentro de este rango, nos gustaría dar un valor y decir
+
+00:00:32.900 --> 00:00:35.148
+Mira hay una función aquí que hace que
+
+00:00:35.148 --> 00:00:39.250
+Cualquier salida en este intervalo es igualmente probable
+
+00:00:39.250 --> 00:00:40.700
+Así que vamos a construir esta función
+
+00:00:40.700 --> 00:00:42.762
+Te voy a dar dos restricciones para esta función
+
+00:00:42.762 --> 00:00:45.731
+Número uno, cada salida en el rango de 0
+
+00:00:45.731 --> 00:00:48.323
+a 360 tiene un valor igual y la restricción
+
+00:00:48.323 --> 00:00:52.593
+Número dos, el área bajo esta función se resume
+
+00:00:52.593 --> 00:00:57.558
+O integra a 1, lo que significa que esta área
+
+00:00:57.558 --> 00:01:00.576
+De aquí es sólo 1. Así que por favor dime cual es
+
+00:01:00.576 --> 00:01:05.935
+La función de X's que está entre 0 y 360
+
+00:01:05.935 --> 00:01:07.863
+Grados. Hay un valor numérico simple
+
+00:01:07.863 --> 00:01:11.000
+Que está aquí y tienes que adivinarlo
+

@@ -1,0 +1,22 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.155
+Now we talk about probability distributions.
+
+00:00:04.155 --> 00:00:07.035
+A probability distribution is the way in which
+
+00:00:07.035 --> 00:00:11.789
+a self-driving car represents its internal beliefs about the world.
+
+00:00:11.789 --> 00:00:14.654
+So when a car for example sees a tree,
+
+00:00:14.654 --> 00:00:18.059
+then internally it is a probability distribution to represent
+
+00:00:18.059 --> 00:00:23.000
+its belief of the chances it's facing a tree. So let's dive in.
+
