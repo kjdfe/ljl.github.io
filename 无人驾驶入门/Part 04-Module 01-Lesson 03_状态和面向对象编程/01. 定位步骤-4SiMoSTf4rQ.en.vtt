@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.889
+All self-driving cars go through
+
+00:00:01.889 --> 00:00:05.349
+the same series of steps to safely navigate through the world.
+
+00:00:05.349 --> 00:00:08.189
+You've been working on the first step, localization.
+
+00:00:08.189 --> 00:00:10.074
+Before cars can safely navigate,
+
+00:00:10.074 --> 00:00:11.384
+they first use sensors and
+
+00:00:11.384 --> 00:00:15.339
+other collected data to best estimate where they are in the world.
+
+00:00:15.339 --> 00:00:19.754
+In this lesson, we'll be talking about representing and predicting car movement.
+
+00:00:19.754 --> 00:00:21.960
+But before we do, let's review all the steps
+
+00:00:21.960 --> 00:00:24.522
+that a common filter takes to localize a car.
+
+00:00:24.522 --> 00:00:27.300
+First, we start with an initial prediction of
+
+00:00:27.300 --> 00:00:28.750
+our cars location and
+
+00:00:28.750 --> 00:00:33.060
+the probability distribution that describes our uncertainty about that prediction.
+
+00:00:33.060 --> 00:00:36.179
+Here's a one-dimensional example in which we know that our car
+
+00:00:36.179 --> 00:00:39.829
+is on this one lane road but we don't know its exact location.
+
+00:00:39.829 --> 00:00:43.509
+And so, our prior probability distribution is uniform.
+
+00:00:43.509 --> 00:00:46.344
+We then sense the world around the car.
+
+00:00:46.344 --> 00:00:49.560
+This is called the measurement update step in which we gather
+
+00:00:49.560 --> 00:00:53.929
+more information about the car's surroundings and refine our location prediction.
+
+00:00:53.929 --> 00:00:57.375
+Say we measure that we're about two grid cells in front of the stop sign.
+
+00:00:57.375 --> 00:01:02.119
+Our measurement isn't perfect but we have a much better idea of our car's location.
+
+00:01:02.119 --> 00:01:04.079
+The next step is moving,
+
+00:01:04.079 --> 00:01:07.390
+also called the time update or prediction step.
+
+00:01:07.390 --> 00:01:11.939
+We predict where the car will move based on the knowledge we have about its velocity and
+
+00:01:11.939 --> 00:01:17.189
+current position and we shift our probability distribution to reflect this movement.
+
+00:01:17.189 --> 00:01:20.250
+This example shows a one-cell movement to the right and
+
+00:01:20.250 --> 00:01:23.930
+this gives us a new state estimate for the position of the car.
+
+00:01:23.930 --> 00:01:27.150
+The Kalman Filter simply repeats the sense and move
+
+00:01:27.150 --> 00:01:31.400
+measurement and prediction steps to localize the car as it's moving.
+
+00:01:31.400 --> 00:01:33.770
+The beauty of Kalman Filters is that they combine
+
+00:01:33.769 --> 00:01:38.250
+somewhat inaccurate sensor measurements with somewhat inaccurate predictions of motion to
+
+00:01:38.250 --> 00:01:41.790
+get a filtered location estimate that's better than any estimates that
+
+00:01:41.790 --> 00:01:45.695
+come from only sensor readings or only knowledge about movement.
+
+00:01:45.694 --> 00:01:49.609
+This is why a common filter is such a powerful localization method.
+

@@ -1,0 +1,181 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.660
+So here I'll show you how to interact with
+
+00:00:02.660 --> 00:00:05.990
+a car object that can keep track of its own state.
+
+00:00:05.990 --> 00:00:07.935
+First, you'll see some import statements
+
+00:00:07.934 --> 00:00:10.425
+and some code that we'll go through in detail soon.
+
+00:00:10.425 --> 00:00:13.195
+But before we dive into the code that makes up an object,
+
+00:00:13.195 --> 00:00:15.300
+we'll learn how to interact with it.
+
+00:00:15.300 --> 00:00:17.730
+So next you'll see some initial variables.
+
+00:00:17.730 --> 00:00:21.644
+First a world, and then some variables that should look familiar,
+
+00:00:21.644 --> 00:00:24.320
+and initial position and velocity.
+
+00:00:24.320 --> 00:00:28.269
+This time, the position is in two dimensions, Y and X,
+
+00:00:28.269 --> 00:00:34.125
+and the velocity is also broken down into vertical and horizontal components VY and VX.
+
+00:00:34.125 --> 00:00:35.939
+I'll make sure to run both of these,
+
+00:00:35.939 --> 00:00:39.339
+then to create a car which I'll name Carla.
+
+00:00:39.340 --> 00:00:43.995
+I have to say car_dot_car and pass in some initial state.
+
+00:00:43.994 --> 00:00:48.699
+So I'm passing in some YX position and velocity.
+
+00:00:48.700 --> 00:00:52.605
+And lastly I'm passing in a world which is just a 2D array,
+
+00:00:52.604 --> 00:00:55.559
+and I'll print out Carla's initial state.
+
+00:00:55.560 --> 00:00:59.815
+You'll notice that I can access Carla's state by saying Carla_dot_state,
+
+00:00:59.814 --> 00:01:03.289
+and we see that the initial position is at zero zero,
+
+00:01:03.289 --> 00:01:06.030
+and the initial velocity is zero one,
+
+00:01:06.030 --> 00:01:09.625
+which means it has some horizontal velocity to the right.
+
+00:01:09.625 --> 00:01:11.109
+Now this car object,
+
+00:01:11.109 --> 00:01:14.019
+Carla, has some visualization code too.
+
+00:01:14.019 --> 00:01:19.539
+And we can see where the car is at any given point using the display world function.
+
+00:01:19.540 --> 00:01:22.920
+I can say Carla_dot_display_world,
+
+00:01:22.920 --> 00:01:24.495
+and when I run this code,
+
+00:01:24.495 --> 00:01:28.865
+I'll see the location of Carla and the size of the 2D world.
+
+00:01:28.864 --> 00:01:30.939
+Now, what else can Carla do?
+
+00:01:30.939 --> 00:01:34.734
+Well, we can tell Carla to move by saying Carla_dot_move,
+
+00:01:34.734 --> 00:01:39.015
+and Carla will move one grid cell in the direction of the initial velocity,
+
+00:01:39.015 --> 00:01:41.299
+which in this case is towards the right.
+
+00:01:41.299 --> 00:01:44.129
+Let's test this movement by displaying the world again,
+
+00:01:44.129 --> 00:01:47.670
+and we can see that Carla has moved one space to the right.
+
+00:01:47.670 --> 00:01:51.465
+After this movement, we can also track the change in Carla's state,
+
+00:01:51.465 --> 00:01:55.335
+and I can print out its value using Carla_dot_state again.
+
+00:01:55.334 --> 00:01:58.625
+And we can see that the state has actually updated.
+
+00:01:58.625 --> 00:02:01.364
+The position has moved one grid cell to the right,
+
+00:02:01.364 --> 00:02:03.629
+and the velocity remains constant.
+
+00:02:03.629 --> 00:02:07.319
+So somehow Carla is keeping track of her own state.
+
+00:02:07.319 --> 00:02:09.984
+And what if we move a couple more times?
+
+00:02:09.985 --> 00:02:12.370
+Let's track the change in state,
+
+00:02:12.370 --> 00:02:16.439
+and we see that we've moved two more to the right, zero_comma_three.
+
+00:02:16.439 --> 00:02:19.289
+And we can see the movement on a map of the world by
+
+00:02:19.289 --> 00:02:23.344
+calling Carla_dot_display_world once more.
+
+00:02:23.344 --> 00:02:26.729
+So we know Carla's state updates automatically.
+
+00:02:26.729 --> 00:02:29.185
+Carla can also turn left.
+
+00:02:29.185 --> 00:02:33.960
+So let's tell Carla to turn left and move one space.
+
+00:02:33.960 --> 00:02:37.064
+And let's display the world.
+
+00:02:37.064 --> 00:02:43.025
+We can see that Carla turns left at this spot and actually circles around the world.
+
+00:02:43.025 --> 00:02:48.390
+And if we print out Carla's state by saying Carla_state is string Carla_dot_state,
+
+00:02:48.389 --> 00:02:52.409
+we see that both the position and the velocity have changed.
+
+00:02:52.409 --> 00:02:54.585
+Our position is three_three,
+
+00:02:54.585 --> 00:02:56.620
+which is reflected in our grid,
+
+00:02:56.620 --> 00:03:00.615
+and VY is now negative_one and VX is zero.
+
+00:03:00.615 --> 00:03:03.054
+This means that there is no horizontal velocity,
+
+00:03:03.054 --> 00:03:05.640
+there's only a negative vertical velocity,
+
+00:03:05.639 --> 00:03:08.174
+which means Carla's moving up our grid world.
+
+00:03:08.175 --> 00:03:11.745
+Now moving and turning left are all Carla can do for now,
+
+00:03:11.745 --> 00:03:15.000
+but we'll soon see how to add to our list of capabilities.
+

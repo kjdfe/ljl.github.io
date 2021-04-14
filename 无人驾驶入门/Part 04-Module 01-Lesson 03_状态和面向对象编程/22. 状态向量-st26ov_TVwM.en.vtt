@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.590
+So far you've seen that,
+
+00:00:01.590 --> 00:00:06.695
+the state of a car contains multiple values which we've been putting into a Python list.
+
+00:00:06.695 --> 00:00:11.304
+But these values are typically contained in one data type, a state vector.
+
+00:00:11.304 --> 00:00:14.339
+A vector is similar to a list in Python in that it contains
+
+00:00:14.339 --> 00:00:18.059
+multiple values but they are mathematically very different.
+
+00:00:18.059 --> 00:00:19.859
+A vector is a kind of matrix,
+
+00:00:19.859 --> 00:00:22.675
+which for now you can think of as a grid of numbers.
+
+00:00:22.675 --> 00:00:25.039
+And matrices are a math data type,
+
+00:00:25.039 --> 00:00:27.975
+similar to something like an integer or a float.
+
+00:00:27.975 --> 00:00:30.129
+And similar to an integer or a float,
+
+00:00:30.129 --> 00:00:31.635
+we can multiply matrices,
+
+00:00:31.635 --> 00:00:32.789
+we can scale them,
+
+00:00:32.789 --> 00:00:35.000
+add two of them together and so on.
+
+00:00:35.000 --> 00:00:36.825
+This is called linear algebra,
+
+00:00:36.825 --> 00:00:41.495
+and linear algebra will come up again and again in self-driving car systems.
+
+00:00:41.494 --> 00:00:46.419
+It's in everything from car movement to deep learning algorithms and image analysis.
+
+00:00:46.420 --> 00:00:50.130
+In this section, we'll see how state vectors and matrices can be used
+
+00:00:50.130 --> 00:00:55.000
+together to help us efficiently predict a new state and localize a car.
+

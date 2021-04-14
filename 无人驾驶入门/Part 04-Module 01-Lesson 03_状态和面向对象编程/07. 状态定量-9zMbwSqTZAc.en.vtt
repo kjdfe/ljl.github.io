@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.375
+Now you've seen two examples of car motion models.
+
+00:00:03.375 --> 00:00:07.655
+In the first example we assumed our car was moving at a constant velocity.
+
+00:00:07.655 --> 00:00:09.960
+But in the second example we said that the car was
+
+00:00:09.960 --> 00:00:12.815
+slowing down with a constant acceleration.
+
+00:00:12.814 --> 00:00:15.839
+And after three seconds had elapsed we ended up with
+
+00:00:15.839 --> 00:00:20.550
+different estimates for our car's state depending on which motion model we relied on.
+
+00:00:20.550 --> 00:00:23.730
+In the case where the car was slowing down we had to include
+
+00:00:23.730 --> 00:00:28.449
+an acceleration value in our calculations in order to predict where it would move.
+
+00:00:28.449 --> 00:00:31.890
+And so we also added this value to our car's state.
+
+00:00:31.890 --> 00:00:34.259
+In fact, how many variables the state of our car
+
+00:00:34.259 --> 00:00:37.545
+contains depends on what motion model we use.
+
+00:00:37.545 --> 00:00:39.554
+For a constant velocity model,
+
+00:00:39.554 --> 00:00:41.774
+position and velocity will suffice.
+
+00:00:41.774 --> 00:00:46.634
+But for constant acceleration you'll need to include an acceleration value as well,
+
+00:00:46.634 --> 00:00:48.524
+and these are all just models.
+
+00:00:48.524 --> 00:00:51.479
+For any state you should always choose the smallest set of
+
+00:00:51.479 --> 00:00:55.000
+values that you'll need to work with your chosen motion model.
+

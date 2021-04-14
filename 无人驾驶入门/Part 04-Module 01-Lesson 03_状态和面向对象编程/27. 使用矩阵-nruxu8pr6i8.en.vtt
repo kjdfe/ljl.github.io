@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.250
+Great job getting this far.
+
+00:00:02.250 --> 00:00:07.110
+Now you've seen that we can transform the state of a car using matrix multiplication.
+
+00:00:07.110 --> 00:00:09.644
+This kind of linear algebra can be used to update
+
+00:00:09.644 --> 00:00:12.660
+multiple state variables in just one line of code
+
+00:00:12.660 --> 00:00:15.150
+and this becomes really useful when you're working with
+
+00:00:15.150 --> 00:00:19.740
+big data sets and variables that represent a three dimensional world.
+
+00:00:19.739 --> 00:00:24.269
+Next you'll see how linear algebra is used to create a two dimensional Kalman filter.
+
+00:00:24.269 --> 00:00:28.658
+In the process you'll learn more about matrix operations and notation,
+
+00:00:28.658 --> 00:00:31.245
+and you'll be one step closer to creating an algorithm that
+
+00:00:31.245 --> 00:00:34.000
+is actually used to localize self-driving cars.
+

@@ -1,0 +1,157 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.589
+Here is our car.py file.
+
+00:00:02.589 --> 00:00:05.294
+Let's take a look at the code in here line by line.
+
+00:00:05.294 --> 00:00:07.424
+First, you'll note the things in red,
+
+00:00:07.424 --> 00:00:09.839
+which are just comments that describe the class.
+
+00:00:09.839 --> 00:00:13.509
+It describes what the class does and what attributes it has,
+
+00:00:13.509 --> 00:00:16.289
+and comments like these are good practice especially
+
+00:00:16.289 --> 00:00:20.184
+if you want your code to be understood by other developers.
+
+00:00:20.184 --> 00:00:21.709
+Now, if we scroll down a bit,
+
+00:00:21.710 --> 00:00:25.335
+one of the first things you see is our class car.
+
+00:00:25.335 --> 00:00:27.765
+This looks a bit like a function declaration,
+
+00:00:27.765 --> 00:00:30.570
+but the word class let's Python know that the code that
+
+00:00:30.570 --> 00:00:34.710
+follows should describe the state and functionality of a car object.
+
+00:00:34.710 --> 00:00:37.121
+Objects are also always capitalized,
+
+00:00:37.121 --> 00:00:40.189
+and so, we see that Car is capitalized here.
+
+00:00:40.189 --> 00:00:43.289
+Next, we see the init function which is responsible for
+
+00:00:43.289 --> 00:00:47.490
+creating space in memory to make a specific car object like Carlat.
+
+00:00:47.490 --> 00:00:51.975
+So when you run code like Car.Car and pass in some initial parameters,
+
+00:00:51.975 --> 00:00:54.385
+this is the function that's called.
+
+00:00:54.384 --> 00:00:56.640
+This is where the initial state is created from
+
+00:00:56.640 --> 00:00:59.799
+the position and velocity variables that are passed in.
+
+00:00:59.799 --> 00:01:02.294
+We also see variables for the cars world,
+
+00:01:02.295 --> 00:01:04.555
+its color and its path.
+
+00:01:04.555 --> 00:01:06.915
+We know the world is just a 2D grid.
+
+00:01:06.915 --> 00:01:09.030
+The color will revisit, but for now, no,
+
+00:01:09.030 --> 00:01:11.700
+that's why our car appears red in our grid,
+
+00:01:11.700 --> 00:01:14.219
+and the path is just going to be a list of
+
+00:01:14.219 --> 00:01:17.905
+locations that a car has visited that we can then visualize.
+
+00:01:17.905 --> 00:01:21.750
+So the most important lines of code in here are the state and the world,
+
+00:01:21.750 --> 00:01:26.829
+and all of the variables in here are something that a car object keeps track of.
+
+00:01:26.829 --> 00:01:29.864
+Next, if we scroll down is the move function.
+
+00:01:29.864 --> 00:01:33.059
+The description says the move function moves the car in
+
+00:01:33.060 --> 00:01:36.353
+the direction of the velocity and updates the state,
+
+00:01:36.352 --> 00:01:39.359
+and this may look familiar from our predict state function.
+
+00:01:39.359 --> 00:01:42.480
+Move uses a constant velocity model to move the car
+
+00:01:42.480 --> 00:01:45.942
+in the direction of its velocity vy and vx,
+
+00:01:45.941 --> 00:01:48.179
+and if we look at one portion of this equation,
+
+00:01:48.180 --> 00:01:51.000
+we can see that it's our constant velocity model.
+
+00:01:51.000 --> 00:01:53.084
+It says y, our initial position,
+
+00:01:53.084 --> 00:01:58.744
+plus our y velocity times are change in time becomes our new predictive position,
+
+00:01:58.745 --> 00:02:03.495
+and at the end, we update the current state variable that was initialized in an int.
+
+00:02:03.495 --> 00:02:07.635
+And this is how we track the state of the car as we move.
+
+00:02:07.635 --> 00:02:09.645
+Next, we see our Turn left function,
+
+00:02:09.645 --> 00:02:13.005
+which simply rotates the velocity values to the left,
+
+00:02:13.004 --> 00:02:18.060
+and this function updates our state again with the new velocity, and finally,
+
+00:02:18.060 --> 00:02:20.460
+at the end, we have this display world function,
+
+00:02:20.460 --> 00:02:22.950
+which you shouldn't change, but feel free to read.
+
+00:02:22.949 --> 00:02:26.599
+This is responsible for display in a grid world and our car within it,
+
+00:02:26.599 --> 00:02:29.484
+and it uses pyplot for visualization.
+
+00:02:29.485 --> 00:02:31.965
+Next, it will be up to you to read through this code,
+
+00:02:31.965 --> 00:02:35.460
+understand how a car object like Carlat tracks down state,
+
+00:02:35.460 --> 00:02:39.270
+and together, it will help write some additional functions within this car class.
+

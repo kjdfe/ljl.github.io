@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.995
+Now, what if I gave you a more complex motion example?
+
+00:00:03.995 --> 00:00:08.150
+And I told you that our car starts at the same point at the zero meter mark,
+
+00:00:08.150 --> 00:00:11.234
+and it's moving 50 meters per second forward,
+
+00:00:11.234 --> 00:00:16.219
+but it's also slowing down at a rate of 20 meters per second squared.
+
+00:00:16.219 --> 00:00:21.015
+That means that every second the velocity decreases by 20 meters per second.
+
+00:00:21.015 --> 00:00:23.815
+This value is referred to as acceleration.
+
+00:00:23.815 --> 00:00:25.460
+Acceleration, in this case,
+
+00:00:25.460 --> 00:00:28.420
+equals negative 20 meters per second squared.
+
+00:00:28.420 --> 00:00:33.230
+This acceleration means that if the car starts at a speed of 50 meters per second,
+
+00:00:33.229 --> 00:00:38.239
+at the next second it will be going 50 minus 20 or 30 meters per second.
+
+00:00:38.240 --> 00:00:41.510
+And that the next second it will be going 30 minus 20,
+
+00:00:41.509 --> 00:00:43.534
+or 10 meters per second.
+
+00:00:43.534 --> 00:00:45.803
+The slowing down is also continuous,
+
+00:00:45.804 --> 00:00:49.048
+which means it happens gradually over time.
+
+00:00:49.048 --> 00:00:50.390
+For the next couple quizzes,
+
+00:00:50.390 --> 00:00:52.700
+I want you to keep in mind this question.
+
+00:00:52.700 --> 00:00:57.185
+Where will the car be after three seconds with this initial state?
+
+00:00:57.185 --> 00:00:58.594
+I also want to ask you,
+
+00:00:58.594 --> 00:01:01.719
+what variables do you need to answer this question?
+
+00:01:01.719 --> 00:01:05.105
+In other words, what values should be included in the state?
+
+00:01:05.105 --> 00:01:09.000
+And what motion model should we use to solve this problem?
+

@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.200
+Let's take a closer look at the last example.
+
+00:00:03.200 --> 00:00:05.000
+The initial state of the car is at
+
+00:00:05.000 --> 00:00:10.224
+the zero meter position and it's moving forward at a velocity of 50 meters per second.
+
+00:00:10.224 --> 00:00:13.964
+Let's assume that our car keeps moving forward at a constant rate.
+
+00:00:13.964 --> 00:00:16.260
+Every second it moves 50 meters,
+
+00:00:16.260 --> 00:00:18.109
+so after three seconds it will have reached
+
+00:00:18.109 --> 00:00:22.259
+the 150 meter mark and its velocity will not have changed.
+
+00:00:22.260 --> 00:00:24.645
+That's what a constant velocity means.
+
+00:00:24.644 --> 00:00:27.439
+It's new predicted the state will be at the position
+
+00:00:27.440 --> 00:00:32.755
+150 meters and with the velocity still equal to 50 meters per second.
+
+00:00:32.755 --> 00:00:36.710
+This is a reasonable prediction and we made it using just; one,
+
+00:00:36.710 --> 00:00:39.134
+the initial state of the car and two,
+
+00:00:39.134 --> 00:00:42.575
+an assumption that the car is moving at a constant velocity.
+
+00:00:42.575 --> 00:00:47.160
+This last assumption can be mathematically represented by the physics equation;
+
+00:00:47.159 --> 00:00:50.444
+distance traveled = velocity*time.
+
+00:00:50.445 --> 00:00:52.460
+This equation is also referred to as
+
+00:00:52.460 --> 00:00:56.195
+a motion model and there are many ways to model motion.
+
+00:00:56.195 --> 00:00:58.710
+This model assumes constant velocity.
+
+00:00:58.710 --> 00:01:03.200
+In our example, we're moving at a constant velocity of 50 meters/second for
+
+00:01:03.200 --> 00:01:05.090
+three seconds and we formed
+
+00:01:05.090 --> 00:01:08.465
+our new position estimate with the constant velocity equation,
+
+00:01:08.465 --> 00:01:13.390
+150 meters = 50 meters/second * 3 seconds.
+
+00:01:13.390 --> 00:01:16.707
+In order to predict where a car will be at a future point in time,
+
+00:01:16.707 --> 00:01:19.275
+you have to rely on a motion model.
+
+00:01:19.275 --> 00:01:22.605
+It's important to note that no motion model is perfect.
+
+00:01:22.605 --> 00:01:25.280
+It's a challenge to account for outside factors like wind or
+
+00:01:25.280 --> 00:01:29.415
+elevation or even things like tire slippage and other uncertainties.
+
+00:01:29.415 --> 00:01:33.315
+But these models are still very important for localization.
+
+00:01:33.314 --> 00:01:35.599
+Next, you'll be asked to write a function that
+
+00:01:35.599 --> 00:01:38.059
+uses a motion model to predict a new state.
+

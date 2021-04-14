@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.945
+The one unifying theme in this lesson is representing and predicting state.
+
+00:00:04.945 --> 00:00:07.890
+But there are two threads that we'll use to explore this idea.
+
+00:00:07.889 --> 00:00:10.230
+On the programming side, we'll use something called
+
+00:00:10.230 --> 00:00:14.304
+object-oriented programming as a way to represent state in code.
+
+00:00:14.304 --> 00:00:15.629
+We'll use variables to represent
+
+00:00:15.630 --> 00:00:19.199
+state values and we'll create functions to change those values.
+
+00:00:19.199 --> 00:00:20.643
+On the mathematical side,
+
+00:00:20.643 --> 00:00:24.589
+we'll use vectors and matrices to keep track of state and change it.
+
+00:00:24.589 --> 00:00:27.759
+We'll learn all the necessary math notation and code,
+
+00:00:27.760 --> 00:00:30.370
+as we learn more about predicting the state of the car.
+

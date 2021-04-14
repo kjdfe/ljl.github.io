@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.419
+You've been working with a predict state function that takes
+
+00:00:03.419 --> 00:00:06.576
+in a current state and some change in time, dt.
+
+00:00:06.575 --> 00:00:11.820
+And it outputs a new state estimate based on a constant velocity motion model.
+
+00:00:11.820 --> 00:00:16.379
+It turns out a constant velocity model is actually a good simple model to use,
+
+00:00:16.379 --> 00:00:19.500
+especially if changes in time are very small.
+
+00:00:19.500 --> 00:00:23.065
+Now, to track the state of a car over time as the car moves,
+
+00:00:23.065 --> 00:00:25.020
+you have to repeatedly call this function
+
+00:00:25.019 --> 00:00:28.359
+passing in new state estimates at each time step.
+
+00:00:28.359 --> 00:00:29.714
+So as an example,
+
+00:00:29.714 --> 00:00:32.570
+let's say we have this initial state at
+
+00:00:32.570 --> 00:00:37.140
+position x equals zero and velocity equals 50 meters per second.
+
+00:00:37.140 --> 00:00:39.060
+I'll put these two values into a list,
+
+00:00:39.060 --> 00:00:42.320
+our initial state, and I'll print them out.
+
+00:00:42.320 --> 00:00:47.100
+So, the initial state is x equals zero and velocity equals 50 meters per second.
+
+00:00:47.100 --> 00:00:51.300
+Next, I want to know the next state after two seconds have passed.
+
+00:00:51.299 --> 00:00:54.359
+So, I'll use my predict state function passing in
+
+00:00:54.359 --> 00:00:58.579
+the initial state in the two-second time difference and I'll call this state,
+
+00:00:58.579 --> 00:01:03.384
+est1, for the first state estimate and I'll print out this result.
+
+00:01:03.384 --> 00:01:08.879
+Our position, x, is now at 100 meters and the velocity remains 50 meters per second.
+
+00:01:08.879 --> 00:01:11.709
+Then, say another three seconds, have passed.
+
+00:01:11.709 --> 00:01:14.379
+I'll call The predict state function again.
+
+00:01:14.379 --> 00:01:18.222
+This time, I'll pass in our latest state estimate, state_est1,
+
+00:01:18.222 --> 00:01:23.069
+and a three-second time difference and I'll print out this value.
+
+00:01:23.069 --> 00:01:28.889
+Our position is now 250 meters and our velocity remains constant at 50 meters per second.
+
+00:01:28.890 --> 00:01:31.415
+What about after three more seconds?
+
+00:01:31.415 --> 00:01:35.271
+I'll have to pass in our latest state estimate, state_est2,
+
+00:01:35.271 --> 00:01:39.974
+and three more seconds in time difference and I'll print out the result.
+
+00:01:39.974 --> 00:01:44.159
+As you can see, we're basically calling the same line of code over and over
+
+00:01:44.159 --> 00:01:48.810
+again but modifying the state input to be the latest state estimate.
+
+00:01:48.810 --> 00:01:52.530
+This repetition is tedious at best and it's bad code.
+
+00:01:52.530 --> 00:01:57.144
+As a programmer, you should always try to avoid unnecessary repetition.
+
+00:01:57.144 --> 00:01:59.339
+Wouldn't it be nice to just tell a car to move and
+
+00:01:59.340 --> 00:02:01.875
+have its state update automatically as it moved,
+
+00:02:01.875 --> 00:02:04.500
+as opposed to writing the same line of code manually
+
+00:02:04.500 --> 00:02:07.765
+keeping track of the state over and over again?
+
+00:02:07.765 --> 00:02:13.000
+Well, we can automatically keep track of state with the help of objects.
+

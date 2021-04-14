@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.044
+When you localize a car you're interested in only the car's position and its movement.
+
+00:00:06.044 --> 00:00:08.490
+This is often called the State of the car.
+
+00:00:08.490 --> 00:00:12.435
+The state of any system is a set of values that we care about.
+
+00:00:12.435 --> 00:00:14.269
+In the cases you've been working with,
+
+00:00:14.269 --> 00:00:17.085
+the state of the car includes the car's current position,
+
+00:00:17.085 --> 00:00:19.019
+X, and its velocity.
+
+00:00:19.019 --> 00:00:21.750
+In code this looks something like this.
+
+00:00:21.750 --> 00:00:24.629
+The State of the car gives us most of the information we
+
+00:00:24.629 --> 00:00:28.019
+need to form predictions about a car's future location.
+
+00:00:28.019 --> 00:00:32.505
+And in this lesson we'll see how to represent state and how it changes over time.
+
+00:00:32.505 --> 00:00:35.655
+For example, say that our world is a one-lane road
+
+00:00:35.655 --> 00:00:39.179
+and we know that the current position of our car is at the start of this road,
+
+00:00:39.179 --> 00:00:41.039
+at the zero meter mark.
+
+00:00:41.039 --> 00:00:42.780
+We also know the car's velocity,
+
+00:00:42.780 --> 00:00:46.035
+it's moving forward at a rate of 50 meters per second.
+
+00:00:46.034 --> 00:00:48.494
+These values are its initial state.
+
+00:00:48.494 --> 00:00:52.339
+What do you think the state of the car will be after three seconds elapse?
+

@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.556
+Objects hold a state,
+
+00:00:01.556 --> 00:00:05.910
+they hold a group of variables also known as properties and functions.
+
+00:00:05.910 --> 00:00:08.280
+You can imagine an object like a box.
+
+00:00:08.279 --> 00:00:11.429
+And within that box are variables that define the state of
+
+00:00:11.429 --> 00:00:15.689
+an object like the position and velocity of a car object.
+
+00:00:15.689 --> 00:00:19.780
+Objects also hold functions that tell us what the object can do,
+
+00:00:19.780 --> 00:00:21.998
+like can the car move and turn and so on.
+
+00:00:21.998 --> 00:00:24.054
+But we're getting ahead of ourselves.
+
+00:00:24.054 --> 00:00:27.030
+Let's first see an example of an object in action.
+

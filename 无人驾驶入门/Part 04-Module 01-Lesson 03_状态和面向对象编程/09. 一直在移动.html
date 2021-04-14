@@ -1,0 +1,460 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   一直在移动
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      状态和面向对象编程
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 定位步骤.html">
+       01. 定位步骤
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 状态介绍.html">
+       02. 状态介绍
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 运动模型.html">
+       03. 运动模型
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 测验： 预测状态.html">
+       04. 测验： 预测状态
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 一个不同的模型.html">
+       05. 一个不同的模型
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 运动学.html">
+       06. 运动学
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 状态定量.html">
+       07. 状态定量
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 课程大纲.html">
+       08. 课程大纲
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 一直在移动.html">
+       09. 一直在移动
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 对象.html">
+       10. 对象
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 车辆对象.html">
+       11. 车辆对象
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 与车辆对象互动.html">
+       12. 与车辆对象互动
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 车辆类.html">
+       13. 车辆类
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Car 类文件.html">
+       14. Car 类文件
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 查看类代码.html">
+       15. 查看类代码
+      </a>
+     </li>
+     <li class="">
+      <a href="16. 右转.html">
+       16. 右转
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 添加颜色.html">
+       17. 添加颜色
+      </a>
+     </li>
+     <li class="">
+      <a href="18. 多辆汽车对象.html">
+       18. 多辆汽车对象
+      </a>
+     </li>
+     <li class="">
+      <a href="19. 颜色类.html">
+       19. 颜色类
+      </a>
+     </li>
+     <li class="">
+      <a href="20. 重载函数.html">
+       20. 重载函数
+      </a>
+     </li>
+     <li class="">
+      <a href="21. 颜色添加重载.html">
+       21. 颜色添加重载
+      </a>
+     </li>
+     <li class="">
+      <a href="22. 状态向量.html">
+       22. 状态向量
+      </a>
+     </li>
+     <li class="">
+      <a href="23. 状态转换矩阵.html">
+       23. 状态转换矩阵
+      </a>
+     </li>
+     <li class="">
+      <a href="24. 矩阵乘法.html">
+       24. 矩阵乘法
+      </a>
+     </li>
+     <li class="">
+      <a href="25. 一维状态向量和更多的乘法.html">
+       25. 一维状态向量和更多的乘法
+      </a>
+     </li>
+     <li class="">
+      <a href="26. 修改预测状态.html">
+       26. 修改预测状态
+      </a>
+     </li>
+     <li class="">
+      <a href="27. 使用矩阵.html">
+       27. 使用矩阵
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          09. 一直在移动
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          一直在移动
+         </p>
+        </h3>
+        <video controls="">
+         <source src="09. 一直在移动-EQBQlHvxAQA.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="09. 一直在移动-EQBQlHvxAQA.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="CN" src="09. 一直在移动-EQBQlHvxAQA.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="一直在移动">
+          一直在移动
+         </h3>
+         <p>
+          无人驾驶车会不断监视自身状态。所以，移动和定位必须平行进行。
+         </p>
+         <p>
+          如果我们使用卡尔曼滤波器进行定位，这意味着，随着车辆的移动，卡尔曼滤波器必须不断提供新的状态估计值。这可以保证车辆
+          <em>
+           始终
+          </em>
+          知道它的位置。
+         </p>
+         <h4 id="一直在预测状态">
+          一直在预测状态
+         </h4>
+         <p>
+          在下面的代码中，给出了一个 predict_state 函数，它接受当前状态和时间变化 dt，并返回新的状态估计（基于恒定速度模型）。
+         </p>
+         <p>
+          你可以反复使用这个函数，来查找 5 个不同的时间点的预测状态（predicted_state）：
+         </p>
+         <ul>
+          <li>
+           初始状态
+          </li>
+          <li>
+           2 秒后的预测状态
+          </li>
+          <li>
+           再过 * 3* 秒后的预测状态
+          </li>
+          <li>
+           再过
+           <em>
+            1
+           </em>
+           秒后的预测状态
+          </li>
+          <li>
+           再过
+           <em>
+            4
+           </em>
+           秒后的预测状态
+          </li>
+         </ul>
+         <p>
+          前三个状态已经在代码中给出。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="437759-multiple_predictions-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#437759-multiple_predictions-py" id="tab-437759-multiple_predictions-py" role="tab">
+            multiple_predictions.py
+           </a>
+           <a aria-controls="437759-functions-py" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#437759-functions-py" id="tab-437759-functions-py" role="tab">
+            functions.py
+           </a>
+           <a aria-controls="437759-solution-py" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#437759-solution-py" id="tab-437759-solution-py" role="tab">
+            solution.py
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-437759-multiple_predictions-py" class="tab-pane active show" id="437759-multiple_predictions-py" role="tabpanel">
+            <pre><code></code>from functions import predict_state
+
+# predict_state takes in a state and a change in time, dt
+# So, a call might look like: new_state = predict_state(old_state, 2)
+
+# The car starts at position = 0, going 60 m/s
+# The initial state:
+initial_state = [10, 60]
+
+# After 2 seconds:
+state_est1 = predict_state(initial_state, 2)
+
+# 3 more seconds after the first estimated state
+state_est2 = predict_state(state_est1, 3)
+
+## TODO: Use the predict_state function 
+## and the above variables to calculate the following states
+## (And change their value from 0 to the correct state)
+
+## Then, click Test Run to see your results!
+
+## 1 more second after the second state estimate
+state_est3 = 0
+
+## 4 more seconds after the third estimated state
+state_est4 = 0</pre>
+           </div>
+           <div aria-labelledby="tab-437759-functions-py" class="tab-pane" id="437759-functions-py" role="tabpanel">
+            <pre><code></code>#---- predict state function --#
+def predict_state(state, dt):
+    # Assumes a valid state had been passed in
+    # Assumes a constant velocity model
+    x = state[0]
+    new_x = x+state[1]*dt
+    
+    # Create and return the new, predicted state
+    predicted_state = [new_x, state[1]]
+    return predicted_state</pre>
+           </div>
+           <div aria-labelledby="tab-437759-solution-py" class="tab-pane" id="437759-solution-py" role="tabpanel">
+            <pre><code></code>from functions import predict_state
+
+# predict_state takes in a state and a change in time, dt
+# So, a call might look like: new_state = predict_state(old_state, 2)
+
+# The car starts at position = 0, going 60 m/s
+# The initial state:
+initial_state = [10, 60]
+
+# After 2 seconds:
+state_est1 = predict_state(initial_state, 2)
+
+# 3 more seconds after the first estimated state
+state_est2 = predict_state(state_est1, 3)
+
+## Use the predict_state function 
+## and the above variables to calculate the following states
+
+## 1 more second after the second state estimate
+state_est3 = predict_state(state_est2, 1)
+
+## 4 more seconds after the third estimated state
+state_est4 = predict_state(state_est3, 4)</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="10. 对象.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('09. 一直在移动')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

@@ -1,0 +1,148 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.559
+Let's look at how vectors are used in the math behind self-driving cars.
+
+00:00:04.559 --> 00:00:09.364
+The way we have been representing state is as a list of values which just has a length,
+
+00:00:09.365 --> 00:00:11.579
+a length of two values, in this case.
+
+00:00:11.579 --> 00:00:17.565
+But, a state vector is a column of values whose dimensions are 1 in with an N in height.
+
+00:00:17.565 --> 00:00:19.950
+And again, in this case, N is 2,
+
+00:00:19.949 --> 00:00:23.939
+this makes the state vector a special kind of matrix,
+
+00:00:23.940 --> 00:00:27.720
+and we'll see why being a column vector is important, soon.
+
+00:00:27.719 --> 00:00:30.614
+Let's think about our predict state function again.
+
+00:00:30.614 --> 00:00:32.309
+It takes in an initial state,
+
+00:00:32.310 --> 00:00:34.859
+and we store the position X and velocity V,
+
+00:00:34.859 --> 00:00:37.530
+and then we have a couple of lines of code that
+
+00:00:37.530 --> 00:00:40.969
+predict the next state based on a constant velocity motion model.
+
+00:00:40.969 --> 00:00:42.945
+We calculate the new position,
+
+00:00:42.945 --> 00:00:44.905
+new X, and put two values,
+
+00:00:44.905 --> 00:00:47.045
+the new position and the velocity,
+
+00:00:47.045 --> 00:00:48.859
+into a new predicted state,
+
+00:00:48.859 --> 00:00:50.714
+a new list of two values.
+
+00:00:50.715 --> 00:00:54.859
+But, with a state vector that holds these two values X and B,
+
+00:00:54.859 --> 00:00:58.100
+we do not need to separate them to perform this calculation.
+
+00:00:58.100 --> 00:01:03.000
+We can actually perform these same calculations in just one multiplication step.
+
+00:01:03.000 --> 00:01:05.939
+This step is a matrix multiplication step.
+
+00:01:05.939 --> 00:01:09.209
+Matrix multiplication multiplies two grids of numbers,
+
+00:01:09.209 --> 00:01:12.779
+like this two by two matrix and this two by one state vector,
+
+00:01:12.780 --> 00:01:15.480
+which has a position X and the velocity V,
+
+00:01:15.480 --> 00:01:18.160
+and here's how this multiplication works.
+
+00:01:18.159 --> 00:01:20.640
+This operation first multiplies the rows in
+
+00:01:20.640 --> 00:01:23.480
+the first matrix by the columns in the second.
+
+00:01:23.480 --> 00:01:25.770
+So, these dimensions, the number of columns in
+
+00:01:25.769 --> 00:01:30.140
+this first matrix and the number of rows in the second have to be the same.
+
+00:01:30.140 --> 00:01:32.655
+Step by step, this looks like one times X,
+
+00:01:32.655 --> 00:01:36.430
+which is just X, and then, V times dt.
+
+00:01:36.430 --> 00:01:42.180
+So now, we have the first row in the first Matrix times the column in the second matrix.
+
+00:01:42.180 --> 00:01:47.610
+The next step is to sum these two values to form a single new value in this new matrix,
+
+00:01:47.609 --> 00:01:49.540
+X plus V times dt.
+
+00:01:49.540 --> 00:01:52.635
+Then, we do the same with the next row,
+
+00:01:52.635 --> 00:01:56.123
+and we get 0 times X plus 1 times V,
+
+00:01:56.123 --> 00:01:59.719
+and summing these values gives us just V. And that's it.
+
+00:01:59.719 --> 00:02:01.769
+You can see that this creates a new two by
+
+00:02:01.769 --> 00:02:05.515
+one vector with two values in it that may look familiar.
+
+00:02:05.515 --> 00:02:09.680
+In fact, these are just our equations for our constant velocity motion model.
+
+00:02:09.680 --> 00:02:11.474
+After some change in time,
+
+00:02:11.474 --> 00:02:16.694
+X becomes X plus velocity times change in time and V remains constant.
+
+00:02:16.694 --> 00:02:19.215
+And so, matrix multiplication let's us create
+
+00:02:19.215 --> 00:02:23.180
+a new predicted state vector and just one multiplication step.
+
+00:02:23.180 --> 00:02:26.370
+This is such a common way to predict a new state that this two by
+
+00:02:26.370 --> 00:02:30.420
+two Matrix is often called the state transformation matrix.
+
+00:02:30.419 --> 00:02:33.329
+Next, we'll test your knowledge about matrix multiplication and
+
+00:02:33.330 --> 00:02:37.000
+see how we can use this knowledge to improve the predict state function.
+

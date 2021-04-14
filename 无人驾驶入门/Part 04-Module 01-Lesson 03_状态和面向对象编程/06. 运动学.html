@@ -1,0 +1,606 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   运动学
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      状态和面向对象编程
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 定位步骤.html">
+       01. 定位步骤
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 状态介绍.html">
+       02. 状态介绍
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 运动模型.html">
+       03. 运动模型
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 测验： 预测状态.html">
+       04. 测验： 预测状态
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 一个不同的模型.html">
+       05. 一个不同的模型
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 运动学.html">
+       06. 运动学
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 状态定量.html">
+       07. 状态定量
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 课程大纲.html">
+       08. 课程大纲
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 一直在移动.html">
+       09. 一直在移动
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 对象.html">
+       10. 对象
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 车辆对象.html">
+       11. 车辆对象
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 与车辆对象互动.html">
+       12. 与车辆对象互动
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 车辆类.html">
+       13. 车辆类
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Car 类文件.html">
+       14. Car 类文件
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 查看类代码.html">
+       15. 查看类代码
+      </a>
+     </li>
+     <li class="">
+      <a href="16. 右转.html">
+       16. 右转
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 添加颜色.html">
+       17. 添加颜色
+      </a>
+     </li>
+     <li class="">
+      <a href="18. 多辆汽车对象.html">
+       18. 多辆汽车对象
+      </a>
+     </li>
+     <li class="">
+      <a href="19. 颜色类.html">
+       19. 颜色类
+      </a>
+     </li>
+     <li class="">
+      <a href="20. 重载函数.html">
+       20. 重载函数
+      </a>
+     </li>
+     <li class="">
+      <a href="21. 颜色添加重载.html">
+       21. 颜色添加重载
+      </a>
+     </li>
+     <li class="">
+      <a href="22. 状态向量.html">
+       22. 状态向量
+      </a>
+     </li>
+     <li class="">
+      <a href="23. 状态转换矩阵.html">
+       23. 状态转换矩阵
+      </a>
+     </li>
+     <li class="">
+      <a href="24. 矩阵乘法.html">
+       24. 矩阵乘法
+      </a>
+     </li>
+     <li class="">
+      <a href="25. 一维状态向量和更多的乘法.html">
+       25. 一维状态向量和更多的乘法
+      </a>
+     </li>
+     <li class="">
+      <a href="26. 修改预测状态.html">
+       26. 修改预测状态
+      </a>
+     </li>
+     <li class="">
+      <a href="27. 使用矩阵.html">
+       27. 使用矩阵
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          06. 运动学
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="运动学">
+          运动学
+         </h3>
+         <p>
+          运动学是研究物体运动的学科。运动模型也被称为运动学方程，它提供了预测汽车运动所需的全部信息。
+         </p>
+         <p>
+          让我们来推导一些最常见的运动模型！
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="恒定速度">
+          恒定速度
+         </h3>
+         <p>
+          恒定速度模型假定汽车以恒定的速度运动。这是最简单的车辆移动模型。
+         </p>
+         <p>
+          <strong>
+           案例
+          </strong>
+         </p>
+         <p>
+          假设我们的车辆正在以100 m/s 的速度移动，我们想知道它从一个时间 t1 到 t2 移动了多少距离。具体请看下图。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="（左）车辆速度图，（右）一辆汽车在路上以 100 m/s 的速度行驶" class="img img-fluid" src="img/screen-shot-2017-09-03-at-11.03.31-am.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            （左）车辆速度图，（右）一辆汽车在路上以 100 m/s 的速度行驶
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4 id="位移">
+          位移
+         </h4>
+         <p>
+          车辆移动了多少距离叫做
+          <strong>
+           位移
+          </strong>
+          ，我们已经知道如何计算这个了！
+         </p>
+         <p>
+          例如，我们知道，如果 t2 和 t1 的差是 1 秒，那么车辆移动了
+          <code>
+           100m/sec*1sec = 100m
+          </code>
+          。如果 t2 和 t1 的差是 2 秒，那么车辆移动了
+          <code>
+           100m/sec*2sec = 200m
+          </code>
+          。
+         </p>
+         <p>
+          位移始终 =
+          <code>
+           100m/sec*(t2-t1)
+          </code>
+          。
+         </p>
+         <p>
+          <strong>
+           移动模型
+          </strong>
+         </p>
+         <p>
+          通常，对于恒定速度，位移的移动模型是：
+         </p>
+         <pre><code class="python language-python">displacement = velocity*dt</code></pre>
+         <p>
+          其中，
+          <code>
+           dt
+          </code>
+          是“时间差”的微积分符号。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4 id="线下面积">
+          线下面积
+         </h4>
+         <p>
+          回到我们的图，位移也可以看作给定时间区间内的线下面积。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="线下面积 A 等于位移！" class="img img-fluid" src="img/screen-shot-2017-09-03-at-11.40.37-am.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            线下面积 A 等于位移！
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          所以，除了我们的运动模型之外，我们还可以说位移等于线下面积！
+         </p>
+         <pre><code class="python language-python">displacement = A</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="恒定加速度">
+          恒定加速度
+         </h3>
+         <p>
+          恒定加速度模型稍有不同，它假设车辆在不断加速，速度以恒定的速度变化。
+         </p>
+         <p>
+          假设我们的车辆在 t1 时刻的速度为100 m/s，并且以
+          <span class="mathquill ud-math">
+           10m/s^2
+          </span>
+          的速率加速。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/screen-shot-2017-09-03-at-2.47.09-pm.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4 id="变化速度">
+          变化速度
+         </h4>
+         <p>
+          对于这个移动模型，我们知道速度在不断变化，每秒增加 10 m/s。这可以用下面的运动学方程表示：
+         </p>
+         <pre><code class="python language-python">velocity = acceleration*dt</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4 id="位移">
+          位移
+         </h4>
+         <p>
+          位移可以通过计算 t1 和 t2 之间的线下的面积得出，这类似于我们的等速方程，但形状稍微不同。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="线下面积 A1 和 A2" class="img img-fluid" src="img/screen-shot-2017-09-03-at-2.53.30-pm.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            线下面积 A1 和 A2
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          该面积可以通过将这个区域分成两个不同的形状来计算：一个简单的矩形 A1，以及一个三角形 A2。
+         </p>
+         <p>
+          A1 与恒定速度模型中的面积相同。
+         </p>
+         <pre><code class="python language-python">A1 = initial_velocity*dt</code></pre>
+         <p>
+          换句话说，
+          <code>
+           A1 = 100m/s*(t2-t1)
+          </code>
+          。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          A2 计算起来有点麻烦。但请记住，三角形的面积是
+          <code>
+           0.5 * 宽 * 高
+          </code>
+          。
+         </p>
+         <p>
+          我们知道，宽度是时间变化 (t2-t1) 或
+          <code>
+           dt
+          </code>
+          。
+         </p>
+         <p>
+          而高度就是这段时间内的速度变化！根据之前的速度方程，我们知道这等于：
+          <code>
+           加速度 * (t2-t1)
+          </code>
+          或
+          <code>
+           加速度 * dt
+          </code>
+          。
+         </p>
+         <p>
+          现在我们有了三角形的宽和高，就可以计算出 A2了。
+         </p>
+         <pre><code class="python language-python">A2 = 0.5 * acceleration * dt**2</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4 id="运动模型">
+          运动模型
+         </h4>
+         <p>
+          这意味着我们的总位移 A1 + A2 可以用下式表示：
+         </p>
+         <pre><code class="python language-python">displacement = velocity * dt + 0.5 * acceleration * dt**2</code></pre>
+         <p>
+          我们还知道，速度随着时间的推移而变化：
+         </p>
+         <pre><code class="python language-python">velocity = acceleration*dt</code></pre>
+         <p>
+          这两个方程一起组成了恒定加速度的运动模型。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="07. 状态定量.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('06. 运动学')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>
