@@ -1,0 +1,349 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   向量存储
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      C++ 优化实战
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 介绍.html">
+       01. 介绍
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 软件开发和优化.html">
+       02. 软件开发和优化
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 优化技巧.html">
+       03. 优化技巧
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 无用代码.html">
+       04. 无用代码
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 练习：删除无用代码.html">
+       05. 练习：删除无用代码
+      </a>
+     </li>
+     <li class="">
+      <a href="06. If 语句.html">
+       06. If 语句
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 练习：If 语句.html">
+       07. 练习：If 语句
+      </a>
+     </li>
+     <li class="">
+      <a href="08. For 循环.html">
+       08. For 循环
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 练习：for 循环.html">
+       09. 练习：for 循环
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 中间变量.html">
+       10. 中间变量
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 练习：中间变量.html">
+       11. 练习：中间变量
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 向量存储.html">
+       12. 向量存储
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 练习：向量存储.html">
+       13. 练习：向量存储
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 引用.html">
+       14. 引用
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 练习：引用.html">
+       15. 练习：引用
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Sebastian 的故事.html">
+       16. Sebastian 的故事
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 静态关键词.html">
+       17. 静态关键词
+      </a>
+     </li>
+     <li class="">
+      <a href="18. 练习：静态关键词.html">
+       18. 练习：静态关键词
+      </a>
+     </li>
+     <li class="">
+      <a href="19. 速度挑战.html">
+       19. 速度挑战
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          12. 向量存储
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="向量内存存储">
+          向量内存存储
+         </h1>
+         <p>
+          之前提过，向量不是 C++ 中最高效的变量。其中一个原因是，声明向量变量时，不需要指定向量长度。因此，编译器不会提前知道需要分配多少内存。一旦向量长度超出了初始分配内存，整个向量就会被复制到空间更大的新 RAM 位置。
+         </p>
+         <p>
+          如果向vector容器插入值之前即可指定向量的长度，向量会更高效。这可以通过 reverse() 方法实现。该方法能保证向量可以存储预留的元素数。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="举例">
+          举例
+         </h1>
+         <p>
+          下面是一个 reserve() 方法的例子：
+         </p>
+         <pre><code class="c++ language-c++">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+using namespace std;
+
+int main() {
+    vector&lt;int&gt; myvector;
+    int vector_size = 50;
+    myvector.reserve(vector_size);
+
+    for (int i = 0; i &lt; vector_size; i++) {
+        myvector.push_back(i);
+    }
+
+    return 0;
+}</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          在 C++ 中，有多种方式可以初始化一个二维向量。优化你的程序时，你需要测试不同的初始化方式，确定哪种方式对你的程序效果最好。
+         </p>
+         <p>
+          要保证速度最快，需要考虑向量长度和类型。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="练习">
+          练习
+         </h1>
+         <p>
+          在接下来的练习中，你会看到三个不同的函数，分别在三个文件中：
+         </p>
+         <ul>
+          <li>
+           zeros.cpp
+          </li>
+          <li>
+           unreserved.cpp
+          </li>
+          <li>
+           initializer.cpp
+          </li>
+         </ul>
+         <p>
+          你的任务是修改 reserved.cpp 中的代码，保证在使用 push_back 方法前预定二维向量变量和一维向量变量的大小。你会看到，修改后代码速度有无提升。
+         </p>
+         <p>
+          unreserved() 函数会使用一个 for 循环来初始化一个二维向量。initializer() 函数使用标准库方法初始化向量。reserved.cpp 中的代码和 unreserved.cpp 中的代码完全一样。你的任务是使用 reserve() 方法来修改 reserved.cpp 文件。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="13. 练习：向量存储.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('12. 向量存储')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

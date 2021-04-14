@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.094
+Okay, now you'll learn some of the lower level features of C++,
+
+00:00:05.094 --> 00:00:08.650
+and thanks for enduring this with us.
+
+00:00:08.650 --> 00:00:11.120
+Now comes the real challenge.
+
+00:00:11.118 --> 00:00:14.954
+How fast can you make your history on filter?
+
+00:00:14.955 --> 00:00:18.780
+I want to challenge you to use all those features to
+
+00:00:18.780 --> 00:00:22.880
+write the fastest possible C++ implementation,
+
+00:00:22.879 --> 00:00:24.434
+and once you found it,
+
+00:00:24.434 --> 00:00:25.890
+go to the select channel,
+
+00:00:25.890 --> 00:00:28.109
+tell others how fast the solution is,
+
+00:00:28.109 --> 00:00:31.429
+and compare codes, because that's where the real fun lies.
+

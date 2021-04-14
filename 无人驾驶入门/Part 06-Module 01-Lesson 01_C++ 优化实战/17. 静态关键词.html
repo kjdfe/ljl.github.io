@@ -1,0 +1,343 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   静态关键词
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      C++ 优化实战
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 介绍.html">
+       01. 介绍
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 软件开发和优化.html">
+       02. 软件开发和优化
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 优化技巧.html">
+       03. 优化技巧
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 无用代码.html">
+       04. 无用代码
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 练习：删除无用代码.html">
+       05. 练习：删除无用代码
+      </a>
+     </li>
+     <li class="">
+      <a href="06. If 语句.html">
+       06. If 语句
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 练习：If 语句.html">
+       07. 练习：If 语句
+      </a>
+     </li>
+     <li class="">
+      <a href="08. For 循环.html">
+       08. For 循环
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 练习：for 循环.html">
+       09. 练习：for 循环
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 中间变量.html">
+       10. 中间变量
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 练习：中间变量.html">
+       11. 练习：中间变量
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 向量存储.html">
+       12. 向量存储
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 练习：向量存储.html">
+       13. 练习：向量存储
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 引用.html">
+       14. 引用
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 练习：引用.html">
+       15. 练习：引用
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Sebastian 的故事.html">
+       16. Sebastian 的故事
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 静态关键词.html">
+       17. 静态关键词
+      </a>
+     </li>
+     <li class="">
+      <a href="18. 练习：静态关键词.html">
+       18. 练习：静态关键词
+      </a>
+     </li>
+     <li class="">
+      <a href="19. 速度挑战.html">
+       19. 速度挑战
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          17. 静态关键词
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="静态关键词">
+          静态关键词
+         </h1>
+         <p>
+          有时候，你需要在函数中一再重复使用同一个变量。回顾一下 Andy 的 Python 直方图滤波器代码，其中的 blur() 函数就是个很好的例子。
+         </p>
+         <p>
+          blur 函数包括几个模糊因子，每次调用函数时它们都是一样的；但是，在 Andy 的 C++ 代码中，他每次都会重新计算这些模糊因子，你下面可以看到。
+         </p>
+         <p>
+          要是无论调用多少次函数，这些变量只需要声明并定义一次，会怎么样呢？你可以消除大量的内存读写操作。这是 C++ 静态关键词的一个完美用例。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="举例">
+          举例
+         </h1>
+         <p>
+          当你在一个 C++ 函数内部声明并定义一个变量时，值会分配到内存中。
+         </p>
+         <p>
+          例如：
+         </p>
+         <pre><code class="c++ language-c++">some_function() {
+   int x = 5;
+}</code></pre>
+         <p>
+          这段代码先在内存中为变量 x 分配空间，然后为其赋值 5。接下来，函数完成时，CPU 会从 RAM 中删除变量 x。这意味着每次运行函数时，CPU 都需要为 x 变量分配内存，然后解除分配。
+         </p>
+         <p>
+          反过来，如果你的代码使用了静态关键词，那么 x 变量就会在函数第一次运行时分配到内存中。这样，x 变量在整个程序的持续期间，都会保留在内存中。这样，你就省去了一些 RAM 读取次数：
+         </p>
+         <pre><code class="c++ language-c++">some_function() {
+    static int x = 5;
+}</code></pre>
+         <p>
+          注意，你需要同时声明和定义变量。在使用静态关键词定义变量时，不给变量赋值是不可能的。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="全局变量-vs-静态变量">
+          全局变量 vs 静态变量
+         </h1>
+         <p>
+          实际上，在内存中，静态变量和全局变量放置的位置是相同的。不同之处在于，全局变量在函数外部声明，程序中的任何函数或文件都可以使用。反过来，静态变量是在函数内部的。因此，在上面的例子中，some_function() 是可以访问 x 变量的唯一位置。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="练习">
+          练习
+         </h1>
+         <p>
+          在本练习中，你会看到使用静态关键词时，代码运行速度能提高多少。你还可以删除一些 for 循环！
+         </p>
+         <p>
+          回顾一下 Python 直方图滤波器代码，其中的 blur() 函数是怎么用的。你使用了一个二维网格来表述机器人的世界。每个网格空间都有一个概率，表示机器人位于这个格子上的可能性。机器人利用传感器数据更新其位置信息/位置的概率值后，使用 blur 函数对概率值进行平滑处理。
+         </p>
+         <p>
+          在本练习中，你需要检查 Andy 的 blur 函数的一部分。具体而言，是计算 blur 窗口的那部分。你会删除一些 for 循环，并使用静态关键词让代码运行更快。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="18. 练习：静态关键词.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('17. 静态关键词')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

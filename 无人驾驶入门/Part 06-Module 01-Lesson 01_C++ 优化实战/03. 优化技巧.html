@@ -1,0 +1,444 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   优化技巧
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      C++ 优化实战
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 介绍.html">
+       01. 介绍
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 软件开发和优化.html">
+       02. 软件开发和优化
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 优化技巧.html">
+       03. 优化技巧
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 无用代码.html">
+       04. 无用代码
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 练习：删除无用代码.html">
+       05. 练习：删除无用代码
+      </a>
+     </li>
+     <li class="">
+      <a href="06. If 语句.html">
+       06. If 语句
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 练习：If 语句.html">
+       07. 练习：If 语句
+      </a>
+     </li>
+     <li class="">
+      <a href="08. For 循环.html">
+       08. For 循环
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 练习：for 循环.html">
+       09. 练习：for 循环
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 中间变量.html">
+       10. 中间变量
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 练习：中间变量.html">
+       11. 练习：中间变量
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 向量存储.html">
+       12. 向量存储
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 练习：向量存储.html">
+       13. 练习：向量存储
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 引用.html">
+       14. 引用
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 练习：引用.html">
+       15. 练习：引用
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Sebastian 的故事.html">
+       16. Sebastian 的故事
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 静态关键词.html">
+       17. 静态关键词
+      </a>
+     </li>
+     <li class="">
+      <a href="18. 练习：静态关键词.html">
+       18. 练习：静态关键词
+      </a>
+     </li>
+     <li class="">
+      <a href="19. 速度挑战.html">
+       19. 速度挑战
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          03. 优化技巧
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="本课技巧概述">
+          本课技巧概述
+         </h1>
+         <p>
+          下面是优化 C++ 代码所需的技巧概览。完成本课练习和最终项目时，你可以回来翻看本页。随着课程进展，所有技巧都会不断扩展。
+         </p>
+         <p>
+          如果你想知道我们为什么选择了这些技巧，那是因为它们都可用于优化 Andy 的直方图滤波器代码。这当然不是完整的优化技巧列表。它的意义在于，通过练习，你会从新的角度来思考你的代码。迄今为止，你的注意力都在代码编写上。现在，你需要观察你的编程决策所产生的后果了。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="删除无用代码">
+          删除无用代码
+         </h2>
+         <p>
+          写代码时，你可能会发现有一段代码已经不用了，但仍在程序中没有删除。要留意这种情况：记住，每行代码都会占用 CPU 资源，而且往往还伴随着内存读写操作。任何不必要的代码都会拖慢程序。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="避免额外的-if-语句">
+          避免额外的 if 语句
+         </h2>
+         <p>
+          带有多个分支的 if 语句通常比较低效：
+         </p>
+         <pre><code class="c++ language-c++">int x = 5;
+if (x &gt;= 5) {x = x + 1;}
+if (x &lt; 5) {x = x - 1;}</code></pre>
+         <p>
+          你可以把上述代码转换为 if else 语句，这样可以避免 CPU 检查 x 是否小于 5。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="避免嵌套的-for-循环">
+          避免嵌套的 for 循环
+         </h2>
+         <p>
+          下面这段代码：
+         </p>
+         <pre><code class="c++ language-c++">for (int i = 0; i &lt; 5; i++) {
+   for (int j = 0; j &lt; 4; j++) {
+         matrix[i][j];   
+   } 
+}</code></pre>
+         <p>
+          看起来有点眼熟。这是你之前在据这种迭代值的代码。有时候，你别无选择，只能使用嵌套 for 循环。但是，对于有些情况，如果换个思路，可能就不用使用嵌套 for 循环了。这样的话，你就不需要像上面那样进行 20 次迭代了，可能只需要 9 次迭代即可。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="避免创建额外变量">
+          避免创建额外变量
+         </h2>
+         <p>
+          你会看到，Andy 有时候创建了并不需要的变量。例如：
+         </p>
+         <pre><code class="c++ language-c++">float x = 2;
+float y = 7;
+float z = 4;
+
+float volume = x * y * z;
+
+float volume_reciprocal = 1 / volume;</code></pre>
+         <p>
+          这里的 volume 变量并不是必需的。你可以直接计算倒数。
+         </p>
+         <pre><code class="c++ language-c++">volume_reciprocal = 1 / (x * y * z);</code></pre>
+         <p>
+          这样可能不会大幅提升性能；单精度浮点变量在 C++ 中相对高效。但是，如果你创建了一个新变量，来容纳一个更大的变量，比如二维向量呢？所需的额外内存肯定或拖慢程序。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="在内存中为向量保留空间">
+          在内存中为向量保留空间
+         </h2>
+         <p>
+          你之前一致在使用二维向量来表示矩阵。C++ 向量在便捷性上独具优势。你可以按需添加元素至向量。而数组则具备固定的长度，声明之后无法更改。
+         </p>
+         <p>
+          但这种灵活性是需要代价的。C++ 向量在执行时间方面非常低效。实际上，需要快速执行的程序通常都不会使用 C++ 向量，更不会使用很大的 if 循环来迭代向量。相反，这些程序在编写时一般会利用 CPU 或 GPU 上的
+          <a href="https://en.wikipedia.org/wiki/Parallel_computing" target="_blank">
+           并行计算
+          </a>
+          。
+         </p>
+         <p>
+          当你声明并定义一个向量时，编译器会在内存中预留空间和一些额外字节，用于向量扩展。一旦向量长度扩展，超出了预留内存，整个向量就会被复制到 RAM 中的拥有足够空间的其他地方。
+         </p>
+         <p>
+          这非常低效！在 Andy 的直方图滤波器代码中，你已经知道了向量需要有多大，因为机器人的世界中网格空间的数量是固定的。如果为向量预留了空间，就可以避免向量长度扩展时重新分配额外内存。语法和编码一样简单：
+         </p>
+         <pre><code class="c++ language-c++">std::vector&lt;int&gt; foo;
+foo.reserve(15);</code></pre>
+         <p>
+          现在，foo 向量可以保证拥有足够的空间，可以容纳 15 个整数。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="按引用传递变量">
+          按引用传递变量
+         </h2>
+         <p>
+          每次调用函数时，C++ 都会把所有输入变量复制到内存中，无论这些变量是否已经在内存中。对于基础的数据类型，如整数、字符、单精度浮点数，这可能不是问题。
+         </p>
+         <p>
+          但某些变量占用空间大得多，比如向量。这时候，赋值过程会拖慢程序。
+         </p>
+         <p>
+          你需要学会如何按引用传递变量，而非按值传递变量。按引用传递变量时，会告知你的函数直接使用内存中的变量，无需把整个变量再次复制到内存中。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="使用静态变量">
+          使用静态变量
+         </h2>
+         <p>
+          在 Andy 的代码中，你能看到，部分向量和值是在函数内部计算的。但这些值在每次调用函数时都是一样的。
+         </p>
+         <p>
+          为避免一再重复计算这些变量，你可以把这些变量声明为静态的。首次调用函数时，C++ 把这些值存储在内存里，然后每次调用函数时重用这些值即可。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="课程后面部分">
+          课程后面部分
+         </h2>
+         <p>
+          课程的后面部分包括一系列练习，让你为项目做好准备。每次练习中，你都会收到一段代码，其中包括本页讨论的一个问题。你需要修改代码，让程序运行更快。
+         </p>
+         <p>
+          你可以看到，每次运行代码时，计时器给出的结果稍有不同。运行 C++ 程序时，CPU 可能同时执行其他任务，这会影响计时。请务必多次执行代码，以确定你的代码运行速度是否更快。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="04. 无用代码.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('03. 优化技巧')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

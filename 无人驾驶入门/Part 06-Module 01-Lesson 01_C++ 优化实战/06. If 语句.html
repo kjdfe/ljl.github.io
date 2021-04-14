@@ -1,0 +1,391 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   If 语句
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      C++ 优化实战
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 介绍.html">
+       01. 介绍
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 软件开发和优化.html">
+       02. 软件开发和优化
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 优化技巧.html">
+       03. 优化技巧
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 无用代码.html">
+       04. 无用代码
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 练习：删除无用代码.html">
+       05. 练习：删除无用代码
+      </a>
+     </li>
+     <li class="">
+      <a href="06. If 语句.html">
+       06. If 语句
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 练习：If 语句.html">
+       07. 练习：If 语句
+      </a>
+     </li>
+     <li class="">
+      <a href="08. For 循环.html">
+       08. For 循环
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 练习：for 循环.html">
+       09. 练习：for 循环
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 中间变量.html">
+       10. 中间变量
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 练习：中间变量.html">
+       11. 练习：中间变量
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 向量存储.html">
+       12. 向量存储
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 练习：向量存储.html">
+       13. 练习：向量存储
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 引用.html">
+       14. 引用
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 练习：引用.html">
+       15. 练习：引用
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Sebastian 的故事.html">
+       16. Sebastian 的故事
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 静态关键词.html">
+       17. 静态关键词
+      </a>
+     </li>
+     <li class="">
+      <a href="18. 练习：静态关键词.html">
+       18. 练习：静态关键词
+      </a>
+     </li>
+     <li class="">
+      <a href="19. 速度挑战.html">
+       19. 速度挑战
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          06. If 语句
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="if-语句">
+          If 语句
+         </h1>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          很多编译器会尝试优化 if 语句。如果你这么写：
+         </p>
+         <pre><code>int x = 7;
+
+if (x &gt; 0) {
+  return y;
+}
+if (x &lt;= 0) {
+   return z;
+}</code></pre>
+         <p>
+          优化后可能是：
+         </p>
+         <pre><code class="c++ language-c++">int x = 7;
+if (x &gt; 0) {
+   return y;
+}
+else {
+   return z;
+}</code></pre>
+         <p>
+          编译器不会真正把你的 C++ 代码重写为优化后的代码。它在输出汇编语言或机器语言时或进行优化。但总体来说，如果 if 的逻辑分支对 CPU 资源占用较多，需要避免过多的逻辑分支。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          考虑到 if 语句的执行过程，建议把大多数的用例放到更高层次的逻辑分支上，这样更高效。
+         </p>
+         <p>
+          下面是一个简单的例子：
+         </p>
+         <pre><code class="c++ language-c++">    for (int i = 0; i &lt; 1000; i++) {
+        if (i &gt; 0 &amp;&amp; i &lt; 5) {
+            cout &lt;&lt;  "low \n";
+        }
+        else if (i &gt;= 990) {
+            cout &lt;&lt; "high \n";
+        }
+        else {
+            cout &lt;&lt; "normal \n";
+        }
+    }</code></pre>
+         <p>
+          在大多数情况下，上述代码都会输出单词 “normal”。在大多数时间里，这段代码需要遍历所有的 if 和 else 分支，因此，CPU 会比较每个分支中的
+          <strong>
+           i
+          </strong>
+          。
+         </p>
+         <p>
+          如果把 “normal” 放到分支顶部，而不是底部，效率会更高。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <pre><code>for (int i = 0; i &lt; 1000; i++) {
+    if (i &gt;= 5 &amp;&amp; i &lt; 990) {
+        cout &lt;&lt;  "normal \n";
+    }
+    else if (i &gt;= 990) {
+        cout &lt;&lt; "high \n";
+    }
+    else {
+        cout &lt;&lt; "low \n";
+    }
+}</code></pre>
+         <p>
+          这样修改后，CPU 在大多数时间里就能跳过 else if 和 else 分支了。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="if-语句在-cpu-上的执行">
+          If 语句在 CPU 上的执行
+         </h1>
+         <p>
+          使用 C++ 等高级语言时，if 语句还有一方面不太好控制。CPU 会运行同步运算，试图优化 if 语句的运算。
+         </p>
+         <p>
+          进行运算时，CPU 会提前执行后面的代码，并行开启另一个运算。对 if 语句而言，CPU 会尝试预测接下来进行哪个分支，然后在预测的分支内运行运算。需要评估逻辑表达时，CPU 可能会意识到，预测不够准确。如果预测错误，则预测的运算会停止，CPU 开始运行正确的运算。
+         </p>
+         <p>
+          因此，重排或删除 if 语句可能不会显著缩短时间。因为编译器和 CPU 已经在尝试优化相关操作了。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="练习">
+          练习
+         </h1>
+         <p>
+          在下面部分，我们来做一个 if 语句的优化练习。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="07. 练习：If 语句.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('06. If 语句')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>
