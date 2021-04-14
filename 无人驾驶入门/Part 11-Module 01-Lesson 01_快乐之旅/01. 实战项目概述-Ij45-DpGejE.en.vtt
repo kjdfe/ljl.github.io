@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.049
+Welcome to Project Zero.
+
+00:00:02.049 --> 00:00:05.129
+This is a quick project that gives you a chance to get your hands dirty,
+
+00:00:05.129 --> 00:00:08.064
+writing code that controls a simulated car.
+
+00:00:08.064 --> 00:00:09.682
+This project has three parts,
+
+00:00:09.682 --> 00:00:13.980
+and in each part you'll write code to solve a particular driving situation.
+
+00:00:13.980 --> 00:00:15.615
+In the first part,
+
+00:00:15.615 --> 00:00:20.490
+you'll write code that let's a car successfully jump over a small grove of trees.
+
+00:00:20.489 --> 00:00:23.077
+Now this isn't a common self-driving car problem,
+
+00:00:23.077 --> 00:00:24.710
+but the real goal here is just to get you
+
+00:00:24.710 --> 00:00:27.120
+used to the programming interface that you'll be working with.
+
+00:00:27.120 --> 00:00:31.120
+In part two, you'll write code that let's a car navigate a circular track.
+
+00:00:31.120 --> 00:00:33.030
+And in doing so, you'll be exploring
+
+00:00:33.030 --> 00:00:36.840
+the relationship between steering angle and turning radius.
+
+00:00:36.840 --> 00:00:38.205
+We won't get into the math now,
+
+00:00:38.204 --> 00:00:40.019
+but later we'll dig into this math more
+
+00:00:40.020 --> 00:00:43.455
+deeply and refer back to this part of the project when we do.
+
+00:00:43.454 --> 00:00:44.820
+In the third part,
+
+00:00:44.820 --> 00:00:47.969
+you'll write a function which actually performs a sequence of
+
+00:00:47.969 --> 00:00:51.659
+steps to do something that a lot of human drivers really struggle to do,
+
+00:00:51.659 --> 00:00:54.000
+parallel park a car.
+
