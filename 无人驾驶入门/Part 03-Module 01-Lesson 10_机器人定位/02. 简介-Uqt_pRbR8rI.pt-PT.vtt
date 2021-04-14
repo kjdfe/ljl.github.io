@@ -1,0 +1,166 @@
+WEBVTT
+Kind: captions
+Language: pt-PT
+
+00:00:00.000 --> 00:00:05.000
+Benvindo ao curso de Inteligência Artificial para Robótica.
+
+00:00:05.000 --> 00:00:08.000
+Durante 7 semanas vais frequentar um curso excitante
+
+00:00:08.000 --> 00:00:12.000
+onde vais aprender a programar carros sem condutor.
+
+00:00:12.000 --> 00:00:16.000
+E para te motivar relativamente aos objectivos deste curso,
+
+00:00:16.000 --> 00:00:18.000
+deixa-me mostrar-te alguns vídeos.
+
+00:00:18.000 --> 00:00:25.000
+O meu interesse em carros sem condutor começou com o DARPA Grand Challenge em 2004
+
+00:00:25.000 --> 00:00:28.000
+em que a minha equipa de Stanford desenvolveu o Stanley,
+
+00:00:28.000 --> 00:00:31.000
+um carro robot que atravessou sozinho o deserto do Mojave.
+
+00:00:31.000 --> 00:00:34.000
+O veículo era baseado num Volkswagen Touareg
+
+00:00:34.000 --> 00:00:39.000
+equipado com vários tipos de sensores, tais como GPS e laser,
+
+00:00:39.000 --> 00:00:43.000
+e era capaz de tomar decisões sem qualquer intervenção humana.
+
+00:00:43.000 --> 00:00:46.000
+O DARPA Grand Challenge foi uma corrida patrocinada pelo Governo dos USA
+
+00:00:46.000 --> 00:00:48.000
+que decorreu em 2005.
+
+00:00:48.000 --> 00:00:52.000
+Aqui vemos o nosso robot Stanley a atravessar o deserto
+
+00:00:52.000 --> 00:00:55.000
+sem nenhum humano a bordo.
+
+00:00:55.000 --> 00:00:59.000
+O desafio consistia em viajar num trilho do deserto com 130 milhas de extensão,
+
+00:00:59.000 --> 00:01:02.000
+e o carro mais rápido ganharia a corrida.
+
+00:01:02.000 --> 00:01:05.000
+Aqui estamos a ultrapassar um outro robot da Universidade de Carnegie Mellon
+
+00:01:05.000 --> 00:01:08.000
+após 110 milhas de corrida.
+
+00:01:08.000 --> 00:01:13.000
+O nosso robot foi capaz de rodar em estradas de montanha muito íngremes
+
+00:01:13.000 --> 00:01:18.000
+e de evitar colisões com rochas e quedas de penhascos
+
+00:01:18.000 --> 00:01:23.000
+apenas usando as técnicas que vos vou ensinar neste curso.
+
+00:01:23.000 --> 00:01:29.000
+Após cerca de 7 horas e 131 milhas, o nosso robot fez meia volta e retornou à base
+
+00:01:29.000 --> 00:01:33.000
+sendo o primeiro robot a conseguir terminar a DARPA Grand Challenge
+
+00:01:33.000 --> 00:01:36.000
+fez ganhar 2 milhões de dólares à Universidade de Stanford
+
+00:01:36.000 --> 00:01:42.000
+e o Stanley ganhou um lugar cativo no Museu de História Americana Smithsonian.
+
+00:01:42.000 --> 00:01:47.000
+Este trabalho levou-nos ao Desafio Urbano, para o qual construímos outro robot chamado Junior
+
+00:01:47.000 --> 00:01:49.000
+que ficou em segundo lugar.
+
+00:01:49.000 --> 00:01:52.000
+O Desafio Urbano foi uma sequela patrocinada pelo DARPA
+
+00:01:52.000 --> 00:01:55.000
+em que os carros tinham de se movimentar no tráfego,
+
+00:01:55.000 --> 00:01:59.000
+por isso enquanto o Grand Challenge foi o rei dos desafios no deserto vazio,
+
+00:01:59.000 --> 00:02:04.000
+o Desafio Urbano teve lugar numa falsa cidade em que o robot tinha que interagir com outro tráfego
+
+00:02:04.000 --> 00:02:08.000
+e seguir as leis de trânsito, como se vê aqui numa viragem à esquerda.
+
+00:02:08.000 --> 00:02:11.000
+Tinha que se manter dentro das vias, com exactidão,
+
+00:02:11.000 --> 00:02:16.000
+apreceber-se do tráfego em volta e movimentar-se com confiança
+
+00:02:16.000 --> 00:02:20.000
+num ambiente que se assemelhava ao de uma pequena cidade.
+
+00:02:20.000 --> 00:02:24.000
+Isto levou a uma série de experiências na Google
+
+00:02:24.000 --> 00:02:26.000
+que resultaram no chamado "carro autónomo da Google".
+
+00:02:26.000 --> 00:02:30.000
+Acredito que estes são os melhores carros-robot da actualidade.
+
+00:02:30.000 --> 00:02:34.000
+Aqui vemos um dos nossos Prius na Avenida da Universidade em Palo Alto
+
+00:02:35.500 --> 00:02:37.000
+comportando-se como se fosse conduzido por um humano,
+
+00:02:37.000 --> 00:02:40.000
+mas este carro é autónomo, "conduz-se" sózinho.
+
+00:02:40.000 --> 00:02:43.000
+Os nossos carros já viajaram centenas de milhares de milhas
+
+00:02:43.000 --> 00:02:46.000
+na Califórnia e no Nevada,
+
+00:02:46.000 --> 00:02:53.000
+em centros de cidades como São Francisco, em auto-estradas com muito movimento.
+
+00:02:53.000 --> 00:03:00.000
+Aqui em Monterey, uma pequena cidade costeira na Califórnia, com montes de peões.
+
+00:03:00.000 --> 00:03:06.000
+Aqui o carro, autonomamente, apercebe-se
+
+00:03:06.000 --> 00:03:10.000
+de coisas como um veado, no meio da estrada, à noite
+
+00:03:10.000 --> 00:03:16.000
+e consegue fazer a sinuosa Lombard Street em São Francisco, como se vê no vídeo.
+
+00:03:16.000 --> 00:03:19.000
+Isto é o meu trabalho no dia-a-dia.
+
+00:03:19.000 --> 00:03:23.000
+Adoro construir carros sem condutor, juntamente com a minha equipa.
+
+00:03:23.000 --> 00:03:26.000
+Acreditamos que eles vão mudar o mundo,
+
+00:03:26.000 --> 00:03:31.000
+e espero, com este curso, ajudar-te a conseguir fazer o mesmo!
+
+00:03:31.000 --> 09:59:59.000
+Toca a mergulhar!
+

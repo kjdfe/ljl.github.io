@@ -1,0 +1,25 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:05.000
+Aquí están las tres líneas de código que utilicé para programar esto.
+
+00:00:05.000 --> 00:00:08.000
+Primero calculé la suma de un vector Q mediante la función "sum",
+
+00:00:08.000 --> 00:00:10.000
+lo que hace que sea realmente sencillo.
+
+00:00:10.000 --> 00:00:13.000
+Luego paso por todos los elementos de Q y sólo lo divido por S,
+
+00:00:13.000 --> 00:00:19.000
+que es la normalización y al ejecutarlo, me sale 1/9, 1/3, 1/3, 1/9 y 1/9.
+
+00:00:19.000 --> 00:00:24.000
+Y así he aplicado la función clave-absoluta de la localización,
+
+00:00:24.000 --> 09:59:59.000
+la cual es llamada actualización de medición.
+

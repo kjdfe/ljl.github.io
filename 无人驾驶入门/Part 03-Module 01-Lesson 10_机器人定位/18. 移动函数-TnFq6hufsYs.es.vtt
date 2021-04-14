@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: es
+
+00:00:00.000 --> 00:00:02.000
+Aquí está la solución.
+
+00:00:02.000 --> 00:00:06.000
+Comenzamos con la lista vacía. Vamos a través de todos los elementos en P.
+
+00:00:06.000 --> 00:00:08.000
+Esta es la línea complicada.
+
+00:00:08.000 --> 00:00:14.000
+Construimos Q elemento por elemento, accediendo a la P correspondiente,
+
+00:00:14.000 --> 00:00:21.000
+y p es desplazado por la cantidad U y si este cambio supera el margen de P de la izquierda,
+
+00:00:21.000 --> 00:00:26.000
+aplicamos el operador módulo con el número de estados como argumento.
+
+00:00:26.000 --> 00:00:28.000
+En este caso, va a ser 5.
+
+00:00:28.000 --> 00:00:31.000
+Ahora, la razón por la cual hay un signo negativo es complicada.
+
+00:00:31.000 --> 00:00:35.000
+Para desplazar la distribución hacia la derecha, U = 1,
+
+00:00:35.000 --> 00:00:40.000
+Tenemos que encontrar en P el elemento 1 lugar a la izquierda.
+
+00:00:40.000 --> 00:00:44.000
+En lugar de desplazar P directamente hacia la derecha
+
+00:00:44.000 --> 00:00:48.000
+lo que he hecho es que he construido q buscando
+
+00:00:48.000 --> 00:00:51.000
+de donde podría haber venido el robot .
+
+00:00:51.000 --> 00:00:54.000
+Eso es por supuesto, en retrospectiva, desde la izquierda.
+
+00:00:54.000 --> 00:00:56.000
+Por lo tanto, hay signo negativo aquí.
+
+00:00:56.000 --> 00:00:59.000
+Así que piensen en esto, ya que es un poco no trivial,
+
+00:00:59.000 --> 00:01:01.000
+pero va a ser importante en cuanto avanzamos y definimos
+
+00:01:01.000 --> 99:59:59.000
+convolución probabilística y generalizamos esto al caso "ruidoso".
+

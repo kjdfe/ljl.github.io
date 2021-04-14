@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: vi
+
+00:00:00.000 --> 00:00:05.000
+Vấn đề đầu tiên cần giải quyết là định vị (localization).
+
+00:00:05.000 --> 00:00:07.292
+Nó bao hàm việc một robot sẽ bị lạc đường trong không gian.
+
+00:00:07.292 --> 00:00:10.277
+Nó là một cái xe ô tô.Nó là một robot di động.
+
+00:00:10.277 --> 00:00:15.000
+Đây là môi trường,và một robot kém sẽ không biết nó đang ở đâu.
+
+00:00:15.000 --> 00:00:19.738
+Tương tự,chúng ta có một chiếc xa đang đi trên đường cao tốc,
+
+00:00:19.738 --> 00:00:22.492
+và chiếc xe này phải biết nó đang ở đâu.
+
+00:00:22.492 --> 00:00:25.815
+Nó cần biết nó đang đi trong làn đường hay đi ra ngoài làn đường .
+
+00:00:25.815 --> 00:00:29.169
+Bây giờ,cách truyền thống là dùng các vệ tinh.
+
+00:00:29.169 --> 00:00:33.385
+Các vệ tinh phát ra tín hiệu và xe sẽ bắt được.
+
+00:00:33.385 --> 00:00:37.692
+Điều đó được gọi là GPS, viết tắt của "hệ thống định vị toàn cầu (global positioning system),"
+
+00:00:37.692 --> 00:00:41.108
+và đây là những gì bạn có trong bảng điều khiển của bạn nếu bạn có một chiếc xe với GPS
+
+00:00:41.108 --> 00:00:43.938
+nó chỉ ra cho bạn bản đồ và cho bạn thấy bạn đang ở đâu.
+
+00:00:43.938 --> 00:00:49.000
+Bây giờ không may, vấn đề với GPS là nó thực sự không phải là rất chính xác.
+
+00:00:49.000 --> 00:00:54.000
+Nó thực sự phổ biến để một chiếc xe có thể tin tưởng nhưng ở đây nó
+
+00:00:54.000 --> 00:00:56.431
+có thể sai số 2-10 mét.
+
+00:00:56.431 --> 00:00:59.262
+Nên nếu bạn cố để đi trong ngõ hẹp với 10 mét sai số,
+
+00:00:59.262 --> 00:01:04.792
+bạn đang ở khá xa, và bạn đang lái xe ngay trên đây, và bạn gặp tai nạn.
+
+00:01:04.792 --> 00:01:10.000
+Vì vậy, đối với ô tô tự lái của chúng tôi, để có thể ở lại trong làn xe sử dụng định vị,
+
+00:01:10.000 --> 00:01:14.231
+chúng ta cần một cái gì đó sai số 2-10 cm.
+
+00:01:14.231 --> 00:01:17.631
+Tiếp đó, chúng ta có thể lái xe với GPS trong làn xe.
+
+00:01:17.631 --> 00:01:23.000
+Câu hỏi đặt ra là, làm thế nào chúng ta có thể biết được chỉ có 10 cm sai số ?
+
+00:01:23.000 --> 00:01:26.862
+Đó là câu hỏi về định vị.
+
+00:01:26.892 --> 00:01:31.985
+Trong xe tự lái của Google, định vị đóng một vai trò quan trọng
+
+00:01:31.985 --> 00:01:37.923
+Chúng tôi ghi lại hình ảnh của mặt đường và sau đó sử dụng các kỹ thuật
+
+00:01:37.923 --> 00:01:42.062
+Tôi chỉ dạy cho bạn để tìm ra chính xác các robot ở đâu.
+
+00:01:42.062 --> 00:01:45.031
+Nó phải chính xác đến vài cm,
+
+00:01:45.031 --> 00:01:50.385
+và làm cho nó có thể đi bên trong làn đường ngay cả khi các dấu làn đường bị mờ đi.
+
+00:01:50.385 --> 00:01:54.969
+Vì vậy, định vị có rất nhiều kiến thức toán, nhưng trước khi tôi đi sâu vào chi tiết toán học,
+
+00:01:54.985 --> 00:01:58.631
+Tôi muốn cung cấp cho bạn một cái nhìn cho các nguyên tắc cơ bản.
+
+00:01:58.631 --> 00:02:01.000
+Tôi muốn nói với bạn những câu chuyện về việc chúng tôi sẽ định vị,
+
+00:02:01.000 --> 00:02:04.031
+và sau đó chúng ta có thể học toán với nhau, do đó bạn có thể hiểu được nó.
+
+00:02:04.031 --> 00:02:06.981
+Tôi cũng muốn cho bạn lập trình chương trình localizer của riêng bạn
+
+00:02:06.981 --> 00:02:18.000
+vì vậy bạn có thể lập trình một chiếc xe tự lái. (Đóng góp:htluandc@gmail.com)
+

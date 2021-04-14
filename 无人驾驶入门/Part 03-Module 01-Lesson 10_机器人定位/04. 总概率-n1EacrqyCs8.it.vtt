@@ -1,0 +1,202 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:05.000
+La storia inizia in un mondo in cui risiede il nostro robot.
+
+00:00:05.000 --> 00:00:09.000
+Assumiamo che il robot non abbia idea di dove si trova.
+
+00:00:09.000 --> 00:00:14.000
+Modelliamo questo con una funzione, la disegno in un grafico
+
+00:00:14.000 --> 00:00:20.000
+in cui l'asse verticale è la probabilità per una qualunque posizione nel mondo
+
+00:00:20.000 --> 00:00:25.000
+e l'asse orizzontale corrisponde alle posizioni in questo mondo unidimensionale.
+
+00:00:25.000 --> 00:00:29.000
+Il modo in cui modello il fatto che il belief attuale del robot su dove si possa trovare
+
+00:00:29.000 --> 00:00:33.000
+è la confusione, è con una funzione uniforme che assegna un peso uguale
+
+00:00:33.000 --> 00:00:36.000
+a qualunque possibile posizione in questo mondo.
+
+00:00:36.000 --> 00:00:39.000
+Questo è lo stato di massima confusione
+
+00:00:39.000 --> 00:00:42.000
+Per localizzarsi, il mondo deve avere alcune caratteristiche distinguibili.
+
+00:00:42.000 --> 00:00:46.000
+Immaginiamo che nel mondo ci siano tre diversi landmark [punti di riferimento]
+
+00:00:46.000 --> 00:00:55.000
+C'è una porta qui, una porta qui e una terza qui in fondo.
+
+00:00:55.000 --> 00:00:57.000
+Per questo esempio
+
+00:00:57.000 --> 00:00:59.000
+immaginiamo che siano tutte uguali, che non siano distinguibili
+
+00:00:59.000 --> 00:01:04.000
+ma il robot può distinguere una porta da una parte di non-porta, ossia dal muro.
+
+00:01:04.000 --> 00:01:09.000
+Vediamo come il robot si può localizzare immaginando che legga il sensore,
+
+00:01:09.000 --> 00:01:12.000
+e che legga che si trova vicino a una porta.
+
+00:01:12.000 --> 00:01:17.000
+Tutto ciò che sa adesso è di trovarsi, probabilmente, vicino a una porta.
+
+00:01:17.000 --> 00:01:20.000
+Questo come influenza il il nostro belief?
+
+00:01:20.000 --> 00:01:23.000
+Questo è il passo cruciale per la localizzazione.
+
+00:01:23.000 --> 00:01:26.000
+Se capsici questo passo, capisci la localizzazione.
+
+00:01:26.000 --> 00:01:30.000
+La lettura di una porta trasforma la nostra funzione di belief,
+
+00:01:30.000 --> 00:01:35.000
+definita su tutte le possibili posizioni, in una nuova funzione che si presenta così.
+
+00:01:35.000 --> 00:01:42.000
+Per le tre posizioni adiacenti alle porte, abbiamo un belief incrementato di essere in quel punto
+
+00:01:42.000 --> 00:01:46.000
+mentre per tutte le altre posizioni il belief è diminuito.
+
+00:01:46.000 --> 00:01:51.000
+Questa è la distribuzione di probabilità che assegna una probabilità più alta all'essere vicino a una porta,
+
+00:01:51.000 --> 00:02:00.000
+ed è chiamato belief a posteriori, in cui "a posteriori" significa: dopo che la misura è stata letta.
+
+00:02:00.000 --> 00:02:04.000
+Uno degli aspetti chiave di questo belief è che ancora non sappiamo dove ci troviamo.
+
+00:02:04.000 --> 00:02:07.000
+Ci sono tre possibili posizioni di porta e inoltre
+
+00:02:07.000 --> 00:02:11.000
+potrebbe essere che i sensori si siano sbagliati e che abbiamo accidentalmente visto una porta dove la porta non c'è.
+
+00:02:11.000 --> 00:02:16.000
+Per cui c'è ancora una probabilità residua di essere in questi altri posti qui,
+
+00:02:16.000 --> 00:02:22.000
+me questi tre picchi insieme esprimono davvero il nostro miglior belief su dove ci troviamo.
+
+00:02:22.000 --> 00:02:29.000
+Questa rappresentazione è la vera base della probabilità e della localizzazione di robot mobili.
+
+00:02:29.000 --> 00:02:32.000
+Adesso immaginiamo che il robot si muova
+
+00:02:32.000 --> 00:02:35.000
+Diciamo che si muove verso destra di una certa distanza.
+
+00:02:35.000 --> 00:02:40.000
+Possiamo quindi traslare il belief secondo il movimento.
+
+00:02:40.000 --> 00:02:43.000
+E questo potrebbe essere il risultato.
+
+00:02:43.000 --> 00:02:46.000
+Questo picco si è spostato qui.
+
+00:02:46.000 --> 00:02:50.000
+Quest'altro è andato qui, e questo qui.
+
+00:02:50.000 --> 00:02:53.000
+Ovviamente, il robot sa in che direzione si sta muovendo,
+
+00:02:53.000 --> 00:02:56.000
+In questo esempio si sta muovendo a destra,
+
+00:02:56.000 --> 00:02:58.000
+e sa più o meno di quanto si è spostato.
+
+00:02:58.000 --> 00:03:00.000
+Il movimento del robot non è del tutto certo.
+
+00:03:00.000 --> 00:03:02.000
+Non pssiamo mai essere certi di dove il robot si sia mosso.
+
+00:03:02.000 --> 00:03:06.000
+Per cui questi picchi sono un po' più piatti dei precedenti.
+
+00:03:06.000 --> 00:03:11.000
+Il procedimento di muovere il belief verso destra tecnicamente si chiama convoluzione
+
+00:03:11.000 --> 00:03:15.000
+Assumiamo che il robot misuri di nuovo, e per esempio,
+
+00:03:15.000 --> 00:03:19.000
+immaginiamo che di nuovo si veda accanto a una porta,
+
+00:03:19.000 --> 00:03:21.000
+per cui la misura è la stessa di prima.
+
+00:03:21.000 --> 00:03:24.000
+Adesso accade la cosa più straordinaria,
+
+00:03:24.000 --> 00:03:29.000
+moltiplichiamo il nostro belief, che ora è a priori della seconda misura,
+
+00:03:29.000 --> 00:03:32.000
+con una funzione che somiglia molto a questa
+
+00:03:32.000 --> 00:03:37.000
+che ha un picco a ciascuna porta, e ne risulta un belief fatto così
+
+00:03:37.000 --> 00:03:42.000
+Ci sono un paio di picchi bassi, ma l'unico picco davvero alto è questo qui.
+
+00:03:42.000 --> 00:03:48.000
+Questo corrisponde a quest'altro nel belief a priori,
+
+00:03:48.000 --> 00:03:53.000
+ed è l'unico posto nel belief a priori che corrisponde davvero alla misura di una porta,
+
+00:03:53.000 --> 00:03:57.000
+mentre tutte le altri posizioni corrispondenti alle porte hanno un belief a priori basso.
+
+00:03:57.000 --> 00:04:01.000
+Come risultato, questa funzione è molto interessante,
+
+00:04:01.000 --> 00:04:04.000
+è una distribuzione che centra la maggior parte del suo peso
+
+00:04:04.000 --> 00:04:07.000
+sull'ipotesi corretta che il robot si trovi sulla seconda porta,
+
+00:04:07.000 --> 00:04:12.000
+e dà un belief molto piccolo a posizioni lontane dalle porte.
+
+00:04:12.000 --> 00:04:16.000
+A questo punto il robot si è localizzato.
+
+00:04:16.000 --> 00:04:21.000
+Se hai capito questo, allora capisci la porbabilità e capisci la localizzazione.
+
+00:04:21.000 --> 00:04:26.000
+Per cui congratulazioni! Comprendi la probabilità e la localizzazione.
+
+00:04:26.000 --> 00:04:30.000
+Potresti non rendertene conto ora, ma è un aspetto cruciale del capire
+
+00:04:30.000 --> 09:59:59.000
+un insieme di cose che ti insegnerò in questa lezione.
+

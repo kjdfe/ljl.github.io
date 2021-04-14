@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:03.000
+Y aquí está la función. Es muy corta.
+
+00:00:03.000 --> 00:00:06.000
+Recorre las mediciones. Se supone que tiene tantos movimientos como mediciones.
+
+00:00:06.000 --> 00:00:10.000
+En primer lugar, se aplica la medición como antes. Luego se aplica el movimiento.
+
+00:00:10.000 --> 00:00:14.000
+Cuando se completa, se imprime la salida, y la salida es interesante.
+
+00:00:14.000 --> 00:00:19.000
+El mundo cuenta con una zona verde, una roja, una roja, una verde y otra celda verde.
+
+00:00:19.000 --> 00:00:25.000
+Y el robot vio la roja, seguido por un movimiento de derecha, y luego verde.
+
+00:00:25.000 --> 00:00:28.000
+Y eso sugiere que probablemente se inició
+
+00:00:28.000 --> 00:00:31.000
+con la más alta probabilidad en la celda número 3,
+
+00:00:31.000 --> 00:00:35.000
+que es la más a la derecha de las dos celdas rojas.
+
+00:00:35.000 --> 00:00:40.000
+vio la roja correctamente. Entonces se movió a la derecha 1,
+
+00:00:40.000 --> 00:00:43.000
+vio verde correctamente, se movio a la derecha de nuevo.
+
+00:00:43.000 --> 00:00:46.000
+Ahora se encuentra muy probablemente en la celda de más a la derecha.
+
+00:00:46.000 --> 00:00:50.000
+Esto es sólo mirar a estos valores de aquí sin ningún tipo de matemática probabilística
+
+00:00:50.000 --> 00:00:52.000
+y cualquier limitación del código.
+
+00:00:52.000 --> 00:00:59.000
+Echemos un vistazo a la salida: 0.2, 0.1, 0.08, 0.16, 0.38.
+
+00:00:59.000 --> 00:01:04.000
+Muy bien, el robot es muy probable que asigne su posición a la celda de más a la derecha,
+
+00:01:04.000 --> 09:59:59.000
+como debe ser, dada la secuencia de observaciones de aquí.
+

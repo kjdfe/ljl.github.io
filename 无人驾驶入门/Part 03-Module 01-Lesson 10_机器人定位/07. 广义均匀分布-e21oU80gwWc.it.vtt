@@ -1,0 +1,19 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.149 --> 00:00:05.000
+Vediamo se possiamo modificare questo codice per fare un vettore di lunghezza n
+
+00:00:05.000 --> 00:00:11.000
+in cui posso variare il valore di n e ottenere come risultato un vettore di n elementi.
+
+00:00:11.000 --> 00:00:13.977
+Per cui se n vale 5, otteniamo lo stesso risultato di prima
+
+00:00:14.127 --> 00:00:17.759
+ma se ne vale 10, dovrei ottenere un vettore di lunghezza 10,
+
+00:00:17.759 --> 00:00:22.469
+in cui ogni elemento ha un valore di 0.1
+

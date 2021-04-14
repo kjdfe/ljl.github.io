@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: pt
+
+00:00:00.000 --> 00:00:06.000
+Vamos examinar a medida realizada pelo robot neste mundo com 5 células --
+
+00:00:06.000 --> 00:00:09.000
+x1 até x5.
+
+00:00:09.000 --> 00:00:16.000
+Vai-se assumir que 2 das células são vermelhas e que as outras 3 são verdes.
+
+00:00:16.000 --> 00:00:21.000
+Atribui-se inicialmente a probabilidade uniforme de 0.2 a cada célula, como antes,
+
+00:00:21.000 --> 00:00:25.000
+e o nosso robot vai efectuar uma medição.
+
+00:00:25.000 --> 00:00:29.000
+E o que ele vê é a cor vermelha.
+
+00:00:29.000 --> 00:00:33.000
+Como vai isto afectar a minha crença relativamente à localização do robot?
+
+00:00:33.000 --> 00:00:36.000
+A probabilidade em x2 e em x3 deve obviamente subir,
+
+00:00:36.000 --> 00:00:40.000
+e em x1, x4 e x5 deverá descer.
+
+00:00:40.000 --> 00:00:45.000
+Vou explicar-te como incorporas o resultado da medida na probabilidade de localização do robot
+
+00:00:45.000 --> 00:00:49.000
+usando, simplesmente, uma multiplicação.
+
+00:00:49.000 --> 00:00:53.000
+Em cada célula com cor igual à medida -- as células vermelhas --
+
+00:00:53.000 --> 00:01:00.000
+multiplica-se o valor por um número relativamente grande, digamos 0.6.
+
+00:01:00.000 --> 00:01:05.000
+Parece pequeno, mas já veremos que é grande para os nossos propósitos.
+
+00:01:05.000 --> 00:01:10.000
+Enquanto que as células verdes serão multiplicadas por 0.2.
+
+00:01:10.000 --> 00:01:16.000
+Examinando o quociente destes números, conclui-se que será cerca de 3 vezes mais provável
+
+00:01:16.000 --> 00:01:19.000
+estar numa célula vermelha do que numa verde,
+
+00:01:19.000 --> 00:01:23.000
+porque 0.6 é o triplo de 0.2.
+
+00:01:23.000 --> 00:01:25.000
+Façamos aquela multiplicação.
+
+00:01:25.000 --> 00:01:30.000
+Para cada uma das 5 células, diz-me qual é o resultado
+
+00:01:30.000 --> 00:01:34.000
+da multiplicação, devida à integração de uma medida, segundo as minhas instruções.
+
+00:01:34.000 --> 99:59:59.000
+Por favor, preenche estas 5 caixas com o valor correcto.
+

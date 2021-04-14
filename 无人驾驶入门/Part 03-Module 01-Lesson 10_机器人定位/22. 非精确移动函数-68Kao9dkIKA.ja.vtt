@@ -1,0 +1,12 @@
+WEBVTT
+Kind: captions
+Language: ja
+
+00:00:00.000 --> 00:00:09.000
+pExactを0．8、pOvershootは0．1、
+pUndershootを0．1とします
+
+00:00:09.000 --> 00:00:14.300
+では他の確率を調整するために
+moveプロシージャを変更してください
+

@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:04.000
+Torniamo al nostro esempio e vediamo quanto è stupefacente quello che hai appena programmato.
+
+00:00:04.000 --> 00:00:07.000
+Avevamo una distribuzione uniforme sulle posizioni.
+
+00:00:07.000 --> 00:00:10.000
+Ogni posizione aveva una probabilità di 0.2.
+
+00:00:10.000 --> 00:00:14.000
+E poi hai scritto un po' di codice che usa la misura per trasformare questa distribuzione a priori
+
+00:00:14.000 --> 00:00:20.000
+in una distribuzione a posteriori, in cui la probabilià delle 2 celle rosse è
+
+00:00:20.000 --> 00:00:25.000
+tre volte più grande della probabilità a posteriori delle celle verdi.
+
+00:00:25.000 --> 00:00:29.000
+Hai fatto esattamente quello che all'inizio ti ho intuitivamente indicato come il segreto della localizzazione.
+
+00:00:29.000 --> 00:00:33.000
+Hai manipolato una distribuzione di probabilità sulle posizioni in una nuova,
+
+00:00:33.000 --> 00:00:36.000
+incorporando la misura.
+
+00:00:36.000 --> 00:00:41.000
+Torniamo al codice e proviamo con il codice se otteniamo un buon risultato
+
+00:00:41.000 --> 00:00:45.000
+quando sostituiamo la nostra misura rossa con una verde.
+
+00:00:45.000 --> 00:00:49.000
+Per favore scrivi "green" nell'aggiornamento dopo la misura e esegui di nuovo il codice
+
+00:00:49.000 --> 09:59:59.000
+per vedere se ottieni il risultato corretto.
+

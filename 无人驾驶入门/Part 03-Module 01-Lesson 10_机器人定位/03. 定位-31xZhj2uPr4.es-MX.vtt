@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: es-MX
+
+00:00:00.000 --> 00:00:05.000
+El primer problema que estoy tratando de resolver se llama localización.
+
+00:00:05.000 --> 00:00:07.292
+Se trata de un robot que ha perdido en el espacio.
+
+00:00:07.292 --> 00:00:10.277
+Podría ser un coche. Podría ser un robot móvil.
+
+00:00:10.277 --> 00:00:15.000
+Así que aquí está el medio ambiente, y el pobre robot no tiene idea de dónde está.
+
+00:00:15.000 --> 00:00:19.738
+Del mismo modo, podríamos tener un coche de conducción en una carretera,
+
+00:00:19.738 --> 00:00:22.492
+y este coche le gustaría saber dónde está.
+
+00:00:22.492 --> 00:00:25.815
+Es en el interior del carril o está cruzando marcadores de carril?
+
+00:00:25.815 --> 00:00:29.169
+Ahora, la manera tradicional de resolver este problema es mediante el uso de satélites.
+
+00:00:29.169 --> 00:00:33.385
+Estos satélites emiten señales que el coche puede percibir.
+
+00:00:33.385 --> 00:00:37.692
+Esto se conoce como el GPS, la abreviatura de "sistema de posicionamiento global"
+
+00:00:37.692 --> 00:00:41.108
+y es lo que tiene en su tablero de instrumentos si usted tiene un coche con GPS
+
+00:00:41.108 --> 00:00:43.938
+que muestra los mapas y que muestra dónde se encuentra.
+
+00:00:43.938 --> 00:00:49.000
+Ahora, lamentablemente, el problema con el GPS es su realidad no es muy precisa.
+
+00:00:49.000 --> 00:00:54.000
+Es muy común para un coche de creer estar aquí, pero tiene
+
+00:00:54.000 --> 00:00:56.431
+2 metros todo el camino hasta 10 metros de error.
+
+00:00:56.431 --> 00:00:59.262
+Así que si intenta permanecer en el carril con 10 metros de error,
+
+00:00:59.262 --> 00:01:04.792
+estás lejos, y usted está conduciendo por aquí, y te estrellas.
+
+00:01:04.792 --> 00:01:10.000
+Así que para nuestros vehículos auto-conducción, para poder permanecer en los carriles Uso de la localización.
+
+00:01:10.000 --> 00:01:14.231
+necesitamos algo como 2-10 centímetros del error.
+
+00:01:14.231 --> 00:01:17.631
+Entonces podemos conducir con GPS en los carriles.
+
+00:01:17.631 --> 00:01:23.000
+La pregunta es, ¿cómo podemos saber dónde se están con precisión de 10 cm?
+
+00:01:23.000 --> 00:01:26.862
+Esa es la pregunta de localización.
+
+00:01:26.892 --> 00:01:31.985
+En el coche de auto-conducción Google, la localización juega un papel clave.
+
+00:01:31.985 --> 00:01:37.923
+Registramos imágenes de la superficie de la carretera y luego usamos las técnicas
+
+00:01:37.923 --> 00:01:42.062
+Estoy a punto de enseñar a usted para averiguar exactamente donde el robot es.
+
+00:01:42.062 --> 00:01:45.031
+Lo hace dentro de unos pocos centímetros de precisión,
+
+00:01:45.031 --> 00:01:50.385
+y eso hace que sea posible permanecer en el interior del carril incluso si los marcadores de carril faltan.
+
+00:01:50.385 --> 00:01:54.969
+Así que la localización tiene una gran cantidad de matemáticas, pero antes de sumergirse en detalles matemáticos,
+
+00:01:54.985 --> 00:01:58.631
+Quiero darle una intuición de los principios básicos.
+
+00:01:58.631 --> 00:02:01.000
+Quiero contar la historia de cómo vamos a localizar este,
+
+00:02:01.000 --> 00:02:04.031
+y entonces podemos ir a través de la matemáticas en conjunto para que pueda entenderlo.
+
+00:02:04.031 --> 00:02:06.981
+También quiero dejar que el programa de su propio localizador
+
+00:02:06.981 --> 00:02:18.000
+para que pueda programar un coche de auto-conducción.
+

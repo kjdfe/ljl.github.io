@@ -1,0 +1,166 @@
+WEBVTT
+Kind: captions
+Language: pl
+
+00:00:00.000 --> 00:00:05.000
+Witajcie na zajęciach ze Sztucznej Inteligencji w Robotyce.
+
+00:00:05.000 --> 00:00:08.000
+Zaczynacie ekscytujące 7-tygodniowe zajęcia
+
+00:00:08.000 --> 00:00:12.000
+podczas których nauczycie się programować autonomiczne samochody.
+
+00:00:12.000 --> 00:00:16.000
+Pozwólcie, że pokażę Wam kilka filmów, które ilustrują to, co chcemy
+
+00:00:16.000 --> 00:00:18.000
+osiągnąć na tych zajęciach.
+
+00:00:18.000 --> 00:00:25.000
+Moje zainteresowanie autonomicznymi samochodami zaczęło się od uczestnictwa w DARPA Grand Challenge w 2004 roku
+
+00:00:25.000 --> 00:00:28.000
+podczas którego mój zespół ze Stanforda stworzył Stanleya,
+
+00:00:28.000 --> 00:00:31.000
+samochód, który potrafił sam przejechać pustynię Mojave.
+
+00:00:31.000 --> 00:00:34.000
+Pojazd był zbudowany na podstawie Volkswagena Touareg
+
+00:00:34.000 --> 00:00:39.000
+wyposażony w wiele czujników, takich jak GPS czy lasery
+
+00:00:39.000 --> 00:00:43.000
+i był w stanie podejmować własne decyzje bez jakiegokolwiek udziału ludzi.
+
+00:00:43.000 --> 00:00:46.000
+DARPA Grand Challenge był to wyścig sponsorowany przez rząd USA
+
+00:00:46.000 --> 00:00:48.000
+który odbył się w 2005 roku.
+
+00:00:48.000 --> 00:00:52.000
+Tutaj widzimy Stanleya jadącego przez pustynię
+
+00:00:52.000 --> 00:00:55.000
+bez żadnego człowieka w środku.
+
+00:00:55.000 --> 00:00:59.000
+Zadaniem był przejazd pustynnym szlakiem liczącym około 210 km.
+
+00:00:59.000 --> 00:01:02.000
+Zwycięzcą był najszybszy.
+
+00:01:02.000 --> 00:01:05.000
+Tutaj wyprzedzamy inny samochód stworzony przez Uniwersytet Carnegie Mellon
+
+00:01:05.000 --> 00:01:08.000
+około 180 kilometra wyścigu.
+
+00:01:08.000 --> 00:01:13.000
+Nasz samochód poradził sobie z naprawdę stromymi drogami górskimi
+
+00:01:13.000 --> 00:01:18.000
+i był w stanie uniknąć kolizji ze skałami oraz spadnięcia z urwiska.
+
+00:01:18.000 --> 00:01:23.000
+Wszystko to dzięki algorytmom, które będę omawiał podczas tych zajęć.
+
+00:01:23.000 --> 00:01:29.000
+Po prawie 7 godzinach i 211 km nasz samochód wrócił do bazy początkowej
+
+00:01:29.000 --> 00:01:33.000
+jako pierwszy robot, który kiedykolwiek ukończył DARPA Grand Challenge
+
+00:01:33.000 --> 00:01:36.000
+wygrał dla Uniwersytetu Stanforda 2 miliony dolarów
+
+00:01:36.000 --> 00:01:42.000
+oraz dla siebie miejsce w Muzeum Historii Ameryki Instytutu Smithsona.
+
+00:01:42.000 --> 00:01:47.000
+Następstwem tego było Urban Challenge, podczas którego zbudowaliśmy samochód zwany Juniorem
+
+00:01:47.000 --> 00:01:49.000
+który zajął drugie miejsce.
+
+00:01:49.000 --> 00:01:52.000
+Urban Challenge był kolejnym wyścigiem DARPA
+
+00:01:52.000 --> 00:01:55.000
+podczas którego samochody miały jeździć w ruchu ulicznym
+
+00:01:55.000 --> 00:01:59.000
+podczas gdy w Grand Challenge mieliśmy do czynienia z nieruchomą pustynią
+
+00:01:59.000 --> 00:02:04.000
+tutaj mieliśmy imitację miasta, w której trzeba było umieć współdziałać z innymi pojazdami
+
+00:02:04.000 --> 00:02:08.000
+i stosować się do zasad ruchu drogowego tak jak w przypadku tego skrętu w lewo
+
+00:02:08.000 --> 00:02:11.000
+Samochód musiał pozostawać na swoim pasie z wysoką precyzją
+
+00:02:11.000 --> 00:02:16.000
+dostosowywać się do innych pojazdów i jechać pewnie
+
+00:02:16.000 --> 00:02:20.000
+w środowisku przypominającym małe miasto.
+
+00:02:20.000 --> 00:02:24.000
+Doprowadziło to do serii eksperymentów w Google'u
+
+00:02:24.000 --> 00:02:26.000
+znanych jako samochód autonomiczny Google'a.
+
+00:02:26.000 --> 00:02:30.000
+Wierzę, że jest to obecnie jeden z najlepszych autonomicznych samochodów.
+
+00:02:30.000 --> 00:02:34.000
+Tutaj widzimy jednego z naszych Priusów na Alei Uniwersyteckiej w Palo Alto
+
+00:02:35.500 --> 00:02:37.000
+Nie sposób go odróżnić od innych samochodów,
+
+00:02:37.000 --> 00:02:40.000
+jeździ zupełnie jak żywy kierowca.
+
+00:02:40.000 --> 00:02:43.000
+Nasze samochody były w stanie przejechać setki tysięcy kilometrów
+
+00:02:43.000 --> 00:02:46.000
+w całej Kalifornii i części Nevady,
+
+00:02:46.000 --> 00:02:53.000
+w centrach miast takich jak San Francisco, na zatłoczonych autostradach.
+
+00:02:53.000 --> 00:03:00.000
+W Monterey, małym nadmorskim miasteczku w Kalifornii z ogromną liczbą pieszych.
+
+00:03:00.000 --> 00:03:06.000
+Widzimy sytuacje w których samochód prowadzi się sam, radząc sobie
+
+00:03:06.000 --> 00:03:10.000
+z rzeczami takimi jak nagle wyskakujący jeleń w środku nocy
+
+00:03:10.000 --> 00:03:16.000
+lub nawet kręta Lombard Street w San Francisco jak widać na filmie.
+
+00:03:16.000 --> 00:03:19.000
+Tym zajmuję się na co dzień w pracy.
+
+00:03:19.000 --> 00:03:23.000
+Uwielbiam wraz z moim zespołem tworzyć autonomiczne samochody.
+
+00:03:23.000 --> 00:03:26.000
+Wierzymy, że to naprawdę zmieni świat
+
+00:03:26.000 --> 00:03:31.000
+i mam nadzieję poprzez te zajęcia umożliwić to również Wam.
+
+00:03:31.000 --> 09:59:59.000
+Zaczynajmy!
+

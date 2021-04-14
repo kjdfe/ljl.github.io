@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:02.000
+Y esto es una forma de implementar esto.
+
+00:00:02.000 --> 00:00:05.000
+Vamos a introducir la variable auxiliar "s",
+
+00:00:05.000 --> 00:00:07.000
+que se acumula en tres pasos diferentes.
+
+00:00:07.000 --> 00:00:15.000
+Se multiplica el valor de p como antes para la exacta, definida por pExact.
+
+00:00:15.000 --> 00:00:21.000
+A continuaci贸n le sumamos las otras dos multiplicaciones para pOvershot o pUndershot
+
+00:00:21.000 --> 00:00:25.000
+d贸nde esta el rebasamiento restamos 1 a U
+
+00:00:25.000 --> 00:00:28.000
+o donde nos quedamos corto le sumamos 1.
+
+00:00:28.000 --> 00:00:32.000
+Y luego sumamos estas cosas y finalmente a帽adimos la suma
+
+00:00:32.000 --> 00:00:35.000
+a nuestro q de probabilidad.
+
+00:00:35.000 --> 00:00:42.000
+Cuando ejecutamos esto, con nuestro ejemplo anterior de 0, 1, 0, 0, 0,
+
+00:00:42.000 --> 09:59:59.000
+obtenemos la respuesta 0, 0.1, 0.8, 0.1, y 0.
+

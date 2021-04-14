@@ -1,0 +1,19 @@
+WEBVTT
+Kind: captions
+Language: pl
+
+00:00:00.000 --> 00:00:05.000
+Pozwólcie, że zacznę moją historię w świecie, w którym rezydują nasze roboty.
+
+00:00:05.000 --> 00:00:09.000
+Załóżmy, że nasz robot nie ma pojęcia gdzie się znajduje.
+
+00:00:09.000 --> 00:00:14.000
+Będziemy wtedy mogli modelować to przy użyciu funkcji. Narysuję to w tym wykresie
+
+00:00:14.000 --> 00:00:20.000
+gdzie oś pionowa to prawdopodobieństwo dla jakiejkolwiek lokalizacji na świecie,
+
+00:00:20.000 --> 00:00:25.000
+a oś pozioma reprezentuje wszystkie miejsca w tym jednowymiarowym świecie.
+

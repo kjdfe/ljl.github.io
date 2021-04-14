@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:02.000
+Quiero hacer esto un poco más bonito.
+
+00:00:02.000 --> 00:00:05.000
+Agregaré la variable "world",
+
+00:00:05.000 --> 00:00:09.000
+y para cada una de las 5 celdas, se especificará el color de la celda
+
+00:00:09.000 --> 00:00:13.000
+-verde, rojo, rojo, verde, verde-.
+
+00:00:13.000 --> 00:00:17.000
+Además, además definiré la magnitud Z para el rojo.
+
+00:00:17.000 --> 00:00:21.000
+Entonces definirás una función, llamada "sense", qué actualizará las magnitudes,
+
+00:00:21.000 --> 00:00:26.000
+la cual tomará como entrara la distribución inicial p
+
+00:00:26.000 --> 00:00:30.000
+y la magnitud Z y todo el resto de variables globales
+
+00:00:30.000 --> 00:00:33.000
+y retornará una distribución normalizada llamada "Q" en la cual Q es el reflejo
+
+00:00:33.000 --> 00:00:37.000
+el producto no normalizado de nuestra probabilidad de entrada,
+
+00:00:37.000 --> 00:00:40.000
+la cuál será 0.2 y así sucesivamente,
+
+00:00:40.000 --> 00:00:45.000
+y el correspondiente pHit o pMiss de acuerdo
+
+00:00:45.000 --> 00:00:49.000
+a si esos colores ¿son o no son?
+
+00:00:49.000 --> 00:00:55.000
+Cuando llame a sense(p, Z), espero obtener un vector como el anterior,
+
+00:00:55.000 --> 00:00:57.000
+pero ahora desde la función.
+
+00:00:57.000 --> 00:01:02.000
+La razón para hacer esto en una función es porque luego construiremos nuestro localizador
+
+00:01:02.000 --> 00:01:04.000
+que aplicaremos a cada medida particular una y otra vez.
+
+00:01:04.000 --> 00:01:09.000
+Esta función debería responder a cualquier p y Z -Sea el que sea-,
+
+00:01:09.000 --> 00:01:13.000
+rojo o verde, y darme la distribución Q no normalizada,
+
+00:01:13.000 --> 09:59:59.000
+lo cuál sería el vector 0.04 o 0.12 y así sucesivamente.
+

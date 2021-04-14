@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:05.000
+Wow! In pratica hai programmato la localizzazione della self-driving Google car
+
+00:00:05.000 --> 00:00:08.000
+anche se forse non te ne rendi ancora conto.
+
+00:00:08.000 --> 00:00:10.000
+Ti spiego dove siamo.
+
+00:00:10.000 --> 00:00:13.000
+Abbiamo parlato di aggiornamenti dopo la misura e abbiamo parlato di spostamenti.
+
+00:00:13.000 --> 00:00:16.000
+Abbiamo chiamato queste due routine "sense" e "move".
+
+00:00:16.000 --> 00:00:20.000
+Ora, la localizzazione non è altro che l'iterazione di "sense" e "move".
+
+00:00:20.000 --> 00:00:24.000
+C'è un belief iniziale che viene buttato in questo loop.
+
+00:00:24.000 --> 00:00:27.000
+Se come prima cosa esegui una misura, si sposta a sinistra.
+
+00:00:27.000 --> 00:00:33.000
+Poi la localizzazione cicla tra questi: move, sense, move, sense, move, sense,
+
+00:00:33.000 --> 00:00:36.000
+move, sense, move, sense ciclicamente.
+
+00:00:36.000 --> 00:00:40.000
+Ogni volta che il robot si sposta, perde informazione sul dove si trova,
+
+00:00:40.000 --> 00:00:42.000
+perché lo spostamento dei robot non è accurato.
+
+00:00:42.000 --> 00:00:45.000
+Ogni volta che misura, acquisisce informazione.
+
+00:00:45.000 --> 00:00:47.000
+Questo si manifesta nel fatto che dopo lo spostamento,
+
+00:00:47.000 --> 00:00:51.000
+la distribuzione di probabilità è un po' più piatta e più spalmata,
+
+00:00:51.000 --> 00:00:55.000
+e dopo la misura è un po' più focalizzata.
+
+00:00:55.000 --> 00:01:00.000
+In realtà, aggiungo una nota: c'è una misura dell'informazione chiamata "entropia".
+
+00:01:00.000 --> 00:01:02.000
+Questo è uno dei tanti modi in cui la puoi scrivere
+
+00:01:02.000 --> 00:01:04.000
+[-Ʃp(xi)log p(xi)]
+
+00:01:04.000 --> 00:01:07.000
+ossia come la log-verosimiglianza attesa della probabilità di ciascuna cella.
+
+00:01:07.000 --> 00:01:12.000
+Senza scendere troppo nel dettaglio, è una misura dell'informazione contenuta nella distribuzione,
+
+00:01:12.000 --> 00:01:18.000
+e si può mostrare che il passo di aggiornamento dopo lo spostamento, fa scendere l'entropia
+
+00:01:18.000 --> 00:01:20.000
+e la misura la fa salire
+
+00:01:20.000 --> 00:01:23.000
+In pratica perdi e acquisisci informazione.
+
+00:01:23.000 --> 00:01:26.000
+Adesso vorrei implementare questo nel nostro codice.
+
+00:01:26.000 --> 00:01:29.000
+Oltre alle due misure che avevamo prima, "red" e "green",
+
+00:01:29.000 --> 00:01:32.000
+Ti do due spostamenti: 1 e 1,
+
+00:01:32.000 --> 00:01:34.000
+il che significa che il robot si muove a destra e poi di nuovo a destra.
+
+00:01:34.000 --> 00:01:40.000
+Sai calcolare la distribuzione a posteriori se il robot misura prima "red"
+
+00:01:40.000 --> 00:01:45.000
+poi si muove a destra di 1, poi misura "green" poi si muove di nuovo a destra?
+
+00:01:45.000 --> 09:59:59.000
+Partiamo con una distribuzione a priori uniforme.
+

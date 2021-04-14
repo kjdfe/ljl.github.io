@@ -1,0 +1,22 @@
+WEBVTT
+Kind: captions
+Language: pt-PT
+
+00:00:00.000 --> 00:00:04.000
+A resposta é que todos eles se deslocam para a direita.
+
+00:00:04.000 --> 00:00:09.000
+O 1/9 na célula mais à esquerda vai para aqui, o 1/3 para aqui,
+
+00:00:09.000 --> 00:00:13.000
+e finalmente o 1/9 mais à direita vai aparecer no lado esquerdo.
+
+00:00:13.000 --> 00:00:17.000
+No caso do movimento determinístico, temos um robot perfeito.
+
+00:00:17.000 --> 00:00:21.000
+Simplesmente deslocamos as probabilidades de acordo com esse movimento.
+
+00:00:21.000 --> 09:59:59.000
+Bem, este caso é degenerado. Mas vamos programá-lo.
+

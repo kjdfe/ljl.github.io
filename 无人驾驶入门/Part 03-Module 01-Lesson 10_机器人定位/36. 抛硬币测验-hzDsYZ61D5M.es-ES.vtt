@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:03.000
+Déjame probar la probabilidad total en una pregunta.
+
+00:00:03.000 --> 00:00:07.000
+Supongamos que lanzamos una moneda, y la moneda puede salir cara o cruz.
+
+00:00:07.000 --> 00:00:09.000
+Y suponga que tiro una moneda al aire.
+
+00:00:09.000 --> 00:00:13.000
+Entonces la probabilidad de cara o cruz es de 1/2.
+
+00:00:13.000 --> 00:00:19.000
+Ahora vamos a decir que si la moneda sale cruz, no hago nada
+
+00:00:19.000 --> 00:00:22.000
+Pero supongamos que si sale cara, le doy la vuelta,
+
+00:00:22.000 --> 00:00:25.000
+y después de lanzarla de nuevo, me quedo con el resultado.
+
+00:00:25.000 --> 00:00:29.000
+Así que mi pregunta para ti es: ¿cuál es la probabilidad de que el resultado final sea cara?
+
+00:00:29.000 --> 09:59:59.000
+Y esto es un ejemplo de la probabilidad total.
+

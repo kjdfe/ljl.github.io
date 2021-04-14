@@ -1,0 +1,166 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:05.000
+Benvenuti a Intelligenza Artificiale per la Robotica
+
+00:00:05.000 --> 00:00:08.000
+Stai iniziando un'entusiasmante corso di sette settimane
+
+00:00:08.000 --> 00:00:12.000
+nel quale imparerai a programmare un'auto che si guida da sola.
+
+00:00:12.000 --> 00:00:16.000
+Per spiegare quello che cerchiamo di realizzare in questo corso,
+
+00:00:16.000 --> 00:00:18.000
+ti mostro alcuni video.
+
+00:00:18.000 --> 00:00:25.000
+Il mio interesse nelle auto che si guidano da sole è iniziato con il DARPA Grand Challenge 2004
+
+00:00:25.000 --> 00:00:28.000
+per il quale il mio team a Stanford sviluppò Stanely,
+
+00:00:28.000 --> 00:00:31.000
+un robot che poteva guidare autonomamente attraverso il deserto del Mojave.
+
+00:00:31.000 --> 00:00:34.000
+Il veicolo era basato su una Volkswagen Touareg
+
+00:00:34.000 --> 00:00:39.000
+equipaggiato con ogni tipo di sensore come GPS e laser,
+
+00:00:39.000 --> 00:00:43.000
+e poteva prendere decisioni senza alcun input umano.
+
+00:00:43.000 --> 00:00:46.000
+La DARPA Grand Challenge era una corsa sponsorizzata dal governo
+
+00:00:46.000 --> 00:00:48.000
+che si tenne nel 2005.
+
+00:00:48.000 --> 00:00:52.000
+Qui vediamo il nostro robot Stanley muoversi nel deserto
+
+00:00:52.000 --> 00:00:55.000
+completamente senza umani a bordo.
+
+00:00:55.000 --> 00:00:59.000
+Il compito era guidare su una pista nel deserto per circa 130 miglia
+
+00:00:59.000 --> 00:01:02.000
+e il più veloce avrebbe vinto la corsa.
+
+00:01:02.000 --> 00:01:05.000
+Qui stiamo sorpassando un altro robot della Carnegie Mellon University
+
+00:01:05.000 --> 00:01:08.000
+dopo circa 110 miglia di corsa.
+
+00:01:08.000 --> 00:01:13.000
+Il nostro robot è stato in grado di percorrere strade montuose molto ripide
+
+00:01:13.000 --> 00:01:18.000
+e di evitare impatti con le rocce o di cadere da un precipizio
+
+00:01:18.000 --> 00:01:23.000
+il tutto basato sulla sua abilità di usare ciò che ti insegnerò in questo corso.
+
+00:01:23.000 --> 00:01:29.000
+Dopo circa 7 ore e 131 miglia, il robot tornò indietro alla base di partenza
+
+00:01:29.000 --> 00:01:33.000
+come il primo robot ad avere mai completato il DARPA Grand Challenge
+
+00:01:33.000 --> 00:01:36.000
+guadagnando per la Stanford University 2 milioni di dollari
+
+00:01:36.000 --> 00:01:42.000
+e per Stanely un posto nel Museo di Storia Americana Smithsonian.
+
+00:01:42.000 --> 00:01:47.000
+Questo lavoro ha portato allo Urban Challenge, per il quale abbiamo costruito un altro robot chiamato Junior
+
+00:01:47.000 --> 00:01:49.000
+che arrivò secondo.
+
+00:01:49.000 --> 00:01:52.000
+La Urban Challenge era una corsa del DARPA
+
+00:01:52.000 --> 00:01:55.000
+in cui le auto dovevano guidare nel traffico,
+
+00:01:55.000 --> 00:01:59.000
+mentre il Grand Challenge era un deserto immobile,
+
+00:01:59.000 --> 00:02:04.000
+questa era una finta città in cui il robot doveva interagire con altro traffico
+
+00:02:04.000 --> 00:02:08.000
+e doveva seguire le regole del traffico, come in questa svolta a sinistra.
+
+00:02:08.000 --> 00:02:11.000
+Doveva restare nelle corsie con molta precisione,
+
+00:02:11.000 --> 00:02:16.000
+adattarsi al traffico e guidare con sicurezza
+
+00:02:16.000 --> 00:02:20.000
+in una situazione che somigliava molto a una piccola città.
+
+00:02:20.000 --> 00:02:24.000
+Questo ha portato Google a una serie di esperimenti
+
+00:02:24.000 --> 00:02:26.000
+conosciuti come le Google self-driving car.
+
+00:02:26.000 --> 00:02:30.000
+Credo che queste siano le migliori auto-robot esistenti adesso.
+
+00:02:30.000 --> 00:02:34.000
+Qui vediamo una delle nostre Prius in Universiy Avenue a Palo Alto
+
+00:02:35.500 --> 00:02:37.000
+che passa inosservata mentr guida proprio come un guidatore umano
+
+00:02:37.000 --> 00:02:40.000
+ma questa macchina guidava da sola.
+
+00:02:40.000 --> 00:02:43.000
+Le nostre auto sono state in grado di guidare centinaia di migliaia di miglia
+
+00:02:43.000 --> 00:02:46.000
+in tutta la California e in parte del Nevada,
+
+00:02:46.000 --> 00:02:53.000
+in aree cittadine come San Francisco, su autostrade trafficate.
+
+00:02:53.000 --> 00:03:00.000
+Qui a Monterrey, una piccola città costiera in California con tantissimi pedoni.
+
+00:03:00.000 --> 00:03:06.000
+Questi sono tutti momenti di guida totalmente autonoma, in cui l'auto è in grado di adattarsi
+
+00:03:06.000 --> 00:03:10.000
+a cose come un cervo nel cuore della notte
+
+00:03:10.000 --> 00:03:16.000
+o persino la tortuosa Lombrad Street a San Francisco, come si vede in questo video.
+
+00:03:16.000 --> 00:03:19.000
+Questo è ciò che faccio nel mio lavoro.
+
+00:03:19.000 --> 00:03:23.000
+Mi piace davvero molto, con il mio team, costruire automobili autonome.
+
+00:03:23.000 --> 00:03:26.000
+Crediamo che cambierà davvero il mondo
+
+00:03:26.000 --> 00:03:31.000
+e in questo corso quello che spero di rendervi in grado di fare è proprio questo.
+
+00:03:31.000 --> 09:59:59.000
+Iniziamo.
+

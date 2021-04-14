@@ -1,0 +1,19 @@
+WEBVTT
+Kind: captions
+Language: pt-PT
+
+00:00:00.149 --> 00:00:05.000
+Vamos modificar este código para suportar um vector de tamanho n
+
+00:00:05.000 --> 00:00:11.000
+onde possa variar o valor de n e assim obter um vector com n elementos.
+
+00:00:11.000 --> 00:00:13.977
+Se n for 5, obtém-se o anterior resultado,
+
+00:00:14.127 --> 00:00:17.759
+mas se n for 10, deveremos ficar com um vector de tamanho 10,
+
+00:00:17.759 --> 00:00:22.469
+em que cada elemento irá valer 0.1.
+

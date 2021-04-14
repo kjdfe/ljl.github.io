@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: pt-PT
+
+00:00:00.000 --> 00:00:06.000
+Vamos executar o programa, e descobre-se que agora a célula mais provável é a 4ª.
+
+00:00:06.000 --> 00:00:09.000
+Faz sentido, porque a melhor coincidência de vermelho, vermelho com o mundo
+
+00:00:09.000 --> 00:00:12.000
+é vermelho aqui e vermelho aqui.
+
+00:00:12.000 --> 00:00:15.000
+Depois de ver vermelho à 2ª vez, o robot ainda deu um passo à direita
+
+00:00:15.000 --> 00:00:19.000
+e foi parar à 4ª célula, como se vê aqui.
+
+00:00:19.000 --> 00:00:23.000
+Bem, quero festejar contigo este código que escreveste,
+
+00:00:23.000 --> 00:00:26.000
+que é uma peça de software que implementa
+
+00:00:26.000 --> 00:00:31.000
+a essência da abordagem à localizaçãoque implementada no carro sem condutor da Google.
+
+00:00:31.000 --> 00:00:36.000
+Como disse no início, é absolutamente crucial que o carro saiba
+
+00:00:36.000 --> 00:00:39.000
+exactamente onde se encontra, em relação ao mapa da estrada.
+
+00:00:39.000 --> 00:00:45.000
+Embora a estrada não esteja pintada de verde e vermelho, tem os riscos que limitam as faixas.
+
+00:00:45.000 --> 00:00:49.000
+Em vez destas células verdes e vermelhas aqui,
+
+00:00:49.000 --> 00:00:54.000
+insere-se a cor dos delimitadores de faixas relativamente à cor do pavimento.
+
+00:00:54.000 --> 00:00:58.000
+Não é somente uma medida em cada passo, é um enorme conjunto de observações,
+
+00:00:58.000 --> 00:01:00.000
+uma imagem completa de uma câmara de filmar,
+
+00:01:00.000 --> 00:01:02.000
+mas podes aplicar as mesmas técnicas à imagem da câmara
+
+00:01:02.000 --> 00:01:05.000
+desde que possas fazer corresponder a imagem da câmara do teu modelo
+
+00:01:05.000 --> 00:01:08.000
+com a imagem da câmara que foi observada (medida).
+
+00:01:08.000 --> 00:01:13.000
+Então, um programa não muito mais difícil do que o que acabaste de escrever
+
+00:01:13.000 --> 00:01:18.000
+é o respnsável por orientar e localizar o carro autónomo da Google.
+
+00:01:18.000 --> 00:01:26.000
+Acabaste de implementar uma função bué de importante que permite ao carro da Google "conduzir-se."
+
+00:01:26.000 --> 00:01:31.000
+Acho que deves ficar muito feliz e orgulhoso contigo mesmo.
+
+00:01:31.000 --> 00:01:35.000
+Deves dizer para dentro, "fantástico, acabei de implementar a localização em robótica!"
+
+00:01:35.000 --> 00:01:39.000
+Mas porque raio é que levou à Google tanto tempo a construir um produto que se conduz sózinho?
+
+00:01:39.000 --> 00:01:44.000
+Bem, a verdade é que a situação é um pouco mais difícil.
+
+00:01:44.000 --> 00:01:48.000
+Às vezes a estrada é repavimentada e muda, e estamos a trabalhar este aspecto.
+
+00:01:48.000 --> 00:01:54.000
+Mas tu implementaste o cerne da ideia da localização do carro Google, e isso é que interessa.
+
+00:01:54.000 --> 09:59:59.000
+Deixa-me sumarizar os aspectos essenciais que aprendeste.
+

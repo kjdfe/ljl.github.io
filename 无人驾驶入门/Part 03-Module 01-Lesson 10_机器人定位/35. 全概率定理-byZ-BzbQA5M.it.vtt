@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:05.000
+Esaminiamo adesso lo spostamento, che risulterà essere qualcosa che chiameremo Probabilità Totale.
+
+00:00:05.000 --> 00:00:08.000
+Ti ricordi che ci occupavamo di una casella "xi"
+
+00:00:08.000 --> 00:00:13.000
+e ci chiedevamo quale fosse la possiblità di essere in xi dopo uno spostameto?
+
+00:00:13.000 --> 00:00:17.000
+Ora, per indicare il prima e il dopo, aggiungo un indice temporale
+
+00:00:17.000 --> 00:00:20.000
+t qui sopra è un indice temporale.
+
+00:00:20.000 --> 00:00:25.000
+Lo scrivo come apice per non confonderlo con l'indice i, che è la casella.
+
+00:00:25.000 --> 00:00:28.000
+Dovresti ricordarti che il modo in cui lo abbiamo calcolato
+
+00:00:28.000 --> 00:00:33.000
+era vedere da quali caselle il robot poteva provenire al passo precedente
+
+00:00:33.000 --> 00:00:35.000
+indicizzato qui da j.
+
+00:00:35.000 --> 00:00:39.000
+Abbiamo guardato la probabilità a priori di quelle caselle al tempo t-1
+
+00:00:39.000 --> 00:00:47.000
+moltiplichiamo per la probabilità che lo spostamento ci porti da xi a xj
+
+00:00:47.000 --> 00:00:50.000
+Questo si scrive così come probabilità condizionata.
+
+00:00:50.000 --> 00:00:53.000
+E' esattamente quello che abbiamo implementato.
+
+00:00:53.000 --> 00:00:56.000
+Se ci fossero queste caselle
+
+00:00:56.000 --> 00:00:59.000
+e ci interessassimo un passo dopo di una casella specifica,
+
+00:00:59.000 --> 00:01:05.000
+dovremmo combinare lo 0.8 da qui, 0.1 da qui e 0.1 da qui
+
+00:01:05.000 --> 00:01:07.000
+nella probabilità di questa casella.
+
+00:01:07.000 --> 00:01:09.000
+E' questa stessa formula.
+
+00:01:09.000 --> 00:01:14.000
+Questo adesso è x1, e il modo in cui troviamo la probabilità a posteriori per x1 è
+
+00:01:14.000 --> 00:01:18.000
+ciclare su tutte le possibili posizioni da cui potremmo essere arrivati, tutti i diversi "j",
+
+00:01:18.000 --> 00:01:25.000
+vedere le probabilità a priori, moltiplicarle per la probabilità di transitare da j a i
+
+00:01:25.000 --> 00:01:29.000
+dato il comando di spostamento, che in questo caso è andare di 1 a destra.
+
+00:01:29.000 --> 00:01:32.000
+In termini di probabilità, spesso si scrive così:
+
+00:01:32.000 --> 00:01:36.000
+P(A) = Ʃ p(A│B) p(B). (P di A è uguale alla sommatoria di P di A dato B per P di B)
+
+00:01:36.000 --> 00:01:39.000
+E' il modo in cui lo trovi scritto nei libri
+
+00:01:39.000 --> 00:01:45.000
+e puoi vedere direttamente la corrispondenza di A come la casella i al tempo t
+
+00:01:45.000 --> 00:01:49.000
+e tutti i diversi B come le possibilie posizioni precedenti.
+
+00:01:49.000 --> 00:01:53.000
+Questo spesso viene chiamato Teorema della Probabilità Totale
+
+00:01:53.000 --> 09:59:59.000
+Questa operazione di somma pesata sulle altre variabili si viene spesso chiamata "convoluzione"
+

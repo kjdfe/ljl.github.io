@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:03.000
+Así que aquí tengo una pregunta para usted que es algo complicada,
+
+00:00:03.000 --> 00:00:06.000
+y tengo muchas ganas de comprobar su intuición.
+
+00:00:06.000 --> 00:00:08.000
+Supongamos que tenemos 5 celdas como antes
+
+00:00:08.000 --> 00:00:14.000
+con una distribución inicial que asigna 1 a la primera celda del vector y 0 a las demás.
+
+00:00:14.000 --> 00:00:18.000
+Supongamos que hacemos U = 1, es decir con 0.8 de probabilidad
+
+00:00:18.000 --> 00:00:21.000
+de en cada acción que hacemos nos movemos 1 a la drecha.
+
+00:00:21.000 --> 00:00:24.000
+Un 0.1 de probabilidad de que no se mueve en absoluto,
+
+00:00:24.000 --> 00:00:27.000
+y de nuevo un 0.1 de probabilidad nos saltamos y nos movemos 2 pasos.
+
+00:00:27.000 --> 00:00:29.000
+Y de nuevo, vamos a suponer que el mundo es cíclico,
+
+00:00:29.000 --> 00:00:33.000
+así que cada vez que caen en el lado derecho, me encuentro de nuevo en el lado izquierdo.
+
+00:00:33.000 --> 00:00:38.000
+La pregunta es: suponga que ejecuto indefinidamente muchos movimientos.
+
+00:00:38.000 --> 00:00:42.000
+Entonces en realidad obtengo, lo que se llama una "distribución límite"
+
+00:00:42.000 --> 00:00:47.000
+Entonces, ¿qué va a pasar con mi robot si nunca detecta que ejecuta la acción
+
+00:00:47.000 --> 00:00:53.000
+ir 1 a la derecha en nuestro entorno cíclico para siempre?
+
+00:00:53.000 --> 09:59:59.000
+¿Cuál será la también llamada disbritución límite o estacionaria final?
+

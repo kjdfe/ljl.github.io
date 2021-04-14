@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:03.933
+de tener cáncer después de ver el resultado de la prueba.
+
+00:00:00.000 --> 00:00:01.733
+Y la respuesta es, 0.0079.
+
+00:00:00.000 --> 00:00:03.466
+En otras palabras, solo hay un 0.79% de probabilidad
+
+00:00:00.000 --> 00:00:01.000
+0.79 sobre 100,
+
+00:00:00.000 --> 00:00:04.333
+a pesar del resultado positivo del test, que usted tiene cáncer.
+
+00:00:00.000 --> 00:00:04.733
+Y vamos a aplicar exactamente la misma mecánica como lo hicimos antes.
+
+00:00:00.000 --> 00:00:04.266
+El resultado de la regla de Bayes, no normalizada de C dado POS,
+
+00:00:00.000 --> 00:00:04.133
+es simplemente el producto de mi probabilidad a priori, 0.001,
+
+00:00:00.000 --> 00:00:02.266
+por 0.8, que es la probabilidad de
+
+00:00:00.000 --> 00:00:02.933
+un resultado positivo en el test de cáncer.
+
+00:00:00.000 --> 00:00:01.000
+y es 0.0008.
+
+00:00:00.000 --> 00:00:03.466
+La probabilidad no normalizada para el caso opuesto,
+
+00:00:00.000 --> 00:00:04.000
+el evento no canceroso, dado un resultado positivo, es 0.999
+
+00:00:00.000 --> 00:00:02.800
+por 0.1 veces, y eso es obviamente 0.0999.
+
+00:00:00.000 --> 00:00:03.733
+Nuestra normalizador, es la suma de estos que es 0.1007,
+
+00:00:00.000 --> 00:00:03.133
+sólo tiene que sumar estos 2 valores de aquí.
+
+00:00:00.000 --> 00:00:03.666
+Así dividiendo 0.0008, la probabilidad no normalizada,
+
+00:00:00.000 --> 00:00:01.666
+por 0.1007, nos da 0.079.
+
+00:00:00.000 --> 00:00:05.533
+Acabamos de aplicar la regla de Bayes para calcular una probabilidad muy complicada
+

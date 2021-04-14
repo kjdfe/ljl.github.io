@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:06.000
+Vamos a ejecutar el programa, y ​​encontraremos que la celda más probable es la celda 4.
+
+00:00:06.000 --> 00:00:09.000
+Y eso tiene sentido, porque la mejor opción es rojo, rojo en world
+
+00:00:09.000 --> 00:00:12.000
+esta por aquí, rojo por aquí.
+
+00:00:12.000 --> 00:00:15.000
+Y después de ver el segundo rojo, el robot todavía se mueve 1 a la derecha
+
+00:00:15.000 --> 00:00:19.000
+y se encuentra en la cuarta celda, como se muestra aquí.
+
+00:00:19.000 --> 00:00:23.000
+Ahora quiero celebrar con usted el código que acaba de escribir,
+
+00:00:23.000 --> 00:00:26.000
+que es una pieza de software que implementa
+
+00:00:26.000 --> 00:00:31.000
+la esencia de la localización del coche autoconducido de Google.
+
+00:00:31.000 --> 00:00:36.000
+Como dije al principio, es absolutamente crucial que el coche sepa
+
+00:00:36.000 --> 00:00:39.000
+exactamente donde está en relación con el mapa de la carretera.
+
+00:00:39.000 --> 00:00:45.000
+Y aunque la carretera no esté pintada de verde y rojo, tiene marcadores de carril.
+
+00:00:45.000 --> 00:00:49.000
+Y en lugar de las celdas rojas y verdes de aquí,
+
+00:00:49.000 --> 00:00:54.000
+ponemos el color de las marcas de carril en relación con el color del pavimento.
+
+00:00:54.000 --> 00:00:58.000
+No es sólo una observación por tiempo, es todo un campo de observaciones,
+
+00:00:58.000 --> 00:01:00.000
+una imagen completa de la cámara,
+
+00:01:00.000 --> 00:01:02.000
+pero se puede hacer lo mismo con una imagen de la cámara
+
+00:01:02.000 --> 00:01:05.000
+siempre que puedas corresponder en su modelo una imagen de la cámara
+
+00:01:05.000 --> 00:01:08.000
+con una imagen de la cámara como sus mediciones.
+
+00:01:08.000 --> 00:01:13.000
+Y luego un trozo de código que no es mucho más difícil que lo que tú acabas de programar
+
+00:01:13.000 --> 00:01:18.000
+es responsable de localizar el coche autoconducizo de Google.
+
+00:01:18.000 --> 00:01:26.000
+Así que usted acaba de implementar una función muy, muy importante que hace que el coche de Google conduzca por sí mismo.
+
+00:01:26.000 --> 00:01:31.000
+Así que creo que debería estar realmente feliz y orgulloso de si mismo.
+
+00:01:31.000 --> 00:01:35.000
+Y hay que decir que tú mismo, acabas de implementar la localización.
+
+00:01:35.000 --> 00:01:39.000
+Ahora, ¿por qué tardó tanto tiempo Google en crear un producto que conduce sólo?
+
+00:01:39.000 --> 00:01:44.000
+Bueno, la verdad es que la situación es un poco más difícil.
+
+00:01:44.000 --> 00:01:48.000
+A veces, el pavimento de las carreteras cambia y estamos trabajando en ello.
+
+00:01:48.000 --> 00:01:54.000
+Pero lo que hemos implementado es el núcleo de la idea de localización del choche autoconducido de Google.
+
+00:01:54.000 --> 09:59:59.000
+Permítanme resumir lo esencial que hemos aprendido.
+

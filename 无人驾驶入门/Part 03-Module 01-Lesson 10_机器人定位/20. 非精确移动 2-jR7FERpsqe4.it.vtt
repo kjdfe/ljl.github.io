@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:03.000
+Questa è una domanda piuttosto insidiosa, a cui rispondo in due fasi.
+
+00:00:03.000 --> 00:00:11.000
+Guardiamo prima lo 0.5 qui: 0.8 di questo, che è 0.4, finisce qui,
+
+00:00:11.000 --> 00:00:17.000
+e 0.1 di questo, che è 0.05, finisce qui.
+
+00:00:17.000 --> 00:00:23.000
+Lo scrivo così in piccolo perché non è ancora la risposta giusta.
+
+00:00:23.000 --> 00:00:25.000
+Guardiamo adesso l'altro 0.5.
+
+00:00:25.000 --> 00:00:30.000
+0.4 si muove di due passi, 1, 2 e finisce qui sulla sinistra,
+
+00:00:30.000 --> 00:00:38.000
+ma 0.1 non ci arriva e quindi 0.05 qui e 0.05 nella seconda casella.
+
+00:00:38.000 --> 00:00:42.000
+Ed è interessante vedere che, per la casella più a destra,
+
+00:00:42.000 --> 00:00:45.000
+ci sono due modi possibili in cui potremmo esserci arrivati.
+
+00:00:45.000 --> 00:00:49.000
+O superando il goal partendo dalla seconda casella,
+
+00:00:49.000 --> 00:00:52.000
+o non arrivandoci partendo dalla casella a destra.
+
+00:00:52.000 --> 00:00:56.000
+Per cui il totale è la somma di questi due valori: 0.1.
+
+00:00:56.000 --> 09:59:59.000
+La risposta finale è: 0.4, 0.05, 0.05, 0.4, e 0.1.
+

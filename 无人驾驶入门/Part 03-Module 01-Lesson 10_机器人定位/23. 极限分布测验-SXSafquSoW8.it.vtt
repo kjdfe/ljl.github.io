@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:03.000
+Potresti aver indovinato: è la distribuzione uniforme.
+
+00:00:03.000 --> 00:00:06.000
+C'è un ragionamento intuitivo dietro a questo.
+
+00:00:06.000 --> 00:00:09.000
+Ogni volta che ci spostiamo, perdiamo informazione.
+
+00:00:09.000 --> 00:00:12.000
+Ossia, nella distribuzione iniziale sappiamo esattamente dove ci troviamo.
+
+00:00:12.000 --> 00:00:17.000
+Dopo un passo abbiamo una probabilità di 0.8, ma lo 0.8 diventerà qualcosa di più piccolo
+
+00:00:17.000 --> 00:00:20.000
+mentre ci muoviamo: 0.64 e così via.
+
+00:00:20.000 --> 00:00:25.000
+La distribuzione dell'informazione minima è la distribuzione uniforme.
+
+00:00:25.000 --> 00:00:27.000
+Non ha alcun tipo di preferenza.
+
+00:00:27.000 --> 00:00:32.000
+E' il risultato di spostarsi molte, molte volte.
+
+00:00:32.000 --> 00:00:34.000
+C'è un modo di derivarlo matematicamente,
+
+00:00:34.000 --> 00:00:41.000
+e posso provare una proprietà che è strettamente correlata, che è la proprietà di equilibrio.
+
+00:00:41.000 --> 00:00:47.000
+Prendiamo per esempio x4, e vogliamo capire come x4 a un certo tempo t
+
+00:00:47.000 --> 00:00:52.000
+corrisponde alla distribuzione precedente nel tempo, su tutte queste variabili.
+
+00:00:52.000 --> 00:00:55.000
+Affinché sia stazionaria, deve essere la stessa.
+
+00:00:55.000 --> 00:01:08.000
+Detto diversamente, la probabilità di x4 edeve essere la stessa di 0.8p(x2) + 0.1p(x1) + 0.1p(x3).
+
+00:01:08.000 --> 00:01:12.000
+E' esattamente lo stesso calcolo che abbiaamo fatto prima quando ci siamo chiesti
+
+00:01:12.000 --> 00:01:14.000
+quale fosse la probabilità di finire in x4.
+
+00:01:14.000 --> 00:01:17.000
+Potresti arrivare da x2, x1 o x3,
+
+00:01:17.000 --> 00:01:20.000
+e ci sono queste probabilità sono 0.8, 0.1 e 0.1.
+
+00:01:20.000 --> 00:01:22.000
+che governano la possiblità di provenire da un certo posto.
+
+00:01:22.000 --> 00:01:30.000
+Queste tutte assieme devono risultare vere al limite, in cui i valori non cambiano più.
+
+00:01:30.000 --> 00:01:33.000
+Ora, potresti pensare che ci siano infiniti modi di risolvere questo problema,
+
+00:01:33.000 --> 00:01:35.000
+e che 0.2 sia solo una soluzione,
+
+00:01:35.000 --> 00:01:38.000
+ma in realtà 0.2 è l'unica soluzione.
+
+00:01:38.000 --> 00:01:42.000
+Se metti 0.2 qui e 0.2 qui e 0.2 qui,
+
+00:01:42.000 --> 00:01:47.000
+ottieni 1 x 0.2 e questi fa 0.2 a destra.
+
+00:01:47.000 --> 00:01:52.000
+Ovviamente, questi 0.2 rispettano l'equilibrio che è necessario
+
+00:01:52.000 --> 09:59:59.000
+per definire una soluzione valida al limite.
+

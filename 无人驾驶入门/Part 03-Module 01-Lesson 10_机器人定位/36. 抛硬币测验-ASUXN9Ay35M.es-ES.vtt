@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:07.000
+Y la respuesta es 1/4. Es fácil ver que la probabilidad de que salga cara en el paso 2
+
+00:00:07.000 --> 00:00:13.000
+es la probabilidad de que salga cara en el paso 2 condicionado a la cara en el paso 1
+
+00:00:13.000 --> 00:00:16.000
+por la probabilidad de que salga cara en 1,
+
+00:00:16.000 --> 00:00:22.000
+más, la suma, de la probabilidad de que salga cara en el paso 2
+
+00:00:22.000 --> 00:00:28.000
+dado que teníamos cruz en el paso 1 por probabilidad de que saliese cruz en el paso 1.
+
+00:00:28.000 --> 00:00:32.000
+Y ahora, por la forma en que lo creamos, esas cosas aquí son igualmente probables.
+
+00:00:32.000 --> 00:00:35.000
+Sin embargo, si tuviéramos cruz en el paso 1,
+
+00:00:35.000 --> 00:00:38.000
+nosotros nunca tirarariamos la moneda otra vez y nos quedaríamos con el resultado.
+
+00:00:38.000 --> 00:00:44.000
+Así que es imposible que en el paso 2 demos la vuelta a la moneda si sale cara. La probabilidad es cero.
+
+00:00:44.000 --> 00:00:50.000
+Mientras que si ha salido cara, me gustaría dar la vuelta otra vez y entonces la probabilidad es de 0,5 de que aparezca cara.
+
+00:00:50.000 --> 00:00:54.000
+Si me fijo en esto, entonces todo esto se convierte en cero,
+
+00:00:54.000 --> 09:59:59.000
+y multiplicando esto por 1/4, es la respuesta final 1/4.
+

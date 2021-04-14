@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:05.000
+Así que vamos a ver el movimiento, que va a llegar a ser algo que llamaremos probabilidad total.
+
+00:00:05.000 --> 00:00:08.000
+Recordemos lo que nos importaba una celda "xi" del vector,
+
+00:00:08.000 --> 00:00:13.000
+y nos preguntabamos ¿cuál es la probabilidad de ser xi después del movimiento del robot?
+
+00:00:13.000 --> 00:00:17.000
+Ahora, para indicar el después y antes, permítanme añadir un índice de tiempo.
+
+00:00:17.000 --> 00:00:20.000
+t aquí arriba, es un índice de tiempo.
+
+00:00:20.000 --> 00:00:25.000
+Lo escribo como un superíndice para que no haya confusión con el índice i, que es la celda del vector.
+
+00:00:25.000 --> 00:00:28.000
+Puede que recuerde la forma en que se calcula esto
+
+00:00:28.000 --> 00:00:33.000
+Se contemplan todas las celdas del vector de world podrían haber venido de un paso de tiempo anterior,
+
+00:00:33.000 --> 00:00:35.000
+indexado aquí por j,
+
+00:00:35.000 --> 00:00:39.000
+analizamos la probabilidad a priori de esas celdas en el tiempo t - 1,
+
+00:00:39.000 --> 00:00:47.000
+y lo multiplicamos por la probabilidad de que nuestro comando de movimiento nos llevaría de xj a xi.
+
+00:00:47.000 --> 00:00:50.000
+Eso está escrito como una distribución condicional de la siguiente manera.
+
+00:00:50.000 --> 00:00:53.000
+Así que esto fue exactamente lo que implementamos.
+
+00:00:53.000 --> 00:00:56.000
+Si nuestras celdas estuvieran por aquí
+
+00:00:56.000 --> 00:00:59.000
+y pedimos un paso adelante sobre una celda específica de aquí,
+
+00:00:59.000 --> 00:01:05.000
+que se combinan con el 0.8 de aquí, 0.1 de aquí, y 0.1 de aquí
+
+00:01:05.000 --> 00:01:07.000
+dentro de la probabilidad de esta celda del vector.
+
+00:01:07.000 --> 00:01:09.000
+Es la misma fórmula de aquí.
+
+00:01:09.000 --> 00:01:14.000
+Esto es ahora xi, y la forma en que encontramos la probabilidad posterior para xi es ir a través de
+
+00:01:14.000 --> 00:01:18.000
+todos los lugares posibles de la que podría haber llegado, todas las diferentes j's.
+
+00:01:18.000 --> 00:01:25.000
+Miramos las probabilidades a priori, se multiplica por la probabilidad de que la transición de j a i
+
+00:01:25.000 --> 00:01:29.000
+dado el comando de movimiento, que en este caso es ir 1 a la derecha.
+
+00:01:29.000 --> 00:01:32.000
+Ahora bien, en términos de probabilidad, la gente lo suele escribir de la siguiente manera:
+
+00:01:32.000 --> 00:01:36.000
+P (A) = Sumatorio p(A|B) p(B).
+
+00:01:36.000 --> 00:01:39.000
+Esto es sólo la forma en que lo encontraría en los libros de texto,
+
+00:01:39.000 --> 00:01:45.000
+y puedes ver directamente la correspondencia de A con un lugar i en el tiempo t
+
+00:01:45.000 --> 00:01:49.000
+y todas las diferentes Bs como las posibles ubicaciones previas.
+
+00:01:49.000 --> 00:01:53.000
+Esto a menudo se llama el teorema de la probabilidad total.
+
+00:01:53.000 --> 09:59:59.000
+Y la operación es la suma ponderada de las otras variables que a menudo se denomina "convolución".
+

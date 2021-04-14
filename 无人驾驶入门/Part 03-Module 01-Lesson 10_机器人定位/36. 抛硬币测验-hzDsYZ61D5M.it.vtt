@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:03.000
+Ti faccio un quiz sulla probabilità totale.
+
+00:00:03.000 --> 00:00:07.000
+Immagina di lanciare una moneta, e viene testa o croce.
+
+00:00:07.000 --> 00:00:09.000
+Immagina che sia una moneta non truccata,
+
+00:00:09.000 --> 00:00:13.000
+la pobabilità di "tails" (croce) o "heads" (testa) è in entrambi i casi 1/2
+
+00:00:13.000 --> 00:00:19.000
+Ora diciamo che viene "tails", accetto il risultato e non faccio altro.
+
+00:00:19.000 --> 00:00:22.000
+Ma se viene "heads", la lancio di nuovo
+
+00:00:22.000 --> 00:00:25.000
+e dopo questo lancio, accetto il risultato.
+
+00:00:25.000 --> 00:00:29.000
+La mia domanda è: qual è la probabilità che il risultato finale sia "heads"?
+
+00:00:29.000 --> 09:59:59.000
+E' un esempio di probabilità totale.
+

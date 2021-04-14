@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: pt-PT
+
+00:00:00.000 --> 00:00:03.000
+Vou fazer-te uma pergunta um pouco complicada,
+
+00:00:03.000 --> 00:00:06.000
+mas quero verificar a tua intuição.
+
+00:00:06.000 --> 00:00:08.000
+Supõe que temos uma grelha com 5 células como antes
+
+00:00:08.000 --> 00:00:14.000
+com uma distribuição inicial que atribui 1 à primeira célula e 0 às restantes.
+
+00:00:14.000 --> 00:00:18.000
+Assume U=1, o que significa que em 80% dos
+
+00:00:18.000 --> 00:00:21.000
+movimentos avançamos 1 para a direita.
+
+00:00:21.000 --> 00:00:24.000
+Há 0.1 por cento de probabilidade de não nos movermos,
+
+00:00:24.000 --> 00:00:27.000
+e em 10% das vezes damos 2 passos.
+
+00:00:27.000 --> 00:00:29.000
+O mundo continua a ser cíclico,
+
+00:00:29.000 --> 00:00:33.000
+por isso se cair à direita, vou re-entrar à esquerda.
+
+00:00:33.000 --> 00:00:38.000
+A questão é esta: supõe que faço um número infinito de movimentos.
+
+00:00:38.000 --> 00:00:42.000
+O resultado será chamado de "distribuição limite"
+
+00:00:42.000 --> 00:00:47.000
+O que irá acontecer ao meu robot se nunca efectuar qualquer medição, enquanto executa a acção
+
+00:00:47.000 --> 00:00:53.000
+de dar 1 passo (inexacto) à direita eternamente?
+
+00:00:53.000 --> 09:59:59.000
+No final, qual será a tal distribuição limite ou estacionária?
+

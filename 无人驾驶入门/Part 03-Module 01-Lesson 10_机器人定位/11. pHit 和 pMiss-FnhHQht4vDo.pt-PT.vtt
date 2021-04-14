@@ -1,0 +1,16 @@
+WEBVTT
+Kind: captions
+Language: pt-PT
+
+00:00:00.000 --> 00:00:05.000
+Uma forma de fazer isto é passar explicitamente por todos esses 5 casos diferentes de 0 a 4
+
+00:00:05.000 --> 00:00:09.000
+e multiplicá-los manualmente por pMiss ou pHit.
+
+00:00:09.000 --> 00:00:12.000
+Isto não é particularmente elegante, mas funciona,
+
+00:00:12.000 --> 09:59:59.000
+assim que carrego no botão "Executar", recebemos a resposta correcta não normalizada.
+

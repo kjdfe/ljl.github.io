@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: pt
+
+00:00:00.000 --> 00:00:03.000
+Deves ter acertado. É a distribuição uniforme.
+
+00:00:03.000 --> 00:00:06.000
+Há um raciocínio intuitivo a suportar essa resposta.
+
+00:00:06.000 --> 00:00:09.000
+De cada vez que nos movemos, perdemos informação.
+
+00:00:09.000 --> 00:00:12.000
+Isto é, na distribuição inicial sabemos exactamente onde estamos.
+
+00:00:12.000 --> 00:00:17.000
+Um passo dado, e só teremos 80% de certeza na nossa posição, e estes 80% irão diminuindo
+
+00:00:17.000 --> 00:00:20.000
+com os movimentos seguintes -- 64%, etc...
+
+00:00:20.000 --> 00:00:25.000
+De entre todas, a distribuição que dá menos informação é a uniforme.
+
+00:00:25.000 --> 00:00:27.000
+Com ela não há preferência por nenhuma célula.
+
+00:00:27.000 --> 00:00:32.000
+E ela é o resultado de fazer movimentos incertos muitas e muitas vezes.
+
+00:00:32.000 --> 00:00:34.000
+Há uma maneira de provar isto matematicamente,
+
+00:00:34.000 --> 00:00:41.000
+e eu consigo provar uma propriedade altamente relacionada com isso, que é o equilíbrio.
+
+00:00:41.000 --> 00:00:47.000
+Focando x4, por exemplo, gostaríamos de perceber como é que p(x4) em certo instante,
+
+00:00:47.000 --> 00:00:52.000
+corresponderá à distribuição prévia, com todas as variáveis.
+
+00:00:52.000 --> 00:00:55.000
+Para que isto seja estacionário, terá de ser igual.
+
+00:00:55.000 --> 00:01:08.000
+Dito de outra forma, a probabilidade de x4, p(x4), tera´que ser igual a 0.8p(x2) + 0.1p(x1) + 0.1p(x3).
+
+00:01:08.000 --> 00:01:12.000
+Este é exactamente o mesmo cálculo efectuado anteriormente quando perguntei
+
+00:01:12.000 --> 00:01:14.000
+qual a probabilidade de estar em x4.
+
+00:01:14.000 --> 00:01:17.000
+Bem, poderias ter vindo de x2, x1, ou x3,
+
+00:01:17.000 --> 00:01:20.000
+e aí as respectivas probabilidades são 0.8, 0.1, e 0.1,
+
+00:01:20.000 --> 00:01:22.000
+governam a verosimilhança relativamente a teres vindo dali.
+
+00:01:22.000 --> 00:01:30.000
+Tudo isto terá de ser verdadeiro no limite quando a estacionariedade for atingida.
+
+00:01:30.000 --> 00:01:33.000
+Bem, poderás pensar que há muitas maneiras de resolver isto
+
+00:01:33.000 --> 00:01:35.000
+e que 0.2 é apenas uma das soluções,
+
+00:01:35.000 --> 00:01:38.000
+mas acontece que 0.2 é a única solução.
+
+00:01:38.000 --> 00:01:42.000
+Se cravares 0.2 aqui e 0.2 aqui e 0.2 aqui,
+
+00:01:42.000 --> 00:01:47.000
+obténs 1 x 0.2, e isso é 0.2 do lado direito.
+
+00:01:47.000 --> 00:01:52.000
+Evidentemente, estes 0.2 aqui satisfazem o equilíbrio que é necessário
+
+00:01:52.000 --> 99:59:59.000
+para definir uma solução válida no limite.
+

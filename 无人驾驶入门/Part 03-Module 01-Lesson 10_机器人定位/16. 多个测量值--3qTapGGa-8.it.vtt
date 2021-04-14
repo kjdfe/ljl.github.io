@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:02.000
+La modifica è semplice
+
+00:00:02.000 --> 00:00:05.000
+Invochiamo la procedura sense() diverse volte,
+
+00:00:05.000 --> 00:00:09.000
+in realtà, fino a che abbiamo delle misure, che è il ciclo for qui,
+
+00:00:09.000 --> 00:00:14.000
+prendiamo il k-esimo elemento delle misure e lo applichiamo al belief corrente
+
+00:00:14.000 --> 00:00:18.000
+E aggiorniamo ricorsivamente il belief su se stesso.
+
+00:00:18.000 --> 00:00:21.000
+In questo caso, lo eseguiamo due volte. Stampiamo l'output.
+
+00:00:21.000 --> 00:00:24.000
+Per questo esempio specifico, torniamo alla distribuzione uniforme.
+
+00:00:24.000 --> 00:00:27.000
+Questi valori sono tutti circa 0.2.
+
+00:00:27.000 --> 00:00:32.000
+La ragione è che abbiamo moltiplicato verso l'alto ogni campo per 0.6
+
+00:00:32.000 --> 00:00:34.000
+e moltiplicato verso il basso per 0.2.
+
+00:00:34.000 --> 00:00:38.000
+E questi effetti in totale sono gli stessi per ogni casella.
+
+00:00:38.000 --> 09:59:59.000
+Come risultato otteniamo lo stesso output qui. E' un risultato degno di nota.
+

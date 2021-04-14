@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:04.000
+La respuesta resulta que va a ser sólo un 0.2 por todas partes,
+
+00:00:04.000 --> 00:00:07.000
+y la razón es que cada celda del vector es igualmente probable,
+
+00:00:07.000 --> 00:00:11.000
+la aplicación de este modelo de movimiento se seguirá produciendo con la misma probabilidad en cada celda del vector.
+
+00:00:11.000 --> 00:00:13.000
+Así que vamos a elegir uno de ellos, este de aquí.
+
+00:00:13.000 --> 00:00:16.000
+Podríamos haber llegado aquí de 3 formas diferentes.
+
+00:00:16.000 --> 00:00:22.000
+Tal vez empezamos en x2 y nuestro movimiento ha ido bien.
+
+00:00:22.000 --> 00:00:28.000
+Esto nos da 0,2 por 0,8.
+
+00:00:28.000 --> 00:00:31.000
+Tal vez empezamos en x1 y lo sobrepasaramos,
+
+00:00:31.000 --> 00:00:39.000
+lo que nos da un 0.2, para la celda X1, por 0.1 del rebasamiento.
+
+00:00:39.000 --> 00:00:46.000
+O tal vez se inició en x3 y se quedo corto, lo que nos da 0,2 por 0,1.
+
+00:00:46.000 --> 00:00:51.000
+Y si lo sumamos, nos encontramos con que es lo mismo que 0.2 por 0.1,
+
+00:00:51.000 --> 00:00:56.000
+porque los factores de aquí suman exactamente a 1, lo que hace 0.2,
+
+00:00:56.000 --> 00:00:59.000
+y el resultado es 0.2.
+
+00:00:59.000 --> 00:01:01.000
+Puede aplicar la misma lógica a todas las otras celdas.
+
+00:01:01.000 --> 00:01:05.000
+Este de aquí podría haber venido de ese otro, este, este,
+
+00:01:05.000 --> 00:01:10.000
+donde éste se pondera con 0,8 y los otros dos con 0,1.
+
+00:01:10.000 --> 00:01:12.000
+Eso se llama convolución,
+
+00:01:12.000 --> 00:01:15.000
+y como veremos más adelante, hay una muy buena manera de escribir esto matemáticamente
+
+00:01:15.000 --> 00:01:18.000
+con algo que se llama el teorema de la probabilidad total.
+
+00:01:18.000 --> 09:59:59.000
+Pero por el momento, me gustaría programar esto
+

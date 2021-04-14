@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:03.000
+Así que vamos a hablar del movimiento inexacto del robot.
+
+00:00:03.000 --> 00:00:05.000
+Una vez más nos dan 5 celdas.
+
+00:00:05.000 --> 00:00:12.000
+Y supongamos que un robot ejecuta su acción correctamente con alta probabilidad, digamos un 0.8,
+
+00:00:12.000 --> 00:00:16.000
+pero con un 0.1 de probabilidad, se encuentra por debajo de su objetivo,
+
+00:00:16.000 --> 00:00:21.000
+y en un 0.1 probabilidad sobrepasa su objetivo.
+
+00:00:21.000 --> 00:00:26.000
+Puedes definir lo mismo para otros valores de U. Digamos que U = 1.
+
+00:00:26.000 --> 00:00:29.000
+Entonces, con un 0.8 de probabilidad terminaría aquí,
+
+00:00:29.000 --> 00:00:32.000
+0.1 se queda en el mismo elemento,
+
+00:00:32.000 --> 00:00:36.000
+y 0.1 que salta 2 elementos delante.
+
+00:00:36.000 --> 00:00:39.000
+Ahora bien, este es un modelo de movimiento inexacto del robot.
+
+00:00:39.000 --> 00:00:42.000
+Este robot intenta ir a la celda U del vector,
+
+00:00:42.000 --> 00:00:46.000
+pero de vez en cuando cae por debajo de su objetivo o lo sobrepasa.
+
+00:00:46.000 --> 00:00:50.000
+y en los casos más comunes los robots acumulan incentidumbre a medida que se mueven,
+
+00:00:50.000 --> 00:00:54.000
+y eso es muy importante para modelar esto, porque esta es la razón principal
+
+00:00:54.000 --> 00:00:59.000
+de porque localización es difícil, porque los robots no son muy precisos
+
+00:00:59.000 --> 00:01:03.000
+Así que ahora vamos a mirar en esta primera parte de la matemática.
+
+00:01:03.000 --> 00:01:06.000
+Te voy a dar una distribución a priori,
+
+00:01:06.000 --> 00:01:08.000
+y vamos a utilizar el valor de U = 2,
+
+00:01:08.000 --> 00:01:13.000
+y para el modelo de movimiento que desplaza el robot exactamente 2 pasos,
+
+00:01:13.000 --> 00:01:16.000
+creemos que hay una posibilidad de 0.8.
+
+00:01:16.000 --> 00:01:22.000
+Y se le asigna un 0,1 a los casos en que el robot sobrepasa o no llega de exactamente 1.
+
+00:01:22.000 --> 00:01:28.000
+Está fórmula descrita aquí dice que con 2 obtenemos una probabilidad de 0.8
+
+00:01:28.000 --> 00:01:32.000
+para 1 y 3 con una probabilidad de 0,1.
+
+00:01:32.000 --> 00:01:36.000
+Así que ahora le voy a preguntar por la distribución inicial que estoy escribiendo aquí,
+
+00:01:36.000 --> 09:59:59.000
+¿Me puede dar la distribución después del movimiento?
+

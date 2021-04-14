@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: pt
+
+00:00:00.000 --> 00:00:04.000
+A resposta irá ser 0.2 em todas as células,
+
+00:00:04.000 --> 00:00:07.000
+e a razão disso deve-se à equiprobabilidade (ou probabilidade uniforme) da distribuição anterior,
+
+00:00:07.000 --> 00:00:11.000
+pois a aplicação do modelo de movimento irá manter a equiprobabilidade da distribuição.
+
+00:00:11.000 --> 00:00:13.000
+Agarremos numa delas -- esta por exemplo.
+
+00:00:13.000 --> 00:00:16.000
+Poderíamos ter chegado aqui de três maneiras.
+
+00:00:16.000 --> 00:00:22.000
+Talvez começar em x2 e o movimento correr bem.
+
+00:00:22.000 --> 00:00:28.000
+Isso dá-nos 0.2 x 0.8.
+
+00:00:28.000 --> 00:00:31.000
+Talvez começar em x1 e andar demais,
+
+00:00:31.000 --> 00:00:39.000
+o que nos dá 0.2, da célula x2, vezes 0.1, porque andámos demais.
+
+00:00:39.000 --> 00:00:46.000
+Ou talvez tivéssemos partido de x3 e andássemos pouco, o que dá 0.2 x 0.1.
+
+00:00:46.000 --> 00:00:51.000
+Se somarmos tudo voltaremos a obter o mesmo 0.2 x 1,
+
+00:00:51.000 --> 00:00:56.000
+porque estes factores somados dão 1, o que resulta no 0.2 final.
+
+00:00:56.000 --> 00:00:59.000
+O resultado é 0.2.
+
+00:00:59.000 --> 00:01:01.000
+Podes aplicar o mesmo raciocínio em todas as outras células.
+
+00:01:01.000 --> 00:01:05.000
+Este valor aqui, poderia ter vindo deste, deste e deste,
+
+00:01:05.000 --> 00:01:10.000
+estando este ponderado por 0.8 e os outros dois por 0.1.
+
+00:01:10.000 --> 00:01:12.000
+Isto chama-se convolução,
+
+00:01:12.000 --> 00:01:15.000
+e como verás depois, há uma maneira elegante de escrevê-la matematicamente
+
+00:01:15.000 --> 00:01:18.000
+que é denominada Teorema da Probabilidade Total.
+
+00:01:18.000 --> 99:59:59.000
+Mas por agora, queria que programasses isto.
+

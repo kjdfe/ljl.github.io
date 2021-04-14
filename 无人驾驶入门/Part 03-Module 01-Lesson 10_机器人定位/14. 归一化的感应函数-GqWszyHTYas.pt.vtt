@@ -1,0 +1,16 @@
+WEBVTT
+Kind: captions
+Language: pt
+
+00:00:00.000 --> 00:00:02.000
+Vamos usar o mesmo código
+
+00:00:02.000 --> 00:00:05.000
+e modificá-lo para resultar uma distribuição de probabilidade válida.
+
+00:00:05.000 --> 00:00:11.000
+Por favor, modifica este código para que normalize a saída da função sense()
+
+00:00:11.000 --> 99:59:59.000
+e o somatório dos elementos de q seja 1.
+

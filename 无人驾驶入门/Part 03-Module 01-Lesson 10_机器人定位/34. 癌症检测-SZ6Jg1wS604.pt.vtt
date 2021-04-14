@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: pt
+
+00:00:00.000 --> 00:00:06.000
+Deixa-me ver se sabes usar a Lei de Bayes num contexto completamente diferente
+
+00:00:06.000 --> 00:00:09.000
+para ver se compreendeste mesmo a Lei de Bayes.
+
+00:00:09.000 --> 00:00:12.000
+Desta vez focamos um teste de despiste de cancro.
+
+00:00:12.000 --> 00:00:15.000
+É um exemplo comum nos cursos de estatística.
+
+00:00:15.000 --> 00:00:18.000
+Supõe que há um certo tipo de cancro,
+
+00:00:18.000 --> 00:00:22.000
+mas é um cancro raro -- só 1 em cada 1000 pessoas o tem --
+
+00:00:22.000 --> 00:00:26.000
+ou seja, 999 em cada 1000 pessoas não o tem,
+
+00:00:26.000 --> 00:00:29.000
+o que dá estas probabilidades de ter ou de não ter o cancro.
+
+00:00:29.000 --> 00:00:33.000
+Supõe que há um teste, e o teste pode dar positivo ou negativo.
+
+00:00:33.000 --> 00:00:38.000
+A probabilidade do teste dar positivo quando se tem o cancro é de 0.8,
+
+00:00:38.000 --> 00:00:44.000
+e a probabilidade do teste dar positivo quando NÃO se tem o cancro é somente de 0.1,
+
+00:00:44.000 --> 00:00:47.000
+O resultado do teste está fortemente correlacionado com a existência do cancro.
+
+00:00:47.000 --> 00:00:50.000
+Eis uma questão muito difícil.
+
+00:00:50.000 --> 00:00:56.000
+Consegues calcular a probabilidade de eu ter o cancro, sabendo que recebi um teste positivo?
+
+00:00:56.000 --> 00:01:00.000
+Deixa-me realçar que não é uma questão simples, mas que deverás ser capaz,
+
+00:01:00.000 --> 00:01:03.000
+baseado no que já te ensinei, de calcular esse resultado.
+
+00:01:03.000 --> 00:01:07.000
+Pensa no cancro/não cancro como uma posição do robot
+
+00:01:07.000 --> 99:59:59.000
+e pensa que o teste positivo é como observar correctamente a cor da porta.
+

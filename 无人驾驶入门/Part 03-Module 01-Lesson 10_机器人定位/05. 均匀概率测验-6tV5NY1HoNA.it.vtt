@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:03.000
+Iniziamo con il primo esercizio di programmazione
+
+00:00:03.000 --> 00:00:08.000
+e programmiamo insieme la primissima versione della localizzazione robotica
+
+00:00:08.000 --> 00:00:11.000
+Questo è un frammento di codice, una lista vuota
+
+00:00:11.000 --> 00:00:16.000
+Vorrei che tu programmassi un mondo con 5 posizioni o celle differenti
+
+00:00:16.000 --> 00:00:21.000
+in cui ogni cella ha la stessa probabilità che il robot possa essere in quella cella
+
+00:00:21.000 --> 00:00:25.000
+in modo che la somma delle probabilità sia 1
+
+00:00:25.000 --> 00:00:30.000
+E' un semplice quiz sulle celle da x1 a x5
+
+00:00:30.000 --> 00:00:33.000
+Qual è la probabilità per ciascuna di quelle x?
+
+00:00:33.000 --> 09:59:59.000
+L'indice i va da 1 a 5
+

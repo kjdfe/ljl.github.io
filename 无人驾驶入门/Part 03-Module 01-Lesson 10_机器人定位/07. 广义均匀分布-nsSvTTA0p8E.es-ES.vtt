@@ -1,0 +1,19 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:02.000
+La respuesta es simple.
+
+00:00:02.000 --> 00:00:05.000
+Use un ciclo 'for', como se muestra aquí,
+
+00:00:05.000 --> 00:00:10.000
+y usted añade a la lista n elementos, cada uno del tamaño de 1/n.
+
+00:00:10.000 --> 00:00:12.000
+El punto aquí es realmente importante.
+
+00:00:12.000 --> 00:00:15.000
+Le da la versión de punto flotante (decimal).
+

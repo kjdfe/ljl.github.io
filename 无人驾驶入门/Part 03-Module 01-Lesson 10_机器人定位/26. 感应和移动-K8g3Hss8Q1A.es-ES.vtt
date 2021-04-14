@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:05.000
+Así que vaya, usted básicamente ha programado la localización el coche que conduce sólo de Google
+
+00:00:05.000 --> 00:00:08.000
+aunque puede que no lo conozca mucho todavía.
+
+00:00:08.000 --> 00:00:10.000
+Así que déjenme decirle dónde estamos.
+
+00:00:10.000 --> 00:00:13.000
+Hablamos acerca de las actualizaciones de medición, y hablamos sobre el movimiento.
+
+00:00:13.000 --> 00:00:16.000
+Y llamamos a estas dos funciones "sense" y "move".
+
+00:00:16.000 --> 00:00:20.000
+Ahora, la localización no es otra cosa que la repetición de "sense" y "move".
+
+00:00:20.000 --> 00:00:24.000
+Hay una creencia inicial cuando se lanza este bucle.
+
+00:00:24.000 --> 00:00:27.000
+Si lanzamos sense primero, viene de la parte izquierda.
+
+00:00:27.000 --> 00:00:33.000
+y entonces los ciclos de localización van a través de este movimiento, sense, move, sense, move, sense,
+
+00:00:33.000 --> 00:00:36.000
+el ciclo , move, sense, move, sense.
+
+00:00:36.000 --> 00:00:40.000
+Y cada vez que el robot se mueve, pierde información en cuanto a dónde está.
+
+00:00:40.000 --> 00:00:42.000
+Eso es porque el movimiento del robot es inexacto.
+
+00:00:42.000 --> 00:00:45.000
+Y cada vez que sensa adquiere información.
+
+00:00:45.000 --> 00:00:47.000
+Que se manifiesta por el hecho de que después del movimiento,
+
+00:00:47.000 --> 00:00:51.000
+la distribución de probabilidad es un poco más plana y un poco más hacia fuera.
+
+00:00:51.000 --> 00:00:55.000
+y después de sensar, se centra un poco más.
+
+00:00:55.000 --> 00:01:00.000
+De hecho, como una nota de pie, es una medida de información, denominada "entropía".
+
+00:01:00.000 --> 00:01:02.000
+Y está una de las muchas maneras que usted puede escribirlo,
+
+00:01:02.000 --> 00:01:04.000
+como la probabilidad local esperada de la probabilidad de cada celda del vector.
+
+00:01:04.000 --> 00:01:07.000
+Y sin entrar en detalles, esta es una medida de información que tiene la distribución,
+
+00:01:07.000 --> 00:01:12.000
+y se puede demostrar que el paso de actualización, el paso de movimiento, hace que la entropía vaya hacía abajo,
+
+00:01:12.000 --> 00:01:18.000
+y el paso de medición la hace subir.
+
+00:01:18.000 --> 00:01:20.000
+Así que usted está realmente perdiendo y ganando información.
+
+00:01:20.000 --> 00:01:23.000
+Ahora me gustaría implementar esto en nuestro código.
+
+00:01:23.000 --> 00:01:26.000
+Así que además de las 2 mediciones que teníamos antes, rojo y verde,
+
+00:01:26.000 --> 00:01:29.000
+Yo te voy a dar dos movimientos, 1 y 1,
+
+00:01:29.000 --> 00:01:32.000
+lo que significa que el robot se mueve hacia la derecha y a la derecha de nuevo.
+
+00:01:32.000 --> 00:01:34.000
+¿Se puede calcular la distribución posterior si el robot primero detecta rojo,
+
+00:01:34.000 --> 00:01:40.000
+a continuación, se mueve a la derecha por 1, entonces detecta verde y luego se mueve a la derecha otra vez?
+
+00:01:40.000 --> 00:01:45.000
+Y vamos a empezar con una distribución previa uniforme.
+

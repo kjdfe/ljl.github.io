@@ -1,0 +1,139 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:05.000
+Miremos las mediciones, y nos llevará a la "Teoría de Bayes".
+
+00:00:05.000 --> 00:00:07.000
+Puedes haber escuchado ya sobre la "Teoría de Bayes".
+
+00:00:07.000 --> 00:00:12.000
+Es la más fundamental consideración en la inferencia probabilística,
+
+00:00:12.000 --> 00:00:17.000
+pero la regla básica, es realmente simple.
+
+00:00:17.000 --> 00:00:22.000
+Supón que x es mi arreglo de celdas y Z es mi medida.
+
+00:00:22.000 --> 00:00:27.000
+Entonces la medición actualiza la búsqueda para calcular la confianza sobre mi ubicación
+
+00:00:27.000 --> 00:00:29.000
+luego de ver la medida.
+
+00:00:29.000 --> 00:00:31.000
+¿Cómo es calculado?
+
+00:00:31.000 --> 00:00:34.000
+Bien, fue bastante fácil de calcular en nuestro ejemplo de localización.
+
+00:00:34.000 --> 00:00:36.000
+Ahora voy a hacerlo un poco más formal.
+
+00:00:36.000 --> 00:00:38.000
+La Teoría de Bayes es algo como esto.
+
+00:00:38.000 --> 00:00:41.000
+Podría ser un poco confuso,
+
+00:00:41.000 --> 00:00:45.000
+lo que haces es tomar mi distribución más importante, P(X),
+
+00:00:45.000 --> 00:00:53.000
+y se multiplica con las posibilidades de ver un cuadro rojo o verde para cada ubicación posible
+
+00:00:53.000 --> 00:00:56.000
+y sale, basta solo con ver el denominador aquí,
+
+00:00:56.000 --> 00:01:00.000
+las distribución posterior no normalizada que teníamos.
+
+00:01:00.000 --> 00:01:04.000
+¿Reconoces esto? Esto fue la anterior. Fue nuestra medición de probabilidad.
+
+00:01:04.000 --> 00:01:08.000
+Si hacemos esto para todas las celdas, pondremos un indice "i" aquí,
+
+00:01:08.000 --> 00:01:16.000
+ahora el producto anterior de la celda tantas veces la medición de la probabilidad,
+
+00:01:16.000 --> 00:01:19.000
+lo cual es largo si la medición corresponde al color correcto
+
+00:01:19.000 --> 00:01:23.000
+y pequeño si corresponde al falso.
+
+00:01:23.000 --> 00:01:29.000
+Ese producto nos dio la distribución posterior no normalizada para la celda.
+
+00:01:29.000 --> 00:01:32.000
+Recuerdas esto porque lo programaste.
+
+00:01:32.000 --> 00:01:37.000
+Programaste un producto entre la distribución de probabilidad anterior y un número.
+
+00:01:37.000 --> 00:01:42.000
+La normalización es ahora la constante -p(z)-.
+
+00:01:42.000 --> 00:01:49.000
+Técnicamente, esa es la probabilidad de ver una medida vacía en la información de cualquier ubicación.
+
+00:01:49.000 --> 00:01:51.000
+Pero que no nos confunda.
+
+00:01:51.000 --> 00:01:54.000
+La manera más fácil para entender que pasa es darse cuenta que
+
+00:01:54.000 --> 00:01:59.000
+esta es una función que asigna para cada celda un número,
+
+00:01:59.000 --> 00:02:03.000
+y la p(Z) no tiene un indice.
+
+00:02:03.000 --> 00:02:07.000
+No importa que celda consideremos, la p(Z) es la misma.
+
+00:02:07.000 --> 00:02:09.000
+Aquí está el truco.
+
+00:02:09.000 --> 00:02:15.000
+No importa que sea p(Z), porque el posterior final debe ser una distribución de probabilidad,
+
+00:02:15.000 --> 00:02:19.000
+normalizando estos productos no normalizados de aquí,
+
+00:02:19.000 --> 00:02:22.000
+calcularemos exactamente p(Z).
+
+00:02:22.000 --> 00:02:28.000
+De otra manera, p(Z) es la suma de todos los indices "i", pero solo de este producto.
+
+00:02:28.000 --> 00:02:30.000
+Esto hace la "Teoría de Bayes" muy simple.
+
+00:02:30.000 --> 00:02:34.000
+Es un producto de nuestra distribución anterior con una medición de probabilidad,
+
+00:02:34.000 --> 00:02:38.000
+la cual sabemos es larga si el color es correcto y pequeña de otra manera.
+
+00:02:38.000 --> 00:02:43.000
+Hacemos esto y lo asignamos para una probabilidad no normalizada,
+
+00:02:43.000 --> 00:02:46.000
+la cual haré con un pequeña barra aquí sobre p.
+
+00:02:46.000 --> 00:02:51.000
+Calculo el normalizador, el que llamaré "α", es la suma de todos estos chicos de aquí.
+
+00:02:51.000 --> 00:02:53.000
+Entonces solo normalizo.
+
+00:02:53.000 --> 00:02:58.000
+Mi probabilidad resultante será 1/α de la probabilidad normalizada conocida.
+
+00:02:58.000 --> 09:59:59.000
+Es exactamente lo que hicimos, y es la "Teoría de Bayes".
+

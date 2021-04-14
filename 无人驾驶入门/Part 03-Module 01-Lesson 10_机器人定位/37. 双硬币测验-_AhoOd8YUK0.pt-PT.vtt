@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: pt-PT
+
+00:00:00.000 --> 00:00:02.000
+Vamos desenvolver isto.
+
+00:00:02.000 --> 00:00:08.000
+O que te estou a pedir é a probabilidade de uma moeda justa "F", dado que observei H.
+
+00:00:08.000 --> 00:00:11.000
+Isto não tem nada a ver com probabilidade total
+
+00:00:11.000 --> 00:00:15.000
+mas sim com a Regra de Bayes, porque estou a falar de observações.
+
+00:00:15.000 --> 00:00:20.000
+A probabilidade normalizada, segundo a Regra de Bayes, é obtida assim:
+
+00:00:20.000 --> 00:00:25.000
+a probabilidade de observar H numa moeda justa é 0.5,
+
+00:00:25.000 --> 00:00:28.000
+e a probabilidade de termos usado a moeda justa também é 0.5.
+
+00:00:28.000 --> 00:00:34.000
+A probabilidade não normalizada de não F dado H, que é ter usado a moeda viciada,
+
+00:00:34.000 --> 00:00:37.000
+é a probabilidade de H dado não F,
+
+00:00:37.000 --> 00:00:40.000
+que se sabe ser 0.1 -- é esta aqui --
+
+00:00:40.000 --> 00:00:44.000
+vezes a probabilidade de não usar a moeda justa, que é 0.5,
+
+00:00:44.000 --> 00:00:47.000
+e isso dá 0.05.
+
+00:00:47.000 --> 00:00:55.000
+Para normalizar usa-se α = 0.25 + 0.05, que é 0.3.
+
+00:00:55.000 --> 00:01:05.000
+Normalizando o 0.25 aqui com o 0.3, obtém-se 0.833,
+
+00:01:05.000 --> 00:01:07.000
+que são 5/6.
+
+00:01:07.000 --> 09:59:59.000
+E esta é a probabilidade a posteriori de termos usado a moeda justa, depois de se ter observado H na experiência.
+

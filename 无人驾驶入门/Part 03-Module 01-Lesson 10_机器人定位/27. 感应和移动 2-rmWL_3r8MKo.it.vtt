@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:06.000
+Eseguiamo il programma, e vediamo che la cella più probabile è la quarta.
+
+00:00:06.000 --> 00:00:09.000
+Ha senso, perché la miglior corrispondenza di "red", "red" con "world"
+
+00:00:09.000 --> 00:00:12.000
+è "red" qui e "red" qui.
+
+00:00:12.000 --> 00:00:15.000
+Dopo aver visto il secondo "red", il robot si sposta ancora di 1 a destra,
+
+00:00:15.000 --> 00:00:19.000
+e si ritrova nella quarta casella come si vede qui.
+
+00:00:19.000 --> 00:00:23.000
+Voglio festeggiare con te il codice che hai appena scritto,
+
+00:00:23.000 --> 00:00:26.000
+è un software che implementa
+
+00:00:26.000 --> 00:00:31.000
+l'essenza dell'approccio alla localizzazione della Google self-driving car.
+
+00:00:31.000 --> 00:00:36.000
+Come ho detto all'inizio, è assolutamente cruciale che l'auto sappia
+
+00:00:36.000 --> 00:00:39.000
+esattamente dove si trova relativamente alla mappa della strada.
+
+00:00:39.000 --> 00:00:45.000
+Sebbene la strada non sia pitturata di verde e rosso, la strada ha dei delimitatori di corsia.
+
+00:00:45.000 --> 00:00:49.000
+Invece di queste caselle rosse verdi qui,
+
+00:00:49.000 --> 00:00:54.000
+mettiamo i colori dei delimitatori di corsia rispetto al colore dell'asfalto.
+
+00:00:54.000 --> 00:00:58.000
+Non è solo una singola misura ad ogni passo, è un intero campo di osservazioni,
+
+00:00:58.000 --> 00:01:00.000
+un'intera immagine della telecamera,
+
+00:01:00.000 --> 00:01:02.000
+ma puoi fare lo stesso con un'imamgine
+
+00:01:02.000 --> 00:01:05.000
+purché tu possa far corrispondere l'immagine nel tuo modellom
+
+00:01:05.000 --> 00:01:08.000
+all'immagine nella tua misurazione.
+
+00:01:08.000 --> 00:01:13.000
+Quindi un codice non molto più complesso di quello che hai appena implementato
+
+00:01:13.000 --> 00:01:18.000
+è resposabile della localizzazione della Google self-driving car.
+
+00:01:18.000 --> 00:01:26.000
+Hai appena implementato una funzione molto, molto importante, che permette alla macchina di Google di guidare da sola.
+
+00:01:26.000 --> 00:01:31.000
+Credo che dovresti essere molto felice e orgoglioso di te stesso. :-)
+
+00:01:31.000 --> 00:01:35.000
+Dovresti dire a te stesso: "Ho implementato la localizzazione"
+
+00:01:35.000 --> 00:01:39.000
+Ora, merché mai a Google ci sono voluti due anni per costruire un prodotto che si guida da solo?
+
+00:01:39.000 --> 00:01:44.000
+Beh, la verità è che la situazione è un po' più difficile.
+
+00:01:44.000 --> 00:01:48.000
+A volte le strade vengono ripavimentate e modificate, e ci stiamo lavorando.
+
+00:01:48.000 --> 00:01:54.000
+Ma quello che hai implementato è l'idea che sta alla base della localizzazione della Google self-driving car.
+
+00:01:54.000 --> 09:59:59.000
+Fammi ricapitolare le cose essenziali che abbiamo imparato.
+

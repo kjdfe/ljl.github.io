@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: pt-PT
+
+00:00:00.000 --> 00:00:02.000
+Quero embelezar este código.
+
+00:00:02.000 --> 00:00:05.000
+Vou introduzir uma variável chamada "world" (mundo),
+
+00:00:05.000 --> 00:00:09.000
+e para cada uma das 5 células da grelha, "world" guarda a cor da célula --
+
+00:00:09.000 --> 00:00:13.000
+verde, vermelha, vermelha, verde, verde.
+
+00:00:13.000 --> 00:00:17.000
+E ainda defino a medida Z como vermelha (red).
+
+00:00:17.000 --> 00:00:21.000
+És capaz de definir uma função, chamada "sense", que efectua a actualização da medida,
+
+00:00:21.000 --> 00:00:26.000
+cujas entradas são a distribuição inicial, p,
+
+00:00:26.000 --> 00:00:30.000
+e a medida Z, e todas as outras variáveis globais
+
+00:00:30.000 --> 00:00:33.000
+e produz uma distribuição normalizada, chamada "Q", em que Q reflecte
+
+00:00:33.000 --> 00:00:37.000
+a multiplicação não normalizada da nossa probabilidade inicial,
+
+00:00:37.000 --> 00:00:40.000
+que será 0.2, etc...
+
+00:00:40.000 --> 00:00:45.000
+pelos correspondentes pHit ou pMiss, consoante
+
+00:00:45.000 --> 00:00:49.000
+estas cores aqui estejam em concordância ou em discordância?
+
+00:00:49.000 --> 00:00:55.000
+Quando eu chamar sense(p,Z) espero obter o mesmo vector de saída que obtive anteriormente,
+
+00:00:55.000 --> 00:00:57.000
+mas agora como resultado de uma função.
+
+00:00:57.000 --> 00:01:02.000
+A razão porque quero escrever a função é porque, mais adiante, quando criarmos o nosso localizador
+
+00:01:02.000 --> 00:01:04.000
+iremos aplicar esta operação, repetidamente, a cada medida.
+
+00:01:04.000 --> 00:01:09.000
+Esta função deverá aceitar quaisquer p e Z arbitrários,
+
+00:01:09.000 --> 00:01:13.000
+vermelhos ou verdes, e dar-me o Q não normalizado,
+
+00:01:13.000 --> 09:59:59.000
+correspondente ao vector 0.04, 0.12, etc e tal.
+

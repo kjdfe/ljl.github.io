@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: pt
+
+00:00:00.000 --> 00:00:03.000
+Toca a resolver o nosso primeiro exercício de programação,
+
+00:00:03.000 --> 00:00:08.000
+programando juntos a primeiríssima versão da localização em robótica.
+
+00:00:08.000 --> 00:00:11.000
+Eis um pequeno bloco de código Pyhton -- uma lista vazia.
+
+00:00:11.000 --> 00:00:16.000
+Quero que programes um pequeno mundo, com 5 células, ou locais
+
+00:00:16.000 --> 00:00:21.000
+onde cada célula tem igual probabilidade, relativamente à presença do robot no seu interior.
+
+00:00:21.000 --> 00:00:25.000
+A soma de todas as probabilidades é 1.
+
+00:00:25.000 --> 00:00:30.000
+Aqui está uma questão simples, relativamente às células x1 até x5.
+
+00:00:30.000 --> 00:00:33.000
+Qual é a probabilidade de cada um dos x's?
+
+00:00:33.000 --> 99:59:59.000
+O índice i varia de 1 até 5.
+

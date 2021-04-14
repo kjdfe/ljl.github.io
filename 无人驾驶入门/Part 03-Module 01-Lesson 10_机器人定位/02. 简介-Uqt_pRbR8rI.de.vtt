@@ -1,0 +1,166 @@
+WEBVTT
+Kind: captions
+Language: de
+
+00:00:00.000 --> 00:00:05.000
+Nun Willkommen zu Künstliche Intelligenz für die Robotik.
+
+00:00:05.000 --> 00:00:08.000
+Ihr tretet ein in eine aufregende Sieben-Wochen-Vorlesung
+
+00:00:08.000 --> 00:00:12.000
+in welcher ihr lernt, wie man selbststeuernde Autos programmiert.
+
+00:00:12.000 --> 00:00:16.000
+Und um einen Anreiz zu geben für das, was wir in dieser Vorlesung erreichen wollen,
+
+00:00:16.000 --> 00:00:18.000
+lasst mich Euch einige Videos zeigen.
+
+00:00:18.000 --> 00:00:25.000
+Mein Interesse für selbststeuernde Autos begann mit dem DARPA Grand Challenge 2004
+
+00:00:25.000 --> 00:00:28.000
+für welchen mein Team in Stanford Stanley entwickelte,
+
+00:00:28.000 --> 00:00:31.000
+einen Robot, der sich selbst durch die Mojave-Wüste steuern konnte.
+
+00:00:31.000 --> 00:00:34.000
+Das Gefährt beruhte auf einem Volkswagen Touareg
+
+00:00:34.000 --> 00:00:39.000
+der mit allen möglichen Sensoren wie GPS und Laser ausgestattet war,
+
+00:00:39.000 --> 00:00:43.000
+und es war in der Lage, eigene Entscheidungen ohne jedwede Art von menschlichem Input vorzunehmen.
+
+00:00:43.000 --> 00:00:46.000
+Der DARPA Grand Challenge war ein von der Regierung gefördertes Rennen,
+
+00:00:46.000 --> 00:00:48.000
+welches 2005 statt fand.
+
+00:00:48.000 --> 00:00:52.000
+Hier sehen wir Stanley durch die Wüste fahrend,
+
+00:00:52.000 --> 00:00:55.000
+völlig ohne einen Menschen an Bord.
+
+00:00:55.000 --> 00:00:59.000
+Die Aufgabe war, eine Wüstenstrecke von ungefähr 130 Meilen zu durchfahren,
+
+00:00:59.000 --> 00:01:02.000
+und wer immer der Schnellste sein würde, würde das Rennen gewinnen.
+
+00:01:02.000 --> 00:01:05.000
+Hier überholen wir einen anderen Robot von der Carnegie-Mellon-Universität
+
+00:01:05.000 --> 00:01:08.000
+auf ungefähr 110 Meilen der Strecke.
+
+00:01:08.000 --> 00:01:13.000
+Unser Robot schaffte es, über wirklich steile Bergstraßen zu steuern
+
+00:01:13.000 --> 00:01:18.000
+und schaffte es, Zusammenstöße mit Felsen und einen Sturz von Klippen zu vermeiden,
+
+00:01:18.000 --> 00:01:23.000
+alles aufgrund seines Vermögens, das zu nutzen, was ich euch in dieser Vorlesung lehren werde.
+
+00:01:23.000 --> 00:01:29.000
+Nach fast 7 Stunden und 131 Meilen kehrte unser Robot die ganze Runde zur Startbasis zurück,
+
+00:01:29.000 --> 00:01:33.000
+als erster Robot, der jemals einen DARPA Grand Challenge zuende brachte,
+
+00:01:33.000 --> 00:01:36.000
+für die Universität Stanford zwei Millionen Piepen gewann,
+
+00:01:36.000 --> 00:01:42.000
+und Stanley einen Platz im Smithsonian Museum für amerikanische Geschichte einbrachte.
+
+00:01:42.000 --> 00:01:47.000
+Diese Arbeit setzte sich fort zum Urban Challenge, für welchen wir einen anderen Junior genannten Robot bauten,
+
+00:01:47.000 --> 00:01:49.000
+welcher schließlich den zweiten Platz erreichte.
+
+00:01:49.000 --> 00:01:52.000
+Der Urban Challenge war ein Nachfolge-Wettbewerb der DARPA,
+
+00:01:52.000 --> 00:01:55.000
+in welchem Autos sich inmitten von Verkehr bewegen sollten;
+
+00:01:55.000 --> 00:01:59.000
+wo also der Grand Challenge eine Art unbewegtes Wüstengelände war,
+
+00:01:59.000 --> 00:02:04.000
+war dies die Attrappe einer Stadt, wo der Robot mit anderem Verkehr zusammenwirken konnte
+
+00:02:04.000 --> 00:02:08.000
+und sich dabei an Verkehrsregeln zu halten hatte, wie bei dieser Linkskurve hier.
+
+00:02:08.000 --> 00:02:11.000
+Er musste mit sehr hoher Präzision die Fahrspur halten,
+
+00:02:11.000 --> 00:02:16.000
+sich an entgegenkommenden Verkehr anpassen und einfach sicher fahren
+
+00:02:16.000 --> 00:02:20.000
+in einer Situation, die wirklich an eine kleine Stadt erinnerte.
+
+00:02:20.000 --> 00:02:24.000
+Dies veranlasste Google zu einer Folge von Experimenten,
+
+00:02:24.000 --> 00:02:26.000
+die als Google Self Driving Car bekannt geworden sind.
+
+00:02:26.000 --> 00:02:30.000
+Ich glaube, dies sind die besten Robot-Autos, die es heutzutage gibt.
+
+00:02:30.000 --> 00:02:34.000
+Hier sehen wir einen unsere Priusse auf der University Avenue in Palo Alto;
+
+00:02:35.500 --> 00:02:37.000
+unerkannt fahren sie genau wie menschliche Fahrer,
+
+00:02:37.000 --> 00:02:40.000
+aber dieser Wagen hatte sich selbst gesteuert.
+
+00:02:40.000 --> 00:02:43.000
+Unsere Wagen sind in der Lage gewesen, Hunderte von Tausenden von Meilen zurückzulegen
+
+00:02:43.000 --> 00:02:46.000
+über ganz Kalifornien und Teile von Nevada,
+
+00:02:46.000 --> 00:02:53.000
+in Innenstädten wie in San Francisco, auf geschäftigen Hauptverkehrsstraßen.
+
+00:02:53.000 --> 00:03:00.000
+Hier in Monterey, einer kleinen Küstenstadt in Kalifornien mit Haufen und Haufen von Fußgängern.
+
+00:03:00.000 --> 00:03:06.000
+Dies alles sind völlig selbstgesteuerte Augenblicke, wo der Wagen sich anpassen kann
+
+00:03:06.000 --> 00:03:10.000
+an Ereignisse wie Rehe im Scheinwerferlicht mitten in der Nacht
+
+00:03:10.000 --> 00:03:16.000
+oder gar die kurvenreiche Lombard Street in San Francisco, wie hier im Video zu sehen.
+
+00:03:16.000 --> 00:03:19.000
+Das ist mein Job, den ich tagsüber mache.
+
+00:03:19.000 --> 00:03:23.000
+Ich liebe es wirklich, mit meinem Team, selbststeuernde Autos zu bauen.
+
+00:03:23.000 --> 00:03:26.000
+Wir glauben, dass dies wirklich die Welt verändern wird,
+
+00:03:26.000 --> 00:03:31.000
+und das ist es, wozu ich euch in dieser Vorlesung in die Lage zu versetzen hoffe.
+
+00:03:31.000 --> 09:59:59.000
+Steigen wir ein...
+

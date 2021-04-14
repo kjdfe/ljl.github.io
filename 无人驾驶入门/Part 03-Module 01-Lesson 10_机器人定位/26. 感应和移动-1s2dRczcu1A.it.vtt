@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:03.000
+Questo è il codice, è molto breve.
+
+00:00:03.000 --> 00:00:06.000
+Cicla sulle letture, ipotizza di avere tanti spostamenti quante letture.
+
+00:00:06.000 --> 00:00:10.000
+Applica per prima cosa la lettura, come prima. Poi applica lo spostamento.
+
+00:00:10.000 --> 00:00:14.000
+Quando ha finito, stampa l'output, e l'output è interessante.
+
+00:00:14.000 --> 00:00:19.000
+Il mondo ha un campo "green", uno "red", uno "red", uno "green" e uno "green".
+
+00:00:19.000 --> 00:00:25.000
+Il robot ha visto "red", seguito da uno spostamento a destra, e poi "green".
+
+00:00:25.000 --> 00:00:28.000
+Questo suggerisce che probabilmente ha iniziato
+
+00:00:28.000 --> 00:00:31.000
+con la più alta possibilità nella cella numero 3,
+
+00:00:31.000 --> 00:00:35.000
+che è la più a destra delle due celle "red".
+
+00:00:35.000 --> 00:00:40.000
+Ha visto correttamente "red", poi si è spostato a destra di 1.
+
+00:00:40.000 --> 00:00:43.000
+Ha visto "green" correttamente, si è spostato di nuovo a destra.
+
+00:00:43.000 --> 00:00:46.000
+Adesso è facile che si trovi nella cella più a destra.
+
+00:00:46.000 --> 00:00:50.000
+Questo solo guardando questi valori senza usare matematica probabilistica
+
+00:00:50.000 --> 00:00:52.000
+e senza limitazioni del codice.
+
+00:00:52.000 --> 00:00:59.000
+Guardiamo il risultato: 0.2, 0.1, 0.08, 0.16, 0.38.
+
+00:00:59.000 --> 00:01:04.000
+Molto correttamente quindi, assegna come posizione più probabile la casella più a destra
+
+00:01:04.000 --> 09:59:59.000
+così come deve essere, data la sequenza di osservazioni qui sopra.
+

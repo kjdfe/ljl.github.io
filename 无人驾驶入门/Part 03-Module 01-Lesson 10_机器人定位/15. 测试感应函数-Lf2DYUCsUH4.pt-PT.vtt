@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: pt-PT
+
+00:00:00.000 --> 00:00:04.000
+Vamos voltar ao nosso exemplo e ver quão fantástico é o que programaste.
+
+00:00:04.000 --> 00:00:07.000
+Tínhamos uma distribuição uniforme em todos os lugares.
+
+00:00:07.000 --> 00:00:10.000
+Cada lugar tinha uma probabilidade de 0.2.
+
+00:00:10.000 --> 00:00:14.000
+Depois escreveste um trecho de código que usou a medida para converter esta crença prévia
+
+00:00:14.000 --> 00:00:20.000
+numa crença posterior, em que a probabilidade das 2 células vermelhas se tornou
+
+00:00:20.000 --> 00:00:25.000
+3 vezes maior que a crença posterior das células verdes.
+
+00:00:25.000 --> 00:00:29.000
+Fizeste exactamente o que te transmiti intuitivamente no início, quando revelei o segredo da localização.
+
+00:00:29.000 --> 00:00:33.000
+Manipulaste a distribuição de probabilidades de cada local para obter uma nova
+
+00:00:33.000 --> 00:00:36.000
+incorporando a medida.
+
+00:00:36.000 --> 00:00:41.000
+Na verdade, vamos voltar ao nosso código e testar no teu código se obtemos um bom resultado
+
+00:00:41.000 --> 00:00:45.000
+quando passamos a nossa medida de vermelha para verde.
+
+00:00:45.000 --> 00:00:49.000
+Por favor escreve "green" (verde) na variável de medida e executa novamente o teu código
+
+00:00:49.000 --> 09:59:59.000
+para ver se obténs o resultado correcto.
+

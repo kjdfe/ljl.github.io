@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:02.000
+Questa è la mia soluzione
+
+00:00:02.000 --> 00:00:04.000
+inizio qui con una lista vuota, e la costruisco mano a mano
+
+00:00:04.000 --> 00:00:06.000
+utilizzando il comando append()
+
+00:00:06.000 --> 00:00:11.000
+Lo faccio iterando su tutti gli elementi della probabilità p,
+
+00:00:11.000 --> 00:00:16.000
+e imposto un flag binario (hit) se la misura che ho ricevuto è la stessa
+
+00:00:16.000 --> 00:00:21.000
+che mi aspetto alla i-esima casella da questa lista (world)
+
+00:00:21.000 --> 00:00:28.000
+Se hit è positivo, ossia se è true, moltiplichiamo p per pHit,
+
+00:00:28.000 --> 00:00:35.000
+se è false, allora il flag hit viene valutato a 0, e 1-hit è 1,
+
+00:00:35.000 --> 00:00:38.000
+e si moltiplica p[i] per pMiss.
+
+00:00:38.000 --> 00:00:42.000
+Costruisco la lista, la restituisco, faccio girare il programma e risulta
+
+00:00:42.000 --> 09:59:59.000
+0.04, 0.12, 0.12, 0.04, e 0.04 come ci aspettavamo.
+

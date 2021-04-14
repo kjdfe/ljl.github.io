@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:03.000
+Es posible que lo haya adivinado. Es la distribución uniforme.
+
+00:00:03.000 --> 00:00:06.000
+Y hay un razonamiento intuitivo detrás de esto.
+
+00:00:06.000 --> 00:00:09.000
+Cada vez que nos movemos, perdemos información.
+
+00:00:09.000 --> 00:00:12.000
+Es decir, en la distribución inicial sabemos exactamente dónde estamos.
+
+00:00:12.000 --> 00:00:17.000
+En un paso tenemos la probabilidad de 0.8, pero el 0.8 se irá haciendo más pequeño
+
+00:00:17.000 --> 00:00:20.000
+a medida que avanzamos - 0.64 y así sucesivamente.
+
+00:00:20.000 --> 00:00:25.000
+La distribución de la mínima información absoluta es la distribución uniforme.
+
+00:00:25.000 --> 00:00:27.000
+No tiene preferencia alguna.
+
+00:00:27.000 --> 00:00:32.000
+Y eso es realmente el resultado del movimiento de muchas, muchas veces.
+
+00:00:32.000 --> 00:00:34.000
+Hay una manera de obtener esto matemáticamente,
+
+00:00:34.000 --> 00:00:41.000
+y puedo probar una propiedad que está muy relacionada, es la propiedad del equilibrio.
+
+00:00:41.000 --> 00:00:47.000
+Digamos que cogemos x4, y nos gustaría saber cómo es x4 en algún momento t
+
+00:00:47.000 --> 00:00:52.000
+correspondiente a la distribución previa sobre todas las variables.
+
+00:00:52.000 --> 00:00:55.000
+Para que esto sea estacionario, tiene que ser el mismo.
+
+00:00:55.000 --> 00:01:08.000
+Dicho de otra manera, la probabilidad de x4 debe ser lo mismo que 0.8p(x2) + 0.1p(x1) + 0.1p(x3).
+
+00:01:08.000 --> 00:01:12.000
+Este es exactamente el mismo cálculo que hicimos antes, donde nos preguntamos
+
+00:01:12.000 --> 00:01:14.000
+¿cuál es la probabilidad de x4?.
+
+00:01:14.000 --> 00:01:17.000
+Bueno, puede que venir de x2, x1 o x3,
+
+00:01:17.000 --> 00:01:20.000
+y como estas probabilidades, 0.8, 0.1, y 0.1,
+
+00:01:20.000 --> 00:01:22.000
+que gobiernan la probabilidad de que podía haber venido de allí.
+
+00:01:22.000 --> 00:01:30.000
+Juntas han de ser verdaderas en el límite cuando las cosas no se mueven nunca más.
+
+00:01:30.000 --> 00:01:33.000
+Ahora, usted puede pensar que hay muchas maneras de resolver esto
+
+00:01:33.000 --> 00:01:35.000
+y el 0.2 es sólo una solución,
+
+00:01:35.000 --> 00:01:38.000
+pero resulta que 0.2 es la única solución.
+
+00:01:38.000 --> 00:01:42.000
+Así que si pone 0.2 por aquí, un 0.2 por aquí, un 0.2 por aquí,
+
+00:01:42.000 --> 00:01:47.000
+se obtiene 1 por 0.2, y 0.2 es lo que está en el lado derecho.
+
+00:01:47.000 --> 00:01:52.000
+Así que, claramente, los 0.2s de aquí satisfacen el equilibrio que es necesario
+
+00:01:52.000 --> 09:59:59.000
+para definir una solución válida en el límite.
+

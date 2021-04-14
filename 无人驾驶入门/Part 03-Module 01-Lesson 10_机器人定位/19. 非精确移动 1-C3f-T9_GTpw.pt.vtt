@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: pt
+
+00:00:00.000 --> 00:00:03.000
+Vamos agora falar de movimentos imprecisos em robótica.
+
+00:00:03.000 --> 00:00:05.000
+Continuamos com uma grelha de 5 células.
+
+00:00:05.000 --> 00:00:12.000
+Suponhamos que o robot se move correctamente com probabilidade elevada, digamos 0.8.
+
+00:00:12.000 --> 00:00:16.000
+mas há 10% de hipóteses de o movimento ficar curto,
+
+00:00:16.000 --> 00:00:21.000
+e outros 10% de probabilidade de que ele ultrapasse o alvo.
+
+00:00:21.000 --> 00:00:26.000
+Podes definir o mesmo para outros valores de U. Digamos para U=1.
+
+00:00:26.000 --> 00:00:29.000
+Então, a probabilidade de ficar aqui é 0.8,
+
+00:00:29.000 --> 00:00:32.000
+10% das vezes não se mexe,
+
+00:00:32.000 --> 00:00:36.000
+e nos outros 10% das vezes avançará 2 casas.
+
+00:00:36.000 --> 00:00:39.000
+Bem, este é um modelo da movimentação imprecisa de robots.
+
+00:00:39.000 --> 00:00:42.000
+Este robot tenta deslocar-se U células,
+
+00:00:42.000 --> 00:00:46.000
+mas ocasionalmente anda menos ou anda mais do que pretendia.
+
+00:00:46.000 --> 00:00:50.000
+Este modelo é bem mais realista, pois o movimento dos robots é intrinsecamente incerto,
+
+00:00:50.000 --> 00:00:54.000
+e é muito importante modelar esta incerteza, porque ela é a principal razão
+
+00:00:54.000 --> 00:00:59.000
+da localização ser árdua, pois os robots são pouco precisos.
+
+00:00:59.000 --> 00:01:03.000
+Vamos agora tratar isto matematicamente.
+
+00:01:03.000 --> 00:01:06.000
+Vou-te propor uma distribuição a priori,
+
+00:01:06.000 --> 00:01:08.000
+e tu vais usar U=2,
+
+00:01:08.000 --> 00:01:13.000
+e para o caso em que o robot se move 'exactamente' 2 passos,
+
+00:01:13.000 --> 00:01:16.000
+acreditamos que há uma probabilidade de 0.8.
+
+00:01:16.000 --> 00:01:22.000
+E atribuímos uma probabilidade de 0.1 aos 2 casos em que ele falha o alvo por um passo.
+
+00:01:22.000 --> 00:01:28.000
+Isso é descrito por esta fórmula, onde o 2 tem 80% de probabilidades,
+
+00:01:28.000 --> 00:01:32.000
+e o 1 e o 3 têm cada um uma probabilidade de 0.1.
+
+00:01:32.000 --> 00:01:36.000
+Vou-te perguntar agora, para a distribuição inicial que estou a escrever aqui,
+
+00:01:36.000 --> 99:59:59.000
+serás capaz de calcular a distribuição posterior, após a movimentação?
+

@@ -1,0 +1,202 @@
+WEBVTT
+Kind: captions
+Language: pt
+
+00:00:00.000 --> 00:00:05.000
+Deixa-me começar esta história no mundo em que vive o nosso robot.
+
+00:00:05.000 --> 00:00:09.000
+Vamos supor que o robot não tem ideia de onde está.
+
+00:00:09.000 --> 00:00:14.000
+E vamos modelar essa ignorância com uma função -- vou desenhá-la neste diagrama aqui
+
+00:00:14.000 --> 00:00:20.000
+onde o eixo vertical mede a probabilidade para cada local nesse mundo
+
+00:00:20.000 --> 00:00:25.000
+e o eixo horizontal corresponde a todos os locais existentes neste mundo unidimensional.
+
+00:00:25.000 --> 00:00:29.000
+Vou modelar a crença actual do robot relativamente ao seu posicionamento,
+
+00:00:29.000 --> 00:00:33.000
+a sua confusão, com uma função uniforme que dá igual ponderação
+
+00:00:33.000 --> 00:00:36.000
+a todos os sítios neste mundo.
+
+00:00:36.000 --> 00:00:39.000
+Este é o estado de confusão máxima.
+
+00:00:39.000 --> 00:00:42.000
+Bem, mas para haver localização o mundo tem que ter diversidade.
+
+00:00:42.000 --> 00:00:46.000
+Vamos assumir que há 3 pontos notáveis, ou marcas, neste mundo.
+
+00:00:46.000 --> 00:00:55.000
+Há uma porta aqui, outra aqui e uma terceira ali atrás.
+
+00:00:55.000 --> 00:00:57.000
+Por conveniência,
+
+00:00:57.000 --> 00:00:59.000
+assuma-se que são todas iguais e indistinguíveis,
+
+00:00:59.000 --> 00:01:04.000
+mas pode-se distinguir as portas das paredes em que encaixam.
+
+00:01:04.000 --> 00:01:09.000
+Vamos ver agora como o robot se pode situar, usando os seus sentidos (sensores)
+
+00:01:09.000 --> 00:01:12.000
+e ele sente que está mesmo ao pé de uma porta.
+
+00:01:12.000 --> 00:01:17.000
+Tudo o que ele sabe é apenas que está provavelmente muito próximo de uma porta.
+
+00:01:17.000 --> 00:01:20.000
+Como é que isto afecta a nossa crença na posição actual do robot?
+
+00:01:20.000 --> 00:01:23.000
+Eis o aspecto crítico da localização.
+
+00:01:23.000 --> 00:01:26.000
+Se compreenderes isto, compreenderás localização.
+
+00:01:26.000 --> 00:01:30.000
+Ao descobrir ("medir") uma porta, transformamos a nossa crença, a função probabilidade de localização,
+
+00:01:30.000 --> 00:01:35.000
+definida para todos os locais, numa nova função que é parecida com isto.
+
+00:01:35.000 --> 00:01:42.000
+Para os 3 locais junto às portas, aumentou a nossa crença de que estamos lá
+
+00:01:42.000 --> 00:01:46.000
+enquanto que a crença relativamente às outras posições baixou.
+
+00:01:46.000 --> 00:01:51.000
+Esta é uma distribuição de probabilidade que atribui uma probabilidade maior aos locais próximos de portas,
+
+00:01:51.000 --> 00:02:00.000
+e é chamada "crença a posteriori", o que indica ser uma crença que existe após uma observação (ou medida).
+
+00:02:00.000 --> 00:02:04.000
+Mas o aspecto saliente desta crença é que ainda não sabemos onde estamos.
+
+00:02:04.000 --> 00:02:07.000
+Há 3 portas possíveis, e ainda poderia dar-se o caso
+
+00:02:07.000 --> 00:02:11.000
+de os sensores estarem errados e acidentalmente indicarem uma porta onde não há nenhuma.
+
+00:02:11.000 --> 00:02:16.000
+Por isso ainda há uma probabilidade residual de estar nestes sítios aqui,
+
+00:02:16.000 --> 00:02:22.000
+mas estas três bossas em conjunto modelam a nossa actual crença em relação à localização do robot.
+
+00:02:22.000 --> 00:02:29.000
+Esta representação de crença é absolutamente nuclear em probabilidade e na localização de robots móveis.
+
+00:02:29.000 --> 00:02:32.000
+Assuma-se agora que o robot se mexe.
+
+00:02:32.000 --> 00:02:35.000
+Digamos, desloca-se uma certa distância para a direita.
+
+00:02:35.000 --> 00:02:40.000
+Então podemos deslocar a nossa crença de acordo com o movimento.
+
+00:02:40.000 --> 00:02:43.000
+E esse deslocamento poderá ser assim...
+
+00:02:43.000 --> 00:02:46.000
+Esta bossa passa daqui para ali.
+
+00:02:46.000 --> 00:02:50.000
+Este passou para aqui, e este outro para aqui.
+
+00:02:50.000 --> 00:02:53.000
+Obviamente este robot sabe em que sentido se move.
+
+00:02:53.000 --> 00:02:56.000
+Neste exemplo move-se para a direita,
+
+00:02:56.000 --> 00:02:58.000
+e sabe mais ou menos qual a distância que andou.
+
+00:02:58.000 --> 00:03:00.000
+Mas o movimento dos robots é um pouco incerto.
+
+00:03:00.000 --> 00:03:02.000
+Nunca se sabe exactamente para onde o robot foi.
+
+00:03:02.000 --> 00:03:06.000
+Por isso, estas bossas são um pouco mais planas do que aquelas ali.
+
+00:03:06.000 --> 00:03:11.000
+A movimentação da crença para a direita é tecnicamente denominada convolução.
+
+00:03:11.000 --> 00:03:15.000
+Mas assuma-se que o robot faz uma nova medição e, por conveniência,
+
+00:03:15.000 --> 00:03:19.000
+assuma-se que ele se encontra de novo perto de uma porta,
+
+00:03:19.000 --> 00:03:21.000
+isto é, mede o mesmo que mediu antes.
+
+00:03:21.000 --> 00:03:24.000
+E algo maravilhoso acontece.
+
+00:03:24.000 --> 00:03:29.000
+Vai-se  multiplicar a nossa crença 'a priori' (anterior) da segunda medição,
+
+00:03:29.000 --> 00:03:32.000
+por uma função muito parecida a esta aqui,
+
+00:03:32.000 --> 00:03:37.000
+que tem um pico em cada porta, e assim ficamos com uma crença parecida com o seguinte.
+
+00:03:37.000 --> 00:03:42.000
+Há um par de bossazinhas, mas a única grande bossa é esta aqui.
+
+00:03:42.000 --> 00:03:48.000
+Esta corresponde a este aqui, na crença 'a priori,'
+
+00:03:48.000 --> 00:03:53.000
+e é o único lugar nesta crença 'a priori' que realmente concorda com a observação de uma porta,
+
+00:03:53.000 --> 00:03:57.000
+enquanto que todos os outros locais junto a portas têm uma crença 'a priori' bastante baixa.
+
+00:03:57.000 --> 00:04:01.000
+Concluindo, esta função é muito interessante.
+
+00:04:01.000 --> 00:04:04.000
+É uma distribuição que põe um grande peso
+
+00:04:04.000 --> 00:04:07.000
+na hipótese correcta de o robot estar junto da segunda porta,
+
+00:04:07.000 --> 00:04:12.000
+e dá baixa probabilidade a locais longe das portas.
+
+00:04:12.000 --> 00:04:16.000
+Neste momento, o nosso robot acabou de localizar-se.
+
+00:04:16.000 --> 00:04:21.000
+Se entendeste isto, entendes probabilidade e entendes localização.
+
+00:04:21.000 --> 00:04:26.000
+Por isso, parabéns! Entendes probabilidade e localização.
+
+00:04:26.000 --> 00:04:30.000
+Podes não ter-te apercebido ainda, mas esta é uma matéria nuclear na compreensão
+
+00:04:30.000 --> 99:59:59.000
+de um montão de coisas que te vou ensinar na aula de hoje.
+

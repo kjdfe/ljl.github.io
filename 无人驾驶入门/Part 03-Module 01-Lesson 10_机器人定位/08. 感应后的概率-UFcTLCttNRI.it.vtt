@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:06.000
+Vediamo le misure di questo robot nel suo mondo fatto di cinque celle
+
+00:00:06.000 --> 00:00:09.000
+da x1 a x5.
+
+00:00:09.000 --> 00:00:16.000
+Assumiamo che due celle siano rosse e le altre tre verdi.
+
+00:00:16.000 --> 00:00:21.000
+Come prima, assegnamo una probabilità uniforme di 0.2 a ciascuna cella,
+
+00:00:21.000 --> 00:00:25.000
+e il nostro robot a questo punto può effettuare la misura.
+
+00:00:25.000 --> 00:00:29.000
+Quello che vede è il colore rosso.
+
+00:00:29.000 --> 00:00:33.000
+Questo come influenza il belief sui vari posti?
+
+00:00:33.000 --> 00:00:36.000
+Ovviamente, quelli di x2 e x3 dovrebbero salire,
+
+00:00:36.000 --> 00:00:40.000
+e quelli di x1, x4 e x5 dovrebbero scendere.
+
+00:00:40.000 --> 00:00:45.000
+Ti spiego come incorporare questa misura nel nostro belief
+
+00:00:45.000 --> 00:00:49.000
+con una regola molto semplice: una moltiplicazione.
+
+00:00:49.000 --> 00:00:53.000
+Per le celle in cui il colore è corretto, ossia le celle rosse,
+
+00:00:53.000 --> 00:01:00.000
+moltiplichiamo per un valore relativamente grande, diciamo 0.6.
+
+00:01:00.000 --> 00:01:05.000
+Sembra piccolo, ma come vedremo dopo è in realtà un numero grande.
+
+00:01:05.000 --> 00:01:10.000
+Mentre per le celle verdi moltiplichiamo per 0.2.
+
+00:01:10.000 --> 00:01:16.000
+Se guardiamo il rapporto tra quei due numero, allora è tre volte più probabile
+
+00:01:16.000 --> 00:01:19.000
+essere in una cella rossa di quanto non lo sia essere in una cella verde,
+
+00:01:19.000 --> 00:01:23.000
+perché 0.6 è il triplo di 0.2.
+
+00:01:23.000 --> 00:01:25.000
+Adesso facciamo la moltiplicazione.
+
+00:01:25.000 --> 00:01:30.000
+Per ciascuna di queste cinque celle, puoi dirmi quale sarebbe il risultato
+
+00:01:30.000 --> 00:01:34.000
+moltiplicando la misura nel modo che ho spiegato?
+
+00:01:34.000 --> 09:59:59.000
+Per ciascuna di queste caselle, scrivi il numero.
+

@@ -1,0 +1,13 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:04.000
+Adesso nell'interfaccia Python, parti da questo codice
+
+00:00:04.000 --> 00:00:08.000
+che assegna a p una lista vuota e modificalo in modo che che p diventi
+
+00:00:08.000 --> 09:59:59.000
+una distribuzione uniforme su 5 celle espressa in un vettore di 5 probabilità.
+

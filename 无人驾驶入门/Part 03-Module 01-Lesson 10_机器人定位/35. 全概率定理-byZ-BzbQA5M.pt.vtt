@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: pt
+
+00:00:00.000 --> 00:00:05.000
+Vamos agora estudar o movimento, que se relaciona com o conceito denominado probabilidade total.
+
+00:00:05.000 --> 00:00:08.000
+Lembras-te que demos atenção à célula "Xi,"
+
+00:00:08.000 --> 00:00:13.000
+e perguntámos qual era a probabilidade de estar em Xi após o robot se mover?
+
+00:00:13.000 --> 00:00:17.000
+Para indicar o antes e o depois, vou introduzir um índice temporal.
+
+00:00:17.000 --> 00:00:20.000
+Este t é um índice para o tempo.
+
+00:00:20.000 --> 00:00:25.000
+É um índice superior, para não se confundir com o índice i, que identifica a célula.
+
+00:00:25.000 --> 00:00:28.000
+Deves lembrar-te de como calculámos isto,
+
+00:00:28.000 --> 00:00:33.000
+foi procurando as células de onde o robot poderia ter vindo no instante de tempo anterior --
+
+00:00:33.000 --> 00:00:35.000
+indexadas aqui pelo j.
+
+00:00:35.000 --> 00:00:39.000
+Vimos qual era a probabilidade a priori nessas células no instante t-1.
+
+00:00:39.000 --> 00:00:47.000
+Multiplicámos pela probabilidade de o nosso comando de movimento nos trazer de Xj para Xi.
+
+00:00:47.000 --> 00:00:50.000
+Isto é escrito como uma distribuição condicional da seguinte forma.
+
+00:00:50.000 --> 00:00:53.000
+Foi exactamente isto que implementámos.
+
+00:00:53.000 --> 00:00:56.000
+Se estas fossem as nossas células antes
+
+00:00:56.000 --> 00:00:59.000
+e perguntássemos no instante de tempo seguinte a probabilidade de uma célula específica aqui,
+
+00:00:59.000 --> 00:01:05.000
+combinaríamos 0.8 daqui, 0.1 daqui e 0.1 daqui
+
+00:01:05.000 --> 00:01:07.000
+para obter a probabilidade desta célula.
+
+00:01:07.000 --> 00:01:09.000
+É a mesma fórmula do que aqui.
+
+00:01:09.000 --> 00:01:14.000
+Agora isto é Xi, e a forma de calcular a probabilidade a posteriori para Xi é percorrer
+
+00:01:14.000 --> 00:01:18.000
+todos os locais possíveis de onde poderíamos ter vindo, todos os diferentes j's.
+
+00:01:18.000 --> 00:01:25.000
+Obter as probabilidades a priori, multiplicá-las pela probabilidade de fazer a transição de j para i
+
+00:01:25.000 --> 00:01:29.000
+dado o meu comando, que neste caso é dar 1 passo à direita.
+
+00:01:29.000 --> 00:01:32.000
+Em termos probabilísticos, as pessoas geralmente escrevem assim:
+
+00:01:32.000 --> 00:01:36.000
+P(A) = Ʃ p(A│B) p(B).
+
+00:01:36.000 --> 00:01:39.000
+Isto é o que encontras nos livros,
+
+00:01:39.000 --> 00:01:45.000
+e é clara a correspondência directa de A com Xi,t
+
+00:01:45.000 --> 00:01:49.000
+e todos os diferentes Bs como possíveis localizações anteriores.
+
+00:01:49.000 --> 00:01:53.000
+Isto é muitas vezes chamado o Teorema da Probabilidade Total.
+
+00:01:53.000 --> 99:59:59.000
+E a operação correspondente à soma ponderada nas variáveis, é chamada "convolução."
+

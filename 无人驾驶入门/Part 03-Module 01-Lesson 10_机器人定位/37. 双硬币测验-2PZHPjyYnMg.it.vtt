@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:04.000
+Ti faccio un'ultima domanda in cui ho una moneta di cui non so la probabilità.
+
+00:00:04.000 --> 00:00:08.000
+Ci sono diverse monete, una è normale e l'altra è truccata.
+
+00:00:08.000 --> 00:00:11.000
+La moneta non truccata ha una probailità di "heads" pari a 0.5
+
+00:00:11.000 --> 00:00:15.000
+La moneta truccata ha una probabilità di "heads" pari a 0.1
+
+00:00:15.000 --> 00:00:20.000
+Ecco cosa voglio fare: prendo una moneta a caso con probabilità 50%.
+
+00:00:20.000 --> 00:00:23.000
+La moneta non truccata sarà scelta con probabilità 50%
+
+00:00:23.000 --> 00:00:25.000
+e la moneta truccata sarà scelta con probabilità 50%
+
+00:00:25.000 --> 00:00:27.000
+ma non so quale sia.
+
+00:00:27.000 --> 00:00:30.000
+La lancio e vedo "heads"
+
+00:00:30.000 --> 00:00:33.000
+Qual è la probabilità che la moneta che ho in mano non sia truccata?
+
+00:00:33.000 --> 00:00:36.000
+Applica tutto quello che hai imparato finora
+
+00:00:36.000 --> 09:59:59.000
+una delle regole che hai imparato è esattamente quella giusta da applicre qui.
+

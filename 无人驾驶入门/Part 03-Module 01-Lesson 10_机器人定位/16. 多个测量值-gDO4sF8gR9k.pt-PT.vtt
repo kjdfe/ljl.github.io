@@ -1,0 +1,22 @@
+WEBVTT
+Kind: captions
+Language: pt-PT
+
+00:00:00.000 --> 00:00:04.000
+Na verdade quero que alteres de novo este código
+
+00:00:04.000 --> 00:00:06.000
+de forma a aceitar múltiplas medidas.
+
+00:00:06.000 --> 00:00:10.000
+Em vez de Z, vamos criar um vector de medidas, chamado "measurements."
+
+00:00:10.000 --> 00:00:14.000
+Vai-se assumir que se mede vermelho (red) primeiro e depois verde (green).
+
+00:00:14.000 --> 00:00:17.000
+Consegues modificar o código de forma a actualizar duas vezes a probabilidade
+
+00:00:17.000 --> 00:00:21.000
+e assim me dê a crença (distribuição) a posteriori, após as duas medidas terem sido assimiladas?
+

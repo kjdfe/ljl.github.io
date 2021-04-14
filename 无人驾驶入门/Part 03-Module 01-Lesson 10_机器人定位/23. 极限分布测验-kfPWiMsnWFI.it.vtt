@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:03.000
+Ti faccio una domanda che è abbastanza complicata,
+
+00:00:03.000 --> 00:00:06.000
+voglio mettere un po' alla prova il tuo intuito.
+
+00:00:06.000 --> 00:00:08.000
+Immagina di avere 5 caselle come prima
+
+00:00:08.000 --> 00:00:14.000
+con una distribuzione iniziale che assegna 1 alla prima casella e 0 a tutte le altre.
+
+00:00:14.000 --> 00:00:18.000
+Ipotizziamo che ci spostiamo di U = 1, il che significa che con probabilità 0.8
+
+00:00:18.000 --> 00:00:21.000
+in ogni azione ci spostiamo di 1 a destra.
+
+00:00:21.000 --> 00:00:24.000
+Con probabilità 0.1 non ci spostiamo affatto
+
+00:00:24.000 --> 00:00:27.000
+e con probabilità 0.1 saltiamo e ci spostiamo di 2 caselle.
+
+00:00:27.000 --> 00:00:29.000
+Di nuovo, ipotizziamo che il mondo sia ciclico,
+
+00:00:29.000 --> 00:00:33.000
+per cui ogni volta che esco dalla parte destra, mi trovo di nuovo all'inizio dalla parte sinistra.
+
+00:00:33.000 --> 00:00:38.000
+La domada è: immagina che io esegua un numero infinito di spostamenti.
+
+00:00:38.000 --> 00:00:42.000
+A quel punto ottengo quella che si chiama "distribuzione limite".
+
+00:00:42.000 --> 00:00:47.000
+Cosa succede al mio robot se non misura mai ma esegue l'azione
+
+00:00:47.000 --> 00:00:53.000
+di spostarsi di 1 a destra nel nostro mondo ciclico per sempre?
+
+00:00:53.000 --> 09:59:59.000
+Quale sarà alla fine la cosiddetta distribuzione limite o stazionaria?
+

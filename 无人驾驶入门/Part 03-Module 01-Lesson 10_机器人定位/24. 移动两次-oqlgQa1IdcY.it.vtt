@@ -1,0 +1,13 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:04.000
+Questo è il codice che fa spostare due volte dello stesso spostamento di prima,
+
+00:00:04.000 --> 00:00:10.000
+e l'output adesso è un vettore che assegna 0.66 come valore massimo
+
+00:00:10.000 --> 09:59:59.000
+e non più 0.8.
+

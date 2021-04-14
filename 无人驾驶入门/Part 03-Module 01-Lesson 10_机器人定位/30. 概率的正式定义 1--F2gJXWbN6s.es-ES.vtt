@@ -1,0 +1,25 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:05.000
+Formalmente, definimos una función de probabilidad P(X),
+
+00:00:05.000 --> 00:00:09.000
+es un valor que está limitado por abajo por 0 y por arriba por 1.
+
+00:00:09.000 --> 00:00:11.000
+X a menudo puede tomar varios valores.
+
+00:00:11.000 --> 00:00:13.000
+Tuvimos el caso de 5 celdas.
+
+00:00:13.000 --> 00:00:18.000
+Supongamos que sólo puede coger dos valores - sólo hay dos celdas, x1 y x2.
+
+00:00:18.000 --> 00:00:23.000
+Si la probabilidad de x1 es de 0.2, ¿cuál sería la probabilidad de x2?
+
+00:00:23.000 --> 09:59:59.000
+Así que por favor, introduzca el número. Es una pregunta, obviamente.
+

@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:02.000
+Questa è la soluzione
+
+00:00:02.000 --> 00:00:06.000
+iniziamo con la lista vuota. Iteriamo su tutti gli elementi in p
+
+00:00:06.000 --> 00:00:08.000
+Questa è la riga difficile.
+
+00:00:08.000 --> 00:00:14.000
+Costruiremo q elemento per elemento accedendo alla corrispondente p
+
+00:00:14.000 --> 00:00:21.000
+e p è traslato di U e se questa traslazione eccede il limite di p sulla sinistra
+
+00:00:21.000 --> 00:00:26.000
+applichiamo l'operatore modulo con il numero di stati come argomento.
+
+00:00:26.000 --> 00:00:28.000
+In questo caso, sarà 5.
+
+00:00:28.000 --> 00:00:31.000
+Ora, la ragione per cui c'è un segno meno è delicata.
+
+00:00:31.000 --> 00:00:35.000
+Per spostare la distribuzione a destra, U = 1,
+
+00:00:35.000 --> 00:00:40.000
+dobbiamo trovare in p l'elemento che è una posizione a sinistra.
+
+00:00:40.000 --> 00:00:44.000
+Piuttosto che spostare direttamente p a destra,
+
+00:00:44.000 --> 00:00:48.000
+quello che è fatto è costruire q cercando
+
+00:00:48.000 --> 00:00:51.000
+da dove il robot potesse provenire.
+
+00:00:51.000 --> 00:00:54.000
+Ovviamente, con il senno di poi, viene da sinistra.
+
+00:00:54.000 --> 00:00:56.000
+Per questo c'è il segno meno qui.
+
+00:00:56.000 --> 00:00:59.000
+Per cui pensaci un po', non è banale
+
+00:00:59.000 --> 00:01:01.000
+ma sarà molto importante quando andremo avanti e definiremo
+
+00:01:01.000 --> 09:59:59.000
+la convoluzione probabilistica e generalizzeremo questo al caso di spostamenti con rumore.
+

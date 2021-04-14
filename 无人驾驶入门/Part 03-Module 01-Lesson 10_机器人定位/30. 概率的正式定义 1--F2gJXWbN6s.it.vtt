@@ -1,0 +1,25 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:05.000
+Formalmente, definiamo la funzione di probabilità P(X)
+
+00:00:05.000 --> 00:00:09.000
+ed è un valore limitato inferiormente e superiormente da 0 e 1.
+
+00:00:09.000 --> 00:00:11.000
+Spesso X può assumere più valori.
+
+00:00:11.000 --> 00:00:13.000
+Avevamo il caso di 5 caselle.
+
+00:00:13.000 --> 00:00:18.000
+Supponi che possa avere solo due valori, che ci siano solo due caselle, x1 e x2.
+
+00:00:18.000 --> 00:00:23.000
+Se la probabilità per x1 è 0.2, qual è la probabilità per x2?
+
+00:00:23.000 --> 09:59:59.000
+Scrivimi il numero. Ovviamente, è un quiz.
+

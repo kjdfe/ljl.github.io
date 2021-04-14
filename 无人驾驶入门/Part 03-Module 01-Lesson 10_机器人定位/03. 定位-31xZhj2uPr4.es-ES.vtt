@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:05.000
+El primer problema que estoy intentando resolver es llamado: Localización.
+
+00:00:05.000 --> 00:00:07.292
+Esto supone que hay un robot perdido en el espacio.
+
+00:00:07.292 --> 00:00:10.277
+Podría ser un carro. Podría ser un robot móvil.
+
+00:00:10.277 --> 00:00:15.000
+Aquí esta el entorno, y el pobre robo no tiene idea de donde está.
+
+00:00:15.000 --> 00:00:19.738
+Similarmente, podría haber un coche moviéndose por una carretera,
+
+00:00:19.738 --> 00:00:22.492
+y le gustaría saber donde está.
+
+00:00:22.492 --> 00:00:25.815
+¿Si está dentro de la vía o sobre las líneas guías de la misma?
+
+00:00:25.815 --> 00:00:29.169
+La manera tradicional de solucionar este problema es usando satélites.
+
+00:00:29.169 --> 00:00:33.385
+Estos emiten señales que el auto puede percibir.
+
+00:00:33.385 --> 00:00:37.692
+Eso es conocido como GPS/SPG, acrónimo de "Global Positioning System/Sistema de Posicionamiento Global",
+
+00:00:37.692 --> 00:00:41.108
+y es el que tienes en el tablero de tu auto si tienes un auto con GPS
+
+00:00:41.108 --> 00:00:43.938
+que te muestra los mapas y puedes ver donde estas.
+
+00:00:43.938 --> 00:00:49.000
+Desafortunadamente, el problema con el GPS es que no es muy preciso.
+
+00:00:49.000 --> 00:00:54.000
+Es común para un conductor creer la posición que indica el GPS pero tiene de
+
+00:00:54.000 --> 00:00:56.431
+2 metros hasta 10 metros de error en la ubicación.
+
+00:00:56.431 --> 00:00:59.262
+De tal menera que si intentas mantenerte en la vía con 10 metros de error,
+
+00:00:59.262 --> 00:01:04.792
+estas bastante lejos, y si manejas basado en dicha ubicación seguramente tendrás problemas.
+
+00:01:04.792 --> 00:01:10.000
+Para que nuestros vehículos auto-dirigidos, puedan mantenerse dentro de la vía usando localización,
+
+00:01:10.000 --> 00:01:14.231
+necesitaremos algo como 2 a 10 centímetros de error.
+
+00:01:14.231 --> 00:01:17.631
+Podemos conducir con el GPS en las vías.
+
+00:01:17.631 --> 00:01:23.000
+La pregunta es: ¿Cómo podemos saber donde estamos con 10 cm de precisión?
+
+00:01:23.000 --> 00:01:26.862
+Esa es la pregunta de localización.
+
+00:01:26.892 --> 00:01:31.985
+La localización en los vehículos auto-dirigidos de GOOGLE, juego un papel clave.
+
+00:01:31.985 --> 00:01:37.923
+Guardamos las imágenes de la superficie de la vía y entonces usamos las técnicas.
+
+00:01:37.923 --> 00:01:42.062
+Te enseñaré como ubicar con dicha exactitud al robot.
+
+00:01:42.062 --> 00:01:45.031
+Esto se hace entre unos pocos centímetros de precisión,
+
+00:01:45.031 --> 00:01:50.385
+y eso hace posible mantenerle dentro de las vías aun sin marcadores guías en la vía.
+
+00:01:50.385 --> 00:01:54.969
+La localización tiene un montón de matemática, pero antes de entrar en esos detalles,
+
+00:01:54.985 --> 00:01:58.631
+quiero mostrarte los principios básicos de manera intuitiva.
+
+00:01:58.631 --> 00:02:01.000
+Quiero contarte la historia de como localización esto,
+
+00:02:01.000 --> 00:02:04.031
+y entonces podremos entrar en la matemática para que puedas entenderlo.
+
+00:02:04.031 --> 00:02:06.981
+También te mostraré como programar tu propio localizador
+
+00:02:06.981 --> 00:02:18.000
+así puedes programar un vehículo auto-dirigido.
+

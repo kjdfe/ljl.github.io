@@ -1,0 +1,10 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:09.000
+Aggiungo una pExact [spostamento corretto] di 0.8, una pOvershoot [superamento del goal] di 0.1 e una pUndershoot [goal non raggiunto] di 0.1
+
+00:00:09.000 --> 09:59:59.000
+Vorrei che modificassi la procedura move() per gestire queste tre probabilità.
+

@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: es
+
+00:00:00.000 --> 00:00:04.000
+Regresemos a nuestro ejemplo y veamos lo impresionante que es programarlo.
+
+00:00:04.000 --> 00:00:07.000
+Teníamos una distribución uniforme.
+
+00:00:07.000 --> 00:00:10.000
+Cada espacio tiene una probabilidad de 0.2
+
+00:00:10.000 --> 00:00:14.000
+Entonces escribiste un código que usaba la magnitud o medida como prioridad
+
+00:00:14.000 --> 00:00:20.000
+en un posterior, en el cual la probabilidad de las 2 celdas rojas fue
+
+00:00:20.000 --> 00:00:25.000
+3 veces mayor que la celdas verdes posteriores.
+
+00:00:25.000 --> 00:00:29.000
+Lo hiciste exactamente y te dio intuitivamente comenzando la localización secreta.
+
+00:00:29.000 --> 00:00:33.000
+Tu manipulaste una distribución probable dentro cada nuevo espacio
+
+00:00:33.000 --> 00:00:36.000
+para incorporar la medición.
+
+00:00:36.000 --> 00:00:41.000
+De hecho, revisemos nuestro código y probemos si obtenemos un buen resultado
+
+00:00:41.000 --> 00:00:45.000
+cuando remplacemos la magnitud roja por la verde.
+
+00:00:45.000 --> 00:00:49.000
+Escribe verde dentro de nuestra variable de medida y corre de nuevo tu código
+
+00:00:49.000 --> 99:59:59.000
+para ver si obtienes el resultado apropiado.
+

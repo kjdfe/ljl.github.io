@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:05.000
+Il primo problema che proviamo a risolvere si chiama localizzazione.
+
+00:00:05.000 --> 00:00:07.292
+Si tratta di un robot perso nello spazio.
+
+00:00:07.292 --> 00:00:10.277
+Potrebbe essere un'auto. Potrebbe essere un robot mobile.
+
+00:00:10.277 --> 00:00:15.000
+Questo è l'ambiente, e il povero robot ha alcuna idea di dove si trovi.
+
+00:00:15.000 --> 00:00:19.738
+Allo stesso modo, potremmo avere una macchina che guida su un'autostrada,
+
+00:00:19.738 --> 00:00:22.492
+e vorrebbe sapere dove si trova
+
+00:00:22.492 --> 00:00:25.815
+E' all'interno della corsia o sta attraversando le linee di demarcazione?
+
+00:00:25.815 --> 00:00:29.169
+Il modo tradizionale di risolvere questo problema è utilizzando dei satelliti.
+
+00:00:29.169 --> 00:00:33.385
+Questi satelliti emettono dei segnali che l'auto può ricevere.
+
+00:00:33.385 --> 00:00:37.692
+Questo sistema è noto come GPS, acronimo di "Sistema di Posizionamento Globale"
+
+00:00:37.692 --> 00:00:41.108
+ed è quello che hai nel cruscotto se hai una macchina con il navigatore
+
+00:00:41.108 --> 00:00:43.938
+che ti mostra le mappe e ti mostra dove ti trovi.
+
+00:00:43.938 --> 00:00:49.000
+Purtroppo, il problema del GPS è che non è molto preciso.
+
+00:00:49.000 --> 00:00:54.000
+E' molto comune per un'auto pensare di essere qui,
+
+00:00:54.000 --> 00:00:56.431
+ma ha da 2 metri fino a 10 metri di errore.
+
+00:00:56.431 --> 00:00:59.262
+Se si tenta di rimanere nella corsia con 10 metri di errore,
+
+00:00:59.262 --> 00:01:04.792
+si è davvero fuori strada, stai guidando in questo punto e ti schianti.
+
+00:01:04.792 --> 00:01:10.000
+Così, per le nostre auto autonome, per essere in grado di rimanere in corsia utilizzando la localizzazione,
+
+00:01:10.000 --> 00:01:14.231
+abbiamo bisogno di qualcosa come 2-10 centimetri di errore.
+
+00:01:14.231 --> 00:01:17.631
+E in quel caso possiamo guidare restando in corsia.
+
+00:01:17.631 --> 00:01:23.000
+La domanda è: come possiamo sapere dove siamo con una precisione di 10 cm?
+
+00:01:23.000 --> 00:01:26.862
+Questa è la domanda della localizzazione.
+
+00:01:26.892 --> 00:01:31.985
+nelle Google self-driving cars, la localizzazione svolge un ruolo chiave.
+
+00:01:31.985 --> 00:01:37.923
+Registriamo immagini della superficie della strada e poi usiamo le tecniche
+
+00:01:37.923 --> 00:01:42.062
+che sto per insegnarti per scoprire esattamente dove è il robot.
+
+00:01:42.062 --> 00:01:45.031
+Lo possiamo fare con una precisione di pochi centimetri
+
+00:01:45.031 --> 00:01:50.385
+il che permette di restare dentro la corsia, anche se mancano i marcatori di corsia.
+
+00:01:50.385 --> 00:01:54.969
+La localizzazione richiede un sacco di matematica, ma prima di tuffarci nei dettagli matematici,
+
+00:01:54.985 --> 00:01:58.631
+Voglio darti un'intuizione per i principi di base.
+
+00:01:58.631 --> 00:02:01.000
+Voglio raccontarti la storia di come un robot si localizza
+
+00:02:01.000 --> 00:02:04.031
+e poi vedremo insieme la matematica insieme, così che tu possa capirlo.
+
+00:02:04.031 --> 00:02:06.981
+Voglio anche che tu programmi il tuo localizzatore
+
+00:02:06.981 --> 00:02:18.000
+così che tu possa programmare un'auto che si guida da sola.
+

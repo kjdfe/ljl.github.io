@@ -1,0 +1,13 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:04.000
+Así que aquí está mi código. Tenemos un bucle que se ejecuta 1.000 veces.
+
+00:00:04.000 --> 00:00:09.000
+Realizamos movimientos 1.000 veces, e imprime la correspondiente distribución por aquí.
+
+00:00:09.000 --> 09:59:59.000
+Es 0.2 en cada caso, como esperaba.
+

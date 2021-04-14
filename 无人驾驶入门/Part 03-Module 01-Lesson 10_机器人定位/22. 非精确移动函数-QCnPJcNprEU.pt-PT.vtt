@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: pt-PT
+
+00:00:00.000 --> 00:00:02.000
+Eis uma possível implementação.
+
+00:00:02.000 --> 00:00:05.000
+Introduz-se a variável auxiliar "s,"
+
+00:00:05.000 --> 00:00:07.000
+que construimos em três passos.
+
+00:00:07.000 --> 00:00:15.000
+Multiplica-se o valor em p, como antes foi feito para o movimento exacto, por pExact.
+
+00:00:15.000 --> 00:00:21.000
+Então adiciona-se mais dois termos multiplicados por pOvershoot ou pUndershoot
+
+00:00:21.000 --> 00:00:25.000
+onde andámos mais um passo do que o definido por U
+
+00:00:25.000 --> 00:00:28.000
+ou pelo contrário andámos menos um passo.
+
+00:00:28.000 --> 00:00:32.000
+Então soma-se tudo e finalmente enviamos a soma destes
+
+00:00:32.000 --> 00:00:35.000
+para a nossa probabilidade de saída q.
+
+00:00:35.000 --> 00:00:42.000
+Quando executamos a função sobre uma probabilidade a priori de 0, 1, 0, 0, 0,
+
+00:00:42.000 --> 09:59:59.000
+a resposta é 0, 0.1, 0.8, 0.1, e 0.
+

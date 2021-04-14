@@ -1,0 +1,166 @@
+WEBVTT
+Kind: captions
+Language: ca
+
+00:00:00.000 --> 00:00:05.000
+Benvingut al curs Intel·ligència artificial en robòtica.
+
+00:00:05.000 --> 00:00:08.000
+Estàs entrant en un emocionant curs de 7 setmanes
+
+00:00:08.000 --> 00:00:12.000
+en els que aprendràs a programar cotxes autònoms.
+
+00:00:12.000 --> 00:00:16.000
+I només com a motivació del que estem tractant de assolir en aquest curs,
+
+00:00:16.000 --> 00:00:18.000
+deixa'm mostrat-te uns vídeos.
+
+00:00:18.000 --> 00:00:25.000
+El meu interès en els cotxes autònoms va començar amb el "DARPA Grand Challenge" [el Gran Desafiament DARPA] en el 2004
+
+00:00:25.000 --> 00:00:28.000
+pel qual el meu equip de Stanford va desenvolupar Stanley,
+
+00:00:28.000 --> 00:00:31.000
+un cotxe robot que podia conduir-se a si mateix a través dels desert de Mojave.
+
+00:00:31.000 --> 00:00:34.000
+El vehicle estava basat en el Volkswagen Touareg
+
+00:00:34.000 --> 00:00:39.000
+que estava equipat amb tota classe de sensors com GPS i laser,
+
+00:00:39.000 --> 00:00:43.000
+I tenia la capacitat de prendre les seves pròpies decisions sense cap intervenció humana.
+
+00:00:43.000 --> 00:00:46.000
+El Gran Desafiament de DARPA va ser una cursa patrocinada pel governament
+
+00:00:46.000 --> 00:00:48.000
+que va tenir lloc al 2005.
+
+00:00:48.000 --> 00:00:52.000
+Aquí veiem al nostre robot Stanley movent-se a través del desert
+
+00:00:52.000 --> 00:00:55.000
+sense absolutament cap humà a bord.
+
+00:00:55.000 --> 00:00:59.000
+La tasca era conduir-se en un camí desèrtic durant 130 milles
+
+00:00:59.000 --> 00:01:02.000
+i el que fos més ràpid guanyaria la carrera.
+
+00:01:02.000 --> 00:01:05.000
+Aquí estem adelàntat al al robot de la Universitat Carnegie Mellon
+
+00:01:05.000 --> 00:01:08.000
+al haver transcorregut a prop de les 110 milles de la cursa.
+
+00:01:08.000 --> 00:01:13.000
+El nostre robot va ser capaç de recorre carreteres muntanyoses amb moltes pendents
+
+00:01:13.000 --> 00:01:18.000
+i evitar xocar amb roques o caure pels penya-segats
+
+00:01:18.000 --> 00:01:23.000
+tot basat en la seva habilitat per usar el que vaig a ensenyar en aquest curs.
+
+00:01:23.000 --> 00:01:29.000
+Després de gairebé 7 hores i 131 milles el nostre robot va retornar al punt de partida
+
+00:01:29.000 --> 00:01:33.000
+com el primer robot que finalitzava el Gran Desafiament de DARPA
+
+00:01:33.000 --> 00:01:36.000
+guanyant per la Universitat de Stanford 2 milions de dòlars
+
+00:01:36.000 --> 00:01:42.000
+i per Standley un lloc al Museu Smithsonià de Història Americana.
+
+00:01:42.000 --> 00:01:47.000
+Aquest treball va portat al Desafiament Urbà, pel qual vam construir un altre robot anomenat Junior
+
+00:01:47.000 --> 00:01:49.000
+que eventualment es va emportar el segon lloc.
+
+00:01:49.000 --> 00:01:52.000
+El Desafiament Urbà va ser un seguiment a la cursa per part de DARPA
+
+00:01:52.000 --> 00:01:55.000
+en el qual es requeria que els vehicles conduïssin en el transit,
+
+00:01:55.000 --> 00:01:59.000
+vet aquí, mentre el Gran Desafiament va ser el rei d'una pista desèrtica sense moviment,
+
+00:01:59.000 --> 00:02:04.000
+aquesta era una situació en una ciutat on el robot era capaç de interactuar amb la resta del transit
+
+00:02:04.000 --> 00:02:08.000
+i havia de seguir les regles del transit com en aquest gir a la esquerra.
+
+00:02:08.000 --> 00:02:11.000
+Havia de romandre als carrils amb molta precisió,
+
+00:02:11.000 --> 00:02:16.000
+acomodant-se al transit en sentit contrari i conduir acuradament
+
+00:02:16.000 --> 00:02:20.000
+en una situació que realment semblava una petita ciutat.
+
+00:02:20.000 --> 00:02:24.000
+Això va portar a Google a una sèrie d'experiments.
+
+00:02:24.000 --> 00:02:26.000
+coneguts com el vehicle autònom de Google.
+
+00:02:26.000 --> 00:02:30.000
+Crec que aquests son els millors cotxes robòtics que circulen avui dia.
+
+00:02:30.000 --> 00:02:34.000
+Aquí esta un dels nostres Prius en la Avinguda Universitat en Palo Alto
+
+00:02:35.500 --> 00:02:37.000
+sense se detectat, conduint com un conductor humà
+
+00:02:37.000 --> 00:02:40.000
+però aquest cotxe estava conduïnt tot sol.
+
+00:02:40.000 --> 00:02:43.000
+Els nostres cotxes han esta capaços de conduir centenars de milers de milles
+
+00:02:43.000 --> 00:02:46.000
+en tot California i alguns indrets de Nevada,
+
+00:02:46.000 --> 00:02:53.000
+en àries centrals com San Francisco, en autopistes molt transitades.
+
+00:02:53.000 --> 00:03:00.000
+Aquí en Monterrey, una petita ciutat costanera de California amb molts vianants
+
+00:03:00.000 --> 00:03:06.000
+Tots aquests son moments en conducció autònoma en els quals el cotxe a sigut capaç de adaptar-se
+
+00:03:06.000 --> 00:03:10.000
+a coses com un cérvol davant de les llums frontals en mig de la nit
+
+00:03:10.000 --> 00:03:16.000
+o inclús el recargolat Carrer Lombard de San Francisco com es mostra en aquest vídeo.
+
+00:03:16.000 --> 00:03:19.000
+Això es el que faig al meu treball diari.
+
+00:03:19.000 --> 00:03:23.000
+Realment ens apassiona, juntament amb el meu equip, construir cotxes autònoms.
+
+00:03:23.000 --> 00:03:26.000
+Creiem que això realment canviarà el mon,
+
+00:03:26.000 --> 00:03:31.000
+i en aquest curs, això es el que jo espero permetre't fer.
+
+00:03:31.000 --> 09:59:59.000
+Comencem?
+

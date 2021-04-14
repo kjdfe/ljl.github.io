@@ -1,0 +1,16 @@
+WEBVTT
+Kind: captions
+Language: es
+
+00:00:00.000 --> 00:00:05.000
+Una forma de hacerlo es ir explícitamente a través de todos estos 5 diferentes casos de 0 a 4
+
+00:00:05.000 --> 00:00:09.000
+y multiplicar  manualmente el caso de fracaso o éxito.
+
+00:00:09.000 --> 00:00:12.000
+Esto no es particularmente elegante, pero hace el trabajo,
+
+00:00:12.000 --> 99:59:59.000
+y en cuanto pulso el botón "Run", obtenemos la respuesta correcta que no es normalizada.
+

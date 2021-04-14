@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:06.000
+Así que déjame preguntarte sobre la Regla de Bayes en contexto de un ejemplo completamente diferente
+
+00:00:06.000 --> 00:00:09.000
+a ver si entiende la forma de aplicar la regla de Bayes.
+
+00:00:09.000 --> 00:00:12.000
+Esta vez se trata de pruebas de cáncer.
+
+00:00:12.000 --> 00:00:15.000
+Y es un ejemplo que a menudo se estudia en las clases de estadística.
+
+00:00:15.000 --> 00:00:18.000
+Supongamos que existe un cierto tipo de cáncer,
+
+00:00:18.000 --> 00:00:22.000
+pero el cáncer es poco frecuente -- sólo 1 de cada 1000 personas tiene el cáncer--
+
+00:00:22.000 --> 00:00:26.000
+mientras que 999 de cada 1000 personas no lo tienen,
+
+00:00:26.000 --> 00:00:29.000
+ilustrada por la probabilidad de cáncer y la probabilidad de no cáncer.
+
+00:00:29.000 --> 00:00:33.000
+Supongamos que tenemos una prueba, y la prueba puede salir positivo o negativo.
+
+00:00:33.000 --> 00:00:38.000
+La probabilidad de que la prueba sea positiva si tiene cáncer es 0.8,
+
+00:00:38.000 --> 00:00:44.000
+y la probabilidad de que la prueba salga positiva, sin tener cáncer es de sólo 0.1.
+
+00:00:44.000 --> 00:00:47.000
+Así que claramente la prueba tiene una fuerte correlación con si tengo cáncer.
+
+00:00:47.000 --> 00:00:50.000
+He aquí una pregunta realmente difícil.
+
+00:00:50.000 --> 00:00:56.000
+¿Puedes calcular para mí la probabilidad de cáncer dado que acabo de recibir una prueba positiva?.
+
+00:00:56.000 --> 00:01:00.000
+Quisiera hacer hincapié en que esto no es una pregunta fácil, pero usted debería ser capaz,
+
+00:01:00.000 --> 00:01:03.000
+basado en lo que te he enseñado, calcule el resultado.
+
+00:01:03.000 --> 00:01:07.000
+Piense en el cáncer/no cáncer como la posición del robot
+
+00:01:07.000 --> 09:59:59.000
+y piense en el test positivo como si la puerta de color observada es la correcta.
+

@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:02.000
+Vediamo un po'
+
+00:00:02.000 --> 00:00:08.000
+quello che ti sto chiedendo è la probabilità di una moneta fair (non-truccata) "F" data l'osservazione di H
+
+00:00:08.000 --> 00:00:11.000
+Questo non c'entra niente con la probabilità totale
+
+00:00:11.000 --> 00:00:15.000
+e c'entra con la Regola di Bayes, perché stiamo parlando di osservazioni.
+
+00:00:15.000 --> 00:00:20.000
+La probabilità non-normalizzata secondo la regola di Bayes si ottiene come segue:
+
+00:00:20.000 --> 00:00:25.000
+la probabilità di osservare H per la moneta "Fair" è 0.5
+
+00:00:25.000 --> 00:00:28.000
+e la probabilità di aver preso la moneta Fair è anch'essa 0.5
+
+00:00:28.000 --> 00:00:34.000
+La probabilità non normalizzata di non-F dato H, ossia la moneta truccata
+
+00:00:34.000 --> 00:00:37.000
+è la probabilità di H dato non-F
+
+00:00:37.000 --> 00:00:40.000
+che sappiamo essere 0.1, lo leggiamo da qui,
+
+00:00:40.000 --> 00:00:44.000
+per la probabilità di non aver preso la moneta Fair, che è 0.5
+
+00:00:44.000 --> 00:00:47.000
+in tutto fa 0.05
+
+00:00:47.000 --> 00:00:55.000
+Quando lo normalizziamo, abbiamo α = 0.25 + 0.05, che è 0.3
+
+00:00:55.000 --> 00:01:05.000
+Se normalizziamo lo 0.25 qui con 0.3, otteniamo 0.833
+
+00:01:05.000 --> 00:01:07.000
+che è lo stesso che 5/6
+
+00:01:07.000 --> 09:59:59.000
+Questa è la probabilità a posteriori che abbiamo preso la moneta "Fair" dopo aver osservato "H"
+

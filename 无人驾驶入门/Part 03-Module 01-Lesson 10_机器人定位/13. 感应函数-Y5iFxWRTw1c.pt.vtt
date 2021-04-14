@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: pt
+
+00:00:00.000 --> 00:00:02.000
+Eis a minha solução.
+
+00:00:02.000 --> 00:00:04.000
+Começo com uma lista vazia, aqui, que vou preenchendo
+
+00:00:04.000 --> 00:00:06.000
+usando repetidamente a instrução append().
+
+00:00:06.000 --> 00:00:11.000
+Faço-o iterando todos os elementos da minha lista de probabilidades p,
+
+00:00:11.000 --> 00:00:16.000
+e defino uma bandeira (flag) binária, hit, consoante a medida que recebo seja a mesma cor
+
+00:00:16.000 --> 00:00:21.000
+existente na i-ésima célula da grelha, aqui, desta lista ali.
+
+00:00:21.000 --> 00:00:28.000
+Se hit for positiva, a cor é a mesma, e assim multiplica-se p[i] por pHit.
+
+00:00:28.000 --> 00:00:35.000
+Se a correspondência for falsa, a flag vale zero, '1 - hit' valerá 1.
+
+00:00:35.000 --> 00:00:38.000
+E vais multiplicar p[i] por pMiss.
+
+00:00:38.000 --> 00:00:42.000
+Construo a lista, devolvo-a, executo isto e dá
+
+00:00:42.000 --> 99:59:59.000
+0.04, 0.12, 0.12, 0.04, e 0.04 como se esperava.
+

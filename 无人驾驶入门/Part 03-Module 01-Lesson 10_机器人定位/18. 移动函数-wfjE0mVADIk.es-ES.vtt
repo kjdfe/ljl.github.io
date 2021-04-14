@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:08.000
+He definido la función "move" con una distribución p y un número de movimiento "U",
+
+00:00:08.000 --> 00:00:12.000
+donde U es el número de la celda a la que el robot se está moviendo hacia la derecha o izquierda.
+
+00:00:12.000 --> 00:00:17.000
+Quiero que programes una función que retorne una distribución Q luego de moverse
+
+00:00:17.000 --> 00:00:22.000
+donde si la U es igual a cero, entonces Q es igual a p.
+
+00:00:22.000 --> 00:00:27.000
+If U es igual a 1, todos los valores son desplazados de manera cíclica hacia la derecha por 1.
+
+00:00:27.000 --> 00:00:30.000
+Si U es igual a 3, entonces son desplazados hacia la derecha de manera cíclica por 3.
+
+00:00:30.000 --> 00:00:35.000
+Si U es igual a -1, entonces son desplazados hacia la izquierda de manera cíclica.
+
+00:00:35.000 --> 00:00:40.000
+Llama a la función con un argumento p y un desplazamiento hacia la derecha de 1.
+
+00:00:40.000 --> 00:00:43.000
+He comentados mi medida porque por ahora
+
+00:00:43.000 --> 00:00:45.000
+no quiero hacer actualización de medidas.
+
+00:00:45.000 --> 00:00:48.000
+Además de esto, usaré una muy simple p,
+
+00:00:48.000 --> 00:00:52.000
+que tiene un 1 en la segunda posición y ceros en el resto.
+
+00:00:52.000 --> 00:00:54.000
+De otra forma, si tuviéramos que usar una p uniforme,
+
+00:00:54.000 --> 00:00:56.000
+no podríamos ver aún el efecto de movimiento
+
+00:00:56.000 --> 09:59:59.000
+si eso es programado correctamente o no.
+

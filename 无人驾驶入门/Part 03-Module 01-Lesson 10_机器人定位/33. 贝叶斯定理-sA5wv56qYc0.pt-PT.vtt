@@ -1,0 +1,139 @@
+WEBVTT
+Kind: captions
+Language: pt-PT
+
+00:00:00.000 --> 00:00:05.000
+Vamos focar agora as medidas, e isso vai-nos levar à chamada "Lei de Bayes."
+
+00:00:05.000 --> 00:00:07.000
+Já deverás ter ouvido falar anteriormente na Lei de Bayes.
+
+00:00:07.000 --> 00:00:12.000
+É uma peça fundamental na inferência probabilística,
+
+00:00:12.000 --> 00:00:17.000
+mas a regra básica é mesmo muito simples.
+
+00:00:17.000 --> 00:00:22.000
+Supõe que X é a minha célula e Z a minha medida.
+
+00:00:22.000 --> 00:00:27.000
+Então, na actualização após a medição, procura-se calcular uma crença na minha localização
+
+00:00:27.000 --> 00:00:29.000
+depois de ter observado a medida.
+
+00:00:29.000 --> 00:00:31.000
+Como é ela calculada?
+
+00:00:31.000 --> 00:00:34.000
+Bem, foi muito simples fazê-lo no nosso exemplo de localização.
+
+00:00:34.000 --> 00:00:36.000
+Vou repetir, mas mais formalmente.
+
+00:00:36.000 --> 00:00:38.000
+A Lei de Bayes tem esta aparência.
+
+00:00:38.000 --> 00:00:41.000
+Parece um pouco confusa,
+
+00:00:41.000 --> 00:00:45.000
+mas de facto o que faço é agarrar a minha distribuição a priori, P(X),
+
+00:00:45.000 --> 00:00:53.000
+e multiplico-a pela probabilidade de ver um quadrado vermelho ou verde, para todas as células possíveis
+
+00:00:53.000 --> 00:00:56.000
+e obtém-se, se olhares para este numerador,
+
+00:00:56.000 --> 00:01:00.000
+a distribuição não normalizada a posteriori obtida anteriormente.
+
+00:01:00.000 --> 00:01:04.000
+Reconheces? Isto era a nossa probabilidade a priori. E isto era a nossa probabilidade de medida.
+
+00:01:04.000 --> 00:01:08.000
+Se fizermos isto para todas as células, por isso ponho o índice "i" aqui,
+
+00:01:08.000 --> 00:01:16.000
+então isto é somente o produto da probabilidade a priori da célula pela probabilidade da medida,
+
+00:01:16.000 --> 00:01:19.000
+que era grande quando a medida correspondia à cor correcta
+
+00:01:19.000 --> 00:01:23.000
+e pequena quando correspondia à cor errada.
+
+00:01:23.000 --> 00:01:29.000
+Aquela multiplicação deu-nos a distribuição a posteriori não normalizada para a célula.
+
+00:01:29.000 --> 00:01:32.000
+Lembras-te decerto, porque o programaste.
+
+00:01:32.000 --> 00:01:37.000
+Programaste a multiplicação da probabilidade a priori por um número.
+
+00:01:37.000 --> 00:01:42.000
+E a normalização é esta constante -- P(Z).
+
+00:01:42.000 --> 00:01:49.000
+Tecnicamente, é a probabilidade de ver uma medida, sem qualquer informação sobre localização.
+
+00:01:49.000 --> 00:01:51.000
+Mas evitemos confusões.
+
+00:01:51.000 --> 00:01:54.000
+A maneira mais simples de entender o que se passa é reparar que
+
+00:01:54.000 --> 00:01:59.000
+isto é uma função que atribui um número a cada célula,
+
+00:01:59.000 --> 00:02:03.000
+e que o P(Z) não é indexado pelas células.
+
+00:02:03.000 --> 00:02:07.000
+Independentemente da célula que se considere, P(Z) é sempre a mesma.
+
+00:02:07.000 --> 00:02:09.000
+Eis o truque.
+
+00:02:09.000 --> 00:02:15.000
+Seja qual for P(Z), sabe-se que a distribuição a posteriori tem que ser uma distribuição de probabilidade válida,
+
+00:02:15.000 --> 00:02:19.000
+normalizando estes produtos não normalizados aqui,
+
+00:02:19.000 --> 00:02:22.000
+calculamos exactamente P(Z).
+
+00:02:22.000 --> 00:02:28.000
+Dito de outra forma, P(Z) é a soma, para todos os is, deste produto aqui.
+
+00:02:28.000 --> 00:02:30.000
+Isto torna a Lei de Bayes muito simples.
+
+00:02:30.000 --> 00:02:34.000
+É o produto da nossa distribuição a priori pela probabilidade da medida,
+
+00:02:34.000 --> 00:02:38.000
+que sabemos ser grande se a cor for correcta e pequena em caso contrário.
+
+00:02:38.000 --> 00:02:43.000
+Faz-se isto e atribuímos-lhe a probabilidade não normalizada,
+
+00:02:43.000 --> 00:02:46.000
+que vou denotar com uma barra sobre o P.
+
+00:02:46.000 --> 00:02:51.000
+Então calculo o normalizador, a que chamarei "α," e que é a somas destes aqui.
+
+00:02:51.000 --> 00:02:53.000
+Então normalizo.
+
+00:02:53.000 --> 00:02:58.000
+A probabilidade resultante será 1/α da probabilidade não normalizada.
+
+00:02:58.000 --> 09:59:59.000
+Isto é exactamente o que fizermos antes, e é exactamente a Lei de Bayes.
+

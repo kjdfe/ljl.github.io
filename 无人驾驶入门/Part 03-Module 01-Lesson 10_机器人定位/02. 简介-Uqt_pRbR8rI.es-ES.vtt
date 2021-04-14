@@ -1,0 +1,166 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:05.000
+Bienvenido al curso Inteligencia artificial en robótica.
+
+00:00:05.000 --> 00:00:08.000
+Estás entrando a una emocionante clase de 7 semanas
+
+00:00:08.000 --> 00:00:12.000
+en las cuales aprenderás a programar carros autoconducidos.
+
+00:00:12.000 --> 00:00:16.000
+Y solo como motivación a lo que estamos tratando de alcanzar en esta clase,
+
+00:00:16.000 --> 00:00:18.000
+déjame mostrarte unos videos.
+
+00:00:18.000 --> 00:00:25.000
+Mi interés en carros autoconducidos inició con el «DARPA Grand Challenge» [el Gran desafío DARPA] en el 2004
+
+00:00:25.000 --> 00:00:28.000
+en donde mi equipo en Stanford desarrolló Stanley,
+
+00:00:28.000 --> 00:00:31.000
+un robot que podía conducirse a si mismo a través del desierto de Mojave.
+
+00:00:31.000 --> 00:00:34.000
+El vehículo estaba basado en el Volkswagen Touareg
+
+00:00:34.000 --> 00:00:39.000
+que estaba equipado con toda clase de sensores como GPS y láser,
+
+00:00:39.000 --> 00:00:43.000
+Y era capaz de tomar sus propias decisiones sin intervención humana alguna.
+
+00:00:43.000 --> 00:00:46.000
+El gran desafío de DARPA fue una carrera patrocinada por el gobierno
+
+00:00:46.000 --> 00:00:48.000
+que tuvo lugar en el 2005.
+
+00:00:48.000 --> 00:00:52.000
+Aquí vemos a nuestro robot Stanley moviendose a través del desierto
+
+00:00:52.000 --> 00:00:55.000
+sin absolutamente ningún humano a bordo.
+
+00:00:55.000 --> 00:00:59.000
+La tarea era conducirse en un camino desértico a lo largo de 130 millas,
+
+00:00:59.000 --> 00:01:02.000
+y el que fuese más rápido ganaría la carrera.
+
+00:01:02.000 --> 00:01:05.000
+Aquí estamos adelantándonos al robot de la Universidad Carnegie Mellon
+
+00:01:05.000 --> 00:01:08.000
+al haber transcurrido cerca de 110 millas en la carrera.
+
+00:01:08.000 --> 00:01:13.000
+Nuestro robot fue capaz de navegar carreteras montañosas muy empinadas
+
+00:01:13.000 --> 00:01:18.000
+y evitar chocar con rocas o caerse al precipicio
+
+00:01:18.000 --> 00:01:23.000
+todo basado en su habilidad para usar lo que te voy a enseñar en esta clase.
+
+00:01:23.000 --> 00:01:29.000
+Luego de casi 7 horas y 131 millas nuestro robot regresó todo el camino hasta el punto de partida
+
+00:01:29.000 --> 00:01:33.000
+como el primer robot en finalizar el Gran desafío de DARPA
+
+00:01:33.000 --> 00:01:36.000
+ganando para la Universidad de Stanford 2 millones de dólares
+
+00:01:36.000 --> 00:01:42.000
+y para Stanley un lugar en el Museo Smithsoniano de Historia Americana.
+
+00:01:42.000 --> 00:01:47.000
+Este trabajo llevó al Desafío Urbano, en el cual construimos otro robot llamado Junior
+
+00:01:47.000 --> 00:01:49.000
+que eventualmente se llevó el segundo lugar.
+
+00:01:49.000 --> 00:01:52.000
+El Desafío Urbano fue un seguimiento a la carrera por parte de DARPA
+
+00:01:52.000 --> 00:01:55.000
+en el cual se requería que los vehículos condujeran en el tráfico,
+
+00:01:55.000 --> 00:01:59.000
+así que, mientas el Gran Desafío fue el rey de una pista desértica sin movimiento,
+
+00:01:59.000 --> 00:02:04.000
+esta era una simulación de una ciudad urbana en donde el robot era capaz de interactuar con el resto del tráfico
+
+00:02:04.000 --> 00:02:08.000
+y debía seguir las reglas de tránsito como en este giro a la izquierda.
+
+00:02:08.000 --> 00:02:11.000
+Tenía que permanecer en los carriles con muy alta precisión,
+
+00:02:11.000 --> 00:02:16.000
+acomodarse al tráfico en dirección contraria y conducir confidentemente
+
+00:02:16.000 --> 00:02:20.000
+en una situación que realmente se parecía a una pequeña ciudad.
+
+00:02:20.000 --> 00:02:24.000
+Esto llevó en Google a una serie de experimentos
+
+00:02:24.000 --> 00:02:26.000
+conocido como el vehículo autoconducido de Google.
+
+00:02:26.000 --> 00:02:30.000
+Creo que estos son los mejores carros robóticos circulando hoy en día.
+
+00:02:30.000 --> 00:02:34.000
+Aquí esta uno de nuestros Priuses en la Avenida University en Palo Alto
+
+00:02:35.500 --> 00:02:37.000
+sin ser detectado manejando como un conductor humano,
+
+00:02:37.000 --> 00:02:40.000
+pero este auto se iva manejando solo.
+
+00:02:40.000 --> 00:02:43.000
+Nuestros autos han sido capaces de manejar cientos de miles de millas
+
+00:02:43.000 --> 00:02:46.000
+en todo Californa y algunos lugares de Nevada,
+
+00:02:46.000 --> 00:02:53.000
+en areas centrales como San Francisco, en autopistas muy transitadas.
+
+00:02:53.000 --> 00:03:00.000
+Aquí en Monterrey, una pequeña ciudad costeña de California con muchos peatones.
+
+00:03:00.000 --> 00:03:06.000
+Todos estos son momentos en completa autoconducción en que el carro ha sido capaz de acomodarse
+
+00:03:06.000 --> 00:03:10.000
+a cosas como un venado en las luces frontales en medio de la noche
+
+00:03:10.000 --> 00:03:16.000
+o incluso la retorcida Calle Lombard en San Francisco como se muestra en este video.
+
+00:03:16.000 --> 00:03:19.000
+Esto es lo que hago en mi trabajo diario.
+
+00:03:19.000 --> 00:03:23.000
+Realmente nos encanta, con mi equipo, construir carros autoconducidos.
+
+00:03:23.000 --> 00:03:26.000
+Creemos que esto realmente cambiará el mundo,
+
+00:03:26.000 --> 00:03:31.000
+y en esta clase, esto es lo que yo espero permitirte hacer
+
+00:03:31.000 --> 09:59:59.000
+Comencemos.
+

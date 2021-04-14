@@ -1,0 +1,22 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:04.000
+La risposta è che tutti i valori sono traslati a destra.
+
+00:00:04.000 --> 00:00:09.000
+un nono nella casella più a sinistra va qui, un terzo qui
+
+00:00:09.000 --> 00:00:13.000
+e infine il nono più a destra si ritrova nella parte sinistra.
+
+00:00:13.000 --> 00:00:17.000
+Nel caso di movimento esatto, abbiamo un robot perfetto.
+
+00:00:17.000 --> 00:00:21.000
+Dobbiamo soltanto traslare le probabilità secondo il movimento effettivo del robot.
+
+00:00:21.000 --> 09:59:59.000
+Ora, questo è un caso degenere, ma è un buon caso da cui iniziare a programmare. Programmiamolo.
+

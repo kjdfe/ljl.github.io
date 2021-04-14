@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:04.000
+Adesso, vorrei che modificassi ulteriormente questo codice
+
+00:00:04.000 --> 00:00:06.000
+in modo da avere misure multiple.
+
+00:00:06.000 --> 00:00:10.000
+Invece di Z, creiamo un vettore di misure chiamato "measurements".
+
+00:00:10.000 --> 00:00:14.000
+Ipotizziamo che misuriamo prima "red" e poi "green".
+
+00:00:14.000 --> 00:00:17.000
+Puoi modificare il codice in modo che aggiorni la probabilità due volte
+
+00:00:17.000 --> 00:00:21.000
+e mi dia la distribuzione a posteriori dopo che entrambe queste misure sono state incorporate?
+
+00:00:21.000 --> 00:00:23.000
+O meglio, puoi modificarlo in modo
+
+00:00:23.000 --> 09:59:59.000
+che una qualunque sequenza di misure di qualunque lunghezza possa essere processata?
+

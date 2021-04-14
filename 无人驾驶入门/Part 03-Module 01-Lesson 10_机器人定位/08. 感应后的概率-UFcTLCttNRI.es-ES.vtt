@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:06.000
+Revisemos a la medida de este robot en este mundo con una malla de 5 celdas diferentes
+
+00:00:06.000 --> 00:00:09.000
+-x1 hasta x5-.
+
+00:00:09.000 --> 00:00:16.000
+Asumo que dos de estas están pintadas en rojo mientras las 3 restantes en verde.
+
+00:00:16.000 --> 00:00:21.000
+Como hicimos antes, asignaremos la misma probabilidad de 0.2 a cada una,
+
+00:00:21.000 --> 00:00:25.000
+y a nuestro robot ahora se le permite sentir.
+
+00:00:25.000 --> 00:00:29.000
+El ve de color rojo.
+
+00:00:29.000 --> 00:00:33.000
+¿Cómo afectará esto mi confianza sobre los diferentes sitios?
+
+00:00:33.000 --> 00:00:36.000
+Obviamente, debería subir en x2 y x3,
+
+00:00:36.000 --> 00:00:40.000
+y bajar para x1, x4 y x5.
+
+00:00:40.000 --> 00:00:45.000
+Voy a mostrarte como incorporar esta medida a nuestra confianza,
+
+00:00:45.000 --> 00:00:49.000
+con una simple regla: el producto.
+
+00:00:49.000 --> 00:00:53.000
+Cualquier celda donde el color es correcto -cualquier celda roja-
+
+00:00:53.000 --> 00:01:00.000
+la multiplicaremos por un número relativamente grande -el 0.6 por ejemplo-.
+
+00:01:00.000 --> 00:01:05.000
+Puede parecer pequeño, pero como veremos luego, es actualmente un gran número.
+
+00:01:05.000 --> 00:01:10.000
+Mientras todas las celdas verdes se multiplicarán por 0.2.
+
+00:01:10.000 --> 00:01:16.000
+Si nos fijamos en sus proporciones, vemos que hay cerca de 3 veces más probabilidad
+
+00:01:16.000 --> 00:01:19.000
+en una celda roja que en una verde,
+
+00:01:19.000 --> 00:01:23.000
+porque 0.6 es 3 veces más grande que 0.2.
+
+00:01:23.000 --> 00:01:25.000
+Hagamos la multiplicación.
+
+00:01:25.000 --> 00:01:30.000
+¿Por cada una de estas 5 celdas, puedes decirme que resultado debería dar
+
+00:01:30.000 --> 00:01:34.000
+multiplicando de la manera o con la medida que indiqué?
+
+00:01:34.000 --> 09:59:59.000
+Para estas 5 cajas, llénalas con el número correspondiente.
+

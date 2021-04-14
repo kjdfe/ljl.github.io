@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:04.000
+De hecho, me gustaría que modifiques este código un poco más
+
+00:00:04.000 --> 00:00:06.000
+de forma que tengamos múltiples medidas.
+
+00:00:06.000 --> 00:00:10.000
+En lugar de Z, haríamos un vector para hacer medidas llamado "measurements".
+
+00:00:10.000 --> 00:00:14.000
+Supongamos que tomamos primero el rojo y luego el verde.
+
+00:00:14.000 --> 00:00:17.000
+¿Puedes modificar el código para que actualice dos veces la probabilidad
+
+00:00:17.000 --> 00:00:21.000
+y nos de el posterior después de que ambas medidas son incorporadas?
+
+00:00:21.000 --> 00:00:23.000
+De hecho ¿Puedes cambiarlo de tal manera
+
+00:00:23.000 --> 09:59:59.000
+que cualquier secuencia de medidas de cualquier longitud sean procesadas?
+

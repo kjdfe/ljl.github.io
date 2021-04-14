@@ -1,0 +1,202 @@
+WEBVTT
+Kind: captions
+Language: es
+
+00:00:00.000 --> 00:00:05.000
+Te contaré la historia del mundo donde nuestro robot reside.
+
+00:00:05.000 --> 00:00:09.000
+Asumo que el robot no tiene idea de donde está.
+
+00:00:09.000 --> 00:00:14.000
+Entonces remodelaremos esto con una función -Voy a dibujar este diagrama aquí
+
+00:00:14.000 --> 00:00:20.000
+donde el eje vertical tiene la probabilidad de cualquier ubicación en este mundo
+
+00:00:20.000 --> 00:00:25.000
+y el eje horizontal se corresponde con todos los lugares en este mundo de 1 dimensión.-
+
+00:00:25.000 --> 00:00:29.000
+De forma que voy a dibujar el robot donde actualmente creo puede estar,
+
+00:00:29.000 --> 00:00:33.000
+esta confusión es por una función uniforme que asigna el mismo peso
+
+00:00:33.000 --> 00:00:36.000
+para cada lugar posible en este mundo.
+
+00:00:36.000 --> 00:00:39.000
+Es el máximo estado de confusión.
+
+00:00:39.000 --> 00:00:42.000
+Ahora, para localizar el mundo tienes que tener algunas características distintivas.
+
+00:00:42.000 --> 00:00:46.000
+Asumiré que hay tres diferentes puertas en el mundo.
+
+00:00:46.000 --> 00:00:55.000
+Una por aquí, otra por acá, y la 3ra por este sitio.
+
+00:00:55.000 --> 00:00:57.000
+Para un buen argumento,
+
+00:00:57.000 --> 00:00:59.000
+asumo que todas son iguales, de manera que no se pueden distinguir,
+
+00:00:59.000 --> 00:01:04.000
+pero puedes distinguir una puerta de lo que no es una puerta -la pared por ejemplo-
+
+00:01:04.000 --> 00:01:09.000
+Veamos como puede ubicarse a si mismo el robot asumiendo sus sensores,
+
+00:01:09.000 --> 00:01:12.000
+y el siente que está al lado de la puerta.
+
+00:01:12.000 --> 00:01:17.000
+Lo único que sabe es que está ubicado, probablemente, cerca de una puerta.
+
+00:01:17.000 --> 00:01:20.000
+¿Pero esto debería afectar nuestra confianza?
+
+00:01:20.000 --> 00:01:23.000
+Aquí esta el paso critico para la localización.
+
+00:01:23.000 --> 00:01:26.000
+Si lo entiendes, entonces entiendes la localización.
+
+00:01:26.000 --> 00:01:30.000
+La dimensión de una puerta transforma nuestra función de confianza,
+
+00:01:30.000 --> 00:01:35.000
+definida sobre posibles ubicaciones, para una nueva función que se parece mucho a esto.
+
+00:01:35.000 --> 00:01:42.000
+Para las 3 ubicación cercanas a las puertas, tenemos un incremento de la confianza de estar ahí
+
+00:01:42.000 --> 00:01:46.000
+mientras que todas las otras ubicaciones tienen un decremento de la confianza.
+
+00:01:46.000 --> 00:01:51.000
+Esta es una distribución probable que asigna alta probabilidad al lado de la puerta,
+
+00:01:51.000 --> 00:02:00.000
+y es llamada confianza posterior donde la palabra "posterior" significa después que una medida ha sido tomada.
+
+00:02:00.000 --> 00:02:04.000
+Ahora, el aspecto clave de esta confianza es aún no sabemos donde estamos.
+
+00:02:04.000 --> 00:02:07.000
+Hay tres posibles ubicaciones de las puertas, y de hecho, puede ser
+
+00:02:07.000 --> 00:02:11.000
+que los sensores han fallado, y accidentalmente vimos una puerta donde no había.
+
+00:02:11.000 --> 00:02:16.000
+Se mantiene una probabilidad residual de que este en uno de estos lugares,
+
+00:02:16.000 --> 00:02:22.000
+pero hay tres picos juntos que realmente expresan la mejor confianza de donde estamos.
+
+00:02:22.000 --> 00:02:29.000
+Esta representación es absolutamente  esencial para la probabilidad y para más ubicaciones en el mundo.
+
+00:02:29.000 --> 00:02:32.000
+Ahora asumo que el robot se mueve.
+
+00:02:32.000 --> 00:02:35.000
+Se mueve cierta distancia hacia la derecha.
+
+00:02:35.000 --> 00:02:40.000
+Entonces podemos variar la confianza acorde al movimiento.
+
+00:02:40.000 --> 00:02:43.000
+Y esto podría ser así más o menos.
+
+00:02:43.000 --> 00:02:46.000
+Así este incremento(pico) aquí, llega hasta aquí.
+
+00:02:46.000 --> 00:02:50.000
+Este chico quiere estar aquí, y este otro aquí.
+
+00:02:50.000 --> 00:02:53.000
+Obviamente, este robot sabe su dirección inicial.
+
+00:02:53.000 --> 00:02:56.000
+Se esta moviendo a la derecha en este ejemplo,
+
+00:02:56.000 --> 00:02:58.000
+y sabe aproximadamente cuanto se movió.
+
+00:02:58.000 --> 00:03:00.000
+Ahora, el movimiento del robot es algo incierto.
+
+00:03:00.000 --> 00:03:02.000
+Puede nunca ser cierto donde el robot se movió.
+
+00:03:02.000 --> 00:03:06.000
+Estas cosas son un algo más planas y pequeñas que estos chicos de aquí.
+
+00:03:06.000 --> 00:03:11.000
+El proceso de movimiento de las ondas hacia el lado derecho es técnicamente llamado una convolución.
+
+00:03:11.000 --> 00:03:15.000
+Asumo ahora que el robot siente de nuevo, y un buen argumento,
+
+00:03:15.000 --> 00:03:19.000
+asumo que el se ve al lado de una puerta de nuevo,
+
+00:03:19.000 --> 00:03:21.000
+así la medida es la misma que antes.
+
+00:03:21.000 --> 00:03:24.000
+Ahora la más impresionante situación sucede.
+
+00:03:24.000 --> 00:03:29.000
+Terminamos de multiplicar la confianza, que es prioridad para la segunda medida,
+
+00:03:29.000 --> 00:03:32.000
+con una función muy parecida a esta de aquí,
+
+00:03:32.000 --> 00:03:37.000
+que tiene un pico en cada puerta y con confianza semejante a la siguiente.
+
+00:03:37.000 --> 00:03:42.000
+Hay un par de bultos(picos) menores, pero realmente el más grande es este de aquí.
+
+00:03:42.000 --> 00:03:48.000
+Este corresponde a el anterior aquí,
+
+00:03:48.000 --> 00:03:53.000
+y es el único lugar en esta prioridad que realmente corresponde a la medida de una puerta,
+
+00:03:53.000 --> 00:03:57.000
+mientras todas las ubicaciones del resto de puertas tienen una baja confianza.
+
+00:03:57.000 --> 00:04:01.000
+Como un resultado, esta función es realmente interesante.
+
+00:04:01.000 --> 00:04:04.000
+Es una distribución que se centra mayormente en este peso
+
+00:04:04.000 --> 00:04:07.000
+la hipótesis correcta del mundo esta en la segunda puerta,
+
+00:04:07.000 --> 00:04:12.000
+proporcionando una muy pequeña confianza para sitios lejos de las puertas.
+
+00:04:12.000 --> 00:04:16.000
+En este punto, nuestro robot se ha localizado por si mismo.
+
+00:04:16.000 --> 00:04:21.000
+Si entendiste esto, tu entiendes la probabilidad, y entiendes la localización.
+
+00:04:21.000 --> 00:04:26.000
+Así que felicitaciones. Entiendes probabilidad y localización.
+
+00:04:26.000 --> 00:04:30.000
+Puedes que ahora no sepas, pero es el aspecto fundamental para entender
+
+00:04:30.000 --> 99:59:59.000
+un montón de cosas que voy a enseñar en estas clases.
+

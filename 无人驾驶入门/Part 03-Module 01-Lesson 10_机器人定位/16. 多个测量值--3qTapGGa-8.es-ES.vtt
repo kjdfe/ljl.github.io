@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:02.000
+La modificación es simple.
+
+00:00:02.000 --> 00:00:05.000
+Vamos a llamar el procedimiento "sense" varias veces,
+
+00:00:05.000 --> 00:00:09.000
+de hecho, tantas veces como se tienen medidas, que es el "for loop" de aquí,
+
+00:00:09.000 --> 00:00:14.000
+agarramos el elemento de medición K y lo aplicamos a la creencia actual.
+
+00:00:14.000 --> 00:00:18.000
+A continuación, de forma recursiva actualizar esa creencia en sí misma.
+
+00:00:18.000 --> 00:00:21.000
+En este caso, lo ejecutamos dos veces. Imprimimos el resultado.
+
+00:00:21.000 --> 00:00:24.000
+En este ejemplo específico, obtenemos la distribución uniforme.
+
+00:00:24.000 --> 00:00:27.000
+Estos son todos 0.2 aproximadamente.
+
+00:00:27.000 --> 00:00:32.000
+La razón es que harriva multiplicamos cada campo una vez para el 0,6
+
+00:00:32.000 --> 00:00:34.000
+y abajo lo multiplicamos por el 0,2.
+
+00:00:34.000 --> 00:00:38.000
+Y estos efectos fueron en total el mismo para cada celda.
+
+00:00:38.000 --> 09:59:59.000
+Como resultado, obtenemos el mismo resultado aquí. Es bastante notable.
+

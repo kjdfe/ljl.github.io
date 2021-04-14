@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:04.000
+La risposta in realtà è sempre 0.2 in tutte le caselle
+
+00:00:04.000 --> 00:00:07.000
+e la ragione è che siccome ogni casella ha la stessa probabilità
+
+00:00:07.000 --> 00:00:11.000
+applicare questo modello di spostamento dà di nuovo ad ogni casella la stessa probabilità
+
+00:00:11.000 --> 00:00:13.000
+Prendiamone una, diciamo questa qui.
+
+00:00:13.000 --> 00:00:16.000
+Potremmo esserci arrivati in tre modi diversi:
+
+00:00:16.000 --> 00:00:22.000
+magari siamo partiti da x2 e lo spostamento è stato corretto,
+
+00:00:22.000 --> 00:00:28.000
+questo ci dà 0.2 x 0.8
+
+00:00:28.000 --> 00:00:31.000
+O magari siamo partiti da x1 e abbiamo superato il nostro goal,
+
+00:00:31.000 --> 00:00:39.000
+il che ci dà uno 0.2, per la cella x1, moltiplicato per 0.1 per aver superato il goal.
+
+00:00:39.000 --> 00:00:46.000
+O forse siamo partiti da x3 e non siamo arrivati a destinazione, che ci dà 0.2 x 0.1.
+
+00:00:46.000 --> 00:00:51.000
+Se sommiamo questi valori, vediamo che è lo stesso che 0.2 x 1,
+
+00:00:51.000 --> 00:00:56.000
+perché questi fattori sommati danno esattamente 1, il che fa 0.2
+
+00:00:56.000 --> 00:00:59.000
+E il risultato è 0.2
+
+00:00:59.000 --> 00:01:01.000
+Puoi applicare la stessa logica alle altre caselle.
+
+00:01:01.000 --> 00:01:05.000
+Questa posizione potrebbe venire da qui, da qui o da qui,
+
+00:01:05.000 --> 00:01:10.000
+dove questa pesa 0.8 e le altre due 0.1.
+
+00:01:10.000 --> 00:01:12.000
+Questa si chiama convoluzione,
+
+00:01:12.000 --> 00:01:15.000
+e come vedremo più avanti, c'è un modo molto elegante di scriverlo matematicamente
+
+00:01:15.000 --> 00:01:18.000
+in un modo chiamato Teorema della Probabilità Totale.
+
+00:01:18.000 --> 09:59:59.000
+Ma per ora, voglio programmare questo esempio.
+

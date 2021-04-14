@@ -1,0 +1,13 @@
+WEBVTT
+Kind: captions
+Language: pt-PT
+
+00:00:00.000 --> 00:00:04.000
+Agora, na nossa janela interactiva com Python, quero modificar este código,
+
+00:00:04.000 --> 00:00:08.000
+que inicializa p com uma lista vazia, de forma que p passe a representar
+
+00:00:08.000 --> 09:59:59.000
+uma distribuição uniforme repartida por 5 células, expressa num vector contendo 5 probabilidades.
+

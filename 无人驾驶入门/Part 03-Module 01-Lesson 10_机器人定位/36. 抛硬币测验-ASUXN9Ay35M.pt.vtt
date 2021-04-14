@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: pt
+
+00:00:00.000 --> 00:00:07.000
+A resposta é 1/4. É fácil de ver que a probabilidade de caras no passo 2
+
+00:00:07.000 --> 00:00:13.000
+é e probabilidade de caras no passo 2 condicionada por caras no passo 1
+
+00:00:13.000 --> 00:00:16.000
+vezes a probabilidade de caras no passo 1.
+
+00:00:16.000 --> 00:00:22.000
+mais, essa é a soma, a probabilidade de caras no passo 2
+
+00:00:22.000 --> 00:00:28.000
+dado que saíu coroa no passo 1 vezes a probabilidade de coroa no passo 1.
+
+00:00:28.000 --> 00:00:32.000
+Bem, da forma que escrevi, estas coisas aqui são equiprováveis.
+
+00:00:32.000 --> 00:00:35.000
+Porém, se saísse coroa no passo 1,
+
+00:00:35.000 --> 00:00:38.000
+nunca repetiríamos a experiência, e aceitávamos o resultado.
+
+00:00:38.000 --> 00:00:44.000
+Assim, é impossível ter caras no passo 2, dado que saíu coroa no passo 1: esta probabilidade é zero.
+
+00:00:44.000 --> 00:00:50.000
+Enquanto se sai cara no passo 1, atiro a moeda de novo e com 50% de probabilidade obterei caras.
+
+00:00:50.000 --> 00:00:54.000
+Olhando para aqui, tudo isto é zero,
+
+00:00:54.000 --> 99:59:59.000
+e estes multiplicam-se e dá 1/4, e a resposta final é 1/4.
+

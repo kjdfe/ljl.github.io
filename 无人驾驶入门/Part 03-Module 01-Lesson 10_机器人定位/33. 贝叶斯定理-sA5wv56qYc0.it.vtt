@@ -1,0 +1,139 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:05.000
+Adesso vediamo le misurazioni, ci porteranno a una cosa chiamata "Regola di Bayes"
+
+00:00:05.000 --> 00:00:07.000
+Potresti aver già sentito parlare della Regola di Bayes,
+
+00:00:07.000 --> 00:00:12.000
+è la considerazione più importante nell'inferenza probabilistica,
+
+00:00:12.000 --> 00:00:17.000
+ma la regola di base è molto, molto semplice.
+
+00:00:17.000 --> 00:00:22.000
+Supponi che x sia la casella e Z la lettura del sensore,
+
+00:00:22.000 --> 00:00:27.000
+l'aggiornamento dopo la misura cerca di calcolare il belief della mia posizione
+
+00:00:27.000 --> 00:00:29.000
+dopo aver letto la misura.
+
+00:00:29.000 --> 00:00:31.000
+Come si calcola?
+
+00:00:31.000 --> 00:00:34.000
+Era molto semplice da calcolare nel nostro esempio di localizzazione.
+
+00:00:34.000 --> 00:00:36.000
+Adesso lo rendo un po' più formale.
+
+00:00:36.000 --> 00:00:38.000
+La Regola di Bayes è questa: P(X|Z) = P(Z|X)P(X)/P(Z)
+
+00:00:38.000 --> 00:00:41.000
+Probabilmente sembra complicato,
+
+00:00:41.000 --> 00:00:45.000
+ma quello che fa è prendere la distribuzione a priori, P(X),
+
+00:00:45.000 --> 00:00:53.000
+e moltiplicarla per le possibilità di misurare un "red" o un "green" in una qualunque casella possibile.
+
+00:00:53.000 --> 00:00:56.000
+E ne risulta, se guardi questo denominatore,
+
+00:00:56.000 --> 00:01:00.000
+la distribuzione a posteriori non normalizzata che avevamo prima.
+
+00:01:00.000 --> 00:01:04.000
+La riconosci? Questa era la distribuzione a priori, questa la probabilità della misura.
+
+00:01:04.000 --> 00:01:08.000
+Se lo ripetiamo per tutte le posizioni, aggiungendo un indice "i" qui,
+
+00:01:08.000 --> 00:01:16.000
+allora il prodotto della probabilià a priori della cella per la probabilità della misura,
+
+00:01:16.000 --> 00:01:19.000
+che era grande se la misura corrispondeva al colore corretto
+
+00:01:19.000 --> 00:01:23.000
+e piccola se il colore era sbagliato,
+
+00:01:23.000 --> 00:01:29.000
+quel prodotto ci dava la distribuzione a posteriori per la casella.
+
+00:01:29.000 --> 00:01:32.000
+Dovresti ricordartelo perché lo hai programmato.
+
+00:01:32.000 --> 00:01:37.000
+Hai programmato un prodotto tra una distribuzione di probabilità a priori e un numero.
+
+00:01:37.000 --> 00:01:42.000
+La normalizzazione è questa costante, P(Z).
+
+00:01:42.000 --> 00:01:49.000
+Tecnicamente, è la probabilità di vedere una certa misura indipendentemente da qualunque informazione sulla posizione,
+
+00:01:49.000 --> 00:01:51.000
+ma cerchiamo di confonderci.
+
+00:01:51.000 --> 00:01:54.000
+Il modo più semplice di capire cosa succede, è rendersi conto
+
+00:01:54.000 --> 00:01:59.000
+che questo è una funzione che assegna a ogni casella un numero,
+
+00:01:59.000 --> 00:02:03.000
+e che p(Z) non ha l'indice della casella.
+
+00:02:03.000 --> 00:02:07.000
+Non importa quale casella consideri, P(Z) è sempre lo stesso.
+
+00:02:07.000 --> 00:02:09.000
+Qui sta il trucco.
+
+00:02:09.000 --> 00:02:15.000
+Qualunque sia P(Z), siccome la distribuzione a posteriori deve essere una distribuzione di probabilità,
+
+00:02:15.000 --> 00:02:19.000
+normalizzando questi prodotti non-normalizzati,
+
+00:02:19.000 --> 00:02:22.000
+calcoliamo esattamente P(Z).
+
+00:02:22.000 --> 00:02:28.000
+Detta in un altro modo, P(Z) è la somma per ogni i di questo prodotto.
+
+00:02:28.000 --> 00:02:30.000
+Questo rende la Regola di Bayes molto semplice.
+
+00:02:30.000 --> 00:02:34.000
+E' il prodotto della distribuzione a priori, con la probabilità della lettura,
+
+00:02:34.000 --> 00:02:38.000
+che sappiamo essere grande se il colore è giusto e piccola altrimenti.
+
+00:02:38.000 --> 00:02:43.000
+Facciamo il prodotto e lo assegnamo alla cosiddetta probabilità non-normalizzata,
+
+00:02:43.000 --> 00:02:46.000
+che indico con un soprassegno qui sopra la P.
+
+00:02:46.000 --> 00:02:51.000
+Poi calcolo il normalizzatore, che chiamo alfa, è la somma di tutti questi valori.
+
+00:02:51.000 --> 00:02:53.000
+Poi semplicemente normalizzo.
+
+00:02:53.000 --> 00:02:58.000
+La mia probabilità risultante sarà 1/α della probabilità non-normalizzata.
+
+00:02:58.000 --> 09:59:59.000
+E' esattamente quello che ho fatto, e questa è esattamente la Regola di Bayes
+

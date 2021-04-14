@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:06.000
+Adesso ti chiedo la Regola di Bayes nel contesto di un esempio completamente diverso
+
+00:00:06.000 --> 00:00:09.000
+per vedere se hai capito come applicare la Regola di Bayes.
+
+00:00:09.000 --> 00:00:12.000
+Questa volta si tratta di un test sul cancro.
+
+00:00:12.000 --> 00:00:15.000
+E' un esempio comunemente studiato nei corsi di statistica.
+
+00:00:15.000 --> 00:00:18.000
+Supponi che esista un certo tipo di cancro,
+
+00:00:18.000 --> 00:00:22.000
+ma questo cancro è molto raro, solo una persona su mille lo ha
+
+00:00:22.000 --> 00:00:26.000
+mentre 999 persone su 1000 non lo hanno,
+
+00:00:26.000 --> 00:00:29.000
+mostrato dalla probabilità di Cancro e dalla probabilità di non-Cancro.
+
+00:00:29.000 --> 00:00:33.000
+Immagina di avere un test, e il test puà risultare positivo o negativo.
+
+00:00:33.000 --> 00:00:38.000
+La probabilità che il test risulti positivo se ho il cancro è 0.8
+
+00:00:38.000 --> 00:00:44.000
+e la probabilità che il test risulti positivo se non ho il cancro è solo 0.1
+
+00:00:44.000 --> 00:00:47.000
+Ovviamente il test ha una forte correlazione al fatto che io abbia il cancro o no.
+
+00:00:47.000 --> 00:00:50.000
+Questa è una domanda difficile:
+
+00:00:50.000 --> 00:00:56.000
+sai calcolare la probabilità di Cancro, dato un risultato positivo del test?
+
+00:00:56.000 --> 00:01:00.000
+Lasciami rimarcare che questa domanda non è facile, ma dovresti essere in grado,
+
+00:01:00.000 --> 00:01:03.000
+basato su ciò che ti ho insegnato, di calcolare questo risultato.
+
+00:01:03.000 --> 00:01:07.000
+Pensa a Cancro/nonCancro come alla posizione del robot
+
+00:01:07.000 --> 09:59:59.000
+e pensa al risultato positivo come a sapere se il colore osservato è quello giusto.
+

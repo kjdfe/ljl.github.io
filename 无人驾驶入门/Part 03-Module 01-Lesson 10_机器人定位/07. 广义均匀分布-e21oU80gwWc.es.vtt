@@ -1,0 +1,19 @@
+WEBVTT
+Kind: captions
+Language: es
+
+00:00:00.014 --> 00:00:05.000
+Veamos si podemos modificar esto para hacer un vector de longitud n
+
+00:00:05.000 --> 00:00:11.000
+donde pueda variar el valor de n y obtener un vector con n elementos.
+
+00:00:11.000 --> 00:00:13.097
+Para cualquiera con 5, obtuvimos el mismo resultado que antes,
+
+00:00:14.012 --> 00:00:17.075
+pero para cualquiera con 10, debería obtener un vector de longitud 10.
+
+00:00:17.075 --> 00:00:22.046
+de los cuales cada uno deberia tener el valor de cero.
+

@@ -1,0 +1,16 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:05.000
+Un modo di farlo è di considerare esplicitamente tutti i 5 casi da 0 a 4
+
+00:00:05.000 --> 00:00:09.000
+e moltiplicare manualmente il caso miss (errato) o hit (corretto)
+
+00:00:09.000 --> 00:00:12.000
+Non è particolarmente elegante, ma fa il suo mestiere
+
+00:00:12.000 --> 09:59:59.000
+e quando clicco il bottone "run" abbiamo la risposta corretta, non normalizzata.
+

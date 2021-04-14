@@ -1,0 +1,25 @@
+WEBVTT
+Kind: captions
+Language: pt-PT
+
+00:00:00.000 --> 00:00:05.000
+Formalmente define-se uma função de probabilidade, P(X),
+
+00:00:05.000 --> 00:00:09.000
+cujo contra-domínio está limitado ao intervalo entre 0 e 1 (para domínios de X discretos).
+
+00:00:09.000 --> 00:00:11.000
+Em geral, X pode ser um de múltiplos valores.
+
+00:00:11.000 --> 00:00:13.000
+No nosso caso tínhamos 5 células.
+
+00:00:13.000 --> 00:00:18.000
+Supõe que X só pode tomar 2 valores -- há somente 2 células, x1 e x2.
+
+00:00:18.000 --> 00:00:23.000
+Se a probabilidade para x1 for 0.2, qual seria a probabilidade para x2?
+
+00:00:23.000 --> 09:59:59.000
+Escreve esse número. Obviamente, isto é um questionário.
+

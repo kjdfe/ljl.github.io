@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: pt
+
+00:00:00.021 --> 00:00:06.040
+E a resposta é 0.0079.
+
+00:00:06.040 --> 00:00:11.004
+Por outras palavras, há sómente 0.79% de probabilidade,
+
+00:00:11.004 --> 00:00:15.021
+0.79 em 100 (menos de 1%) de que, apesar do teste positivo,
+
+00:00:15.021 --> 00:00:17.088
+tu tenhas cancro. E vamos aplicar
+
+00:00:17.088 --> 00:00:19.093
+exactamente o mesmo algoritmo que anteriormente.
+
+00:00:19.093 --> 00:00:25.029
+O resultado da Lei de Bayes, não-normalizado de C dado POS
+
+00:00:25.029 --> 00:00:32.025
+é simplesmente o produto da minha probabilidade a priori, 0.001 vezes 0.8,
+
+00:00:32.025 --> 00:00:37.017
+que é a probabilidade de um resultado positivo relativamente à existência de cancro.
+
+00:00:37.017 --> 00:00:41.005
+E isso acaba por ser 0.0008.
+
+00:00:41.005 --> 00:00:44.003
+A probabilidade não normalizada para o acontecimento oposto,
+
+00:00:44.003 --> 00:00:46.075
+a não existência de cancro, dado um teste positivo,
+
+00:00:46.075 --> 00:00:55.020
+é 0.999 vezes 0.1. E isso é obviamente 0.0999.
+
+00:00:55.020 --> 00:01:02.068
+O nosso normalizador é a soma destes dois, 0.1007
+
+00:01:02.068 --> 00:01:05.004
+soma só estes dois valores aqui em cima.
+
+00:01:05.004 --> 00:01:09.004
+Assim, dividindo 0.0008, a probabilidade não normalizada,
+
+00:01:09.004 --> 00:01:14.076
+por 0.1007 dá 0.0079.
+
+00:01:14.077 --> 00:01:18.057
+Acabámos de aplicar a Lei de Bayes para calcular uma difícil
+
+00:01:18.057 --> 99:59:59.000
+probabilidade de ter cancro, após saber o resultado de um teste.
+

@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: pt-PT
+
+00:00:00.000 --> 00:00:02.000
+A solução é simples.
+
+00:00:02.000 --> 00:00:05.000
+Usa um ciclo 'for' como se mostra aqui,
+
+00:00:05.000 --> 00:00:10.000
+que serve para pendurar na lista os n elementos, cada um deles a valer 1/n.
+
+00:00:10.000 --> 00:00:12.000
+Este pontinho aqui é muito importante.
+
+00:00:12.000 --> 00:00:15.000
+Obriga a divisão '/' a operar em modo de vírgula flutuante.
+
+00:00:15.000 --> 00:00:18.000
+Infelizmente, se não usássemos o ponto, o resultado seria um vector de zeros,
+
+00:00:18.000 --> 00:00:20.000
+que não é o pretendido.
+
+00:00:20.000 --> 09:59:59.000
+Agora já podemos inicializar a crença inicial do robot neste mundo.
+

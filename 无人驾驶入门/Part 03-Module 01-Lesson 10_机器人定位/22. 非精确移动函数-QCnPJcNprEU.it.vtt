@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:02.000
+Vediamo un modo di implementarlo.
+
+00:00:02.000 --> 00:00:05.000
+Introduciamo una variabile ausiliaria "s",
+
+00:00:05.000 --> 00:00:07.000
+che calcoliamo in tre passi successivi.
+
+00:00:07.000 --> 00:00:15.000
+Moltiplichiamo il valore di p come prima, prendendo il set-off corretto [i-U], per pExact
+
+00:00:15.000 --> 00:00:21.000
+Poi a questo aggiungiamo gli altri due moltiplicati per pOvershoot o pUndershoot,
+
+00:00:21.000 --> 00:00:25.000
+in cui overshoot è andare un passo più in là di U
+
+00:00:25.000 --> 00:00:28.000
+e undershoot è ridurre la distanza di 1.
+
+00:00:28.000 --> 00:00:32.000
+Poi sommiamo questi valori e finalmente accodiamo la somma
+
+00:00:32.000 --> 00:00:35.000
+alla nostra probabilità risultante q.
+
+00:00:35.000 --> 00:00:42.000
+Quando lo eseguiamo, per una distribuzione a priori di [0, 1, 0, 0, 0]
+
+00:00:42.000 --> 09:59:59.000
+la risposta è 0, 0.1, 0.8, 0.1 e 0
+

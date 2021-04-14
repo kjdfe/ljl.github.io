@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:03.000
+Y esta es una pregunta muy difícil, que voy a contestar en dos fases.
+
+00:00:03.000 --> 00:00:11.000
+Vamos a ver el 0.5 de aquí, por 0.8, es 0.4,
+
+00:00:11.000 --> 00:00:17.000
+y 0.1, por 0,5.
+
+00:00:17.000 --> 00:00:23.000
+Y la razón por la que escribo tan pequeño es porque esta no es la respuesta correcta todavía.
+
+00:00:23.000 --> 00:00:25.000
+Echemos un vistazo al otro 0.5.
+
+00:00:25.000 --> 00:00:30.000
+0.4 - avanza dos pasos 1, 2, termina aquí en el lado izquierdo,
+
+00:00:30.000 --> 00:00:38.000
+pero 0,1 se queda corto, hace 0.05 por aquí, y 0.05 en la segunda celda del vector.
+
+00:00:38.000 --> 00:00:42.000
+Y, curiosamente, para la celda del lado derecho,
+
+00:00:42.000 --> 00:00:45.000
+hay dos formas posibles por el que podría haber llegado hasta aquí.
+
+00:00:45.000 --> 00:00:49.000
+Ya sea por sobrepasamiento comenzando en la segunda celda,
+
+00:00:49.000 --> 00:00:52.000
+o quedandose corto empezando por la celda de la derecha.
+
+00:00:52.000 --> 00:00:56.000
+Así que la probabilidad total de aquí es la suma de estas dos cosas, 0.1.
+
+00:00:56.000 --> 09:59:59.000
+Así que esta es la respuesta final: 0.4, 0.05, 0.05, 0.4, y 0.1.
+

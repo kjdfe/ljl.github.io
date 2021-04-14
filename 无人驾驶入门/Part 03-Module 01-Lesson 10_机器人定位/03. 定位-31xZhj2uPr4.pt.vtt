@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: pt
+
+00:00:00.000 --> 00:00:05.000
+O problema que vai iniciar as hostilidades é chamado "Localização."
+
+00:00:05.000 --> 00:00:07.029
+Envolve um robot que está perdido no espaço.
+
+00:00:07.029 --> 00:00:10.027
+Poderia ser um carro, ou poderia ser um qualquer robot móvel.
+
+00:00:10.027 --> 00:00:15.000
+Eis o ambiente em que o pobrezito se move, sem ter quaisquer pistas sobre a sua posição.
+
+00:00:15.000 --> 00:00:19.073
+De igual modo, poderíamos pensar num carro rodando numa auto-estrada,
+
+00:00:19.073 --> 00:00:22.049
+e este carro gostaria de saber onde está.
+
+00:00:22.049 --> 00:00:25.081
+Estará dentro da faixa de rodagem, ou estará pisando o risco limite?
+
+00:00:25.081 --> 00:00:29.016
+Bem, a maneira tradicional de resolver este problema é recorrendo a satélites.
+
+00:00:29.016 --> 00:00:33.038
+Estes satélites emitem sinais que o carro pode entender.
+
+00:00:33.038 --> 00:00:37.069
+É o GPS, sigla de "Sistema de Posicionamento Global,"
+
+00:00:37.069 --> 00:00:41.010
+e é aquilo que tem no seu tablier, se tiver um carro com GPS
+
+00:00:41.010 --> 00:00:43.093
+que lhe mostra os mapas e indica a sua posição.
+
+00:00:43.093 --> 00:00:49.000
+Infelizmente o problema do GPS é não ser preciso.
+
+00:00:49.000 --> 00:00:54.000
+É comum um carro acreditar na informação do GPS mas
+
+00:00:54.000 --> 00:00:56.043
+estar entre 2 e 10 metros de distância da posição indicada.
+
+00:00:56.043 --> 00:00:59.026
+Por isso, se tentarmos ficar na faixa de rodagem usando informação com 10 metros de erro
+
+00:00:59.026 --> 00:01:04.079
+estamos tramados, vamos desviar-nos para aqui e espatifar o carro.
+
+00:01:04.079 --> 00:01:10.000
+Assim, para que os nossos carros-robot autónomos permaneçam na faixa correcta usando localização,
+
+00:01:10.000 --> 00:01:14.023
+precisamos de um atingir um erro entre 2 e 10 centímetros.
+
+00:01:14.023 --> 00:01:17.063
+Se o GPS conseguir isso, podemos utilizá-lo na navegação.
+
+00:01:17.063 --> 00:01:23.000
+A questão é: como determinar a posição com um erro inferior a 10 cm?
+
+00:01:23.000 --> 00:01:26.086
+Esse é o problema da localização.
+
+00:01:26.089 --> 00:01:31.098
+No carro sem condutor da Google, a localização tem um papel determinante.
+
+00:01:31.098 --> 00:01:37.092
+Registamos imagens da superfície da estrada e usamos as técnicas
+
+00:01:37.092 --> 00:01:42.006
+que te vou ensinar daqui a pouco para saber exactamente onde está o robot.
+
+00:01:42.006 --> 00:01:45.003
+Faz-se isso com uma precisão de poucos centímetros,
+
+00:01:45.003 --> 00:01:50.038
+e isso permite-nos ficar na faixa de rodagem, mesmo quando os riscos delimitadores desaparecem.
+
+00:01:50.038 --> 00:01:54.096
+A localização usa muita matemática, mas antes de entrar em detalhes matemáticos,
+
+00:01:54.098 --> 00:01:58.063
+quero transmitir-te os princípios básicos intuitivamente.
+
+00:01:58.063 --> 00:02:01.000
+Vou-te contar a história de como iremos localizar isto,
+
+00:02:01.000 --> 00:02:04.003
+e depois vamos mergulhar juntos na matemática para que possas compreender o processo.
+
+00:02:04.003 --> 00:02:06.098
+E também quero que programes o teu próprio localizador
+
+00:02:06.098 --> 00:02:18.000
+para que possas criar um carro sem condutor.
+

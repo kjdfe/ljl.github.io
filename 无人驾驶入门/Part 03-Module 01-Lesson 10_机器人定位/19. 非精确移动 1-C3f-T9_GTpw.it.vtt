@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:03.000
+Parliamo adesso dello spostamento non perfetto,
+
+00:00:03.000 --> 00:00:05.000
+Abbiamo ancora 5 caselle.
+
+00:00:05.000 --> 00:00:12.000
+Ipotizziamo che il robot esegua correttamente la sua azione con una probabilità alta, diciamo 0.8,
+
+00:00:12.000 --> 00:00:16.000
+Ma con probabilità 0.1 va corto rispetto all'azione desiderata
+
+00:00:16.000 --> 00:00:21.000
+e con un'altra probabilità 0.1 va troppo lungo.
+
+00:00:21.000 --> 00:00:26.000
+Si può usare la stessa definizione per altri valori di U. Diciamo U=1
+
+00:00:26.000 --> 00:00:29.000
+Allora con probabilità 0.8 finirà qui,
+
+00:00:29.000 --> 00:00:32.000
+0.1 resterà nella stessa posizione,
+
+00:00:32.000 --> 00:00:36.000
+e 0.1 salta due posizioni in avanti.
+
+00:00:36.000 --> 00:00:39.000
+Questo è un modello di movimento imperfetto.
+
+00:00:39.000 --> 00:00:42.000
+Il robot prova a muoversi di U caselle,
+
+00:00:42.000 --> 00:00:46.000
+ma occasionalmente non arriva al suo goal o lo supera.
+
+00:00:46.000 --> 00:00:50.000
+In un caso ancora più comune, i robot mentre si muovono accumulano incertezza,
+
+00:00:50.000 --> 00:00:54.000
+ed è molto importante modellare questo aspetto, perché è la ragione principale
+
+00:00:54.000 --> 00:00:59.000
+per cui la localizzazione è difficile, perché i robot non sono molto accurati.
+
+00:00:59.000 --> 00:01:03.000
+Inizieremo a vedere come funziona prima di tutto dal punto di vista matematico.
+
+00:01:03.000 --> 00:01:06.000
+Ti do una distribuzione a priori,
+
+00:01:06.000 --> 00:01:08.000
+e usiamo un valore di U = 2,
+
+00:01:08.000 --> 00:01:13.000
+e per il modello di postamento che sposta il robot di esattamente due passi,
+
+00:01:13.000 --> 00:01:16.000
+diciamo che abbiamo una possibilità di 0.8.
+
+00:01:16.000 --> 00:01:22.000
+Assegniamo uno 0.1 ai casi in cui il robot si muove di meno o di più, esattamente di una posizione.
+
+00:01:22.000 --> 00:01:28.000
+Questo è più o meno scritto in questa formula, in cui il due ha una probabilità di 0.8,
+
+00:01:28.000 --> 00:01:32.000
+e l'uno e il tre hanno una probabilità di 0.1.
+
+00:01:32.000 --> 00:01:36.000
+Ti chiedo ora per la distribuzione iniziale che sto scrivendo qui,
+
+00:01:36.000 --> 09:59:59.000
+mi sai dire la distribuzione dopo lo spostamento?
+

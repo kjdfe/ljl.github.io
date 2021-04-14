@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: it
+
+00:00:00.000 --> 00:00:07.000
+La risposta è 1/4. E' facile vedere che la probabilità di "heads" al passo 2
+
+00:00:07.000 --> 00:00:13.000
+è la probabilità di "heads" al passo 2 condizionata da "heads" al passo 1
+
+00:00:13.000 --> 00:00:16.000
+per la probabilità di "heads" al passo 1
+
+00:00:16.000 --> 00:00:22.000
+più la probabilità di "heads" al passo due
+
+00:00:22.000 --> 00:00:28.000
+dato "tails" al passo 1 per la probabilità di "tails" al passo 1.
+
+00:00:28.000 --> 00:00:32.000
+Ora, per come ho impostato il problema, questi fatti sono equiprobabili
+
+00:00:32.000 --> 00:00:35.000
+Tuttavia, se abbiamo "tails" al passo 1
+
+00:00:35.000 --> 00:00:38.000
+non lanciamo più la moneta e accettiamo il risultato
+
+00:00:38.000 --> 00:00:44.000
+E' impossibile che al passo due io lanci la moneta e ottenga "heads". Probabilità zero.
+
+00:00:44.000 --> 00:00:50.000
+Mentre se abbiamo "heads", lanciamo di nuovo la moneta e c'è una possibilità 0.5 che io ottenga "heads".
+
+00:00:50.000 --> 00:00:54.000
+Se guardo qui, questo diventa zero,
+
+00:00:54.000 --> 09:59:59.000
+questi due moltiplicati danno 1/4 e la risposta finale è 1/4.
+

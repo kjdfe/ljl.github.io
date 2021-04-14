@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: pt
+
+00:00:00.000 --> 00:00:02.000
+A alteração é simples.
+
+00:00:02.000 --> 00:00:05.000
+Vai-se executar a função sense() várias vezes,
+
+00:00:05.000 --> 00:00:09.000
+na verdade, tantas vezes quanto o número de medidas, usando o ciclo 'for' aqui,
+
+00:00:09.000 --> 00:00:14.000
+agarra-se no k-ésimo valor medido e aplicamo-lo à corrente crença (distribuição de probabilidade).
+
+00:00:14.000 --> 00:00:18.000
+Então actualizamos recorrentemente esse crença num mesmo vector
+
+00:00:18.000 --> 00:00:21.000
+Neste caso, executa-se duas vezes. E imprime-se o resultado.
+
+00:00:21.000 --> 00:00:24.000
+Neste exemplo em concreto, é-nos devolvida a distribuição uniforme.
+
+00:00:24.000 --> 00:00:27.000
+Estes valem aproximadamente 0.2.
+
+00:00:27.000 --> 00:00:32.000
+A razão é porque multiplicámos cada campo por 0.6 uma vez
+
+00:00:32.000 --> 00:00:34.000
+e  multiplicámos  por 0.6 outra vez .
+
+00:00:34.000 --> 00:00:38.000
+E o efeito das duas multiplicações foi igual em todas as células.
+
+00:00:38.000 --> 99:59:59.000
+Como resultado, obteve-se a mesma saída aqui. É notável.
+

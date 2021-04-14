@@ -1,0 +1,22 @@
+WEBVTT
+Kind: captions
+Language: es
+
+00:00:00.000 --> 00:00:04.000
+La respuesta es que todos estos se desplazan a la derecha.
+
+00:00:04.000 --> 00:00:09.000
+El 1/9 en la celda a la extrema izquierda va aquí, el 1/3 aquí,
+
+00:00:09.000 --> 00:00:13.000
+y por último el 1/9 de la exrema-derecha se encuentra en el lado izquierdo.
+
+00:00:13.000 --> 00:00:17.000
+En el caso de movimiento exacto, tenemos un robot perfecto.
+
+00:00:17.000 --> 00:00:21.000
+Sólo  desplazamos las probabilidades segun el movimiento real de robot.
+
+00:00:21.000 --> 99:59:59.000
+Ahora, este es un caso degenerado. Vamos a programar este.
+
