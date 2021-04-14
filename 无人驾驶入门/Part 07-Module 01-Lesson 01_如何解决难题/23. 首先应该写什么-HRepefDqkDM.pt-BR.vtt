@@ -1,0 +1,98 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:03.672
+Acho que a melhor opção
+é o procedimento nextDay.
+
+00:00:03.705 --> 00:00:07.063
+Isso é o mais importante
+para a solução funcionar.
+
+00:00:07.096 --> 00:00:10.378
+Se não conseguirmos,
+vamos pensar em outra abordagem.
+
+00:00:10.411 --> 00:00:12.765
+Acho esta a melhor opção
+
+00:00:12.798 --> 00:00:16.525
+porque podemos resolver
+de forma simples no caso simples,
+
+00:00:16.558 --> 00:00:18.076
+que é o que vamos fazer,
+
+00:00:18.109 --> 00:00:21.372
+sem pensar na complexidade
+do nº de dias em cada mês.
+
+00:00:21.405 --> 00:00:25.420
+E sentimos que estamos perto
+da resposta certa para alguns casos.
+
+00:00:25.453 --> 00:00:28.904
+A outra resposta aceitável
+seria fazer isLeapYear.
+
+00:00:28.937 --> 00:00:33.048
+Vamos precisar disso.
+Determinar se o ano é bissexto
+
+00:00:33.081 --> 00:00:35.331
+para saber o nº de dias
+de fevereiro,
+
+00:00:35.364 --> 00:00:39.747
+mas é algo complicado de escrever.
+Sabemos que somos capazes de fazer,
+
+00:00:39.780 --> 00:00:43.265
+e não é interessante,
+então vamos deixar para depois.
+
+00:00:43.298 --> 00:00:48.257
+Você pode sugerir começar por isso.
+As outras 2 não são boas respostas.
+
+00:00:48.290 --> 00:00:51.123
+É cedo para tentar fazer
+o problema inteiro.
+
+00:00:51.156 --> 00:00:55.914
+Queremos dividi-lo em partes mais
+simples e acompanhar o progresso.
+
+00:00:55.947 --> 00:00:59.269
+A outra está mais perto
+de ser razoável,
+
+00:00:59.302 --> 00:01:02.671
+mas não é o procedimento
+que queremos.
+
+00:01:02.704 --> 00:01:07.638
+Até escrevermos os outros
+procedimentos e pensarmos,
+
+00:01:07.671 --> 00:01:10.254
+não vamos saber
+implementar corretamente.
+
+00:01:10.287 --> 00:01:13.145
+Digo que não é
+o que queremos
+
+00:01:13.178 --> 00:01:17.376
+porque o nº de dias em 1 mês depende
+do ano, se o mês for fevereiro.
+
+00:01:17.409 --> 00:01:19.792
+Vamos escrever
+o procedimento nextDay
+
+00:01:19.825 --> 00:01:24.248
+e, para simplificar, vamos supor
+que todos os meses têm 30 dias.
+

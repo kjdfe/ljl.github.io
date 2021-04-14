@@ -1,0 +1,44 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.002 --> 00:00:02.954
+Prefiro a opção 2.
+Qualquer uma estaria correta,
+
+00:00:02.987 --> 00:00:08.145
+especialmente se você morar perto
+da praia, mas sugiro a opção 2.
+
+00:00:08.178 --> 00:00:12.688
+Escolhi a opção 2 em vez de refinar
+nextDay porque gosto de procrastinar.
+
+00:00:12.721 --> 00:00:16.128
+A chatice de lidar
+com a complexidade dos meses reais
+
+00:00:16.161 --> 00:00:19.352
+fica para depois.
+A vantagem de começar pela opção 2
+
+00:00:19.385 --> 00:00:22.226
+é que ficaremos confiantes
+se funcionar.
+
+00:00:22.259 --> 00:00:26.106
+Teremos respostas aproximadas.
+Estaremos no caminho certo.
+
+00:00:26.139 --> 00:00:30.395
+Depois resolvemos os detalhes, mas
+não vamos precisar mudar o código.
+
+00:00:30.428 --> 00:00:34.430
+Vamos escrever daysBetweenDates
+usando o procedimento nextDay.
+
+00:00:34.463 --> 00:00:39.395
+Não vamos obter respostas exatas,
+pois nextDay não está correto.
+

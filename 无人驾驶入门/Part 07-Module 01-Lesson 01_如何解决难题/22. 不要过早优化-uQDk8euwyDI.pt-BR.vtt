@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:02.370
+Parece uma forma simples
+de fazer as coisas,
+
+00:00:02.404 --> 00:00:03.438
+e talvez seja suficiente.
+
+00:00:03.468 --> 00:00:06.101
+Precisamos ver
+como estamos usando o procedimento.
+
+00:00:06.135 --> 00:00:09.934
+Se vamos usar para um humano dizer
+quantos dias tem de idade,
+
+00:00:09.968 --> 00:00:13.468
+o fato de termos que esperar 0,003s
+pela resposta não importa.
+
+00:00:13.502 --> 00:00:14.735
+É rápido o suficiente.
+
+00:00:14.769 --> 00:00:18.168
+Diminuir para menos de 0,001s
+não vale a pena.
+
+00:00:18.201 --> 00:00:20.101
+Se estamos usando
+em um serviço,
+
+00:00:20.135 --> 00:00:23.968
+se for calcular isso várias vezes
+e várias datas diferentes,
+
+00:00:24.001 --> 00:00:27.968
+talvez não seja rápido o suficiente
+e valha a pena fazer algo melhor.
+
+00:00:28.001 --> 00:00:32.435
+Mas não precisamos nos esforçar
+até sabermos que é necessário.
+
+00:00:32.468 --> 00:00:36.802
+Isso é tão importante que vou colocar
+no guia para resolver problemas.
+
+00:00:36.835 --> 00:00:39.034
+Temos os primeiros passos:
+não entre em pânico,
+
+00:00:39.068 --> 00:00:43.101
+entenda as entradas e saídas,
+faça exemplos à mão
+
+00:00:43.135 --> 00:00:45.535
+para tentar resolver
+o problema sistematicamente.
+
+00:00:45.568 --> 00:00:48.201
+E tente desenvolver
+uma simples solução mecânica.
+
+00:00:48.235 --> 00:00:50.635
+A chave aqui
+é a simplicidade.
+
+00:00:50.668 --> 00:00:53.735
+Quanto mais simples, mais provável
+de programar corretamente.
+
+00:00:53.769 --> 00:00:56.201
+Talvez precisemos
+deixar mais rápido,
+
+00:00:56.235 --> 00:00:58.634
+mas não faremos isso
+até ser necessário.
+

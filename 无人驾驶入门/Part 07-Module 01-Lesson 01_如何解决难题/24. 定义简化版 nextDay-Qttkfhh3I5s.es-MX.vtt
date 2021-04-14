@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: es-MX
+
+00:00:01.856 --> 00:00:04.086
+Así que, aquí está mi solución a implementar nextDay y te cuenta que empiezo con
+
+00:00:05.310 --> 00:00:08.087
+una cadena de documentación. Esta es tratado como un común especial por la mayoría de los sistemas de Python y yo
+
+00:00:08.546 --> 00:00:11.992
+puesto en esta advertencia para que la gente se da cuenta de esto no es en realidad
+
+00:00:14.305 --> 00:00:15.478
+correcto. Por lo tanto, no debe utilizarse para programar, por ejemplo, el apocalipsis, pero es
+
+00:00:18.870 --> 00:00:19.120
+bueno para nuestras pruebas por ahora. Y la lógica es bastante simple, si el día es menos
+
+00:00:19.120 --> 00:00:23.020
+de 30, ya que estamos suponiendo que todos los meses tienen 30 días, podemos aumentar el día 1,
+
+00:00:23.482 --> 00:00:27.014
+y estoy de regresar de tres tupla del año, el mes y el día. De otra manera,
+
+00:00:30.268 --> 00:00:30.674
+tenemos que aumentar el mes, por lo que vamos a avanzar al siguiente mes y
+
+00:00:33.907 --> 00:00:35.920
+restablecer el día a 1. Si estamos en diciembre, entonces tenemos que aumentar el año 1
+
+00:00:35.920 --> 00:00:40.458
+y restablecer la fecha al 1 de enero. Al igual que con el problema más grande, usted debe protagonizar
+
+00:00:40.493 --> 00:00:44.660
+esta pensando en algunos casos de prueba. Y ver que quienes se comportan como se espera.
+
+00:00:48.135 --> 00:00:48.894
+Hemos proporcionado algunos en el ejemplo. Una cosa buena que usted notará aquí usando la
+
+00:00:49.103 --> 00:00:52.794
+Python proporcionada por [unknown] es que, cuando trato de usar nextDay, veo el
+
+00:00:52.794 --> 00:00:56.550
+docstring aquí. Y normalmente, queremos docstrings que son descriptivos
+
+00:00:56.550 --> 00:01:00.524
+Aquí. La advertencia es muy útil. Y le doy un mes muestra, día y año y
+
+00:01:00.524 --> 00:01:04.617
+Veo que me sale el resultado correcto. Debo señalar que en algunos casos, por ejemplo,
+
+00:01:04.617 --> 00:01:08.766
+30 de enero, el siguiente día 30 de enero debe ser 31 de enero. estoy yendo
+
+00:01:08.766 --> 00:01:12.956
+para obtener 02 de febrero a causa de este supuesto sobre todos los meses tienen 30 días,
+
+00:01:12.956 --> 00:01:16.944
+y debemos tratar de un caso más difícil, como el final del año. Y aquí,
+
+00:01:16.944 --> 00:01:21.102
+Voy a usar 31 de diciembre, sería avanzar en el año si se trata de 31 de diciembre, o
+
+00:01:21.102 --> 00:01:24.892
+30 de diciembre a causa de esa suposición, y obtenemos 01 de enero 2013.
+

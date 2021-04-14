@@ -1,0 +1,24 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.045 --> 00:00:03.214
+Adicione uma asserção
+ao código
+
+00:00:03.247 --> 00:00:06.572
+que gere uma falha
+quando as entradas forem inválidas.
+
+00:00:06.605 --> 00:00:11.420
+A sintaxe para asserções é assert
+seguido de qualquer expressão Python.
+
+00:00:11.453 --> 00:00:14.651
+Se o valor da expressão for false,
+a asserção falha,
+
+00:00:14.684 --> 00:00:16.728
+e a execução para
+com uma exceção.
+

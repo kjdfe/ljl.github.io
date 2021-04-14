@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: es-AR
+
+00:00:00.604 --> 00:00:03.196
+Por lo tanto, esto parece una forma muerta realmente cerebro de hacer las cosas un poco. Tal vez eso es
+
+00:00:03.463 --> 00:00:06.436
+suficientemente bueno. Tenemos que ver cómo en realidad estamos utilizando este procedimiento. Si
+
+00:00:06.691 --> 00:00:09.404
+vamos a usarlo para un ser humano para contar cuántos días de edad que sean, en un
+
+00:00:09.582 --> 00:00:12.796
+de manera interactiva, el hecho de que tenemos que esperar 300o de un segundo por la respuesta
+
+00:00:13.085 --> 00:00:16.418
+no importa, eso es mucho lo suficientemente rápido. Conseguir que reduce a menos de un
+
+00:00:16.776 --> 00:00:19.930
+Centésima de segundo no vale la pena el esfuerzo extra. Si lo estamos usando en un servicio,
+
+00:00:20.283 --> 00:00:23.290
+que está haciendo este cálculo montones y montones de veces por montones y montones de
+
+00:00:23.494 --> 00:00:27.042
+diferentes fechas, bueno, entonces, tal vez es hora de poner no lo suficientemente rápido y vale la pena
+
+00:00:27.365 --> 00:00:30.851
+y el esfuerzo para hacer algo mejor. Pero no hay que poner ese tiempo y esfuerzo
+
+00:00:31.124 --> 00:00:34.660
+hasta que sepamos que necesitamos que sea más rápido. Este punto es suficiente que importante
+
+00:00:34.843 --> 00:00:38.108
+Quiero ponerlo en nuestra guía para la solución de nuestros problemas. Así, tenemos nuestra primera
+
+00:00:38.426 --> 00:00:41.618
+pasos, no se asuste, asegurarnos de que entendemos las entradas y las salidas, obras
+
+00:00:41.929 --> 00:00:44.966
+a través de algunos ejemplos a mano para pensar en cómo íbamos a resolver el problema
+
+00:00:45.297 --> 00:00:48.898
+sistemáticamente. Y luego, tratar de desarrollar una solución mecánica simple. Y el
+
+00:00:48.975 --> 00:00:52.378
+clave es la simplicidad, la más simple es, más probable es que vamos a ser
+
+00:00:52.583 --> 00:00:56.076
+capaz de programar correctamente. Con el tiempo, puede ser que tenga que preocuparse de lo que es
+
+00:00:56.082 --> 00:00:58.593
+más rápido, pero no vamos a preocuparnos por eso hasta que tenemos que hacerlo.
+

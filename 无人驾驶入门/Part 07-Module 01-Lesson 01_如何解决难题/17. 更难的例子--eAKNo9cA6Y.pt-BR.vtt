@@ -1,0 +1,39 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.067 --> 00:00:02.836
+Temos uma ideia de como resolver
+sistematicamente.
+
+00:00:02.870 --> 00:00:04.671
+Se pensarmos num problema
+mais difícil,
+
+00:00:04.705 --> 00:00:07.140
+como aumentar o ano,
+
+00:00:07.174 --> 00:00:10.344
+precisaríamos adicionar
+os dias nos anos.
+
+00:00:10.377 --> 00:00:13.680
+Alguns dos anos
+vão ter 365 dias,
+
+00:00:13.713 --> 00:00:15.849
+e outros serão bissextos
+
+00:00:15.883 --> 00:00:17.985
+e vão ter 366 dias.
+
+00:00:18.018 --> 00:00:20.020
+É um problema complicado.
+
+00:00:20.053 --> 00:00:25.325
+Talvez, com base nisto,
+possamos escrever um algoritmo.
+
+00:00:25.359 --> 00:00:27.057
+Vou tentar fazer isso.
+

@@ -1,0 +1,163 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.136 --> 00:00:04.446
+Deixei a parte mais chata por último.
+Lidar com anos bissextos.
+
+00:00:04.479 --> 00:00:07.651
+Não consegui eliminá-los,
+
+00:00:07.684 --> 00:00:11.653
+então precisamos de uma maneira
+de saber se o ano é bissexto.
+
+00:00:11.686 --> 00:00:14.500
+As regras para anos bissextos
+são complicadas.
+
+00:00:14.533 --> 00:00:18.924
+Vamos ver o que a Wikipédia diz.
+Interessante.
+
+00:00:18.957 --> 00:00:23.630
+Veja a precisão do solstício
+ao longo do tempo nos dias bissextos.
+
+00:00:23.663 --> 00:00:28.407
+A melhor parte é que isto tem
+um código. Não é Python, mas quase.
+
+00:00:28.440 --> 00:00:32.107
+É uma forma clara de descrever
+o algoritmo para determinar
+
+00:00:32.140 --> 00:00:36.985
+se o ano é bissexto. Se for
+divisível por 400, é bissexto.
+
+00:00:37.018 --> 00:00:39.994
+Se for divisível por 100,
+não é bissexto.
+
+00:00:40.027 --> 00:00:44.418
+Se for divisível por 4, é bissexto.
+Se não for, não é bissexto.
+
+00:00:44.451 --> 00:00:48.482
+Vou transformar isso em código.
+Vou recortar e colar para ver.
+
+00:00:48.515 --> 00:00:54.191
+Se a fonte fosse menor, ou a tela
+maior, eu veria ao mesmo tempo,
+
+00:00:54.224 --> 00:00:58.070
+e não precisaria colar.
+Mas é bom ter como comentário.
+
+00:00:58.103 --> 00:01:02.240
+Só falta transformar em Python.
+Eu poderia fazer de forma direta,
+
+00:01:02.273 --> 00:01:06.822
+mas vou ser preguiçoso e poupar
+digitação fazendo em uma linha.
+
+00:01:06.855 --> 00:01:09.868
+Vou reconsiderar.
+Vou tentar acertar de primeira.
+
+00:01:09.901 --> 00:01:14.373
+Vou usar mais linhas de código
+e seguir a Wikipédia mais à risca.
+
+00:01:14.406 --> 00:01:19.169
+Se o ano mod 400 for igual a 0,
+retornamos True. O ano é bissexto.
+
+00:01:19.202 --> 00:01:24.551
+Se o ano mod 100 for igual a 0,
+retornamos False. Não é bissexto.
+
+00:01:24.584 --> 00:01:30.196
+Se o ano mod 4 for igual a 0,
+retornamos True. Se não for,
+
+00:01:30.229 --> 00:01:35.793
+mas não precisamos do else,
+será False. Vamos testar.
+
+00:01:35.826 --> 00:01:41.028
+Se eu não achasse isto simples,
+escreveria casos de teste especiais
+
+00:01:41.061 --> 00:01:45.463
+para testar anos bissextos. Vou fazer
+à mão, com alguns casos de teste,
+
+00:01:45.496 --> 00:01:48.164
+pois acho
+que poucos são difíceis.
+
+00:01:48.197 --> 00:01:51.427
+2000 é divisível por 400,
+então deve ser bissexto.
+
+00:01:51.460 --> 00:01:56.906
+2100 não é divisível por 400,
+então não deve ser bissexto.
+
+00:01:56.939 --> 00:01:59.834
+2012 deve ser bissexto.
+
+00:01:59.867 --> 00:02:03.265
+2013 não deve ser bissexto.
+
+00:02:03.298 --> 00:02:06.098
+Estou confiante que acertei.
+
+00:02:06.131 --> 00:02:09.532
+Vou tentar colocar
+em dias no mês.
+
+00:02:09.565 --> 00:02:14.213
+Precisamos mudar o caso de dias
+no mês quando for fevereiro.
+
+00:02:14.246 --> 00:02:18.206
+Se o ano for bissexto, retornamos
+29, se não for, retornamos 28.
+
+00:02:18.239 --> 00:02:22.526
+Não preciso do else, mas vou
+colocá-lo para ficar equilibrado.
+
+00:02:22.559 --> 00:02:26.369
+Vamos executar os testes atuais.
+Ver se não quebramos nada.
+
+00:02:26.402 --> 00:02:28.460
+Todos concluídos. Bom sinal.
+
+00:02:28.493 --> 00:02:31.460
+Vamos incluir testes
+baseados em anos bissextos.
+
+00:02:31.493 --> 00:02:35.791
+Vamos testar o dia seguinte a 28
+de fevereiro se o ano for bissexto.
+
+00:02:35.824 --> 00:02:41.115
+Vamos fazer testes de anos longos.
+Um ano bissexto deve ter 366 dias.
+
+00:02:41.148 --> 00:02:46.484
+Tenho esses 2. Vou incluir
+os testes que fiz à mão.
+
+00:02:46.517 --> 00:02:51.657
+Vamos ver. Todos passaram. Vamos
+executar nos testes fornecidos.
+

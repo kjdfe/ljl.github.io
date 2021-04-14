@@ -1,0 +1,149 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.029 --> 00:00:03.007
+Vou começar pelo código
+anterior que funcionava,
+
+00:00:03.040 --> 00:00:05.607
+exceto por supor
+que todo mês tem 30 dias.
+
+00:00:05.640 --> 00:00:09.030
+A 1ª etapa é definir
+o procedimento stub daysInMonth
+
+00:00:09.063 --> 00:00:11.143
+que dá o nº de dias
+em 1 mês.
+
+00:00:11.176 --> 00:00:13.992
+No nosso procedimento stub,
+vamos retornar 30.
+
+00:00:14.025 --> 00:00:17.489
+Vou modificar nextDay
+para chamar daysInMonth.
+
+00:00:17.522 --> 00:00:21.188
+É bem simples, mas vou
+escrever um código para testar.
+
+00:00:21.221 --> 00:00:24.428
+Não vamos digitar os mesmos
+casos de teste no shell.
+
+00:00:24.461 --> 00:00:26.541
+Vamos escrever
+código para testar.
+
+00:00:26.574 --> 00:00:29.553
+Para o problema,
+havia casos de teste.
+
+00:00:29.586 --> 00:00:31.502
+Vou começar
+a escrever o meu.
+
+00:00:31.535 --> 00:00:35.503
+Nesses casos de teste,
+não esperamos resultados corretos,
+
+00:00:35.536 --> 00:00:39.452
+pois testamos com meses de 30 dias.
+Vou testar 2 datas iguais.
+
+00:00:39.485 --> 00:00:41.948
+É um caso de fronteira.
+É útil testá-lo.
+
+00:00:41.981 --> 00:00:46.145
+Vou testar de um dia para o outro,
+o que vai nos dar 1 dia.
+
+00:00:46.178 --> 00:00:48.410
+Os casos são para dias
+entre datas.
+
+00:00:48.443 --> 00:00:50.851
+Eu devia escrever
+para o dia seguinte,
+
+00:00:50.884 --> 00:00:55.271
+pois se falharem, vai ser mais fácil
+entender o que deu errado.
+
+00:00:55.304 --> 00:00:58.203
+Em vez de escrever todos
+para dias entre datas.
+
+00:00:58.236 --> 00:01:01.069
+Vamos tentar
+casos de teste nextDay.
+
+00:01:01.102 --> 00:01:03.266
+Um em que o dia avança.
+
+00:01:03.299 --> 00:01:05.506
+Um em que o mês avança.
+
+00:01:05.539 --> 00:01:09.465
+Vou usar um mês de 30 dias,
+
+00:01:09.498 --> 00:01:12.706
+assim, estará correto
+em 30 meses,
+
+00:01:12.739 --> 00:01:16.677
+e vai continuar correto quando
+consertarmos. Vou avançar o ano.
+
+00:01:16.710 --> 00:01:20.467
+Alguns casos de teste. Devíamos
+ter mais. Mas vamos tentar.
+
+00:01:20.500 --> 00:01:24.448
+Vamos salvar, executar,
+e executar o teste.
+
+00:01:24.481 --> 00:01:28.058
+Algo falhou.
+Não é surpresa, acontece.
+
+00:01:28.091 --> 00:01:32.846
+Vamos ver o que falhou. É um tipo
+de erro em que chamo daysInMonth,
+
+00:01:32.879 --> 00:01:36.449
+mas sem passar o número certo
+de parâmetros. Passei 0.
+
+00:01:36.482 --> 00:01:39.340
+Devia ter passado
+o ano e o mês.
+
+00:01:39.373 --> 00:01:44.211
+Um dos motivos de escrever em stubs
+é achar esses erros rapidamente.
+
+00:01:44.244 --> 00:01:47.253
+Vamos tentar de novo.
+Agora, o teste passou.
+
+00:01:47.286 --> 00:01:51.692
+Nosso caso de teste está usando
+restrições. Vou ser mais cauteloso
+
+00:01:51.725 --> 00:01:54.296
+e imprimir algo
+quando o teste terminar,
+
+00:01:54.329 --> 00:01:58.454
+pois é meio perigoso não ter
+nada a relatar ao fim do teste.
+
+00:01:58.487 --> 00:02:00.916
+Talvez não haja saída
+por outro motivo.
+

@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: es
+
+00:00:00.025 --> 00:00:03.417
+Entonces, inicio con el código anterior que funcionaba correctamente, excepto
+
+00:00:03.417 --> 00:00:06.814
+con esta suposición de que todos los meses tienen 30 días. El primer paso
+
+00:00:06.814 --> 00:00:10.335
+va a ser definir el trozo de procedimiento dayInMonth que da el número de días en
+
+00:00:10.335 --> 00:00:14.272
+un mes. Pero, para nuestro trozo de procedimiento, sólo vamos a retornar siempre 30 días. Y
+
+00:00:14.272 --> 00:00:18.631
+voy a modificar nextDay para llamar daysInMonth. Que es muy sencillo, pero
+
+00:00:18.631 --> 00:00:21.628
+debo iniciar probando, y voy a escribir código para hacer la prueba. No
+
+00:00:21.628 --> 00:00:24.879
+queremos estar escribiendo los mismos casos de pruebas en el intérprete. Queremos escribir
+
+00:00:24.879 --> 00:00:28.928
+código para probar. Para el problema que es proporcionado, había
+
+00:00:28.928 --> 00:00:32.403
+casos de prueba proporcionado. Voy a escribir el mío a partir de ahora. Y voy a estar seguro
+
+00:00:32.403 --> 00:00:35.941
+que en estos casos de prueba, no esperamos aún los resultados correctos porque
+
+00:00:35.941 --> 00:00:39.665
+estoy probando con 30 días en meses. Entonces, voy a probar dos fechas que son iguales.
+
+00:00:39.665 --> 00:00:43.560
+Es un caso fronterizo, es útil uno para probar. Voy a probar desde un día
+
+00:00:43.560 --> 00:00:47.409
+al siguiente, que debe darnos un día. Y estos son casos de pruebas para días
+
+00:00:47.409 --> 00:00:51.210
+entre fechas. Debo realmente escribir algunos casos de prueba para el siguiente día.
+
+00:00:51.210 --> 00:00:54.060
+La razón por la cual es esa, es que si fallamos, bueno, va a ser más fácil
+
+00:00:54.060 --> 00:00:57.260
+entender en que fallamos, antes que sólo escribir todos mis casos de pruebas para
+
+00:00:57.260 --> 00:01:02.486
+días entre días. Intentemos algunos casos de prueba nextDay, Conseguiste uno donde el día
+
+00:01:02.486 --> 00:01:08.262
+avanza. Consigamos uno donde el mes avanza. Y usaremos un mes que
+
+00:01:08.262 --> 00:01:14.082
+tiene 30 días. Por lo tanto sería correcto en 30 meses, pero será todavía correcto una vez que
+
+00:01:14.082 --> 00:01:18.068
+arreglemos esto. Y usaré el año siguiente. Unos pocos casos de prueba, probablemente
+
+00:01:18.068 --> 00:01:23.198
+debemos tener mas. Pero intentemoslo, Debemos grabar, y ejecutamos esto, y
+
+00:01:23.198 --> 00:01:28.090
+ejecutará nuestra prueba. Y, algo fallará. No tan sorprendente, esto ocurre.
+
+00:01:28.090 --> 00:01:31.740
+Veamos que falló. Y el fallo es el error de escritura que voy llamando
+
+00:01:31.740 --> 00:01:36.380
+daysInMonth No pasa el número correcto de parámetros. De hecho, pasé en
+
+00:01:36.380 --> 00:01:40.326
+0. Debo haber pasado ambos, el año y el día. Entonces esta es una de las
+
+00:01:40.326 --> 00:01:44.050
+razones por escribir cosas en trozos, podemos hallar este tipo de errores rápidamente.
+
+00:01:44.050 --> 00:01:48.239
+Intentemos de nuevo, y ahora estamos pasando la prueba, y nuestro caso de prueba está usando
+
+00:01:48.239 --> 00:01:52.716
+restricciones. Voy a ser un poco cuidado y mostrar cuando
+
+00:01:52.716 --> 00:01:56.864
+la prueba termina, porque es un poco peligroso no tener que decir
+
+00:01:56.864 --> 00:02:00.909
+cuando la prueba termina. Tal vez, no obtuvimos salida por alguna razón.
+

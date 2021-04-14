@@ -1,0 +1,138 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.052 --> 00:00:03.295
+Eu diria que a melhor
+resposta é não.
+
+00:00:03.328 --> 00:00:06.624
+Este código já é bem complexo.
+Ele tem 2 loops,
+
+00:00:06.657 --> 00:00:11.870
+muitas instruções, e não resolve
+muitos casos. Vamos pensar neles.
+
+00:00:11.903 --> 00:00:16.058
+Ele não resolve o caso em que
+os dias iniciais são no mesmo mês.
+
+00:00:16.091 --> 00:00:20.201
+Isso é porque adicionamos
+todos os dias do mês 1 aos dias,
+
+00:00:20.234 --> 00:00:23.035
+e se o dia 2 também
+estiver no mês 1,
+
+00:00:23.068 --> 00:00:25.533
+vai dar errado.
+Poderíamos resolver.
+
+00:00:25.566 --> 00:00:27.905
+Subtraindo a diferença
+entre os dias.
+
+00:00:27.938 --> 00:00:31.468
+Temos um caso especial.
+Mudar algo neste loop
+
+00:00:31.501 --> 00:00:34.030
+para meses iguais.
+Mas é difícil.
+
+00:00:34.063 --> 00:00:38.517
+Precisaríamos de um caso especial.
+Ele não resolve outros casos,
+
+00:00:38.550 --> 00:00:41.697
+como o caso em que o mês 2
+vem antes do mês 1.
+
+00:00:41.730 --> 00:00:43.608
+Acontece em anos diferentes.
+
+00:00:43.641 --> 00:00:46.140
+É o caso da 2ª data
+depois da 1ª data,
+
+00:00:46.173 --> 00:00:50.751
+mesmo o 2º mês vindo antes
+do 1º mês. Ele não resolve.
+
+00:00:50.784 --> 00:00:54.501
+Ela não resolve a contagem
+de dias em anos bissextos.
+
+00:00:54.534 --> 00:00:57.952
+Tome cuidado com o loop
+onde incluímos os dias no ano 1
+
+00:00:57.985 --> 00:01:01.631
+se fevereiro estiver incluído,
+com base no mês atual.
+
+00:01:01.664 --> 00:01:05.299
+Se devemos prestar atenção
+nos dias do ano 1 ou do ano 2.
+
+00:01:05.332 --> 00:01:09.397
+Há muita coisa que ele não resolve.
+Poderíamos consertar o código.
+
+00:01:09.430 --> 00:01:12.579
+Se tiver marcado a 2ª opção,
+sugiro que faça isso.
+
+00:01:12.612 --> 00:01:14.842
+Tente consertar o programa.
+
+00:01:14.875 --> 00:01:17.328
+Mas nosso objetivo
+como programadores,
+
+00:01:17.361 --> 00:01:19.558
+é tentar achar
+uma solução simples.
+
+00:01:19.591 --> 00:01:22.256
+É muito difícil corrigir
+algo tão complexo.
+
+00:01:22.289 --> 00:01:24.455
+Ao resolver
+muitos casos especiais,
+
+00:01:24.488 --> 00:01:27.878
+e já vi muitas discussões
+de pessoas que tentam,
+
+00:01:27.911 --> 00:01:30.724
+é difícil corrigir todos,
+e complica o código.
+
+00:01:30.757 --> 00:01:32.695
+Pensemos em uma solução
+simples.
+
+00:01:32.728 --> 00:01:36.230
+Humanos não usam a solução
+mais simples. São preguiçosos.
+
+00:01:36.263 --> 00:01:40.450
+Criamos atalhos em vez de trabalhar
+de forma simples e mecânica.
+
+00:01:40.483 --> 00:01:42.302
+Computadores
+não têm preguiça.
+
+00:01:42.335 --> 00:01:45.102
+A forma simples e mecânica
+é ótima para eles.
+
+00:01:45.135 --> 00:01:47.936
+O programa fica fácil
+de escrever e funciona.
+

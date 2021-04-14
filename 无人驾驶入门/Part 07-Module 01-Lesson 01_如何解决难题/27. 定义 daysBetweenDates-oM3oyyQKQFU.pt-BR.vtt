@@ -1,0 +1,50 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.033 --> 00:00:03.400
+Hora de ver se você consegue definir
+um procedimento de diasEntreDatas
+
+00:00:03.434 --> 00:00:07.367
+que vão gerar resultados corretos
+usando o procedimento próximoDia.
+
+00:00:07.400 --> 00:00:09.534
+Se adicionarmos
+um procedimento correto,
+
+00:00:09.567 --> 00:00:12.834
+o diasEntreDatas deve produzir
+os resultados corretos.
+
+00:00:12.868 --> 00:00:15.067
+Vou sugerir uma coisa
+como dica.
+
+00:00:15.100 --> 00:00:16.647
+Fazer dias entre datas
+
+00:00:16.681 --> 00:00:19.853
+será mais complicado
+do que nós gostaríamos.
+
+00:00:19.901 --> 00:00:22.567
+Então comece fazendo
+um procedimento de ajuda.
+
+00:00:22.601 --> 00:00:26.200
+Se está seguindo a estratégia
+de resolução de problemas,
+
+00:00:26.234 --> 00:00:31.334
+deve testar o procedimento de ajuda
+antes de tentar fazer o completo.
+
+00:00:31.367 --> 00:00:35.371
+Mas você deve decidir
+qual será o procedimento de ajuda
+
+00:00:35.402 --> 00:00:36.570
+e como fazer isso.
+

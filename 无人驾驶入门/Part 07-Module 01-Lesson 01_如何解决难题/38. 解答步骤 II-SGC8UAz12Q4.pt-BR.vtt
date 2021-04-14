@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.070 --> 00:00:04.323
+Escrevi meu stub. Vou modificar
+dias e mês para ser correto
+
+00:00:04.356 --> 00:00:07.992
+para todos os meses,
+exceto fevereiro em anos bissextos.
+
+00:00:08.025 --> 00:00:11.515
+Para isso, é preciso saber
+quantos dias há em 1 mês.
+
+00:00:11.548 --> 00:00:13.701
+Vou ver na Wikipédia.
+
+00:00:13.734 --> 00:00:15.936
+Você já deve saber.
+
+00:00:15.969 --> 00:00:19.458
+Aqui está o nº de dias
+nos meses.
+
+00:00:19.491 --> 00:00:24.246
+Temos 31 dias em janeiro,
+março, maio,
+
+00:00:24.279 --> 00:00:28.920
+julho, agosto, outubro e dezembro.
+Vamos escrever o código.
+
+00:00:28.953 --> 00:00:32.471
+Só estou usando coisas
+que vimos na unidade 2.
+
+00:00:32.504 --> 00:00:37.273
+Se fosse na vida real,
+faria algo mais fácil de digitar.
+
+00:00:37.306 --> 00:00:39.698
+Estes são os meses
+de 31 dias.
+
+00:00:39.731 --> 00:00:43.452
+Um jeito mais fácil de escrever
+seria listando todos assim.
+
+00:00:43.485 --> 00:00:45.491
+Significaria a mesma coisa.
+
+00:00:45.524 --> 00:00:49.150
+Vamos usar só o que vimos
+na unidade 2.
+
+00:00:49.183 --> 00:00:52.519
+Se o mês for um daqueles,
+retornamos 31.
+
+00:00:52.552 --> 00:00:55.518
+Se o mês for fevereiro,
+retornamos 28.
+
+00:00:55.551 --> 00:00:59.232
+Precisar fazer algo mais complicado
+se for um ano bissexto.
+
+00:00:59.265 --> 00:01:02.023
+Caso contrário,
+retornamos 30.
+
+00:01:02.056 --> 00:01:05.187
+A essa altura, podemos
+adicionar testes corretos.
+
+00:01:05.220 --> 00:01:11.085
+Se o ano não for bissexto, o dia após
+28 de fevereiro será 1º de março.
+
+00:01:11.118 --> 00:01:16.006
+E em um mês de 30 dias,
+como setembro,
+
+00:01:16.039 --> 00:01:19.006
+será 1º de outubro.
+Acho que é suficiente.
+
+00:01:19.039 --> 00:01:22.935
+Acho que o outro caso de teste
+devia abranger um ano inteiro.
+
+00:01:22.968 --> 00:01:26.792
+Se o ano não for bissexto,
+teremos 365 corretamente.
+
+00:01:26.825 --> 00:01:30.514
+Tenho mais alguns casos de teste.
+Devem estar corretos,
+
+00:01:30.547 --> 00:01:33.769
+mesmo para meses que não
+tenham 30 dias. Vou tentar.
+
+00:01:33.802 --> 00:01:36.339
+Ver se cometi algum erro.
+
+00:01:36.372 --> 00:01:39.448
+Todos os testes foram concluídos.
+Estão corretos.
+

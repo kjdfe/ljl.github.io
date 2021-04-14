@@ -1,0 +1,134 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:03.412
+A 1ª coisa a saber em qualquer
+problema são as entradas.
+
+00:00:03.445 --> 00:00:05.819
+Neste problema,
+elas estão claras.
+
+00:00:05.852 --> 00:00:09.201
+Seu aniversário e a data atual
+são as entradas.
+
+00:00:09.234 --> 00:00:11.595
+Para quais entradas
+deve funcionar?
+
+00:00:11.628 --> 00:00:14.717
+Só para meu aniversário
+e a data atual?
+
+00:00:14.750 --> 00:00:19.445
+Se fosse só para isso, poderíamos
+deduzir sem escrever um procedimento.
+
+00:00:19.478 --> 00:00:24.999
+Acho que isto representa algo bem
+mais geral. As entradas são 2 datas.
+
+00:00:25.032 --> 00:00:28.476
+Isso nos dá um conjunto
+de entradas possíveis.
+
+00:00:28.509 --> 00:00:31.466
+Precisamos ver com atenção
+se todas são válidas.
+
+00:00:31.499 --> 00:00:35.820
+A instrução da pergunta nos dá
+uma dica. Suponha que o aniversário
+
+00:00:35.853 --> 00:00:39.433
+e a data atual sejam datas corretas,
+sem viagem no tempo.
+
+00:00:39.466 --> 00:00:42.525
+É uma suposição válida
+para aniversários e datas.
+
+00:00:42.558 --> 00:00:44.606
+Se formos comparar 2 datas,
+
+00:00:44.639 --> 00:00:48.478
+isso quer dizer que a 2ª data
+precisa vir depois da 1ª data.
+
+00:00:48.511 --> 00:00:51.808
+Essas suposições facilitam
+a vida dos programadores.
+
+00:00:51.841 --> 00:00:56.851
+Fica mais fácil escrever código, pois
+limita o nº de entradas possíveis.
+
+00:00:56.884 --> 00:00:59.549
+Gostei da suposição
+sem viagem no tempo.
+
+00:00:59.582 --> 00:01:03.107
+Uma especificação de programa
+teria que ser mais precisa,
+
+00:01:03.140 --> 00:01:07.515
+e afirmar simplesmente que a 2ª data
+não pode vir antes da 1ª data.
+
+00:01:07.548 --> 00:01:11.488
+Como bons programadores defensivos,
+devemos verificar se é true.
+
+00:01:11.521 --> 00:01:15.498
+É uma suposição. Depende
+do usuário do código satisfazê-la,
+
+00:01:15.531 --> 00:01:19.566
+pois dissemos que é um requisito.
+Para usar nossa solução,
+
+00:01:19.599 --> 00:01:22.376
+a 2ª data não pode
+vir antes da 1ª data.
+
+00:01:22.409 --> 00:01:25.719
+Mas devemos ser espertos
+e programar defensivamente,
+
+00:01:25.752 --> 00:01:28.985
+pois as pessoas cometem erros,
+e nós também.
+
+00:01:29.018 --> 00:01:31.545
+Vamos verificar isso
+no nosso código.
+
+00:01:31.578 --> 00:01:35.328
+A outra suposição teria a ver
+com o intervalo entre datas.
+
+00:01:35.361 --> 00:01:38.627
+Calendários são complicados
+e mudaram ao longo da História.
+
+00:01:38.660 --> 00:01:42.070
+As datas precisam ser válidas
+no calendário gregoriano,
+
+00:01:42.103 --> 00:01:45.559
+que começou
+em outubro de 1582.
+
+00:01:45.592 --> 00:01:48.312
+O código deve funcionar
+para outras datas,
+
+00:01:48.345 --> 00:01:52.162
+mas talvez não dê a resposta certa,
+pois se o calendário muda,
+
+00:01:52.195 --> 00:01:53.580
+as datas mudam.
+

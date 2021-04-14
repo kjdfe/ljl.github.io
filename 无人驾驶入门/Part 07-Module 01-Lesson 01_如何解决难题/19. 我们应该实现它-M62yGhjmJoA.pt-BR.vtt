@@ -1,0 +1,47 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.009 --> 00:00:02.701
+Esta é a pseudocodescrição
+de um algoritmo
+
+00:00:02.734 --> 00:00:07.083
+que segue o que fizemos como
+humanos. Vamos pensar com calma.
+
+00:00:07.116 --> 00:00:09.708
+Devemos implementar
+este algoritmo?
+
+00:00:09.741 --> 00:00:12.420
+Podemos começar a escrever
+o código Python?
+
+00:00:12.453 --> 00:00:17.370
+Temos 4 opções. A primeira é sim,
+implementar e obter a solução certa.
+
+00:00:17.403 --> 00:00:19.816
+A segunda é começar a implementar.
+
+00:00:19.849 --> 00:00:23.859
+Não se aplica a todos os casos, mas
+resolvemos os detalhes no caminho.
+
+00:00:23.892 --> 00:00:27.505
+A terceira é não. Resolver
+todos os casos primeiro,
+
+00:00:27.538 --> 00:00:31.809
+até ter um pseudocódigo correto
+antes de escrever o código Python.
+
+00:00:31.842 --> 00:00:34.590
+A última é não.
+Desistir deste caminho
+
+00:00:34.623 --> 00:00:36.887
+e procurar uma solução
+mais simples.
+

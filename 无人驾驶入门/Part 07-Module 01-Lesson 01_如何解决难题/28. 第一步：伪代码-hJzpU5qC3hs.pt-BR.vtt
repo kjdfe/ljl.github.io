@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:03.215
+Para responder, pense
+no nosso pseudocódigo anterior.
+
+00:00:03.248 --> 00:00:06.901
+Neste loop y, precisamos saber,
+como condição de parada,
+
+00:00:06.934 --> 00:00:08.872
+se a data 1
+vem antes da data 2,
+
+00:00:08.905 --> 00:00:11.385
+e temos o corpo,
+que incrementa a data.
+
+00:00:11.418 --> 00:00:14.274
+Temos o procedimento
+para esta parte.
+
+00:00:14.307 --> 00:00:17.748
+Implementamos o nextDay.
+Podemos transformar em código.
+
+00:00:17.781 --> 00:00:19.644
+Um procedimento auxiliar
+
+00:00:19.677 --> 00:00:22.836
+deve ser algo que facilite
+a comparação de datas.
+
+00:00:22.869 --> 00:00:25.696
+É bem melhor fazer
+como procedimento auxiliar
+
+00:00:25.729 --> 00:00:29.088
+do que dentro do código
+daysBetweenDates.
+
+00:00:29.121 --> 00:00:33.293
+Saber se uma data vem
+antes da outra pode ser útil
+
+00:00:33.326 --> 00:00:36.676
+em outro contexto.
+Vamos ver outro uso para isso.
+
+00:00:36.709 --> 00:00:40.013
+Outra vantagem de escrever
+como procedimento auxiliar
+
+00:00:40.046 --> 00:00:41.657
+é testar separadamente.
+
+00:00:41.690 --> 00:00:44.796
+Em vez de começar escrevendo
+daysBetweenDates,
+
+00:00:44.829 --> 00:00:49.357
+começamos pelo procedimento auxiliar,
+que determina a condição de parada.
+
+00:00:49.390 --> 00:00:52.932
+Vamos escrever
+um procedimento dateIsBefore
+
+00:00:52.965 --> 00:00:57.015
+cujas entradas são 2 datas,
+ainda codificadas como 3 valores.
+
+00:00:57.048 --> 00:01:01.313
+Ele vai retornar true ou false
+dizendo se ano1, mês1 e dia1
+
+00:01:01.346 --> 00:01:05.312
+vem antes de ano2, mês2 e dia2.
+Se não tiver conseguido escrever
+
+00:01:05.345 --> 00:01:09.003
+o código daysBetweenDates,
+tente agora, que dei a dica.
+
+00:01:09.036 --> 00:01:13.060
+Escreva dateIsBefore primeiro
+e teste para ver se está correto
+
+00:01:13.093 --> 00:01:17.476
+antes de escrever daysBetweenDates.
+Depois mostro meu código.
+

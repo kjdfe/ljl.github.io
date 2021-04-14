@@ -1,0 +1,227 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.033 --> 00:00:02.801
+Eis o que eu sugiro
+como minha ordem favorita.
+
+00:00:02.834 --> 00:00:05.801
+Vou escrever um stub,
+diasNoMês,
+
+00:00:05.834 --> 00:00:08.567
+que vai levar um ano e um mês
+e o retorno é sempre 30,
+
+00:00:08.601 --> 00:00:09.834
+o que não está correto.
+
+00:00:09.868 --> 00:00:13.467
+Depois vou modificar a rotina
+de próximoDia para usar esse stub.
+
+00:00:13.501 --> 00:00:15.334
+E vou testar.
+
+00:00:15.367 --> 00:00:18.519
+Ainda não fiz nada
+que mude os resultados
+
+00:00:18.552 --> 00:00:19.720
+que tivemos antes,
+
+00:00:19.753 --> 00:00:24.968
+mas reestruturei o código
+para melhorar diasNoMês.
+
+00:00:25.000 --> 00:00:26.968
+E temos a resposta correta.
+
+00:00:27.000 --> 00:00:30.831
+Vou modificar diasNoMês
+para ficar correto,
+
+00:00:30.864 --> 00:00:32.165
+exceto para anos bissextos.
+
+00:00:32.200 --> 00:00:35.968
+Estou evitando anos bissextos
+porque eles são irritantes.
+
+00:00:36.000 --> 00:00:39.300
+Mas tem uma complexidade
+que não aparece sempre.
+
+00:00:39.334 --> 00:00:41.934
+E podemos chegar perto
+a uma resposta correta
+
+00:00:41.968 --> 00:00:45.400
+tendo a estrutura do código
+e tudo no lugar correto.
+
+00:00:45.434 --> 00:00:46.501
+Então, vou fazer isso.
+
+00:00:46.534 --> 00:00:48.868
+É uma boa ideia
+testar de novo.
+
+00:00:48.901 --> 00:00:51.767
+Vamos testar de novo
+no passo 5,
+
+00:00:51.801 --> 00:00:55.701
+e pode fazer o teste
+usando diasNoMês.
+
+00:00:55.734 --> 00:00:58.634
+É mais fácil de fazer
+usando diaSeguinte,
+
+00:00:58.667 --> 00:01:02.667
+porque posso repetir os testes
+que fiz no passo 3.
+
+00:01:02.701 --> 00:01:06.667
+Cheguei ao ponto em que não posso
+ignorar mais os anos bissextos.
+
+00:01:06.701 --> 00:01:09.000
+Vou trabalhar
+com eles agora.
+
+00:01:09.033 --> 00:01:12.834
+Vou fazer um procedimento específico
+para ano bissexto como passo 6.
+
+00:01:12.868 --> 00:01:14.901
+Vou testar separadamente.
+
+00:01:14.934 --> 00:01:20.000
+É um passo que você pode testar
+usando diasNoMês ou próximoDia.
+
+00:01:20.033 --> 00:01:25.033
+No caso do ano bissexto,
+faz mais sentido testar separadamente.
+
+00:01:25.534 --> 00:01:28.667
+Depois disso,
+devo ter uma solução completa.
+
+00:01:28.701 --> 00:01:32.968
+Posso testar separadamente,
+mas estou confiante no meu código.
+
+00:01:33.000 --> 00:01:36.400
+Vou pular para o passo K
+e vou fazer todos os testes.
+
+00:01:36.434 --> 00:01:38.634
+Essa é a ordem
+que eu recomendaria,
+
+00:01:38.667 --> 00:01:40.968
+mas várias outras ordens
+fazem sentido.
+
+00:01:41.000 --> 00:01:45.000
+Uma coisa que faz sentido
+é colocar o ano bissexto no começo.
+
+00:01:45.033 --> 00:01:49.067
+Se gosta de anos bissextos,
+pode fazer separadamente.
+
+00:01:49.100 --> 00:01:53.901
+Ao invés de usar o teste do próximoDia,
+use o teste do diasNoMês.
+
+00:01:53.934 --> 00:01:55.501
+Também é lógico.
+
+00:01:55.534 --> 00:01:57.534
+Essa questão
+tem várias respostas corretas.
+
+00:01:57.567 --> 00:02:00.100
+Mas todas
+as respostas certas
+
+00:02:00.133 --> 00:02:03.167
+devem ser escrever o código
+em pedaços pequenos,
+
+00:02:03.200 --> 00:02:04.834
+para testar
+independentemente.
+
+00:02:04.868 --> 00:02:08.067
+Você não quer escrever muitos códigos
+sem poder testar.
+
+00:02:08.100 --> 00:02:12.868
+É importante, como desenvolvedor,
+pensar em formas de estruturar o código
+
+00:02:12.901 --> 00:02:14.801
+e organizar a forma
+de construí-lo.
+
+00:02:14.834 --> 00:02:17.133
+Assim você vai poder
+fazer testes
+
+00:02:17.167 --> 00:02:20.467
+e verá o código chegar perto
+da solução necessária.
+
+00:02:20.501 --> 00:02:24.634
+Quando você ficar confiante,
+pode pular alguns passos.
+
+00:02:24.667 --> 00:02:28.367
+Mas fiz essa questão porque,
+quando tentei resolver este problema,
+
+00:02:28.400 --> 00:02:32.334
+eu tive um bug,
+porque não vi os passos com cuidado.
+
+00:02:32.367 --> 00:02:35.634
+Tentei fazer os testes,
+e todos falharam.
+
+00:02:35.667 --> 00:02:39.400
+Tirar o bug demorou muito mais
+do que seguir este padrão.
+
+00:02:39.434 --> 00:02:42.801
+Quando for desenvolver
+a sua solução,
+
+00:02:42.834 --> 00:02:46.400
+escreva para o código fazer os testes
+como parte da solução.
+
+00:02:46.434 --> 00:02:50.200
+E, se você fizer os testes
+enquanto programa,
+
+00:02:50.234 --> 00:02:53.968
+quando chegar ao passo K
+e fizer todos os testes,
+
+00:02:54.000 --> 00:02:57.000
+tudo vai funcionar corretamente
+da primeira vez.
+
+00:02:57.033 --> 00:02:58.033
+Mas não será mágica.
+
+00:02:58.067 --> 00:03:01.467
+Será o cuidado de programar
+de forma sistemática e cuidadosa.
+

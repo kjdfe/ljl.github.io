@@ -1,0 +1,60 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:03.036
+O que significa
+entender um problema?
+
+00:00:03.062 --> 00:00:06.624
+Me refiro a problemas
+computacionais.
+
+00:00:06.657 --> 00:00:09.300
+Todos os problemas
+computacionais
+
+00:00:09.333 --> 00:00:12.635
+têm entradas
+e saídas desejadas.
+
+00:00:12.668 --> 00:00:16.256
+O problema é definido
+pelo conjunto de possíveis entradas,
+
+00:00:16.289 --> 00:00:19.730
+que costuma ser infinito
+nos problemas interessantes,
+
+00:00:19.763 --> 00:00:23.482
+a relação entre as entradas,
+e as saídas desejadas.
+
+00:00:23.515 --> 00:00:26.789
+A solução para um problema
+é um procedimento
+
+00:00:26.822 --> 00:00:30.854
+que pega qualquer entrada do conjunto
+e produz uma saída desejada
+
+00:00:30.887 --> 00:00:33.398
+que satisfaça à relação
+que queremos.
+
+00:00:33.431 --> 00:00:36.210
+No caso, a relação que queremos
+é que a saída
+
+00:00:36.243 --> 00:00:39.522
+seja o nº de dias
+entre o aniversário e a data atual.
+
+00:00:39.555 --> 00:00:41.941
+O 1º passo para entender
+um problema
+
+00:00:41.974 --> 00:00:45.044
+é entender quais são
+as entradas possíveis.
+

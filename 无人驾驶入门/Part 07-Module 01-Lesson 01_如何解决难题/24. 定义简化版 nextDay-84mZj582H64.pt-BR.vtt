@@ -1,0 +1,32 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.033 --> 00:00:02.667
+Para o teste,
+quero um procedimento de próximoDia
+
+00:00:02.701 --> 00:00:05.334
+que aceita uma data
+do calendário gregoriano,
+
+00:00:05.367 --> 00:00:08.667
+que está definido como 3 números,
+ano, mês e dia.
+
+00:00:08.701 --> 00:00:13.167
+E retorna o próximo dia
+com o ano, o mês e o dia.
+
+00:00:13.200 --> 00:00:18.067
+Para ficar simples, considere
+que todos os meses têm 30 dias.
+
+00:00:18.100 --> 00:00:20.968
+É claro que isso
+não estará correto,
+
+00:00:21.000 --> 00:00:23.667
+mas é um bom começo
+para a resolução.
+

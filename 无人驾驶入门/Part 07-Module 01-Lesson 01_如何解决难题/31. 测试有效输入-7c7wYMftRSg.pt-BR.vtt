@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:02.906
+Esta pergunta é mais traiçoeira
+do que parece,
+
+00:00:02.939 --> 00:00:05.790
+pois se as 2 datas
+forem iguais,
+
+00:00:05.823 --> 00:00:08.724
+temos que obter o resultado 0,
+e não a exceção.
+
+00:00:08.757 --> 00:00:13.254
+A solução é usar um not
+e trocar a ordem das datas.
+
+00:00:13.287 --> 00:00:16.927
+Vamos afirmar que a 2ª data
+não vem antes da 1ª data,
+
+00:00:16.960 --> 00:00:20.815
+que é exatamente o requisito.
+Agora que incluímos a asserção,
+
+00:00:20.848 --> 00:00:23.684
+ao executar,
+em vez de obtermos o valor 0,
+
+00:00:23.717 --> 00:00:25.537
+obtemos este erro
+de asserção.
+
+00:00:25.570 --> 00:00:28.990
+Não é uma mensagem amigável
+para um usuário comum,
+
+00:00:29.023 --> 00:00:31.286
+mas para um programador,
+ajuda muito.
+
+00:00:31.319 --> 00:00:34.110
+Ela indica a linha
+em que a asserção falhou,
+
+00:00:34.143 --> 00:00:36.370
+e assim, vemos
+o que deu errado.
+

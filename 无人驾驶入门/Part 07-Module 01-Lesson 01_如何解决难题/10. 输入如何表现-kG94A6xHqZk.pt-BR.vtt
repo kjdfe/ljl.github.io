@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.067 --> 00:00:02.000
+Para a maioria
+dos problemas reais,
+
+00:00:02.033 --> 00:00:05.033
+cabe a você descobrir
+como codificar as entradas.
+
+00:00:05.067 --> 00:00:08.934
+E essa é uma das decisões mais
+importantes ao resolver um problema.
+
+00:00:08.968 --> 00:00:11.300
+Para os problemas que vimos
+na Unidade 1,
+
+00:00:11.334 --> 00:00:13.400
+como eles precisam
+ser automaticamente classificados,
+
+00:00:13.434 --> 00:00:15.634
+e queremos executar
+seu código em test,
+
+00:00:15.667 --> 00:00:19.400
+precisamos especificar quais são
+as entradas e como são codificadas.
+
+00:00:19.434 --> 00:00:21.200
+Neste caso, o template
+para o problema
+
+00:00:21.234 --> 00:00:23.434
+indica como as entradas
+são representadas.
+
+00:00:23.467 --> 00:00:26.334
+Há 6 parâmetros para o procedimento
+Dias Entre Datas,
+
+00:00:26.367 --> 00:00:29.400
+ano um, mês um, dia um,
+ano dois, mês dois, dia dois,
+
+00:00:29.434 --> 00:00:31.801
+o que significa que vamos
+inserir 6 valores diferentes
+
+00:00:31.834 --> 00:00:33.400
+para representar as duas datas.
+
+00:00:33.434 --> 00:00:35.767
+Quem já está mais avançado na aula
+vai argumentar
+
+00:00:35.801 --> 00:00:38.501
+que seria melhor
+ter feito um pacote
+
+00:00:38.534 --> 00:00:40.567
+de ano, mês e dia
+como um único objeto,
+
+00:00:40.601 --> 00:00:42.767
+mas, com base no que vimos
+até a Unidade 2,
+
+00:00:42.801 --> 00:00:45.100
+inseri-los com valores diferentes
+faz sentido.
+
+00:00:45.133 --> 00:00:48.832
+Então a nossa solução precisa usar
+entradas representadas assim.
+

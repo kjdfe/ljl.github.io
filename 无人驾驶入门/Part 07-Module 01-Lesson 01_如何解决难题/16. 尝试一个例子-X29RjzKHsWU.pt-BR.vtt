@@ -1,0 +1,71 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.019 --> 00:00:03.692
+Um exemplo. Suponha que queiramos
+achar daysBetweenDates
+
+00:00:03.725 --> 00:00:07.609
+24 de janeiro de 2013
+e 29 de junho de 2013.
+
+00:00:07.642 --> 00:00:11.107
+Para resolver como humanos,
+precisamos de um calendário.
+
+00:00:11.140 --> 00:00:16.252
+Tenho um aqui, graças à minha tia
+de Belfast, que me mandou.
+
+00:00:16.285 --> 00:00:19.332
+Contaríamos os dias
+usando o calendário.
+
+00:00:19.365 --> 00:00:23.220
+O dia inicial
+é 24 de janeiro.
+
+00:00:23.253 --> 00:00:27.943
+Poderíamos contar
+os dias restantes em janeiro.
+
+00:00:27.976 --> 00:00:32.089
+Restam 1, 2, 3, 4, 5, 6, 7 dias
+em janeiro.
+
+00:00:32.122 --> 00:00:34.389
+Há 7 dias em janeiro.
+
+00:00:34.422 --> 00:00:38.547
+Depois, fevereiro inteiro,
+com 28 dias.
+
+00:00:38.580 --> 00:00:42.577
+Março inteiro, 31 dias.
+
+00:00:43.139 --> 00:00:46.587
+Abril inteiro, 30 dias.
+
+00:00:47.439 --> 00:00:50.233
+Maio inteiro, 31 dias.
+
+00:00:50.266 --> 00:00:55.077
+Não vamos contar junho inteiro,
+pois vamos parar no dia 29.
+
+00:00:55.110 --> 00:00:58.202
+Vamos adicionar
+29 dias em junho.
+
+00:00:58.235 --> 00:01:00.808
+A soma de todos
+será a resposta.
+
+00:01:00.841 --> 00:01:05.384
+Como humanos, sabemos calcular somas
+jogando os números no Google.
+
+00:01:05.417 --> 00:01:07.063
+O resultado é 156.
+

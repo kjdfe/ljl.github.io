@@ -1,0 +1,122 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:03.973
+Com o procedimento auxiliar,
+definir daysBetweenDates é simples.
+
+00:00:04.006 --> 00:00:07.474
+A condição do loop y vê
+se a data 1 vem antes da data 2.
+
+00:00:07.507 --> 00:00:12.589
+Atualizamos os valores de ano1,
+mês1 e dia1 com o dia seguinte.
+
+00:00:12.622 --> 00:00:14.807
+Adicionamos 1 ao nº de dias.
+
+00:00:14.840 --> 00:00:18.534
+Vamos aos exemplos.
+Fizemos este à mão mais cedo.
+
+00:00:18.567 --> 00:00:22.675
+Obtivemos 155.
+Não está correto, mas quase.
+
+00:00:22.708 --> 00:00:25.078
+Obtivemos 156
+quando tentamos à mão.
+
+00:00:25.111 --> 00:00:28.868
+E dado que nextDay supõe
+que todos os meses têm 30 dias,
+
+00:00:28.901 --> 00:00:31.388
+não é surpresa
+a resposta estar errada.
+
+00:00:31.421 --> 00:00:34.648
+Próximo exemplo.
+Vai ser um bom teste de sanidade
+
+00:00:34.681 --> 00:00:38.009
+para testar a rapidez da nossa
+solução. Temos 100 anos
+
+00:00:38.042 --> 00:00:40.859
+e obtivemos 36.000 dias.
+Parece correto.
+
+00:00:40.892 --> 00:00:45.910
+Com 12 meses de 30 dias,
+nosso ano tem 360 dias,
+
+00:00:45.943 --> 00:00:49.323
+em vez da duração correta do ano.
+Mais um exemplo.
+
+00:00:49.356 --> 00:00:51.781
+Tente adivinhar o resultado.
+
+00:00:51.814 --> 00:00:55.454
+Obtive a resposta 0. Não está
+correto, não é o mesmo dia.
+
+00:00:55.487 --> 00:01:00.234
+A resposta é válida considerando que
+a instrução de daysBetweenDates
+
+00:01:00.267 --> 00:01:03.592
+permite supor que a 1ª data
+não vem depois da 2ª data.
+
+00:01:03.625 --> 00:01:07.837
+No caso, é o contrário.
+Mas a resposta não é satisfatória.
+
+00:01:07.870 --> 00:01:11.087
+Não queremos obter 0.
+Podemos mudar a especificação
+
+00:01:11.120 --> 00:01:14.562
+Se a 1ª data vier depois
+da 2ª data, o resultado é 0.
+
+00:01:14.595 --> 00:01:17.447
+Mas é uma abordagem
+estranha.
+
+00:01:17.480 --> 00:01:21.098
+O mais sensato seria
+dar um resultado negativo,
+
+00:01:21.131 --> 00:01:22.906
+o que vai complicar
+o código.
+
+00:01:22.939 --> 00:01:26.437
+Faça como exercício
+após a lição.
+
+00:01:26.470 --> 00:01:29.225
+Em vez disso, vou usar
+programação defensiva.
+
+00:01:29.258 --> 00:01:33.270
+Se as suposições da função não
+forem satisfeitas pelas entradas,
+
+00:01:33.303 --> 00:01:36.716
+é mais útil criar uma asserção
+para gerar uma falha,
+
+00:01:36.749 --> 00:01:40.065
+em vez de continuar
+e gerar um resultado misterioso
+
+00:01:40.098 --> 00:01:44.469
+ou ter um comportamento inesperado.
+Faça isso como um teste.
+

@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.018 --> 00:00:03.913
+A próxima coisa a saber
+no problema são as saídas.
+
+00:00:03.946 --> 00:00:06.956
+A instrução do problema
+dá uma ideia das saídas,
+
+00:00:06.989 --> 00:00:11.781
+na parte calcule sua idade em dias,
+mas não especifica explicitamente
+
+00:00:11.814 --> 00:00:14.592
+qual deve ser a saída.
+Vamos fazer um teste.
+
+00:00:14.625 --> 00:00:19.146
+Veja se há informações suficientes
+para decidir como especificar a saída.
+
+00:00:19.179 --> 00:00:23.228
+As opções são, imprimir o nº de dias
+entre a 1ª data e a 2ª data;
+
+00:00:23.261 --> 00:00:27.622
+retornar o nº de dias
+entre a 1ª data e a 2ª data;
+
+00:00:27.655 --> 00:00:31.278
+ou ter 3 valores de saída,
+o nº de anos, meses e dias
+
+00:00:31.311 --> 00:00:34.908
+entre as 2 datas de entrada.
+Selecione a melhor opção.
+

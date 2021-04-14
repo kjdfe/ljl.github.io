@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: es-AR
+
+00:00:00.863 --> 00:00:04.685
+Y el que creo que es el mejor es el procedimiento siguiente día. Esta es una especie de
+
+00:00:04.754 --> 00:00:08.432
+Lo más importante para que la solución funcione. Si no podemos hacer esto, entonces nosotros
+
+00:00:08.533 --> 00:00:12.104
+habría que pensar en un enfoque diferente. Y la razón por la que creo que esto es
+
+00:00:12.312 --> 00:00:15.947
+mejor es que, podemos resolver esto de una manera simple para el caso simple, que es
+
+00:00:15.991 --> 00:00:19.916
+lo que vamos a hacer ahora, no preocuparse por la complejidad de cuántos días hay en
+
+00:00:23.706 --> 00:00:23.956
+diferentes meses. Y conseguir una buena sensación de que somos capaces de acercarse a la
+
+00:00:27.690 --> 00:00:27.940
+respuesta correcta para algunos casos. La otra respuesta que creo que estaría bien es
+
+00:00:27.940 --> 00:00:31.090
+haciendo es año bisiesto. Esto es algo que sabemos que vamos a necesitar en algún momento.
+
+00:00:31.187 --> 00:00:34.201
+Tenemos que determinar si los años son años bisiestos para saber cuántos días
+
+00:00:34.526 --> 00:00:37.414
+existen en el mes de febrero, pero es una especie de cosa sucio, doloroso
+
+00:00:40.204 --> 00:00:40.454
+escribir. Es algo que sabemos que vamos a ser capaces de hacer. Y es algo
+
+00:00:43.432 --> 00:00:43.682
+eso no es demasiado interesante, así que vamos a dejar eso para más tarde. Tú podrías
+
+00:00:47.588 --> 00:00:47.838
+sin duda hacer un caso para hacer eso primero. Los otros dos realmente no son buenos
+
+00:00:47.838 --> 00:00:51.350
+respuestas. Tratar de hacer todo el problema en este momento es un poco temprano. Nosotros
+
+00:00:51.576 --> 00:00:54.500
+todavía quieren dividirlo en partes más simples y avanzar y saber que
+
+00:00:54.751 --> 00:00:59.712
+estamos haciendo progresos. Ese otro es más cerca de algo muy pequeño. los
+
+00:00:59.942 --> 00:01:03.616
+problema es que esto probablemente no es el procedimiento que queremos y hasta que
+
+00:01:03.813 --> 00:01:07.642
+escribimos estos otros procedimientos y pensar más acerca de cómo vamos a hacer esto,
+
+00:01:07.753 --> 00:01:11.802
+podría no saber lo suficiente como para poner en práctica esto correctamente. Y la razón por la que me voy
+
+00:01:12.111 --> 00:01:15.393
+para sugerir que esto no es lo que queremos es el número de días en un mes
+
+00:01:15.630 --> 00:01:19.182
+En realidad depende del año, si el mes es febrero. Así que vamos a empezar por
+
+00:01:19.361 --> 00:01:23.208
+escribir la siguiente procedimiento de día, y para simplificar las cosas vamos a suponer que todos
+
+00:01:23.427 --> 00:01:24.294
+meses tienen 30 días.
+

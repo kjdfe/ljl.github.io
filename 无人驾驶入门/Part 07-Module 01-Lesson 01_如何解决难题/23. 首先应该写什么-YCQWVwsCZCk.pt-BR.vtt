@@ -1,0 +1,48 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.239 --> 00:00:03.727
+Temos uma solução mecânica
+simples e um pseudocódigo.
+
+00:00:03.760 --> 00:00:07.650
+Estamos prontos para codificar,
+mas temos que pensar com calma.
+
+00:00:07.683 --> 00:00:12.502
+Por onde começar? Podemos escrever
+o procedimento daysBetweenDates,
+
+00:00:12.535 --> 00:00:15.638
+que resolve o problema.
+Escrever nextDay,
+
+00:00:15.671 --> 00:00:20.212
+que pega uma data atual, com ano,
+mês e dia, e retorna o dia seguinte.
+
+00:00:20.245 --> 00:00:23.939
+Mas só para casos simples,
+com todos os meses tendo 30 dias.
+
+00:00:23.972 --> 00:00:28.452
+Escrever isLeapYear, que pega
+um ano e retorna true ou false,
+
+00:00:28.485 --> 00:00:31.715
+determinando se é bissexto.
+Ou escrever daysInMonth,
+
+00:00:31.748 --> 00:00:35.090
+que pega um mês e retorna
+o nº de dias desse mês.
+
+00:00:35.123 --> 00:00:39.484
+É uma pergunta subjetiva. Você pode
+escolher pelo menos 2 respostas.
+
+00:00:39.517 --> 00:00:42.574
+Mas tente deduzir
+qual é a melhor resposta.
+

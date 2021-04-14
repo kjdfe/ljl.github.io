@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:02.917
+Código do procedimento
+auxiliar dateIsBefore:
+
+00:00:02.950 --> 00:00:06.756
+se o ano1 for antes do ano2,
+retornamos true.
+
+00:00:06.789 --> 00:00:09.618
+Meses e dias não importam
+com anos diferentes.
+
+00:00:09.651 --> 00:00:11.889
+Com anos iguais,
+vemos os meses.
+
+00:00:11.922 --> 00:00:14.370
+Com mês1 antes do mês2,
+retornamos true.
+
+00:00:14.403 --> 00:00:16.801
+Com meses iguais,
+verificamos os dias.
+
+00:00:16.834 --> 00:00:20.402
+Não há elses aqui,
+mas se não acertarmos os retornos
+
+00:00:20.435 --> 00:00:23.523
+vamos cair na última instrução
+e retornar false.
+
+00:00:23.556 --> 00:00:27.147
+Pode acontecer se o ano1
+for maior que o ano2,
+
+00:00:27.180 --> 00:00:29.887
+ou com anos iguais,
+mas mês1 maior que mês2,
+
+00:00:29.920 --> 00:00:32.847
+ou com meses iguais,
+mas dia1 maior que dia2.
+
+00:00:32.880 --> 00:00:37.371
+Nesses casos, a 1ª data não vem
+antes da 2ª data, e retornamos false.
+

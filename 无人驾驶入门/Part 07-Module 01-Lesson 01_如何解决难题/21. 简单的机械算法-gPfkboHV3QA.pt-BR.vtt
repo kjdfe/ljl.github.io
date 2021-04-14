@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.032 --> 00:00:03.026
+A resposta é
+alguns milissegundos.
+
+00:00:03.059 --> 00:00:07.502
+Temos 100 anos. Um ano tem 365 dias.
+Se for bissexto, mais 1.
+
+00:00:07.535 --> 00:00:10.983
+Teremos cerca
+de 36 mil dias.
+
+00:00:11.016 --> 00:00:14.422
+Processadores executam
+1 bilhão de funções por segundo,
+
+00:00:14.455 --> 00:00:17.135
+o que dá 1 nanossegundo
+por instrução.
+
+00:00:17.168 --> 00:00:20.011
+Essas instruções são
+diferentes das do Python.
+
+00:00:20.044 --> 00:00:23.737
+Cada instrução do Python
+envolve várias do processador.
+
+00:00:23.770 --> 00:00:28.996
+Suponha que, para cada volta no loop,
+precisamos de 1.000 instruções.
+
+00:00:29.029 --> 00:00:32.514
+É a parte mais difícil de adivinhar.
+É só um palpite.
+
+00:00:32.547 --> 00:00:35.845
+Vai depender de como
+escrevemos o código Python.
+
+00:00:35.878 --> 00:00:40.961
+Mas vai estar entre 100 e 10 mil
+instruções, se formos sensatos.
+
+00:00:40.994 --> 00:00:45.960
+Vamos estimar 1.000.
+Seriam 1.000 instruções
+
+00:00:45.993 --> 00:00:48.335
+vezes 36 mil dias.
+
+00:00:48.368 --> 00:00:51.711
+São cerca de 36 milhões
+e meio de instruções.
+
+00:00:51.744 --> 00:00:54.804
+Como humanos,
+não iríamos querer fazer isso.
+
+00:00:54.837 --> 00:00:58.076
+Mas um processador
+executa 1 bilhão por segundo.
+
+00:00:58.109 --> 00:01:00.457
+Executar 36 milhões
+não é nada.
+
+00:01:00.490 --> 00:01:03.451
+Vão ser cerca de 36 milhões
+de nanossegundos,
+
+00:01:03.484 --> 00:01:08.373
+que são 36 milissegundos,
+que são 0,036 segundos.
+

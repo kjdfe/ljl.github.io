@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: es-MX
+
+00:00:00.691 --> 00:00:04.400
+Así que vamos a pensar de una manera muy sencilla podríamos resolver este problema. Y lo que yo soy
+
+00:00:04.514 --> 00:00:07.939
+va a sugerir es un poco como la forma en que empezamos. Vamos a empezar en el
+
+00:00:08.151 --> 00:00:11.360
+días de la primera fecha, y vamos a simplemente contar los días, vamos a ir
+
+00:00:11.685 --> 00:00:14.435
+un día a la vez. No vamos a hacer nada especial cuando pasamos por
+
+00:00:14.650 --> 00:00:18.120
+mes, sólo vamos a seguir contando día, seguir sumando a medida que avanzamos. Y estamos
+
+00:00:18.448 --> 00:00:22.664
+va a seguir haciendo esto hasta que tengamos a nuestra fecha límite, y me dieron 156. Así
+
+00:00:22.971 --> 00:00:26.450
+aquí está nuestra pseudo código para, un cerebro forma realmente sencilla, muerto de hacerlo. Nosotros
+
+00:00:26.678 --> 00:00:30.599
+inicializar fechas a 0. Tenemos un bucle que sigue adelante, siempre y cuando la fecha es 1
+
+00:00:30.599 --> 00:00:35.589
+antes de la fecha 2 y cada paso que avanzamos, la fecha 1 al día siguiente, y le sumamos 1 a
+
+00:00:35.722 --> 00:00:37.036
+el número de días.
+

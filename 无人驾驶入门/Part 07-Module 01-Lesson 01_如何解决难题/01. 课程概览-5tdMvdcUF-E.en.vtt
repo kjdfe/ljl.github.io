@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.225
+So, you've spent a lot of sweat on this and you learned a lot word
+
+00:00:03.225 --> 00:00:07.050
+Python and C++ and gotten us some very efficient software.
+
+00:00:07.049 --> 00:00:09.132
+I hope you like this,
+
+00:00:09.132 --> 00:00:11.009
+you like playing with software code,
+
+00:00:11.009 --> 00:00:12.404
+and I hope you liked the introduction.
+
+00:00:12.404 --> 00:00:15.209
+Because if you do, you have a great future ahead of you,
+
+00:00:15.210 --> 00:00:17.725
+and you're going to be a great engineer going forward.
+
+00:00:17.725 --> 00:00:20.440
+But now, for the next class,
+
+00:00:20.440 --> 00:00:25.215
+you're going to solve a really hard real problem.
+
+00:00:25.214 --> 00:00:27.940
+You're going to build Google Maps, okay?
+
+00:00:27.940 --> 00:00:29.490
+You know Google Maps?
+
+00:00:29.489 --> 00:00:32.879
+When you punch in an address and you hit the button shortest path,
+
+00:00:32.880 --> 00:00:36.010
+it routes you on the best path to get there.
+
+00:00:36.009 --> 00:00:39.390
+You are going to build this and as you'll find out,
+
+00:00:39.390 --> 00:00:42.750
+all the tools you learned so far in Python will be super
+
+00:00:42.750 --> 00:00:48.000
+useful in making this a real joy. So let's dive in.
+

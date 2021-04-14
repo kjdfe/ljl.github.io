@@ -1,0 +1,47 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:03.268
+Vamos pensar em uma maneira simples
+de resolver esse problema.
+
+00:00:03.302 --> 00:00:06.502
+Vou sugerir algo parecido
+de quando começamos.
+
+00:00:06.535 --> 00:00:08.935
+Começamos no dia
+da primeira data,
+
+00:00:08.968 --> 00:00:11.535
+e vou contar os dias,
+um de cada vez.
+
+00:00:11.569 --> 00:00:17.068
+Sem fazer nada especial,
+vou contar os dias e adicioná-los.
+
+00:00:17.102 --> 00:00:22.168
+E continuo até chegar
+à data que eu quero, que dá 156.
+
+00:00:22.202 --> 00:00:26.001
+Esse é o nosso pseudocódigo
+para uma forma simples de fazer isso.
+
+00:00:26.035 --> 00:00:27.369
+Começamos as datas com 0.
+
+00:00:27.402 --> 00:00:31.702
+Temos uma repetição que continua
+enquanto o dia 1 é antes do dia 2.
+
+00:00:31.736 --> 00:00:34.635
+E cada passo que avançamos
+adicionamos 1 ao próximo dia
+
+00:00:34.669 --> 00:00:36.935
+e adicionamos 1
+ao número de dias.
+

@@ -1,0 +1,84 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:03.969
+Seguem as respostas. Na primeira,
+as datas são iguais. Está certo.
+
+00:00:04.002 --> 00:00:08.265
+A 2ª data não pode vir antes
+da 1ª data. Elas podem ser iguais.
+
+00:00:08.298 --> 00:00:11.706
+A resposta é 0.
+Não há datas entre elas.
+
+00:00:11.739 --> 00:00:16.906
+Na segunda, a 2ª entrada é 1 dia
+depois da 1ª entrada. A saída é 1.
+
+00:00:16.939 --> 00:00:20.409
+Na terceira, a 2ª data
+vem antes da 1ª data.
+
+00:00:20.442 --> 00:00:23.687
+Conforme a especificação,
+a entrada é inválida,
+
+00:00:23.720 --> 00:00:28.183
+ou seja, a saída é indefinida.
+O procedimento poderia estar certo,
+
+00:00:28.216 --> 00:00:31.077
+independentemente da entrada.
+Seria mais útil
+
+00:00:31.110 --> 00:00:34.804
+se desse uma mensagem de erro
+clara, mais ainda se desse -1.
+
+00:00:34.837 --> 00:00:38.333
+Mas, conforme a especificação,
+não importa a saída,
+
+00:00:38.366 --> 00:00:40.949
+pois estas entradas
+são inválidas.
+
+00:00:40.982 --> 00:00:43.637
+Na quarta, as datas
+têm 1 ano de diferença.
+
+00:00:43.670 --> 00:00:47.482
+29 de junho de 2013 é 1 ano depois
+de 29 de junho de 2012.
+
+00:00:47.515 --> 00:00:50.321
+Há 365 dias em um ano
+não bissexto.
+
+00:00:50.354 --> 00:00:54.567
+Não é bissexto, pois o fevereiro
+incluído é de 2013.
+
+00:00:54.600 --> 00:01:00.512
+Na última, vamos de 29 de junho
+de 2012 a 31 de junho de 2013.
+
+00:01:00.545 --> 00:01:04.369
+Se você conhece o calendário,
+sabe que não existe 31 de junho.
+
+00:01:04.402 --> 00:01:07.925
+Conforme a especificação,
+as 2 datas de entrada devem ser
+
+00:01:07.958 --> 00:01:11.612
+válidas no calendário gregoriano.
+A saída é indefinida.
+
+00:01:11.645 --> 00:01:16.654
+Gostaríamos de receber uma saída
+de erro, mas não é um requisito.
+

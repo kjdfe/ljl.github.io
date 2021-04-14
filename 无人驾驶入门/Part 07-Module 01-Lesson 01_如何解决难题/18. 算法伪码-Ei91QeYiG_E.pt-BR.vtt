@@ -1,0 +1,146 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.033 --> 00:00:03.834
+Vamos tentar escrever um algoritmo
+que sistematize a resolução dele.
+
+00:00:03.868 --> 00:00:05.634
+Vou escrever
+como pseudocódigo.
+
+00:00:05.667 --> 00:00:09.968
+Não vou me preocupar em escrever
+como Python totalmente correto.
+
+00:00:10.000 --> 00:00:13.300
+Quero só escrever
+e ver se faz sentido.
+
+00:00:13.334 --> 00:00:15.767
+Vamos pensar em resolver o problema
+como um humano.
+
+00:00:15.801 --> 00:00:19.701
+Olhamos no calendário
+o dia de início, 24 de janeiro.
+
+00:00:19.734 --> 00:00:22.634
+E contamos os dias que faltam
+em janeiro.
+
+00:00:22.667 --> 00:00:24.200
+É só contar.
+
+00:00:24.234 --> 00:00:26.734
+Poderia fazer
+de outra forma.
+
+00:00:26.767 --> 00:00:30.334
+Subtraímos o total de dias do mês
+do dia que começamos.
+
+00:00:30.367 --> 00:00:32.067
+Esse é o começo.
+
+00:00:32.100 --> 00:00:35.100
+O resultado é uma variável
+chamada dias,
+
+00:00:35.133 --> 00:00:39.100
+e vamos colocar
+a quantidade de dias do mês
+
+00:00:39.133 --> 00:00:42.200
+menos o dia
+em que começamos.
+
+00:00:42.234 --> 00:00:46.501
+Então,
+janeiro tem 31 dias.
+
+00:00:46.534 --> 00:00:49.834
+Menos 24,
+que acredito ser 7.
+
+00:00:49.868 --> 00:00:52.167
+Quando terminamos
+o primeiro mês,
+
+00:00:52.200 --> 00:00:55.467
+aumentamos o valor
+do primeiro mês em 1.
+
+00:00:55.501 --> 00:00:59.100
+Estamos em fevereiro,
+e vamos passando os meses.
+
+00:00:59.133 --> 00:01:04.667
+E vamos passando até chegar
+ao mês que queremos, que é junho.
+
+00:01:04.701 --> 00:01:06.634
+É uma boa diferença.
+
+00:01:06.667 --> 00:01:10.334
+Vamos fazer sempre a mesma coisa
+até chegarmos ao ponto certo.
+
+00:01:10.367 --> 00:01:12.467
+Então posso escrever
+como pseudocódigo.
+
+00:01:12.501 --> 00:01:18.534
+Vou continuar enquanto o mês corrente
+é menor que o mês alvo.
+
+00:01:18.567 --> 00:01:21.334
+Vou adicionar o número de dias
+do mês corrente.
+
+00:01:21.367 --> 00:01:23.767
+E vou aumentar
+o mês corrente em um.
+
+00:01:23.801 --> 00:01:25.200
+Ainda não acabei,
+
+00:01:25.234 --> 00:01:28.501
+ainda preciso contar o dia
+em que começamos.
+
+00:01:28.534 --> 00:01:30.167
+E é só adicionar.
+
+00:01:30.200 --> 00:01:34.901
+Se for primeiro de junho,
+somamos um se não chegarmos a junho.
+
+00:01:34.934 --> 00:01:38.200
+Vou somar 29,
+pois 29 era o objetivo.
+
+00:01:38.234 --> 00:01:41.667
+Ainda não contamos os anos,
+mas serve para este exemplo.
+
+00:01:41.701 --> 00:01:44.234
+Mas em outros casos
+precisaremos contar os anos,
+
+00:01:44.267 --> 00:01:46.067
+então vamos ver
+como fazer isso.
+
+00:01:46.100 --> 00:01:48.801
+Pode ser similar
+ao que fizemos para os meses.
+
+00:01:48.834 --> 00:01:51.000
+Não estamos no mesmo ano.
+
+00:01:51.033 --> 00:01:53.764
+Vamos somar o número de dias
+deste ano.
+
