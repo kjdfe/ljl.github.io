@@ -1,0 +1,357 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   初始化向量值
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      C++ 向量
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. C++ 向量 .html">
+       01. C++ 向量
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 命名空间.html">
+       02. 命名空间
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Python 与 C++ 向量.html">
+       03. Python 与 C++ 向量
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 初始化向量值.html">
+       04. 初始化向量值
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 向量方法.html">
+       05. 向量方法
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 向量和 for 循环.html">
+       06. 向量和 for 循环
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 数学和向量.html">
+       07. 数学和向量
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 1D 向量练习区.html">
+       08. 1D 向量练习区
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 二维向量.html">
+       09. 二维向量
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 二维向量与 for 循环.html">
+       10. 二维向量与 for 循环
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 二维向量练习区.html">
+       11. 二维向量练习区
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 下节课预告.html">
+       12. 下节课预告
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          04. 初始化向量值
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="初始化向量值">
+          初始化向量值
+         </h1>
+         <p>
+          在之前的课程中，你已经学习了先声明向量，再为它赋值。
+         </p>
+         <pre><code>vector&lt;float&gt; myvector(5);
+
+myvector[0] = 5.0;
+myvector[1] = 3.0;
+myvector[2] = 2.7;
+myvector[3] = 8.2;
+myvector[4] = 7.9;</code></pre>
+         <p>
+          我们有许多不同的方法来为向量设置初始值。下面是其中两个方法：
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="同时声明和定义">
+          同时声明和定义
+         </h2>
+         <p>
+          在声明变量时，你也可以同时设置初始值。
+         </p>
+         <pre><code>std::vector&lt;int&gt; myvector (10, 6);</code></pre>
+         <p>
+          这段代码将会声明一个向量包含 10 个分量，而每个分量的值为 6。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="使用-bracket-来同时声明和定义变量">
+          使用 Bracket 来同时声明和定义变量
+         </h2>
+         <p>
+          如果你使用较新的 C++ 版本，比如 C++11 或者 C++17，我们还有一种方法来初始化变量。你可以使用下面的代码：
+         </p>
+         <pre><code>std::vector&lt;float&gt; myvector = {5.0, 3.0, 2.7, 8.2, 7.9}</code></pre>
+         <p>
+          不同版本的 C++（C++98, C++11, C++14, and C++17）将会在 C++ 实战这堂课中讨论。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="练习声明和定义变量">
+          练习声明和定义变量
+         </h2>
+         <p>
+          请根据 TODO 完成下面的练习。完成后，你可以查看 solution.cpp 文件中的答案。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="487854-main-cpp" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#487854-main-cpp" id="tab-487854-main-cpp" role="tab">
+            main.cpp
+           </a>
+           <a aria-controls="487854-solution-cpp" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#487854-solution-cpp" id="tab-487854-solution-cpp" role="tab">
+            solution.cpp
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-487854-main-cpp" class="tab-pane active show" id="487854-main-cpp" role="tabpanel">
+            <pre><code></code>// TODO: Include the iostream and vector libraries
+
+// TODO: Use the standard namespace
+
+// TODO: Write a main function
+int main() {}
+// TODO: Inside the main function, do the following:
+/***       
+ * 1. declare a float vector with 4 elements 
+ * 2. fill the float vector with the following values: 4.5, 2.1, 8.54, 9.0
+ * 
+ * 3. declare and define a float vector with one line of code. The float vector
+ * should have four elements with the following values: 3.5, 3.5, 3.5, 3.5
+ * 
+ * NOTE: You cannot use the bracket syntax because
+ * the classroom compiles your code with C++98. The bracket syntax was introduced 
+ * in C++11.
+ ***/</pre>
+           </div>
+           <div aria-labelledby="tab-487854-solution-cpp" class="tab-pane" id="487854-solution-cpp" role="tabpanel">
+            <pre><code></code>#include &lt;vector&gt;
+
+using namespace std;
+
+int main() {
+    
+    vector&lt;float&gt; vector1(4);
+    vector1[0] = 4.5;
+    vector1[1] = 2.1;
+    vector1[2] = 8.54;
+    vector1[3] = 9.0;
+
+    vector&lt;float&gt; vector(4, 3.5);
+    
+    return 0;
+}</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="05. 向量方法.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('04. 初始化向量值')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

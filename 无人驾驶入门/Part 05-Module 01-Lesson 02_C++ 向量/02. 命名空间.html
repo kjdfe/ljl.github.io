@@ -1,0 +1,448 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   命名空间
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      C++ 向量
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. C++ 向量 .html">
+       01. C++ 向量
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 命名空间.html">
+       02. 命名空间
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Python 与 C++ 向量.html">
+       03. Python 与 C++ 向量
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 初始化向量值.html">
+       04. 初始化向量值
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 向量方法.html">
+       05. 向量方法
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 向量和 for 循环.html">
+       06. 向量和 for 循环
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 数学和向量.html">
+       07. 数学和向量
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 1D 向量练习区.html">
+       08. 1D 向量练习区
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 二维向量.html">
+       09. 二维向量
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 二维向量与 for 循环.html">
+       10. 二维向量与 for 循环
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 二维向量练习区.html">
+       11. 二维向量练习区
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 下节课预告.html">
+       12. 下节课预告
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          02. 命名空间
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="命名空间">
+          命名空间
+         </h3>
+         <p>
+          在开始进一步练习 C++向量之前，你需要把 C++ 向变得更易于读写。你可能已经注意到，使用标准库的时候，你必须写大量 “std”。例如，std::cout or std::string or std::vector。
+         </p>
+         <p>
+          std 被称为
+          <a href="http://en.cppreference.com/w/cpp/language/namespace" target="_blank">
+           命名空间
+          </a>
+          。简而言之，命名空间是将代码组织成逻辑组的方式。在本例中，std 是标准库的命名空间。
+         </p>
+         <p>
+          实际上，你可以在 main.cpp 文件的顶部声明你的名称空间，然后就无需在代码中重复：
+         </p>
+         <pre><code class="c++ language-c++">std::</code></pre>
+         <p>
+          上述代码。下面是一个例子：
+         </p>
+         <pre><code class="c++ language-c++">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+int main() {
+vector&lt;int&gt; intvectorvariable;
+int intvariable = 5;
+cout &lt;&lt; intvariable &lt;&lt; endl;
+return 0;
+
+}</code></pre>
+         <p>
+          请注意，向量声明、cout 和 endl 不再需要 std ::。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          声明命名空间的好处是，代码读写更容易。缺点是，变量和函数的命名必须更加小心。之前，你可能会这么写：
+         </p>
+         <pre><code class="c++ language-c++">std::cout</code></pre>
+         <p>
+          让你的程序知道，你指的是来自标准库的 cout 函数。这样，C++ 应该就可以让你实际创建一个名为 cout 的变量或函数。这并不是一个好主意，但代码不会报错。一旦你添加了代码
+          <code>
+           using namespace std;
+          </code>
+          ，再输入
+          <code>
+           cout
+          </code>
+          就会引用标准库中的函数 cout。
+         </p>
+         <p>
+          从现在开始，练习和代码示例将包含
+          <code>
+           using namespace std;
+          </code>
+          代码行。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          命名空间
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             选出所有关于名称空间正确的陈述：
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1512435262150" name="487839" type="checkbox" value="a1512435262150"/>
+           <label for="a1512435262150">
+            <p>
+             命名空间可以将相关的代码组合在一起。
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512435272714" name="487839" type="checkbox" value="a1512435272714"/>
+           <label for="a1512435272714">
+            <p>
+             命名空间可以避免变量名、函数名和类名之间的冲突。
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512435273296" name="487839" type="checkbox" value="a1512435273296"/>
+           <label for="a1512435273296">
+            <p>
+             在程序顶部声明一个命名空间，可以避免在代码中多次写出命名空间的名称。
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1512435273824" name="487839" type="checkbox" value="a1512435273824"/>
+           <label for="a1512435273824">
+            <p>
+             如果使用 using 语句声明一个命名空间，那么发生变量或函数的命名冲突的可能性会减少很多。
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <ul>
+           <li>
+            命名空间可以将相关的代码组合在一起。
+           </li>
+           <li>
+            命名空间可以避免变量名、函数名和类名之间的冲突。
+           </li>
+           <li>
+            在程序顶部声明一个命名空间，可以避免在代码中多次写出命名空间的名称。
+           </li>
+          </ul>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          你现在可以使用命名空间来简化向量句法啦。 让我们对比一下 Python 与 C++ 向量句法，并进行 C++ 向量代码练习。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="命名空间练习">
+          命名空间练习
+         </h2>
+         <p>
+          使用标准库命名空间，更改代码，让代码不再使用  "std::"。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="487843-main-cpp" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#487843-main-cpp" id="tab-487843-main-cpp" role="tab">
+            main.cpp
+           </a>
+           <a aria-controls="487843-solution-cpp" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#487843-solution-cpp" id="tab-487843-solution-cpp" role="tab">
+            solution.cpp
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-487843-main-cpp" class="tab-pane active show" id="487843-main-cpp" role="tabpanel">
+            <pre><code></code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+// TODO: Use the standard namespace
+
+int main() {
+    
+    // TODO: change the code so that it no longer uses "std::"    
+    
+    std::string fruit = "apple";
+    std::string vegetable = "broccoli";
+    
+    std::cout &lt;&lt; "My favorite fruit is " &lt;&lt; fruit &lt;&lt;
+      " and my favorite vegetable is " &lt;&lt; vegetable &lt;&lt; "\n";
+    
+    return 0;
+}</pre>
+           </div>
+           <div aria-labelledby="tab-487843-solution-cpp" class="tab-pane" id="487843-solution-cpp" role="tabpanel">
+            <pre><code></code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+using namespace std;
+
+int main() {
+    
+    string fruit = "apple";
+    string vegetable = "broccoli";
+    
+    cout &lt;&lt; "My favorite fruit is " &lt;&lt; fruit &lt;&lt;
+      "and my favorite vegetable is " &lt;&lt; vegetable &lt;&lt; "\n";
+    
+    return 0;
+}</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="03. Python 与 C++ 向量.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('02. 命名空间')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

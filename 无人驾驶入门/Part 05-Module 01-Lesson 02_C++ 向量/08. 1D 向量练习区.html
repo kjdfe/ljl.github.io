@@ -1,0 +1,428 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   1D 向量练习区
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      C++ 向量
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. C++ 向量 .html">
+       01. C++ 向量
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 命名空间.html">
+       02. 命名空间
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Python 与 C++ 向量.html">
+       03. Python 与 C++ 向量
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 初始化向量值.html">
+       04. 初始化向量值
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 向量方法.html">
+       05. 向量方法
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 向量和 for 循环.html">
+       06. 向量和 for 循环
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 数学和向量.html">
+       07. 数学和向量
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 1D 向量练习区.html">
+       08. 1D 向量练习区
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 二维向量.html">
+       09. 二维向量
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 二维向量与 for 循环.html">
+       10. 二维向量与 for 循环
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 二维向量练习区.html">
+       11. 二维向量练习区
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 下节课预告.html">
+       12. 下节课预告
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          08. 1D 向量练习区
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="练习区">
+          练习区
+         </h3>
+         <p>
+          现在，轮到你进行向量编程了。在这个练习区里，你可以编写自己的程序。
+         </p>
+         <h5 id="想法-1">
+          想法 1
+         </h5>
+         <p>
+          首先，尝试编写一个初始化大小为 3 的向量的程序。这个向量的值是
+          <span class="mathquill ud-math">
+           [5, 10, 27]
+          </span>
+          。使用值
+          <span class="mathquill ud-math">
+           [3, 17, 12]
+          </span>
+          初始化另一个大小为 3 的向量。现在将这两个相量相减并输出结果。
+         </p>
+         <p>
+          要想多加练习，你可以写一个函数，接受两个向量，然后输出向量之间的差。假设两个向量大小相同；否则你必须检查并确定它们大小相同，同时还有进行错误检查。
+         </p>
+         <h5 id="想法-2">
+          想法 2
+         </h5>
+         <p>
+          使用值
+          <span class="mathquill ud-math">
+           [17, 10, 31, 5, 7]
+          </span>
+          初始化一个向量。使用值
+          <span class="mathquill ud-math">
+           [3, 1, 6, 19, 8]
+          </span>
+          初始化另一个向量。然后，输出另一个包含每个元素的乘积的向量。换句话说，向量应该有
+          <span class="mathquill ud-math">
+           [17\times3, \space10\times1, \space 31\times6, \space 5\times19, \space 7\times8]
+          </span>
+          。
+         </p>
+         <p>
+          要想多加练习，你可以写一个函数，接受两个向量，然后输出一个元素逐个相乘得到的新向量。假设两个向量大小相同；否则你必须检查并确定它们大小相同，同时还有进行错误检查。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="487866-main-cpp" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#487866-main-cpp" id="tab-487866-main-cpp" role="tab">
+            main.cpp
+           </a>
+           <a aria-controls="487866-solution_one-cpp" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#487866-solution_one-cpp" id="tab-487866-solution_one-cpp" role="tab">
+            solution_one.cpp
+           </a>
+           <a aria-controls="487866-solution_two-cpp" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#487866-solution_two-cpp" id="tab-487866-solution_two-cpp" role="tab">
+            solution_two.cpp
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-487866-main-cpp" class="tab-pane active show" id="487866-main-cpp" role="tabpanel">
+            <pre><code></code>//TODO: Use this as a playground to practice with vectors
+
+
+//TODO:
+// Fill out your program's header. The header should contain any necessary
+// include statements and also function declarations
+
+
+//TODO:
+// Write your main program. Remember that all C++ programs need
+// a main function. The most important part of your program goes
+// inside the main function. </pre>
+           </div>
+           <div aria-labelledby="tab-487866-solution_one-cpp" class="tab-pane" id="487866-solution_one-cpp" role="tabpanel">
+            <pre><code></code>#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+using namespace std;
+
+// function declaration
+vector&lt;float&gt; vectorsubtraction(vector&lt;float&gt; vector1, vector&lt;float&gt; vector2);
+
+// program that computes the difference between two vectors
+int main() {
+
+	// declare and initialize vectors
+	vector&lt;float&gt; v1(3);
+	vector&lt;float&gt; v2(3);
+	
+	v1[0] = 5.0;
+	v1[1] = 10.0;
+	v1[2] = 27.0;
+	
+	v2[0] = 2.0;
+	v2[1] = 17.0;
+	v2[2] = 12.0;
+	
+	vector&lt;float&gt; v3 (v1.size());
+
+	// calculate the difference between the two vectors
+	v3 = vectorsubtraction(v1, v2);
+
+	// print out the results of the vector subtraction
+	for (int i = 0; i &lt; v3.size(); i++) {
+		cout &lt;&lt; v3[i] &lt;&lt; " ";
+	}
+
+	cout &lt;&lt; endl;
+	
+	return 0;
+
+}
+
+// define the function - 
+// INPUTS: two vectors
+// OUTPUT: the difference between the two vectors
+vector&lt;float&gt; vectorsubtraction(vector&lt;float&gt; vector1, vector&lt;float&gt; vector2) {
+
+	vector&lt;float&gt; vectordifference (vector1.size());
+
+	for (int i = 0; i &lt; vector1.size(); i++) {
+		vectordifference[i] = vector1[i] - vector2[i];
+	}
+
+	return vectordifference;
+
+}</pre>
+           </div>
+           <div aria-labelledby="tab-487866-solution_two-cpp" class="tab-pane" id="487866-solution_two-cpp" role="tabpanel">
+            <pre><code></code>#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+using namespace std;
+
+// function declaration
+vector&lt;float&gt; vectormultiply(vector&lt;float&gt; vector1, vector&lt;float&gt; vector2);
+
+// program that computes the element-wise multiplication of two vectors
+int main() {
+
+	// declare and initialize vectors
+	vector&lt;float&gt; v1(5);
+	vector&lt;float&gt; v2(5);
+	
+	v1[0] = 17.0;
+	v1[1] = 10.0;
+	v1[2] = 31.0;
+	v1[3] = 5.0;
+	v1[4] = 7.0;
+
+	v2[0] = 3.0;
+	v2[1] = 1.0;
+	v2[2] = 6.0;
+	v2[3] = 19.0;
+	v2[4] = 8.0;
+
+	vector&lt;float&gt; v3 (v1.size());
+
+	// calculate the difference between the two vectors
+	v3 = vectormultiply(v1, v2);
+
+	// print out the results of the vector multiplication
+	for (int i = 0; i &lt; v3.size(); i++) {
+		cout &lt;&lt; v3[i] &lt;&lt; " ";
+	}
+
+	cout &lt;&lt; endl;
+	
+	return 0;
+
+}
+
+// define the function - 
+// INPUTS: two vectors
+// OUTPUT: multiplies elements together into a new vector
+vector&lt;float&gt; vectormultiply(vector&lt;float&gt; vector1, vector&lt;float&gt; vector2) {
+
+	vector&lt;float&gt; vectorproduct (vector1.size());
+
+	for (int i = 0; i &lt; vector1.size(); i++) {
+		vectorproduct[i] = vector1[i] * vector2[i];
+	}
+
+	return vectorproduct;
+
+}</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="09. 二维向量.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('08. 1D 向量练习区')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>
