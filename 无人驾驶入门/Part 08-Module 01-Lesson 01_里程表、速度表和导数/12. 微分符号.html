@@ -1,0 +1,440 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   微分符号
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      里程表、速度表和导数
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 惯性导航.html">
+       01. 惯性导航
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 课程概述.html">
+       02. 课程概述
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 惯性导航传感器.html">
+       03. 惯性导航传感器
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 午后驾驶.html">
+       04. 午后驾驶
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 解题步骤.html">
+       05. 解题步骤
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 缩短时间间隔.html">
+       06. 缩短时间间隔
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 绘制位置 vs. 时间图.html">
+       07. 绘制位置 vs. 时间图
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 解释位置 vs. 时间图.html">
+       08. 解释位置 vs. 时间图
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 平均速度 vs. 瞬时速度.html">
+       09. 平均速度 vs. 瞬时速度
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 定义导数.html">
+       10. 定义导数
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 理解导数.html">
+       11. 理解导数
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 微分符号.html">
+       12. 微分符号
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 一个“典型”的微积分问题.html">
+       13. 一个“典型”的微积分问题
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 里程表如何工作.html">
+       14. 里程表如何工作
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 位置数据的速度.html">
+       15. 位置数据的速度
+      </a>
+     </li>
+     <li class="">
+      <a href="16. 位置、速度和加速度.html">
+       16. 位置、速度和加速度
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 实施一个加速度计.html">
+       17. 实施一个加速度计
+      </a>
+     </li>
+     <li class="">
+      <a href="18. 小结.html">
+       18. 小结
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          12. 微分符号
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="微分符号">
+          微分符号
+         </h1>
+         <p>
+          <span class="mathquill ud-math">
+           \dot{f}(t) = \lim_{\Delta t \to 0} \frac{f(t+\Delta t) - f(t)}{\Delta t}
+          </span>
+         </p>
+         <p>
+          这个“点”符号是表示导数的两种常用方式之一。
+         </p>
+         <p>
+          微积分同时由两个人发明：戈特弗里德·威廉·李布尼茨和艾萨克·牛顿。
+         </p>
+         <p>
+          每个人都有自己表示导数的符号。
+          <a href="https://en.wikipedia.org/wiki/Notation_for_differentiation" target="_blank">
+           维基百科关于微分符号的文章
+          </a>
+          做了很好的解释，但我会在这里总结一下。
+         </p>
+         <h3 id="0-牛顿和莱布尼茨分享-ddt">
+          0. 牛顿和莱布尼茨分享 (d/dt)
+         </h3>
+         <p>
+          在这两种表示法中，
+          <span class="mathquill ud-math">
+           \frac{d}{dt}
+          </span>
+          是求导数的指令，指的是“对于任何显示在右边的函数
+          <strong>
+           <span class="mathquill ud-math">
+            t
+           </span>
+          </strong>
+          取导数。
+         </p>
+         <p>
+          当你看到如下表示：
+         </p>
+         <div class="mathquill">
+          \frac{df}{dt}
+         </div>
+         <p>
+          <br/>
+         </p>
+         <p>
+          你应该想到与"
+          <span class="mathquill ud-math">
+           t
+          </span>
+          "相关的“
+          <span class="mathquill ud-math">
+           f
+          </span>
+          某些函数的导数。"
+         </p>
+         <h3 id="1-莱布尼兹符号-素数">
+          1. 莱布尼兹符号 (素数)
+         </h3>
+         <p>
+          如果某些变量
+          <span class="mathquill ud-math">
+           y
+          </span>
+          是
+          <span class="mathquill ud-math">
+           x
+          </span>
+          的函数，我们可以写作：
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           y=f(x)
+          </span>
+         </p>
+         <p>
+          有关于
+          <span class="mathquill ud-math">
+           x
+          </span>
+          的
+          <span class="mathquill ud-math">
+           y
+          </span>
+          导数如下：
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \frac{dy}{dx} = f '(x)
+          </span>
+         </p>
+         <p>
+          而这个可以被称为"dee y dee x 等于 x 的f
+          <strong>
+           素数
+          </strong>
+          "
+         </p>
+         <p>
+          我们不会在本纳米学位课程中使用这个符号。
+         </p>
+         <h3 id="2-牛顿符号-点">
+          2. 牛顿符号 (点)
+         </h3>
+         <p>
+          牛顿发明了微积分，作为帮助他理解运动的工具。因此，他通常会考虑关于
+          <strong>
+           时间
+          </strong>
+          (而非一些抽象的
+          <span class="mathquill ud-math">
+           x
+          </span>
+          变量的导数)。
+         </p>
+         <p>
+          同样地，他的函数并不抽象
+          <span class="mathquill ud-math">
+           f(x)
+          </span>
+          's 和
+          <span class="mathquill ud-math">
+           g(f(x))
+          </span>
+          's。他感兴趣的函数实际上意味着物理世界的一些东西！他想描述：
+         </p>
+         <p>
+          位置
+          <span class="mathquill ud-math">
+           x(t)
+          </span>
+         </p>
+         <p>
+          速度
+          <span class="mathquill ud-math">
+           v(t)
+          </span>
+         </p>
+         <p>
+          和加速度
+          <span class="mathquill ud-math">
+           a(t)
+          </span>
+         </p>
+         <p>
+          而他想要简洁地捕捉这些数量之间的关系。所以牛顿：
+          <strong>
+           通过在变量上放置一个点来表示相对于时间的微分
+          </strong>
+          。
+         </p>
+         <p>
+          因此，例如：
+         </p>
+         <div class="mathquill">
+          v(t) = \frac{d}{dt}x(t) = \dot{x}(t)
+         </div>
+         <p>
+          <br/>
+         </p>
+         <p>
+          或者对于
+          <em>
+           二阶导数
+          </em>
+          :
+         </p>
+         <div class="mathquill">
+          a(t) = \frac{d}{dt} v(t) = \frac{d}{dt} \dot{x}(t) = \ddot{x}(t)
+         </div>
+         <p>
+          <br/>
+         </p>
+         <p>
+          二阶导数可以表示如下：
+         </p>
+         <div class="mathquill">
+          a(t) = \frac{d^2}{dt^2} x(t) =  \frac{d^2x}{dt^2}
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="13. 一个“典型”的微积分问题.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('12. 微分符号')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

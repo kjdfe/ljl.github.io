@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.754
+Welcome to vehicle motion and control.
+
+00:00:02.754 --> 00:00:04.410
+Imagine you're riding as a passenger in
+
+00:00:04.410 --> 00:00:07.605
+a car with your eyes closed and your ears plugged.
+
+00:00:07.605 --> 00:00:10.275
+What would you be able to know about your motion?
+
+00:00:10.275 --> 00:00:12.835
+You could probably tell when the car accelerated quickly,
+
+00:00:12.835 --> 00:00:14.505
+or came to a sudden stop,
+
+00:00:14.505 --> 00:00:16.245
+or if it made a sharp turn.
+
+00:00:16.245 --> 00:00:18.570
+But what are the limits of this knowledge?
+
+00:00:18.570 --> 00:00:21.839
+Could you reconstruct your entire path for a drive?
+
+00:00:21.839 --> 00:00:23.370
+If so, how?
+
+00:00:23.370 --> 00:00:24.990
+This course is a crash course,
+
+00:00:24.989 --> 00:00:27.250
+no pun intended in vehicle motion.
+
+00:00:27.250 --> 00:00:28.452
+And in this course,
+
+00:00:28.452 --> 00:00:30.794
+you're going to explore exactly this question.
+
+00:00:30.795 --> 00:00:35.490
+As you do, you'll also learn the very basics of calculus and trigonometry,
+
+00:00:35.490 --> 00:00:39.109
+two branches of math which are used extensively in self-driving cars.
+

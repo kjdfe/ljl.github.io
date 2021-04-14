@@ -1,0 +1,181 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.640
+Data often tells a story.
+
+00:00:02.640 --> 00:00:06.675
+And often, a good plot can really help reveal what that story is.
+
+00:00:06.674 --> 00:00:09.109
+Now I'd like to show you how I think about these position
+
+00:00:09.109 --> 00:00:13.144
+versus time graphs to figure out the story the data tells.
+
+00:00:13.144 --> 00:00:14.939
+Here, we have two axes.
+
+00:00:14.939 --> 00:00:20.625
+In this case, time is the horizontal X axis and position is the vertical Y axis.
+
+00:00:20.625 --> 00:00:23.129
+And to begin, let's start with the simplest version
+
+00:00:23.129 --> 00:00:25.603
+of our story by adding two data points,
+
+00:00:25.603 --> 00:00:28.769
+one for a starting position of 30 miles at 2:00,
+
+00:00:28.769 --> 00:00:32.039
+and one for ending position of 80 miles at 3:00.
+
+00:00:32.039 --> 00:00:33.659
+Now, whenever I see data like this,
+
+00:00:33.659 --> 00:00:39.109
+it's often helpful to imagine or even actually plot a line that connects the points,
+
+00:00:39.109 --> 00:00:43.394
+and this line represents where the car would have been at every moment between 2:00
+
+00:00:43.395 --> 00:00:48.185
+and 3:00 if it were traveling at a single constant speed the whole time.
+
+00:00:48.185 --> 00:00:51.900
+The line like this can be pretty helpful in making sense of these plots.
+
+00:00:51.899 --> 00:00:53.414
+Because once I have the line,
+
+00:00:53.414 --> 00:00:55.409
+it's easier to see the change in position,
+
+00:00:55.409 --> 00:01:00.028
+or delta X, which is just the vertical separation between the two points.
+
+00:01:00.029 --> 00:01:02.670
+And change in time, or delta T,
+
+00:01:02.670 --> 00:01:05.614
+which is just the horizontal separation of these points.
+
+00:01:05.614 --> 00:01:06.689
+And as you saw earlier,
+
+00:01:06.689 --> 00:01:12.105
+you can also calculate average speed by dividing delta X by delta T. Now,
+
+00:01:12.105 --> 00:01:16.170
+I want to point something out that has some pretty profound implications for calculus.
+
+00:01:16.170 --> 00:01:18.600
+The calculation of V average is
+
+00:01:18.599 --> 00:01:22.479
+the same calculation you would make to find the slope of this line.
+
+00:01:22.480 --> 00:01:24.620
+If you remember back to algebra,
+
+00:01:24.620 --> 00:01:30.207
+slope is calculated as the vertical change in the graph divided by the horizontal change.
+
+00:01:30.206 --> 00:01:34.264
+Or as I learned it, slope equals rise over run, which in this case,
+
+00:01:34.265 --> 00:01:36.519
+is delta X divided by delta T,
+
+00:01:36.519 --> 00:01:38.659
+so you can see that the slope of this line gives us
+
+00:01:38.659 --> 00:01:40.909
+the average speed between these two points.
+
+00:01:40.909 --> 00:01:42.215
+And when the slope is steeper,
+
+00:01:42.215 --> 00:01:44.960
+it means the average speed is faster.
+
+00:01:44.959 --> 00:01:49.509
+Now, we have to be careful to remember that this line is really just something we drew.
+
+00:01:49.510 --> 00:01:54.219
+It does not necessarily reflect where the car really was during the whole trip.
+
+00:01:54.219 --> 00:01:56.239
+If we want to know a more complete story,
+
+00:01:56.239 --> 00:01:57.984
+we're going to need more data.
+
+00:01:57.984 --> 00:02:02.375
+So, let's say we had sampled at 20-minute intervals and found that at 2:20,
+
+00:02:02.375 --> 00:02:06.194
+the odometer read 40, and at 2: 40, it read 70.
+
+00:02:06.194 --> 00:02:09.334
+Well, once again, I'm going to draw some lines to connect these dots.
+
+00:02:09.335 --> 00:02:12.379
+And now, remembering that the slope of the line between
+
+00:02:12.379 --> 00:02:15.469
+any two points gives the average speed between those points,
+
+00:02:15.469 --> 00:02:18.544
+I immediately can see that here in the first 20 minutes,
+
+00:02:18.544 --> 00:02:21.709
+the car was on average going much slower than it
+
+00:02:21.710 --> 00:02:25.530
+was in the next 20 minutes since the slope isn't nearly as steep.
+
+00:02:25.530 --> 00:02:27.140
+Then, in the last 20 minutes,
+
+00:02:27.139 --> 00:02:28.669
+the car, on average,
+
+00:02:28.669 --> 00:02:30.549
+was moving slow again,
+
+00:02:30.550 --> 00:02:32.630
+and this really helps make the story clearer.
+
+00:02:32.629 --> 00:02:34.849
+And if I want an even better understanding,
+
+00:02:34.849 --> 00:02:38.585
+I would need even more data sample with an even shorter time interval,
+
+00:02:38.585 --> 00:02:42.335
+like every 10 minutes or 5 minutes.
+
+00:02:42.335 --> 00:02:43.520
+And with this much data,
+
+00:02:43.520 --> 00:02:46.965
+we don't even really need the connecting lines as a visual cue.
+
+00:02:46.965 --> 00:02:49.580
+And now, I can see that the average speed appears
+
+00:02:49.580 --> 00:02:52.540
+to have been greatest between 2:30 and 2:35,
+
+00:02:52.539 --> 00:02:56.179
+and they know that because I can see that the slope is steepest here,
+
+00:02:56.180 --> 00:03:00.314
+which just means that delta X over delta T is greatest here.
+
+00:03:00.314 --> 00:03:04.000
+And now, I like to give you a chance to interpret some graphs on your own.
+

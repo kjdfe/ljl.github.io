@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.209
+Now we're going to take another step towards calculus.
+
+00:00:03.209 --> 00:00:05.009
+So far, you've seen how he can look at
+
+00:00:05.009 --> 00:00:08.369
+one journey at different resolutions or time intervals.
+
+00:00:08.369 --> 00:00:11.639
+In the early example we first used a one-hour time interval,
+
+00:00:11.640 --> 00:00:14.720
+and then 20 minutes and then so.
+
+00:00:14.720 --> 00:00:19.285
+And everytime we decreased the time interval we got closer to the full story.
+
+00:00:19.285 --> 00:00:21.870
+And you've also seen how you can use these measurements of
+
+00:00:21.870 --> 00:00:25.350
+position and time to calculate average speed.
+
+00:00:25.350 --> 00:00:28.880
+But if you think about it that's a pretty weird way to figure out your speed in a car.
+
+00:00:28.879 --> 00:00:30.440
+If you want and how fast you're going,
+
+00:00:30.440 --> 00:00:35.234
+you can always just look at a speedometer because a speedometer measures speed directly,
+
+00:00:35.234 --> 00:00:39.840
+and the speed that a speedometer shows is your instantaneous speed.
+
+00:00:39.840 --> 00:00:43.545
+It's how fast you're going at the instant that you look at the dashboard,
+
+00:00:43.545 --> 00:00:46.230
+and speedometers are very useful but for
+
+00:00:46.229 --> 00:00:49.229
+the purposes of this lesson and learning something about calculus,
+
+00:00:49.229 --> 00:00:53.859
+the question on what you to think about and explore the next notebook is this.
+
+00:00:53.859 --> 00:00:56.244
+We know that it's possible to measure instantaneous speed with a speedometer,
+
+00:00:56.244 --> 00:00:59.414
+but is it possible to calculate
+
+00:00:59.414 --> 00:01:03.839
+instantaneous speed using the position and time measurements we've been discussing?
+
+00:01:03.840 --> 00:01:05.745
+If it is, then how?
+
+00:01:05.745 --> 00:01:11.090
+And if not, what can we do to approximate instantaneous speed as closely as possible?
+

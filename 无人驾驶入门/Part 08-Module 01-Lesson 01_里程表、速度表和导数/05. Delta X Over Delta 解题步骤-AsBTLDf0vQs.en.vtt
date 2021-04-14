@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.089
+Hopefully, this was a pretty straightforward calculation,
+
+00:00:03.089 --> 00:00:07.264
+but I still want to go over the solution so I can introduce some terms that might be new.
+
+00:00:07.264 --> 00:00:09.369
+First, let's just go through the steps.
+
+00:00:09.369 --> 00:00:13.369
+The problem is to calculate the average velocity between 2:00 and 3:00.
+
+00:00:13.369 --> 00:00:18.809
+Well, average velocity is just distance traveled divided by time elapsed,
+
+00:00:18.809 --> 00:00:20.772
+or in more mathematical terms,
+
+00:00:20.772 --> 00:00:24.734
+distance traveled is given by delta X or change in position,
+
+00:00:24.734 --> 00:00:28.769
+and time elapsed is given by delta T or change in time.
+
+00:00:28.769 --> 00:00:31.844
+This triangular character is the upper case,
+
+00:00:31.844 --> 00:00:35.174
+Greek letter delta, and it usually means change.
+
+00:00:35.174 --> 00:00:38.114
+When you see something like delta next to an X,
+
+00:00:38.115 --> 00:00:41.130
+you should not think of that as delta times X.
+
+00:00:41.130 --> 00:00:44.850
+Instead, you should just think of it as one variable called delta X.
+
+00:00:44.850 --> 00:00:48.465
+And the way you calculate delta X is like this,
+
+00:00:48.465 --> 00:00:51.060
+final position minus initial position,
+
+00:00:51.060 --> 00:00:53.484
+likewise, for change in time.
+
+00:00:53.484 --> 00:01:00.945
+And in this example, that would be 80 minus 30 divided by 3 minus 2 or 50 over 1,
+
+00:01:00.945 --> 00:01:03.289
+which is just 50 miles an hour.
+
+00:01:03.289 --> 00:01:04.560
+And this should all make sense.
+
+00:01:04.560 --> 00:01:07.350
+If I want to know my average speed between 2:00 and 3:00,
+
+00:01:07.349 --> 00:01:09.826
+I need to know how far I moved in that time,
+
+00:01:09.826 --> 00:01:12.894
+delta X, and I need to know how much time actually elapsed,
+
+00:01:12.894 --> 00:01:17.280
+delta T. Now, there are a few points I'd like to make about this calculation.
+
+00:01:17.280 --> 00:01:21.125
+First, I want to highlight that what we calculated here was the average velocity,
+
+00:01:21.125 --> 00:01:23.909
+and this is not what you measure when you look at your speedometer.
+
+00:01:23.909 --> 00:01:25.799
+We'll explore this more in a bit.
+
+00:01:25.799 --> 00:01:28.765
+Next, I just want to introduce this term, displacement.
+
+00:01:28.765 --> 00:01:33.180
+I'll be using this term interchangeably with distance traveled or delta X.
+

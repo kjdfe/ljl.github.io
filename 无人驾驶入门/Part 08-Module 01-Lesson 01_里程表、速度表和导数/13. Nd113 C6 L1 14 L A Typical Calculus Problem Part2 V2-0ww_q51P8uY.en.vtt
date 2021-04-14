@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.325
+In this typical problem,
+
+00:00:02.325 --> 00:00:05.880
+the vehicles position is given to you in terms of this nice algebraic expression,
+
+00:00:05.879 --> 00:00:08.330
+and the corresponding graph.
+
+00:00:08.330 --> 00:00:11.695
+And when you know the algebraic description of a function, like position,
+
+00:00:11.695 --> 00:00:16.045
+then there are all sorts of clever things you can do to calculate the derivative exactly.
+
+00:00:16.045 --> 00:00:18.655
+And by exact, I mean you can actually find
+
+00:00:18.655 --> 00:00:22.914
+another algebraic equation that gives you the derivative at any point.
+
+00:00:22.914 --> 00:00:27.887
+So for this function, the derivative winds up being -2T + 10,
+
+00:00:27.887 --> 00:00:30.250
+and that looks like this as a graph.
+
+00:00:30.250 --> 00:00:34.320
+And it's actually pretty amazing that it's possible to get an algebraic description of
+
+00:00:34.320 --> 00:00:38.520
+something like velocity from an algebraic description of position.
+
+00:00:38.520 --> 00:00:40.770
+But the problem is that in reality,
+
+00:00:40.770 --> 00:00:42.435
+when you're dealing with a real car,
+
+00:00:42.435 --> 00:00:44.145
+navigating in the real world,
+
+00:00:44.145 --> 00:00:47.400
+you are never given this kind of description of motion.
+
+00:00:47.399 --> 00:00:49.920
+Nobody ever tells a self driving car, hey,
+
+00:00:49.920 --> 00:00:53.745
+your position for the next 10 seconds will be described by the following equation.
+
+00:00:53.744 --> 00:00:57.164
+In reality, what you're going to get is data,
+
+00:00:57.164 --> 00:01:00.780
+and that data will come from your accelerometers, your odometers,
+
+00:01:00.780 --> 00:01:02.609
+your cameras, and LIDARs and radars,
+
+00:01:02.609 --> 00:01:05.000
+and it won't necessarily be pretty.
+
+00:01:05.000 --> 00:01:06.614
+In the rest of the lesson,
+
+00:01:06.614 --> 00:01:08.084
+you'll do exactly this,
+
+00:01:08.084 --> 00:01:10.109
+you're going to work with odometer data to
+
+00:01:10.109 --> 00:01:13.000
+implement a speedometer and then an accelerometer.
+

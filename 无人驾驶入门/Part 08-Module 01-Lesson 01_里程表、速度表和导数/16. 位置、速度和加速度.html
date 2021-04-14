@@ -1,0 +1,450 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   位置、速度和加速度
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      里程表、速度表和导数
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 惯性导航.html">
+       01. 惯性导航
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 课程概述.html">
+       02. 课程概述
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 惯性导航传感器.html">
+       03. 惯性导航传感器
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 午后驾驶.html">
+       04. 午后驾驶
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 解题步骤.html">
+       05. 解题步骤
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 缩短时间间隔.html">
+       06. 缩短时间间隔
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 绘制位置 vs. 时间图.html">
+       07. 绘制位置 vs. 时间图
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 解释位置 vs. 时间图.html">
+       08. 解释位置 vs. 时间图
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 平均速度 vs. 瞬时速度.html">
+       09. 平均速度 vs. 瞬时速度
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 定义导数.html">
+       10. 定义导数
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 理解导数.html">
+       11. 理解导数
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 微分符号.html">
+       12. 微分符号
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 一个“典型”的微积分问题.html">
+       13. 一个“典型”的微积分问题
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 里程表如何工作.html">
+       14. 里程表如何工作
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 位置数据的速度.html">
+       15. 位置数据的速度
+      </a>
+     </li>
+     <li class="">
+      <a href="16. 位置、速度和加速度.html">
+       16. 位置、速度和加速度
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 实施一个加速度计.html">
+       17. 实施一个加速度计
+      </a>
+     </li>
+     <li class="">
+      <a href="18. 小结.html">
+       18. 小结
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          16. 位置、速度和加速度
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="位置、速度和加速度">
+          位置、速度和加速度
+         </h1>
+         <p>
+          请允许我采用如下 5 种不同表达，讨论
+          <strong>
+           位置
+          </strong>
+          和
+          <strong>
+           速度
+          </strong>
+          。
+         </p>
+         <ol>
+          <li>
+           <p>
+            <strong>
+             速度
+            </strong>
+            是
+            <strong>
+             位移
+            </strong>
+            关于时间的导数。
+           </p>
+          </li>
+          <li>
+           <p>
+            <strong>
+             速度
+            </strong>
+            是
+            <strong>
+             时间
+            </strong>
+            相关的
+            <strong>
+             位置
+            </strong>
+            变化的瞬时速率。
+           </p>
+          </li>
+          <li>
+           <p>
+            一个物体的
+            <strong>
+             速度
+            </strong>
+            能告知我们，它的
+            <strong>
+             位置
+            </strong>
+            随时间会发生多大的变化。
+           </p>
+          </li>
+          <li>
+           <p>
+            某个时间的
+            <strong>
+             速度
+            </strong>
+            只是与
+            <strong>
+             位置
+            </strong>
+            vs
+            <strong>
+             时间
+            </strong>
+            的图形相切的直线的斜率。
+           </p>
+          </li>
+          <li>
+           <p>
+            <span class="mathquill ud-math">
+             v(t) = \frac{dx}{dt} = \dot{x}(t)
+            </span>
+           </p>
+          </li>
+         </ol>
+         <p>
+          同样地，
+          <strong>
+           速度
+          </strong>
+          和
+          <strong>
+           加速度
+          </strong>
+          也可以采用如下 5 种不同表达讨论。
+         </p>
+         <ol>
+          <li>
+           <p>
+            <strong>
+             加速度
+            </strong>
+            是
+            <strong>
+             速度
+            </strong>
+            关于时间的导数。
+           </p>
+          </li>
+          <li>
+           <p>
+            <strong>
+             加速度
+            </strong>
+            是与
+            <strong>
+             时间
+            </strong>
+            相关的
+            <strong>
+             速度
+            </strong>
+            变化的瞬时速率。
+           </p>
+          </li>
+          <li>
+           <p>
+            一个物体的
+            <strong>
+             加速度
+            </strong>
+            能告知我们，它的
+            <strong>
+             速度
+            </strong>
+            随时间会发生多大的变化。
+           </p>
+          </li>
+          <li>
+           <p>
+            某个时间的
+            <strong>
+             加速度
+            </strong>
+            只是与
+            <strong>
+             速度
+            </strong>
+            vs
+            <strong>
+             时间
+            </strong>
+            的图形相切的直线的斜率。
+           </p>
+          </li>
+          <li>
+           <p>
+            <span class="mathquill ud-math">
+             a(t) = \frac{dv}{dt} = \dot{v}(t)
+            </span>
+           </p>
+          </li>
+         </ol>
+         <p>
+          对于
+          <strong>
+           位置
+          </strong>
+          和
+          <strong>
+           加速度
+          </strong>
+          之间的关系，我们也可以做一些有趣的陈述：
+         </p>
+         <ol>
+          <li>
+           <strong>
+            加速度
+           </strong>
+           是
+           <strong>
+            位置
+           </strong>
+           关于时间的二阶导数。
+          </li>
+          <li>
+           <span class="mathquill ud-math">
+            a(t) = \frac{d^2}{dt^2}x(t) = \frac{d^2x}{dt^2} = \ddot{x}(t)
+           </span>
+          </li>
+         </ol>
+         <p>
+          我们将在下一课中探讨这一点。就目前而言，只要对位置进行两次微分，就可以得出加速度！
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="17. 实施一个加速度计.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('16. 位置、速度和加速度')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>
