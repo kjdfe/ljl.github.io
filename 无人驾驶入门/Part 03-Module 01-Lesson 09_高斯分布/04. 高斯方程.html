@@ -1,0 +1,381 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   高斯方程
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      高斯分布
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 简介.html">
+       01. 简介
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 连续分布.html">
+       02. 连续分布
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 高斯分布.html">
+       03. 高斯分布
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 高斯方程.html">
+       04. 高斯方程
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 均值.html">
+       05. 均值
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 标准差.html">
+       06. 标准差
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 在 Python 中绘制高斯图 [练习区].html">
+       07. 在 Python 中绘制高斯图 [练习区]
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 在 Python 中绘制高斯图 [参考答案].html">
+       08. 在 Python 中绘制高斯图 [参考答案]
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 曲线下方的面积.html">
+       09. 曲线下方的面积
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 在 Python 中计算曲线下方面积 .html">
+       10. 在 Python 中计算曲线下方面积
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 在 Python 中计算曲线下方面积[参考答案].html">
+       11. 在 Python 中计算曲线下方面积[参考答案]
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 中心极限定理 [选修].html">
+       12. 中心极限定理 [选修]
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 中心极限定理 [选修示范].html">
+       13. 中心极限定理 [选修示范]
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 小结.html">
+       14. 小结
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          04. 高斯方程
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="高斯方程">
+          高斯方程
+         </h1>
+         <p>
+          下面还是高斯概率密度函数
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           f(x) = \frac{1}{\sqrt{2\pi\sigma{^2}}}e^{\frac{-(x-\mu)^2}{2\sigma^2}}
+          </span>
+         </p>
+         <p>
+          可不要被它吓到！实际上这个函数里只有三个输入变量：
+         </p>
+         <ul>
+          <li>
+           <span class="mathquill ud-math">
+            \sigma
+           </span>
+          </li>
+          <li>
+           <span class="mathquill ud-math">
+            \mu
+           </span>
+          </li>
+          <li>
+           <span class="mathquill ud-math">
+            x
+           </span>
+          </li>
+         </ul>
+         <p>
+          符号
+          <span class="mathquill ud-math">
+           \mu
+          </span>
+          表示总体均值。符号
+          <span class="mathquill ud-math">
+           \sigma
+          </span>
+          则是分布标准差，能表示分布状况。如果你还记得统计学里的内容，总体的均值和标准差都是恒定的。对于特定的总体， x 是唯一的变量。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="示例">
+          示例
+         </h1>
+         <p>
+          让我们更具体一些。假设你正在研究与旧金山冬季气温相关的概率，并且每日最低气温遵循高斯分布。当然，如果你实地测量当地的冬季气温，结果也许并非如此，但在这个例子里我们先这样假设。
+         </p>
+         <p>
+          再假设旧金山冬季平均最低气温是 50 华氏度。 换句话说，如果你在整个冬季每天都测量最低气温的话，平均值将会是 50 华氏度。我们再把标准差定在 10 华氏度。
+         </p>
+         <p>
+          现在，我们把均值和标准差带入高斯方程，会得到下面这个等式：
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           f(x) = \frac{1}{\sqrt{2\pi10{^2}}}e^{\frac{-(x-50)^2}{2\times10^2}}
+          </span>
+         </p>
+         <p>
+          在把均值和标准差代入之后，这个方程看上去是不是简单多了？你可以任意取 x 值，在这个例子里，它代表温度，接着你可以计算出每个 x 值对应的 y 值。
+         </p>
+         <p>
+          现在请拿出你的计算器，做一个小测验吧。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          高斯概率密度方程
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             假设均值为 50， 标准差为 10，请计算高斯分布概率密度方程中 f(x) 的值。使用以下温度数据：x = [29, 45, 48, 50, 62, 78]
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1513752359502" name="542608" type="radio" value="a1513752359502"/>
+           <label for="a1513752359502">
+            <p>
+             0.362, 0.0452, 0.0407, 0.0399, 0.0820, 2.01
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1513753136458" name="542608" type="radio" value="a1513753136458"/>
+           <label for="a1513753136458">
+            <p>
+             0.000175, 0.00140, 0.00156, 0.00159, 0.000774, .00003157
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1513753137016" name="542608" type="radio" value="a1513753137016"/>
+           <label for="a1513753137016">
+            <p>
+             0.0044, 0.0352, 0.0391, 0.0399, 0.0194, 0.000792
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1513753137850" name="542608" type="radio" value="a1513753137850"/>
+           <label for="a1513753137850">
+            <p>
+             0.014, 0.111, 0.124, 0.126, 0.0614, 0.0025
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1513753139159" name="542608" type="radio" value="a1513753139159"/>
+           <label for="a1513753139159">
+            <p>
+             0.0078, 0.0624, 0.0693, 0.0707, 0.0344, 0.0014
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          0.0044, 0.0352, 0.0391, 0.0399, 0.0194, 0.000792
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="05. 均值.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('04. 高斯方程')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

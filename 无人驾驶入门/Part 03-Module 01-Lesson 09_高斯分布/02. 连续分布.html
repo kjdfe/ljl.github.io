@@ -1,0 +1,370 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   连续分布
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      高斯分布
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 简介.html">
+       01. 简介
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 连续分布.html">
+       02. 连续分布
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 高斯分布.html">
+       03. 高斯分布
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 高斯方程.html">
+       04. 高斯方程
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 均值.html">
+       05. 均值
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 标准差.html">
+       06. 标准差
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 在 Python 中绘制高斯图 [练习区].html">
+       07. 在 Python 中绘制高斯图 [练习区]
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 在 Python 中绘制高斯图 [参考答案].html">
+       08. 在 Python 中绘制高斯图 [参考答案]
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 曲线下方的面积.html">
+       09. 曲线下方的面积
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 在 Python 中计算曲线下方面积 .html">
+       10. 在 Python 中计算曲线下方面积
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 在 Python 中计算曲线下方面积[参考答案].html">
+       11. 在 Python 中计算曲线下方面积[参考答案]
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 中心极限定理 [选修].html">
+       12. 中心极限定理 [选修]
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 中心极限定理 [选修示范].html">
+       13. 中心极限定理 [选修示范]
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 小结.html">
+       14. 小结
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          02. 连续分布
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="连续-vs-离散">
+          连续 vs 离散
+         </h1>
+         <p>
+          高斯分布是一种连续型概率分布。因此，在深入学习高斯分布之前，我们先复习一下连续分布与离散分布之间的区别。
+         </p>
+         <p>
+          提示一下，连续型概率分布同高度、重量、距离、速度、角度等连续变量相关。
+         </p>
+         <p>
+          你已接触过均匀连续概率分布，比如下面这个例子。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/uniform-continuous.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          另一方面，离散分布则与取特定值的变量相关，比如抛硬币、掷骰子或是在网格中定位。下面是一个离散分布的例子。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/discrete-distribution.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="连续分布">
+          连续分布
+         </h1>
+         <p>
+          均匀连续概率分布只是众多连续型概率分布中的一种。查看 Wikipedia
+          <a href="https://en.wikipedia.org/wiki/List_of_probability_distributions#Continuous_distributions" target="_blank">
+           连续分布列表
+          </a>
+          的相关页面，感受一下它们的数量之庞大。
+         </p>
+         <p>
+          这些概率分布究竟有什么共同点？它们都代表了
+          <strong>
+           连续变量
+          </strong>
+          事件发生的概率。在不同情况下会运用不同的分布。
+         </p>
+         <p>
+          例如，在研究旋转轮盘的概率模型时，你会用到均匀分布。而在探究传感器数据的不确定性时，你将会用到高斯分布。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="高斯分布">
+          高斯分布
+         </h1>
+         <p>
+          为了了解无人驾驶的不确定性，你至少需要掌握高斯分布的基础知识。例如，在研究传感器数据的不确定性或是确定行人的位置时，往往会应用高斯分布。
+         </p>
+         <p>
+          接下来，本课程将简要介绍高斯分布和它的起源。
+         </p>
+         <p>
+          然而，这并不是一门纯统计课程。我们只是对这种分布进行简单介绍，同时假设你已经熟悉了平均值、标准差、总体和样本等术语，其中：
+         </p>
+         <ul>
+          <li>
+           <strong>
+            总体
+           </strong>
+           指全部数据点的集合。例如，当你在测量人们的体重时，总体便是世界上的全部人口。
+          </li>
+          <li>
+           <strong>
+            样本
+           </strong>
+           指总体中的一部分。在上面体重的例子中，测量世界上所有人的体重并不现实，因此你也许会从总体中随机选择样本。
+          </li>
+          <li>
+           <strong>
+            均值
+           </strong>
+           指平均值。在上面这个例子中它指全部人口的平均体重。
+          </li>
+          <li>
+           <strong>
+            标准差
+           </strong>
+           能测量数据的分布。这组数据是趋于围绕平均值分布，还是趋于离散？
+          </li>
+         </ul>
+         <p>
+          如果你并不熟悉这些术语，或是需要复习，这些资源对你来说也许有用：
+          <a href="http://stattrek.com/sampling/populations-and-samples.aspx" target="_blank">
+           样本 vs 总体
+          </a>
+          。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="03. 高斯分布.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('02. 连续分布')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

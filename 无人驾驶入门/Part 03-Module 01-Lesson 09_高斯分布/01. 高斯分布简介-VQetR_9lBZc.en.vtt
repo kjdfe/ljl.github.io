@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.464
+We can now going to dive and learn about Gaussians. 
+
+00:00:03.464 --> 00:00:06.299
+Carl Friedrich Gauss lived about 20 years ago,
+
+00:00:06.299 --> 00:00:08.714
+measured the country and turned it into maps.
+
+00:00:08.714 --> 00:00:11.129
+And in doing so, he had to confront this innovation he was
+
+00:00:11.130 --> 00:00:14.000
+making small but significant measurement errors.
+
+00:00:14.000 --> 00:00:15.870
+So these measurements wouldn't in fact fit together.
+
+00:00:15.869 --> 00:00:18.839
+So, he invented a way to characterize
+
+00:00:18.839 --> 00:00:22.585
+measurement errors that looks like this bell curve you might have seen before.
+
+00:00:22.585 --> 00:00:24.608
+That's called a Gaussian.
+
+00:00:24.608 --> 00:00:30.089
+And that concept has been essential to statistics for over 200 years,
+
+00:00:30.089 --> 00:00:33.479
+and it's very fundamental to self-driving cars.
+
+00:00:33.479 --> 00:00:35.664
+But rather than just lecturing the math,
+
+00:00:35.664 --> 00:00:37.990
+what we can do with you, we can let you play with data.
+
+00:00:37.990 --> 00:00:41.234
+You're going to take lots and lots of small probabilities and things,
+
+00:00:41.234 --> 00:00:43.375
+and in the map and compute the mean,
+
+00:00:43.375 --> 00:00:50.000
+and what comes out will look surprisingly like this bell shaped curve. So let's dive in.
+
