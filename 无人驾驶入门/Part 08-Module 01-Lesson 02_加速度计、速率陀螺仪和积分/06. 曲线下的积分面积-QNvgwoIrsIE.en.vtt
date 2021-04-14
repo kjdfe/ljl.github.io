@@ -1,0 +1,130 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.730
+When you calculate the area under a curve,
+
+00:00:02.730 --> 00:00:05.054
+what you're actually doing is taking an integral.
+
+00:00:05.054 --> 00:00:09.449
+And the mathematical symbol for the integral is this stretched out "S" looking shape.
+
+00:00:09.449 --> 00:00:13.799
+And often it'll have what are called bounds of integration at the bottom and the top.
+
+00:00:13.800 --> 00:00:18.255
+So, in this case, t1 is the lower bound and t2 is the upper bound.
+
+00:00:18.254 --> 00:00:21.994
+And the integral is the opposite of the derivative.
+
+00:00:21.995 --> 00:00:25.780
+So, since velocity is the derivative of displacement,
+
+00:00:25.780 --> 00:00:32.164
+this means that displacement is the integral of velocity. Let's go back to the graph.
+
+00:00:32.164 --> 00:00:35.990
+Now remember that the area under this graph gives us the total displacement.
+
+00:00:35.990 --> 00:00:40.155
+Now I want to show you how to express this effect in integral notation.
+
+00:00:40.155 --> 00:00:44.804
+The integral that expresses this exact same statement looks like this.
+
+00:00:44.804 --> 00:00:48.765
+And the way I would read this is by saying delta x equals the
+
+00:00:48.765 --> 00:00:53.789
+integral from two to four of 100 dt. And that's a lot.
+
+00:00:53.789 --> 00:00:55.920
+So, let me try to explain what this means.
+
+00:00:55.920 --> 00:00:59.609
+It won't all be perfectly clear just yet, but that's okay for now.
+
+00:00:59.609 --> 00:01:00.847
+Total displacement.
+
+00:01:00.847 --> 00:01:03.908
+Well, that we just represent with delta x.
+
+00:01:03.908 --> 00:01:05.665
+And that should be pretty familiar.
+
+00:01:05.665 --> 00:01:07.330
+Let's take a look on the right-hand side.
+
+00:01:07.329 --> 00:01:11.429
+Well, on the right-hand side we have this integral sign with the bounds of integration.
+
+00:01:11.430 --> 00:01:13.880
+The 100 and the "dt" to the right of it.
+
+00:01:13.879 --> 00:01:16.384
+Let's talk about this "dt" for a second.
+
+00:01:16.385 --> 00:01:19.620
+There's always going to be a "d something" in an integral,
+
+00:01:19.620 --> 00:01:21.560
+and whatever that something is,
+
+00:01:21.560 --> 00:01:22.945
+in this case it's "t".
+
+00:01:22.944 --> 00:01:26.754
+It's just meant to tell you what these bounds of integration actually mean.
+
+00:01:26.754 --> 00:01:29.480
+So the fact that the something here is a "t", well,
+
+00:01:29.480 --> 00:01:32.844
+it means that this lower bound of integration is t equals
+
+00:01:32.844 --> 00:01:38.189
+2 and not x equals 2 or v equals 2 or anything else.
+
+00:01:38.189 --> 00:01:39.670
+Now all that's left is this 100,
+
+00:01:39.670 --> 00:01:42.299
+and the reason this just happens to be a
+
+00:01:42.299 --> 00:01:45.924
+simple 100 is because the velocity function was so simple.
+
+00:01:45.924 --> 00:01:49.109
+If on the other hand, the velocity function were more complicated,
+
+00:01:49.109 --> 00:01:53.204
+like let's say 50 plus 20 times t then, instead of 100,
+
+00:01:53.204 --> 00:01:56.399
+we'd have 50 plus 20 times t. And in general,
+
+00:01:56.400 --> 00:01:58.725
+this v(t) can really be anything.
+
+00:01:58.724 --> 00:02:01.199
+So we can write this generic version of the
+
+00:02:01.200 --> 00:02:04.799
+integral and this would work for any weird velocity function.
+
+00:02:04.799 --> 00:02:07.194
+Now if this all feels pretty overwhelming that's normal.
+
+00:02:07.194 --> 00:02:09.849
+For now I just wanted to introduce you to a notation that you're
+
+00:02:09.849 --> 00:02:13.269
+going to be seeing throughout your self-driving car career.
+
+00:02:13.270 --> 00:02:18.000
+And fortunately, computers make using this notation pretty straightforward.
+

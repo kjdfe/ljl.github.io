@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.104
+So far, you've seen how you can integrate acceleration data
+
+00:00:03.104 --> 00:00:06.375
+from an accelerometer to get change in velocity,
+
+00:00:06.375 --> 00:00:11.640
+and you've seen how you can integrate velocity to get change in position or displacement.
+
+00:00:11.640 --> 00:00:16.019
+And displacement and velocity are important quantities to a self driving car,
+
+00:00:16.019 --> 00:00:19.794
+so it's really fortunate that we can calculate them from accelerometer data.
+
+00:00:19.795 --> 00:00:21.675
+But what about heading?
+
+00:00:21.675 --> 00:00:24.530
+A self-driving car needs to know which way it's pointing,
+
+00:00:24.530 --> 00:00:28.464
+and one way you can do that is by keeping track of how much it turns.
+
+00:00:28.464 --> 00:00:31.035
+And luckily, the initial measurement units on
+
+00:00:31.035 --> 00:00:34.420
+all self-driving cars contain what's called brake gyros,
+
+00:00:34.420 --> 00:00:38.109
+and these gyros measure something called angular velocity.
+
+00:00:38.109 --> 00:00:40.769
+In the rest of this section, in the following notebook,
+
+00:00:40.770 --> 00:00:43.320
+you'll see how you can use angular velocity data
+
+00:00:43.320 --> 00:00:46.390
+from these rate gyros to keep track of the cars
+

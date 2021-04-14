@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.540
+We're going to come back to the elevator example in a little bit.
+
+00:00:03.540 --> 00:00:07.484
+First, I want to remind you of something you saw a few of courses back.
+
+00:00:07.485 --> 00:00:09.240
+Earlier in this category,
+
+00:00:09.240 --> 00:00:11.990
+when you were learning about matrices in motion models,
+
+00:00:11.990 --> 00:00:15.520
+you may remember seeing a graph that looks something like this.
+
+00:00:15.521 --> 00:00:22.679
+And this was a graph of velocity in meters per second versus time in seconds.
+
+00:00:22.679 --> 00:00:25.879
+And back then, Suzanne told you that if you want to calculate
+
+00:00:25.879 --> 00:00:29.809
+the displacement or distance moved between T1 and T2,
+
+00:00:29.809 --> 00:00:33.844
+you could do so by finding the area under this curve.
+
+00:00:33.844 --> 00:00:38.475
+And in this case, if T1 were two and T2 were four,
+
+00:00:38.475 --> 00:00:41.750
+well that would mean that the width of this rectangle is just four minus
+
+00:00:41.750 --> 00:00:44.783
+two which is two and the height of the rectangle,
+
+00:00:44.783 --> 00:00:47.375
+that's just one 100m/s.
+
+00:00:47.375 --> 00:00:49.107
+I can use this equation,
+
+00:00:49.107 --> 00:00:52.364
+area = width * height to calculate that area.
+
+00:00:52.365 --> 00:00:54.570
+And in this case, that would be two seconds,
+
+00:00:54.570 --> 00:00:59.929
+times 100m/s and with it written out this way,
+
+00:00:59.929 --> 00:01:01.469
+you can see something interesting.
+
+00:01:01.469 --> 00:01:06.875
+The seconds actually cancel and all I'm left with is this,
+
+00:01:06.875 --> 00:01:08.965
+an area of 200 meters.
+
+00:01:08.965 --> 00:01:12.752
+And now you can see why I've been so focused on the unit's associate with motion,
+
+00:01:12.751 --> 00:01:15.634
+because if you look at the units for the axes on this graph,
+
+00:01:15.635 --> 00:01:19.430
+you can see that the vertical axis has units of meters per second,
+
+00:01:19.430 --> 00:01:22.610
+and the horizontal axis has units of seconds.
+
+00:01:22.609 --> 00:01:26.060
+And when you multiply these units together, you're just left with meters.
+
+00:01:26.060 --> 00:01:28.400
+Whenever you calculate an integral,
+
+00:01:28.400 --> 00:01:30.680
+you'll be doing some sort of multiplication just like
+
+00:01:30.680 --> 00:01:33.320
+this and you'll be looking at the units on the axis of
+
+00:01:33.319 --> 00:01:35.599
+your graph to get a hint for
+
+00:01:35.599 --> 00:01:39.944
+what the integral or area under the curve actually represents.
+
+00:01:39.944 --> 00:01:42.109
+Now I'd like you to think about a few questions
+
+00:01:42.109 --> 00:01:45.000
+involving graphs of motion and areas under the curve.
+

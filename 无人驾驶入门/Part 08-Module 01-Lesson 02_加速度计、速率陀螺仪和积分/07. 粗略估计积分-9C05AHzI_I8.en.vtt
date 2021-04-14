@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.990
+In the next notebook, you're going to learn a technique that will let you integrate
+
+00:00:03.990 --> 00:00:08.775
+any function of a single variable and all it's going to take is a loop.
+
+00:00:08.775 --> 00:00:10.675
+Before you jump into this code,
+
+00:00:10.675 --> 00:00:14.040
+let me briefly explain the theory behind what you're going to be doing.
+
+00:00:14.039 --> 00:00:17.280
+So, let's say you want to integrate velocity with respect to
+
+00:00:17.280 --> 00:00:20.804
+time but your velocity is given by some pretty complicated function,
+
+00:00:20.804 --> 00:00:22.855
+as is often the case in the real world.
+
+00:00:22.855 --> 00:00:25.410
+And let's say you want to use this velocity data to
+
+00:00:25.410 --> 00:00:29.690
+calculate your displacement from T equals one to T equals five.
+
+00:00:29.690 --> 00:00:35.325
+How do you calculate the area when the shape isn't a rectangle?
+
+00:00:35.325 --> 00:00:38.145
+The trick is this, you just don't.
+
+00:00:38.145 --> 00:00:40.565
+Instead, you approximate.
+
+00:00:40.564 --> 00:00:43.469
+So, let's start by making a really bad approximation,
+
+00:00:43.469 --> 00:00:45.839
+where we just pretend the speed at the beginning is
+
+00:00:45.840 --> 00:00:48.540
+the speed throughout the entire four-second time interval.
+
+00:00:48.539 --> 00:00:50.519
+Well then, our area,
+
+00:00:50.520 --> 00:00:53.070
+it's just the height times the width.
+
+00:00:53.070 --> 00:00:56.250
+And in this case, the height would be the value of
+
+00:00:56.250 --> 00:01:00.515
+the velocity function evaluated T equals one, and the width.
+
+00:01:00.515 --> 00:01:02.770
+Well, that's just the time interval Delta T,
+
+00:01:02.770 --> 00:01:04.728
+which in this case is four seconds,
+
+00:01:04.727 --> 00:01:07.429
+but clearly, this is a really bad approximation.
+
+00:01:07.430 --> 00:01:11.260
+It fails to account for all of this area above the line.
+
+00:01:11.260 --> 00:01:14.280
+But no problem, let's improve our approximation.
+
+00:01:14.280 --> 00:01:17.640
+One way to do that is by breaking the single interval with a Delta T of
+
+00:01:17.640 --> 00:01:21.879
+four seconds into four time intervals with Delta T of one second.
+
+00:01:21.879 --> 00:01:25.039
+And then, for this first time interval, from T equals one to two,
+
+00:01:25.040 --> 00:01:26.820
+we just draw a rectangle,
+
+00:01:26.819 --> 00:01:31.104
+and then we use the velocity T equals one as the velocity for the whole interval.
+
+00:01:31.105 --> 00:01:36.780
+And then, we just repeat this procedure for two to three, three to four,
+
+00:01:36.780 --> 00:01:40.739
+and for T equals four to five and this
+
+00:01:40.739 --> 00:01:44.159
+will give a better approximation of the actual area under the curve.
+
+00:01:44.159 --> 00:01:47.015
+But you probably notice it isn't perfect.
+
+00:01:47.015 --> 00:01:49.965
+In addition to underestimating in the first two segments,
+
+00:01:49.965 --> 00:01:53.659
+it actually overestimates in this last segment.
+
+00:01:53.659 --> 00:01:55.079
+So, while this is an improvement,
+
+00:01:55.079 --> 00:01:57.149
+it's still just not good enough.
+
+00:01:57.150 --> 00:02:01.305
+Had we solved the problem? Well, we chop our graph up into smaller rectangles.
+
+00:02:01.305 --> 00:02:04.180
+For example, we could use a time interval of half-a-second,
+
+00:02:04.180 --> 00:02:06.233
+and this is definitely getting better,
+
+00:02:06.233 --> 00:02:07.900
+but we could go even smaller.
+
+00:02:07.900 --> 00:02:12.045
+As we reduce the width of these time intervals closer and closer to zero,
+
+00:02:12.044 --> 00:02:15.884
+we're going to get closer and closer to the true area under the curve.
+
+00:02:15.884 --> 00:02:18.609
+Okay, sorry. That's enough talking from me.
+
+00:02:18.610 --> 00:02:20.155
+I get very excited about the class.
+
+00:02:20.155 --> 00:02:22.080
+Why don't you go ahead and do this yourself?
+

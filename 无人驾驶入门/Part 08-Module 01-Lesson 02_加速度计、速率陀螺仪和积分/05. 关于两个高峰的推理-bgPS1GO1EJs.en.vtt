@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.540
+You just made a plot of acceleration versus time for
+
+00:00:03.540 --> 00:00:07.950
+an elevator as it goes upwards from the ground floor and then stops two floors above.
+
+00:00:07.950 --> 00:00:10.580
+And that data looks something like this.
+
+00:00:10.580 --> 00:00:14.160
+Now, I want to call your attention to five regions of this data.
+
+00:00:14.160 --> 00:00:16.230
+The first section is from when I started collecting
+
+00:00:16.230 --> 00:00:19.365
+data into when the elevator just started moving upwards.
+
+00:00:19.364 --> 00:00:23.109
+The next section is that period of time when the acceleration is positive.
+
+00:00:23.109 --> 00:00:25.064
+This is where the elevator gets up to speed
+
+00:00:25.065 --> 00:00:27.885
+but it's also when you might feel a little lurch in your stomach.
+
+00:00:27.885 --> 00:00:31.915
+Then the acceleration is pretty much zero for a while.
+
+00:00:31.914 --> 00:00:36.009
+This is when the elevator was just moving upwards at a more or less constant speed.
+
+00:00:36.009 --> 00:00:38.280
+Next, in this segment,
+
+00:00:38.280 --> 00:00:39.750
+the acceleration becomes negative for
+
+00:00:39.750 --> 00:00:43.594
+a few seconds and this is the elevator actually slowing down.
+
+00:00:43.594 --> 00:00:46.259
+Finally, this last region is just everything I
+
+00:00:46.259 --> 00:00:50.579
+collected after the elevator had stopped but before I stopped the accelerometer.
+
+00:00:50.579 --> 00:00:52.634
+And these two bumps,
+
+00:00:52.634 --> 00:00:55.677
+one in Region 2 and the other in Region 4,
+
+00:00:55.677 --> 00:00:57.674
+they looked very, very similar.
+
+00:00:57.674 --> 00:01:02.159
+The only obvious difference is that one is positive and one is negative.
+
+00:01:02.159 --> 00:01:04.664
+Besides that, they look basically like mirror images.
+
+00:01:04.665 --> 00:01:07.440
+And in fact, if you were to calculate the area under
+
+00:01:07.439 --> 00:01:10.905
+this curve and compare it to the area under this curve,
+
+00:01:10.905 --> 00:01:13.349
+you would find that they were exactly the same,
+
+00:01:13.349 --> 00:01:16.494
+except for the fact that A4 is negative in a sense,
+
+00:01:16.495 --> 00:01:18.840
+and that's just because it extends down below
+
+00:01:18.840 --> 00:01:22.314
+the horizontal line corresponding to zero acceleration.
+
+00:01:22.314 --> 00:01:24.814
+This is not a coincidence.
+
+00:01:24.814 --> 00:01:26.325
+In the next few segments,
+
+00:01:26.325 --> 00:01:29.760
+I want to convince you that the area under the green curve corresponds to
+
+00:01:29.760 --> 00:01:33.320
+the total speed increase that happened in that time interval.
+
+00:01:33.319 --> 00:01:35.189
+And the area under the red curve corresponds to
+
+00:01:35.189 --> 00:01:38.575
+the total speed decrease that happened in that time interval.
+
+00:01:38.575 --> 00:01:42.000
+For now, I want you to think about this elevator's motion a bit more.
+

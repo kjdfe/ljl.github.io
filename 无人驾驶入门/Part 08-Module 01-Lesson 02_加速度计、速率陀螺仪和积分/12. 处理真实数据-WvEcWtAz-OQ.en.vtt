@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.245
+At this point, you've calculated integrals of velocity data,
+
+00:00:03.245 --> 00:00:06.200
+acceleration data and angular velocity data.
+
+00:00:06.200 --> 00:00:07.669
+And hopefully, you're building
+
+00:00:07.669 --> 00:00:11.219
+a good intuitive sense for what it means to take an integral.
+
+00:00:11.220 --> 00:00:13.410
+Now, I have a confession to make.
+
+00:00:13.410 --> 00:00:17.814
+Some of the real data I've been showing you has actually not been real.
+
+00:00:17.814 --> 00:00:20.490
+In fact, occasionally, I may have generated
+
+00:00:20.489 --> 00:00:23.714
+fake data so the plots you made were clean and well behaved,
+
+00:00:23.714 --> 00:00:25.679
+and the integrals all made sense.
+
+00:00:25.679 --> 00:00:28.553
+But in reality, sensors are never perfect.
+
+00:00:28.553 --> 00:00:30.945
+They're noisy, and they're often biased.
+
+00:00:30.945 --> 00:00:34.109
+And it turns out that when you integrate imperfect data,
+
+00:00:34.109 --> 00:00:36.689
+your errors tend to amplify.
+
+00:00:36.689 --> 00:00:39.509
+I don't want you to leave this nanodegree thinking that all you
+
+00:00:39.509 --> 00:00:43.015
+need to localize a robot is an accelerometer and a rate gyro.
+
+00:00:43.015 --> 00:00:45.090
+Because while these tools do help,
+
+00:00:45.090 --> 00:00:46.680
+they have their flaws as well.
+
+00:00:46.679 --> 00:00:49.140
+In the following segments, you're going to integrate
+
+00:00:49.140 --> 00:00:52.350
+real data and explore some of the problems that arise when you.
+
