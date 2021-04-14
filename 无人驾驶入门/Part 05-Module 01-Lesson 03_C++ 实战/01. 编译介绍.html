@@ -1,0 +1,266 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   编译介绍
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      C++ 实战
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 编译介绍.html">
+       01. 编译介绍
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 本地运行代码.html">
+       02. 本地运行代码
+      </a>
+     </li>
+     <li class="">
+      <a href="03. C++ 版本.html">
+       03. C++ 版本
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 构造函数和文件组织.html">
+       04. 构造函数和文件组织
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 输入和输出.html">
+       05. 输入和输出
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 读入文本文件.html">
+       06. 读入文本文件
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 输出到文本文件.html">
+       07. 输出到文本文件
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 练习.html">
+       08. 练习
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          01. 编译介绍
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Introduction To Compilation
+         </p>
+        </h3>
+        <video controls="">
+         <source src="01. Introduction To Compilation-dyzGEB8YDGg.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="01. Introduction To Compilation-dyzGEB8YDGg.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="CN" src="01. Introduction To Compilation-dyzGEB8YDGg.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          到目前为止，你一直都在优达学城的教室中编写代码。但你肯定希望能够在你自己的电脑上本地运行你的程序。这就涉及到了 Python 和 C++ 的另一个区别。在 C++ 课程开始时，你已经知道了它们的第一个主要区别。Python 是动态类型的，而 C++ 是静态类型的。另一个主要区别是，Python 是一种
+          <strong>
+           解释语言
+          </strong>
+          ，而C++ 是一种
+          <strong>
+           编译语言
+          </strong>
+          。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          当你用 Python 或者 C++编写代码的时候，计算机不能真正理解你所编写的代码。但是人类可以阅读并理解这些语言，因此我们可以方便地进行编程。
+         </p>
+         <p>
+          你的代码需要翻译成电脑 CPU 可以理解的语言。解释语言和编译语言的翻译方式不同。运行 Python 程序时，会有一个翻译器（即解释器），读取你的代码行，为 CPU 翻译该代码，然后在 CPU 上执行你的代码行。然后翻译并执行下一行。然后是下一行，等等。现实情况稍微复杂一些，但这就是 Python 这样的解释性语言的特征。
+         </p>
+         <p>
+          另一方面，编译语言则需要将所有的代码翻译成 CPU 的语言。然后再执行代码。因此，在运行 C++ 程序时，需要多加一步，先编译代码，然后再执行代码。Python 则只有执行步骤。
+         </p>
+         <p>
+          你在课堂上写的 C++ 代码实际上是先编译后再执行的，但编译是在后台进行的。如果你想在你的计算机上本地运行你的 C++ 程序，你需要先编译代码，然后再执行。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          在本课的下一部分中，你需要保证自己的计算机已经准备好编译和执行 C++ 程序。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="02. 本地运行代码.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('01. 编译介绍')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

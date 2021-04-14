@@ -1,0 +1,292 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   输出到文本文件
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      C++ 实战
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 编译介绍.html">
+       01. 编译介绍
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 本地运行代码.html">
+       02. 本地运行代码
+      </a>
+     </li>
+     <li class="">
+      <a href="03. C++ 版本.html">
+       03. C++ 版本
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 构造函数和文件组织.html">
+       04. 构造函数和文件组织
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 输入和输出.html">
+       05. 输入和输出
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 读入文本文件.html">
+       06. 读入文本文件
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 输出到文本文件.html">
+       07. 输出到文本文件
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 练习.html">
+       08. 练习
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          07. 输出到文本文件
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="输出到文本文件">
+          输出到文本文件
+         </h1>
+         <p>
+          就像从文件输入数据一样，你也可以将数据输出到文件。假设你有一个矩阵，你想把结果保存到一个文本文件中。你会看到，将矩阵输出到文件的代码和将矩阵输出到终端的代码非常相似。
+         </p>
+         <p>
+          你需要在本地运行此代码才能看到输出的文本文件。
+         </p>
+         <pre><code>#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;vector&gt;
+
+using namespace std;
+
+int main() {
+
+    // create the vector that will be outputted
+    vector &lt; vector &lt;int&gt; &gt; matrix (5, vector &lt;int&gt; (3, 2));
+    vector&lt;int&gt; row;
+
+    // open a file for outputting the matrix
+    ofstream outputfile;
+    outputfile.open ("matrixoutput.txt");
+
+    // output the matrix to the file
+    if (outputfile.is_open()) {
+        for (int row = 0; row &lt; matrix.size(); row++) {
+            for (int column = 0; column &lt; matrix[row].size(); column++) {
+                if (column != matrix[row].size() - 1) {
+                    outputfile &lt;&lt; matrix[row][column] &lt;&lt; ", ";
+                }
+                else {
+                    outputfile &lt;&lt; matrix[row][column];
+                }
+            }
+            outputfile &lt;&lt; endl; 
+        }
+    }
+
+    outputfile.close();
+
+    return 0;
+}</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          你可以看到，你需要创建一个 ofstream 对象，然后使用该对象来创建一个新文件。
+         </p>
+         <pre><code class="c++ language-c++">    ofstream outputfile;
+    outputfile.open ("matrixoutput.txt");</code></pre>
+         <p>
+          代码的其余部分遍历该矩阵，并以你在代码中指定的格式输出矩阵：
+         </p>
+         <pre><code class="c++ language-c++">    if (outputfile.is_open()) {
+        for (int row = 0; row &lt; matrix.size(); row++) {
+            for (int column = 0; column &lt; matrix[row].size(); column++) {
+                if (column != matrix[row].size() - 1) {
+                    outputfile &lt;&lt; matrix[row][column] &lt;&lt; ", ";
+                }
+                else {
+                    outputfile &lt;&lt; matrix[row][column];
+                }
+            }
+            outputfile &lt;&lt; endl; 
+        }
+    }</code></pre>
+         <p>
+          if 语句正在检查是否到达行的末尾。如果当前值是一行的结尾，则不需要在数字后加逗号分隔符：
+         </p>
+         <pre><code class="c++ language-c++">                if (column != matrix[row].size() - 1) {
+                    outputfile &lt;&lt; matrix[row][column] &lt;&lt; ", ";
+                }
+                else {
+                    outputfile &lt;&lt; matrix[row][column];
+                }</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="08. 练习.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('07. 输出到文本文件')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

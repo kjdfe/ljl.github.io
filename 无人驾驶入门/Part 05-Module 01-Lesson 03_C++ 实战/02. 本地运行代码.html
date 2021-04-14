@@ -1,0 +1,426 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   本地运行代码
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      C++ 实战
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 编译介绍.html">
+       01. 编译介绍
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 本地运行代码.html">
+       02. 本地运行代码
+      </a>
+     </li>
+     <li class="">
+      <a href="03. C++ 版本.html">
+       03. C++ 版本
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 构造函数和文件组织.html">
+       04. 构造函数和文件组织
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 输入和输出.html">
+       05. 输入和输出
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 读入文本文件.html">
+       06. 读入文本文件
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 输出到文本文件.html">
+       07. 输出到文本文件
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 练习.html">
+       08. 练习
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          02. 本地运行代码
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="编译并执行-c-代码">
+          编译并执行 C++ 代码
+         </h3>
+         <p>
+          如果你安装的是 Windows、Mac 或 Linux 系统，过程基本是相同的；你要先编译代码，然后执行编译的代码。但是在不同的机器和操作系统上，具体细节略有不同。
+         </p>
+         <p>
+          有两种不同的方法可以编译并执行代码：
+          <br/>
+          *使用 Windows 控制台/ Mac 终端 / Linux 终端
+          <br/>
+          *使用IDE（集成开发环境），这是一个软件程序，可以更轻松地编写、组织、编译和运行代码。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="通过控制台或终端运行你的代码">
+          通过控制台或终端运行你的代码
+         </h3>
+         <p>
+          这是开始编译和执行代码的最快方法。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4 id="windows">
+          Windows
+         </h4>
+         <p>
+          首先，你需要下载并安装微软提供的
+          <a href="http://landinghub.visualstudio.com/visual-cpp-build-tools" target="_blank">
+           Visual C ++ Build Tools
+          </a>
+          。安装过程可能会有所不同，具体取决于你使用的 Windows 版本。微软网站提供了安装指南，可确保安装正确。这个指南还介绍了如何编译和运行代码：
+          <a href="https://docs.microsoft.com/en-us/cpp/build/walkthrough-compiling-a-native-cpp-program-on-the-command-line" target="_blank">
+           微软指南
+          </a>
+          。
+         </p>
+         <p>
+          如果安装了 Visual C++ Build Tools，你就能够从控制台编译和执行代码。例如，如果你有一个 main.cpp 文件，你就可以打开控制台并打开保存该文件的目录。
+         </p>
+         <p>
+          你会看到，微软的教程建议使用下面的命令编译你的代码：
+         </p>
+         <pre><code>cl /W4 /EHsc main.cpp</code></pre>
+         <p>
+          /W4 和 /EHsc 是编译你的代码并给出警告和
+          <a href="https://docs.microsoft.com/en-us/cpp/build/reference/eh-exception-handling-model" target="_blank">
+           错误处理
+          </a>
+          的选项。
+         </p>
+         <p>
+          编译器输出一个 .obj 文件，其中包含 CPU 的指令。你还会看到一个运行你的代码的 .exe 文件。
+         </p>
+         <p>
+          现在，在命令提示符后输入
+         </p>
+         <pre><code>main</code></pre>
+         <p>
+          即可运行你的程序。
+         </p>
+         <p>
+          如果你的程序有多个 .cpp 文件，那么你可以这么编译：
+         </p>
+         <pre><code>cl/W4/EHscfile1.cppfile2.cppfile3.cpp</code></pre>
+         <p>
+          .obj 和 .exe 文件的名称是 file1。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="mac">
+          Mac
+         </h3>
+         <p>
+          根据你的操作系统版本，安装过程将会有所不同。一般来说，你需要从 Apple 开发者网站下载 “command line developer tools”。
+         </p>
+         <p>
+          第一步，你需要检查系统上是否已经有一个名为
+          <strong>
+           g++
+          </strong>
+          的编译器。打开终端应用程序，然后键入
+         </p>
+         <pre><code>g++</code></pre>
+         <p>
+          如果安装了 g++，你会得到一个错误信息，例如“no input files”。如果未安装 g++，并且你使用的是较新版本的Mac OS，则会弹出一个对话框，询问你是否要安装命令行工具。点击“安装”。
+         </p>
+         <p>
+          但是，在较旧的 Mac OS 系统上，你需要前往 Apple 开发人员的网站并下载命令行开发人员工具。请点击此
+          <a href="https://developer.apple.com/download/" target="_blank">
+           链接
+          </a>
+          。如果你还没有 Apple ID，还需要创建一个 Apple ID。输入你的 Apple ID 和密码。
+         </p>
+         <p>
+          在下载页面上，左上角有一个搜索框。搜索 “command line developer tools”。然后下载并安装你的操作系统版本的开发者工具。
+         </p>
+         <p>
+          现在回到终端并键入
+         </p>
+         <pre><code>g++</code></pre>
+         <p>
+          现在，你应该得到一个错误消息
+          <code>
+           no input files
+          </code>
+          。
+         </p>
+         <p>
+          要编译一个程序，你应该输入：
+         </p>
+         <pre><code>g++ filename.cpp</code></pre>
+         <p>
+          或者，如果有多个 .cpp 文件：
+         </p>
+         <pre><code>g++filename1.cppfilename2.cppfilename3.cpp</code></pre>
+         <p>
+          编译器会创建一个名为
+          <code>
+           a.out
+          </code>
+          的可执行文件。要运行你的程序，在终端中输入：
+         </p>
+         <pre><code>./a.out</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="linux-ubuntu">
+          Linux Ubuntu
+         </h3>
+         <p>
+          g++ 编译器可能已经在你的系统上。如果你使用的是 Ubuntu，请打开终端并输入：
+         </p>
+         <pre><code>dpkg --list | grep compiler</code></pre>
+         <p>
+          你会看到一个编译器列表。检查其中是否包括 g++。如果没有，你可以输入以下命令安装 g++：
+         </p>
+         <pre><code>sudo apt-get install g++</code></pre>
+         <p>
+          编译和运行程序的命令与 Mac 相同：
+         </p>
+         <pre><code>g++ filename.cpp
+./a.out</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="使用-ide">
+          使用 IDE
+         </h3>
+         <p>
+          另一个选择是下载 IDE（集成开发环境），以帮助你编写、组织、调试、编译和执行代码。
+         </p>
+         <p>
+          微软提供了一个名为 Visual Studio 的 IDE，可以在这里下载：
+          <a href="https://www.visualstudio.com/" target="_blank">
+           Visual Studio
+          </a>
+          。之前，Visual Studio 只能用于 Windows。但最近出了 Mac 版本。
+         </p>
+         <p>
+          对于Mac用户，Apple还提供了一个名为 Xcode 的 IDE，可以从
+          <a href="https://developer.apple.com/xcode/" target="_blank">
+           这里
+          </a>
+          下载。
+         </p>
+         <p>
+          你可以使用这些任意 IDE 来帮助你开发C ++程序。
+         </p>
+         <p>
+          Linux Ubuntu 用户有很多免费 IDE 可以使用，包括
+          <a href="https://netbeans.org/features/cpp/index.html" target="_blank">
+           NetBeans
+          </a>
+          、
+          <a href="http://www.codeblocks.org" target="_blank">
+           Code::Blocks
+          </a>
+          ,
+          <a href="https://www.eclipse.org/cdt/" target="_blank">
+           Eclipse
+          </a>
+          以及
+          <a href="https://codelite.org/" target="_blank">
+           CodeLite
+          </a>
+          。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="03. C++ 版本.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('02. 本地运行代码')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

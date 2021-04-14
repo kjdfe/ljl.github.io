@@ -1,0 +1,471 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   C++ 版本
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      C++ 实战
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 编译介绍.html">
+       01. 编译介绍
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 本地运行代码.html">
+       02. 本地运行代码
+      </a>
+     </li>
+     <li class="">
+      <a href="03. C++ 版本.html">
+       03. C++ 版本
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 构造函数和文件组织.html">
+       04. 构造函数和文件组织
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 输入和输出.html">
+       05. 输入和输出
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 读入文本文件.html">
+       06. 读入文本文件
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 输出到文本文件.html">
+       07. 输出到文本文件
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 练习.html">
+       08. 练习
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          03. C++ 版本
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="c-版本">
+          C++ 版本
+         </h1>
+         <p>
+          <a href="https://www.iso.org/home.html" target="_blank">
+           国际标准化组织
+          </a>
+          发布了 C++ 语言的标准。每隔几年，这一标准便会进行更新，增添新特性和新句法。C++ 标准是有关 C++ 语言的指导性文件，它定义了这门语言的内容和作用。
+         </p>
+         <p>
+          执行这一标准则是设计编译器的公司、个人或团队的工作。因此，并不是所有编译器都支持所有的特性，有时一些编译器会以不同的方式支持相同的特性。
+         </p>
+         <p>
+          国际标准化组织一共发布了五版 C++ 标准，最早的版本叫做
+          <strong>
+           C++98
+          </strong>
+          ， 而最新的则是
+          <strong>
+           C++17
+          </strong>
+          。其中数字代表了发布标准的年份，比如1998和2017。
+         </p>
+         <p>
+          目前，我们教室在编译你的代码时使用的是最老的标准：
+          <strong>
+           C++98
+          </strong>
+          。因此你无法使用下面这个代码，因为它是在
+          <strong>
+           C++11
+          </strong>
+          中引入的：
+         </p>
+         <pre><code>vector&lt;int&gt; myvector = {5, 4, 9, 1, 10}</code></pre>
+         <p>
+          一般来说，在标准发布和市场应用之间有着长达几年的滞后期。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="gcc-编译器">
+          GCC 编译器
+         </h1>
+         <p>
+          教室中使用的编译器叫做 gcc。每当你按下“测试答案”按钮时，我们都会编译你的代码。在“用 C++ 进行性能编程”这一堂课中，你将会用到不同的界面来编写、编译和运行你的代码。这一界面同样使用了 gcc 编译器。
+         </p>
+         <p>
+          在 classroom 中，gcc 编译器默认使用 C++98。不过你也可以使用如下命令行来让 gcc 选择不同的 C++ 版本：
+         </p>
+         <pre><code>g++ -std=c++11 main.cpp</code></pre>
+         <p>
+          在你的系统中，由于编译器或是编译器设定上的差别，操作也许有所不同。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          C++ 版本
+         </p>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           请按照从旧到新的顺序为下列 C++ 标准排序
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           1
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           2
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           3
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           4
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           5
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             序号
+            </p>
+           </th>
+           <th>
+            <p>
+             C++ 版本
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             C++11
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             C++03
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             C++14
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             C++17
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             C++98
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              序号
+             </p>
+            </th>
+            <th>
+             <p>
+              C++ 版本
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              C++11
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               3
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              C++03
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               2
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              C++14
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               4
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              C++17
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               5
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              C++98
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               1
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="04. 构造函数和文件组织.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('03. C++ 版本')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

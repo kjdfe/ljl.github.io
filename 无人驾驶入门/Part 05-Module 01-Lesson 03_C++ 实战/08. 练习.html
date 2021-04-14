@@ -1,0 +1,287 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   练习
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      C++ 实战
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 编译介绍.html">
+       01. 编译介绍
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 本地运行代码.html">
+       02. 本地运行代码
+      </a>
+     </li>
+     <li class="">
+      <a href="03. C++ 版本.html">
+       03. C++ 版本
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 构造函数和文件组织.html">
+       04. 构造函数和文件组织
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 输入和输出.html">
+       05. 输入和输出
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 读入文本文件.html">
+       06. 读入文本文件
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 输出到文本文件.html">
+       07. 输出到文本文件
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 练习.html">
+       08. 练习
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          08. 练习
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="练习">
+          练习
+         </h1>
+         <p>
+          现在你可以使用 C++ 来编写程序了。
+         </p>
+         <p>
+          练习是提高 C++ 技能的最佳方式。我们提供了一些说明来帮助你入手。这一次，我们并没有配置代码编写栏，因此你需要在你的电脑本地进行程序编译和运行。
+         </p>
+         <p>
+          这些练习并不打分，因此你可以自行决定完成多少。在 C++ 基础的课程结尾，我们会有一个更加全面的项目，要求你将 Python 代码翻译成 C++ 代码。
+         </p>
+         <p>
+          如果你遇到了困难，不确定如何编写某段代码，或是不知道怎样解决一个错误，你可以使用 Google 或是 Bing 等搜索引擎。你可以直接复制粘贴错误信息，通常情况下，早已有人详细解释了这些错误是什么，以及如何解决它们。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="练习-1">
+          练习 1
+         </h3>
+         <p>
+          在机器人定位的课程中，Sebastian Thrun 已经带领你了解了一维机器人传感和运动的 Python 代码。最后你得到了一个 sense() 函数，它基于传感器的测量数据来更新概率。你也得到了一个 move() 函数，它根据机器人在网格中的运动更新概率。
+         </p>
+         <p>
+          现在请将下面的 Python 代码翻译成 C++ 代码：
+         </p>
+         <pre><code class="python language-python">p = [0.2, 0.2, 0.2, 0.2, 0.2]
+world = ['green', 'red', 'red', 'green', 'green']
+measurements = ['red', 'green']
+motions = [1,1]
+pHit = 0.6
+pMiss = 0.2
+pExact = 0.8
+pOvershoot = 0.1
+pUndershoot = 0.1
+
+def sense(p, Z):
+    q=[]
+    for i in range(len(p)):
+        hit = (Z == world[i])
+        q.append(p[i] * (hit * pHit + (1-hit) * pMiss))
+    s = sum(q)
+    for i in range(len(q)):
+        q[i] = q[i] / s
+    return q
+
+def move(p, U):
+    q = []
+    for i in range(len(p)):
+        s = pExact * p[(i-U) % len(p)]
+        s = s + pOvershoot * p[(i-U-1) % len(p)]
+        s = s + pUndershoot * p[(i-U+1) % len(p)]
+        q.append(s)
+    return q
+
+for k in range(len(measurements)):
+    p = sense(p, measurements[k])
+    p = move(p, motions[k])
+
+print p         </code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="练习-2">
+          练习 2
+         </h3>
+         <p>
+          请编写一个含有两个矩阵的 C++ 函数，并输出它们的乘积。你需要保证在这个函数中，两个矩阵可以相乘。如果矩阵一是 m 行 n 列，矩阵二是 w 行 z 列，那么 n 必须等于 w， 而最终得到的矩阵是 m 行 z 列。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('08. 练习')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

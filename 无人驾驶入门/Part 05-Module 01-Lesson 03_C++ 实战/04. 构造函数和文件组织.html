@@ -1,0 +1,606 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   构造函数和文件组织
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      C++ 实战
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 编译介绍.html">
+       01. 编译介绍
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 本地运行代码.html">
+       02. 本地运行代码
+      </a>
+     </li>
+     <li class="">
+      <a href="03. C++ 版本.html">
+       03. C++ 版本
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 构造函数和文件组织.html">
+       04. 构造函数和文件组织
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 输入和输出.html">
+       05. 输入和输出
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 读入文本文件.html">
+       06. 读入文本文件
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 输出到文本文件.html">
+       07. 输出到文本文件
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 练习.html">
+       08. 练习
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          04. 构造函数和文件组织
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="构造你的函数">
+          构造你的函数
+         </h1>
+         <p>
+          在上一课中，你学习了两种不同的函数声明和定义的方法：
+          <br/>
+          *在 main() 上方声明函数，并在 main 下方定义函数
+          <br/>
+          *在 main() 上方同时声明并定义函数
+         </p>
+         <p>
+          随着 C++ 程序变得越来越复杂，你可能需要将代码分成多个文件。分开保存函数定义和声明有助于分割并组织你的代码。
+         </p>
+         <p>
+          我们看看上一课的函数测验中的这段代码。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <pre><code class="c++ language-c++"># include &lt;iostream&gt;
+
+float distance(float velocity, float acceleration, float time_elapsed);
+
+int main() {
+
+    std::cout &lt;&lt; distance(3, 4, 5) &lt;&lt; std::endl;  
+    std::cout &lt;&lt; distance(7.0, 2.1, 5.4) &lt;&lt; std::endl;
+
+    return 0;   
+}
+
+float distance(float velocity, float acceleration, float time_elapsed) {
+    return velocity*time_elapsed + 0.5*acceleration*time_elapsed*time_elapsed;
+}</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          代码被组织成两个文件，而不是像以前的测验一样将所有内容都放到 main.cpp 中。看看下面的代码，然后点击“测试运行”按钮。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="438197-main-cpp" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#438197-main-cpp" id="tab-438197-main-cpp" role="tab">
+            main.cpp
+           </a>
+           <a aria-controls="438197-distance-cpp" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#438197-distance-cpp" id="tab-438197-distance-cpp" role="tab">
+            distance.cpp
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-438197-main-cpp" class="tab-pane active show" id="438197-main-cpp" role="tabpanel">
+            <pre><code></code>#include &lt;iostream&gt;
+
+float distance(float velocity, float acceleration, float time_elapsed);
+
+int main() {
+
+    std::cout &lt;&lt; distance(3, 4, 5) &lt;&lt; std::endl;  
+    std::cout &lt;&lt; distance(7.0, 2.1, 5.4) &lt;&lt; std::endl;
+    
+    return 0;   
+}</pre>
+           </div>
+           <div aria-labelledby="tab-438197-distance-cpp" class="tab-pane" id="438197-distance-cpp" role="tabpanel">
+            <pre><code></code>float distance(float velocity, float acceleration, float time_elapsed) {
+    return velocity*time_elapsed + 0.5*acceleration*time_elapsed*time_elapsed;
+}</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          在后台，main.cpp 和 distance.cpp 正在编译。由于编译发生在教室的后端，所以你不到。
+         </p>
+         <p>
+          但是，如果你要在本地运行此程序，则可以打开一个终端并导航到包含这两个文件的文件夹。输入以下命令
+         </p>
+         <pre><code>g++ main.cpp distance.cpp
+./a.out</code></pre>
+         <p>
+          即可一起编译两个文件，然后执行该程序。
+         </p>
+         <p>
+          由于你已经将函数定义在 main.cpp 之外的独立文件中，因此可以更轻松地在代码的其他部分重用该函数。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="头文件">
+          头文件
+         </h3>
+         <p>
+          函数声明
+         </p>
+         <pre><code class="c++ language-c++">float distance(float velocity, float acceleration, float time_elapsed);</code></pre>
+         <p>
+          通常也会单独创建一个文件。声明保存在所谓的
+          <strong>
+           头文件
+          </strong>
+          中，因为头是 main() 函数上方的信息。头文件扩展名通常为 .h 或 .hpp。下面的代码与上面相同，但在头文件中有函数声明。点击“测试运行”按钮，你会看到这个代码也能运行：
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="438200-main-cpp" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#438200-main-cpp" id="tab-438200-main-cpp" role="tab">
+            main.cpp
+           </a>
+           <a aria-controls="438200-distance-cpp" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#438200-distance-cpp" id="tab-438200-distance-cpp" role="tab">
+            distance.cpp
+           </a>
+           <a aria-controls="438200-distance-h" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#438200-distance-h" id="tab-438200-distance-h" role="tab">
+            distance.h
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-438200-main-cpp" class="tab-pane active show" id="438200-main-cpp" role="tabpanel">
+            <pre><code></code>#include &lt;iostream&gt;
+#include "distance.h"
+
+int main() {
+
+    std::cout &lt;&lt; distance(3, 4, 5) &lt;&lt; std::endl;  
+    std::cout &lt;&lt; distance(7.0, 2.1, 5.4) &lt;&lt; std::endl;
+    
+    return 0;   
+}</pre>
+           </div>
+           <div aria-labelledby="tab-438200-distance-cpp" class="tab-pane" id="438200-distance-cpp" role="tabpanel">
+            <pre><code></code>float distance(float velocity, float acceleration, float time_elapsed) {
+    return velocity*time_elapsed + 0.5*acceleration*time_elapsed*time_elapsed;
+}</pre>
+           </div>
+           <div aria-labelledby="tab-438200-distance-h" class="tab-pane" id="438200-distance-h" role="tabpanel">
+            <pre><code></code>float distance(float velocity, float acceleration, float time_elapsed);</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          代码行
+         </p>
+         <pre><code class="c++ language-c++"># include "distance.h"</code></pre>
+         <p>
+          将 distance.h 的内容粘贴到 main.cpp 中。
+         </p>
+         <p>
+          现在，我们假设你想在不同的文件中重用你的 distance 函数。你所要做的，就是使用 include 语句在新文件的顶部声明函数：
+         </p>
+         <pre><code class="c++ language-c++"># include "distance.h"</code></pre>
+         <p>
+          然后就可以在程序的另一部分使用该函数了。
+         </p>
+         <p>
+          将代码组织到不同的 .cpp 文件中，可以把声明与实现分离。此外，使用头文件意味着你不必记住如何进行函数声明，因为你可以用简单的语法将其包含在内
+         </p>
+         <pre><code># include "distance"</code></pre>
+         <p>
+          要编译代码，只需要编译 .cpp文件而不是 .h 文件即可：
+         </p>
+         <pre><code>g++ main.cpp distance.cpp</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="文件命名">
+          文件命名
+         </h3>
+         <p>
+          命名约定规定，头文件和相关的 cpp 文件需使用相同的名称。因此，很显然，distance.h 包含了 distance.cpp 的头部声明。你还会注意到，函数本身名称为 distance()。因此，函数名、.cpp 文件和 .h 文件都是匹配的。
+         </p>
+         <p>
+          这些是命名约定。如果你不遵循这些约定，你的 C++代码仍然会被编译；但我们强烈建议你遵循这些约定。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="include-语法">
+          Include 语法
+         </h3>
+         <p>
+          你可能想知道，为什么有两种不同类型的 include 语句：
+         </p>
+         <pre><code class="c++ language-c++"># include &lt;iostream&gt;
+# include "distance.h"</code></pre>
+         <p>
+          带引号的 include 语句告诉程序在当前目录中查找 distance.h 文件。
+         </p>
+         <p>
+          &lt;&gt; 语法则取决于你的 C++ 环境。通常，环境被设置为查找存储 C++ 库的文件，如标准库。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          文件类型和定义
+         </p>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           每种文件类型中包括哪种代码类型？
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           这个文件可能包含函数声明。
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           该文件包含调用函数和输出结果的程序部分。
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           这个文件包含一个函数定义。
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             代码
+            </p>
+           </th>
+           <th>
+            <p>
+             文件类型
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             main.cpp
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             function.h
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             function.cpp
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              代码
+             </p>
+            </th>
+            <th>
+             <p>
+              文件类型
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              main.cpp
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               该文件包含调用函数和输出结果的程序部分。
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              function.h
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               这个文件可能包含函数声明。
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              function.cpp
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               这个文件包含一个函数定义。
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="05. 输入和输出.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('04. 构造函数和文件组织')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>
