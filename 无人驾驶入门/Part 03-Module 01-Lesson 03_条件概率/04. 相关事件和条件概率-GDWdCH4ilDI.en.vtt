@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.825
+I'm going to guess you felt much more confident in that second estimate.
+
+00:00:03.825 --> 00:00:07.080
+So you probably estimated a probability that's very close to zero or one,
+
+00:00:07.080 --> 00:00:10.769
+depending on whether it is not or is cloudy right now.
+
+00:00:10.769 --> 00:00:13.469
+And that's because cloudiness now and cloudiness one
+
+00:00:13.470 --> 00:00:16.615
+minute from now are not independent events.
+
+00:00:16.614 --> 00:00:18.869
+When you looked out the window to evaluate the cloudiness,
+
+00:00:18.870 --> 00:00:22.769
+you were in effect taking a sensor measurement of your surroundings,
+
+00:00:22.769 --> 00:00:26.030
+and you used that data to inform your probabilistic estimate.
+
+00:00:26.030 --> 00:00:29.250
+And that is all that conditional probability is: taking
+
+00:00:29.250 --> 00:00:32.979
+advantage of what we know to make better estimates about what we don't.
+
+00:00:32.979 --> 00:00:37.000
+In the rest of this lesson you'll learn how to formalize the intuition mathematically.
+

@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.299
+Let's talk about conditional probabilities.
+
+00:00:03.299 --> 00:00:07.710
+Sounds very cryptic, but conditional probability is the basic mechanism
+
+00:00:07.710 --> 00:00:12.315
+of which a self-driving car can take some sensor data and infer something else.
+
+00:00:12.314 --> 00:00:15.539
+Like for example, it could see a picture of a tree and infer,
+
+00:00:15.539 --> 00:00:17.129
+"I'm about to crash."
+
+00:00:17.129 --> 00:00:19.769
+To the language that is needed in mathematics to make
+
+00:00:19.769 --> 00:00:22.439
+this inference from a sensor measurement to
+
+00:00:22.440 --> 00:00:28.000
+some internal belief is called conditional probability. So let's dive in.
+
