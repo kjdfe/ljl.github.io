@@ -1,0 +1,371 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   概述
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      实战项目 4 - 高性能粒子滤波器
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 概述.html">
+       01. 概述
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 项目演练概述.html">
+       02. 项目演练概述
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 项目代码.html">
+       03. 项目代码
+      </a>
+     </li>
+     <li class="">
+      <a href="04. GCC Flags.html">
+       04. GCC Flags
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 项目参考答案.html">
+       05. 项目参考答案
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 代码参考.html">
+       06. 代码参考
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          01. 概述
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="实战项目概述">
+          实战项目概述
+         </h1>
+         <p>
+          现在，你需要一展所学，来解决 Andy 的这个直方图滤波器问题。在他的代码里，你会找到 8 个 C++ 文件。其中有 6 个包括直方图滤波器函数。其他 2 个中，一个是 main.cpp 文件，一个包含打印矩阵的一个函数。
+         </p>
+         <p>
+          你需要通读他的文件，运行程序，并提升他的代码的运行速度。
+         </p>
+         <p>
+          <strong>
+           本项目不评分
+          </strong>
+          ，我们会在“代码参考”部分提供参考答案。本项目没有严格的对错之分。我们的目标是让代码运行速度更快。代码参考展示了几种可行的优化方式。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="项目文件">
+          项目文件
+         </h1>
+         <p>
+          在本课的下一部分，你会发现一个嵌入式工作空间，它包含了以下文件和文件夹：
+         </p>
+         <ul>
+          <li>
+           andy_histogram_filter 文件夹
+          </li>
+          <li>
+           optimized_code 文件夹
+          </li>
+          <li>
+           instructions.md 文件
+          </li>
+         </ul>
+         <h5 id="andy_histogram_filter">
+          andy_histogram_filter
+         </h5>
+         <p>
+          andy_histogram_filter 文件夹包括了 Andy 的直方图滤波器代码。其中有一个 main.cpp 文件，会运行每个直方图滤波器函数并计时。计时结果会输出至终端。
+         </p>
+         <p>
+          其他的 .cpp 文件含有直方图滤波器的函数定义。
+         </p>
+         <h5 id="optimized_code">
+          optimized_code
+         </h5>
+         <p>
+          optimized_code 同样也包括了一份 Andy 的直方图滤波器代码。你需要在这里调整并优化代码。这些文件带有注释，可以为你的优化提供灵感。
+         </p>
+         <h5 id="instructionsmd">
+          instructions.md
+         </h5>
+         <p>
+          本文件包括完成并运行本项目的进一步说明。
+         </p>
+         <h5 id="hintsmd">
+          hints.md
+         </h5>
+         <p>
+          optimized_code 中的文件已经提示了如何优化。hints 文件中的提示更明确，但没有给出实际代码。你无需阅读本文件。我们建议你在阅读 hints 文件前，先自行尝试优化代码。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="代码说明">
+          代码说明
+         </h1>
+         <p>
+          以下为直方图滤波器代码工作原理的说明。
+         </p>
+         <p>
+          在 main.cpp 中，你会发现一个名为 grid 的向量。grid 是一个字符向量，它包括了一个二维正方形网格中的颜色值。
+         </p>
+         <p>
+          <strong>
+           initialize_beliefs
+          </strong>
+          函数代入 grid 字符，并为玩各种的每个正方形输出初始概率。
+         </p>
+         <p>
+          然后，
+          <strong>
+           sense
+          </strong>
+          函数测量当前网格空间的颜色。测量值用于更新网格中每个空间的概率。
+         </p>
+         <p>
+          接下来，
+          <strong>
+           blur
+          </strong>
+          函数使用平滑算法通过网格。
+         </p>
+         <p>
+          然后，概率通过
+          <strong>
+           normalize
+          </strong>
+          函数实现归一化。
+         </p>
+         <p>
+          最后，机器人移动到平面上的新位置，概率相应更新。
+         </p>
+         <p>
+          每个函数运行一万次。你可以在迭代变量中更改次数值。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="顺序">
+          顺序
+         </h1>
+         <p>
+          我们建议按以下顺序完成本项目：
+         </p>
+         <ol>
+          <li>
+           通读 instructions.md 中的指示
+          </li>
+          <li>
+           运行 andy_histogram_filter 文件夹中的代码（运行方式参见 instructions.md）
+          </li>
+          <li>
+           打开 main.cpp 并通读代码。本文件内容无需更改。注意，所有函数的运行次数相同。每个函数都使用时钟打包 (wrap)。
+          </li>
+          <li>
+           通读所有 .cpp 文件，熟悉代码。
+          </li>
+          <li>
+           优化 optimized_code 文件夹中的代码。每次优化时，都要运行代码，确认速度的确有提升。
+          </li>
+         </ol>
+         <p>
+          下面是建议的文件优化顺序：
+         </p>
+         <ul>
+          <li>
+           zeros.cpp
+          </li>
+          <li>
+           initialize_beliefs.cpp
+          </li>
+          <li>
+           sense.cpp
+          </li>
+          <li>
+           blur.cpp
+          </li>
+          <li>
+           normalize.cpp
+          </li>
+          <li>
+           move.cpp
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="02. 项目演练概述.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('01. 概述')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>
