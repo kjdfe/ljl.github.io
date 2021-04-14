@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.779
+Hey, you're making great progress learning about probability
+
+00:00:03.779 --> 00:00:08.709
+and you now understand how to design a coin flipping robot possibly.
+
+00:00:08.710 --> 00:00:11.640
+But, I just want to put in the void why you learn so much about
+
+00:00:11.640 --> 00:00:15.575
+coin flipping when you really care about self-driving cars.
+
+00:00:15.574 --> 00:00:19.219
+Probability is the core of how a self-driving car runs.
+
+00:00:19.219 --> 00:00:23.564
+And before diving into really complicated stuff like mapping and localization,
+
+00:00:23.565 --> 00:00:26.175
+really want to tell the very basics because the basics
+
+00:00:26.175 --> 00:00:28.890
+of finding out what the coin flip looks like
+
+00:00:28.890 --> 00:00:31.335
+is exactly the same math as building
+
+00:00:31.335 --> 00:00:35.355
+really great maps and localizing and controlling self-driving car.
+
+00:00:35.354 --> 00:00:38.204
+So stay tuned, you're making great progress.
+
+00:00:38.204 --> 00:00:39.469
+And let's dive deeper.
+

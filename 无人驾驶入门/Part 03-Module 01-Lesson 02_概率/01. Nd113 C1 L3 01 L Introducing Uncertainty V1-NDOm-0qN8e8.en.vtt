@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.650 --> 00:00:04.080
+Congratulations on submitting Project Zero.
+
+00:00:04.080 --> 00:00:06.345
+When I solved that last part of the project myself,
+
+00:00:06.344 --> 00:00:09.254
+it actually took me several tries to get the car to park,
+
+00:00:09.255 --> 00:00:12.070
+and the process was largely trial and error.
+
+00:00:12.070 --> 00:00:15.240
+That's because I was uncertain of what effect a command
+
+00:00:15.240 --> 00:00:18.413
+like car dot steer would have on vehicle behavior.
+
+00:00:18.413 --> 00:00:22.545
+This is similar to something known as control noise in self-driving cars.
+
+00:00:22.545 --> 00:00:25.260
+And it turns out that uncertainty is
+
+00:00:25.260 --> 00:00:29.365
+an unavoidable part of almost every component in a self-driving car.
+
+00:00:29.364 --> 00:00:32.460
+And managing this uncertainty is a huge part
+
+00:00:32.460 --> 00:00:35.840
+of making a self-driving car that actually works.
+
+00:00:35.840 --> 00:00:37.650
+Now, this word uncertainty,
+
+00:00:37.649 --> 00:00:40.604
+we mean something very specific when we use it in this Nanodegree.
+
+00:00:40.604 --> 00:00:42.894
+To make sure we're talking about the same thing,
+
+00:00:42.895 --> 00:00:47.380
+I'd like you to think about how uncertainty shows up in a self-driving car.
+
