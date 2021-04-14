@@ -1,0 +1,818 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   学习目标 - 贝叶斯法则
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      贝叶斯法则
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 降低不确定性.html">
+       01. 降低不确定性
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 贝叶斯法则和机器人学.html">
+       02. 贝叶斯法则和机器人学
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 学习传感器数据.html">
+       03. 学习传感器数据
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 使用传感器数据.html">
+       04. 使用传感器数据
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 学习目标：条件概率.html">
+       05. 学习目标：条件概率
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 学习目标 - 贝叶斯法则.html">
+       06. 学习目标 - 贝叶斯法则
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 贝叶斯法则.html">
+       07. 贝叶斯法则
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 癌症检测.html">
+       08. 癌症检测
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 先验与后验.html">
+       09. 先验与后验
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 归一化 1.html">
+       10. 归一化 1
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 归一化 2.html">
+       11. 归一化 2
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 归一化 3.html">
+       12. 归一化 3
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 全概率.html">
+       13. 全概率
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 贝叶斯法则图表.html">
+       14. 贝叶斯法则图表
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 等效线路图.html">
+       15. 等效线路图
+      </a>
+     </li>
+     <li class="">
+      <a href="16. 癌症概率.html">
+       16. 癌症概率
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 概率给定测试.html">
+       17. 概率给定测试
+      </a>
+     </li>
+     <li class="">
+      <a href="18. 归一化.html">
+       18. 归一化
+      </a>
+     </li>
+     <li class="">
+      <a href="19. 归一化概率.html">
+       19. 归一化概率
+      </a>
+     </li>
+     <li class="">
+      <a href="20. 疾病检测 1.html">
+       20. 疾病检测 1
+      </a>
+     </li>
+     <li class="">
+      <a href="21. 疾病检测 2.html">
+       21. 疾病检测 2
+      </a>
+     </li>
+     <li class="">
+      <a href="22. 疾病检测 3.html">
+       22. 疾病检测 3
+      </a>
+     </li>
+     <li class="">
+      <a href="23. 疾病检测 4.html">
+       23. 疾病检测 4
+      </a>
+     </li>
+     <li class="">
+      <a href="24. 疾病检测 5.html">
+       24. 疾病检测 5
+      </a>
+     </li>
+     <li class="">
+      <a href="25. 疾病检测 6.html">
+       25. 疾病检测 6
+      </a>
+     </li>
+     <li class="">
+      <a href="26. 贝叶斯法则小结.html">
+       26. 贝叶斯法则小结
+      </a>
+     </li>
+     <li class="">
+      <a href="27. 机器人传感 1.html">
+       27. 机器人传感 1
+      </a>
+     </li>
+     <li class="">
+      <a href="28. 机器人传感 2.html">
+       28. 机器人传感 2
+      </a>
+     </li>
+     <li class="">
+      <a href="29. 机器人传感 3.html">
+       29. 机器人传感 3
+      </a>
+     </li>
+     <li class="">
+      <a href="30. 机器人传感 4.html">
+       30. 机器人传感 4
+      </a>
+     </li>
+     <li class="">
+      <a href="31. 机器人传感 5.html">
+       31. 机器人传感 5
+      </a>
+     </li>
+     <li class="">
+      <a href="32. 机器人传感 6.html">
+       32. 机器人传感 6
+      </a>
+     </li>
+     <li class="">
+      <a href="33. 机器人传感 7.html">
+       33. 机器人传感 7
+      </a>
+     </li>
+     <li class="">
+      <a href="34. 机器人传感 8.html">
+       34. 机器人传感 8
+      </a>
+     </li>
+     <li class="">
+      <a href="35. 归纳总结.html">
+       35. 归纳总结
+      </a>
+     </li>
+     <li class="">
+      <a href="36. 练习：Sebastian 在家的概率.html">
+       36. 练习：Sebastian 在家的概率
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          06. 学习目标 - 贝叶斯法则
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="学习目标----贝叶斯法则">
+          学习目标 -  贝叶斯法则
+         </h1>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          以下问题将有助于你回顾在“贝叶斯法则”章节中学习到的知识。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="预备知识">
+          预备知识
+         </h3>
+         <p>
+          <strong>
+           对于问题 1-3，假定你已经具备以下知识
+          </strong>
+          ：
+         </p>
+         <p>
+          你希望得出一辆汽车看见
+          <em>
+           黄色
+          </em>
+          的交通信号灯就停下来的概率是多少。
+         </p>
+         <ul>
+          <li>
+           <p>
+            经验数据告诉你，一辆汽车在交通灯交叉路口停车的概率是
+            <span class="mathquill ud-math">
+             P(S) = 0.40
+            </span>
+            。
+           </p>
+          </li>
+          <li>
+           <p>
+            同时你了解到，基于经验数据，交通灯是黄色（而不是红色或绿色）的概率是
+            <span class="mathquill ud-math">
+             P(Y) = 0.10
+            </span>
+            。
+           </p>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="车辆在黄灯前停车" class="img img-fluid" src="img/screen-shot-2017-08-02-at-4.57.01-pm.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            车辆在黄灯前停车
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          交通灯 q1
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             当汽车停在十字路口时，数据显示，灯光为黄色的时间占比为 12%。所以，如果我们知道一辆车停了下来，那么有 12% 的可能性是黄灯。  这被称为
+             <em>
+              条件概率
+             </em>
+             。
+            </p>
+            <p>
+             给定上面的 P(S) 和 P(Y)，如何用符号表示这个条件概率？
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1501205087553" name="437141" type="radio" value="a1501205087553"/>
+           <label for="a1501205087553">
+            <p>
+             P(S|Y) = 0.12
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501205208596" name="437141" type="radio" value="a1501205208596"/>
+           <label for="a1501205208596">
+            <p>
+             P(S) =0.12
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501205220196" name="437141" type="radio" value="a1501205220196"/>
+           <label for="a1501205220196">
+            <p>
+             P(Y|S) = 0.12
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501205348531" name="437141" type="radio" value="a1501205348531"/>
+           <label for="a1501205348531">
+            <p>
+             P(Y,S) = 0.12
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          P(Y|S) = 0.12
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          交通灯 q2
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             根据习题1中提供的信息，回答以下问题：如果交通信号灯为黄色，那么汽车停下的可能性是多少？
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1501205676465" name="437142" type="radio" value="a1501205676465"/>
+           <label for="a1501205676465">
+            <p>
+             0.04
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501205679478" name="437142" type="radio" value="a1501205679478"/>
+           <label for="a1501205679478">
+            <p>
+             0.33
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501205687122" name="437142" type="radio" value="a1501205687122"/>
+           <label for="a1501205687122">
+            <p>
+             0.40
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501205694825" name="437142" type="radio" value="a1501205694825"/>
+           <label for="a1501205694825">
+            <p>
+             0.48
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501205722004" name="437142" type="radio" value="a1501205722004"/>
+           <label for="a1501205722004">
+            <p>
+             0.50
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501205725639" name="437142" type="radio" value="a1501205725639"/>
+           <label for="a1501205725639">
+            <p>
+             0.52
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          0.48
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          交通灯 q3
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             我们知道，在交叉路口停车和黄色交通灯是相关事件，那么 P(S) 和 P(Y) 分别是什么？
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1501206083765" name="437145" type="radio" value="a1501206083765"/>
+           <label for="a1501206083765">
+            <p>
+             后验概率
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501206294159" name="437145" type="radio" value="a1501206294159"/>
+           <label for="a1501206294159">
+            <p>
+             经验概率
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501206298641" name="437145" type="radio" value="a1501206298641"/>
+           <label for="a1501206298641">
+            <p>
+             先验概率
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501206305385" name="437145" type="radio" value="a1501206305385"/>
+           <label for="a1501206305385">
+            <p>
+             总概率
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          先验概率
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="问题-4-和-5-是不同场景。">
+          问题 4 和 5 是不同场景。
+         </h3>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           问题 4 的预备知识：
+          </strong>
+         </p>
+         <p>
+          在一条四车道的高速公路上，汽车行驶速度要么快，要么不快。  快的汽车应该在最左边的车道。
+         </p>
+         <ul>
+          <li>
+           <p>
+            在任何时候，都有 20% 的车辆在最左边的车道。
+           </p>
+          </li>
+          <li>
+           <p>
+            总体上，高速公路上有 40% 的车辆被归类为快速行驶。
+           </p>
+          </li>
+          <li>
+           <p>
+            在最左边车道的所有车辆中，90% 的车辆正在快速行驶。
+           </p>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          贝叶斯 q2
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             根据以上信息，如果汽车行驶速度很快，那么它位于最左边车道的概率是多少？
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1501207155576" name="437146" type="radio" value="a1501207155576"/>
+           <label for="a1501207155576">
+            <p>
+             0.125
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501207184220" name="437146" type="radio" value="a1501207184220"/>
+           <label for="a1501207184220">
+            <p>
+             0.25
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501207191438" name="437146" type="radio" value="a1501207191438"/>
+           <label for="a1501207191438">
+            <p>
+             0.45
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501207193943" name="437146" type="radio" value="a1501207193943"/>
+           <label for="a1501207193943">
+            <p>
+             0.55
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          0.45
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          贝叶斯法则不仅用于将传感器数据纳入估计过程，它也经常用于将测试数据纳入到医疗诊断中。
+         </p>
+         <p>
+          <strong>
+           问题 5 的预备知识：
+          </strong>
+         </p>
+         <ul>
+          <li>
+           在所有人口中，有 1% 得了癌症。
+          </li>
+          <li>
+           90％ 的癌症患者在接受癌症检测的血液检测结果为阳性，这意味着 90% 的可能性检测出癌症。
+          </li>
+          <li>
+           5% 的人会有误报，也就是说有 5% 的可能性，会出现该检测在人们没有癌症的时候呈现阳性结果的情况。
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Bayes q3
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             鉴于上述数据，如果一个人的癌症检测结果为阳性，那么他患癌症的概率是多少？  （注意：答案四舍五入到最接近的 4 位小数）。
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1501208084691" name="437148" type="radio" value="a1501208084691"/>
+           <label for="a1501208084691">
+            <p>
+             0.1125
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501208101776" name="437148" type="radio" value="a1501208101776"/>
+           <label for="a1501208101776">
+            <p>
+             0.1538
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501208108511" name="437148" type="radio" value="a1501208108511"/>
+           <label for="a1501208108511">
+            <p>
+             0.2687
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1501208112575" name="437148" type="radio" value="a1501208112575"/>
+           <label for="a1501208112575">
+            <p>
+             0.8924
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          0.1538
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="07. 贝叶斯法则.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('06. 学习目标 - 贝叶斯法则')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>
