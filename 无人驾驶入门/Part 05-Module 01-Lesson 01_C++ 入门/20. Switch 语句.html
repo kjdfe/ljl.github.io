@@ -1,0 +1,526 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Switch 语句
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      C++ 入门
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 介绍.html">
+       01. 介绍
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 课程概述.html">
+       02. 课程概述
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Elecia White.html">
+       03. Elecia White
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 为什么选择 C++.html">
+       04. 为什么选择 C++
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Python 和 C++ 比较.html">
+       05. Python 和 C++ 比较
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 静态 vs 动态类型.html">
+       06. 静态 vs 动态类型
+      </a>
+     </li>
+     <li class="">
+      <a href="07. C++ - 静态类型语言.html">
+       07. C++ - 静态类型语言
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 数据的基本类型.html">
+       08. 数据的基本类型
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 单精度和双精度浮点数[示范区].html">
+       09. 单精度和双精度浮点数[示范区]
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 双精度浮点数占用空间更大.html">
+       10. 双精度浮点数占用空间更大
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 常见错误和错误消息.html">
+       11. 常见错误和错误消息
+      </a>
+     </li>
+     <li class="">
+      <a href="12. C++ 函数.html">
+       12. C++ 函数
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 函数剖析.html">
+       13. 函数剖析
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 多输出.html">
+       14. 多输出
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 两个同名函数.html">
+       15. 两个同名函数
+      </a>
+     </li>
+     <li class="">
+      <a href="16. 函数签名 1.html">
+       16. 函数签名 1
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 函数签名 2.html">
+       17. 函数签名 2
+      </a>
+     </li>
+     <li class="">
+      <a href="18. If 和布尔逻辑.html">
+       18. If 和布尔逻辑
+      </a>
+     </li>
+     <li class="">
+      <a href="19. While 和 For 循环.html">
+       19. While 和 For 循环
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Switch 语句.html">
+       20. Switch 语句
+      </a>
+     </li>
+     <li class="">
+      <a href="21. 库.html">
+       21. 库
+      </a>
+     </li>
+     <li class="">
+      <a href="22. 继续加油！.html">
+       22. 继续加油！
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          20. Switch 语句
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="switch">
+          Switch
+         </h1>
+         <p>
+          switch 语句和 if 语句非常相似。事实上，你可以编写一个程序，用 switch 语句完成和一系列 if-else 语句同样的事情。
+         </p>
+         <p>
+          那为什么还要用 switch 语句呢？因为 switch 语句执行速度一般更快，具体原因我们不在此详述。许多编程语言都有 switch 语句，包括 Java、Javascript、PHP、C++ 等等；Python 是个例外。
+         </p>
+         <p>
+          由于 Python 没有 switch 语句，我们将比较 C++ 中的一组 if-else  语句和 switch 语句。
+         </p>
+         <p>
+          点击图像放大。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/switch.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          代码输出为：
+         </p>
+         <pre><code class="c++ language-c++">Not Moving - Neutral
+Your car is currently in gear:N</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          我们来分析一下 switch 语句中发生的事情：
+         </p>
+         <p>
+          ```c++
+          <br/>
+          char gear_status = 'N';
+         </p>
+         <pre><code>switch(gear_status) {
+    case 'D' :
+        std::cout &lt;&lt; "Driving Forward" &lt;&lt; std::endl;
+        break;
+    case 'N' :
+        std::cout &lt;&lt; "Not Moving - Neutral" &lt;&lt; std::endl;
+        break;
+    case 'P' :
+        std::cout &lt;&lt; "Not Moving - Parked" &lt;&lt; std::endl;
+        break;
+    case 'R':
+        std::cout &lt;&lt; "Driving in Reverse" &lt;&lt; std::endl;
+        break;
+}</code></pre>
+         <p>
+          ```
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          每次出现
+          <strong>
+           case
+          </strong>
+          时，代码都会检查 gear_status 变量是否与 case 相匹配。一旦 gear_status 找到匹配的 case， case 内的代码就会运行。
+         </p>
+         <p>
+          在 C++ 中，switch 语句功能是在匹配的情况下运行代码，然后运行下面所有 case。如果您希望代码在执行完匹配 case 后退出 switch，则需要对代码进行
+          <strong>
+           分行
+          </strong>
+          。
+         </p>
+         <p>
+          换句话说，如果代码编写时没有分行
+         </p>
+         <pre><code class="c++ language-c++"># include &lt;iostream&gt;
+
+int main() {
+
+    char gear_status = 'N';
+
+    switch(gear_status) {
+        case 'D' :
+            std::cout &lt;&lt; "Driving Forward" &lt;&lt; std::endl;
+        case 'N' :
+            std::cout &lt;&lt; "Not Moving - Neutral" &lt;&lt; std::endl;
+        case 'P' :
+            std::cout &lt;&lt; "Not Moving - Parked" &lt;&lt; std::endl;
+        case 'R':
+            std::cout &lt;&lt; "Driving in Reverse" &lt;&lt; std::endl;
+    }
+
+    std::cout &lt;&lt; "Your car is currently in gear: " &lt;&lt; gear_status &lt;&lt; std::endl;
+
+    return 0;
+}</code></pre>
+         <p>
+          代码还是跳过 'D' case， 但是，一旦代码与 “N” case 匹配，那么 “N”、“P” 和 “R” case 下的代码就会执行。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="switch-的限制">
+          Switch 的限制
+         </h3>
+         <p>
+          If-else 语句比 switch 语句更灵活。事实上，case 语句仅限于确定相等的整数。Switch 语句中的 case 也可以比较示例代码中的字符，因为 C++ 会将字符转换为整数。
+         </p>
+         <p>
+          switch 语句的一般形式如下所示：
+         </p>
+         <pre><code class="c++ language-c++">    int variable = integer;
+
+    switch(variable) {
+        case 1:
+            code statements;
+            break;
+        case 2 :
+            code statements;
+            break;
+        case 3:
+            code statements;
+            break;
+        case 4:
+            code statements;
+            break;
+        case etc ... 
+    }</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="switch-语句---游乐场">
+          Switch 语句 - 游乐场
+         </h3>
+         <p>
+          本游乐场部分，你可以练习编写 switch 语句。代码注释可以帮助你上手。您可以使用“测试运行”按钮运行你的代码，然后将你答案与 “solution.cpp” 进行比较。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="438146-main-cpp" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#438146-main-cpp" id="tab-438146-main-cpp" role="tab">
+            main.cpp
+           </a>
+           <a aria-controls="438146-solution-cpp" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#438146-solution-cpp" id="tab-438146-solution-cpp" role="tab">
+            solution.cpp
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-438146-main-cpp" class="tab-pane active show" id="438146-main-cpp" role="tabpanel">
+            <pre><code></code>//TODO Practice writing switch statements
+// Don't forget an include statement if you want to use std::cout
+
+int main() {
+    
+    // TODO: write a program that outputs whether a vehicle is a motorcycle,
+    // 2-door coupe, 4-door car or a 5-door mini-van. 
+    // You should create a variable that holds the number of doors in the vehicle
+    // A motorcycle would have doors = 0 for example. 
+    // Then use a switch statement to output to the terminal the kind of vehicle
+    // you have
+    
+    return 0;
+}</pre>
+           </div>
+           <div aria-labelledby="tab-438146-solution-cpp" class="tab-pane" id="438146-solution-cpp" role="tabpanel">
+            <pre><code></code>//TODO Practice writing switch statements
+// Don't forget an include statement if you want to use std::cout
+
+#include &lt;iostream&gt;
+
+int main() {
+    
+    // TODO: write a program that outputs whether a vehicle is a motorcycle,
+    // 2-door coupe, 4-door car or a 5-door mini-van. 
+    // You should create a variable that holds the number of doors in the vehicle
+    // A motorcycle would have doors = 0 for example. 
+    // Then use a switch statement to output to the terminal the kind of vehicle
+    // you have
+
+    int doors = 5;
+    
+    switch(doors) {
+        case 0:
+            std::cout &lt;&lt; "Motorcycle" &lt;&lt; std::endl;
+            break;
+        case 2:
+            std::cout &lt;&lt; "Coupe" &lt;&lt; std::endl;
+            break;
+        case 4:
+            std::cout &lt;&lt; "Sedan" &lt;&lt; std::endl;
+            break;
+        case 5:
+            std::cout &lt;&lt; "Mini-van" &lt;&lt;std::endl;
+            break;
+
+    }
+    
+    return 0;
+}</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="21. 库.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('20. Switch 语句')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

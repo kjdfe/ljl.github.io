@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.279
+So welcome Elicia. Thank you so much for coming in today.
+
+00:00:03.279 --> 00:00:05.609
+Hey, Andy. Thank you for inviting me.
+
+00:00:05.610 --> 00:00:08.175
+So I have been trying to learn C++.
+
+00:00:08.175 --> 00:00:09.929
+I'm not an expert myself.
+
+00:00:09.929 --> 00:00:11.820
+And the first thing I did when I was trying to
+
+00:00:11.820 --> 00:00:14.519
+learn this language was try to convert some of
+
+00:00:14.519 --> 00:00:19.344
+that histogram filter code we had written in the first course of this nanodegree.
+
+00:00:19.344 --> 00:00:21.326
+I tried to convert it from Python to C++,
+
+00:00:21.326 --> 00:00:23.859
+and that was quite an experience. It was not easy.
+
+00:00:23.859 --> 00:00:25.949
+But I think that code might serve as
+
+00:00:25.949 --> 00:00:30.074
+a good jumping off point for talking about what this language is.
+
+00:00:30.074 --> 00:00:31.439
+Well, you let me look at some of it.
+
+00:00:31.440 --> 00:00:32.620
+So, I think, yes.
+
+00:00:32.619 --> 00:00:33.909
+We can talk more about it.
+
+00:00:33.909 --> 00:00:37.319
+Okay. So let's get into the details, the nitty-gritty of the code.
+
+00:00:37.320 --> 00:00:39.000
+But before we do that, do you want to just,
+
+00:00:39.000 --> 00:00:41.554
+high level, what is C++?
+
+00:00:41.554 --> 00:00:43.920
+What's the difference between C++ and Python?
+
+00:00:43.920 --> 00:00:46.929
+Why do we need multiple programming languages?
+
+00:00:46.929 --> 00:00:50.234
+There are some people who say you should learn lots of programming languages.
+
+00:00:50.234 --> 00:00:53.579
+You should learn different languages because they have different uses.
+
+00:00:53.579 --> 00:00:58.710
+Python is fantastic for problem solving,
+
+00:00:58.710 --> 00:01:05.250
+for prototypes, for figuring out what the goal is and how to get there.
+
+00:01:05.250 --> 00:01:09.060
+But you don't necessarily care about what you're using to get there,
+
+00:01:09.060 --> 00:01:13.034
+whether you're using a moped or a nice car.
+
+00:01:13.034 --> 00:01:15.060
+C++, on the other hand,
+
+00:01:15.060 --> 00:01:17.150
+knows what it's running on.
+
+00:01:17.150 --> 00:01:18.540
+It knows about processors.
+
+00:01:18.540 --> 00:01:21.090
+It knows about how it interacts with the world.
+
+00:01:21.090 --> 00:01:24.471
+And it's a very tactical language,
+
+00:01:24.471 --> 00:01:28.799
+where it has its feet in the computer its running on.
+
+00:01:28.799 --> 00:01:34.109
+It has lots of the Python features that help you implement solutions to your problem,
+
+00:01:34.109 --> 00:01:37.920
+but it also has ways to do it really fast.
+
+00:01:37.920 --> 00:01:43.719
+And that is the real reason why C++ is important to this sort of development.
+

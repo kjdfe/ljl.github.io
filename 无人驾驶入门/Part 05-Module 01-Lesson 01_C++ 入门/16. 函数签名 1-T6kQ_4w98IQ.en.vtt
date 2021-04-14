@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.549
+What is a function declaration, and why is it important?
+
+00:00:03.549 --> 00:00:05.939
+A function declaration has
+
+00:00:05.940 --> 00:00:09.839
+multiple pieces and this is a little easier to look at in code.
+
+00:00:09.839 --> 00:00:15.509
+Maybe let's look at your tests normalize function.
+
+00:00:15.509 --> 00:00:20.939
+When you look at just the way the function is defined,
+
+00:00:20.940 --> 00:00:26.225
+there's the bool and then the tests normalize and the open paren and the close paren.
+
+00:00:26.225 --> 00:00:31.450
+And that bool says that it's going to return true or false.
+
+00:00:31.449 --> 00:00:32.820
+Very similar to Python,
+
+00:00:32.820 --> 00:00:34.619
+you can return whatever you want,
+
+00:00:34.619 --> 00:00:39.429
+except in C++ you have to tell it the type you're going to return.
+
+00:00:39.429 --> 00:00:41.310
+It has some advantages.
+
+00:00:41.310 --> 00:00:43.150
+For example in Python,
+
+00:00:43.149 --> 00:00:46.019
+if you accidentally returned just the row,
+
+00:00:46.020 --> 00:00:48.705
+instead of the whole grid, it wouldn't tell you,
+
+00:00:48.704 --> 00:00:54.179
+you wouldn't know until it ran, and there was an error.
+
+00:00:54.179 --> 00:00:56.835
+Maybe three hours into what you were doing,
+
+00:00:56.835 --> 00:01:02.210
+it would suddenly get to a place in the code where there was a bug and you would now.
+
+00:01:02.210 --> 00:01:04.942
+But C++, it tells you right away,
+
+00:01:04.942 --> 00:01:07.545
+you can't even compile if you didn't
+
+00:01:07.545 --> 00:01:10.995
+return something and return something of the right variety.
+
+00:01:10.995 --> 00:01:15.160
+Something I do in Python a lot is actually forget the return statement, entirely.
+
+00:01:15.159 --> 00:01:18.750
+And then I am working with a none type object forever.
+
+00:01:18.750 --> 00:01:21.989
+And that's actually can be a really hard bug to debug.
+
+00:01:21.989 --> 00:01:23.809
+So I can see how this might be valuable.
+
+00:01:23.810 --> 00:01:24.579
+Exactly.
+
+00:01:24.579 --> 00:01:27.774
+You're at least guaranteed that the parts fit together correctly.
+
+00:01:27.775 --> 00:01:30.240
+Not necessarily that they do what they're supposed to, but that they fit.
+
+00:01:30.239 --> 00:01:33.809
+Right, the Lego blocks go together,
+
+00:01:33.810 --> 00:01:36.950
+and that you didn't forget one.
+
+00:01:36.950 --> 00:01:37.049
+Okay.
+
+00:01:37.049 --> 00:01:41.939
+It's so easy to forget the return or to return just the wrong thing,
+
+00:01:41.939 --> 00:01:45.030
+because you were thinking about something else.
+
+00:01:45.030 --> 00:01:48.530
+Hopefully, C++ has a few safety checks for you.
+

@@ -1,0 +1,490 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   While 和 For 循环
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      C++ 入门
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 介绍.html">
+       01. 介绍
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 课程概述.html">
+       02. 课程概述
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Elecia White.html">
+       03. Elecia White
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 为什么选择 C++.html">
+       04. 为什么选择 C++
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Python 和 C++ 比较.html">
+       05. Python 和 C++ 比较
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 静态 vs 动态类型.html">
+       06. 静态 vs 动态类型
+      </a>
+     </li>
+     <li class="">
+      <a href="07. C++ - 静态类型语言.html">
+       07. C++ - 静态类型语言
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 数据的基本类型.html">
+       08. 数据的基本类型
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 单精度和双精度浮点数[示范区].html">
+       09. 单精度和双精度浮点数[示范区]
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 双精度浮点数占用空间更大.html">
+       10. 双精度浮点数占用空间更大
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 常见错误和错误消息.html">
+       11. 常见错误和错误消息
+      </a>
+     </li>
+     <li class="">
+      <a href="12. C++ 函数.html">
+       12. C++ 函数
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 函数剖析.html">
+       13. 函数剖析
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 多输出.html">
+       14. 多输出
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 两个同名函数.html">
+       15. 两个同名函数
+      </a>
+     </li>
+     <li class="">
+      <a href="16. 函数签名 1.html">
+       16. 函数签名 1
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 函数签名 2.html">
+       17. 函数签名 2
+      </a>
+     </li>
+     <li class="">
+      <a href="18. If 和布尔逻辑.html">
+       18. If 和布尔逻辑
+      </a>
+     </li>
+     <li class="">
+      <a href="19. While 和 For 循环.html">
+       19. While 和 For 循环
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Switch 语句.html">
+       20. Switch 语句
+      </a>
+     </li>
+     <li class="">
+      <a href="21. 库.html">
+       21. 库
+      </a>
+     </li>
+     <li class="">
+      <a href="22. 继续加油！.html">
+       22. 继续加油！
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          19. While 和 For 循环
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="python-vs-c-while">
+          Python vs. C++ While
+         </h3>
+         <p>
+          下面，你会看到一个 Python while 循环与 C++ while循环对比的例子。它们非常相似！
+         </p>
+         <p>
+          该示例以 elapsed_time 变量中的整数 15 开始。每次迭代，整数减 1。一旦 elapsed_time 达到 0，程序即离开 while 循环。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/while.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          普通的 while 语句是这样的：
+         </p>
+         <pre><code class="c++ language-c++">while (&lt;some criteria&gt;) {
+    statement_1;
+    statement_2;
+    statement_3;
+    ....etc
+}</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="python-vs-c-for-循环">
+          Python vs. C++ For 循环
+         </h3>
+         <p>
+          for 循环语法在 Python 和 C++ 中也非常相似。
+         </p>
+         <p>
+          下面的例子很像 while 循环，区别在于 count 变量在增加而不是减少。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/for.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          有一点需要注意的是，Python 如何迭代
+          <strong>
+           i
+          </strong>
+          变量，以及 C++ 如何迭代。
+         </p>
+         <p>
+          对于 Python，迭代器是这样定义的：
+         </p>
+         <pre><code class="python language-python">i in range(0, elapsed_time)</code></pre>
+         <p>
+          Python 的 range() 函数生成一个数字列表，在本例中，列表为
+         </p>
+         <pre><code class="python language-python">[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]</code></pre>
+         <p>
+          然后，Python 将这些值依次分配给
+          <strong>
+           i
+          </strong>
+          变量，直到列表末尾。
+         </p>
+         <p>
+          对于 C++，迭代代码为：
+         </p>
+         <pre><code class="c++ language-c++">(int i = 0; i &lt; elapsed_time; i++) </code></pre>
+         <p>
+          首先，声明变量
+          <strong>
+           i
+          </strong>
+          并分配一个值（在本例中为零）。然后，for 循环检查 if
+         </p>
+         <pre><code class="c++ language-c++">i &lt; elapsed_time</code></pre>
+         <p>
+          如果为 true，那么
+          <strong>
+           i
+          </strong>
+          将增加 1，for 循环中的代码继续运行。
+         </p>
+         <p>
+          当
+         </p>
+         <pre><code class="c++ language-c++">i =14</code></pre>
+         <p>
+          时，for 循环最后一次运行。代码检查确定 14 小于 15，将
+          <strong>
+           i
+          </strong>
+          增加到 15，并在循环中运行代码。然后代码检查 15 是否小于 15。结果为 false，因此 for 循环不再运行。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="游乐场---for-循环">
+          游乐场 - for 循环
+         </h3>
+         <p>
+          本游乐场专门针对 for 循环编程。注释中，我们有一个上手建议，你可以对比你的代码与 solution.cpp 中的参考答案。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="438138-main-cpp" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#438138-main-cpp" id="tab-438138-main-cpp" role="tab">
+            main.cpp
+           </a>
+           <a aria-controls="438138-solution-cpp" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#438138-solution-cpp" id="tab-438138-solution-cpp" role="tab">
+            solution.cpp
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-438138-main-cpp" class="tab-pane active show" id="438138-main-cpp" role="tabpanel">
+            <pre><code></code>#include &lt;iostream&gt;
+
+int main() {
+    
+    //TODO: Use this as a playground to write a for loop and if statements
+    // in the same program.
+    
+    // For example, write a for loop that iterates from 0 to 80.
+    // If the iterator is greater than or equal to 0 but less than 10, 
+    //      output the phrase 'slow'
+    // If the iterator is between 10 inclusive
+    //      and less than 30, output the phrase 'medium'
+    // If the iterator is between 30 inclusive and 70, output the phrase 'fast'
+    // If the iterator is greater than 70 inclusive, output the phrase 'too fast'
+    
+    return 0;
+}</pre>
+           </div>
+           <div aria-labelledby="tab-438138-solution-cpp" class="tab-pane" id="438138-solution-cpp" role="tabpanel">
+            <pre><code></code>#include &lt;iostream&gt;
+
+int main() {
+    
+    for (int i = 0; i &lt; 80; i++) {
+        if (i &lt; 10) {
+            std::cout &lt;&lt; "slow" &lt;&lt; std::endl;
+        }
+        else if (i &lt; 30) {
+            std::cout &lt;&lt; "medium" &lt;&lt; std::endl;
+        }
+        else if (i &lt; 70) {
+            std::cout &lt;&lt; "fast" &lt;&lt; std::endl;
+        }
+        else {
+            std::cout &lt;&lt; "too fast" &lt;&lt; std::endl; 
+        }
+        
+    }
+    
+    
+    return 0;
+}</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="20. Switch 语句.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('19. While 和 For 循环')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

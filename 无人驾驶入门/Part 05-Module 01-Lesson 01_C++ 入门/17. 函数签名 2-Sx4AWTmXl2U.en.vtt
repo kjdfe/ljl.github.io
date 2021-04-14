@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.609
+So with the Test-Normalized function we had
+
+00:00:02.609 --> 00:00:05.344
+the return-type bold, the name Test-Normalized,
+
+00:00:05.344 --> 00:00:06.804
+open and closed parenthesis,
+
+00:00:06.804 --> 00:00:08.339
+but I imagine this isn't
+
+00:00:08.339 --> 00:00:11.590
+the total picture because this function didn't take any arguments.
+
+00:00:11.590 --> 00:00:16.710
+That's true. And if it was in a header file instead of that open curly brace you would
+
+00:00:16.710 --> 00:00:24.670
+have a semicolon to say this is the function declaration instead of the definition.
+
+00:00:24.670 --> 00:00:29.220
+And if we wanted to take arguments it would be in those open parenthesis.
+
+00:00:29.219 --> 00:00:31.817
+Take this other function, Normalize,
+
+00:00:31.817 --> 00:00:35.670
+where you have this kind of complicated signature,
+
+00:00:35.670 --> 00:00:37.965
+function signature, where have vector,
+
+00:00:37.965 --> 00:00:42.215
+vector float and then normalize in vector vector float.
+
+00:00:42.215 --> 00:00:48.385
+And what that says is that you want to return this vector vector,
+
+00:00:48.384 --> 00:00:53.030
+so the grid of floats and you want to normalize,
+
+00:00:53.030 --> 00:00:54.130
+that's just your function name,
+
+00:00:54.130 --> 00:00:56.460
+and then inside you have another grid.
+
+00:00:56.460 --> 00:00:59.730
+When you switch it so that you are
+
+00:00:59.729 --> 00:01:03.039
+not necessarily passing it the same way and copying it,
+
+00:01:03.039 --> 00:01:07.000
+you'll find that you don't need all of those parameters.
+

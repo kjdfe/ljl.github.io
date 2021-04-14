@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.129
+Now that you're all set up, it's time to start writing some code.
+
+00:00:03.129 --> 00:00:04.710
+But before we jump in, we should say
+
+00:00:04.710 --> 00:00:06.450
+a couple things about how these lessons are formatted.
+
+00:00:06.450 --> 00:00:12.660
+Right. And the goal of this course is simple in some ways: translate Python code to C++.
+
+00:00:12.660 --> 00:00:15.714
+Now there's a good amount you'll need to learn in order to do that.
+
+00:00:15.714 --> 00:00:18.280
+But most of it isn't very conceptually heavy.
+
+00:00:18.280 --> 00:00:22.920
+Yes, writing C++ will require you to know the syntax for a "for loop" for example,
+
+00:00:22.920 --> 00:00:26.340
+but you probably don't need a lecture on what a "for loop" is.
+
+00:00:26.339 --> 00:00:28.019
+Sure. So with this in mind,
+
+00:00:28.019 --> 00:00:30.359
+most of the instruction in the next lessons will
+
+00:00:30.359 --> 00:00:32.780
+contain example code and text explanations.
+
+00:00:32.780 --> 00:00:37.608
+And when we do run into some unavoidable piece of something new in C++,
+
+00:00:37.607 --> 00:00:39.359
+like piling or declaring variables,
+
+00:00:39.359 --> 00:00:41.549
+for example, part of the instruction will
+
+00:00:41.549 --> 00:00:44.454
+draw on an interview I got to do with Elecia White,
+
+00:00:44.454 --> 00:00:47.539
+who literally wrote the book on embedded systems.
+
+00:00:47.539 --> 00:00:49.350
+Yeah, why don't we show some of that interview.
+

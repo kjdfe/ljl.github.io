@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.370
+C++ is the language of self-driving cars.
+
+00:00:03.370 --> 00:00:06.900
+It's also a programming language that's a lot closer to what devices like
+
+00:00:06.900 --> 00:00:11.515
+the NVIDIA PX2 understand than a higher level language like Python.
+
+00:00:11.515 --> 00:00:13.785
+So if you want to get a job in this field,
+
+00:00:13.785 --> 00:00:15.640
+it's something you're going to have to learn.
+
+00:00:15.640 --> 00:00:20.115
+And while C++ is in most ways similar to languages like Python,
+
+00:00:20.114 --> 00:00:22.945
+it also has several features which make it different.
+
+00:00:22.945 --> 00:00:24.420
+In this two nanodegree,
+
+00:00:24.420 --> 00:00:26.500
+you will learn C++ over two courses.
+
+00:00:26.500 --> 00:00:28.589
+In this course, we will focus on all the elements of
+
+00:00:28.589 --> 00:00:31.492
+C++ that it shares with Python: variables,
+
+00:00:31.492 --> 00:00:33.989
+loops, classes, and objects, etc.
+
+00:00:33.990 --> 00:00:38.120
+And in the next course, we'll focus on some of what makes C++ unique.
+
+00:00:38.119 --> 00:00:39.729
+But the angle of this course,
+
+00:00:39.729 --> 00:00:41.339
+is pretty straightforward, right?
+
+00:00:41.340 --> 00:00:42.975
+Working C++ code.
+
+00:00:42.975 --> 00:00:45.060
+In particular, you'll be asked to translate
+
+00:00:45.060 --> 00:00:49.545
+the two dimensional histogram filter code that you wrote in Python into C++.
+
+00:00:49.545 --> 00:00:51.975
+And when you get that to run correctly,
+
+00:00:51.975 --> 00:00:57.630
+you'll have made a hugely important first step towards your eventual expertise in C++.
+
+00:00:57.630 --> 00:01:00.900
+Now before we continue, there are some basic housekeeping steps that you'll need to take
+
+00:01:00.899 --> 00:01:05.179
+care of before you start writing and running C++ code on your computer.
+
+00:01:05.180 --> 00:01:08.000
+Follow the instructions we've outlined below before you move on.
+

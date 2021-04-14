@@ -1,0 +1,1021 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   If 和布尔逻辑
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      C++ 入门
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 介绍.html">
+       01. 介绍
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 课程概述.html">
+       02. 课程概述
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Elecia White.html">
+       03. Elecia White
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 为什么选择 C++.html">
+       04. 为什么选择 C++
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Python 和 C++ 比较.html">
+       05. Python 和 C++ 比较
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 静态 vs 动态类型.html">
+       06. 静态 vs 动态类型
+      </a>
+     </li>
+     <li class="">
+      <a href="07. C++ - 静态类型语言.html">
+       07. C++ - 静态类型语言
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 数据的基本类型.html">
+       08. 数据的基本类型
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 单精度和双精度浮点数[示范区].html">
+       09. 单精度和双精度浮点数[示范区]
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 双精度浮点数占用空间更大.html">
+       10. 双精度浮点数占用空间更大
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 常见错误和错误消息.html">
+       11. 常见错误和错误消息
+      </a>
+     </li>
+     <li class="">
+      <a href="12. C++ 函数.html">
+       12. C++ 函数
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 函数剖析.html">
+       13. 函数剖析
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 多输出.html">
+       14. 多输出
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 两个同名函数.html">
+       15. 两个同名函数
+      </a>
+     </li>
+     <li class="">
+      <a href="16. 函数签名 1.html">
+       16. 函数签名 1
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 函数签名 2.html">
+       17. 函数签名 2
+      </a>
+     </li>
+     <li class="">
+      <a href="18. If 和布尔逻辑.html">
+       18. If 和布尔逻辑
+      </a>
+     </li>
+     <li class="">
+      <a href="19. While 和 For 循环.html">
+       19. While 和 For 循环
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Switch 语句.html">
+       20. Switch 语句
+      </a>
+     </li>
+     <li class="">
+      <a href="21. 库.html">
+       21. 库
+      </a>
+     </li>
+     <li class="">
+      <a href="22. 继续加油！.html">
+       22. 继续加油！
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          18. If 和布尔逻辑
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="控制语句">
+          控制语句
+         </h1>
+         <p>
+          现在，你已经知道如何声明变量和编写函数了，你在 C++ 语言学习方面已经取得了良好进展。
+         </p>
+         <p>
+          到目前为止，你接触的程序相对都比较简单。你需要控制语句，才能编写更复杂的程序。像
+          <strong>
+           if
+          </strong>
+          和
+          <strong>
+           for
+          </strong>
+          之类的控制语句是许多编程语言的基础。它们允许你确定运行代码语句的时间和频率。
+         </p>
+         <p>
+          在本节中，你将学习使用 C++ 的
+          <strong>
+           if
+          </strong>
+          语句和相关的布尔逻辑使用。
+         </p>
+         <p>
+          下一节将介绍
+          <strong>
+           while
+          </strong>
+          和
+          <strong>
+           for
+          </strong>
+          循环。最后，我们会讲解** switch **语句。Python 有和 *
+          <em>
+           if
+           <strong>
+            、
+           </strong>
+           while
+          </em>
+          * 和
+          <br/>
+          <strong>
+           for
+          </strong>
+          等价的语句，但没有
+          <strong>
+           switch
+          </strong>
+          语句。
+         </p>
+         <p>
+          学习控制语句之后，你可以编写更复杂的 C++ 程序。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="python-vs-c-if">
+          Python vs. C++ If
+         </h3>
+         <p>
+          下面是一组 Python 中 if 语句与 C++ 中等价语句的示例。
+         </p>
+         <p>
+          你会看到逻辑结构完全相同，但语法略有不同。你可以把下面的代码看作交通灯分类程序的一部分，它会告诉车辆当前
+          <br/>
+          交通信号的颜色。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/copy-of-template-2.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          C++ 中的通用 if 语句如下所示：
+         </p>
+         <pre><code class="c++ language-c++">if (&lt;some criteria&gt;) {
+    statement_1;
+    statement_2;
+   .... etc
+}
+else if (&lt;some other criteria&gt;) {
+    statement_1;
+    statement_2;
+   .... etc
+}
+else (&lt;some other criteria&gt;) {
+    statement_1;
+    statement_2;
+   .... etc
+}</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="布尔逻辑">
+          布尔逻辑
+         </h3>
+         <p>
+          要让 if 语句生效，你需要布尔逻辑。布尔逻辑在 Python 和 C++ 中的实现方式相同；有些语法是完全相同的，有些稍有不同。
+         </p>
+         <p>
+          下面是一个表格，显示了两种语言的比较运算符：
+         </p>
+         <table>
+          <thead>
+           <tr>
+            <th id="运算符">
+             运算符
+            </th>
+            <th id="python">
+             Python
+            </th>
+            <th id="c++">
+             C++
+            </th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+            <td>
+             等于
+            </td>
+            <td>
+             ==
+            </td>
+            <td>
+             ==
+            </td>
+           </tr>
+           <tr>
+            <td>
+             不等于
+            </td>
+            <td>
+             !=
+            </td>
+            <td>
+             !=
+            </td>
+           </tr>
+           <tr>
+            <td>
+             大于
+            </td>
+            <td>
+             &gt;
+            </td>
+            <td>
+             &gt;
+            </td>
+           </tr>
+           <tr>
+            <td>
+             小于
+            </td>
+            <td>
+             &lt;
+            </td>
+            <td>
+             &lt;
+            </td>
+           </tr>
+           <tr>
+            <td>
+             大于等于
+            </td>
+            <td>
+             &gt;=
+            </td>
+            <td>
+             &gt;=
+            </td>
+           </tr>
+           <tr>
+            <td>
+             小于等于
+            </td>
+            <td>
+             &lt;=
+            </td>
+            <td>
+             &lt;=
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          是的，两种语言中的比较运算符的确完全一样！
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          那么，逻辑运算符
+          <strong>
+           and
+          </strong>
+          、
+          <strong>
+           or
+          </strong>
+          以及
+          <strong>
+           not
+          </strong>
+          呢？
+         </p>
+         <p>
+          它们在两种语言中不同：
+         </p>
+         <table>
+          <thead>
+           <tr>
+            <th id="运算符">
+             运算符
+            </th>
+            <th id="python">
+             Python
+            </th>
+            <th id="c++">
+             C++
+            </th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+            <td>
+             and
+            </td>
+            <td>
+             and
+            </td>
+            <td>
+             &amp;&amp;
+            </td>
+           </tr>
+           <tr>
+            <td>
+             or
+            </td>
+            <td>
+             or
+            </td>
+            <td>
+             ||
+            </td>
+           </tr>
+           <tr>
+            <td>
+             not
+            </td>
+            <td>
+             not
+            </td>
+            <td>
+             !
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <p>
+          C++ 中的 or 运算符由两个竖线字符表示。在英文键盘上，您可以在回车键上方找到竖线键。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="小测试">
+          小测试
+         </h3>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          运算符
+         </p>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           将定义与 C++ 运算符匹配
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           and
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           greater than
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           not
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           less than or equal
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           equal
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           less than
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           or
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             Definition
+            </p>
+           </th>
+           <th>
+            <p>
+             C++ 中的运算符
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             not
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             {}
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             &lt;=
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             ??
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             %
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             or
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             ==
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             &lt;
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             ||
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             and
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             !
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <blockquote>
+            </blockquote>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             &amp;&amp;
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              Definition
+             </p>
+            </th>
+            <th>
+             <p>
+              C++ 中的运算符
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              &lt;=
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               less than or equal
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              ==
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               equal
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              &lt;
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               less than
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              ||
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               or
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              !
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               not
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <blockquote>
+             </blockquote>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               greater than
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              &amp;&amp;
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               and
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="游乐场">
+          游乐场
+         </h3>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          这里是游乐场，你可以编写自己的 if 语句。在代码注释中，你会看到几条关于代码编写的建议。solution.cpp 文件中提供了参考答案，可以和你自己的代码对比学习。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="438130-main-cpp" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#438130-main-cpp" id="tab-438130-main-cpp" role="tab">
+            main.cpp
+           </a>
+           <a aria-controls="438130-solution-cpp" aria-selected="false" class="nav-item nav-link" data-toggle="tab" href="#438130-solution-cpp" id="tab-438130-solution-cpp" role="tab">
+            solution.cpp
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-438130-main-cpp" class="tab-pane active show" id="438130-main-cpp" role="tabpanel">
+            <pre><code></code>#include &lt;iostream&gt;
+
+int main() {
+    
+    /* 
+    * TODO: Use this as a playground for writing if, else if and else statements
+    * To get you started here, are some ideas:
+    * 
+    * 1. Create an integer variable and a set of if, elseif and else statements that
+    * output whether the number is positive or negative.
+    * 
+    * 2. Create a character variable containing 'a' for acceleration, 'b' for braking, 
+    * 'p' for parked, or 'n' for neutral and outputs whether or not the vehicle is accelerating, braking, 
+    * parked or in neutral.
+    *
+    * Practice Using Boolean Logic
+    *
+    * You can see an example solution in the solution.cpp file
+    */
+    
+    return 0;
+}
+</pre>
+           </div>
+           <div aria-labelledby="tab-438130-solution-cpp" class="tab-pane" id="438130-solution-cpp" role="tabpanel">
+            <pre><code></code>#include &lt;iostream&gt;
+
+int main() {
+    
+    /* 
+    * TODO: Use this as a playground for writing if, else if and else statements
+    * To get you started here, are some ideas:
+    * 
+    * 1. Create an integer variable and a set of if, elseif and else statements that
+    * output whether the number is positive or negative.
+    * 
+    * 2. Create a character variable containing 'a' for acceleration, 'b' for braking, 
+    * 'p' for parked, or 'n' for neutral and outputs whether or not the vehicle is accelerating, braking, 
+    * parked or in neutral.
+    *
+    * Practice Using Boolean Logic
+    *
+    * You can see an example solution in the solution.cpp file
+    */
+    
+    int x = 5;
+    if (x &gt; 0) {
+        std::cout &lt;&lt; "Positive Number" &lt;&lt; std::endl;
+    }
+    else if (x &lt; 0) {
+        std::cout &lt;&lt; "Negative Number" &lt;&lt; std::endl;
+    }
+    else {
+        std::cout &lt;&lt; "Zero" &lt;&lt; std::endl;
+    }
+    
+    
+    char status = 'a';
+    
+    if (status == 'a') {
+        std::cout &lt;&lt; "Accelerating" &lt;&lt; std::endl;
+    }
+    else if (status == 'b') {
+        std::cout &lt;&lt; "Braking" &lt;&lt; std::endl;
+    }
+    else if (status == 'p') {
+        std::cout &lt;&lt; "Parking" &lt;&lt; std::endl;
+    }
+    else if (status == 'n') {
+        std::cout &lt;&lt; "Neutral" &lt;&lt; std::endl;
+    }
+    else {
+        std::cout &lt;&lt; "Unknown" &lt;&lt; std::endl;
+    }
+    
+    return 0;
+}
+</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="19. While 和 For 循环.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('18. If 和布尔逻辑')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

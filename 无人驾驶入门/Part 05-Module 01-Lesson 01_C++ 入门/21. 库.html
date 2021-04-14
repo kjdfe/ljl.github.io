@@ -1,0 +1,490 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   库
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      C++ 入门
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 介绍.html">
+       01. 介绍
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 课程概述.html">
+       02. 课程概述
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Elecia White.html">
+       03. Elecia White
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 为什么选择 C++.html">
+       04. 为什么选择 C++
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Python 和 C++ 比较.html">
+       05. Python 和 C++ 比较
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 静态 vs 动态类型.html">
+       06. 静态 vs 动态类型
+      </a>
+     </li>
+     <li class="">
+      <a href="07. C++ - 静态类型语言.html">
+       07. C++ - 静态类型语言
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 数据的基本类型.html">
+       08. 数据的基本类型
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 单精度和双精度浮点数[示范区].html">
+       09. 单精度和双精度浮点数[示范区]
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 双精度浮点数占用空间更大.html">
+       10. 双精度浮点数占用空间更大
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 常见错误和错误消息.html">
+       11. 常见错误和错误消息
+      </a>
+     </li>
+     <li class="">
+      <a href="12. C++ 函数.html">
+       12. C++ 函数
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 函数剖析.html">
+       13. 函数剖析
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 多输出.html">
+       14. 多输出
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 两个同名函数.html">
+       15. 两个同名函数
+      </a>
+     </li>
+     <li class="">
+      <a href="16. 函数签名 1.html">
+       16. 函数签名 1
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 函数签名 2.html">
+       17. 函数签名 2
+      </a>
+     </li>
+     <li class="">
+      <a href="18. If 和布尔逻辑.html">
+       18. If 和布尔逻辑
+      </a>
+     </li>
+     <li class="">
+      <a href="19. While 和 For 循环.html">
+       19. While 和 For 循环
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Switch 语句.html">
+       20. Switch 语句
+      </a>
+     </li>
+     <li class="">
+      <a href="21. 库.html">
+       21. 库
+      </a>
+     </li>
+     <li class="">
+      <a href="22. 继续加油！.html">
+       22. 继续加油！
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          21. 库
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="c-库">
+          C++ 库
+         </h1>
+         <p>
+          你已经学会了如何声明变量、编写函数和使用控制语句。这些是任何编程语言的基本模块。你已经做好准备，可以用 C++ 编写程序了。
+         </p>
+         <p>
+          但是，如果你想在一个变量中存储一个字符串，或者做进行更高级的数学运算，比如取一个数的平方根，应该如何操作？和 Python 一样，C++ 也提供预建库，让编程变得更容易。在 Python中，要使用用库，可以通过
+         </p>
+         <pre><code class="python language-python">import</code></pre>
+         <p>
+          语句。
+         </p>
+         <p>
+          在 C++ 中，则使用
+         </p>
+         <pre><code class="c++ language-c++"># include</code></pre>
+         <p>
+          你之前已经看到了如何使用
+          <a href="https://en.wikipedia.org/wiki/C%2B%2B_Standard_Library" target="_blank">
+           C ++ 标准库
+          </a>
+          中一个名为 “iostream” 的文件。“iostream” 文件包含输出到终端以及从终端读入的函数和类。
+         </p>
+         <p>
+          通过包含适当的文件，您已经使用过这些预建函数：
+         </p>
+         <pre><code class="c++ language-c++"># include &lt;iostream&gt;</code></pre>
+         <p>
+          include 语句可以将
+          <a href="http://en.cppreference.com/w/cpp/header/iostream" target="_blank">
+           iostream
+          </a>
+          文件粘贴到代码的顶部，并让你访问它的所有函数和类。
+         </p>
+         <p>
+          随着程序越来越复杂，你会越来越依赖 C++ 库。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="c-标准库">
+          C++ 标准库
+         </h3>
+         <p>
+          <a href="http://en.cppreference.com/w/cpp/header" target="_blank">
+           C ++标准库
+          </a>
+          拥有许多函数和类，如字符串、数组、元组的定义，用于读入和输出文件的函数，随机数字发生器，复数变量数学函数和许多其他函数的定义。
+         </p>
+         <p>
+          此外，C++ 安装时附带 C++ 标准库。
+         </p>
+         <p>
+          除了标准库中
+          <a href="http://en.cppreference.com/w/cpp/header" target="_blank">
+           文件列表
+          </a>
+          外，搜索引擎是你查找 C++ 函数和库的最佳选择。例如，如果你不确定如何使用字符串在 C++中执行某些操作，请打开搜索引擎并键入“C++字符串语法”。您可以在网上找到许多关于如何在 C++ 中使用字符串的示例，并快速找到如下示例：
+         </p>
+         <h3 id="例子：字符串">
+          例子：字符串
+         </h3>
+         <p>
+          要使用定义字符串的库内容，可以在 main.cpp 文件的顶部包含一行：
+         </p>
+         <pre><code class="c++ language-c++"># include &lt;string&gt;</code></pre>
+         <pre><code class="c++ language-c++"># include &lt;string&gt;
+
+int main() {
+   std::string stringvariable = "stringvalue";
+   return 0;
+}</code></pre>
+         <h3 id="例子：数学">
+          例子：数学
+         </h3>
+         <p>
+          下面是另一个标准库的例子：
+         </p>
+         <pre><code class="c++ language-c++"># include &lt;iostream&gt;
+# include &lt;cmath&gt;
+
+int main ()
+{
+   // calculate 
+    std::cout &lt;&lt; pow(3.4, 4);
+}</code></pre>
+         <p>
+          pow() 函数将 3.4 增加到四次方。
+         </p>
+         <p>
+          Cmath 包括对数和指数函数、幂函数和三角函数。你可以在
+          <a href="http://www.cplusplus.com/reference/cmath/" target="_blank">
+           这里
+          </a>
+          看到完整列表。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="include-的语法">
+          Include 的语法
+         </h3>
+         <p>
+          你在学习如何构造函数时，看到了不同的 include 语句：
+         </p>
+         <pre><code># include &lt;iostream&gt;
+# include "distance.h"</code></pre>
+         <p>
+          以下是一个测验，帮助你回忆使用引号和使用括号之间的区别：
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          引号和括号
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             include 语句中使用双引号与括号有什么区别？
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1504292477781" name="438150" type="radio" value="a1504292477781"/>
+           <label for="a1504292477781">
+            <p>
+             没有区别。你可以使用任何语法。
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1504293247492" name="438150" type="radio" value="a1504293247492"/>
+           <label for="a1504293247492">
+            <p>
+             双引号在 main.cpp 目录中查找文件。方括号在系统头文件保存的位置查找文件。
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1504293248021" name="438150" type="radio" value="a1504293248021"/>
+           <label for="a1504293248021">
+            <p>
+             括号在 main.cpp 目录中查找文件。双引号在系统头文件保存的位置查找文件。
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          双引号在 main.cpp 目录中查找文件。方括号在系统头文件保存的位置查找文件。
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          实际上，你还可以这样写：
+         </p>
+         <pre><code># include "iostream"
+# include "distance.h"</code></pre>
+         <p>
+          但是，使用引号代替括号会降低效率。使用引号时，程序将首先在 main.cpp 目录中查找 iostream 文件。当程序找不到该文件时，程序将搜索标准库文件的保存位置。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="其他有用的库">
+          其他有用的库
+         </h3>
+         <p>
+          如前所述，C++ 标准库通常随 C++ 一起安装；但是，你还可以单独安装许多其他有用的 C++ 库。每个图书馆都有自己的安装程序，通常会附带说明。同样地，如果你想搜索并安装库，搜索引擎是你最好的选择。
+         </p>
+         <p>
+          这个
+          <a href="http://en.cppreference.com/w/cpp/links/libs" target="_blank">
+           链接
+          </a>
+          提供了一个有许多开源 C++ 库的列表。在列表中，您会看到数学、游戏、计算机视觉、机器学习以及许多其他主题的各种库。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="22. 继续加油！.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('21. 库')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

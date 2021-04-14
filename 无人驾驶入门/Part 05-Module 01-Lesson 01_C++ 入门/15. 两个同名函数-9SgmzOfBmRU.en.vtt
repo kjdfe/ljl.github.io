@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.809
+Something else I noticed interesting about methods or functions in C++.
+
+00:00:05.809 --> 00:00:08.369
+I actually found this one out by accident when
+
+00:00:08.369 --> 00:00:12.649
+I wrote two functions that had the same name. Let me see if I can find it.
+
+00:00:12.650 --> 00:00:16.240
+So I wrote two functions that were both called close enough,
+
+00:00:16.239 --> 00:00:18.289
+and one was meant to compare two floats.
+
+00:00:18.289 --> 00:00:22.660
+Chino saw for that like floating point they're close but they're not exactly equal,
+
+00:00:22.660 --> 00:00:23.740
+I wanted to return true,
+
+00:00:23.739 --> 00:00:25.417
+if two flips were close enough.
+
+00:00:25.417 --> 00:00:26.844
+And another was for two grids.
+
+00:00:26.844 --> 00:00:29.949
+And then want to return true if those were close enough to being equal,
+
+00:00:29.949 --> 00:00:33.615
+which just meant that all their actual values inside were close enough.
+
+00:00:33.615 --> 00:00:35.130
+And asked people to do this,
+
+00:00:35.130 --> 00:00:36.690
+I couldn't believe this worked.
+
+00:00:36.689 --> 00:00:42.534
+But they were close enough once or took a two vector vector floater or grids,
+
+00:00:42.534 --> 00:00:45.149
+and another version or two floats.
+
+00:00:45.149 --> 00:00:46.234
+What's going on here,
+
+00:00:46.234 --> 00:00:47.640
+why is this allowed?
+
+00:00:47.640 --> 00:00:50.289
+Well, the compiler doesn't see those as the same thing.
+
+00:00:50.289 --> 00:00:52.174
+They have entirely different signatures.
+
+00:00:52.174 --> 00:00:53.439
+I mean if you sign something,
+
+00:00:53.439 --> 00:00:55.304
+I sign something, they would be different.
+
+00:00:55.304 --> 00:01:01.000
+And what it does is it takes these functions with the types that it takes.
+
+00:01:01.000 --> 00:01:05.635
+And it takes this close enough vector vector grid,
+
+00:01:05.635 --> 00:01:09.500
+and it makes it all part of the function name.
+
+00:01:09.500 --> 00:01:11.420
+You don't see that.
+
+00:01:11.420 --> 00:01:14.320
+But if you looked inside the compiler,
+
+00:01:14.319 --> 00:01:18.744
+you would be able to see where it started to treat all of the functions,
+
+00:01:18.745 --> 00:01:22.030
+defined with the name,
+
+00:01:22.030 --> 00:01:24.099
+and all of their arguments.
+
+00:01:24.099 --> 00:01:25.649
+So this is something called overloading.
+
+00:01:25.650 --> 00:01:29.200
+It can be very useful if you want to have
+
+00:01:29.200 --> 00:01:33.055
+a function that is close enough on floats or close enough on integers.
+
+00:01:33.055 --> 00:01:37.805
+You don't have to do everything specifically different.
+
+00:01:37.805 --> 00:01:40.098
+You have to have lots of different function names,
+
+00:01:40.097 --> 00:01:42.875
+you want it to know if it's close enough.
+
+00:01:42.875 --> 00:01:44.314
+This is a feature of people.
+
+00:01:44.314 --> 00:01:46.120
+No. I felt it was nice to really do it that way.
+

@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.995
+Now we're going to go to C++.
+
+00:00:03.995 --> 00:00:07.259
+C++ is the language of choice for
+
+00:00:07.259 --> 00:00:12.654
+embedded systems like the stuff that runs on small processors inside a self-driving car.
+
+00:00:12.654 --> 00:00:17.054
+Now in the beginning it'll be scary to see a complete different syntax,
+
+00:00:17.054 --> 00:00:20.160
+a different language almost go from Chinese to Japanese is hard.
+
+00:00:20.160 --> 00:00:22.800
+But as you get more familiar with a different syntax,
+
+00:00:22.800 --> 00:00:26.155
+you find that the underlying tools are exactly the same,
+
+00:00:26.155 --> 00:00:27.720
+whether you do it in Python or in C++,
+
+00:00:27.719 --> 00:00:30.000
+it's just at C++ runs faster.
+
+00:00:30.000 --> 00:00:31.425
+So in this unit,
+
+00:00:31.425 --> 00:00:34.109
+we're going to turn you into a monkey, into a robot, okay?
+
+00:00:34.109 --> 00:00:36.689
+So you're going to see things written in Python,
+
+00:00:36.689 --> 00:00:39.989
+and we're going to ask you to translate it to C++ so that
+
+00:00:39.990 --> 00:00:43.310
+you lose any fear of different syntax and become very,
+
+00:00:43.310 --> 00:00:47.060
+very fluid in jumping back and forth between two different programming languages.
+
+00:00:47.060 --> 00:00:49.457
+And I promise you, at the end of the class,
+
+00:00:49.457 --> 00:00:52.219
+you'll find out they're basically the same, they're just written differently.
+
+00:00:52.219 --> 00:00:54.564
+But the underlying concepts are equivalent.
+
+00:00:54.564 --> 00:00:58.000
+And that's a great way to understand programming languages.
+

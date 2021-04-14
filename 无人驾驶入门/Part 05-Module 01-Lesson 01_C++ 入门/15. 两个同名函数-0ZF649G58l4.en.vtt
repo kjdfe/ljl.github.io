@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.580
+&gt;&gt; You said the header files they have function declarations.
+
+00:00:02.580 --> 00:00:03.666
+They can have a lot more.
+
+00:00:03.665 --> 00:00:08.656
+If you wanted to define a type that was the grid type,
+
+00:00:08.656 --> 00:00:11.370
+instead of using this vector vector float.
+
+00:00:11.369 --> 00:00:12.899
+Because you get kind of tired of saying that.
+
+00:00:12.900 --> 00:00:14.625
+&gt;&gt; I was writing that a lot, yeah.
+
+00:00:14.625 --> 00:00:19.954
+&gt;&gt; You can still do, type the death vector vector float grid.
+
+00:00:19.954 --> 00:00:23.250
+Type T grid usually it's indicated as a type.
+
+00:00:23.250 --> 00:00:27.509
+And then you don't have to type it you can just do T grid everywhere.
+
+00:00:27.510 --> 00:00:28.270
+&gt;&gt; That would be nice.
+
+00:00:28.269 --> 00:00:30.189
+&gt;&gt; It would have been nice. Much less typing.
+
+00:00:30.190 --> 00:00:31.609
+&gt;&gt; It's good to know. Okay, thanks.
+
+00:00:31.609 --> 00:00:33.490
+&gt;&gt; You know, any time you find yourself really.
+
+00:00:33.490 --> 00:00:34.237
+&gt;&gt; Typing a lot.
+
+00:00:34.237 --> 00:00:35.954
+&gt;&gt; Typing the same thing over and over again,
+
+00:00:35.954 --> 00:00:39.739
+there's a good chance that somebody solved this problem for you.
+
+00:00:39.740 --> 00:00:39.898
+&gt;&gt; Yeah.
+
+00:00:39.898 --> 00:00:41.790
+&gt;&gt; Finding is not as easy,
+
+00:00:41.789 --> 00:00:43.570
+but there's a good chance it exists.
+
+00:00:43.570 --> 00:00:45.000
+&gt;&gt; Okay. Well, thank you.
+
