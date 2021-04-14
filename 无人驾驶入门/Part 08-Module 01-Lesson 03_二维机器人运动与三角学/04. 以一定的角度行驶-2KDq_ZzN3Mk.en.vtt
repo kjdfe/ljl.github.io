@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.760
+In the previous notebook,
+
+00:00:01.760 --> 00:00:04.200
+we only learned orientations that pointed east,
+
+00:00:04.200 --> 00:00:06.410
+north, west, or south.
+
+00:00:06.410 --> 00:00:09.460
+And because we constrained the robots suppose this way,
+
+00:00:09.460 --> 00:00:11.580
+it was easy to figure out what happened when the vehicle
+
+00:00:11.580 --> 00:00:14.519
+moved forward by D meters for example.
+
+00:00:14.519 --> 00:00:17.489
+So in this case, if we have a car that starts here pointing
+
+00:00:17.489 --> 00:00:21.644
+east and then moves to distance D to get here,
+
+00:00:21.644 --> 00:00:26.137
+well, I can see that the X coordinate just increases by D,
+
+00:00:26.138 --> 00:00:29.580
+and the Y coordinate doesn't change at all.
+
+00:00:29.579 --> 00:00:34.795
+Likewise, if the car is pointing north and then moves forward by D meters,
+
+00:00:34.795 --> 00:00:37.454
+then the Y coordinate will increase by D,
+
+00:00:37.454 --> 00:00:40.629
+and the X coordinate will be left unchanged.
+
+00:00:40.630 --> 00:00:42.114
+But now the question is,
+
+00:00:42.113 --> 00:00:45.974
+what if the heading isn't along the X or Y axis?
+
+00:00:45.975 --> 00:00:49.215
+What if the car is pointing at some weird angle like this?
+
+00:00:49.215 --> 00:00:51.355
+Now what happens when the car moves forward by,
+
+00:00:51.354 --> 00:00:53.125
+let's say, D meters?
+
+00:00:53.125 --> 00:00:59.000
+What can you say about the value for delta X and for delta Y in a situation like this?
+

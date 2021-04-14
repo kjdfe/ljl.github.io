@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.810
+When a car is pointed like this and it moves forward by D meters,
+
+00:00:03.810 --> 00:00:07.155
+its X and Y coordinates both increase by an amount that's
+
+00:00:07.155 --> 00:00:10.310
+greater than zero but less than D. Now,
+
+00:00:10.310 --> 00:00:12.605
+if we're going to make scatter plots of position data,
+
+00:00:12.605 --> 00:00:15.800
+we need to know exactly what the values of delta X and delta
+
+00:00:15.800 --> 00:00:19.535
+Y are and this will require some trigonometry,
+
+00:00:19.535 --> 00:00:22.129
+which is the mathematics of right triangles,
+
+00:00:22.129 --> 00:00:25.894
+so it's not surprising that our first step is to find a right triangle.
+
+00:00:25.894 --> 00:00:29.480
+And the right triangle I want to identify is right here.
+
+00:00:29.480 --> 00:00:34.149
+And I know it's a right triangle because two of the sides meet at a right angle.
+
+00:00:34.149 --> 00:00:36.649
+And what's amazing about trigonometry is this,
+
+00:00:36.649 --> 00:00:39.799
+if you give me an actual numeric value for D in this angle,
+
+00:00:39.799 --> 00:00:41.884
+which I'm going to call theta,
+
+00:00:41.884 --> 00:00:45.719
+I can tell you exactly what delta X and delta Y will be.
+
+00:00:45.719 --> 00:00:48.125
+But before we solve this for any angle and
+
+00:00:48.125 --> 00:00:52.000
+any displacement we're going to start with some very specific values.
+

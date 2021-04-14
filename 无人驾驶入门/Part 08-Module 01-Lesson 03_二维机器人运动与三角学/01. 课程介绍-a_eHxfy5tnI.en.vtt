@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.455
+Welcome back. You're getting close to the final project for this course.
+
+00:00:03.455 --> 00:00:07.799
+And in this project, you'll be using data from accelerometers, rate gyros,
+
+00:00:07.799 --> 00:00:12.884
+and odometers to reconstruct the actual XY trajectory of a self-driving car.
+
+00:00:12.884 --> 00:00:15.300
+And you already know how to take something like
+
+00:00:15.300 --> 00:00:18.810
+accelerometer data and convert it to distance travel data,
+
+00:00:18.809 --> 00:00:22.379
+and you also know how to use rate gyro data to a heading.
+
+00:00:22.379 --> 00:00:27.614
+But once you have a car pointing in a certain direction and you know how far it moves,
+
+00:00:27.614 --> 00:00:31.259
+how do you figure out exactly how far it's moved in
+
+00:00:31.260 --> 00:00:34.969
+the X direction or in the Y direction?
+
+00:00:34.969 --> 00:00:37.049
+That is what you are going to learn in this lesson.
+
+00:00:37.049 --> 00:00:41.890
+How to go from a heading and a distance traveled to a change in X and Y.
+
+00:00:41.890 --> 00:00:46.219
+And to do this, we're going to need to learn the very basics of trigonometry.
+

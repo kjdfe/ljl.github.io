@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.009
+So let me demonstrate how to solve a problem like this.
+
+00:00:03.009 --> 00:00:07.919
+Here we have a vehicle with a heading of 65 degrees and the displacement of 17 meters.
+
+00:00:07.919 --> 00:00:09.747
+I'm going to show you how I would find out the "x"
+
+00:00:09.747 --> 00:00:14.759
+systematically and the first thing I'm going to do is draw the triangle.
+
+00:00:14.759 --> 00:00:18.809
+Here we have a right triangle with a reference angle of 65 degrees.
+
+00:00:18.809 --> 00:00:23.879
+Next, I'm going to identify the known and unknown sides of the triangle.
+
+00:00:23.879 --> 00:00:28.155
+So, in this case, the known side is the hypotenuse with a length of 17 meters,
+
+00:00:28.155 --> 00:00:31.030
+and the unknown side is this delta x,
+
+00:00:31.030 --> 00:00:33.465
+and that's the adjacent side.
+
+00:00:33.465 --> 00:00:39.230
+Now I want to find the trigonometric ratio that relates the known and unknown sides.
+
+00:00:39.229 --> 00:00:44.339
+So, in this case, I'm looking for the ratio that relates the hypotenuse to the adjacent.
+
+00:00:44.340 --> 00:00:49.710
+That happens to be the cosine because cosine is adjacent over hypotenuse which,
+
+00:00:49.710 --> 00:00:53.005
+in this case, is delta x over 17.
+
+00:00:53.005 --> 00:00:56.280
+Now, all that's left to do is do the math.
+
+00:00:56.280 --> 00:00:57.750
+So, the first thing I want to do,
+
+00:00:57.750 --> 00:01:00.369
+now that I've cleaned things up on the left over here,
+
+00:01:00.369 --> 00:01:03.549
+is rearrange this equation to get delta x alone.
+
+00:01:03.549 --> 00:01:08.334
+Then, I can use Python or a calculator to look up the cosine of 65 degrees.
+
+00:01:08.334 --> 00:01:11.814
+And remember, you really have to be careful with degrees and radians here.
+
+00:01:11.814 --> 00:01:13.819
+But, once I get the answer,
+
+00:01:13.819 --> 00:01:18.064
+I see the cosine of 65 degrees at 0.423.
+
+00:01:18.064 --> 00:01:20.620
+And now I just do up the multiplication
+
+00:01:20.620 --> 00:01:24.545
+to find that delta x is seven point one eight meters.
+
+00:01:24.545 --> 00:01:29.207
+Now, I want you to try to find the length of the opposite side, delta y.
+
+00:01:29.207 --> 00:01:31.539
+Go slow, be careful with your math
+
+00:01:31.540 --> 00:01:34.625
+and feel free to rewatch this video if you find that helpful.
+
+00:01:34.625 --> 00:01:38.000
+But, try your best to get it right on your first attempt.
+

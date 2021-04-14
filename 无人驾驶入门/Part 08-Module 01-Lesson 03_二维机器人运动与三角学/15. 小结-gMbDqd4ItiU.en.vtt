@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.355
+Congratulations. In this lesson,
+
+00:00:02.355 --> 00:00:07.554
+you've seen how you can use trigonometry to deconstruct motion into x and y components.
+
+00:00:07.554 --> 00:00:10.890
+You'll use this ability along with your knowledge of derivatives and integrals,
+
+00:00:10.890 --> 00:00:12.870
+in the final project for this course.
+
+00:00:12.869 --> 00:00:15.719
+In this project, you will be reconstructing the x,
+
+00:00:15.720 --> 00:00:19.815
+y trajectory of a vehicle using the raw data from its motion sensors.
+
+00:00:19.815 --> 00:00:23.804
+And note that this project is more open ended than most of the previous projects,
+
+00:00:23.804 --> 00:00:26.339
+and it will not be submitted for review.
+
+00:00:26.339 --> 00:00:28.829
+Technically, this means you don't need to complete
+
+00:00:28.829 --> 00:00:31.574
+the project to pass the Nanodegree, but I hope you do.
+
+00:00:31.574 --> 00:00:34.374
+If you get stuck or just want to discuss the project,
+
+00:00:34.374 --> 00:00:36.600
+you should feel free to use the Nanodegree Slack channel,
+
+00:00:36.600 --> 00:00:39.000
+to chat and share your code. Good luck.
+

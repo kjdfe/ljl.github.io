@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.980
+Remember our initial problem?
+
+00:00:01.980 --> 00:00:05.279
+Given the vehicles heading angle and the displacement,
+
+00:00:05.280 --> 00:00:08.214
+calculate delta x and delta y.
+
+00:00:08.214 --> 00:00:10.910
+Well, you can now solve that problem.
+
+00:00:10.910 --> 00:00:14.595
+But now, instead of thinking about a vehicle and a displacement,
+
+00:00:14.595 --> 00:00:17.054
+we can just think about a right triangle.
+
+00:00:17.054 --> 00:00:20.414
+And this let's us change our problem statement to this.
+
+00:00:20.414 --> 00:00:24.134
+Given the right triangles reference angle and hypotenuse,
+
+00:00:24.135 --> 00:00:28.690
+calculate the length of the adjacent and opposite sides.
+
+00:00:28.690 --> 00:00:32.505
+And now that we can phrase our driving problem as a triangle problem,
+
+00:00:32.505 --> 00:00:34.140
+we can solve it with trigonometry.
+

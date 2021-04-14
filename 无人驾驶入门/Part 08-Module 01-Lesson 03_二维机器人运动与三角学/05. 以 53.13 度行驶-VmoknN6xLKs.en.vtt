@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.580
+So as a first example,
+
+00:00:01.580 --> 00:00:03.360
+I'm going to make things a little easier by picking
+
+00:00:03.359 --> 00:00:06.375
+a very particular angle for this car set.
+
+00:00:06.375 --> 00:00:07.799
+I'm going to pick theta to be
+
+00:00:07.799 --> 00:00:12.265
+fifty three point one three degrees and D is going to be five meters.
+
+00:00:12.265 --> 00:00:16.070
+And the reason I picked these numbers is because it turns out that when a car with
+
+00:00:16.070 --> 00:00:20.129
+a heading of fifty three point one three degrees drives forward by five meters,
+
+00:00:20.129 --> 00:00:23.024
+if you measure Delta X, and Delta Y,
+
+00:00:23.024 --> 00:00:28.244
+you'll find they are exactly equal to three meters and four meters.
+
+00:00:28.245 --> 00:00:30.570
+And in fact if you ever have a right triangle were
+
+00:00:30.570 --> 00:00:33.149
+one of the angles is fifty three point one three degrees,
+
+00:00:33.149 --> 00:00:35.864
+the sides will have lengths in these ratios,
+
+00:00:35.865 --> 00:00:38.554
+three, four, and five.
+
+00:00:38.554 --> 00:00:41.750
+What this means is that if I ever find that my car is heading of
+
+00:00:41.750 --> 00:00:44.850
+fifty three point one three degrees and I know how far
+
+00:00:44.850 --> 00:00:48.109
+it moves forward I'll be able to figure out Delta X and Delta Y.
+

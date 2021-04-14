@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.560
+In our previous example,
+
+00:00:01.560 --> 00:00:04.769
+we only really cared about one of the three angles in the triangle.
+
+00:00:04.769 --> 00:00:06.719
+And when we're solving trig problems,
+
+00:00:06.719 --> 00:00:09.929
+we generally only care about one angle at a time.
+
+00:00:09.929 --> 00:00:12.539
+We're going to call this angle, the reference angle.
+
+00:00:12.539 --> 00:00:13.914
+And in the previous example,
+
+00:00:13.914 --> 00:00:17.699
+reference angle was 53.13 degrees.
+
+00:00:17.699 --> 00:00:21.437
+Now I want to consider some generic reference angle, which we'll just call a theta.
+
+00:00:21.437 --> 00:00:25.146
+When we have a right triangle and some reference angle,
+
+00:00:25.146 --> 00:00:28.854
+we'd like a way to refer unambiguously to the three sites,
+
+00:00:28.855 --> 00:00:32.265
+and the naming convention we use in trig goes like this.
+
+00:00:32.265 --> 00:00:37.049
+The longest side of the right triangle is always called the hypotenuse.
+
+00:00:37.049 --> 00:00:40.489
+The side on the right, the one that's opposite the reference angle,
+
+00:00:40.490 --> 00:00:42.525
+well that's just called the opposite.
+
+00:00:42.524 --> 00:00:44.647
+And this last remaining side,
+
+00:00:44.648 --> 00:00:46.995
+the one that's next to the reference angle,
+
+00:00:46.994 --> 00:00:50.000
+well we call that the adjacent side.
+
