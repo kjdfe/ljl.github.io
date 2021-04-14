@@ -1,0 +1,118 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.229 --> 00:00:05.339
+The answer is no, we're not done yet.
+
+00:00:05.339 --> 00:00:07.304
+We have reached a goal state.
+
+00:00:07.304 --> 00:00:11.599
+We put a path onto the frontier that reaches the goal Bucharest,
+
+00:00:11.599 --> 00:00:14.399
+but we haven't popped that path off the frontier.
+
+00:00:14.400 --> 00:00:19.780
+And uniform costs search continues to search until we pop it off the frontier.
+
+00:00:19.780 --> 00:00:23.810
+We continue looking to see if there's a better path that also reaches the goal.
+
+00:00:23.809 --> 00:00:28.140
+So, let's see I forgot to say Fagaras is explored,
+
+00:00:28.140 --> 00:00:31.969
+so let's continue looking on the frontier,
+
+00:00:31.969 --> 00:00:35.475
+the cheapest now is here at 299.
+
+00:00:35.475 --> 00:00:37.185
+We'll expand that.
+
+00:00:37.185 --> 00:00:40.910
+We get a path of cost 374.
+
+00:00:40.909 --> 00:00:42.519
+Put that on the frontier.
+
+00:00:42.520 --> 00:00:44.609
+Now let's go again.
+
+00:00:44.609 --> 00:00:49.350
+Now the cheapest path is over here at 317,
+
+00:00:49.350 --> 00:00:51.484
+we'll mark that as explored,
+
+00:00:51.484 --> 00:00:54.200
+and add two more pass, one here,
+
+00:00:54.200 --> 00:00:55.585
+that's a worse path,
+
+00:00:55.585 --> 00:00:57.064
+so it gets dropped,
+
+00:00:57.064 --> 00:01:01.009
+and one path that also reaches the goal,
+
+00:01:01.009 --> 00:01:05.575
+and that has a total cost of 418.
+
+00:01:05.575 --> 00:01:07.579
+So that just shows it's a good thing we waited,
+
+00:01:07.579 --> 00:01:12.064
+a good thing we didn't stop when we found the first path to the goal
+
+00:01:12.064 --> 00:01:18.079
+because now this second path found is actually cheaper than the first path found.
+
+00:01:18.079 --> 00:01:20.689
+But we're not going to stop here because we still haven't popped
+
+00:01:20.689 --> 00:01:24.155
+off a path that reaches the goal. So we'll continue.
+
+00:01:24.155 --> 00:01:30.379
+What's next, now the cheapest path on the frontier is here at 366.
+
+00:01:30.379 --> 00:01:37.129
+We expand that and we get past that or worse paths to points we've already seen before.
+
+00:01:37.129 --> 00:01:39.239
+So nothing new goes on the frontier.
+
+00:01:39.239 --> 00:01:43.774
+Next, the cheapest path on the frontier is at 374,
+
+00:01:43.775 --> 00:01:48.290
+again expanding that leads nothing useful,
+
+00:01:48.290 --> 00:01:51.245
+only worse paths than we've seen before.
+
+00:01:51.245 --> 00:01:58.790
+And now, finally, the cheapest path on the frontier is this 418 path to Bucharest.
+
+00:01:58.790 --> 00:02:03.525
+So we pop that off and now we reach the goal and now we stop.
+
+00:02:03.525 --> 00:02:06.635
+So even though we found the 460 path first,
+
+00:02:06.635 --> 00:02:09.259
+we don't stop there because there might be
+
+00:02:09.259 --> 00:02:12.114
+another path that also reaches the goal that's cheaper.
+
+00:02:12.115 --> 00:02:17.985
+We keep on going until we pop path off of the frontier that reaches the goal,
+
+00:02:17.985 --> 00:02:24.000
+and that's why uniform cost search is guaranteed to find the cheapest path to the goal.
+
