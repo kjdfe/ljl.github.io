@@ -1,0 +1,391 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   离散分布可视化
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      概率分布编程
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 为挑战准备就绪.html">
+       01. 为挑战准备就绪
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 概率分布编程.html">
+       02. 概率分布编程
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Python 中的数学 [示范区].html">
+       03. Python 中的数学 [示范区]
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 均匀分布 [练习区].html">
+       04. 均匀分布 [练习区]
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 均匀分布参考答案.html">
+       05. 均匀分布参考答案
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 函数改进 [练习区].html">
+       06. 函数改进 [练习区]
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 函数改进参考答案.html">
+       07. 函数改进参考答案
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 在 Python 中绘图 [示范区].html">
+       08. 在 Python 中绘图 [示范区]
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 均匀分布可视化.html">
+       09. 均匀分布可视化
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 均匀分布可视化 [练习区].html">
+       10. 均匀分布可视化 [练习区]
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 均匀分布可视化参考答案.html">
+       11. 均匀分布可视化参考答案
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 离散分布可视化.html">
+       12. 离散分布可视化
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 离散分布可视化 [练习区].html">
+       13. 离散分布可视化 [练习区]
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 离散分布可视化参考答案.html">
+       14. 离散分布可视化参考答案
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 一维的车辆世界 [练习区].html">
+       15. 一维的车辆世界 [练习区]
+      </a>
+     </li>
+     <li class="">
+      <a href="16. 一维的车辆世界参考答案.html">
+       16. 一维的车辆世界参考答案
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 二维的车辆世界 [示范区].html">
+       17. 二维的车辆世界 [示范区]
+      </a>
+     </li>
+     <li class="">
+      <a href="18. 二维的车辆世界 [练习区].html">
+       18. 二维的车辆世界 [练习区]
+      </a>
+     </li>
+     <li class="">
+      <a href="19. 二维的车辆世界参考答案.html">
+       19. 二维的车辆世界参考答案
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          12. 离散分布可视化
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="可视化分段连续概率分布">
+          可视化分段连续概率分布
+         </h1>
+         <p>
+          现在是挑战时间！
+         </p>
+         <p>
+          Sebastian 在介绍均匀连续概率分布之后，为你呈现了一个表示人口出生概率的分段连续方程。你将使用 Python 编写一个分段连续概率密度类函数。
+         </p>
+         <p>
+          你得到的结果会像这样：
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/temp.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="离散概率分布可视化">
+          离散概率分布可视化
+         </h1>
+         <h3 id="本练习可学习的技能">
+          本练习可学习的技能
+         </h3>
+         <ul>
+          <li>
+           计算离散概率分布
+          </li>
+          <li>
+           对列表值进行归一化
+          </li>
+          <li>
+           for 循环
+          </li>
+         </ul>
+         <h3 id="介绍">
+          介绍
+         </h3>
+         <p>
+          下面是挑战时间。写一个函数，可根据给定的间隔和总概率列表，计算出每个条形的高度。请记住，所有条形的面积总和应该是总概率。
+         </p>
+         <p>
+          下面是一个输入和输出的例子：
+         </p>
+         <ul>
+          <li>
+           从凌晨 5 点到上午 10 点发生车祸的可能性是从午夜到凌晨 5 点的 5 倍。
+          </li>
+          <li>
+           从上午 10 点到下午 4 点发生车祸的可能性是从午夜到凌晨 5 点的 3 倍。
+          </li>
+          <li>
+           从下午 4 点到晚上 9 点发生车祸的可能性是从午夜到凌晨 5 点的 6 倍。
+          </li>
+          <li>
+           从晚上 9 点到午夜发生车祸的可能性是从午夜到凌晨 5 点的 1/2。
+          </li>
+          <li>
+           在任一天发生事故的概率是 0.05。
+          </li>
+         </ul>
+         <p>
+          输入应该是下面这样的：
+         </p>
+         <p>
+          时间采用 24 小时制。
+          <br/>
+          hour_intervals = [0, 5, 10, 16, 21, 24]
+         </p>
+         <p>
+          relative_probabilities = [1, 5, 3, 6, 0.5]
+         </p>
+         <p>
+          total_probability = 0.05
+         </p>
+         <p>
+          输出为每个条形的高度：
+         </p>
+         <pre><code>[0.0006451612903225806,
+ 0.0032258064516129032,
+ 0.0016129032258064516,
+ 0.003870967741935484,
+ 0.0005376344086021505]</code></pre>
+         <p>
+          请记住，probability_intervals 变量中的值表示相对概率。条形的面积代表实际概率。发生事故的总概率是 0.05。这意味着所有条形的面积加起来应该为 0.05，刚好是发生事故的概率。你可以使用这些信息来计算每个条形的面积，然后你只需要将每个条形除以对应的时间间隔即可。最终得出条形的高度。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          如果你想要对结果进行可视化，如图所示，看起来会是这样的：
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          但函数应该是通用的。对于每个区间的相对概率和总概率的任何值，它应该能够接收任意的数字列表。在尝试编写程序之前，你可以用笔和纸来计算你所期望的结果。这样可以帮助你理清编程的逻辑。
+         </p>
+         <p>
+          本课的下一部分中，你可以找到相应练习。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="13. 离散分布可视化 [练习区].html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('12. 离散分布可视化')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>
