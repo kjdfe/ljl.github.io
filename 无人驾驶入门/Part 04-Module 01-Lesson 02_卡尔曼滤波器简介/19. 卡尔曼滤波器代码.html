@@ -1,0 +1,361 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   卡尔曼滤波器代码
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      卡尔曼滤波器简介
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 简介.html">
+       01. 简介
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 追踪介绍.html">
+       02. 追踪介绍
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 高斯分布介绍.html">
+       03. 高斯分布介绍
+      </a>
+     </li>
+     <li class="">
+      <a href="04. 方差比较.html">
+       04. 方差比较
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 首选高斯分布.html">
+       05. 首选高斯分布
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 评估高斯分布.html">
+       06. 评估高斯分布
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 最大化高斯分布.html">
+       07. 最大化高斯分布
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 测量和移动 1.html">
+       08. 测量和移动 1
+      </a>
+     </li>
+     <li class="">
+      <a href="09. 测量和移动 2.html">
+       09. 测量和移动 2
+      </a>
+     </li>
+     <li class="">
+      <a href="10. 均值漂移.html">
+       10. 均值漂移
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 预测峰值.html">
+       11. 预测峰值
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 参数更新.html">
+       12. 参数更新
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 参数更新 2.html">
+       13. 参数更新 2
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 分离的高斯分布.html">
+       14. 分离的高斯分布
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 分离的高斯分布 2.html">
+       15. 分离的高斯分布 2
+      </a>
+     </li>
+     <li class="">
+      <a href="16. 新的均值和方差.html">
+       16. 新的均值和方差
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 高斯移动.html">
+       17. 高斯移动
+      </a>
+     </li>
+     <li class="">
+      <a href="18. 预测函数.html">
+       18. 预测函数
+      </a>
+     </li>
+     <li class="">
+      <a href="19. 卡尔曼滤波器代码.html">
+       19. 卡尔曼滤波器代码
+      </a>
+     </li>
+     <li class="">
+      <a href="20. 卡尔曼预测.html">
+       20. 卡尔曼预测
+      </a>
+     </li>
+     <li class="">
+      <a href="21. 卡尔曼滤波器后续.html">
+       21. 卡尔曼滤波器后续
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          19. 卡尔曼滤波器代码
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          卡尔曼滤波器代码
+         </p>
+        </h3>
+        <div>
+         <div>
+          <h4>
+           Question:
+          </h4>
+          <video controls="">
+           <source src="19. 卡尔曼滤波器代码-3xBycKfnCOQ.mp4" type="video/mp4"/>
+           <track default="true" kind="subtitles" label="en" src="19. 卡尔曼滤波器代码-3xBycKfnCOQ.en.vtt" srclang="en"/>
+           <track default="false" kind="subtitles" label="ES" src="19. 卡尔曼滤波器代码-3xBycKfnCOQ.es-ES.vtt" srclang="ES"/>
+           <track default="false" kind="subtitles" label="JP" src="19. 卡尔曼滤波器代码-3xBycKfnCOQ.ja-JP.vtt" srclang="JP"/>
+           <track default="false" kind="subtitles" label="ja" src="19. 卡尔曼滤波器代码-3xBycKfnCOQ.ja.vtt" srclang="ja"/>
+           <track default="false" kind="subtitles" label="ru" src="19. 卡尔曼滤波器代码-3xBycKfnCOQ.ru.vtt" srclang="ru"/>
+           <track default="false" kind="subtitles" label="CN" src="19. 卡尔曼滤波器代码-3xBycKfnCOQ.zh-CN.vtt" srclang="CN"/>
+          </video>
+         </div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="437694-studentMain-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#437694-studentMain-py" id="tab-437694-studentMain-py" role="tab">
+            studentMain.py
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-437694-studentMain-py" class="tab-pane active show" id="437694-studentMain-py" role="tabpanel">
+            <pre><code></code># Write a program that will iteratively update and
+# predict based on the location measurements 
+# and inferred motions shown below. 
+
+def update(mean1, var1, mean2, var2):
+    new_mean = float(var2 * mean1 + var1 * mean2) / (var1 + var2)
+    new_var = 1./(1./var1 + 1./var2)
+    return [new_mean, new_var]
+
+def predict(mean1, var1, mean2, var2):
+    new_mean = mean1 + mean2
+    new_var = var1 + var2
+    return [new_mean, new_var]
+
+measurements = [5., 6., 7., 9., 10.]
+motion = [1., 1., 2., 1., 1.]
+measurement_sig = 4.
+motion_sig = 2.
+mu = 0.
+sig = 10000.
+
+#Please print out ONLY the final values of the mean
+#and the variance in a list [mu, sig]. 
+
+# Insert code here
+
+print [mu, sig]
+</pre>
+           </div>
+          </div>
+         </div>
+         <div>
+          <details>
+           <summary>
+            <strong>
+             Solution:
+            </strong>
+           </summary>
+           <div>
+            <video controls="">
+             <source src="19. 卡尔曼滤波器代码-X7cixvcogl8.mp4" type="video/mp4"/>
+             <track default="true" kind="subtitles" label="en" src="19. 卡尔曼滤波器代码-X7cixvcogl8.en.vtt" srclang="en"/>
+             <track default="false" kind="subtitles" label="ES" src="19. 卡尔曼滤波器代码-X7cixvcogl8.es-ES.vtt" srclang="ES"/>
+             <track default="false" kind="subtitles" label="JP" src="19. 卡尔曼滤波器代码-X7cixvcogl8.ja-JP.vtt" srclang="JP"/>
+             <track default="false" kind="subtitles" label="ja" src="19. 卡尔曼滤波器代码-X7cixvcogl8.ja.vtt" srclang="ja"/>
+             <track default="false" kind="subtitles" label="CN" src="19. 卡尔曼滤波器代码-X7cixvcogl8.zh-CN.vtt" srclang="CN"/>
+            </video>
+           </div>
+          </details>
+         </div>
+        </div>
+        <div class="jumbotron" style="margin-top: 50px; margin-bottom: 50px;">
+         <h3>
+          INSTRUCTOR NOTE:
+         </h3>
+         <p>
+          确保在 [μ，Σ] 列表中仅输出均值和方差的最终值。不要输出视频中所示的中间值。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="20. 卡尔曼预测.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('19. 卡尔曼滤波器代码')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

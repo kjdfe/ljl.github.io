@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:01.000 --> 00:00:05.000
+Y sí, era de esperar que por aquí.
+
+00:00:05.000 --> 00:00:10.000
+A partir de estas observaciones se diría que la velocidad
+
+00:00:10.000 --> 00:00:14.000
+apunta en la dirección de este vector.
+
+00:00:14.000 --> 00:00:19.000
+Entonces, suponiendo que no hay un cambio drástico en la velocidad,
+
+00:00:19.000 --> 00:00:23.000
+Esperamos que la 5ª posición este por aquí.
+
+00:00:23.000 --> 00:00:26.000
+El filtro de Kalman coge observaciones como éstas
+
+00:00:26.000 --> 00:00:31.000
+y estima futuras ubicaciones y las velocidades a partir de datos de este tipo.
+
+00:00:31.000 --> 00:00:34.000
+Y hoy yo te voy a enseñar cómo escribir un trozo de software
+
+00:00:34.000 --> 00:00:38.000
+que te permita tomar puntos como estos -- incluso si son ruidosos e inciertos,
+
+00:00:38.000 --> 00:00:42.000
+y estimar automáticamente donde estarán las futuras localizaciones
+
+00:00:42.000 --> 00:00:46.000
+y a qué velocidad se mueve el objeto.
+
+00:00:46.000 --> 00:00:50.000
+El coche que se conduce solo de Google utiliza métodos como estos para entender
+
+00:00:50.000 --> 00:00:55.000
+donde está el resto del tráfico basándose en el radar y los datos del láser.
+
+00:00:55.000 --> 00:00:58.000
+Así que vamos a zambullirnos!
+

@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:03.000
+Ahora vamos a ver el filtro de Kalman.
+
+00:00:03.000 --> 00:00:08.000
+El filtro de Kalman representa todas las distribuciones con gaussianas.
+
+00:00:08.000 --> 00:00:13.000
+Y al igual que en la última clase donde hablamos acerca de los ciclos de medición y los ciclos de movimiento,
+
+00:00:13.000 --> 00:00:22.000
+el filtro de Kalman repite estos ciclos: las actualizaciones de medición y las actualizaciones de movimiento.
+
+00:00:22.000 --> 00:00:26.000
+Así que esto es idéntico a la situación anterior en la localización
+
+00:00:26.000 --> 00:00:29.000
+donde nos daban una medición y luego haciamos un movimiento.
+
+00:00:29.000 --> 00:00:33.000
+Aquí hay cambios matemáticos, pero el principio básico es el mismo.
+
+00:00:33.000 --> 00:00:39.000
+Así que te voy a hacer una pregunta para ver si recuerdas la materia de la clase anterior.
+
+00:00:39.000 --> 00:00:43.000
+Usted recordará que una de las dos etapas, -- la de medición o la del movimiento --
+
+00:00:43.000 --> 00:00:47.000
+requiere la convolución y la otra un producto.
+
+00:00:47.000 --> 00:00:50.000
+Por favor, marque la casilla correspondiente.
+

@@ -1,0 +1,118 @@
+WEBVTT
+Kind: captions
+Language: es-ES
+
+00:00:00.000 --> 00:00:05.000
+Me gustaría llevar a mis estudiantes a un pequeño viaje a Stanford
+
+00:00:05.000 --> 00:00:11.000
+y mostrarles nuestro coche auto-conducido que utiliza sensores para detectar el entorno.
+
+00:00:11.000 --> 00:00:16.000
+Permítanme sumergirse en esta clase maravillosa inmediatamente.
+
+00:00:16.000 --> 00:00:19.000
+En nuestra última clase, hablamos sobre la localización.
+
+00:00:19.000 --> 00:00:24.000
+Teniamos un robot que vivia en un entorno y que podía usar sus sensores
+
+00:00:24.000 --> 00:00:28.000
+para determinar donde estaba en el entorno.
+
+00:00:28.000 --> 00:00:35.000
+Aquí puedes ver el coche auto-conducido de Google usando un mapa de carreteras para localizarse.
+
+00:00:35.000 --> 00:00:39.000
+Pero, además, lo que se ve aquí en rojo son las mediciones de otros vehículos.
+
+00:00:39.000 --> 00:00:48.000
+El coche utiliza láseres y radares para seguir a otros vehículos y hoy vamos a hablar acerca de cómo encontrar otros coches.
+
+00:00:48.000 --> 00:00:53.000
+La razón por la que le gustaría encontrar otros coches es porque no querría cochar con ellos.
+
+00:00:53.000 --> 00:00:58.000
+Así que tenemos que entender cómo interpretar los datos de los sensores para hacer las evaluaciones,
+
+00:00:58.000 --> 00:01:02.000
+no sólo de donde estan los otros coches en el caso de la localización,
+
+00:01:02.000 --> 00:01:05.000
+sino también de la rapidez con que se están moviendo
+
+00:01:05.000 --> 00:01:09.000
+lo que puede conducir de alguna manera a evitar colisiones con ellos en el futuro.
+
+00:01:09.000 --> 00:01:12.000
+Eso es importante, no sólo para los coches.
+
+00:01:12.000 --> 00:01:16.000
+También es importante para los peatones y los ciclistas.
+
+00:01:16.000 --> 00:01:20.000
+Entender donde están los otros coches y hacer predicciones de hacía donde se van a mover
+
+00:01:20.000 --> 00:01:25.000
+es absolutamente esencial para una conducción segura en el proyecto del coche de Google.
+
+00:01:25.000 --> 00:01:29.000
+Así que en esta clase vamos a hablar acerca del seguimiento (tracking).
+
+00:01:29.000 --> 00:01:32.000
+La técnica que me gustaría enseñarte se llama filtro de Kalman.
+
+00:01:32.000 --> 00:01:37.000
+Esta es una técnica increíblemente popular para estimar el estado de un sistema.
+
+00:01:37.000 --> 00:01:41.000
+De hecho, es muy similar al método de localización probabilísta
+
+00:01:41.000 --> 00:01:45.000
+que te enseñe en la clase anterior: La localización de Monte Carlo.
+
+00:01:45.000 --> 00:01:50.000
+Las principales diferencias son que los filtros de Kalman estiman un estado continuo
+
+00:01:50.000 --> 00:01:56.000
+mientras que la localilazión de Monte Carlo lo expresamos cortando el mundo en sitios discretos.
+
+00:01:56.000 --> 00:02:00.000
+Y como resultado, lo que sucede es que el filtro de Kalman nos da una distribución unimodal,
+
+00:02:00.000 --> 00:02:04.000
+y te diré en un segundo lo que significa,
+
+00:02:04.000 --> 00:02:08.000
+mientras que Monte Carlo fue bien con distribuciones multimodales.
+
+00:02:08.000 --> 00:02:13.000
+Ambas técnicas son aplicables para la localización del robot y el seguimiento de otros vehículos.
+
+00:02:13.000 --> 00:02:17.000
+De hecho, en la siguiente clase, vamos a aprender acerca de los filtros de partículas,
+
+00:02:17.000 --> 00:02:20.000
+que son otra forma de abordar el mismo problema,
+
+00:02:20.000 --> 00:02:23.000
+y de hecho es continuo y multimodal.
+
+00:02:23.000 --> 00:02:26.000
+Pero por ahora vamos a fijarnos en los filtros de Kalman
+
+00:02:26.000 --> 00:02:29.000
+e ignorar las otras dos familias de métodos.
+
+00:02:29.000 --> 00:02:32.000
+Permítanme comenzar con un ejemplo. Considere el coche aquí.
+
+00:02:32.000 --> 00:02:41.000
+Asumamos que el que ve como su medida, un objeto aquí, aquí, aquí,
+
+00:02:41.000 --> 00:02:46.000
+y aquí para los tiempos t = 0, t = 1, t = 2 y t = 3.
+
+00:02:46.000 --> 00:02:51.000
+¿Dónde asume usted que estaría el objeto en t = 4? Marque una de las tres cajas.
+
