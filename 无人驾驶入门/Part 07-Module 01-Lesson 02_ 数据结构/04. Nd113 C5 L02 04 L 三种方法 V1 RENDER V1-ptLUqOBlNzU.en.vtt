@@ -1,0 +1,136 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.810
+For my first attempt, I took the problem at face value and thought,
+
+00:00:03.810 --> 00:00:08.130
+what if all I cared about was a tickets priority level and nothing else.
+
+00:00:08.130 --> 00:00:10.770
+And in that case, I could just have three bags.
+
+00:00:10.769 --> 00:00:12.959
+And after filling out each ticket,
+
+00:00:12.960 --> 00:00:15.560
+I would just toss it in the appropriate bag.
+
+00:00:15.560 --> 00:00:20.820
+Whether it's high, low, or medium priority.
+
+00:00:20.820 --> 00:00:22.975
+And this really isn't a terrible solution.
+
+00:00:22.975 --> 00:00:25.740
+In fact, it's a great solution if the tickets priority
+
+00:00:25.739 --> 00:00:29.119
+really is the only structure in the data that we care about.
+
+00:00:29.120 --> 00:00:31.080
+But, it's probably not.
+
+00:00:31.079 --> 00:00:34.449
+We probably do care about when a ticket was filed as well.
+
+00:00:34.450 --> 00:00:36.390
+And that thinking, I made option two,
+
+00:00:36.390 --> 00:00:40.225
+which is to sort by priority on insert.
+
+00:00:40.225 --> 00:00:43.325
+And in this option we go back to having a box.
+
+00:00:43.325 --> 00:00:45.929
+But now the goal is to make sure that these tickets stay
+
+00:00:45.929 --> 00:00:49.255
+sorted first by priority, and then by date.
+
+00:00:49.255 --> 00:00:51.315
+So all the high priority tickets,
+
+00:00:51.314 --> 00:00:52.598
+would be in the back.
+
+00:00:52.598 --> 00:00:54.209
+All the tickets in the middle,
+
+00:00:54.210 --> 00:00:55.675
+would be medium priority,
+
+00:00:55.674 --> 00:00:58.794
+and all the tickets at the front would be low priority.
+
+00:00:58.795 --> 00:01:01.715
+Now, let's think about how I would have to use this system.
+
+00:01:01.715 --> 00:01:05.745
+In this system when I go to file a high priority ticket for example,
+
+00:01:05.745 --> 00:01:08.400
+I'm first going to have to find where it belongs.
+
+00:01:08.400 --> 00:01:12.180
+So, in this example, I would need to search through all of these tickets that
+
+00:01:12.180 --> 00:01:16.740
+are already in the box until I find the first high priority ticket,
+
+00:01:16.739 --> 00:01:18.329
+and that's where I would have to put this one,
+
+00:01:18.329 --> 00:01:20.974
+right in front of the first type priority ticket.
+
+00:01:20.974 --> 00:01:23.519
+And initially I did really like the solution,
+
+00:01:23.519 --> 00:01:27.075
+but this extra time required to file a ticket started bothering me.
+
+00:01:27.075 --> 00:01:30.990
+When I'm in the vehicle, I should be focused on the vehicle not on filing my tickets.
+
+00:01:30.989 --> 00:01:32.274
+So when I do file tickets,
+
+00:01:32.275 --> 00:01:34.890
+that process really ought to be as fast as possible.
+
+00:01:34.890 --> 00:01:38.010
+And this led me to the third option and the one I ended up taking,
+
+00:01:38.010 --> 00:01:40.655
+which is to have multiple boxes.
+
+00:01:40.655 --> 00:01:44.519
+And in this option I just replaced my one box of tickets with three.
+
+00:01:44.519 --> 00:01:47.849
+One for each of the priorities. So here I have a low priority box,
+
+00:01:47.849 --> 00:01:49.364
+a medium priority box,
+
+00:01:49.364 --> 00:01:51.164
+and a high priority box.
+
+00:01:51.165 --> 00:01:53.010
+And just to keep everything tidy,
+
+00:01:53.010 --> 00:01:56.625
+I keep all three of these in a little box itself.
+
+00:01:56.625 --> 00:01:58.650
+And then now, when I want to file a ticket,
+
+00:01:58.650 --> 00:02:01.094
+I just put it at the front of the appropriate box.
+
+00:02:01.094 --> 00:02:04.000
+No rifling through all tickets required.
+

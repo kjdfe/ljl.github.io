@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.000
+So far we've been talking about systems for storing
+
+00:00:03.000 --> 00:00:07.509
+multiple tickets in the physical world using boxes and bags.
+
+00:00:07.509 --> 00:00:10.259
+But now, we're going to go back into the digital world
+
+00:00:10.259 --> 00:00:14.324
+and think about how we want to represent just a single ticket.
+
+00:00:14.324 --> 00:00:16.079
+Remember, a physical ticket looks something like
+
+00:00:16.079 --> 00:00:19.244
+this but we want to talk about a digital ticket,
+
+00:00:19.245 --> 00:00:22.500
+which means we only care about the data this ticket contains.
+
+00:00:22.500 --> 00:00:26.609
+Which in this case is text but it's not really just text,
+
+00:00:26.609 --> 00:00:27.839
+the string doesn't feel appropriate
+
+00:00:27.839 --> 00:00:32.700
+here because really there's two different types of text here.
+
+00:00:32.700 --> 00:00:36.795
+On the left, we have the names of the various fields.
+
+00:00:36.795 --> 00:00:38.910
+Every ticket has a field named Date,
+
+00:00:38.909 --> 00:00:42.129
+field name Priority and a field name Description.
+
+00:00:42.130 --> 00:00:46.230
+But the text on the right is what changes from ticket to ticket and at this point,
+
+00:00:46.229 --> 00:00:48.104
+I want to call something out about this data.
+
+00:00:48.104 --> 00:00:51.509
+As I presented it, the string for the Date
+
+00:00:51.509 --> 00:00:56.789
+came before the Priority which came before the Description.
+
+00:00:56.789 --> 00:00:58.854
+But there no real meaning behind this ordering.
+
+00:00:58.854 --> 00:01:02.669
+In fact, we could have just as easily put the Description first.
+
+00:01:02.670 --> 00:01:06.060
+When data doesn't have any inherent sequential order into it,
+
+00:01:06.060 --> 00:01:07.829
+it often but not always,
+
+00:01:07.829 --> 00:01:11.355
+means that we should be using a data structure other than a list.
+
+00:01:11.355 --> 00:01:13.620
+In the next section, you're going to explore
+
+00:01:13.620 --> 00:01:16.250
+the trade-offs associated with various data structures.
+
+00:01:16.250 --> 00:01:17.760
+Eventually, we're going to settle on using
+
+00:01:17.760 --> 00:01:22.200
+a Python dictionary as the preferred way to store unordered but related data.
+

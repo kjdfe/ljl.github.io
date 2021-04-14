@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.743
+Up to this point and then I agree,
+
+00:00:01.743 --> 00:00:03.924
+you've been using Python lists.
+
+00:00:03.924 --> 00:00:07.343
+You've represented one and two dimensional worlds both with lists.
+
+00:00:07.344 --> 00:00:09.846
+matrices and vectors as lists.
+
+00:00:09.846 --> 00:00:15.128
+And later in the stand agreed you'll see how even an image can be represented as a list.
+
+00:00:15.128 --> 00:00:16.486
+And lists are great,
+
+00:00:16.486 --> 00:00:20.410
+especially when the data they contain is ordered in some meaningful way.
+
+00:00:20.410 --> 00:00:23.644
+But the list isn't the only data structure that you have to work with.
+
+00:00:23.644 --> 00:00:25.041
+And in this lesson,
+
+00:00:25.041 --> 00:00:29.565
+you're going to learn about two additional data structures called dictionaries and sets.
+
+00:00:29.565 --> 00:00:31.710
+And learning to use these data structures
+
+00:00:31.710 --> 00:00:34.755
+correctly will allow you to write code that's easier to read,
+
+00:00:34.755 --> 00:00:38.225
+faster to write, and more efficient to run.
+
+00:00:38.225 --> 00:00:40.289
+And these data structures also tend to show
+
+00:00:40.289 --> 00:00:42.269
+up on programming interviews pretty frequently.
+
+00:00:42.270 --> 00:00:45.910
+So knowing a bit more about them is never a bad idea.
+
+00:00:45.909 --> 00:00:49.004
+But, before we jump into these new data structures,
+
+00:00:49.005 --> 00:00:54.000
+let's get a sense for what it even means to talk about the structure of data.
+

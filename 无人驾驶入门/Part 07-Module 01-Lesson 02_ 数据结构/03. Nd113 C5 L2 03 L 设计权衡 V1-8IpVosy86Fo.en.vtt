@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.620
+The ticketing system we discussed before,
+
+00:00:02.620 --> 00:00:05.560
+made it really easy to find the oldest ticket.
+
+00:00:05.559 --> 00:00:09.224
+All we had to do was pull out whatever ticket was in the back of the box.
+
+00:00:09.224 --> 00:00:11.814
+And this is a good feature of the system.
+
+00:00:11.814 --> 00:00:14.339
+It's totally possible that whoever handles these tickets
+
+00:00:14.339 --> 00:00:16.964
+will want to address them in chronological order,
+
+00:00:16.964 --> 00:00:20.339
+to make sure that the oldest issues get resolved first.
+
+00:00:20.339 --> 00:00:23.100
+But, what if we want to handle the most important issues first?
+
+00:00:23.100 --> 00:00:26.510
+The system doesn't give us any good way to do that.
+
+00:00:26.510 --> 00:00:31.310
+So, hopefully spend some time thinking about how you might design such a system.
+
+00:00:31.309 --> 00:00:32.655
+When I thought about that question,
+
+00:00:32.655 --> 00:00:33.990
+I came up with three ideas,
+
+00:00:33.990 --> 00:00:35.700
+I considered the pros and cons,
+
+00:00:35.700 --> 00:00:39.260
+and eventually, I settled on the one that I thought was best.
+
+00:00:39.259 --> 00:00:41.684
+Now, I'd like to walk you through my thought process,
+
+00:00:41.685 --> 00:00:45.915
+because the sort of thinking we do when we think about designing ticketing system,
+
+00:00:45.914 --> 00:00:48.420
+is almost exactly the same as the thinking we
+
+00:00:48.420 --> 00:00:51.000
+do when we choose data structures when we're programming.
+

@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.595
+You just saw how a dictionary can improve
+
+00:00:02.595 --> 00:00:05.580
+code readability and help us avoid making mistakes,
+
+00:00:05.580 --> 00:00:08.250
+by allowing us to access data through a key,
+
+00:00:08.250 --> 00:00:10.339
+like date or priority.
+
+00:00:10.339 --> 00:00:12.669
+This key is associated with a value,
+
+00:00:12.669 --> 00:00:14.580
+so tickets description key,
+
+00:00:14.580 --> 00:00:19.109
+maybe associated with the value vehicle unexpectedly stopped at green light.
+
+00:00:19.109 --> 00:00:23.869
+But sometimes we don't actually want to associate the key with any value.
+
+00:00:23.870 --> 00:00:26.460
+Sometimes, the key itself is enough.
+
+00:00:26.460 --> 00:00:29.589
+Like, if we want to add tags or labels to a ticket.
+
+00:00:29.589 --> 00:00:31.949
+Let me show you how you Udacity actually handles
+
+00:00:31.949 --> 00:00:34.280
+tickets with ticket tracking software called Jira.
+

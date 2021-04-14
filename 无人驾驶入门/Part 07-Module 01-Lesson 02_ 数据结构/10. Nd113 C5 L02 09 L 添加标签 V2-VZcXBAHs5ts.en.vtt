@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.894
+So this is JIRA's create issue dialog box
+
+00:00:03.894 --> 00:00:05.610
+and the word Issue they're using just
+
+00:00:05.610 --> 00:00:08.165
+like we've been using the word Ticket, just so you know.
+
+00:00:08.164 --> 00:00:11.384
+And as you can see in Issue has an associated Project,
+
+00:00:11.384 --> 00:00:13.140
+an Issue Type, in this case,
+
+00:00:13.140 --> 00:00:15.740
+we're going to call it a bug, and a Summary.
+
+00:00:15.740 --> 00:00:19.975
+In this case, literally everything is broken maybe.
+
+00:00:19.975 --> 00:00:22.141
+So, this is a pretty bad bug.
+
+00:00:22.140 --> 00:00:24.304
+I'm going to ignore some of these fields here.
+
+00:00:24.304 --> 00:00:29.414
+But, I'm going to give it a priority of highest and let's have some labels to it.
+
+00:00:29.414 --> 00:00:31.424
+Maybe you think the issue in the Python code,
+
+00:00:31.425 --> 00:00:34.920
+so I'll type p_y_t and I
+
+00:00:34.920 --> 00:00:38.609
+can see up here that an autocomplete is suggesting Python as a label so,
+
+00:00:38.609 --> 00:00:44.890
+I can click that, and maybe also I want to give it the label of bug, also a suggestion.
+
+00:00:44.890 --> 00:00:49.980
+Now, let's see what happens if I'm not thinking and I tried to add Python again.
+
+00:00:49.979 --> 00:00:51.909
+No matches.
+
+00:00:51.909 --> 00:00:55.829
+Somehow, JIRA is ensuring that this data structure,
+
+00:00:55.829 --> 00:00:59.295
+not have duplicates of the same label.
+
+00:00:59.295 --> 00:01:02.160
+Now, there's a data structure in Python that does exactly this,
+
+00:01:02.159 --> 00:01:05.655
+called the Set and that's what I want to teach you about next.
+
+00:01:05.655 --> 00:01:07.765
+But, before we do that, let's create our Issue,
+
+00:01:07.765 --> 00:01:11.189
+and let's click on this Python label.
+
+00:01:11.189 --> 00:01:14.384
+And as you can see, this is something that JIRA supports.
+
+00:01:14.385 --> 00:01:16.844
+It's showing me everything, with a label of Python,
+
+00:01:16.844 --> 00:01:20.655
+and it showing me every Issue that has that associated label.
+
+00:01:20.655 --> 00:01:23.189
+In the next notebook, you're going to implement
+
+00:01:23.189 --> 00:01:26.269
+similar functionality to the ticket tracker we've been working with,
+
+00:01:26.269 --> 00:01:30.030
+and in doing so, you're going to learn about a new Python data type called
+
