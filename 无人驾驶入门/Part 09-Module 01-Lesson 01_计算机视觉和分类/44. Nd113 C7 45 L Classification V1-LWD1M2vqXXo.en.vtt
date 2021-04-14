@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.940
+Let's go back to our notebook and complete our day and night classifier.
+
+00:00:03.940 --> 00:00:06.288
+After we extract this brightness feature,
+
+00:00:06.288 --> 00:00:08.055
+the average value of an image,
+
+00:00:08.055 --> 00:00:12.120
+we want to turn this into a predicted label that classifies any image.
+
+00:00:12.120 --> 00:00:15.990
+We've looked at the average brightness of both day and night images,
+
+00:00:15.990 --> 00:00:18.210
+and you should have an idea for what value
+
+00:00:18.210 --> 00:00:21.005
+will separate them into their respective classes.
+
+00:00:21.005 --> 00:00:23.520
+It's common to create a numerical label.
+
+00:00:23.520 --> 00:00:25.230
+Since we have a binary dataset,
+
+00:00:25.230 --> 00:00:27.635
+meaning there are only two classes of data,
+
+00:00:27.635 --> 00:00:31.305
+I'll create a label that is 1 for day and 0 for night images.
+
+00:00:31.305 --> 00:00:34.110
+And I can create a complete classifier by writing
+
+00:00:34.110 --> 00:00:37.155
+a function estimate label that takes in an image,
+
+00:00:37.155 --> 00:00:38.865
+extracts the brightness feature,
+
+00:00:38.865 --> 00:00:42.890
+and then checks if the average brightness is above some threshold.
+
+00:00:42.890 --> 00:00:45.075
+So I'll define my estimate label function,
+
+00:00:45.075 --> 00:00:47.640
+which takes in the RGB image.
+
+00:00:47.640 --> 00:00:50.550
+Then, I'll extract the average brightness feature from
+
+00:00:50.550 --> 00:00:54.035
+that image using our function average brightness from above.
+
+00:00:54.035 --> 00:00:56.925
+Then, I'll use the average brightness to predict a label,
+
+00:00:56.925 --> 00:00:58.920
+0 or 1, for the image.
+
+00:00:58.920 --> 00:01:02.470
+I'll set the default value of our predicted label to be 0,
+
+00:01:02.470 --> 00:01:05.135
+which is our label for a night image.
+
+00:01:05.135 --> 00:01:07.050
+Next, I'll define a brightness threshold.
+

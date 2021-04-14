@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.315
+Now, you're on your way to being able to build a complete classifier.
+
+00:00:04.315 --> 00:00:07.720
+You know how to analyze color and brightness in a given image,
+
+00:00:07.719 --> 00:00:10.754
+and that skill alone can help you distinguish between say,
+
+00:00:10.755 --> 00:00:13.770
+a red stop sign, and a green informational sign.
+
+00:00:13.769 --> 00:00:16.754
+And I'm going to give you a classification challenge.
+
+00:00:16.754 --> 00:00:19.710
+What if I asked you to classify two types of images
+
+00:00:19.710 --> 00:00:23.429
+taken during either the day or at night when the sun has set?
+
+00:00:23.429 --> 00:00:27.984
+And I want you to separate these images into two classes: day or night.
+
+00:00:27.984 --> 00:00:32.119
+This is actually an important classification challenge for self driving cars.
+
+00:00:32.119 --> 00:00:35.280
+These cars need to know what kind of conditions they're driving in,
+
+00:00:35.280 --> 00:00:38.800
+so that they can safely navigate a road at any time of day.
+
+00:00:38.799 --> 00:00:42.794
+And so that they can still recognize other vehicles and surrounding objects,
+
+00:00:42.795 --> 00:00:45.594
+whether it's dark or light outside.
+
+00:00:45.594 --> 00:00:48.435
+We'll walk through each classification step together.
+
+00:00:48.435 --> 00:00:50.580
+But what do you think would be the first step in
+
+00:00:50.579 --> 00:00:53.789
+creating a classification model for day and night images?
+
+00:00:53.789 --> 00:00:56.460
+Before you can classify any set of images,
+
+00:00:56.460 --> 00:00:58.020
+you have to look at them.
+
+00:00:58.020 --> 00:01:00.600
+Visualizing the image data you're working with is
+
+00:01:00.600 --> 00:01:04.034
+the first step in identifying any patterns in image data,
+
+00:01:04.034 --> 00:01:07.019
+and being able to make predictions about that data.
+
+00:01:07.019 --> 00:01:08.759
+So, we'll first load in
+
+00:01:08.760 --> 00:01:12.000
+this image data and learn a bit about the images we'll be working with.
+

@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.819
+Now, we've seen how to use color to help isolate
+
+00:00:02.819 --> 00:00:06.769
+a desired portion of an image and even help classify an image.
+
+00:00:06.769 --> 00:00:09.570
+In addition to taking advantage of color information,
+
+00:00:09.570 --> 00:00:13.980
+we also have knowledge about patterns of grayscale intensity in an image.
+
+00:00:13.980 --> 00:00:17.324
+Intensity is a measure of light and dark similar to brightness,
+
+00:00:17.324 --> 00:00:21.719
+and we can use this knowledge to detect other areas or objects of interest.
+
+00:00:21.719 --> 00:00:24.210
+For example, you can often identify the edges of
+
+00:00:24.210 --> 00:00:27.670
+an object by looking at an abrupt change in intensity,
+
+00:00:27.670 --> 00:00:32.609
+which happens when an image changes from a very dark to light area, or vice versa.
+
+00:00:32.609 --> 00:00:33.862
+To detect these changes,
+
+00:00:33.862 --> 00:00:37.380
+you'll be using and creating specific image filters that look
+
+00:00:37.380 --> 00:00:41.620
+at groups of pixels and detect big changes in intensity in an image.
+
+00:00:41.619 --> 00:00:45.114
+These filters produce an output that shows any edges.
+
+00:00:45.115 --> 00:00:47.969
+Let's learn more about these filters and see where they're useful in
+
+00:00:47.969 --> 00:00:51.000
+processing images and identifying traits of interest.
+

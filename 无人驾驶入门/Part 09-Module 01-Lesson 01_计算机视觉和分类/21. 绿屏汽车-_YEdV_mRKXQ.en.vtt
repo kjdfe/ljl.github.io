@@ -1,0 +1,166 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.529
+We'll be starting with this image of a car on a green screen background.
+
+00:00:03.529 --> 00:00:05.639
+We'll first have to identify this green region,
+
+00:00:05.639 --> 00:00:08.414
+then later you'll replace it with a background image.
+
+00:00:08.414 --> 00:00:09.621
+We're in a python notebook,
+
+00:00:09.621 --> 00:00:12.210
+and my first step is to import the libraries I need,
+
+00:00:12.210 --> 00:00:14.025
+and we will use these throughout this lesson.
+
+00:00:14.025 --> 00:00:16.286
+For plotting and reading im images,
+
+00:00:16.286 --> 00:00:19.329
+I'll import matplotlib.pyplot im image.
+
+00:00:19.329 --> 00:00:20.861
+For operating on an image,
+
+00:00:20.861 --> 00:00:25.794
+I'll use numpy and the computer vision library open cv which is named "cv2".
+
+00:00:25.795 --> 00:00:30.425
+Next, you can see I've read in the image of the car using "mpimg.imread."
+
+00:00:30.425 --> 00:00:34.895
+This image is in the same directory as this notebook in a folder named "images."
+
+00:00:34.895 --> 00:00:39.030
+Once it's read in, I'll actually want to print out some information about the image.
+
+00:00:39.030 --> 00:00:41.969
+This information will be helpful later when you want to add
+
+00:00:41.969 --> 00:00:44.729
+a different background to the green section.
+
+00:00:44.729 --> 00:00:48.049
+So, I'll print in shape which will tell us the dimensions of the image,
+
+00:00:48.049 --> 00:00:50.339
+and also I'll display the image.
+
+00:00:50.340 --> 00:00:52.560
+And we see the expected output.
+
+00:00:52.560 --> 00:00:55.200
+The image is an array of values and its shape contains
+
+00:00:55.200 --> 00:00:58.605
+three values that represent the dimensions of the image array.
+
+00:00:58.604 --> 00:01:01.049
+First, it's height; 450 pixels,
+
+00:01:01.049 --> 00:01:03.969
+then it's width; 660 pixels.
+
+00:01:03.969 --> 00:01:06.795
+And finally, how many color components it has?
+
+00:01:06.795 --> 00:01:08.549
+In this case, three.
+
+00:01:08.549 --> 00:01:11.795
+One for red, green and blue values.
+
+00:01:11.795 --> 00:01:13.620
+Okay, now that we have our green screen image,
+
+00:01:13.620 --> 00:01:15.925
+let's jump into green screen masking.
+
+00:01:15.924 --> 00:01:19.590
+And masking just means blocking out a certain area of an image.
+
+00:01:19.590 --> 00:01:21.463
+To create a mask,
+
+00:01:21.462 --> 00:01:23.824
+I'll create a color threshold.
+
+00:01:23.825 --> 00:01:27.525
+I'll define lower and upper bounds for the color I want to isolate, green.
+
+00:01:27.525 --> 00:01:31.755
+So I'll define a lower threshold that contains the lowest values of red,
+
+00:01:31.754 --> 00:01:35.771
+green and blue that are still considered part of the green screen background.
+
+00:01:35.772 --> 00:01:38.310
+This will be an array of three values in the order;
+
+00:01:38.310 --> 00:01:40.575
+red, green and blue value.
+
+00:01:40.575 --> 00:01:42.260
+For red and blue,
+
+00:01:42.260 --> 00:01:43.489
+I'll set these is as zero.
+
+00:01:43.489 --> 00:01:48.817
+Meaning, it's okay to have no red or blue when identifying this green screen area.
+
+00:01:48.817 --> 00:01:52.274
+But the lowest value for green should still be quite high.
+
+00:01:52.275 --> 00:01:54.219
+Not all the way up to 255,
+
+00:01:54.219 --> 00:01:56.150
+but let's say 200.
+
+00:01:56.150 --> 00:01:58.155
+Then I'll define the upper threshold.
+
+00:01:58.155 --> 00:02:01.769
+I'll define it to allow a little more red and blue. Say, 50 each.
+
+00:02:01.769 --> 00:02:05.234
+And I'll set the highest value for green to be 255.
+
+00:02:05.234 --> 00:02:08.775
+Now any color within this range between the low and high thresholds,
+
+00:02:08.775 --> 00:02:11.064
+will be an intense green color.
+
+00:02:11.064 --> 00:02:12.435
+I am doing some estimation though,
+
+00:02:12.435 --> 00:02:16.080
+so if I find that this range isn't finding the green screen area that I want,
+
+00:02:16.080 --> 00:02:18.530
+I'll come back and change these values.
+
+00:02:18.530 --> 00:02:22.814
+Next, I'll use these color thresholds to create an image mask.
+
+00:02:22.814 --> 00:02:25.454
+Masks are a very common way to isolate
+
+00:02:25.455 --> 00:02:29.240
+a selected area of interest and do something with that area.
+
+00:02:29.240 --> 00:02:34.350
+We can create a mask over the green area using open CVs "inRange" function.
+
+00:02:34.349 --> 00:02:38.079
+This function takes any in image and our lower and upper color thresholds.
+

@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.735
+So what's a feature? A feature can easily be thought of as a summarizer of something.
+
+00:00:04.735 --> 00:00:09.539
+So features of images are really just nice concise summarizes of image data.
+
+00:00:09.539 --> 00:00:13.439
+Furthermore, just as how images are really just a collection of numbers in an array,
+
+00:00:13.439 --> 00:00:16.620
+features are also just another collection of numbers in an array.
+
+00:00:16.620 --> 00:00:19.589
+Although usually, they're much smaller than images.
+
+00:00:19.589 --> 00:00:20.824
+So what does this mean?
+
+00:00:20.824 --> 00:00:21.925
+Let's be even simpler.
+
+00:00:21.925 --> 00:00:24.045
+Forget images, consider humans.
+
+00:00:24.045 --> 00:00:26.340
+An individual person has many facets about
+
+00:00:26.339 --> 00:00:30.399
+themselves and it may be hard to fully describe someone in totality.
+
+00:00:30.399 --> 00:00:34.019
+What are however some compact features that we may extract about a person?
+
+00:00:34.020 --> 00:00:38.210
+Compact here because you want those features to describe something about this person,
+
+00:00:38.210 --> 00:00:42.515
+but we want this description to be a summary of sorts to what is relevant.
+
+00:00:42.515 --> 00:00:45.855
+For example, if you wanted to place boxers into their weight class,
+
+00:00:45.854 --> 00:00:48.689
+we may want to do feature extraction on each fighter and
+
+00:00:48.689 --> 00:00:52.074
+we would extract a two-dimensional feature, height and weight.
+
+00:00:52.075 --> 00:00:55.970
+Those are features in the sense because of they nicely ignore the irrelevant.
+
+00:00:55.969 --> 00:00:57.869
+They described this person's weight and height.
+
+00:00:57.869 --> 00:01:01.799
+Features that are useful for placing the boxer into their proper weight class.
+
+00:01:01.799 --> 00:01:05.534
+They also ignore things like skin color or say hair length etc..
+
+00:01:05.534 --> 00:01:08.819
+So in this sense, you can think of feature extraction as a way to
+
+00:01:08.819 --> 00:01:13.019
+extract relevant information while also smartly ignoring the irrelevance.
+
+00:01:13.019 --> 00:01:15.839
+A good feature is always very succinct.
+
+00:01:15.840 --> 00:01:19.299
+Features are distinct and measurable pieces of information in an image.
+
+00:01:19.299 --> 00:01:22.469
+And we'll go through examples of features and how to compute them.
+
+00:01:22.469 --> 00:01:25.019
+One of the breakthroughs in computer vision actually came from
+
+00:01:25.019 --> 00:01:28.019
+being able to automatically compute those features that are good.
+
+00:01:28.019 --> 00:01:30.899
+However, you can also do this on your own, manually.
+
+00:01:30.900 --> 00:01:33.504
+In fact, you've already been creating your own features.
+
+00:01:33.504 --> 00:01:35.640
+That's right. In the last exercise,
+
+00:01:35.640 --> 00:01:38.280
+you had to come up with a distinguishing feature to classify
+
+00:01:38.280 --> 00:01:41.090
+an image as taken during the day or night time.
+
+00:01:41.090 --> 00:01:44.159
+This feature was based on the overall brightness of the image.
+
+00:01:44.159 --> 00:01:48.819
+In this section, we'll see these features can be based on colors or shapes within
+
+00:01:48.819 --> 00:01:50.189
+an image and we'll see how
+
+00:01:50.189 --> 00:01:54.599
+these features can be used for obvious recognition and classification tasks.
+
+00:01:54.599 --> 00:01:58.459
+Let's get started by talking about how features are used in industry applications.
+

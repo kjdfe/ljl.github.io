@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.509
+We know about how color images are represented numerically.
+
+00:00:03.509 --> 00:00:08.734
+And next, I want to show you how color can be used in image analysis and transformation.
+
+00:00:08.734 --> 00:00:11.719
+We'll start by learning how to use information about the colors in
+
+00:00:11.720 --> 00:00:15.545
+an image to isolate a particular area in an image.
+
+00:00:15.544 --> 00:00:17.980
+This is easiest to understand in an example.
+
+00:00:17.980 --> 00:00:21.719
+We'll be selecting an area of interest using a color threshold.
+
+00:00:21.719 --> 00:00:24.599
+Color thresholds are used in a number of applications,
+
+00:00:24.600 --> 00:00:28.230
+including extensively in computer graphics and video.
+
+00:00:28.230 --> 00:00:30.330
+A common use is with a green screen.
+
+00:00:30.329 --> 00:00:33.299
+A green screen is used to where two images or
+
+00:00:33.299 --> 00:00:38.009
+video streams based on identifying and replacing a large green area.
+
+00:00:38.009 --> 00:00:39.409
+So how does all this work?
+
+00:00:39.409 --> 00:00:42.419
+Well, the first step is to isolate the green background and
+
+00:00:42.420 --> 00:00:45.810
+then replace that green area with an image of your choosing.
+
+00:00:45.810 --> 00:00:47.295
+This task seems simple enough.
+
+00:00:47.295 --> 00:00:50.130
+So let's see how to do this programmatically with our own image.
+

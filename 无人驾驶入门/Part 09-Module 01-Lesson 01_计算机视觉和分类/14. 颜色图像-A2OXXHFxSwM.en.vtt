@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.325
+Now you've seen an example of an image broken down
+
+00:00:03.325 --> 00:00:06.130
+into a 2D grid of grayscale pixel values,
+
+00:00:06.129 --> 00:00:07.764
+that has a width and a height.
+
+00:00:07.764 --> 00:00:10.119
+But color images are a little different.
+
+00:00:10.119 --> 00:00:16.390
+Color images are interpreted as 3D cubes of values with width, height, and depth.
+
+00:00:16.390 --> 00:00:19.275
+The depth is the number of color channels.
+
+00:00:19.275 --> 00:00:23.964
+Most color images can be represented by combinations of only three colors: red,
+
+00:00:23.964 --> 00:00:26.039
+green, and blue values.
+
+00:00:26.039 --> 00:00:29.919
+These are known as RGB images and for RGB images,
+
+00:00:29.920 --> 00:00:31.390
+the depth is three.
+
+00:00:31.390 --> 00:00:35.950
+It's helpful to think of the depth as three stacked 2D color layers.
+
+00:00:35.950 --> 00:00:37.330
+One layer is red,
+
+00:00:37.329 --> 00:00:39.054
+one green, and one blue.
+
+00:00:39.054 --> 00:00:40.704
+And when stacked together,
+
+00:00:40.704 --> 00:00:43.149
+they create a complete color image.
+
+00:00:43.149 --> 00:00:46.824
+Now color images contain more information than grayscale images.
+
+00:00:46.825 --> 00:00:51.280
+And they can add unnecessary complexity and take up more space in memory.
+
+00:00:51.280 --> 00:00:55.929
+However, color images are also really useful for certain classification tasks.
+
+00:00:55.929 --> 00:01:00.365
+For example, say you want to classify lane lines in this image of a road.
+
+00:01:00.365 --> 00:01:02.425
+One of these lines is yellow and one is white.
+
+00:01:02.424 --> 00:01:04.840
+But which is which? You might see
+
+00:01:04.840 --> 00:01:08.270
+a slight difference in the grayscale intensity of the lane lines.
+
+00:01:08.269 --> 00:01:12.319
+But the difference is so small and it varies under different lighting conditions.
+
+00:01:12.319 --> 00:01:14.409
+So, this grayscale image does not provide
+
+00:01:14.409 --> 00:01:18.280
+enough information to distinguish between the yellow and white lane lines.
+
+00:01:18.280 --> 00:01:21.090
+Let's see the color image for comparison.
+
+00:01:21.090 --> 00:01:24.680
+Here we can clearly see the difference between the white and yellow lane lines.
+
+00:01:24.680 --> 00:01:27.920
+And so we can tell a machine to recognize this difference too.
+
+00:01:27.920 --> 00:01:31.629
+So because this identification task is dependent on color,
+
+00:01:31.629 --> 00:01:34.670
+it's important that we work with color images.
+
+00:01:34.670 --> 00:01:38.700
+In general, when you think of a computer vision application like identifying lane lines,
+
+00:01:38.700 --> 00:01:40.125
+or cars or people.
+
+00:01:40.125 --> 00:01:43.870
+You can decide whether color information and color images are useful,
+
+00:01:43.870 --> 00:01:46.090
+by thinking about your own vision.
+
+00:01:46.090 --> 00:01:50.115
+If the identification problem is easier in color for us humans,
+
+00:01:50.115 --> 00:01:53.290
+it's likely easier for an algorithm to see color images too.
+

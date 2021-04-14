@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.875
+When we talk about machine learning,
+
+00:00:01.875 --> 00:00:05.622
+you'll often hear the terms 'deep learning' and 'neural networks' come up,
+
+00:00:05.622 --> 00:00:08.370
+and this might conjure up an image of a brain or
+
+00:00:08.370 --> 00:00:12.130
+some strange graphic of layers of mathematical formulas and data.
+
+00:00:12.130 --> 00:00:14.820
+But at their core, all of these learning techniques are
+
+00:00:14.820 --> 00:00:18.150
+about separating data into different classes.
+
+00:00:18.150 --> 00:00:22.260
+The image that this conjures in my head is of a child playing on a beach.
+
+00:00:22.260 --> 00:00:25.240
+The child sees some blue and yellow shells in the sand.
+
+00:00:25.240 --> 00:00:26.670
+Then someone says to the child,
+
+00:00:26.670 --> 00:00:29.986
+"Put these shells into groups and draw a line between them".
+
+00:00:29.986 --> 00:00:32.160
+Without me telling you anything else,
+
+00:00:32.160 --> 00:00:34.116
+how would you group these shells?
+
+00:00:34.116 --> 00:00:36.585
+You might separate them by color and shape,
+
+00:00:36.585 --> 00:00:38.510
+and draw a line in the sand.
+
+00:00:38.510 --> 00:00:43.405
+Now, for a computer, this scenario might be that we give it individual images of shells.
+
+00:00:43.405 --> 00:00:44.490
+And just like a child,
+
+00:00:44.490 --> 00:00:47.130
+a neural network can learn how to separate these images of
+
+00:00:47.130 --> 00:00:51.450
+shells based on similarities or differences in the given examples.
+
+00:00:51.450 --> 00:00:53.370
+After the separation step,
+
+00:00:53.370 --> 00:00:55.425
+if a network sees a new image,
+
+00:00:55.425 --> 00:00:56.895
+one it hasn't seen before,
+
+00:00:56.895 --> 00:01:01.220
+it sorts and classifies it based on which side of the line it falls.
+
+00:01:01.220 --> 00:01:04.155
+Realistically, data is often a lot more complex than this,
+
+00:01:04.155 --> 00:01:06.780
+but neural networks just layer separation on top of
+
+00:01:06.780 --> 00:01:11.640
+separation layer to create more complex boundaries and group all kinds of data.
+
+00:01:11.640 --> 00:01:15.000
+Next, we'll look at how a neural network can be trained to separate data.
+

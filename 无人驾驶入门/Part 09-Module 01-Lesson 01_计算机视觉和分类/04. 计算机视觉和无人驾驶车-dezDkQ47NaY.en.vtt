@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.585
+Traditionally, radars are used for long-range detections,
+
+00:00:03.585 --> 00:00:06.384
+while cameras are used for rich sensory inputs.
+
+00:00:06.384 --> 00:00:09.464
+When it comes to sensor configurations for self driving cars,
+
+00:00:09.464 --> 00:00:10.935
+we have to note the details that their in.
+
+00:00:10.935 --> 00:00:14.640
+Lidars and radars are what are known as active sensors.
+
+00:00:14.640 --> 00:00:17.894
+That is, they sense the environment based on transmissions of energy.
+
+00:00:17.894 --> 00:00:20.713
+Cameras on the other hand, are passive sensors.
+
+00:00:20.713 --> 00:00:25.149
+They can only sense the environment based on energy photons already in the scene.
+
+00:00:25.149 --> 00:00:26.639
+These sensory details have
+
+00:00:26.640 --> 00:00:29.839
+serious repercussions on the type of algorithms we end up using.
+
+00:00:29.839 --> 00:00:32.380
+Computer vision has many powerful tools.
+
+00:00:32.380 --> 00:00:37.080
+The part of good design also means knowing what not to do even though it's possible.
+
+00:00:37.079 --> 00:00:38.969
+Furthermore, computer vision should not
+
+00:00:38.969 --> 00:00:41.939
+necessarily be associated with camera images only.
+
+00:00:41.939 --> 00:00:45.765
+It is possible to also construct lidar images with your lidar sensor.
+
+00:00:45.765 --> 00:00:47.445
+Thereby, giving you measured depth,
+
+00:00:47.445 --> 00:00:51.000
+but also with classify pixels. Here are some results.
+

@@ -1,0 +1,208 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.435
+Now we have created a complete classifier that takes in
+
+00:00:03.435 --> 00:00:08.029
+an RGB image and outputs a predicted label for any image.
+
+00:00:08.029 --> 00:00:11.039
+The next step is to look at the accuracy of our model.
+
+00:00:11.039 --> 00:00:16.864
+The accuracy of any classification model is found by comparing predicted and true labels.
+
+00:00:16.864 --> 00:00:19.214
+If the predicted label matches the true label,
+
+00:00:19.214 --> 00:00:21.570
+then this is a correctly classified image.
+
+00:00:21.570 --> 00:00:23.579
+If not, it is misclassified.
+
+00:00:23.579 --> 00:00:25.949
+The accuracy is given by the number of
+
+00:00:25.949 --> 00:00:29.320
+correctly classified images over the total number of images.
+
+00:00:29.320 --> 00:00:32.085
+And since we are using a pretty simple brightness feature here,
+
+00:00:32.085 --> 00:00:35.804
+we may not expect this classifier to be 100 percent accurate.
+
+00:00:35.804 --> 00:00:38.850
+We will also be testing our classifier on new images.
+
+00:00:38.850 --> 00:00:41.189
+This is called a test set of data,
+
+00:00:41.189 --> 00:00:44.489
+and test data is previously unseen image data.
+
+00:00:44.490 --> 00:00:46.679
+The data you have seen and that you use to
+
+00:00:46.679 --> 00:00:49.375
+help build a classifier is called training data.
+
+00:00:49.375 --> 00:00:52.064
+In training data, are images like these.
+
+00:00:52.064 --> 00:00:56.129
+The idea in creating these two sets training and test is to have one set that
+
+00:00:56.130 --> 00:01:00.830
+you can analyze and learn from and one that you can actually test your classifier on.
+
+00:01:00.829 --> 00:01:02.969
+You could imagine creating a classifier that can
+
+00:01:02.969 --> 00:01:05.670
+classify all of these training images correctly,
+
+00:01:05.670 --> 00:01:09.840
+but you actually want to build a classifier that recognizes general patterns and
+
+00:01:09.840 --> 00:01:14.560
+data so that when it is faced with a real world scenario, it will still work.
+
+00:01:14.560 --> 00:01:17.850
+And so, we will load in a new test set of data to
+
+00:01:17.849 --> 00:01:21.324
+see how a classification model might work in the real world,
+
+00:01:21.325 --> 00:01:24.674
+and we'll use this to determine the accuracy of the model.
+
+00:01:24.674 --> 00:01:27.435
+We load in the test images and standardize them,
+
+00:01:27.435 --> 00:01:31.950
+and we finally shuffle them so that the order will not play a role in testing accuracy.
+
+00:01:31.950 --> 00:01:33.945
+So, to determine the accuracy,
+
+00:01:33.944 --> 00:01:36.204
+I am going to iterate through this test data,
+
+00:01:36.204 --> 00:01:38.525
+and I am going to do this with a function called,
+
+00:01:38.525 --> 00:01:42.644
+get_misclassified_images, and I will pass in my test images.
+
+00:01:42.644 --> 00:01:46.289
+I will start with an empty list misclassified images and labels,
+
+00:01:46.290 --> 00:01:49.660
+and I'll iterate through each image in our test images.
+
+00:01:49.659 --> 00:01:51.390
+I'll extract the true data,
+
+00:01:51.390 --> 00:01:53.424
+the image and its true label,
+
+00:01:53.424 --> 00:01:56.069
+and I will run a classifier code to get
+
+00:01:56.069 --> 00:02:01.049
+a predicted label using our estimate label function and passing in the image.
+
+00:02:01.049 --> 00:02:02.534
+So for any image, we are using
+
+00:02:02.534 --> 00:02:06.984
+our classification code to produce a predicted label for that image.
+
+00:02:06.984 --> 00:02:10.134
+Then, I'll compare the predicted label and the true label.
+
+00:02:10.134 --> 00:02:12.849
+If these matched, this image is classified correctly.
+
+00:02:12.849 --> 00:02:14.155
+But if they do not match,
+
+00:02:14.155 --> 00:02:16.155
+this image has been misclassified,
+
+00:02:16.155 --> 00:02:19.060
+and I'll add the misclassified Images that predicted the end
+
+00:02:19.060 --> 00:02:23.069
+their true labels to a list called, misclassified_images_labels.
+
+00:02:23.069 --> 00:02:24.655
+So again, I'm appending the image,
+
+00:02:24.655 --> 00:02:27.379
+its predicted label, and its true label.
+
+00:02:27.379 --> 00:02:32.069
+Finally, our trim this list of all our misclassified images and their labels.
+
+00:02:32.069 --> 00:02:35.109
+Next, I'll do my accuracy calculations.
+
+00:02:35.110 --> 00:02:38.025
+First, I'll run this function, get_misclassified_images,
+
+00:02:38.025 --> 00:02:40.605
+on our standardized test list of images,
+
+00:02:40.604 --> 00:02:45.514
+and I'll store all them as classified images and labels in a list, Misclassified.
+
+00:02:45.514 --> 00:02:48.179
+Then I am going to store the total number of images
+
+00:02:48.180 --> 00:02:51.189
+by getting the length of our standardized test list.
+
+00:02:51.189 --> 00:02:53.669
+The number of correctly classified images will be
+
+00:02:53.669 --> 00:02:57.780
+this total number minus the number of misclassified Images.
+
+00:02:57.780 --> 00:03:01.185
+Finally, we can calculate the accuracy, which as you recall,
+
+00:03:01.185 --> 00:03:06.379
+is our number of correctly classified images over our total number of images,
+
+00:03:06.379 --> 00:03:08.599
+then I am going to print these stats app.
+
+00:03:08.599 --> 00:03:14.419
+And if we run this, we get .925 or 92.5 percent accuracy.
+
+00:03:14.419 --> 00:03:15.674
+That is actually not bad.
+
+00:03:15.675 --> 00:03:18.895
+But with more features, I bet you could improve this algorithm.
+
+00:03:18.895 --> 00:03:20.575
+And to see how to improve,
+
+00:03:20.574 --> 00:03:22.169
+it is useful to take a look at
+
+00:03:22.169 --> 00:03:26.314
+the misclassified Images and what they were mistakenly labeled as,
+
+00:03:26.314 --> 00:03:29.129
+and it will be up to you to look at these images and
+
+00:03:29.129 --> 00:03:32.000
+think about how to improve the classification model.
+

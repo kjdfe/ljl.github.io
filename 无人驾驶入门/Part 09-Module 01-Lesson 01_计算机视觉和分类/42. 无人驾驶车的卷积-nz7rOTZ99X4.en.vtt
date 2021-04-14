@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.910
+So what are kernels and convolutions and how do
+
+00:00:02.910 --> 00:00:05.620
+they relate to features extracted from an image?
+
+00:00:05.620 --> 00:00:08.099
+To answer that, we first have to understand how
+
+00:00:08.099 --> 00:00:10.919
+information is intrinsically represented in images.
+
+00:00:10.919 --> 00:00:12.494
+And to understand that,
+
+00:00:12.494 --> 00:00:16.320
+we need to understand what we refer to as the frequency content of images.
+
+00:00:16.320 --> 00:00:19.664
+Images however, are just another form of natural signals.
+
+00:00:19.664 --> 00:00:25.079
+Sounds are also natural signals and all signals have what we call frequency content.
+
+00:00:25.079 --> 00:00:28.535
+Now this is very similar to how we think of frequencies in a musical sense.
+
+00:00:28.536 --> 00:00:31.530
+High frequencies and sounds are made by dolphins squeaks for example,
+
+00:00:31.530 --> 00:00:35.515
+versus let's say low frequencies made by a bass.
+
+00:00:35.515 --> 00:00:37.228
+The same applies to images.
+
+00:00:37.228 --> 00:00:39.780
+Rapidly high changing pixel values like those
+
+00:00:39.780 --> 00:00:42.390
+found between the edges of objects correspond to
+
+00:00:42.390 --> 00:00:44.174
+high frequencies whereas say
+
+00:00:44.174 --> 00:00:48.839
+a slowly changing and blurry part of an image will correspond to lower frequencies.
+
+00:00:48.840 --> 00:00:52.010
+It also turns out that a lot of important information relevant to
+
+00:00:52.009 --> 00:00:55.784
+good pattern recognition is encoded in the edges between objects,
+
+00:00:55.784 --> 00:00:59.759
+hence the high frequency content of those parts of the images.
+
+00:00:59.759 --> 00:01:03.549
+So how do we extract those edges and thus high frequency components?
+
+00:01:03.549 --> 00:01:07.614
+Well, specific kernels correspond to specific features of images.
+
+00:01:07.614 --> 00:01:12.284
+That is to say, specific kernels can extract specific features of images.
+
+00:01:12.284 --> 00:01:16.244
+So for example, if you have an edge kernel such as say, Roberts cross,
+
+00:01:16.245 --> 00:01:19.109
+we simply convolve it with an image and in doing so,
+
+00:01:19.109 --> 00:01:22.510
+we're able to create a new image that has all those edges extracted.
+

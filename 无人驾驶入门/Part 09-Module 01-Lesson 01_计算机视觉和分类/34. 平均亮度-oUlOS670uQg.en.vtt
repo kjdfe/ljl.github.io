@@ -1,0 +1,205 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.720
+Your first steps in building a day and night image classifier or to
+
+00:00:03.720 --> 00:00:07.865
+visualize the input images and standardize them to be the same size.
+
+00:00:07.865 --> 00:00:12.660
+To do that, we imported our usual resources and loaded the image datasets.
+
+00:00:12.660 --> 00:00:17.454
+And we created a standardized list of all the images and their labels.
+
+00:00:17.454 --> 00:00:20.104
+Finally, we could visualize the standardized data.
+
+00:00:20.105 --> 00:00:25.045
+Here, I'm selecting the first image in our standardized list and its label.
+
+00:00:25.045 --> 00:00:28.505
+I then display the selected image and some information about it.
+
+00:00:28.504 --> 00:00:32.365
+You can see its dimensions and its label, one for day.
+
+00:00:32.365 --> 00:00:35.010
+And finally, we're ready to get all of these images and start
+
+00:00:35.009 --> 00:00:37.989
+separating them into two classes, day and night.
+
+00:00:37.990 --> 00:00:41.960
+We'll separate day and night images based on the level of average brightness.
+
+00:00:41.960 --> 00:00:44.070
+This will be a single value and notice that
+
+00:00:44.070 --> 00:00:47.609
+day images have a higher average brightness than night images.
+
+00:00:47.609 --> 00:00:49.979
+Now, to calculate the average brightness of an image,
+
+00:00:49.979 --> 00:00:52.394
+we'll be using HSV colorspace.
+
+00:00:52.395 --> 00:00:54.965
+Specifically, we'll use the value channel,
+
+00:00:54.965 --> 00:00:56.753
+which is a measure of brightness,
+
+00:00:56.753 --> 00:00:59.965
+and add up the pixel values in the value channel.
+
+00:00:59.965 --> 00:01:02.250
+Then, we'll divide that sum by the area of
+
+00:01:02.250 --> 00:01:05.340
+the image to get the average value of the image.
+
+00:01:05.340 --> 00:01:08.579
+So, first, I'll convert a test image to HSV colorspace.
+
+00:01:08.579 --> 00:01:10.739
+I want to look at a couple of day images and a couple of
+
+00:01:10.739 --> 00:01:13.734
+night images to find the differences between the two.
+
+00:01:13.734 --> 00:01:17.734
+In this example, I'm plotting the 'H,' 'S,' and 'V' channels individually.
+
+00:01:17.734 --> 00:01:21.144
+So here's a day image and the colored channels 'H,' 'S,' and 'V'.
+
+00:01:21.144 --> 00:01:24.622
+We can see the 'V' channel is especially high in the sky,
+
+00:01:24.623 --> 00:01:30.090
+and this classification is based on assuming that a day sky is brighter than a night sky.
+
+00:01:30.090 --> 00:01:33.810
+So our next step will be to find the average brightness using the value channel.
+
+00:01:33.810 --> 00:01:37.715
+Now, I'm going to define a function for finding the average value of an image.
+
+00:01:37.715 --> 00:01:40.939
+This function, "average brightness," will take in an rgb_image.
+
+00:01:40.939 --> 00:01:44.399
+And the first step will be to convert it to HSV colorspace.
+
+00:01:44.400 --> 00:01:48.555
+Next, I want to add up all of the pixel values in the value channel,
+
+00:01:48.555 --> 00:01:51.480
+and I'll do that using numpy sum function.
+
+00:01:51.480 --> 00:01:56.350
+This will accept the 'V' channel of our HSV image and adds up all of the pixel values.
+
+00:01:56.349 --> 00:01:58.229
+Then I'll calculate the area of my image,
+
+00:01:58.230 --> 00:02:00.410
+which I know is 600 by 1100,
+
+00:02:00.409 --> 00:02:02.299
+since we standardized each image.
+
+00:02:02.299 --> 00:02:04.530
+And to find the average brightness of the image,
+
+00:02:04.530 --> 00:02:07.739
+we divide this brightness sum by the area of our image.
+
+00:02:07.739 --> 00:02:09.870
+Then this function will return the average.
+
+00:02:09.870 --> 00:02:11.715
+So this gives us one value,
+
+00:02:11.715 --> 00:02:14.689
+the average brightness or the average value of the image.
+
+00:02:14.689 --> 00:02:16.199
+Our next step will be to look at
+
+00:02:16.199 --> 00:02:19.254
+day and night images and their average brightness values.
+
+00:02:19.254 --> 00:02:22.289
+The goal will be to look at their average brightness and see if we can
+
+00:02:22.289 --> 00:02:25.879
+find a value that clearly separates day and night images.
+
+00:02:25.879 --> 00:02:28.590
+So let's first look at our standardized image number zero,
+
+00:02:28.590 --> 00:02:30.360
+which we know is day image.
+
+00:02:30.360 --> 00:02:33.795
+We see that its average brightness is around 175.
+
+00:02:33.794 --> 00:02:35.869
+Now, let's look at a night image.
+
+00:02:35.870 --> 00:02:39.944
+This is a pretty dark image and the average brightness value is just about 35.
+
+00:02:39.944 --> 00:02:42.495
+And we want to look at a variety of these images.
+
+00:02:42.495 --> 00:02:46.539
+Here's another day image and its average brightness is around 143.
+
+00:02:46.539 --> 00:02:49.034
+Now, with just a couple of these values in mind,
+
+00:02:49.034 --> 00:02:50.909
+you might be thinking about how you can use
+
+00:02:50.909 --> 00:02:54.799
+the average brightness to predict a label for each image,
+
+00:02:54.800 --> 00:02:56.814
+zero for night or one for day.
+
+00:02:56.814 --> 00:02:59.425
+And it will be up to you to find that threshold.
+
+00:02:59.425 --> 00:03:02.535
+The next step will be to feed this data into a classifier.
+
+00:03:02.534 --> 00:03:05.759
+And the classifier might be as simple as a conditional statement that
+
+00:03:05.759 --> 00:03:09.664
+checks if the average brightness is above some threshold that you define.
+
+00:03:09.664 --> 00:03:12.854
+Now, this average brightness value is considered a feature.
+
+00:03:12.854 --> 00:03:15.810
+And a feature is just a measurable component of an image
+
+00:03:15.810 --> 00:03:18.659
+that ideally helps distinguish it from other images.
+
+00:03:18.659 --> 00:03:22.370
+And we'll soon learn more about testing the accuracy of a model like this.
+
+00:03:22.370 --> 00:03:24.270
+Next, we'll learn a bit more about features
+
+00:03:24.270 --> 00:03:26.400
+and why they are useful for self-driving cars.
+

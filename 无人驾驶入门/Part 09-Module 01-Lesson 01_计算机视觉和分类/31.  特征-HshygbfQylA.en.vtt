@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.355
+When you approach a classification challenge,
+
+00:00:02.355 --> 00:00:05.424
+you may ask yourself, "How can I tell these images apart?
+
+00:00:05.424 --> 00:00:08.529
+What traits do these images have that differentiate them?
+
+00:00:08.529 --> 00:00:11.774
+And how can I write code to represent their differences?"
+
+00:00:11.775 --> 00:00:16.844
+Adding onto that, how can I ignore irrelevant or overly similar parts of these images?
+
+00:00:16.844 --> 00:00:20.204
+You may have thought about a number of distinguishing features.
+
+00:00:20.204 --> 00:00:23.529
+Day images are much brighter generally than night images.
+
+00:00:23.530 --> 00:00:26.700
+Night images also have these really bright small spots,
+
+00:00:26.699 --> 00:00:31.199
+so the brightness over the whole image varies a lot more than the day images.
+
+00:00:31.199 --> 00:00:35.399
+There's also a lot more of a gray blue color palette in the day images.
+
+00:00:35.399 --> 00:00:39.384
+There are lots of measurable traits that distinguish these two types of images,
+
+00:00:39.384 --> 00:00:43.094
+and these measurable traits are referred to as features.
+
+00:00:43.094 --> 00:00:46.439
+A feature is a measurable component of an image or object that's
+
+00:00:46.439 --> 00:00:50.735
+ideally unique and recognizable under varying conditions,
+
+00:00:50.735 --> 00:00:53.219
+like under a varying light or camera angles.
+
+00:00:53.219 --> 00:00:55.439
+And we'll learn more about features soon,
+
+00:00:55.439 --> 00:00:57.239
+but we're getting ahead of ourselves.
+
+00:00:57.240 --> 00:00:59.310
+To extract features from any image,
+
+00:00:59.310 --> 00:01:02.130
+we have to pre-process and standardize them.
+
+00:01:02.130 --> 00:01:04.650
+Next, we'll take a look at the standardization steps we
+
+00:01:04.650 --> 00:01:07.380
+should take before we can consistently extract features.
+

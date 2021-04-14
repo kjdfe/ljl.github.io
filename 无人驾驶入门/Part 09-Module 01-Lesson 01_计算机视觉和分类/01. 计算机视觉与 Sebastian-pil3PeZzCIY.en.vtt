@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.390
+Now, we come to the real magic in this course.
+
+00:00:02.390 --> 00:00:03.930
+One of my favorite topics,
+
+00:00:03.930 --> 00:00:06.530
+which is computer vision, making self driving car see.
+
+00:00:06.530 --> 00:00:10.065
+So when you open your eyes,
+
+00:00:10.064 --> 00:00:13.830
+then somehow magically, you understand what a coffee cup is,
+
+00:00:13.830 --> 00:00:16.339
+what a smartphone is, what Sebastian is.
+
+00:00:16.339 --> 00:00:19.940
+Somehow your brain doesn't tell you the raw pixel information.
+
+00:00:19.940 --> 00:00:22.755
+It tells you all the options in the scene.
+
+00:00:22.754 --> 00:00:26.984
+Now, self driving cars unfortunately, are bit disadvantaged.
+
+00:00:26.984 --> 00:00:29.144
+They have a camera just like this one over here,
+
+00:00:29.144 --> 00:00:31.169
+and the camera produces an image,
+
+00:00:31.170 --> 00:00:32.815
+like this image over here,
+
+00:00:32.814 --> 00:00:35.669
+and the image is a big matrix of numbers.
+
+00:00:35.670 --> 00:00:39.000
+There's a pixel in the top left corner, that's pixel 11.
+
+00:00:39.000 --> 00:00:41.054
+And then, the pixel next to it, pixel 21, and pixel 31,
+
+00:00:41.054 --> 00:00:43.944
+and so on, till pixel whatever, 1024,
+
+00:00:43.944 --> 00:00:47.385
+whatever the number is.
+
+00:00:47.384 --> 00:00:50.009
+And each of these now have a coloration.
+
+00:00:50.009 --> 00:00:52.004
+They have a amount of red,
+
+00:00:52.005 --> 00:00:53.920
+an amount of blue, an amount of green.
+
+00:00:53.920 --> 00:00:55.530
+Okay, that's all you get. Okay, so,
+
+00:00:55.530 --> 00:00:57.505
+you won't get this nice. Oh my God!
+
+00:00:57.505 --> 00:01:00.570
+There's obviously some reflector over here in the image,
+
+00:01:00.570 --> 00:01:02.820
+you will get those pixel matrix.
+
+00:01:02.820 --> 00:01:05.099
+And computer vision is all about extracting from
+
+00:01:05.099 --> 00:01:09.899
+that vast matrix of image data the objects that you can see.
+
+00:01:09.900 --> 00:01:12.125
+So, picture this.
+
+00:01:12.125 --> 00:01:14.234
+Now, you got to get an image of a stop sign.
+
+00:01:14.234 --> 00:01:15.769
+And for each of these numbers that appear,
+
+00:01:15.769 --> 00:01:17.784
+you get the right coloration number.
+
+00:01:17.784 --> 00:01:21.030
+And you have to see where in the image is the stop sign.
+
+00:01:21.030 --> 00:01:22.500
+Not yourself, not your brain,
+
+00:01:22.500 --> 00:01:23.700
+not your visual cortex,
+
+00:01:23.700 --> 00:01:26.000
+but your piece of computer software.
+

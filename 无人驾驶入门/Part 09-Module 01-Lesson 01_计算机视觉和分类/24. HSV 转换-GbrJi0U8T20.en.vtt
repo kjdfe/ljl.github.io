@@ -1,0 +1,166 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.849
+We'll be going through an image processing example in RGB and HSV color space.
+
+00:00:05.849 --> 00:00:10.019
+HSV color space isolates the Value or V component of each pixel in
+
+00:00:10.019 --> 00:00:11.969
+an image and this is the component that
+
+00:00:11.970 --> 00:00:15.300
+varies the most under different lighting conditions.
+
+00:00:15.300 --> 00:00:18.600
+The H or Hue channel stays fairly consistent under shadow or
+
+00:00:18.600 --> 00:00:21.179
+excessive brightness and if we rely mainly on
+
+00:00:21.179 --> 00:00:23.939
+this channel and discard the information in the V channel,
+
+00:00:23.940 --> 00:00:26.310
+we should be able to detect colored objects like
+
+00:00:26.309 --> 00:00:31.140
+this green screen background more reliably than an RGB color space.
+
+00:00:31.140 --> 00:00:32.280
+So, in this notebook,
+
+00:00:32.280 --> 00:00:36.230
+I've imported the usual resources and read in an RGB image.
+
+00:00:36.229 --> 00:00:38.924
+It's our green screen car, only this time,
+
+00:00:38.924 --> 00:00:43.304
+it's lit unevenly, with shadow and areas of varying brightness.
+
+00:00:43.304 --> 00:00:45.630
+And I'll try to mask this green area looking at
+
+00:00:45.630 --> 00:00:50.370
+both RGB color space and HSV to see what works in each case.
+
+00:00:50.369 --> 00:00:53.729
+Right now, each pixel in this image has an x and y value
+
+00:00:53.729 --> 00:00:57.294
+for its position and RGB values for its color.
+
+00:00:57.295 --> 00:01:01.914
+The first thing I'll do is recreate the RGB threshold that you've seen previously.
+
+00:01:01.914 --> 00:01:03.719
+So, to go over the steps again,
+
+00:01:03.719 --> 00:01:07.875
+I create lower green and upper green thresholds in RGB color space.
+
+00:01:07.875 --> 00:01:11.969
+I create a mask using cv2.inRange and then I actually
+
+00:01:11.969 --> 00:01:16.361
+mask the portion of the image where the mask is not equal to zero where it's white,
+
+00:01:16.361 --> 00:01:18.060
+and I'll display the image.
+
+00:01:18.060 --> 00:01:22.025
+Now this is using the exact same thresholds that we used in the previous case.
+
+00:01:22.025 --> 00:01:23.490
+Only this time, you can see that,
+
+00:01:23.489 --> 00:01:24.800
+because of the shadow,
+
+00:01:24.801 --> 00:01:28.090
+this only masks about half of the green screen background.
+
+00:01:28.090 --> 00:01:31.930
+Let's see if we can do a little better in HSV color space.
+
+00:01:31.930 --> 00:01:37.995
+First, I'll need to convert the image to HSV color space or use open cvCvtColor function,
+
+00:01:37.995 --> 00:01:43.454
+which is a color conversion function and I'll use the conversion code RGB to HSV.
+
+00:01:43.454 --> 00:01:45.704
+This will return a new converted image,
+
+00:01:45.704 --> 00:01:47.539
+which I'll just call HSV.
+
+00:01:47.540 --> 00:01:51.675
+Then I'll actually isolate each of these channels of colors so that I can visualize them.
+
+00:01:51.674 --> 00:01:53.334
+To isolate the Hue channel,
+
+00:01:53.334 --> 00:01:54.944
+I can just take the image array.
+
+00:01:54.944 --> 00:01:58.941
+I'll take all the x and y values in these first two array columns,
+
+00:01:58.941 --> 00:02:03.750
+then the zero index of the third column which is the hue value for each pixel.
+
+00:02:03.750 --> 00:02:05.760
+Similarly, for saturation and value,
+
+00:02:05.760 --> 00:02:09.090
+I'll take all the x and y coordinates of the image pixels and take
+
+00:02:09.090 --> 00:02:12.004
+the first and second index of the third column to get
+
+00:02:12.004 --> 00:02:15.127
+the saturation and value components of each pixel,
+
+00:02:15.127 --> 00:02:17.280
+then I can plot each of these colored channels
+
+00:02:17.280 --> 00:02:20.490
+in grey scale to see their relative intensities.
+
+00:02:20.490 --> 00:02:23.890
+Here are the three channels represented in grey scale intensity.
+
+00:02:23.889 --> 00:02:27.089
+The brighter pixels indicate higher values of Hue,
+
+00:02:27.090 --> 00:02:31.425
+Saturation or Value respectively and we can see that even in shadow,
+
+00:02:31.425 --> 00:02:33.460
+the hue level is pretty consistent.
+
+00:02:33.460 --> 00:02:38.780
+But the saturation and value components vary a lot more especially under shadow.
+
+00:02:38.780 --> 00:02:42.390
+Now, you know how to create color thresholds and mask an image.
+
+00:02:42.389 --> 00:02:45.691
+Next, it will be up to you to use this information
+
+00:02:45.692 --> 00:02:49.430
+and what you know about HSV color space to mask this image.
+
+00:02:49.430 --> 00:02:51.075
+I won't show you my exact values,
+
+00:02:51.074 --> 00:02:54.689
+but I did use the Hue channel of HSV color space to mask
+
+00:02:54.689 --> 00:02:59.000
+the green background for this image and you should be able to produce a similar result.
+

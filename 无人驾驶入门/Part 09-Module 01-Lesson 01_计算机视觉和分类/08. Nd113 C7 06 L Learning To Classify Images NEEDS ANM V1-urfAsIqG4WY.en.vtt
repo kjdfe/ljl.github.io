@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.248
+You've just seen a complete classification pipeline.
+
+00:00:03.248 --> 00:00:06.210
+For an image classifier starting with some input images,
+
+00:00:06.209 --> 00:00:09.390
+computer vision techniques are used to process those images and
+
+00:00:09.390 --> 00:00:13.589
+extract features like distinguishing colors or shapes in that image.
+
+00:00:13.589 --> 00:00:17.190
+Then a classifier looks at these features and outputs a class,
+
+00:00:17.190 --> 00:00:19.695
+which is a label that describes the image.
+
+00:00:19.695 --> 00:00:21.899
+A classifier should predict that images with
+
+00:00:21.899 --> 00:00:25.119
+similar shapes or colors have the same class.
+
+00:00:25.120 --> 00:00:28.200
+We usually tell a classification model what to look for.
+
+00:00:28.199 --> 00:00:30.300
+For example, say we're looking at a bunch of
+
+00:00:30.300 --> 00:00:33.359
+images and we want to classify them into two classes,
+
+00:00:33.359 --> 00:00:34.994
+"car" and "not car."
+
+00:00:34.994 --> 00:00:39.414
+To classify a car, we might write a program that looks for the different parts of a car,
+
+00:00:39.414 --> 00:00:41.875
+wheels, lights, windows, and so on.
+
+00:00:41.875 --> 00:00:43.770
+And then if those things are found,
+
+00:00:43.770 --> 00:00:46.060
+we'll classify an image as a "car."
+
+00:00:46.060 --> 00:00:48.640
+We decide what traits are important to look for.
+
+00:00:48.640 --> 00:00:51.024
+But there's another way to create a classifier,
+
+00:00:51.024 --> 00:00:52.755
+and that's with machine learning.
+
+00:00:52.755 --> 00:00:55.469
+Machine learning allows a computer to figure out things
+
+00:00:55.469 --> 00:00:58.560
+on its own by giving it lots of examples.
+
+00:00:58.560 --> 00:01:02.164
+So instead of telling a model what traits to look for, with machine learning,
+
+00:01:02.164 --> 00:01:04.379
+we'd just give it lots of images of cars and
+
+00:01:04.379 --> 00:01:08.864
+not cars and let it learn to recognize traits that differentiate them.
+
+00:01:08.864 --> 00:01:12.959
+It can learn to recognize wheels and windows and which classification algorithm is
+
+00:01:12.959 --> 00:01:18.179
+best for accurately classifying any given image as "car" or "not car."
+
+00:01:18.180 --> 00:01:20.430
+Now you might be wondering how exactly does
+
+00:01:20.430 --> 00:01:23.670
+a model like this learn to classify different images.
+
+00:01:23.670 --> 00:01:25.980
+Next, we'll look at how machine learning techniques can
+
+00:01:25.980 --> 00:01:29.000
+actually be trained to classify sets of images.
+

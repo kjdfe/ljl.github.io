@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.879
+Congratulations, you've really made it through a lot of
+
+00:00:02.879 --> 00:00:06.044
+material from probability to classification.
+
+00:00:06.044 --> 00:00:10.500
+In this lesson, you learned how to manually program a classifier step-by-step.
+
+00:00:10.500 --> 00:00:13.320
+First, by looking at a classification problem,
+
+00:00:13.320 --> 00:00:17.519
+and your images, and planning up a complete approach to a solution.
+
+00:00:17.519 --> 00:00:19.769
+These steps, include pre-processing images so
+
+00:00:19.769 --> 00:00:22.579
+that they could be further analyzed in the same way.
+
+00:00:22.579 --> 00:00:25.000
+This included changing color spaces.
+
+00:00:25.000 --> 00:00:28.289
+Then, we moved on to feature extraction in which you decided on
+
+00:00:28.289 --> 00:00:33.179
+distinguishing traits in each class of image and tried to isolate those features.
+
+00:00:33.179 --> 00:00:37.034
+Finally, you created a complete classifier that output a label or a class
+
+00:00:37.034 --> 00:00:41.875
+for any given image and analyzed your classification model to see its accuracy.
+
+00:00:41.875 --> 00:00:46.230
+Now, you're ready to build a more complex classifier and complete this program.
+
+00:00:46.229 --> 00:00:47.549
+Good luck and great.
+

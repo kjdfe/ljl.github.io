@@ -1,0 +1,181 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.149
+After exploring the day and night image data,
+
+00:00:03.149 --> 00:00:06.375
+you may have noticed a part of the data that we haven't yet gone over,
+
+00:00:06.375 --> 00:00:09.269
+a label associated with each image.
+
+00:00:09.269 --> 00:00:12.219
+So what exactly is a label and why do we need it?
+
+00:00:12.220 --> 00:00:15.600
+A label is kind of like a tag that's attached to
+
+00:00:15.599 --> 00:00:19.507
+a specific image and that tells you something about that image.
+
+00:00:19.507 --> 00:00:22.184
+You can think of a label sort of like a name tag.
+
+00:00:22.184 --> 00:00:27.699
+I wear a name tag to events when I meet new people and my name tag labels me as Cezanne.
+
+00:00:27.699 --> 00:00:30.554
+Now, an image can have multiple labels that describe it,
+
+00:00:30.554 --> 00:00:33.375
+which would be like if I had multiple labels like "human"
+
+00:00:33.375 --> 00:00:36.704
+or "wears glasses" that each described something about me.
+
+00:00:36.704 --> 00:00:40.295
+But for this lesson, we'll be working with one label per image.
+
+00:00:40.295 --> 00:00:43.320
+These labels separate the image data into classes,
+
+00:00:43.320 --> 00:00:46.155
+and classes are like general categories.
+
+00:00:46.155 --> 00:00:48.060
+So the label for me might be human,
+
+00:00:48.060 --> 00:00:52.844
+which is a category distinct from a label like a table or a car or any other thing,
+
+00:00:52.844 --> 00:00:55.829
+and it's more general than a label like Cezanne.
+
+00:00:55.829 --> 00:00:58.159
+So for the image datasets we work with,
+
+00:00:58.159 --> 00:01:01.004
+we should have as many labels as we have classes.
+
+00:01:01.005 --> 00:01:02.910
+In the case of our day and night images,
+
+00:01:02.909 --> 00:01:05.834
+we have two labels, day and night.
+
+00:01:05.834 --> 00:01:08.072
+Now, why do we need these labels?
+
+00:01:08.072 --> 00:01:10.739
+You can tell if an image is night or day but
+
+00:01:10.739 --> 00:01:14.489
+a computer cannot unless we tell it explicitly with a label.
+
+00:01:14.489 --> 00:01:16.859
+This becomes especially important when we're testing
+
+00:01:16.859 --> 00:01:19.775
+the accuracy of a classification model.
+
+00:01:19.775 --> 00:01:23.175
+A classifier takes in an image as input and should output
+
+00:01:23.174 --> 00:01:27.509
+a predicted label that tells us the predicted class of that image.
+
+00:01:27.510 --> 00:01:29.700
+Now, when we load in data like you've seen,
+
+00:01:29.700 --> 00:01:32.100
+we load in what are called the true labels,
+
+00:01:32.099 --> 00:01:36.074
+and the true label is just the correct label for that image.
+
+00:01:36.075 --> 00:01:38.780
+To check the accuracy of our classifier,
+
+00:01:38.780 --> 00:01:41.204
+we compare the predicted and true labels.
+
+00:01:41.204 --> 00:01:43.524
+If the true and predicted labels match,
+
+00:01:43.525 --> 00:01:45.705
+then we've classified the image correctly.
+
+00:01:45.704 --> 00:01:47.873
+But sometimes, the labels do not match,
+
+00:01:47.873 --> 00:01:50.159
+which means we've misclassified an image.
+
+00:01:50.159 --> 00:01:52.500
+After looking at many, many images,
+
+00:01:52.500 --> 00:01:57.359
+the accuracy of a classifier is defined as the number of correctly classified images,
+
+00:01:57.359 --> 00:02:00.037
+for which the predicted label matches the true label,
+
+00:02:00.037 --> 00:02:02.734
+divided by the total number of images.
+
+00:02:02.734 --> 00:02:08.460
+So say we tried to classify 100 total images and we correctly classified 81 of them,
+
+00:02:08.460 --> 00:02:11.355
+meaning we misclassified 19 of them.
+
+00:02:11.354 --> 00:02:15.719
+That would mean we'd have 0.81 or 81 percent accuracy.
+
+00:02:15.719 --> 00:02:18.120
+And we can only tell a computer to check the accuracy of
+
+00:02:18.120 --> 00:02:22.200
+a classifier when we have these predicted and true labels to compare.
+
+00:02:22.199 --> 00:02:23.939
+We can also learn from any mistakes
+
+00:02:23.939 --> 00:02:26.835
+the classifier makes as we'll see later in this lesson.
+
+00:02:26.835 --> 00:02:29.010
+As a note, it's good practice to use
+
+00:02:29.009 --> 00:02:32.879
+numerical labels instead of strings or categorical labels.
+
+00:02:32.879 --> 00:02:35.310
+Numbers are easier to track and compare.
+
+00:02:35.310 --> 00:02:37.875
+So for our day and night binary class example,
+
+00:02:37.875 --> 00:02:39.870
+instead of day and night labels,
+
+00:02:39.870 --> 00:02:43.670
+we'll use the numerical labels zero for night and one for day.
+
+00:02:43.669 --> 00:02:45.569
+Okay. Now you're familiar with
+
+00:02:45.569 --> 00:02:49.614
+the day and night image data and you know what a label is and why we use them.
+
+00:02:49.615 --> 00:02:51.030
+You're ready for the next steps.
+
+00:02:51.030 --> 00:02:54.775
+We'll be building a classification pipeline from start to end.
+
+00:02:54.775 --> 00:02:58.200
+Let's first brainstorm what steps we'll take to classify these images.
+

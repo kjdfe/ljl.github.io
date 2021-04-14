@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.500
+To help us learn about computer vision techniques and applications,
+
+00:00:03.500 --> 00:00:05.314
+we have with us an industry expert,
+
+00:00:05.315 --> 00:00:09.000
+Tarin Ziyaee, the co-founder and Chief Technology Officer of Voyage,
+
+00:00:09.000 --> 00:00:10.634
+a self driving car company.
+
+00:00:10.634 --> 00:00:12.359
+Hi. Thank you Suzanne.
+
+00:00:12.359 --> 00:00:14.849
+I'm very glad to be here and thank you for having me.
+
+00:00:14.849 --> 00:00:18.195
+Yes, computer vision is very close to our hearts here at Voyage.
+
+00:00:18.195 --> 00:00:20.129
+It's something that's ubiquitous in the industry,
+
+00:00:20.129 --> 00:00:21.730
+and also very important.
+
+00:00:21.730 --> 00:00:24.585
+The obvious uses of computer vision here are for example,
+
+00:00:24.585 --> 00:00:29.280
+the recognition of what's data traffic light is in or the detection of lanes, etc.
+
+00:00:29.280 --> 00:00:30.975
+One cool thing about computer vision though,
+
+00:00:30.975 --> 00:00:33.015
+is that those techniques that we will learn about
+
+00:00:33.015 --> 00:00:35.490
+will not only be used with the camera images,
+
+00:00:35.490 --> 00:00:37.776
+but also images created with other sensors.
+
+00:00:37.776 --> 00:00:40.170
+In fact, as long as your data has what we call
+
+00:00:40.170 --> 00:00:43.260
+spatial coherency you can use computer vision techniques.
+
+00:00:43.259 --> 00:00:46.170
+And spatially coherent data can be thought of
+
+00:00:46.170 --> 00:00:49.332
+as any data that predictably varies over space,
+
+00:00:49.332 --> 00:00:50.484
+like sound for example.
+
+00:00:50.484 --> 00:00:52.784
+If you hear sound from a speaker close up,
+
+00:00:52.784 --> 00:00:54.044
+it will sound very loud.
+
+00:00:54.045 --> 00:00:55.500
+But the farther you get away,
+
+00:00:55.500 --> 00:00:57.179
+the softer the sound will get.
+
+00:00:57.179 --> 00:01:00.530
+And so the volume of the sound can give you spatial information.
+
+00:01:00.530 --> 00:01:02.387
+That's right. So addition to cameras,
+
+00:01:02.387 --> 00:01:04.969
+self driving cars use sensors like sonar,
+
+00:01:04.969 --> 00:01:07.170
+radar and lidar, which use sound waves and
+
+00:01:07.170 --> 00:01:10.504
+electromagnetic waves to gather data about the car's surroundings.
+
+00:01:10.504 --> 00:01:13.000
+Next, let's take a closer look at these sensors.
+

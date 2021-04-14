@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.714
+All right. 101, Feature Extraction.
+
+00:00:02.714 --> 00:00:06.285
+Feature extraction is what your brain does with you all the time when you look, okay?
+
+00:00:06.285 --> 00:00:10.199
+So you get, in your retina you get the same coloration effects,
+
+00:00:10.199 --> 00:00:11.744
+not exactly the same matrix,
+
+00:00:11.744 --> 00:00:14.109
+but, for the time being, assume it's the same.
+
+00:00:14.109 --> 00:00:16.169
+And then your visual cortex,
+
+00:00:16.170 --> 00:00:20.175
+the brain tissue behind your eye all the way to the back of your brain,
+
+00:00:20.175 --> 00:00:26.035
+goes in and extracts higher and higher-level features all the way to, "This is Sebastian.
+
+00:00:26.035 --> 00:00:27.949
+This is a stop sign, " okay?
+
+00:00:27.949 --> 00:00:30.158
+In these layers of feature extraction,
+
+00:00:30.158 --> 00:00:31.379
+you become more and more abstract.
+
+00:00:31.379 --> 00:00:33.030
+You're going to start very simple right now,
+
+00:00:33.030 --> 00:00:37.079
+you're going to look at traffic scenes and extract simple features like,
+
+00:00:37.079 --> 00:00:38.699
+"Is it daytime, or is it nighttime?"
+
+00:00:38.700 --> 00:00:41.325
+And you'll be asked to develop, with a software that does this,
+
+00:00:41.325 --> 00:00:45.150
+as the very first step into making self-driving cars intelligent.
+
+00:00:45.149 --> 00:00:47.549
+And later on, we're going to give you traffic lights,
+
+00:00:47.549 --> 00:00:50.424
+and we'll have you extract features from traffic lights.
+
+00:00:50.424 --> 00:00:53.489
+It's not going to be all of self driving cars, but, hopefully,
+
+00:00:53.490 --> 00:00:55.700
+you understand how beautiful, and how imaginative,
+
+00:00:55.700 --> 00:00:59.000
+and how great it is to make a car see.
+
