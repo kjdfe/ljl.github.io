@@ -1,0 +1,226 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.889
+Immediately after this video,
+
+00:00:01.889 --> 00:00:04.339
+you're going to see something that looks like this.
+
+00:00:04.339 --> 00:00:06.275
+And this is called a Jupyter Notebook.
+
+00:00:06.275 --> 00:00:11.135
+It is a great tool for writing and documenting Python code.
+
+00:00:11.134 --> 00:00:13.934
+So, as you can see, this notebook is made of cells.
+
+00:00:13.935 --> 00:00:16.024
+And I've got a cell highlighted now,
+
+00:00:16.024 --> 00:00:20.304
+and I can use my arrow keys to navigate up and down to the cells.
+
+00:00:20.304 --> 00:00:22.439
+And this cell, as you can see here,
+
+00:00:22.440 --> 00:00:24.490
+is a markdown cell.
+
+00:00:24.489 --> 00:00:27.494
+And I don't want to talk too much about this except to say that markdown
+
+00:00:27.495 --> 00:00:30.660
+is a sort of fancy way to make text look a little nicer.
+
+00:00:30.660 --> 00:00:32.340
+So, sometimes you'll see
+
+00:00:32.340 --> 00:00:36.245
+these cells in this format and this can be a little bit annoying.
+
+00:00:36.244 --> 00:00:38.814
+And if you don't know what to do, it can be a big problem.
+
+00:00:38.814 --> 00:00:40.949
+Basically, this format is showing you the editing mode.
+
+00:00:40.950 --> 00:00:45.145
+So here, you can see the syntax for making something a header.
+
+00:00:45.145 --> 00:00:48.525
+And here, you can see the syntax for making something bold.
+
+00:00:48.524 --> 00:00:52.229
+If you ever wind up in this mode and you want to get back to the nicer looking mode.
+
+00:00:52.229 --> 00:00:53.789
+So just like control and enter,
+
+00:00:53.789 --> 00:00:55.079
+works in markdown cells.
+
+00:00:55.079 --> 00:00:56.664
+We can also look at a code cell.
+
+00:00:56.664 --> 00:01:00.435
+And here, we have a python comment followed by a print statement.
+
+00:01:00.435 --> 00:01:03.330
+And I can do control and enter here.
+
+00:01:03.329 --> 00:01:06.239
+And sure enough, it printed, "Hello World!"
+
+00:01:06.239 --> 00:01:08.515
+Now, there's actually another way you can run a cell and
+
+00:01:08.515 --> 00:01:11.125
+that's by pressing shift and enter.
+
+00:01:11.125 --> 00:01:15.930
+And that does the same thing except it advances your cursor down to the cell below.
+
+00:01:15.930 --> 00:01:17.360
+That's actually really nice.
+
+00:01:17.359 --> 00:01:20.295
+So, when you see a notebook like this one and you start at the top,
+
+00:01:20.295 --> 00:01:22.674
+you can just kind of advance through by pressing shift enter,
+
+00:01:22.674 --> 00:01:24.689
+shift enter, shift enter.
+
+00:01:24.689 --> 00:01:27.750
+And I'm going to let you play with this more on your own.
+
+00:01:27.750 --> 00:01:30.734
+But there are two important things I do want to say first.
+
+00:01:30.734 --> 00:01:33.239
+Number one: this is your workspace.
+
+00:01:33.239 --> 00:01:35.369
+You can do whatever you want in these notebooks.
+
+00:01:35.370 --> 00:01:38.130
+You will not cause any lasting damage.
+
+00:01:38.129 --> 00:01:39.239
+There's nothing to break.
+
+00:01:39.239 --> 00:01:42.119
+So, for example, I could go here and let's say,
+
+00:01:42.120 --> 00:01:44.230
+I want to delete every single cell for some reason.
+
+00:01:44.230 --> 00:01:47.730
+I'm going to press the D key twice to delete the cell.
+
+00:01:47.730 --> 00:01:51.570
+And I'm going to do that on every single one. All right.
+
+00:01:51.569 --> 00:01:53.229
+So, all my cells are gone.
+
+00:01:53.230 --> 00:01:56.594
+I could even save it.
+
+00:01:56.594 --> 00:01:57.959
+Now, you may think we've caused
+
+00:01:57.959 --> 00:02:00.474
+lasting damage and we'll never be able to return to this exercise.
+
+00:02:00.474 --> 00:02:01.659
+But that is not true.
+
+00:02:01.659 --> 00:02:05.704
+Down here in the bottom, we select Menu and then go to reset data.
+
+00:02:05.704 --> 00:02:07.859
+And it looks ominous, but it's okay.
+
+00:02:07.859 --> 00:02:10.564
+We just type in Reset data to confirm.
+
+00:02:10.564 --> 00:02:13.229
+The reason it's so hard to delete is because,
+
+00:02:13.229 --> 00:02:14.394
+you know, this is your workspace.
+
+00:02:14.395 --> 00:02:16.515
+You may have a lot of work on here that you don't want to delete.
+
+00:02:16.514 --> 00:02:19.594
+So, we just want to be sure that you don't do anything you don't want to do.
+
+00:02:19.594 --> 00:02:23.580
+But sure enough, after we reset data, we're back to where we started.
+
+00:02:23.580 --> 00:02:24.895
+So, that's the first thing I wanted to say.
+
+00:02:24.895 --> 00:02:26.600
+You cannot cause lasting damage.
+
+00:02:26.599 --> 00:02:28.409
+And the second I want to say is that,
+
+00:02:28.409 --> 00:02:30.539
+again, this is really your workspace.
+
+00:02:30.539 --> 00:02:32.939
+You can even create new files. You can do whatever you want.
+
+00:02:32.939 --> 00:02:35.639
+So, I'm going to create a new notebook in Python 3.
+
+00:02:35.639 --> 00:02:39.074
+Maybe I'll call it math_practice.
+
+00:02:39.074 --> 00:02:41.629
+And I can play around Python code.
+
+00:02:41.629 --> 00:02:43.984
+Let's try two plus two.
+
+00:02:43.985 --> 00:02:45.745
+Sure enough, it's equal to four.
+
+00:02:45.745 --> 00:02:50.230
+And I can browse all of my files by clicking on this Jupyter logo.
+
+00:02:50.229 --> 00:02:54.750
+Oh, it's prompting me to stay because I haven't saved my changes. That's good.
+
+00:02:54.750 --> 00:02:58.245
+Let me go through that process of saving the changes.
+
+00:02:58.245 --> 00:03:00.560
+And I can click on the Jupyter logo again.
+
+00:03:00.560 --> 00:03:02.810
+And now, I can see all of my files,
+
+00:03:02.810 --> 00:03:04.905
+math_practice and playground are both here.
+
+00:03:04.905 --> 00:03:08.694
+So I can click on playground and I'm back here.
+
+00:03:08.694 --> 00:03:10.194
+All right. I just wanted to show you those few things.
+
+00:03:10.194 --> 00:03:12.959
+You'll learn more as you play around in this programming playground and you'll
+
+00:03:12.960 --> 00:03:16.000
+learn more about how to use this tool throughout the end of the degree. Have fun.
+
