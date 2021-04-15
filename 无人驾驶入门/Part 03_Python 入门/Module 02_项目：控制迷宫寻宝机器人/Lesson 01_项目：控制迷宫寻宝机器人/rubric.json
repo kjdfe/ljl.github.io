@@ -1,0 +1,239 @@
+{
+  "id": 2503,
+  "project_id": 471,
+  "upload_types": [
+    "repo",
+    "zip"
+  ],
+  "file_filter_regex": "\\A(?!(((.*/)?(__MACOSX|\\.git|node_modules|bower_components|jspm_packages|\\.idea|build|.ipynb_checkpoints|\\.Trash-0|logs)(\\Z|/))))((.*\\.(js|css|py|html|htm|txt|md|markdown|sql|swift|java|gradle|xml|rst|yml|yaml|rmd|pdf|docx)\\Z)|((.*/)?(README|Readme|readme|Makefile)\\Z))",
+  "nomination_eligible": false,
+  "stand_out": "",
+  "hide_criteria": false,
+  "created_at": "2019-02-18T03:06:07.675Z",
+  "updated_at": "2019-03-27T06:23:57.115Z",
+  "hashtag": "",
+  "max_upload_size_mb": 500,
+  "estimated_sla": null,
+  "project_assistant_enabled": false,
+  "checkmate_enabled": false,
+  "checkmate_metadata": null,
+  "available_for_cert_project": false,
+  "classroom_node_id": 734632,
+  "classroom_project_key": "010e8eee-3608-4df0-9b3a-2d823844d825",
+  "language": "zh-cn",
+  "ndkeys": [
+    "nd089-cn-basic-vip",
+    "nd089-cn-basic"
+  ],
+  "coursekeys": [],
+  "sections": [
+    {
+      "id": 5371,
+      "name": "分析模拟环境的数据",
+      "created_at": "2019-02-20T03:29:30.033Z",
+      "updated_at": "2019-02-20T03:30:14.092Z",
+      "deleted_at": null,
+      "position": 0,
+      "rubric_id": 2503,
+      "rubric_items": [
+        {
+          "id": 15495,
+          "section_id": 5371,
+          "passed_description": "任务1: 正确获取模拟环境的长和宽与模拟环境中第3行第6列元素",
+          "exceeded_description": null,
+          "created_at": "2019-02-20T03:30:14.772Z",
+          "updated_at": "2019-02-20T03:31:25.740Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "任务1",
+          "exceedable": false
+        },
+        {
+          "id": 15496,
+          "section_id": 5371,
+          "passed_description": "任务2: 正确计算模拟环境中，第一行和第三列的障碍物个数。",
+          "exceeded_description": null,
+          "created_at": "2019-02-20T03:30:17.247Z",
+          "updated_at": "2019-02-20T03:31:25.745Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "任务2",
+          "exceedable": false
+        },
+        {
+          "id": 15497,
+          "section_id": 5371,
+          "passed_description": "任务3: 正确创建并赋值loc_map字典。",
+          "exceeded_description": null,
+          "created_at": "2019-02-20T03:30:20.002Z",
+          "updated_at": "2019-02-20T03:31:25.748Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "任务3",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 5372,
+      "name": "控制机器人行动",
+      "created_at": "2019-02-20T03:29:32.398Z",
+      "updated_at": "2019-02-20T03:30:14.101Z",
+      "deleted_at": null,
+      "position": 1,
+      "rubric_id": 2503,
+      "rubric_items": [
+        {
+          "id": 15498,
+          "section_id": 5372,
+          "passed_description": "任务4: 正确实现`is_move_valid_special`的函数",
+          "exceeded_description": null,
+          "created_at": "2019-02-20T03:31:55.566Z",
+          "updated_at": "2019-02-20T03:33:35.281Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "任务4",
+          "exceedable": false
+        },
+        {
+          "id": 15499,
+          "section_id": 5372,
+          "passed_description": "任务5: 正确实现`is_move_valid`函数",
+          "exceeded_description": null,
+          "created_at": "2019-02-20T03:31:57.658Z",
+          "updated_at": "2019-02-20T03:33:35.284Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "任务5",
+          "exceedable": false
+        },
+        {
+          "id": 15500,
+          "section_id": 5372,
+          "passed_description": "任务6: 学生正确回答`env_data`这个变量在任务4和任务5中的不同。",
+          "exceeded_description": null,
+          "created_at": "2019-02-20T03:32:00.577Z",
+          "updated_at": "2019-02-20T03:33:35.288Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "任务6",
+          "exceedable": false
+        },
+        {
+          "id": 15501,
+          "section_id": 5372,
+          "passed_description": "任务7: 正确编写一个名为 `valid_actions` 的函数。",
+          "exceeded_description": null,
+          "created_at": "2019-02-20T03:32:02.876Z",
+          "updated_at": "2019-02-20T03:33:35.292Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 3,
+          "criteria": "任务7",
+          "exceedable": false
+        },
+        {
+          "id": 15502,
+          "section_id": 5372,
+          "passed_description": "任务8: 正确编写`move_robot`函数。",
+          "exceeded_description": null,
+          "created_at": "2019-02-20T03:32:04.140Z",
+          "updated_at": "2019-02-20T03:33:35.295Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 3,
+          "criteria": "任务8",
+          "exceedable": false
+        },
+        {
+          "id": 15503,
+          "section_id": 5372,
+          "passed_description": "任务9: 正确编写`random_choose_actions`函数。",
+          "exceeded_description": null,
+          "created_at": "2019-02-20T03:32:05.981Z",
+          "updated_at": "2019-02-20T03:33:35.298Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 4,
+          "criteria": "任务9",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 5373,
+      "name": "（可选）控制机器人走到终点",
+      "created_at": "2019-02-20T03:29:34.068Z",
+      "updated_at": "2019-02-20T03:30:14.107Z",
+      "deleted_at": null,
+      "position": 2,
+      "rubric_id": 2503,
+      "rubric_items": [
+        {
+          "id": 15504,
+          "section_id": 5373,
+          "passed_description": "（可选）任务10: 尝试实现一个算法，能够对给定的模拟环境，输出机器人的行动策略，使之能够走到终点。",
+          "exceeded_description": null,
+          "created_at": "2019-02-20T03:33:53.413Z",
+          "updated_at": "2019-02-20T03:34:06.342Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "任务10",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 5374,
+      "name": "代码功能性",
+      "created_at": "2019-02-20T03:29:35.426Z",
+      "updated_at": "2019-02-20T03:30:14.113Z",
+      "deleted_at": null,
+      "position": 3,
+      "rubric_id": 2503,
+      "rubric_items": [
+        {
+          "id": 15505,
+          "section_id": 5374,
+          "passed_description": "代码利用函数来避免重复代码。代码包含清晰的注释和变量名称，可读性较高。\n\n代码的注释中并没有包含对于统计数字和可视化的推理说明。",
+          "exceeded_description": null,
+          "created_at": "2019-02-20T03:34:19.453Z",
+          "updated_at": "2019-02-20T03:34:31.839Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "项目是否使用良好的编码实践？",
+          "exceedable": false
+        }
+      ]
+    }
+  ],
+  "project": {
+    "id": 471,
+    "name": "Robot Controller",
+    "nanodegree_key": "nd009-cn-basic",
+    "is_cert_project": false,
+    "audit_project_id": null,
+    "hashtag": null,
+    "audit_rubric_id": null,
+    "entitlement_required": false,
+    "is_career": false,
+    "recruitment_family_id": 1,
+    "awaiting_review_count": 0,
+    "awaiting_review_count_by_language": {},
+    "awaiting_audit_count": 0,
+    "awaiting_quality_audit_count": 0,
+    "awaiting_training_audit_count": 0,
+    "created_at": "2018-04-23T03:43:44.292Z",
+    "updated_at": "2019-06-03T06:00:33.309Z",
+    "price": "15.0",
+    "audit_price": "12.5"
+  }
+}

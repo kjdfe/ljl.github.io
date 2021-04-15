@@ -1,0 +1,61 @@
+{
+  "data": {
+    "lesson": {
+      "id": 734633,
+      "key": "468a9967-4947-4900-8455-10d8e3b1fcc3",
+      "title": "项目：控制迷宫寻宝机器人",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "zh-cn",
+      "summary": "在该项目中，你将使用刚刚学到的 Python 编程知识，分析模拟迷宫环境的数据，比如机器人的起点、障碍物、宝藏箱，然后控制一个机器人，在模拟环境中随机行走，最终走到终点，并找到目标宝藏。在最后，尝试使用 A* 搜索算法输出机器人的行动策略，使之能够走到终点。",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": null,
+      "project": {
+        "key": "010e8eee-3608-4df0-9b3a-2d823844d825",
+        "version": "1.0.0",
+        "locale": "zh-cn",
+        "duration": 40320,
+        "semantic_type": "Project",
+        "title": "控制迷宫寻宝机器人",
+        "description": "# 准备好提交了吗？\n\n项目地址请在这里查看`P1_Robot_Controller`： https://github.com/udacity/AIPND_P1_Robot_Controller\n\n## 评估\n\n我们将使用[此评估准则](https://review.udacity.com/#!/rubrics/2503/view)来评估你的项目。这个项目的目的是帮助你熟悉项目提交流程，让你之后的课程学习和项目提交更加顺畅。\n\n## 提交项目\n\n点击下方的“提交项目”按钮提交你的项目。由于各地区的网络差异，第一次打开页面的时间可能会比较长。\n\n请确保所提交的压缩包中包含以下两个文件：\n\n* Robot Controller.ipynb\n* Robot Controller.html\n\n## 问题\n\n无法提交项目？别担心！有任何问题，都可以发邮件给我们的学习助手 support@youdaxue.com。我们会尽快帮助你解决。\n\n\n## 接下来？\n\n我们专业的老师评审完你的项目后，你会马上收到一封邮件。在等待的这段时间里，你可以学习接下来的课程。\n",
+        "is_public": true,
+        "summary": null,
+        "forum_path": "",
+        "rubric_id": "2503",
+        "terminal_project_id": null,
+        "resources": null,
+        "image": null
+      },
+      "lab": null,
+      "concepts": [
+        {
+          "id": 734631,
+          "key": "edb13667-ea51-4d0f-acc6-ff2435146b0d",
+          "title": "项目介绍",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "edb13667-ea51-4d0f-acc6-ff2435146b0d",
+            "completed_at": "2019-05-29T09:08:30.191Z",
+            "last_viewed_at": "2019-06-05T16:34:27.862Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 734630,
+              "key": "4702b04d-deb4-4540-988c-15a8db6e6193",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "在该项目中，你将使用刚刚学到的 Python 编程知识，分析模拟迷宫环境的数据，比如机器人的起点、障碍物、宝藏箱，然后控制一个机器人，在模拟环境中随机行走，最终走到终点，并找到目标宝藏。在最后，尝试使用 A* 搜索算法输出机器人的行动策略，使之能够走到终点。\n\n具体的项目文件请查看这里：`P1_Robot_Controller`： https://github.com/udacity/AIPND_P1_Robot_Controller",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

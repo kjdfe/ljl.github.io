@@ -1,0 +1,1284 @@
+{
+  "data": {
+    "lesson": {
+      "id": 734659,
+      "key": "85771009-48c2-41c2-82de-38770d0594cb",
+      "title": "面向对象编程入门",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "zh-cn",
+      "summary": null,
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://s3.amazonaws.com/zips.udacity-data.com/85771009-48c2-41c2-82de-38770d0594cb/734659/1547002314308/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://s3.amazonaws.com/zips.udacity-data.com/85771009-48c2-41c2-82de-38770d0594cb/734659/1547002311194/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 734655,
+          "key": "ce32b571-c946-472d-9dde-351c5003a108",
+          "title": "简介",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ce32b571-c946-472d-9dde-351c5003a108",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 734638,
+              "key": "3224a58d-b2a3-407c-9ff7-8f92f24f996b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 为何要学习面向对象编程？\n\n面向过程编程是大多数人首先学习的编程思路，但是和面向过程编程相比，面向对象编程具有一些优势。 \n\n- 借助面向对象编程，你能够创建大型模块化程序，这些程序能够随时间的推移轻松扩展。\n- 面向对象编程可以向最终用户隐藏实现细节。\n\n\n想想 [scikit-learn](https://github.com/scikit-learn/scikit-learn)、[pandas](https://pandas.pydata.org/) 或 [numpy](http://www.numpy.org/) 等 Python 软件包。它们都是使用面向对象编程构建的 Python 库。比如 scikit-learn 就是一个用面向对象编程构建的规模化、很复杂的软件包，并这么多年来，逐步增加了很多新功能和新算法。\n\n用户在使用 scikit-learn 训练机器学习算法时，完全不需要了解算法代码。\n\n下面是摘自 [scikit-learn 网站](http://scikit-learn.org/stable/modules/svm.html)的一个示例：\n```\nfrom sklearn import svm\nX = [[0, 0], [1, 1]]\ny = [0, 1]\nclf = svm.SVC()\nclf.fit(X, y)  \n```\n\nscikit-learn 是如何训练 SVM 模型的？用户不需要知道，因为面向对象编程已将实现细节隐藏起来了（当然，用户是否应该了解 SVM 的工作原理则是另一回事）。\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 604897,
+          "key": "c942f1be-2e40-4632-b48e-69611a08d2d0",
+          "title": "面向过程编程与面向对象编程",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c942f1be-2e40-4632-b48e-69611a08d2d0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 782251,
+              "key": "6d2bff1c-a66e-4d6c-9b64-67540a8eee07",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 面向过程编程与面向对象编程",
+              "instructor_notes": ""
+            },
+            {
+              "id": 782250,
+              "key": "a0155b69-67de-4651-807e-6dcf9a928f4c",
+              "title": "L3 02 面向过程编程与面向对象编程 V1 V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "psXD_J8FnCQ",
+                "china_cdn_id": "psXD_J8FnCQ.mp4"
+              }
+            },
+            {
+              "id": 782254,
+              "key": "c9f0bb39-5f34-4f81-9bb6-5dc004ba1007",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 对象由特征和操作共同定义\n\n下面解释了什么是特征，什么是操作。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 782258,
+              "key": "8d89527a-c56c-4092-b40f-0a5ebbc367cf",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://s3.amazonaws.com/video.udacity-data.com/topher/2018/November/5be794de_screen-shot-2018-07-19-at-4.05.25-pm/screen-shot-2018-07-19-at-4.05.25-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/8d89527a-c56c-4092-b40f-0a5ebbc367cf",
+              "caption": "对象由特征和操作共同定义",
+              "alt": "特征与操作",
+              "width": 770,
+              "height": 398,
+              "instructor_notes": null
+            },
+            {
+              "id": 604893,
+              "key": "4e19da30-ed3e-44e2-b007-785c3f42529c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 英语语法里的特征和操作\n\n理解特征和操作的另一种方式是从英语语法的角度考虑。特征是名词，而操作是动词。 \n\n我们举个现实中的例子：狗。狗的特征包括体重、颜色、品种和身高。这些都是名词。狗有什么动作呢？狗可以犬吠、奔跑、撕咬和吃东西。这些都是动词。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 604894,
+              "key": "9dfe2884-2569-456d-ab1d-1c17d8eb32b8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 练习 - 特征与操作",
+              "instructor_notes": ""
+            },
+            {
+              "id": 604895,
+              "key": "d0bf333a-07f5-46bb-92ce-121a426fa4c6",
+              "title": "对象的特征",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d0bf333a-07f5-46bb-92ce-121a426fa4c6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "你认为下面哪些是树作为对象的特征？",
+                "answers": [
+                  {
+                    "id": "a1523649290619",
+                    "text": "高度",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1523649345982",
+                    "text": "颜色",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1523649346454",
+                    "text": "生长",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1523649347215",
+                    "text": "粗细",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1523649381575",
+                    "text": "倒下",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1523649389063",
+                    "text": "品种",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 604896,
+              "key": "f619af9a-470f-4a6a-932b-dccec97c23ec",
+              "title": "识别动作",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f619af9a-470f-4a6a-932b-dccec97c23ec",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "你认为下面哪些是笔记本作为对象的动作？",
+                "answers": [
+                  {
+                    "id": "a1523649619299",
+                    "text": "内存",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1523650248622",
+                    "text": "宽度",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1523650249160",
+                    "text": "开机",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1523650249912",
+                    "text": "操作系统",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1523650250656",
+                    "text": "关机",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1523650254710",
+                    "text": "厚度",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1523650273208",
+                    "text": "重量",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1523650274301",
+                    "text": "清除",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 604892,
+          "key": "9a937f8b-efd3-4381-ada2-1ffd5382ec93",
+          "title": "类、对象、方法和属性",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9a937f8b-efd3-4381-ada2-1ffd5382ec93",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 782259,
+              "key": "408b870c-092e-4d35-b1d6-4f1f3cb9b162",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 类、对象、方法和属性",
+              "instructor_notes": ""
+            },
+            {
+              "id": 782260,
+              "key": "73bccf55-62a9-4f62-b6c9-ac323df1a2f0",
+              "title": "L3 03 类、对象、方法和属性 V1 1 V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "yvVMJt09HuA",
+                "china_cdn_id": "yvVMJt09HuA.mp4"
+              }
+            },
+            {
+              "id": 782261,
+              "key": "1fcb0c6a-4ff6-4ad5-97b7-dcf71a0695bb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 面向对象编程 (OOP) 术语\n* 类（class） - 由方法和属性组成的蓝图\n* 对象 （object）- 类的*实例*。将对象看做现实中的事物有助于理解，例如黄色铅笔、小狗、蓝色衬衫等等。接下来的课里会涉及到更抽象的对象。\n* 属性（attribute） - 一个描述或特征。示例包括颜色、长度、大小等等。这些属性可以有具体的值，例如蓝色、3 英寸、大，等等。\n* 方法（method） - 类或对象可以采取的操作\n* OOP（Object-Oriented Programming） - 面向对象编程的常用缩写\n* 封装 （encapsulation）- 面向对象编程的一个基本概念是封装：你可以将函数和数据都放入一个实体里。在面向对象编程中，这个实体叫做类。封装使你能够隐藏实现细节，就像 scikit-learn 软件包会隐藏机器学习算法的实现细节一样。\n\n属性也被称为 *property*（特性）、*description*（描述）、*feature*（特征）、*quality*（品质）、*trait*（特性）或 *characteristic*（特征），它们都指代同一个事物，即属性。\n\n下面解释了类、对象、属性和方法相互之间的关系。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 782262,
+              "key": "a34dbbef-1cbf-47d1-b63d-b6ade144523a",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://s3.amazonaws.com/video.udacity-data.com/topher/2018/November/5be795df_screen-shot-2018-07-19-at-4.06.55-pm/screen-shot-2018-07-19-at-4.06.55-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/a34dbbef-1cbf-47d1-b63d-b6ade144523a",
+              "caption": "类是由属性和方法组成的",
+              "alt": "类与对象",
+              "width": 770,
+              "height": 389,
+              "instructor_notes": null
+            },
+            {
+              "id": 782264,
+              "key": "8d7f1cb8-6e29-46c4-86e3-dbe17501dcf5",
+              "title": "匹配术语和描述",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8d7f1cb8-6e29-46c4-86e3-dbe17501dcf5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "请将以下示例拖入右侧的方框中，使之与左侧的术语相匹配。"
+                },
+                "concepts_label": "术语",
+                "answers_label": "示例",
+                "concepts": [
+                  {
+                    "text": "Object",
+                    "correct_answer": {
+                      "id": "a1541903882163",
+                      "text": "Stephen Hawking、Angela Merkel、Brad Pitt"
+                    }
+                  },
+                  {
+                    "text": "Class",
+                    "correct_answer": {
+                      "id": "a1541903907828",
+                      "text": "科学家、总理、演员"
+                    }
+                  },
+                  {
+                    "text": "Attribute",
+                    "correct_answer": {
+                      "id": "a1541903911246",
+                      "text": "颜色、大小、形状"
+                    }
+                  },
+                  {
+                    "text": "Method",
+                    "correct_answer": {
+                      "id": "a1541903912287",
+                      "text": "下雨、铃响、成熟"
+                    }
+                  },
+                  {
+                    "text": "Value",
+                    "correct_answer": {
+                      "id": "a1541903913026",
+                      "text": "灰色、大、圆形"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1541903911246",
+                    "text": "颜色、大小、形状"
+                  },
+                  {
+                    "id": "a1541903882163",
+                    "text": "Stephen Hawking、Angela Merkel、Brad Pitt"
+                  },
+                  {
+                    "id": "a1541903912287",
+                    "text": "下雨、铃响、成熟"
+                  },
+                  {
+                    "id": "a1541903907828",
+                    "text": "科学家、总理、演员"
+                  },
+                  {
+                    "id": "a1541903913026",
+                    "text": "灰色、大、圆形"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 734656,
+          "key": "6e899a3c-4ea6-417e-beeb-059feb2e2956",
+          "title": "OOP 语法",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6e899a3c-4ea6-417e-beeb-059feb2e2956",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 734635,
+              "key": "72c83216-cca1-4a8f-a07c-da2349150230",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 面向对象编程语法\n\n在此视频中，你将了解 Python 中的类和对象是什么样的代码。在下个部分，你将有机会自己探索代码，然后自己编写类。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 734636,
+              "key": "ed72ff24-d0bd-46f2-8496-536f1cd4ebeb",
+              "title": "面向对象编程语法",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Y8ZVw1LHI8E",
+                "china_cdn_id": "Y8ZVw1LHI8E.mp4"
+              }
+            },
+            {
+              "id": 734637,
+              "key": "55ff77f5-5d77-495e-bdf6-ef569e034489",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 函数和方法\n\n_在上方视频的 1:44 处，说话者错误地将 __init__ 称为函数，而不是方法。为何 __init__ 不是函数？_\n\n函数和方法看起来很像。它们都使用关键字 `def`。它们都有输入并返回输出。两者区别在于：方法位于类里面，而函数位于类外面。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 734643,
+              "key": "88ebc056-9811-495f-bdac-460291b0cbbf",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# self 是什么？\n\n如果实例化以下对象，Python 如何区分这两个对象？\n\n```\nshirt_one = Shirt('red', 'S', 'short-sleeve', 15)\nshort_two = Shirt('yellow', 'M', 'long-sleeve', 20)\n```\n\n这时候 `self` 就派上用场了。如果你对 shirt_one 调用 `change_price` 方法，Python 如何知道更改 shirt_one 的价格，而不是 shirt_two 的价格？\n\n```\nshirt_one.change_price(12)\n```\n\nPython 在后台调用 `change_price` 方法：\n```\n    def change_price(self, new_price):\n    \n        self.price = new_price\n```\n\n`Self` 告诉 Python 在计算机中的何处查找 shirt_one 对象，然后，Python 更改 shirt_one 对象的价格。当你以 `shirt_one.change_price(12)` 形式调用 `change_price` 方法时，`self` 并未出现，但是实际上已发挥效用。\n\n单词 `self` 只是个常用叫法。理论上，你可以使用任何其他名称，只要保持一致即可。实际上，你应该始终使用 `self` 而不是其他单词，否则其他人可能看不懂。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 734654,
+          "key": "c3c8eb3c-5af6-4b00-82c6-f188d7be8477",
+          "title": "练习：OOP 语法练习 - 第 1 部分",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c3c8eb3c-5af6-4b00-82c6-f188d7be8477",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 734639,
+              "key": "14e518bd-7b13-420f-bdd4-ff5872711b7a",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewad57d566",
+              "pool_id": "jupyter",
+              "view_id": "dd684ef5-4af2-4a5d-bc47-fae2ae3625d0",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/1.OOP_syntax_shirt_practice/shirt_exercise-zh.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 808888,
+          "key": "a286cfb1-ce38-4f82-b7ce-857ed24411ad",
+          "title": "关于 OOP 的几个注意事项",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a286cfb1-ce38-4f82-b7ce-857ed24411ad",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 808881,
+              "key": "1ecc380b-f249-49e6-b614-2879f09ec6da",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 关于 OOP 的注意事项\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 808882,
+              "key": "e3e78c54-64fc-4a2c-b8bb-b22be7221c55",
+              "title": "关于 OOP 的注意事项",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "NcgDIWm6iBA",
+                "china_cdn_id": "NcgDIWm6iBA.mp4"
+              }
+            },
+            {
+              "id": 808880,
+              "key": "b3049975-9eb5-4441-8f4f-3702ad01241b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Set 和 Get 方法\n\n上一部分的视频提到在 Python 里访问属性与在 Java 和 C++ 等其他语言中不太一样。这部分将深入介绍这方面的知识。\n\nshirt 类有一个更改衬衫价格的方法：`shirt_one.change_price(20)`。在 Python 里，你还可以通过以下语法更改属性的值：\n\n```python\nshirt_one.price = 10\nshirt_one.price = 20\nshirt_one.color = 'red'\nshirt_one.size = 'M'\nshirt_one.style = 'long_sleeve'\n```\n\n这段代码会直接访问并更改 price、color、size 和 style 属性。很多其他语言在使用时，都不推荐或者禁用直接访问属性，**但是 Python 允许直接访问属性**。常用面向对象编程规范是使用方法访问属性或更改属性值。这些方法称为 set 和 get 方法或 setter 和 getter 方法。\n\nget 方法用于获取属性值。set 方法用于更改属性值。对于 Shirt 类来说，代码如下所示：\n\n```\nclass Shirt:\n\n    def __init__(self, shirt_color, shirt_size, shirt_style, shirt_price):\n        self._price = shirt_price\n    \n    def get_price(self):\n      return self._price\n    \n    def set_price(self, new_price):\n      self._price = new_price\n``` \n\n实例化和使用对象如下所示：\n```\nshirt_one = Shirt('yellow', 'M', 'long-sleeve', 15)\nprint(shirt_one.get_price())\nshirt_one.set_price(10)\n```\n\n在类定义里，price 前面的下划线是比较有争议的 Python 规范。在 C++ 或 Java 等其他语言里，price 会被明确标记为私有变量，禁止对象直接访问 price 属性，所以`shirt_one._price = 15`也就不可行。但是，Python 不像其他语言那样区分公共变量和私有变量。因此，在 Python 中使用下划线规范和 get 及 set 方法就有一定的争议。\n\n但是，很多 Python 程序员还是会使用 get 和 set 方法开发面向对象程序。如果 Python 本身并不鼓励使用 get 和 set 方法，为何还要使用它们？\n\n根据 Python 规范，price 前面的下划线是告诉程序员只能通过 get 和 set 方法访问 price，而不能使用 `shirt_one._price` 直接访问 price。但是，程序员依然可以直接访问 price，因为 Python 语言并没有禁止直接访问属性。\n\n重申下，技术上来说，程序员依然可以使用 `shirt_one._price = 10`这样的直接访问，代码能运行。但是像这样直接访问 price 并不符合 Shirt 类的设计意图和使用规范。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 808886,
+              "key": "54cdff20-0a89-4e17-bced-3e396c5a96f4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "正如之前在这门课程中提到的，set 和 get 方法的优势之一是可以向用户隐藏实现代码。也许变量一开始编写为列表，之后变成了字典。借助 set 和 get 方法，你可以轻松地更改获取该变量的方式。如果没有 set 和 get 方法，你需要找到直接访问该变量的所有代码并更改代码。\n\n要详细了解 Python 中的 set 和 get 方法，请访问此 [Python 教程网站](https://www.python-course.eu/python3_properties.php)。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 808887,
+              "key": "0fcc016e-9c6d-4996-b4f0-ef6dde864253",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 关于属性的注意事项\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 808883,
+              "key": "979cbbc8-bbd9-4cee-88f1-848dcb8cf994",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "与使用方法访问属性相比，直接访问属性有很多劣势。 \n\n对于面向对象编程来说，Python 的编写规范比其他编程语言要宽松。例如之前提到的，在 C++ 等语言中，你可以明确设置禁止直接更改或访问属性值。Python 就没有这样的设定。\n\n那么，为何通过方法更改值比直接更改值更好？因为，从长远来看，通过方法更改值能使代码更灵活。比如，如果计量单位变了，该怎么办？假设某商店的售卖商品一开始采用的是美元货币，现在需要采用欧元？举个例子：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 808884,
+              "key": "dd7c3156-5589-4eb5-a8ce-65c8211c345a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 美元与欧元换算示例\n如果直接更改属性值，你就需要找到所有使用美元的代码，例如：\n```python\nshirt_one.price = 10 # US dollars\n```\n\n然后手动换算并修改为欧元\n```python\nshirt_one.price = 8 # Euros\n```\n\n但是，如果你使用了方法，则只需更改方法，自动从美元换算成欧元。\n\n```python\n\ndef change_price(self, new_price):\n    self.price = new_price * 0.81 # convert dollars to Euros\n\nshirt_one.change_price(10)\n``` \n\n如果你刚开始学习面向对象编程，你可能还不会涉及到这个方面，但是，如果你决定深入学习，尤其是 C++ 或 Java 等其他语言，这个方面的考量对你的代码编写就会显得非常重要。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 808885,
+              "key": "dbc5512e-90bd-4a9a-978f-820e0c99a10c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 模块化代码\n\n所有代码都在 Jupyter Notebook 里，例如，在之前的练习中，有个加载 Shirt 类的代码单元格，让你能够在整个 notebook 的后续部分访问 Shirt 类。但是，如果你要开发软件程序，则需要模块化代码。\n\n你需要将 Shirt 类放入单独的 Python 脚本中，并取个名称，例如 shirt.py。然后在另一个 Python 脚本里，使用以下这行代码导入 Shirt 类：\n`from shirt import Shirt`.\n\n目前你可以在 Jupyter notebook 中完成练习。但是之后你需要学会将面向对象代码模块化为单独的文件。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 808898,
+          "key": "dc076341-4118-420c-a907-9cac2dbc4fa4",
+          "title": "练习：OOP 语法练习 - 第二部分",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "dc076341-4118-420c-a907-9cac2dbc4fa4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 808889,
+              "key": "74fcdfef-1479-43f1-b0df-5b08d99fc084",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewad57d566",
+              "pool_id": "jupyter",
+              "view_id": "081ae8b1-d51d-488c-897b-0c333f3d46b9",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/2.OOP_syntax_pants_practice/exercise-zh.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 808897,
+          "key": "c3fb617a-64f4-4427-9cfe-7c4a9e928a5b",
+          "title": "在面向对象代码中添加注释",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c3fb617a-64f4-4427-9cfe-7c4a9e928a5b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 808890,
+              "key": "c112709f-2d10-4e31-8f0a-b377626840c0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 添加注释\n\n注意到上道练习的答案有什么特殊之处了吗？Pants 类和 SalesPerson 类包含文档字符串！文档字符串是一种注释，描述了 Python 模块、函数、类或方法的原理。是的，我们可以使用文档字符串向代码中添加注释。注释有助于你理解和维护代码。\n\n从现在开始，请练习添加代码注释。你可以根据需要使用内嵌注释和文档注释。\n\n要详细了解文档字符串，请访问此[链接](http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 808891,
+              "key": "52982b9f-4d7f-45cb-83b1-0a903179ed05",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 文档字符串\n\n下面是一个具有文档字符串的类示例，你需要注意以下几点：\n* 文档字符串需要在其所描述的类或者方法下的首行，然后缩进一个单位（建议为4个空格），否则代码无法运行。\n* 你不需要在方法文档字符串里定义 'self'。任何方法的第一个方法输入默认是 self。\n\n```python\nclass Pants:\n    \"\"\"The Pants class represents an article of clothing sold in a store\n    \"\"\"\n    \n    def __init__(self, color, waist_size, length, price):\n        \"\"\"Method for initializing a Pants object\n    \n        Args: \n            color (str)\n            waist_size (int)\n            length (int)\n            price (float)\n            \n        Attributes:\n            color (str): color of a pants object\n            waist_size (str): waist size of a pants object\n            length (str): length of a pants object\n            price (float): price of a pants object\n        \"\"\"\n            \n        self.color = color\n        self.waist_size = waist_size\n        self.length = length\n        self.price = price\n    \n    def change_price(self, new_price):\n        \"\"\"The change_price method changes the price attribute of a pants object\n    \n        Args: \n            new_price (float): the new price of the pants object\n            \n        Returns: None\n        \n        \"\"\"\n        self.price = new_price\n    \n    def discount(self, percentage):\n        \"\"\"The discount method outputs a discounted price of a pants object\n\n        Args:\n            percentage (float): a decimal representing the amount to discount\n\n        Returns:\n            float: the discounted price\n        \"\"\"\n        return self.price * (1 - percentage)\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 808903,
+          "key": "12a781f3-22fd-4e7e-ad4e-acfec6014578",
+          "title": "Gaussian 类",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "12a781f3-22fd-4e7e-ad4e-acfec6014578",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 808899,
+              "key": "13c59cf7-09ed-405e-b887-b20bfe206b4b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#  Gaussian 类\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 808893,
+              "key": "63cef239-2402-4c73-bce1-cf12a621a175",
+              "title": "Gaussian 类",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "TVzNdFYyJIU",
+                "china_cdn_id": "TVzNdFYyJIU.mp4"
+              }
+            },
+            {
+              "id": 808892,
+              "key": "d3980d8d-70dd-43d0-892d-2ff85b9e1e21",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 复习资料\n\n先修条件：熟悉高斯分布和二项分布 \n\n#### 高斯分布公式\n\n##### 概率密度函数\n<div class=\"mathquill\">\nf(x \\space | \\space \\mu, \\sigma^2) = \\frac{1}{\\sqrt{2\\pi\\sigma^2}}e^-\\frac{(x-\\mu)^2}{2\\sigma^2}\n</div>\n\n<div class=\"mathquill\">\n\\begin{aligned}\n\\\\ \\text{where:}\n\\\\ \\mu& \\space \\text{is the mean}\n\\\\ \\sigma& \\space \\text{ is the standard deviation} \n\\\\ \\sigma&^2 \\space \\text{is the variance}\n\\end{aligned}\n</div>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 808900,
+              "key": "1e859fc8-cb2f-48ba-9110-41223deeaa7b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 二项分布公式\n##### 均值\n<div class=\"mathquill\">\\mu = n * p</div>\n\n换句话说，正常硬币正面朝上的概率是 (heads) p = 0.5。如果你投掷硬币 20 次，均值将为 20 * 0.5 = 10，即预计有 10 次是正面朝上。\n\n##### 方差\n<div class=\"mathquill\">\\sigma^2 = n * p * (1 - p)</div>\n\n继续以硬币为例，n 表示投掷硬币的次数，p 表示正面朝上的概率。 \n\n##### 标准偏差\n<div class=\"mathquill\">\\sigma = \\sqrt{n * p * (1 - p)}</div>\n\n换句话说，标准偏差是方差的平方根。\n\n##### 概率密度函数\n\n<div class=\"mathquill\">\nf(k, n, p) = \\frac{n\\footnotesize{!}}{k!(n - k)!}p^k(1-p)^{(n-k)}\n</div>\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 808894,
+              "key": "fe5b0cf4-2e07-4775-afc0-1662e7d50b7e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 课外资料\n如果你想复习高斯（正态）分布和二项分布方面的知识，请参阅以下资料：\n\n* [高斯分布维基百科页面](https://en.wikipedia.org/wiki/Normal_distribution)\n* [二项分布维基百科页面](https://en.wikipedia.org/wiki/Binomial_distribution)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 808895,
+              "key": "d4a63e5d-f039-46bd-a138-630b384cadab",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 练习\n\n下面几道练习可以检测你对高斯分布和二项分布的理解情况。我们还是推荐大家先复习掌握高斯分布和二项分布再进行后续学习。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 808896,
+              "key": "0e968065-dd57-44ad-ad45-5c9732449bb4",
+              "title": "概率",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0e968065-dd57-44ad-ad45-5c9732449bb4",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "假设美国成年男性的平均体重是 180 磅，标准偏差是 34 磅。体重呈正态分布。某位男性体重正好是 185 磅的概率是多少？",
+                "answers": [
+                  {
+                    "id": "a1524176871936",
+                    "text": "0.56",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1524177113673",
+                    "text": "0",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1524177114590",
+                    "text": "0.44",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1524177115835",
+                    "text": "0.059",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1524177234309",
+                    "text": "我不知道这个问题的答案",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 808901,
+              "key": "15f13f05-e217-4275-86e0-a8e6a8e07db7",
+              "title": "后续问题",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "15f13f05-e217-4275-86e0-a8e6a8e07db7",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "和上一道练习一样，假设美国成年男性的平均体重是 180 磅，标准偏差是 34 磅。体重呈正态分布。某位男性体重在 120 磅到 155 磅之间的概率是多少？",
+                "answers": [
+                  {
+                    "id": "a1524177619761",
+                    "text": "0",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1524177666393",
+                    "text": "0.23",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1524177667222",
+                    "text": "0.27",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1524177667910",
+                    "text": "0.19",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 808902,
+              "key": "18b7f143-73e0-4d1d-84ba-c4d3a500ecff",
+              "title": "二项分布",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "18b7f143-73e0-4d1d-84ba-c4d3a500ecff",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "现在举个二项分布的例子。假设有 15% 的人口对猫过敏。如果你随机抽选 60 人，其中有 7 人对猫过敏的概率是多少？",
+                "answers": [
+                  {
+                    "id": "a1524178343950",
+                    "text": ".01",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1524178716456",
+                    "text": ".14",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1524178717463",
+                    "text": "0",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1524178718087",
+                    "text": ".05",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1524178722905",
+                    "text": "0.12",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 808913,
+          "key": "d81546a9-a31b-4d6a-9982-6be34c5e27e4",
+          "title": "Gaussian 类的工作原理",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d81546a9-a31b-4d6a-9982-6be34c5e27e4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 808904,
+              "key": "7f4b6027-b0bb-448b-8749-4658e200d6b5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Gaussian 类的工作原理 \n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 808905,
+              "key": "09c24d27-e4e1-4f98-a698-91aab6ba2808",
+              "title": "Gaussian 类的工作原理",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "N-5I0d1zJHI",
+                "china_cdn_id": "N-5I0d1zJHI.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 808911,
+          "key": "e3f2ed5d-99c7-4b67-9aae-c2f57f5a2013",
+          "title": "练习：编写 Gaussian 类",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e3f2ed5d-99c7-4b67-9aae-c2f57f5a2013",
+            "completed_at": "2019-05-29T15:27:49.050Z",
+            "last_viewed_at": "2019-06-03T03:39:38.657Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 808906,
+              "key": "7d28e953-394e-4c91-9093-3534b9fe1cd2",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewad57d566",
+              "pool_id": "jupyter",
+              "view_id": "7908eb12-19ee-444d-b5cb-fec02b018d94",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/3.OOP_code_gaussian_class/gaussian_code_exercise-zh.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 808912,
+          "key": "dd3bdaec-0e9f-4caa-b579-0808e71fd9b8",
+          "title": "魔术方法",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "dd3bdaec-0e9f-4caa-b579-0808e71fd9b8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 808907,
+              "key": "9e39aeb4-d4ff-4da4-8d89-21bd26f85ebe",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 魔术方法",
+              "instructor_notes": ""
+            },
+            {
+              "id": 808908,
+              "key": "f32fd5ec-2f80-4e82-ae42-386ab94507a9",
+              "title": "L3 10 魔术方法 V1 V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "9dEsv1aNUEE",
+                "china_cdn_id": "9dEsv1aNUEE.mp4"
+              }
+            },
+            {
+              "id": 808910,
+              "key": "3c33066a-25ec-48a1-9264-5321267e8422",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 代码中的魔术方法",
+              "instructor_notes": ""
+            },
+            {
+              "id": 808909,
+              "key": "55b81805-6498-489f-a73e-d6210cecfb37",
+              "title": "代码中的魔术方法",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "oDuXThOqans",
+                "china_cdn_id": "oDuXThOqans.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 808920,
+          "key": "36c0c1e4-5253-436a-a958-150226c70c3f",
+          "title": "练习：编写魔术方法",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "36c0c1e4-5253-436a-a958-150226c70c3f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 808914,
+              "key": "6fcc0415-da6c-4d7c-8020-08b1374756e3",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewad57d566",
+              "pool_id": "jupyter",
+              "view_id": "eedace13-687e-45c9-a914-456ac137756e",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/4.OOP_code_magic_methods/magic_methods-zh.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 808921,
+          "key": "050879f0-0ff3-4149-8941-d0f8ade47f3e",
+          "title": "继承",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "050879f0-0ff3-4149-8941-d0f8ade47f3e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 808915,
+              "key": "8097f807-8ce1-41b2-b328-3d98987074bf",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 继承",
+              "instructor_notes": ""
+            },
+            {
+              "id": 808916,
+              "key": "513da679-5b75-4143-a517-c3de55c5c91b",
+              "title": "继承",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "1gsrxUwPI40",
+                "china_cdn_id": "1gsrxUwPI40.mp4"
+              }
+            },
+            {
+              "id": 808917,
+              "key": "4eba3a4d-7762-4483-849e-291c931d599e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 继承代码\n\n在以下视频中，你将了解如何使用 Python 编写继承代码。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 808918,
+              "key": "03d3cdb4-cc0b-4469-b6e7-6e5d253e73fe",
+              "title": "13 继承示例 V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "uWT-HIHBjv0",
+                "china_cdn_id": "uWT-HIHBjv0.mp4"
+              }
+            },
+            {
+              "id": 808919,
+              "key": "9918201b-b3fa-4477-8a93-d3cea9b6fcd5",
+              "title": "“继承”正误判断",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9918201b-b3fa-4477-8a93-d3cea9b6fcd5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "请选择正确表述。",
+                "answers": [
+                  {
+                    "id": "a1525735834071",
+                    "text": "继承有助于整理代码。",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1525735869251",
+                    "text": "继承使代码更不容易维护。",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1525735870019",
+                    "text": "继承会让面向对象程序的编写更为高效。",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1525735870915",
+                    "text": "对父类的更新会自动应用到子类上。",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 808923,
+          "key": "c96d2618-3046-408f-b440-2d3adaf5f52d",
+          "title": "练习：通过 Clothing 类继承",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c96d2618-3046-408f-b440-2d3adaf5f52d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 808922,
+              "key": "45e467e9-1b62-4c38-bc11-bcc7ad2abd38",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewad57d566",
+              "pool_id": "jupyter",
+              "view_id": "9bb8c1d6-c852-485a-8a94-1cdf1d321a9c",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/5.OOP_code_inheritance_clothing/inheritance_exercise_clothing-zh.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 808926,
+          "key": "30120037-1bf8-46c4-9e7b-38e714da2949",
+          "title": "继承：概率分布",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "30120037-1bf8-46c4-9e7b-38e714da2949",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 808924,
+              "key": "b2ad039a-0589-4ffc-a03c-1f2c2b5acbb0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Gaussian 类的继承",
+              "instructor_notes": ""
+            },
+            {
+              "id": 808925,
+              "key": "d35ed7d3-5a25-4e09-b434-842463a321e6",
+              "title": "Gaussian 类的继承",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "XS4LQn1VA3U",
+                "china_cdn_id": "XS4LQn1VA3U.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 808930,
+          "key": "f6b34f54-a9f1-4eca-b8b1-a725eac21bc3",
+          "title": "演示：继承概率分布",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f6b34f54-a9f1-4eca-b8b1-a725eac21bc3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 808929,
+              "key": "adba3139-288a-4d54-bbe6-95d2371d17c5",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "viewad57d566",
+              "pool_id": "jupyter",
+              "view_id": "88e68367-2a38-42a8-9ed1-8b7739d82604",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/6.OOP_code_inheritance_probability_distributions/inheritance_probability_distribution-zh.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 808928,
+          "key": "06cdaa83-2994-40bc-bd2d-3e66016abb4f",
+          "title": "进阶 OOP 内容",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "06cdaa83-2994-40bc-bd2d-3e66016abb4f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 808927,
+              "key": "3dde0287-5bb4-4449-adc5-120440ec2181",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 进阶 OOP 内容\n\n到目前为止，你已经学习了以下知识点：\n* 类和对象\n* 属性和方法\n* 魔术方法\n* 继承\n\n类、对象、属性、方法和继承是所有面向对象编程语言都会涉及到的概念。了解这些概念后，就开始编写面向对象程序了。但是，这些只是面向对象编程的基础知识。 \n\n下面是 Python 面向对象编程进阶内容的资料列表。 \n* [类方法、实例方法和静态方法](https://realpython.com/instance-class-and-static-methods-demystified/) \n* [类属性与实例属性](https://www.python-course.eu/python3_class_and_instance_attributes.php) \n* [多个继承，mixins](https://easyaspython.com/mixins-for-fun-and-profit-cb9962760556) \n* [Python 修饰符](https://realpython.com/primer-on-python-decorators/) ",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

@@ -1,0 +1,527 @@
+<!-- udacimak v1.4.0 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   面向过程编程与面向对象编程
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      面向对象编程入门
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. 简介.html">
+       01. 简介
+      </a>
+     </li>
+     <li class="">
+      <a href="02. 面向过程编程与面向对象编程.html">
+       02. 面向过程编程与面向对象编程
+      </a>
+     </li>
+     <li class="">
+      <a href="03. 类、对象、方法和属性.html">
+       03. 类、对象、方法和属性
+      </a>
+     </li>
+     <li class="">
+      <a href="04. OOP 语法.html">
+       04. OOP 语法
+      </a>
+     </li>
+     <li class="">
+      <a href="05. 练习：OOP 语法练习 - 第 1 部分.html">
+       05. 练习：OOP 语法练习 - 第 1 部分
+      </a>
+     </li>
+     <li class="">
+      <a href="06. 关于 OOP 的几个注意事项.html">
+       06. 关于 OOP 的几个注意事项
+      </a>
+     </li>
+     <li class="">
+      <a href="07. 练习：OOP 语法练习 - 第二部分.html">
+       07. 练习：OOP 语法练习 - 第二部分
+      </a>
+     </li>
+     <li class="">
+      <a href="08. 在面向对象代码中添加注释.html">
+       08. 在面向对象代码中添加注释
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Gaussian 类.html">
+       09. Gaussian 类
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Gaussian 类的工作原理.html">
+       10. Gaussian 类的工作原理
+      </a>
+     </li>
+     <li class="">
+      <a href="11. 练习：编写 Gaussian 类.html">
+       11. 练习：编写 Gaussian 类
+      </a>
+     </li>
+     <li class="">
+      <a href="12. 魔术方法.html">
+       12. 魔术方法
+      </a>
+     </li>
+     <li class="">
+      <a href="13. 练习：编写魔术方法.html">
+       13. 练习：编写魔术方法
+      </a>
+     </li>
+     <li class="">
+      <a href="14. 继承.html">
+       14. 继承
+      </a>
+     </li>
+     <li class="">
+      <a href="15. 练习：通过 Clothing 类继承.html">
+       15. 练习：通过 Clothing 类继承
+      </a>
+     </li>
+     <li class="">
+      <a href="16. 继承：概率分布.html">
+       16. 继承：概率分布
+      </a>
+     </li>
+     <li class="">
+      <a href="17. 演示：继承概率分布.html">
+       17. 演示：继承概率分布
+      </a>
+     </li>
+     <li class="">
+      <a href="18. 进阶 OOP 内容.html">
+       18. 进阶 OOP 内容
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          02. 面向过程编程与面向对象编程
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="面向过程编程与面向对象编程">
+          面向过程编程与面向对象编程
+         </h1>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          L3 02 面向过程编程与面向对象编程 V1 V3
+         </p>
+        </h3>
+        <video controls="">
+         <source src="02. L3 02 面向过程编程与面向对象编程 V1 V3-psXD_J8FnCQ.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="02. L3 02 面向过程编程与面向对象编程 V1 V3-psXD_J8FnCQ.zh-CN.vtt" srclang="zh-CN"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="02. L3 02 面向过程编程与面向对象编程 V1 V3-psXD_J8FnCQ.pt-BR.vtt" srclang="pt-BR"/>
+         <track default="true" kind="subtitles" label="en" src="02. L3 02 面向过程编程与面向对象编程 V1 V3-psXD_J8FnCQ.en.vtt" srclang="en"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="对象由特征和操作共同定义">
+          对象由特征和操作共同定义
+         </h1>
+         <p>
+          下面解释了什么是特征，什么是操作。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="对象由特征和操作共同定义" class="img img-fluid" src="img/screen-shot-2018-07-19-at-4.05.25-pm.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            对象由特征和操作共同定义
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="英语语法里的特征和操作">
+          英语语法里的特征和操作
+         </h1>
+         <p>
+          理解特征和操作的另一种方式是从英语语法的角度考虑。特征是名词，而操作是动词。
+         </p>
+         <p>
+          我们举个现实中的例子：狗。狗的特征包括体重、颜色、品种和身高。这些都是名词。狗有什么动作呢？狗可以犬吠、奔跑、撕咬和吃东西。这些都是动词。
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="练习---特征与操作">
+          练习 - 特征与操作
+         </h1>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          对象的特征
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             你认为下面哪些是树作为对象的特征？
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1523649290619" name="604895" type="checkbox" value="a1523649290619"/>
+           <label for="a1523649290619">
+            <p>
+             高度
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1523649345982" name="604895" type="checkbox" value="a1523649345982"/>
+           <label for="a1523649345982">
+            <p>
+             颜色
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1523649346454" name="604895" type="checkbox" value="a1523649346454"/>
+           <label for="a1523649346454">
+            <p>
+             生长
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1523649347215" name="604895" type="checkbox" value="a1523649347215"/>
+           <label for="a1523649347215">
+            <p>
+             粗细
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1523649381575" name="604895" type="checkbox" value="a1523649381575"/>
+           <label for="a1523649381575">
+            <p>
+             倒下
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1523649389063" name="604895" type="checkbox" value="a1523649389063"/>
+           <label for="a1523649389063">
+            <p>
+             品种
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <ul>
+           <li>
+            高度
+           </li>
+           <li>
+            颜色
+           </li>
+           <li>
+            粗细
+           </li>
+           <li>
+            品种
+           </li>
+          </ul>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          识别动作
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             你认为下面哪些是笔记本作为对象的动作？
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1523649619299" name="604896" type="checkbox" value="a1523649619299"/>
+           <label for="a1523649619299">
+            <p>
+             内存
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1523650248622" name="604896" type="checkbox" value="a1523650248622"/>
+           <label for="a1523650248622">
+            <p>
+             宽度
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1523650249160" name="604896" type="checkbox" value="a1523650249160"/>
+           <label for="a1523650249160">
+            <p>
+             开机
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1523650249912" name="604896" type="checkbox" value="a1523650249912"/>
+           <label for="a1523650249912">
+            <p>
+             操作系统
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1523650250656" name="604896" type="checkbox" value="a1523650250656"/>
+           <label for="a1523650250656">
+            <p>
+             关机
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1523650254710" name="604896" type="checkbox" value="a1523650254710"/>
+           <label for="a1523650254710">
+            <p>
+             厚度
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1523650273208" name="604896" type="checkbox" value="a1523650273208"/>
+           <label for="a1523650273208">
+            <p>
+             重量
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1523650274301" name="604896" type="checkbox" value="a1523650274301"/>
+           <label for="a1523650274301">
+            <p>
+             清除
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <ul>
+           <li>
+            开机
+           </li>
+           <li>
+            关机
+           </li>
+           <li>
+            清除
+           </li>
+          </ul>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="03. 类、对象、方法和属性.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('02. 面向过程编程与面向对象编程')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>
